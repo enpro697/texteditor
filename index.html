@@ -15,10 +15,10 @@
             --danger-hover:  #b91c1c;
             --info-color:    #0ea5e9;
             --info-hover:    #0284c7;
-            --search-color:  #8b5cf6;    /* 検索ボタン用（紫） */
+            --search-color:  #8b5cf6;
             --search-hover:  #7c3aed;
 
-            /* --- ライトモードの色（初期値） --- */
+            /* --- ライトモードの色 --- */
             --bg-color:      #f3f4f6;
             --panel-bg:      #ffffff;
             --border-color:  #d1d5db;
@@ -26,13 +26,13 @@
             --input-bg:      #ffffff;
         }
 
-        /* --- ダークモード時の色（青みを完全に抜いた黒・グレー系に変更） --- */
+        /* --- ダークモード時の色（純黒・ニュートラルグレー） --- */
         body.dark-mode {
-            --bg-color:      #000000; /* 背景：真っ黒 */
-            --panel-bg:      #1a1a1a; /* ツールバー等：ニュートラルなダークグレー */
-            --border-color:  #333333; /* 枠線：暗めのグレー */
-            --text-color:    #e5e5e5; /* 文字色：明るいグレー（眩しすぎない白） */
-            --input-bg:      #262626; /* 入力欄：少し明るめのダークグレー */
+            --bg-color:      #000000;
+            --panel-bg:      #1a1a1a;
+            --border-color:  #333333;
+            --text-color:    #e5e5e5;
+            --input-bg:      #262626;
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -175,7 +175,7 @@
         #toast {
             visibility: hidden;
             min-width: 250px;
-            background-color: #334155;
+            background-color: #333333;
             color: #fff;
             text-align: center;
             border-radius: 6px;
@@ -217,12 +217,12 @@
             <div class="input-group">
                 <input type="text" id="replace-text" placeholder="置換後の文字列">
             </div>
-             <button id="btn-search-only" class="btn-primary">検索</button>
+            <button id="btn-search-only" class="btn-search">検索 (次へ)</button>
             <button id="btn-replace" class="btn-primary">一括置換</button>
         </div>
 
         <div class="tools-group">
-            <button id="btn-load" class="btn-info">読み込み</button>
+            <button id="btn-load" class="btn-info">読込</button>
             <button id="btn-copy" class="btn-success">📋 コピー</button>
             <button id="btn-clear" class="btn-danger">🗑️ 削除(クリア)</button>
         </div>
@@ -239,7 +239,7 @@
         const searchInput = document.getElementById('search-text');
         const replaceInput = document.getElementById('replace-text');
         const btnReplace = document.getElementById('btn-replace');
-        const btnSearchOnly = document.getElementById('btn-search-only'); // 検索ボタンを取得
+        const btnSearchOnly = document.getElementById('btn-search-only');
         const btnLoad = document.getElementById('btn-load');
         const btnCopy = document.getElementById('btn-copy');
         const btnClear = document.getElementById('btn-clear');
@@ -285,7 +285,7 @@
             }
         });
 
-        // 検索（ハイライト＆カウント）機能
+        // --- アップデート：完璧なフォーカス＆スクロール検索機能 ---
         btnSearchOnly.addEventListener('click', () => {
             const searchValue = searchInput.value;
             if (!searchValue) {
@@ -294,24 +294,47 @@
             }
 
             const text = textarea.value;
-            
-            // 最初に一致するインデックス（位置）を取得
-            const firstIndex = text.indexOf(searchValue);
+            if (!text) return;
 
-            if (firstIndex === -1) {
-                showToast("対象の文字列は見つかりませんでした");
+            // 1. 現在のカーソルの選択終了位置を取得
+            // （ユーザーが手動でカーソルを動かした場合でも、現在位置から次を検索できるようにするため）
+            let searchStartIndex = textarea.selectionEnd;
+
+            // もし「すでに検索文字列がハイライトされている状態」でボタンが押されたなら、
+            // ハイライトされている文字列の "直後" ではなく、現在のハイライト文字の "2文字目以降" 
+            // もしくは "ハイライト終了位置" から探すのが自然です。
+            // 今回はシンプルに「現在のハイライトの終了位置」から次を探します。
+            
+            let foundIndex = text.indexOf(searchValue, searchStartIndex);
+
+            // 2. 下まで行って見つからなかった場合は一番上から再検索（ループ処理）
+            if (foundIndex === -1) {
+                foundIndex = text.indexOf(searchValue, 0); // 先頭から探す
+                if (foundIndex !== -1) {
+                    showToast("🔄 一番上に戻って検索しました");
+                }
+            }
+
+            // それでも見つからない場合
+            if (foundIndex === -1) {
+                showToast("❌ 対象の文字列は見つかりませんでした");
                 return;
             }
 
-            // テキスト全体の中から検索文字列がいくつ含まれているかをカウント
+            // 全体で何個ヒットするかを計算（通知用）
             const hitCount = text.split(searchValue).length - 1;
 
-            // テキストエリアにフォーカスを当て、初回ヒット部分を範囲選択（ハイライト）
+            // 3. リアクティブなスクロールとカーソル当て処理
+            // textarea要素に先にfocus()を当ててから、setSelectionRange()を実行することで、
+            // ブラウザのネイティブ機能が働き、文字の折り返しやデバイスの画面サイズに関わらず
+            // 「ハイライトされた文字が画面内に入るように」自動で完璧にスクロールされます。
             textarea.focus();
-            textarea.setSelectionRange(firstIndex, firstIndex + searchValue.length);
+            textarea.setSelectionRange(foundIndex, foundIndex + searchValue.length);
 
-            // 結果をトースト通知
-            showToast(`🔍 ${hitCount}件ヒットしました`);
+            // 一番上に戻った時以外の通常ヒット時の通知
+            if (text.indexOf(searchValue, searchStartIndex) !== -1) {
+                 showToast(`🔍 ${hitCount}件ヒットしました`);
+            }
         });
 
         // 一括置換機能
