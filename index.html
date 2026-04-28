@@ -6,18 +6,33 @@
     <title>テキスト一括置換ツール</title>
     <style>
         :root {
+            /* --- 変わらない色（ボタン類） --- */
             --primary-color: #2563eb;
             --primary-hover: #1d4ed8;
             --success-color: #059669;
             --success-hover: #047857;
             --danger-color:  #dc2626;
             --danger-hover:  #b91c1c;
-            --info-color:    #0ea5e9;    /* 読込ボタン用（水色） */
+            --info-color:    #0ea5e9;
             --info-hover:    #0284c7;
+            --search-color:  #8b5cf6;    /* 検索ボタン用（紫） */
+            --search-hover:  #7c3aed;
+
+            /* --- ライトモードの色（初期値） --- */
             --bg-color:      #f3f4f6;
             --panel-bg:      #ffffff;
             --border-color:  #d1d5db;
             --text-color:    #1f2937;
+            --input-bg:      #ffffff;
+        }
+
+        /* --- ダークモード時の色（上書き） --- */
+        body.dark-mode {
+            --bg-color:      #111827; /* 黒に近いグレー */
+            --panel-bg:      #1f2937; /* パネルの背景（少し明るい黒） */
+            --border-color:  #374151; /* 暗い枠線 */
+            --text-color:    #f9fafb; /* 白に近いグレー */
+            --input-bg:      #374151; /* 入力欄の背景 */
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -31,15 +46,17 @@
             flex-direction: column;
             padding: 16px;
             overflow: hidden;
+            transition: background-color 0.3s, color 0.3s;
         }
 
         .app-header {
             font-size: 1.25rem;
             font-weight: bold;
             margin-bottom: 12px;
-            color: #374151;
+            color: var(--text-color);
             display: flex;
             align-items: center;
+            justify-content: space-between;
         }
 
         .toolbar {
@@ -53,6 +70,7 @@
             margin-bottom: 12px;
             align-items: center;
             justify-content: space-between;
+            transition: background-color 0.3s;
         }
 
         .tools-group {
@@ -70,12 +88,15 @@
 
         input[type="text"] {
             padding: 8px 12px;
+            background-color: var(--input-bg);
+            color: var(--text-color);
             border: 1px solid var(--border-color);
             border-radius: 6px;
             font-size: 14px;
             outline: none;
-            transition: border-color 0.2s, box-shadow 0.2s;
+            transition: border-color 0.2s, box-shadow 0.2s, background-color 0.3s, color 0.3s;
             width: 220px;
+            color-scheme: light dark;
         }
 
         input[type="text"]:focus {
@@ -91,7 +112,7 @@
             font-weight: 600;
             color: white;
             cursor: pointer;
-            transition: background-color 0.2s, transform 0.1s;
+            transition: background-color 0.2s, transform 0.1s, border-color 0.2s;
             display: inline-flex;
             align-items: center;
             justify-content: center;
@@ -111,6 +132,20 @@
         .btn-info { background-color: var(--info-color); }
         .btn-info:hover { background-color: var(--info-hover); }
 
+        .btn-search { background-color: var(--search-color); }
+        .btn-search:hover { background-color: var(--search-hover); }
+
+        .btn-theme {
+            background-color: transparent;
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+            padding: 6px 12px;
+            font-size: 13px;
+        }
+        .btn-theme:hover {
+            background-color: rgba(128, 128, 128, 0.1);
+        }
+
         .editor-container {
             flex-grow: 1;
             display: flex;
@@ -120,6 +155,7 @@
             border: 1px solid var(--border-color);
             overflow: hidden;
             position: relative;
+            transition: background-color 0.3s, border-color 0.3s;
         }
 
         textarea {
@@ -133,6 +169,7 @@
             line-height: 1.6;
             outline: none;
             background: transparent;
+            color: var(--text-color);
         }
 
         #toast {
@@ -165,7 +202,8 @@
 <body>
 
     <div class="app-header">
-        📝 テキスト一括置換・編集ツール
+        <div>📝 テキスト一括置換・編集ツール</div>
+        <button id="btn-theme" class="btn-theme">🌙 ダークモード</button>
     </div>
 
     <div class="toolbar">
@@ -174,17 +212,19 @@
                 <input type="text" id="search-text" placeholder="検索したい文字列">
             </div>
             
-            
             <span>→</span>
             
             <div class="input-group">
                 <input type="text" id="replace-text" placeholder="置換後の文字列">
             </div>
+             <button id="btn-search-only" class="btn-primary">検索</button>
             <button id="btn-replace" class="btn-primary">一括置換</button>
-            <button id="btn-load" class="btn-info">読込</button>
+            
+           
         </div>
 
         <div class="tools-group">
+            <button id="btn-load" class="btn-info">読み込み</button>
             <button id="btn-copy" class="btn-success">📋 コピー</button>
             <button id="btn-clear" class="btn-danger">🗑️ 削除(クリア)</button>
         </div>
@@ -201,9 +241,11 @@
         const searchInput = document.getElementById('search-text');
         const replaceInput = document.getElementById('replace-text');
         const btnReplace = document.getElementById('btn-replace');
+        const btnSearchOnly = document.getElementById('btn-search-only'); // 検索ボタンを取得
         const btnLoad = document.getElementById('btn-load');
         const btnCopy = document.getElementById('btn-copy');
         const btnClear = document.getElementById('btn-clear');
+        const btnTheme = document.getElementById('btn-theme');
         const toast = document.getElementById('toast');
 
         function showToast(message) {
@@ -214,19 +256,25 @@
             }, 3000);
         }
 
-        // --- 新規追加：ファイルの読み込み機能 ---
+        // ダークモード切り替え機能
+        btnTheme.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            if (document.body.classList.contains('dark-mode')) {
+                btnTheme.textContent = '☀️ ライトモード';
+            } else {
+                btnTheme.textContent = '🌙 ダークモード';
+            }
+        });
+
+        // 読み込み機能
         btnLoad.addEventListener('click', async () => {
             const fileName = searchInput.value.trim();
-
             if (!fileName) {
                 showToast("⚠️ 読み込むファイル名を入力してください");
                 return;
             }
-
             try {
-                // fetchを使って同階層にあるファイルを取得
                 const response = await fetch(fileName);
-                
                 if (response.ok) {
                     const text = await response.text();
                     textarea.value = text;
@@ -236,11 +284,40 @@
                 }
             } catch (error) {
                 showToast("❌ 読み込みに失敗しました");
-                console.error("Fetch error:", error);
             }
         });
 
-        // 範囲選択対応の一括置換機能
+        // --- 新規追加：検索（ハイライト＆カウント）機能 ---
+        btnSearchOnly.addEventListener('click', () => {
+            const searchValue = searchInput.value;
+            if (!searchValue) {
+                showToast("⚠️ 検索する文字列を入力してください");
+                return;
+            }
+
+            const text = textarea.value;
+            
+            // 最初に一致するインデックス（位置）を取得
+            const firstIndex = text.indexOf(searchValue);
+
+            if (firstIndex === -1) {
+                showToast("対象の文字列は見つかりませんでした");
+                return;
+            }
+
+            // テキスト全体の中から検索文字列がいくつ含まれているかをカウント
+            // (検索文字列でテキストを分割した配列の要素数 - 1 がヒット数になります)
+            const hitCount = text.split(searchValue).length - 1;
+
+            // テキストエリアにフォーカスを当て、初回ヒット部分を範囲選択（ハイライト）
+            textarea.focus();
+            textarea.setSelectionRange(firstIndex, firstIndex + searchValue.length);
+
+            // 結果をトースト通知
+            showToast(`🔍 ${hitCount}件ヒットしました`);
+        });
+
+        // 一括置換機能
         btnReplace.addEventListener('click', () => {
             const searchValue = searchInput.value;
             const replaceValue = replaceInput.value;
@@ -270,7 +347,6 @@
                 textarea.setSelectionRange(start, start + replacedSelection.length);
                 textarea.focus();
                 showToast("✨ 選択範囲内のみ置換しました");
-
             } else {
                 const newText = originalText.replaceAll(searchValue, replaceValue);
                 if (originalText === newText) {
@@ -282,6 +358,7 @@
             }
         });
 
+        // コピー機能
         btnCopy.addEventListener('click', async () => {
             if (!textarea.value) {
                 showToast("コピーするテキストがありません");
@@ -297,6 +374,7 @@
             }
         });
 
+        // クリア機能
         btnClear.addEventListener('click', () => {
             if (confirm("テキストをすべて削除してもよろしいですか？")) {
                 textarea.value = '';
