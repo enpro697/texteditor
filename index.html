@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>テキスト一括置換ツール</title>
     <style>
-        /* カラーパレット・変数の定義 */
         :root {
             --primary-color: #2563eb;
             --primary-hover: #1d4ed8;
@@ -13,17 +12,15 @@
             --success-hover: #047857;
             --danger-color:  #dc2626;
             --danger-hover:  #b91c1c;
+            --info-color:    #0ea5e9;    /* 読込ボタン用（水色） */
+            --info-hover:    #0284c7;
             --bg-color:      #f3f4f6;
             --panel-bg:      #ffffff;
             --border-color:  #d1d5db;
             --text-color:    #1f2937;
         }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
 
         body {
             font-family: 'Segoe UI', 'Meiryo', 'Noto Sans JP', sans-serif;
@@ -100,9 +97,7 @@
             justify-content: center;
         }
 
-        button:active {
-            transform: scale(0.97);
-        }
+        button:active { transform: scale(0.97); }
 
         .btn-primary { background-color: var(--primary-color); }
         .btn-primary:hover { background-color: var(--primary-hover); }
@@ -112,6 +107,9 @@
 
         .btn-danger { background-color: var(--danger-color); }
         .btn-danger:hover { background-color: var(--danger-hover); }
+
+        .btn-info { background-color: var(--info-color); }
+        .btn-info:hover { background-color: var(--info-hover); }
 
         .editor-container {
             flex-grow: 1;
@@ -173,9 +171,12 @@
     <div class="toolbar">
         <div class="tools-group">
             <div class="input-group">
-                <input type="text" id="search-text" placeholder="検索する文字列">
+                <input type="text" id="search-text" placeholder="検索/ファイル名 (例: yaku.txt)">
             </div>
+            <button id="btn-load" class="btn-info">📂 読込</button>
+            
             <span>→</span>
+            
             <div class="input-group">
                 <input type="text" id="replace-text" placeholder="置換後の文字列">
             </div>
@@ -189,16 +190,17 @@
     </div>
 
     <div class="editor-container">
-        <textarea id="main-textarea" placeholder="ここにテキストを入力またはペーストしてください..."></textarea>
+        <textarea id="main-textarea" placeholder="ここにテキストを入力、またはファイルを読み込んでください..."></textarea>
     </div>
 
-    <div id="toast">クリップボードにコピーしました！</div>
+    <div id="toast">通知メッセージ</div>
 
     <script>
         const textarea = document.getElementById('main-textarea');
         const searchInput = document.getElementById('search-text');
         const replaceInput = document.getElementById('replace-text');
         const btnReplace = document.getElementById('btn-replace');
+        const btnLoad = document.getElementById('btn-load');
         const btnCopy = document.getElementById('btn-copy');
         const btnClear = document.getElementById('btn-clear');
         const toast = document.getElementById('toast');
@@ -211,7 +213,33 @@
             }, 3000);
         }
 
-        // 高度な置換機能（範囲選択対応）
+        // --- 新規追加：ファイルの読み込み機能 ---
+        btnLoad.addEventListener('click', async () => {
+            const fileName = searchInput.value.trim();
+
+            if (!fileName) {
+                showToast("⚠️ 読み込むファイル名を入力してください");
+                return;
+            }
+
+            try {
+                // fetchを使って同階層にあるファイルを取得
+                const response = await fetch(fileName);
+                
+                if (response.ok) {
+                    const text = await response.text();
+                    textarea.value = text;
+                    showToast(`📄 ${fileName} を読み込みました`);
+                } else {
+                    showToast(`❌ ファイルが見つかりません (${response.status})`);
+                }
+            } catch (error) {
+                showToast("❌ 読み込みに失敗しました");
+                console.error("Fetch error:", error);
+            }
+        });
+
+        // 範囲選択対応の一括置換機能
         btnReplace.addEventListener('click', () => {
             const searchValue = searchInput.value;
             const replaceValue = replaceInput.value;
@@ -222,19 +250,14 @@
             }
 
             const originalText = textarea.value;
-            
-            // カーソルの選択範囲（開始位置と終了位置）を取得
             const start = textarea.selectionStart;
             const end = textarea.selectionEnd;
 
-            // start と end が異なる＝テキストが範囲選択されている場合
             if (start !== end) {
-                // テキストを「選択前」「選択中」「選択後」の3つに分割
                 const beforeSelection = originalText.substring(0, start);
                 const selectedText = originalText.substring(start, end);
                 const afterSelection = originalText.substring(end);
 
-                // 選択範囲の中だけを置換
                 const replacedSelection = selectedText.replaceAll(searchValue, replaceValue);
 
                 if (selectedText === replacedSelection) {
@@ -242,19 +265,13 @@
                     return;
                 }
 
-                // 分割したテキストを再結合して反映
                 textarea.value = beforeSelection + replacedSelection + afterSelection;
-                
-                // 置換後の文字列に合わせて選択範囲を復元（使い勝手向上のため）
                 textarea.setSelectionRange(start, start + replacedSelection.length);
                 textarea.focus();
-                
                 showToast("✨ 選択範囲内のみ置換しました");
 
             } else {
-                // 範囲選択されていない場合は全体を置換（前回と同じ処理）
                 const newText = originalText.replaceAll(searchValue, replaceValue);
-                
                 if (originalText === newText) {
                     showToast("対象の文字列が見つかりませんでした");
                 } else {
