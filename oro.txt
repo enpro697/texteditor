@@ -1,0 +1,591 @@
+[
+  {
+    "id": 1,
+    "question": "Your security protocols are so ________; it's almost insulting to my intellect. Kukuku...",
+    "question_ja": "君のセキュリティ・プロトコルはあまりに________だね。私の知性に対する侮辱といってもいい。ククク…。",
+    "options": [
+      {
+        "word": "rudimentary",
+        "is_correct": true,
+        "meanings": ["基礎的な", "未発達な"],
+        "example": "This rudimentary lab equipment is barely enough to synthesize a simple poison. / この基礎的な実験器具では、簡単な毒薬を合成するのが精一杯だわ。"
+      },
+      {
+        "word": "sedimentary",
+        "is_correct": false,
+        "meanings": ["堆積した"],
+        "example": "Look at these sedimentary layers; they remind me of how long I've lived. / この堆積した地層を見てごらんなさい。私の永い生を思い出させるわ。"
+      },
+      {
+        "word": "complementary",
+        "is_correct": false,
+        "meanings": ["補足的な"],
+        "example": "I offer you a complementary snake as a sign of our alliance. / 同盟の印に、補足的な（おまけの）蛇を差し上げましょう。"
+      },
+      {
+        "word": "elementary",
+        "is_correct": false,
+        "meanings": ["初歩的な"],
+        "example": "Even an elementary ninja knows not to touch my scrolls. / 初歩的な忍者ですら、私の巻物に触れてはいけないことくらい知っているわ。"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "I prefer working in a ________ laboratory, away from the prying eyes of the Akatsuki.",
+    "question_ja": "暁の詮索好きな目から離れた、________研究所で作業するのが好みなのよ。",
+    "options": [
+      {
+        "word": "secluded",
+        "is_correct": true,
+        "meanings": ["人里離れた", "隔離された"],
+        "example": "I built a secluded resort for my snakes to relax in during the summer. / 蛇たちが夏にリラックスできるよう、人里離れたリゾートを作ったの。"
+      },
+      {
+        "word": "excluded",
+        "is_correct": false,
+        "meanings": ["除外された"],
+        "example": "Why was I excluded from the Sannin reunion party? / なぜ私が三忍の同窓会から除外されたのかしら？"
+      },
+      {
+        "word": "precluded",
+        "is_correct": false,
+        "meanings": ["排除された", "妨げられた"],
+        "example": "The lack of funding precluded the completion of my immortality project. / 資金不足が、私の不老不死プロジェクトの完了を妨げたのよ。"
+      },
+      {
+        "word": "concluded",
+        "is_correct": false,
+        "meanings": ["結論づけられた"],
+        "example": "I concluded that staying in this village is a waste of time. / この里に留まるのは時間の無駄だと結論づけたわ。"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "To suggest that I might actually die is simply ________.",
+    "question_ja": "私が本当に死ぬかもしれないなどと提案するなんて、単に________だわ。",
+    "options": [
+      {
+        "word": "preposterous",
+        "is_correct": true,
+        "meanings": ["不合理な", "とんでもない"],
+        "example": "The idea that I would ever pay taxes is preposterous. / 私が税金を払うなんて考え、とんでもないわ。"
+      },
+      {
+        "word": "prosperous",
+        "is_correct": false,
+        "meanings": ["繁栄している"],
+        "example": "The Hidden Sound Village will be prosperous under my rule. / 音の隠れ里は、私の統治下で繁栄するでしょう。"
+      },
+      {
+        "word": "preposterousness",
+        "is_correct": false,
+        "meanings": ["馬鹿げていること"],
+        "example": "I cannot believe the preposterousness of your demand for a raise. / あなたの昇給要求がどれほど馬鹿げているか、信じられないわ。"
+      },
+      {
+        "word": "pompous",
+        "is_correct": false,
+        "meanings": ["尊大な"],
+        "example": "Sasuke can be a bit pompous, but his eyes are worth it. / サスケくんは少し尊大なところがあるけれど、あの瞳にはその価値があるわ。"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "Your ________ in believing my promises is quite charming, Sasuke-kun.",
+    "question_ja": "私の約束を信じるなんて、君の________はとてもチャーミングだね、サスケくん。",
+    "options": [
+      {
+        "word": "naivete",
+        "is_correct": true,
+        "meanings": ["純真さ", "世間知らず"],
+        "example": "His naivete allowed me to manipulate the entire situation. / 彼の世間知らずさのおかげで、状況のすべてを操作できたわ。"
+      },
+      {
+        "word": "native",
+        "is_correct": false,
+        "meanings": ["故郷の", "土着の"],
+        "example": "These snakes are native to the Forest of Death. / これらの蛇は死の森の固有種よ。"
+      },
+      {
+        "word": "naivety",
+        "is_correct": false,
+        "meanings": ["単純な言動"],
+        "example": "The naivety of the leaf ninjas is their greatest weakness. / 木ノ葉の忍たちの単純さは、彼らの最大の弱点ね。"
+      },
+      {
+        "word": "knave",
+        "is_correct": false,
+        "meanings": ["悪党"],
+        "example": "A clever knave knows when to retreat. / 賢い悪党は退き際を知っているものよ。"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "I've placed a ________ seal on this scroll; if you touch it, you'll turn into a slug.",
+    "question_ja": "この巻物には________封印を施してあるの。触れたらナメクジになっちゃうわよ。",
+    "options": [
+      {
+        "word": "tamper-proof",
+        "is_correct": true,
+        "meanings": ["改ざん防止の", "いじくれない"],
+        "example": "I need a tamper-proof container for my backup bodies. / 予備の肉体を入れるために、改ざん防止の容器が必要なの。"
+      },
+      {
+        "word": "temper-proof",
+        "is_correct": false,
+        "meanings": ["（造語）怒り耐性のある"],
+        "example": "I wish Kabuto were temper-proof so I could yell at him more. / カブトが怒り耐性持ちだったら、もっと怒鳴り散らせるのに。"
+      },
+      {
+        "word": "waterproof",
+        "is_correct": false,
+        "meanings": ["防水の"],
+        "example": "This mascara is waterproof, so I can cry during my experiments. / このマスカラは防水よ。だから実験中に泣いても平気。"
+      },
+      {
+        "word": "bulletproof",
+        "is_correct": false,
+        "meanings": ["防弾の"],
+        "example": "My skin isn't exactly bulletproof, but I can just shed it. / 私の肌は防弾ではないけれど、脱皮すればいいだけだわ。"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "Any subordinate showing symptoms of 'Sudden Snake Transformation' must be put in ________.",
+    "question_ja": "「突然蛇化現象」の症状が出た部下は、直ちに________に入れなさい。",
+    "options": [
+      {
+        "word": "quarantine",
+        "is_correct": true,
+        "meanings": ["検疫", "隔離"],
+        "example": "The quarantine zone is full of failed experiments and lost interns. / 隔離エリアは失敗した実験体と迷子のインターンでいっぱいよ。"
+      },
+      {
+        "word": "guarantee",
+        "is_correct": false,
+        "meanings": ["保証"],
+        "example": "There is no guarantee that your skin will stay smooth forever. / あなたの肌が永遠に滑らかである保証はないのよ。"
+      },
+      {
+        "word": "quarry",
+        "is_correct": false,
+        "meanings": ["獲物", "石切り場"],
+        "example": "Sasuke is the only quarry I care about catching. / 私が捕まえることに関心がある獲物は、サスケくんだけよ。"
+      },
+      {
+        "word": "quality",
+        "is_correct": false,
+        "meanings": ["質"],
+        "example": "The quality of modern ninjas has dropped significantly. / 現代の忍の質は著しく低下したわね。"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "I spent the afternoon ________ unaware that the village was being destroyed. Kukuku.",
+    "question_ja": "里が滅ぼされているとも知らず、午後を________過ごしていたわ。ククク。",
+    "options": [
+      {
+        "word": "blissfully",
+        "is_correct": true,
+        "meanings": ["この上なく幸せに", "おめでたくも"],
+        "example": "I was blissfully sleeping while the hidden leaf went up in flames. / 木ノ葉が燃え上がる間、私はおめでたくも眠りこけていたわ。"
+      },
+      {
+        "word": "blisteringly",
+        "is_correct": false,
+        "meanings": ["猛烈に"],
+        "example": "It is blisteringly hot in this underground lab today. / 今日の地下実験室は猛烈に暑いわね。"
+      },
+      {
+        "word": "blessedly",
+        "is_correct": false,
+        "meanings": ["ありがたいことに"],
+        "example": "Blessedly, Kabuto finally fixed the Wi-Fi in the lab. / ありがたいことに、カブトがようやくラボのWi-Fiを直したわ。"
+      },
+      {
+        "word": "boisterously",
+        "is_correct": false,
+        "meanings": ["騒々しく"],
+        "example": "The prisoners were shouting boisterously, so I silenced them. / 囚人たちが騒々しく叫んでいたから、黙らせてやったわ。"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "One simple experiment can ________ a thousand new possibilities for immortality.",
+    "question_ja": "たった一つの簡単な実験が、不老不死への千の新しい可能性を________ことがあるの。",
+    "options": [
+      {
+        "word": "spawn",
+        "is_correct": true,
+        "meanings": ["生む", "（卵を）産む"],
+        "example": "I hope this Jutsu doesn't spawn too many tiny clones of me. / この術が私の小さなクローンを大量に産み出さないといいのだけれど。"
+      },
+      {
+        "word": "pawn",
+        "is_correct": false,
+        "meanings": ["質に入れる", "手先"],
+        "example": "I had to pawn my golden snake statue to pay for the lab rent. / ラボの家賃を払うために、金の蛇像を質に入れなきゃいけなかったの。"
+      },
+      {
+        "word": "spurn",
+        "is_correct": false,
+        "meanings": ["蹴飛ばす", "拒絶する"],
+        "example": "It's rude to spurn my offer of a free curse mark. / 私の呪印無料配布キャンペーンを拒絶するなんて失礼ね。"
+      },
+      {
+        "word": "spawned",
+        "is_correct": false,
+        "meanings": ["生み出された（過去分詞）"],
+        "example": "The creatures spawned in this tank are very disobedient. / このタンクで生み出された生物は、とても言うことを聞かないわ。"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "question": "The curse mark remains ________ until I decide to 'activate' my dear vessels.",
+    "question_ja": "呪印は、私が愛しい器たちを「起動」させると決めるまで、________のままなのよ。",
+    "options": [
+      {
+        "word": "dormant",
+        "is_correct": true,
+        "meanings": ["休眠状態の", "活動休止中の"],
+        "example": "I've been dormant in this scroll for years, waiting for someone to open it. / 誰かが開けるのを待って、この巻物の中で何年も休眠していたわ。"
+      },
+      {
+        "word": "doorman",
+        "is_correct": false,
+        "meanings": ["門番"],
+        "example": "I hired a giant snake as a doorman, but he ate the mailman. / 巨大な蛇を門番として雇ったけれど、郵便屋を食べてしまったわ。"
+      },
+      {
+        "word": "dominating",
+        "is_correct": false,
+        "meanings": ["支配的な"],
+        "example": "My presence in the room is naturally dominating. / 私の部屋での存在感は、自ずと支配的になってしまうわね。"
+      },
+      {
+        "word": "dormitory",
+        "is_correct": false,
+        "meanings": ["寮"],
+        "example": "The Sound Ninja dormitory has a strict 8 PM curfew. / 音忍の寮は夜8時門限厳守よ。"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "question": "Information flows through the hidden tunnels like blood through ________.",
+    "question_ja": "情報は、________を流れる血液のように、隠されたトンネルを流れていくの。",
+    "options": [
+      {
+        "word": "arteries",
+        "is_correct": true,
+        "meanings": ["動脈", "幹線"],
+        "example": "I need to clear the arteries of our transport system; too many slugs are blocking it. / 輸送システムの幹線を掃除しなきゃ。ナメクジが詰まりすぎているわ。"
+      },
+      {
+        "word": "artilleries",
+        "is_correct": false,
+        "meanings": ["大砲", "火砲"],
+        "example": "Why would I need artilleries when I have a giant snake summon? / 巨大な蛇の口寄せがあるのに、なぜ大砲なんて必要なのかしら？"
+      },
+      {
+        "word": "artery",
+        "is_correct": false,
+        "meanings": ["動脈（単数形）"],
+        "example": "Don't cut that artery yet; I'm still recording the data! / まだその動脈を切らないで。データを記録中なんだから！"
+      },
+      {
+        "word": "altars",
+        "is_correct": false,
+        "meanings": ["祭壇"],
+        "example": "I don't need altars to gods; I am becoming a god myself. / 神の祭壇なんていらないわ。私自身が神になるんだから。"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "question": "Kabuto, prepare for an ________ regarding the missing skin-care products.",
+    "question_ja": "カブト、なくなっているスキンケア用品について________の準備をしておきなさい。",
+    "options": [
+      {
+        "word": "inquisition",
+        "is_correct": true,
+        "meanings": ["取調べ", "厳しい調査"],
+        "example": "The unexpected inquisition by the village elders was a minor annoyance. / 里の長老たちによる予期せぬ取調べは、ちょっとした苛立ちだったわ。"
+      },
+      {
+        "word": "acquisition",
+        "is_correct": false,
+        "meanings": ["獲得", "買収"],
+        "example": "The acquisition of the Sharingan is my top priority. / 写輪眼の獲得こそが私の最優先事項よ。"
+      },
+      {
+        "word": "inquisitive",
+        "is_correct": false,
+        "meanings": ["好奇心が強い"],
+        "example": "I've always been an inquisitive child, especially about forbidden things. / 私はいつも好奇心旺盛な子供だったわ。特に禁じられたことに対してね。"
+      },
+      {
+        "word": "imposition",
+        "is_correct": false,
+        "meanings": ["課すること", "重荷"],
+        "example": "Asking me to help with the laundry is a huge imposition. / 私に洗濯を手伝えなんて、とんだ重荷（厚かましいお願い）だわ。"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "question": "Make sure the specimen ________ are cleaned properly with soap.",
+    "question_ja": "標本用の________は、石鹸できちんと洗っておくように。",
+    "options": [
+      {
+        "word": "receptacles",
+        "is_correct": true,
+        "meanings": ["容器", "入れ物"],
+        "example": "These glass receptacles are perfect for storing eyeballs. / これらのガラス容器は目玉を保管するのに最適ね。"
+      },
+      {
+        "word": "receptions",
+        "is_correct": false,
+        "meanings": ["受付", "歓迎会"],
+        "example": "The receptions at the Sound Village are always a bit creepy for visitors. / 音の里の歓迎会は、来客にとっていつも少し不気味なのよ。"
+      },
+      {
+        "word": "spectacles",
+        "is_correct": false,
+        "meanings": ["眼鏡", "壮観"],
+        "example": "Kabuto, push up your spectacles; you're looking a bit disorganized. / カブト、眼鏡を上げなさい。少しだらしなく見えるわよ。"
+      },
+      {
+        "word": "obstacles",
+        "is_correct": false,
+        "meanings": ["障害物"],
+        "example": "Anyone who acts as an obstacle to my progress will be eliminated. / 私の前進を阻む障害物はすべて排除するわ。"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "question": "By my ________, no one is allowed to eat my pudding in the communal fridge.",
+    "question_ja": "私の________により、共同冷蔵庫にある私のプリンを食べることは何人にも禁ずる。",
+    "options": [
+      {
+        "word": "edict",
+        "is_correct": true,
+        "meanings": ["布告", "命令"],
+        "example": "The Hokage's edict was ignored the moment I left the village. / 火影の布告なんて、私が里を出た瞬間に無視してやったわ。"
+      },
+      {
+        "word": "addict",
+        "is_correct": false,
+        "meanings": ["中毒者"],
+        "example": "I'm a bit of a Ninjutsu addict, but I can quit whenever I want. / 私は少し忍術中毒だけど、やめようと思えばいつでもやめられるわよ。"
+      },
+      {
+        "word": "edit",
+        "is_correct": false,
+        "meanings": ["編集する"],
+        "example": "I need to edit the DNA sequences of these test subjects. / 被験者たちのDNA配列を編集しなきゃいけないわ。"
+      },
+      {
+        "word": "edicting",
+        "is_correct": false,
+        "meanings": ["（誤用）布告している"],
+        "example": "I am currently edicting new rules for the hidden snake spa. / 私は今、秘密の蛇スパの新しい規則を布告しているところよ。"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "question": "These gold coins were freshly ________ in the depths of my laboratory.",
+    "question_ja": "この金貨は、私のラボの奥深くで________ばかりのものよ。",
+    "options": [
+      {
+        "word": "minted",
+        "is_correct": true,
+        "meanings": ["鋳造された", "作りたての"],
+        "example": "A freshly minted ninja always smells like hope and sweat. / なりたて（作りたて）の忍者は、いつも希望と汗の匂いがするわね。"
+      },
+      {
+        "word": "minced",
+        "is_correct": false,
+        "meanings": ["細かく切り刻まれた"],
+        "example": "I prefer my enemies minced and served to my snakes. / 敵は細かく切り刻んで、私の蛇に差し出すのが好きなの。"
+      },
+      {
+        "word": "mounted",
+        "is_correct": false,
+        "meanings": ["据え付けられた", "跨った"],
+        "example": "I have mounted several traps along the hallway for fun. / 楽しみのために、廊下にいくつかの罠を据え付けておいたわ。"
+      },
+      {
+        "word": "hinted",
+        "is_correct": false,
+        "meanings": ["ほのめかされた"],
+        "example": "It was hinted that I might return to the village, but it was a lie. / 私が里に戻るかもとほのめかされていたけれど、あれは嘘よ。"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "question": "My name shall be ________ in the history of Ninjutsu as the man who conquered death.",
+    "question_ja": "私の名は、死を克服した男として、忍術の歴史に________だろう。",
+    "options": [
+      {
+        "word": "inscribed",
+        "is_correct": true,
+        "meanings": ["刻まれた", "記された"],
+        "example": "I inscribed a secret message on the back of Sasuke's neck. / サスケくんのうなじに、秘密のメッセージを刻んでおいたわ。"
+      },
+      {
+        "word": "described",
+        "is_correct": false,
+        "meanings": ["記述された"],
+        "example": "The book described me as a monster, which is quite flattering. / その本には私のことが怪物として記述されていたけれど、なかなか光栄ね。"
+      },
+      {
+        "word": "prescribed",
+        "is_correct": false,
+        "meanings": ["処方された"],
+        "example": "The doctor prescribed more rest, but I prefer more experiments. / 医者はもっと休養しろと処方（指示）したけれど、私はもっと実験したいの。"
+      },
+      {
+        "word": "ascribed",
+        "is_correct": false,
+        "meanings": ["〜のせいにされた"],
+        "example": "The failure of the project was ascribed to Kabuto's clumsiness. / プロジェクトの失敗はカブトの不器用さのせいにされたわ。"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "question": "Do not ________ now, Kabuto! The surgery is only halfway through!",
+    "question_ja": "ここで________のではないわよ、カブト！ 手術はまだ半分しか終わっていないわ！",
+    "options": [
+      {
+        "word": "falter",
+        "is_correct": true,
+        "meanings": ["ためらう", "たじろぐ", "口ごもる"],
+        "example": "My resolve to destroy the Leaf will never falter. / 木ノ葉を滅ぼすという私の決意が揺らぐことはないわ。"
+      },
+      {
+        "word": "filter",
+        "is_correct": false,
+        "meanings": ["ろ過する"],
+        "example": "We need to filter the swamp water before the snakes drink it. / 蛇たちが飲む前に、沼の水をろ過しなきゃいけないわ。"
+      },
+      {
+        "word": "falteringly",
+        "is_correct": false,
+        "meanings": ["たどたどしく"],
+        "example": "He spoke falteringly because he was terrified of my snakes. / 私の蛇に怯えて、彼はたどたどしく話したわ。"
+      },
+      {
+        "word": "felt",
+        "is_correct": false,
+        "meanings": ["感じた（feelの過去形）"],
+        "example": "I felt a strange nostalgia when I saw the Third Hokage. / 三代目火影を見たとき、奇妙な懐かしさを感じたわ。"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "question": "Ten thousand white snakes should be ________ for the upcoming parade.",
+    "question_ja": "今度のパレードには、一万匹の白蛇がいれば________だろう。",
+    "options": [
+      {
+        "word": "adequate",
+        "is_correct": true,
+        "meanings": ["十分な", "適切な"],
+        "example": "This basement is adequate for my current research needs. / この地下室は、私の現在の研究目的には十分だわ。"
+      },
+      {
+        "word": "accurate",
+        "is_correct": false,
+        "meanings": ["正確な"],
+        "example": "My predictions about Sasuke's growth were perfectly accurate. / サスケくんの成長に関する私の予測は、完璧に正確だったわ。"
+      },
+      {
+        "word": "adequately",
+        "is_correct": false,
+        "meanings": ["適切に"],
+        "example": "Are the prisoners being adequately fed? I need them healthy. / 囚人たちは適切に餌を与えられているかしら？ 健康でいてもらわないと。"
+      },
+      {
+        "word": "antique",
+        "is_correct": false,
+        "meanings": ["骨董品の"],
+        "example": "I found this antique scroll in a very dusty old temple. / 埃まみれの古い寺で、この骨董品の巻物を見つけたの。"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "question": "If we don't treat this wound, ________ will set in and you'll lose that arm.",
+    "question_ja": "この傷を治療しなければ________が始まり、君はその腕を失うことになるわよ。",
+    "options": [
+      {
+        "word": "necrosis",
+        "is_correct": true,
+        "meanings": ["壊死"],
+        "example": "The necrosis spread faster than I expected; how fascinating! / 壊死が予想より速く広がったわ。なんて魅惑的なのかしら！"
+      },
+      {
+        "word": "neurosis",
+        "is_correct": false,
+        "meanings": ["神経症"],
+        "example": "Working for me has given some subordinates a mild neurosis. / 私の下で働くことで、一部の部下は軽い神経症になってしまったわ。"
+      },
+      {
+        "word": "necropolis",
+        "is_correct": false,
+        "meanings": ["死者の街", "墓地"],
+        "example": "I want to turn this village into a beautiful necropolis. / この里を美しい死者の街に変えてあげたいわ。"
+      },
+      {
+        "word": "nectar",
+        "is_correct": false,
+        "meanings": ["蜜"],
+        "example": "This tea tastes like sweet nectar, but it's actually deadly poison. / このお茶は甘い蜜のような味がするけれど、実は猛毒なのよ。"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "question": "I am unwilling to ________ on the quality of my human experiments.",
+    "question_ja": "人体実験の質に関して、私は________するつもりはないわ。",
+    "options": [
+      {
+        "word": "compromise",
+        "is_correct": true,
+        "meanings": ["妥協する", "（名声などを）危うくする"],
+        "example": "I will not compromise my vision just because the leaf village complains. / 木ノ葉の里が文句を言うからといって、私のビジョンを妥協することはないわ。"
+      },
+      {
+        "word": "comprise",
+        "is_correct": false,
+        "meanings": ["〜から構成される"],
+        "example": "My army shall comprise only the most loyal and strange creatures. / 私の軍勢は、最も忠実で奇妙な生物だけで構成されるわ。"
+      },
+      {
+        "word": "promise",
+        "is_correct": false,
+        "meanings": ["約束"],
+        "example": "A promise from me is as slippery as my skin. / 私の約束は、私の肌と同じくらい滑りやすい（当てにならない）わよ。"
+      },
+      {
+        "word": "compromised",
+        "is_correct": false,
+        "meanings": ["妥協した", "危険にさらされた"],
+        "example": "The security of the north hideout has been compromised. / 北の隠れ里のセキュリティが危険にさらされているわ。"
+      }
+    ]
+  }
+]

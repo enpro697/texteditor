@@ -1,0 +1,591 @@
+[
+  {
+    "id": 1,
+    "question": "The suffering of these experimental subjects ________.",
+    "question_ja": "これらの被験体たちの苦しみは、________。",
+    "options": [
+      {
+        "word": "remain entirely unaddressed",
+        "is_correct": true,
+        "meanings": ["完全に未解決のまま残る", "放置される"],
+        "example": "Your complaints about the lack of anesthesia will remain entirely unaddressed. / 麻酔が足りないという君の苦情は、完全に放置されることでしょう。"
+      },
+      {
+        "word": "remain entirely undressed",
+        "is_correct": false,
+        "meanings": ["完全に服を脱いだままでいる"],
+        "example": "In this laboratory, subjects must remain entirely undressed for observation. / この観察室では、被験体は観察のために完全に裸のままでいなければなりません。"
+      },
+      {
+        "word": "remain entirely unredressed",
+        "is_correct": false,
+        "meanings": ["（被害などが）全く補償されないまま残る"],
+        "example": "The loss of your limbs will remain entirely unredressed, but you have the blessing! / 君の四肢の喪失は全く補償されませんが、君には『祝福』があります！"
+      },
+      {
+        "word": "remain entirely unexpressed",
+        "is_correct": false,
+        "meanings": ["全く表現されないまま残る"],
+        "example": "My love for you shall remain entirely unexpressed through words, but through science. / 私の君への愛は言葉ではなく、科学を通じて表現されるべきものです。"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "To extract the blessing efficiently, I must aim for the ________.",
+    "question_ja": "祝福を効率よく抽出するために、私は________を狙わねばなりません。",
+    "options": [
+      {
+        "word": "jugular",
+        "is_correct": true,
+        "meanings": ["頸静脈", "急所"],
+        "example": "The Umbra Hands are trained to slice the jugular without hesitation. / 祈手たちは躊躇なく頸静脈を切り裂くよう訓練されています。"
+      },
+      {
+        "word": "angular",
+        "is_correct": false,
+        "meanings": ["角ばった", "骨ばった"],
+        "example": "Nanachi's helmet has such an angular and wonderful design. / ナナチの兜はなんと角ばっていて、素晴らしいデザインなのでしょう。"
+      },
+      {
+        "word": "cellular",
+        "is_correct": false,
+        "meanings": ["細胞の"],
+        "example": "We are monitoring the cellular degradation of the children in the cartridges. / カートリッジの中の子供たちの細胞劣化を監視しています。"
+      },
+      {
+        "word": "popular",
+        "is_correct": false,
+        "meanings": ["人気のある", "大衆的な"],
+        "example": "Being turned into a white whistle is not a very popular career choice. / 白笛に加工されることは、あまり人気のある職業選択ではありませんね。"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "This cartridge is a ________ model, packed with fresh human components.",
+    "question_ja": "このカートリッジは、新鮮な人間パーツを詰め込んだ________モデルです。",
+    "options": [
+      {
+        "word": "premium-brand",
+        "is_correct": true,
+        "meanings": ["高級ブランドの", "高品質な"],
+        "example": "Only premium-brand medicine is used for my beloved Prushka. / 私の愛するプルシュカには、最高級の薬のみが使われます。"
+      },
+      {
+        "word": "previous-brand",
+        "is_correct": false,
+        "meanings": ["以前のブランドの"],
+        "example": "The previous-brand of surgical tools kept snapping during the bone extraction. / 以前のブランドの外科器具は、骨の抽出中にポキポキ折れてしまいました。"
+      },
+      {
+        "word": "pressure-brand",
+        "is_correct": false,
+        "meanings": ["圧力ブランド（造語）"],
+        "example": "Under the pressure of the 6th layer, even the soul is crushed. / 六層の圧力の前では、魂ですら押し潰されてしまいます。"
+      },
+      {
+        "word": "premium-blend",
+        "is_correct": false,
+        "meanings": ["高級なブレンドの"],
+        "example": "This coffee is a premium-blend, mixed with the tears of the delvers. / このコーヒーは探窟家の涙を混ぜた高級ブレンドです。"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "They were filled with hope ________ the lift began to ascend.",
+    "question_ja": "昇降機が上昇を始める________、彼らは希望に満ち溢れていました。",
+    "options": [
+      {
+        "word": "right up until",
+        "is_correct": true,
+        "meanings": ["〜の直前まで"],
+        "example": "She was singing right up until her brain was moved to the jar. / 彼女は脳が瓶に移される直前まで歌っていました。"
+      },
+      {
+        "word": "right out until",
+        "is_correct": false,
+        "meanings": ["（意味不明な表現）"],
+        "example": "Stay right out until the curse melts your flesh. / 呪いが君の肉を溶かすまで、外にいてください。"
+      },
+      {
+        "word": "light up until",
+        "is_correct": false,
+        "meanings": ["〜まで照らす"],
+        "example": "The Sparagmos will light up until there is nothing left. / スパラグモスは何も残らなくなるまで照らし続けるでしょう。"
+      },
+      {
+        "word": "right up under",
+        "is_correct": false,
+        "meanings": ["〜のすぐ下に"],
+        "example": "The hidden laboratory is right up under the Ido Front's basement. / 隠し実験室は前線基地の地下のすぐ下にあります。"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Death by ________ is a common fate for those in the elevator.",
+    "question_ja": "エレベーターに乗った者にとって、________による死はありふれた運命です。",
+    "options": [
+      {
+        "word": "exsanguination",
+        "is_correct": true,
+        "meanings": ["失血死", "放血"],
+        "example": "Exsanguination is a messy but necessary part of the process. / 失血は散らかりますが、工程においては必要な一部なのです。"
+      },
+      {
+        "word": "examination",
+        "is_correct": false,
+        "meanings": ["検査", "試験"],
+        "example": "Please lie down on the table for your final physical examination. / 最後の身体検査のために、テーブルの上に横になってください。"
+      },
+      {
+        "word": "exaggeration",
+        "is_correct": false,
+        "meanings": ["誇張"],
+        "example": "Calling me a monster is a bit of an exaggeration, don't you think? / 私を怪物と呼ぶのは、少々誇張が過ぎると思いませんか？"
+      },
+      {
+        "word": "explanation",
+        "is_correct": false,
+        "meanings": ["説明"],
+        "example": "I believe an explanation of the curse will only increase your fear. / 呪いの説明をしても、君の恐怖が増すだけだと思いますよ。"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "We must ________ the artifacts found in the 5th layer.",
+    "question_ja": "五層で見つかった遺物を________しなければなりません。",
+    "options": [
+      {
+        "word": "scrutinize",
+        "is_correct": true,
+        "meanings": ["詳細に調査する", "吟味する"],
+        "example": "I will scrutinize your internal organs to see if you are worthy of the abyss. / 君が奈落にふさわしいか、内臓を詳細に調査しましょう。"
+      },
+      {
+        "word": "summarize",
+        "is_correct": false,
+        "meanings": ["要約する"],
+        "example": "Can you summarize the feeling of your soul breaking in one word? / 君の魂が壊れる感覚を一言で要約できますか？"
+      },
+      {
+        "word": "scrutinizer",
+        "is_correct": false,
+        "meanings": ["検閲官", "精査する人"],
+        "example": "The scrutinizer found several flaws in the life-support system. / 精査官は生命維持システムにいくつかの欠陥を見つけました。"
+      },
+      {
+        "word": "sanitize",
+        "is_correct": false,
+        "meanings": ["消毒する", "衛生的にする"],
+        "example": "Don't forget to sanitize the saw before the next surgery. / 次の手術の前にノコギリを消毒するのを忘れないでくださいね。"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "Seeking the truth of the abyss leads to eternal ________.",
+    "question_ja": "アビスの真実を追い求めることは、永遠の________へと繋がります。",
+    "options": [
+      {
+        "word": "damnation",
+        "is_correct": true,
+        "meanings": ["地獄に落ちること", "天罰", "破滅"],
+        "example": "Damnation is just another word for the next stage of evolution. / 破滅とは、進化の次の段階を指す言葉に過ぎません。"
+      },
+      {
+        "word": "donation",
+        "is_correct": false,
+        "meanings": ["寄付", "提供"],
+        "example": "Thank you for the generous donation of your nervous system. / 君の神経系の寛大なご提供に感謝します。"
+      },
+      {
+        "word": "domination",
+        "is_correct": false,
+        "meanings": ["支配"],
+        "example": "My domination over the Ido Front is absolute. / 前線基地における私の支配は絶対的です。"
+      },
+      {
+        "word": "dimension",
+        "is_correct": false,
+        "meanings": ["次元", "寸法"],
+        "example": "The 6th layer is a dimension beyond human comprehension. / 六層は人間の理解を超えた次元の世界です。"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "I managed to finish the surgery ________.",
+    "question_ja": "私はなんとか________に手術を終えることができました。",
+    "options": [
+      {
+        "word": "right before closing",
+        "is_correct": true,
+        "meanings": ["閉まる直前に", "終了間際に"],
+        "example": "The elevator door opened right before closing, allowing the curse to leak in. / 閉まる直前にエレベーターの扉が開き、呪いが漏れ込んできました。"
+      },
+      {
+        "word": "light before closing",
+        "is_correct": false,
+        "meanings": ["閉まる前の光"],
+        "example": "The light before closing your eyes for the last time is beautiful. / 最後にお目目を閉じる直前の光は、とても美しいものです。"
+      },
+      {
+        "word": "right before clothing",
+        "is_correct": false,
+        "meanings": ["服を着る直前に"],
+        "example": "He screams right before clothing himself in his Umbra Hand armor. / 彼は祈手の鎧を纏う直前に、いつも叫び声を上げるのです。"
+      },
+      {
+        "word": "right before choosing",
+        "is_correct": false,
+        "meanings": ["選ぶ直前に"],
+        "example": "Right before choosing which child to use, I feel a sense of love. / どの子供を使うか選ぶ直前、私は愛を感じるのです。"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "question": "You look marvelous when you are ________.",
+    "question_ja": "あなたが________いる姿は、実に素晴らしい。",
+    "options": [
+      {
+        "word": "fighting for your life",
+        "is_correct": true,
+        "meanings": ["命がけで戦う", "必死に抵抗する"],
+        "example": "Watching you fighting for your life against the Orbed Piercer is a joy. / 君がタマウガチ相手に命がけで戦う姿を見るのは、喜びです。"
+      },
+      {
+        "word": "fitting for your life",
+        "is_correct": false,
+        "meanings": ["あなたの人生にふさわしい"],
+        "example": "A silent death is not fitting for your life as a White Whistle. / 静かな死は、白笛としての君の人生にはふさわしくありませんね。"
+      },
+      {
+        "word": "fighting for your light",
+        "is_correct": false,
+        "meanings": ["あなたの光のために戦う"],
+        "example": "Are you fighting for your light in this endless darkness? / 君はこの終わりのない暗闇の中で、自らの光のために戦っているのですか？"
+      },
+      {
+        "word": "fighting for your wife",
+        "is_correct": false,
+        "meanings": ["奥さんのために戦う"],
+        "example": "You are fighting for your wife? Oya oya, I have many bodies instead. / 奥さんのために戦っている？ おやおや、代わりに私は多くの身体を持っていますが。"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "question": "My decision to use cartridges was purely ________.",
+    "question_ja": "カートリッジの使用を決断したのは、純粋に________な理由からです。",
+    "options": [
+      {
+        "word": "visceral",
+        "is_correct": true,
+        "meanings": ["本能的な", "直感的な", "内臓の"],
+        "example": "The visceral fear of the curse is what makes us human. / 呪いへの本能的な恐怖こそが、我々を人間たらしめるのです。"
+      },
+      {
+        "word": "visual",
+        "is_correct": false,
+        "meanings": ["視覚的な"],
+        "example": "The visual effects of the 6th layer curse are quite... unique. / 六層の呪いの視覚的影響は、実に……独特ですね。"
+      },
+      {
+        "word": "virtual",
+        "is_correct": false,
+        "meanings": ["仮想の", "実質的な"],
+        "example": "Your survival is a virtual impossibility at this depth. / この深さでは、君の生存は実質的に不可能です。"
+      },
+      {
+        "word": "viscous",
+        "is_correct": false,
+        "meanings": ["粘り気のある"],
+        "example": "The blood of the creatures here is strangely viscous. / この地の生物の血は、妙に粘り気がありますね。"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "question": "I bought these new surgical saws at a ________.",
+    "question_ja": "私はこれらの新しい外科用ノコギリを________で購入しました。",
+    "options": [
+      {
+        "word": "steep discount",
+        "is_correct": true,
+        "meanings": ["大幅な割引"],
+        "example": "The life of a delver is often traded at a steep discount. / 探窟家の命は、しばしば大幅な割引価格で取引されます。"
+      },
+      {
+        "word": "step discount",
+        "is_correct": false,
+        "meanings": ["段階的割引（造語）"],
+        "example": "Each step you descend gives you a discount on your humanity. / 階段を一段降りるごとに、君の人間性が削られて（割引されて）いきますね。"
+      },
+      {
+        "word": "sleep discount",
+        "is_correct": false,
+        "meanings": ["睡眠割引（意味不明）"],
+        "example": "There is no sleep discount in the abyss; the monsters are always awake. / アビスに睡眠の安売りはありません。怪物は常に目覚めています。"
+      },
+      {
+        "word": "sheep discount",
+        "is_correct": false,
+        "meanings": ["羊の割引"],
+        "example": "We don't need a sheep discount when we have so many orphans. / これほど多くの孤児がいれば、羊の安売りなど必要ありません。"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "question": "It is time to ________ what remains of your soul.",
+    "question_ja": "あなたの魂の残滓を________する時が来ました。",
+    "options": [
+      {
+        "word": "reclaim",
+        "is_correct": true,
+        "meanings": ["取り戻す", "再利用する"],
+        "example": "I shall reclaim the artifacts from your cold, dead hands. / 君の冷たくなった死の手から、遺物を回収（再利用）しましょう。"
+      },
+      {
+        "word": "declaim",
+        "is_correct": false,
+        "meanings": ["熱弁をふるう"],
+        "example": "Oya oya, please do not declaim your hatred toward me so loudly. / おやおや、私への憎しみをそんなに大声で熱弁しないでください。"
+      },
+      {
+        "word": "proclaim",
+        "is_correct": false,
+        "meanings": ["宣言する"],
+        "example": "I proclaim this child to be the most successful cartridge ever! / この子こそが、史上最も成功したカートリッジであると宣言します！"
+      },
+      {
+        "word": "exclaim",
+        "is_correct": false,
+        "meanings": ["叫ぶ"],
+        "example": "You may exclaim in pain, but the experiment must continue. / 痛みで叫んでも構いませんが、実験は続けなければなりません。"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "question": "The mutation progressed exactly as I ________.",
+    "question_ja": "変異は、まさに私が________通りに進行しました。",
+    "options": [
+      {
+        "word": "anticipated",
+        "is_correct": true,
+        "meanings": ["予想した", "期待した"],
+        "example": "I anticipated your betrayal, so I have already poisoned your tea. / 君の裏切りは予想していましたので、既にお茶に毒を盛っておきました。"
+      },
+      {
+        "word": "participated",
+        "is_correct": false,
+        "meanings": ["参加した"],
+        "example": "Everyone participated in the ritual, whether they wanted to or not. / 望むと望まざるとにかかわらず、全員が儀式に参加したのです。"
+      },
+      {
+        "word": "antiquated",
+        "is_correct": false,
+        "meanings": ["古臭い", "時代遅れの"],
+        "example": "Human ethics are such antiquated concepts in the face of the abyss. / アビスの前では、人間の倫理など実に時代遅れな概念です。"
+      },
+      {
+        "word": "appreciated",
+        "is_correct": false,
+        "meanings": ["感謝した", "高く評価した"],
+        "example": "Your sacrifice is greatly appreciated by all of humanity. / 君の犠牲は、全人類から大いに感謝されることでしょう。"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "question": "New spare bodies ________ at the Ido Front once a month.",
+    "question_ja": "新しい予備の身体は、前線基地で月に一度________。",
+    "options": [
+      {
+        "word": "goes on sale",
+        "is_correct": true,
+        "meanings": ["発売される", "売りに出される"],
+        "example": "The life-extending drug never goes on sale for the common delvers. / 延命薬が一般の探窟家向けに売りに出されることはありません。"
+      },
+      {
+        "word": "goes on sail",
+        "is_correct": false,
+        "meanings": ["航海に出る"],
+        "example": "My heart goes on sail across the sea of corpses. / 私の心は、屍の海を越えて航海に出るのです。"
+      },
+      {
+        "word": "goes on scale",
+        "is_correct": false,
+        "meanings": ["体重計に乗る"],
+        "example": "The cartridge goes on scale to ensure it's light enough for the whistle. / 笛として持ち運べる重さか確認するため、カートリッジを秤に乗せます。"
+      },
+      {
+        "word": "goes on soul",
+        "is_correct": false,
+        "meanings": ["魂にかかる（意味不明）"],
+        "example": "The burden of the abyss goes on soul and breaks it. / アビスの重荷は魂にのしかかり、それを壊してしまうのです。"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "question": "He died ________ he saw the 'True' abyss.",
+    "question_ja": "彼は『真の』アビスを見た、________亡くなりました。",
+    "options": [
+      {
+        "word": "just as",
+        "is_correct": true,
+        "meanings": ["〜のちょうどその時", "〜と同じように"],
+        "example": "Everything is proceeding just as planned, my dear Nanachi. / 全ては計画通りに進んでいますよ、愛しいナナチ。"
+      },
+      {
+        "word": "just us",
+        "is_correct": false,
+        "meanings": ["私たちだけ"],
+        "example": "In this laboratory, it is just us and the sounds of the abyss. / この実験室には、私たちとアビスの音しか存在しません。"
+      },
+      {
+        "word": "dust as",
+        "is_correct": false,
+        "meanings": ["〜としての塵"],
+        "example": "You will become dust as soon as the Sparagmos hits you. / スパラグモスが当たれば、君はすぐに塵となるでしょう。"
+      },
+      {
+        "word": "jest as",
+        "is_correct": false,
+        "meanings": ["冗談としての"],
+        "example": "I said I love you merely as a jest as I pulled the trigger. / 引き金を引きながら、愛していると言ったのは単なる冗談ですよ。"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "question": "The moisture in your eyes ________ when you see my true form.",
+    "question_ja": "私の真の姿を見た時、あなたの瞳の水分は________。",
+    "options": [
+      {
+        "word": "evaporates",
+        "is_correct": true,
+        "meanings": ["蒸発する", "消滅する"],
+        "example": "All hope evaporates when you reach the 6th layer. / 六層に到達した時、全ての希望は消滅するのです。"
+      },
+      {
+        "word": "evaluates",
+        "is_correct": false,
+        "meanings": ["評価する"],
+        "example": "The system evaluates your worth based on the size of your whistle. / システムは君の笛の大きさで、君の価値を評価します。"
+      },
+      {
+        "word": "evacuates",
+        "is_correct": false,
+        "meanings": ["避難する", "排出する"],
+        "example": "The staff evacuates the room when the experiment goes rogue. / 実験が暴走した時、職員たちは部屋から避難します。"
+      },
+      {
+        "word": "exaggerates",
+        "is_correct": false,
+        "meanings": ["誇張する"],
+        "example": "He exaggerates the danger of the abyss to keep the children away. / 彼は子供たちを遠ざけるために、アビスの危険性を誇張して話します。"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "question": "What a ________ display of the abyss's blessing!",
+    "question_ja": "なんと________アビスの祝福の顕現でしょう！",
+    "options": [
+      {
+        "word": "masterful",
+        "is_correct": true,
+        "meanings": ["見事な", "熟練した"],
+        "example": "The way you used Prushka's remains was truly masterful. / プルシュカの残骸の使い方は、実に見事なものでした。"
+      },
+      {
+        "word": "masterfully",
+        "is_correct": false,
+        "meanings": ["見事に（副詞）"],
+        "example": "You handled the scalpel masterfully for a beginner. / 初心者にしては、君はメスを見事に扱いましたね。"
+      },
+      {
+        "word": "misterful",
+        "is_correct": false,
+        "meanings": ["ミスターらしい（造語）"],
+        "example": "You are becoming a very brave misterful delver, aren't you? / 君はとても勇敢で『ミスター』らしい探窟家になりつつありますね？"
+      },
+      {
+        "word": "muster-ful",
+        "is_correct": false,
+        "meanings": ["点呼に満ちた（造語）"],
+        "example": "The morning at Ido Front is always muster-ful and busy. / 前線基地の朝は、いつも点呼に追われて忙しいものです。"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "question": "If the subjects resist, ________ the charges immediately.",
+    "question_ja": "もし被験体が抵抗するなら、直ちに爆薬を________しなさい。",
+    "options": [
+      {
+        "word": "detonate",
+        "is_correct": true,
+        "meanings": ["爆発させる"],
+        "example": "I will detonate the Ido Front before I let you take Nanachi. / ナナチを連れて行かせるくらいなら、前線基地を爆破しましょう。"
+      },
+      {
+        "word": "decorate",
+        "is_correct": false,
+        "meanings": ["飾る"],
+        "example": "Let's decorate your new cartridge with some pretty ribbons. / 君の新しいカートリッジを、可愛いリボンで飾りましょうか。"
+      },
+      {
+        "word": "dedicate",
+        "is_correct": false,
+        "meanings": ["捧げる"],
+        "example": "You must dedicate your entire life to the study of the curse. / 君は全人生を呪いの研究に捧げなければなりません。"
+      },
+      {
+        "word": "denote",
+        "is_correct": false,
+        "meanings": ["示す", "意味する"],
+        "example": "These symbols denote that the area is extremely toxic. / これらの記号は、その区域が極めて有毒であることを示しています。"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "question": "Descending to the 6th layer is a ________ gamble.",
+    "question_ja": "六層への降下は、極めて________なギャンブルです。",
+    "options": [
+      {
+        "word": "high-stakes",
+        "is_correct": true,
+        "meanings": ["（負ければ全て失うような）リスクの高い"],
+        "example": "Science is a high-stakes game where children are the chips. / 科学とは、子供たちをチップにしたハイリスクなゲームなのです。"
+      },
+      {
+        "word": "high-stacks",
+        "is_correct": false,
+        "meanings": ["高く積み上げられた（スペル違い）"],
+        "example": "The high-stacks of empty cartridges are a monument to our progress. / 空になったカートリッジの山は、我々の進歩の記念碑です。"
+      },
+      {
+        "word": "high-snakes",
+        "is_correct": false,
+        "meanings": ["高い蛇（意味不明）"],
+        "example": "Watch out for the high-snakes hanging from the ceiling of the 4th layer. / 四層の天井からぶら下がっている高い場所の蛇に気をつけて。"
+      },
+      {
+        "word": "high-steaks",
+        "is_correct": false,
+        "meanings": ["高いステーキ（肉）"],
+        "example": "We are serving high-steaks made from... well, you don't want to know. / 今夜は高級なステーキを出しましょう。材料は……おや、知らない方がいいですよ。"
+      }
+    ]
+  }
+]
