@@ -285,7 +285,7 @@
             }
         });
 
-        // --- アップデート：完璧なフォーカス＆スクロール検索機能 ---
+        // --- アップデート：100%確実にスクロールさせるダミー要素方式 ---
         btnSearchOnly.addEventListener('click', () => {
             const searchValue = searchInput.value;
             if (!searchValue) {
@@ -296,18 +296,9 @@
             const text = textarea.value;
             if (!text) return;
 
-            // 1. 現在のカーソルの選択終了位置を取得
-            // （ユーザーが手動でカーソルを動かした場合でも、現在位置から次を検索できるようにするため）
             let searchStartIndex = textarea.selectionEnd;
-
-            // もし「すでに検索文字列がハイライトされている状態」でボタンが押されたなら、
-            // ハイライトされている文字列の "直後" ではなく、現在のハイライト文字の "2文字目以降" 
-            // もしくは "ハイライト終了位置" から探すのが自然です。
-            // 今回はシンプルに「現在のハイライトの終了位置」から次を探します。
-            
             let foundIndex = text.indexOf(searchValue, searchStartIndex);
 
-            // 2. 下まで行って見つからなかった場合は一番上から再検索（ループ処理）
             if (foundIndex === -1) {
                 foundIndex = text.indexOf(searchValue, 0); // 先頭から探す
                 if (foundIndex !== -1) {
@@ -315,21 +306,50 @@
                 }
             }
 
-            // それでも見つからない場合
             if (foundIndex === -1) {
                 showToast("❌ 対象の文字列は見つかりませんでした");
                 return;
             }
 
-            // 全体で何個ヒットするかを計算（通知用）
             const hitCount = text.split(searchValue).length - 1;
 
-            // 3. リアクティブなスクロールとカーソル当て処理
-            // textarea要素に先にfocus()を当ててから、setSelectionRange()を実行することで、
-            // ブラウザのネイティブ機能が働き、文字の折り返しやデバイスの画面サイズに関わらず
-            // 「ハイライトされた文字が画面内に入るように」自動で完璧にスクロールされます。
+            // 1. フォーカスを当てて選択範囲をセット
             textarea.focus();
             textarea.setSelectionRange(foundIndex, foundIndex + searchValue.length);
+
+            // ▼ ▼ ▼ 確実なスクロール位置計算（Mirror Div ハック） ▼ ▼ ▼
+            const mirrorDiv = document.createElement('div');
+            const style = window.getComputedStyle(textarea);
+
+            // テキストエリアと全く同じスタイルをコピーして見えないDivを作る
+            mirrorDiv.style.fontFamily = style.fontFamily;
+            mirrorDiv.style.fontSize = style.fontSize;
+            mirrorDiv.style.lineHeight = style.lineHeight;
+            mirrorDiv.style.padding = style.padding;
+            mirrorDiv.style.width = style.width;
+            mirrorDiv.style.boxSizing = style.boxSizing;
+            mirrorDiv.style.whiteSpace = 'pre-wrap';
+            mirrorDiv.style.wordWrap = 'break-word';
+            mirrorDiv.style.position = 'absolute';
+            mirrorDiv.style.visibility = 'hidden';
+            mirrorDiv.style.left = '-9999px'; // 画面外に配置
+
+            // 検索文字の「直前まで」のテキストを入れる
+            mirrorDiv.textContent = text.substring(0, foundIndex);
+
+            // マーカー（span）を入れてY座標を測定する
+            const marker = document.createElement('span');
+            marker.textContent = searchValue;
+            mirrorDiv.appendChild(marker);
+            document.body.appendChild(mirrorDiv);
+
+            // マーカーのY座標を取得し、テキストエリアの高さの半分を引いて「画面の中央」にスクロール
+            const targetY = marker.offsetTop - (textarea.clientHeight / 2);
+            textarea.scrollTop = targetY > 0 ? targetY : 0;
+
+            // 用済みのダミー要素を削除
+            document.body.removeChild(mirrorDiv);
+            // ▲ ▲ ▲ ここまで ▲ ▲ ▲
 
             // 一番上に戻った時以外の通常ヒット時の通知
             if (text.indexOf(searchValue, searchStartIndex) !== -1) {
