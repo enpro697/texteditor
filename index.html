@@ -176,46 +176,57 @@
             margin: 0;
         }
 
-        /* 全画面用のミニツールバー（左上） */
-        .fullscreen-toolbar {
+        /* --- フローティング（ドラッグ可能）ツールバー --- */
+        .fullscreen-floating-bar {
             position: absolute;
-            top: 16px;
+            /* URLバーで隠れないよう、初期位置を下げる（16px → 60px） */
+            top: 60px;
             left: 16px;
             display: none; /* 通常時は非表示 */
-            gap: 8px;
+            background-color: rgba(30, 30, 30, 0.85); /* 半透明の背景 */
+            backdrop-filter: blur(4px);
+            padding: 6px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             z-index: 10000;
+            gap: 6px;
+            align-items: center;
         }
 
-        .editor-container.fullscreen .fullscreen-toolbar {
+        .editor-container.fullscreen .fullscreen-floating-bar {
             display: flex; /* 全画面時に表示 */
         }
 
-        /* 全画面解除用の×ボタン（右上） */
-        .btn-close-fullscreen {
-            position: absolute;
-            top: 16px;
-            right: 16px;
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            background-color: rgba(0, 0, 0, 0.6);
-            color: white;
-            font-size: 24px;
-            display: none;
+        /* ドラッグ用のつまみ部分 */
+        .drag-handle {
+            cursor: grab;
+            padding: 8px 12px;
+            color: #fff;
+            font-size: 18px;
+            user-select: none;
+            touch-action: none; /* スマホ操作時にスクロールしてしまうのを防ぐ */
+            display: flex;
             align-items: center;
             justify-content: center;
-            z-index: 10000;
-            cursor: pointer;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
         }
 
-        .btn-close-fullscreen:hover {
-            background-color: rgba(0, 0, 0, 0.8);
+        .drag-handle:active {
+            cursor: grabbing;
         }
 
-        .editor-container.fullscreen .btn-close-fullscreen {
-            display: flex;
+        /* ツールバー内の仕切り線 */
+        .fs-divider {
+            width: 1px;
+            height: 24px;
+            background-color: rgba(255, 255, 255, 0.3);
+            margin: 0 4px;
+        }
+        
+        .btn-fs-close {
+            padding: 8px 12px;
+            font-size: 16px;
+            line-height: 1;
         }
         /* -------------------------- */
 
@@ -233,9 +244,9 @@
             color: var(--text-color);
         }
 
-        /* 全画面時のテキストエリアの余白調整（上部のボタン群と被らないように） */
+        /* 全画面時のテキストエリアの余白調整 */
         .editor-container.fullscreen textarea {
-            padding-top: 75px; 
+            padding-top: 120px; /* ツールバーが上にきても文字が読めるよう余白を多めに */
             padding-right: 20px;
             padding-left: 20px;
         }
@@ -310,15 +321,22 @@
     </div>
 
     <div class="editor-container" id="editor-container">
-        <!-- 全画面モード時のみ表示されるミニツールバー -->
-        <div class="fullscreen-toolbar">
+        
+        <!-- フローティングツールバー (全画面モード時のみ表示) -->
+        <div class="fullscreen-floating-bar" id="fs-floating-bar">
+            <!-- ドラッグ用のつまみ -->
+            <div class="drag-handle" id="fs-drag-handle" title="ドラッグして移動">⠿</div>
+            
             <button id="btn-fs-wrap-left-paren" class="btn-wrap">(</button>
             <button id="btn-fs-wrap-both-paren" class="btn-wrap">()</button>
             <button id="btn-fs-wrap-asterisk" class="btn-wrap">**</button>
+            
+            <div class="fs-divider"></div>
+            
+            <!-- 閉じるボタンもここにまとめる -->
+            <button id="btn-close-fullscreen" class="btn-danger btn-fs-close">×</button>
         </div>
         
-        <!-- 全画面解除用の×ボタン -->
-        <button id="btn-close-fullscreen" class="btn-close-fullscreen">×</button>
         <textarea id="main-textarea" placeholder="ここにテキストを入力、またはファイルを読み込んでください..."></textarea>
     </div>
 
@@ -336,7 +354,6 @@
         const btnTheme = document.getElementById('btn-theme');
         const toast = document.getElementById('toast');
         
-        // 追加機能用要素の取得
         const editorContainer = document.getElementById('editor-container');
         const btnFullscreen = document.getElementById('btn-fullscreen');
         const btnCloseFullscreen = document.getElementById('btn-close-fullscreen');
@@ -351,6 +368,10 @@
         const btnFsWrapBothParen = document.getElementById('btn-fs-wrap-both-paren');
         const btnFsWrapAsterisk = document.getElementById('btn-fs-wrap-asterisk');
 
+        // フローティングバーの要素
+        const fsFloatingBar = document.getElementById('fs-floating-bar');
+        const fsDragHandle = document.getElementById('fs-drag-handle');
+
         function showToast(message) {
             toast.textContent = message;
             toast.className = "show";
@@ -359,6 +380,51 @@
             }, 3000);
         }
 
+        // --- ドラッグ（移動）機能のロジック ---
+        let isDragging = false;
+        let initialX, initialY;
+
+        fsDragHandle.addEventListener('pointerdown', (e) => {
+            isDragging = true;
+            // クリックした位置とバーの左上端の差分を記憶
+            initialX = e.clientX - fsFloatingBar.offsetLeft;
+            initialY = e.clientY - fsFloatingBar.offsetTop;
+            
+            // マウスが外れてもイベントを追いかける
+            fsDragHandle.setPointerCapture(e.pointerId);
+            fsDragHandle.style.cursor = 'grabbing';
+        });
+
+        fsDragHandle.addEventListener('pointermove', (e) => {
+            if (!isDragging) return;
+            e.preventDefault(); // スマホでのスクロールやリロードを防ぐ
+
+            let currentX = e.clientX - initialX;
+            let currentY = e.clientY - initialY;
+
+            // 画面外へはみ出さないように制限する
+            const containerRect = editorContainer.getBoundingClientRect();
+            const barRect = fsFloatingBar.getBoundingClientRect();
+            const maxX = containerRect.width - barRect.width;
+            const maxY = containerRect.height - barRect.height;
+            
+            currentX = Math.max(0, Math.min(currentX, maxX));
+            currentY = Math.max(0, Math.min(currentY, maxY));
+
+            fsFloatingBar.style.left = `${currentX}px`;
+            fsFloatingBar.style.top = `${currentY}px`;
+        });
+
+        const stopDrag = (e) => {
+            isDragging = false;
+            fsDragHandle.releasePointerCapture(e.pointerId);
+            fsDragHandle.style.cursor = 'grab';
+        };
+
+        fsDragHandle.addEventListener('pointerup', stopDrag);
+        fsDragHandle.addEventListener('pointercancel', stopDrag);
+        // ------------------------------------
+
         // --- テキスト挿入・装飾機能 ---
         function insertTextAround(before, after) {
             const start = textarea.selectionStart;
@@ -366,29 +432,21 @@
             const text = textarea.value;
             const currentScroll = textarea.scrollTop; // スクロール位置を記憶
             
-            // 選択された文字列を取得（選択範囲がない場合は空文字）
             const selectedText = text.substring(start, end);
-            
-            // 前後に文字を追加
             const newText = before + selectedText + after;
             
-            // テキストエリアの値を更新
             textarea.value = text.substring(0, start) + newText + text.substring(end);
             
-            // フォーカスを戻し、選択状態を維持して連続操作しやすくする
             textarea.focus();
             textarea.setSelectionRange(start + before.length, end + before.length);
-            
-            // スクロール位置を元に戻す
-            textarea.scrollTop = currentScroll;
+            textarea.scrollTop = currentScroll; // スクロール位置を元に戻す
         }
 
-        // 通常画面のボタンにイベントを紐付け
+        // ボタンイベントの紐付け
         btnWrapLeftParen.addEventListener('click', () => insertTextAround('(', ''));
         btnWrapBothParen.addEventListener('click', () => insertTextAround('(', ')'));
         btnWrapAsterisk.addEventListener('click', () => insertTextAround('*', '*'));
 
-        // 全画面のミニツールバーのボタンにも同じイベントを紐付け
         btnFsWrapLeftParen.addEventListener('click', () => insertTextAround('(', ''));
         btnFsWrapBothParen.addEventListener('click', () => insertTextAround('(', ')'));
         btnFsWrapAsterisk.addEventListener('click', () => insertTextAround('*', '*'));
@@ -402,6 +460,10 @@
         btnCloseFullscreen.addEventListener('click', () => {
             editorContainer.classList.remove('fullscreen');
             textarea.focus();
+            
+            // 全画面を解除したら、フローティングバーの位置を初期位置（左上）にリセットする
+            fsFloatingBar.style.left = '16px';
+            fsFloatingBar.style.top = '60px';
         });
 
         // ダークモード切り替え機能
