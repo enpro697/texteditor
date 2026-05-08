@@ -440,6 +440,7 @@
             textarea.focus();
             textarea.setSelectionRange(start + before.length, end + before.length);
             textarea.scrollTop = currentScroll; // スクロール位置を元に戻す
+            textarea.blur();
         }
 
         // ボタンイベントの紐付け
