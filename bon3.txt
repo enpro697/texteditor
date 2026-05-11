@@ -1,590 +1,590 @@
 [
   {
     "id": 1,
-    "question": "おやおや、素晴らしいですね。さあ、彼らの新しい人生を______しましょう。祈手（アンブラハンズ）たち、準備はよろしいですか？",
-    "translation": "ヒント: 「開始する」を意味する単語が入ります。",
+    "question": "Now, let us ______ the ritual to transform your love into a physical blessing.",
+    "question_ja": "さあ、あなたの愛を物理的な祝福へと変える儀式を『開始』しましょう。",
     "options": [
       {
         "word": "commence",
-        "meanings": "開始する",
+        "meanings": ["開始する"],
         "is_correct": true,
-        "example": "We shall commence the descent into the sixth layer shortly, please prepare your minds. / まもなく第六層への降下を開始しますよ、心の準備をお願いします。"
+        "example": "The final stage of the experiment will commence once the cartridge is filled. / カートリッジが満たされ次第、実験の最終段階が開始されます。"
       },
       {
         "word": "commend",
-        "meanings": "褒め称える、推奨する",
+        "meanings": ["褒める"],
         "is_correct": false,
-        "example": "I commend your willingness to become a human experiment for the sake of progress! / 進歩のために自ら人体実験となるその心意気、大いに褒め称えましょう！"
+        "example": "I must commend your courage for stepping into the fifth layer alone. / 五層に一人で足を踏み入れたその勇気、褒め称えねばなりませんね。"
       },
       {
-        "word": "comment",
-        "meanings": "論評、コメントする",
+        "word": "condense",
+        "meanings": ["凝縮する"],
         "is_correct": false,
-        "example": "I have no comment on the agonizing screams echoing from the lower levels. / 下層から響き渡る苦痛の悲鳴については、ノーコメントとさせていただきます。"
+        "example": "We need to condense the essence of life into this small container. / 生命のエッセンスを、この小さな容器に凝縮する必要があるのです。"
       },
       {
         "word": "commerce",
-        "meanings": "商業、取引",
+        "meanings": ["通商", "貿易"],
         "is_correct": false,
-        "example": "Our commerce in rare relics smoothly funds these beautiful scientific pursuits. / 希少な遺物の商業的取引が、この美しい科学的探求の資金を円滑に潤しているのです。"
+        "example": "There is no room for simple commerce in the pursuit of the Abyss. / 奈落の探求において、単純な商行為が介在する余地はありません。"
       }
     ]
   },
   {
     "id": 2,
-    "question": "なんとも______な感情ですね。愛などという不確かなもので、私のこの純粋な探求を止められるとお思いで？",
-    "translation": "ヒント: 「原始的な、未発達な」を意味する単語が入ります。",
+    "question": "Your fear is a ______ reaction, a remnant of a mind not yet evolved for the Abyss.",
+    "question_ja": "あなたの恐怖は『原始的な』反応です。アビスに適応しきれていない精神の残滓ですね。",
     "options": [
       {
         "word": "primitive",
-        "meanings": "原始的な、未発達な",
+        "meanings": ["原始的な"],
         "is_correct": true,
-        "example": "Such primitive reactions to pain are truly fascinating to observe, don't you think? / 苦痛に対するそのような原始的な反応は、観察していて実に興味深いと思いませんか？"
+        "example": "Even primitive life forms can provide wonderful data when stimulated. / 原始的な生物であっても、刺激を与えれば素晴らしいデータを提供してくれます。"
       },
       {
-        "word": "primate",
-        "meanings": "霊長類",
+        "word": "primary",
+        "meanings": ["主要な"],
         "is_correct": false,
-        "example": "Even a simple primate learns to avoid the curse, unlike some foolish delvers. / 単純な霊長類でさえ呪いを避けることを学ぶというのに、一部の愚かな探窟家ときたら。"
+        "example": "Our primary objective is to reach the next layer of enlightenment. / 我々の主要な目的は、啓示の次なる階層へ到達することです。"
       },
       {
-        "word": "punitive",
-        "meanings": "懲罰的な",
+        "word": "priority",
+        "meanings": ["優先"],
         "is_correct": false,
-        "example": "There is no punitive intent in my actions, only boundless scientific curiosity. / 私の行動に懲罰的な意図など一切ありませんよ。ただ果てしない科学的好奇心があるだけです。"
+        "example": "The safety of the children is my lowest priority compared to the truth. / 真実と比べれば、子供たちの安全など私の優先順位では最低ですよ。"
       },
       {
-        "word": "preemptive",
-        "meanings": "先制の、予防の",
+        "word": "privilege",
+        "meanings": ["特権"],
         "is_correct": false,
-        "example": "A preemptive amputation often saves the rest of the body from rotting, you see. / 先制的な切断が、結果として体の残りの部分が腐るのを防ぐことがよくあるのですよ。"
+        "example": "It is a privilege to witness the moment a human becomes a blessing. / 人が祝福へと変わる瞬間に立ち会えるとは、まさに特権ですね。"
       }
     ]
   },
   {
     "id": 3,
-    "question": "新しい感覚はいかがですか？ よりアビスの祝福を感じられるよう、あなたの______を少しばかり繋ぎ変えさせていただきましたよ。",
-    "translation": "ヒント: 「神経経路」を意味する単語が入ります。",
+    "question": "I have carefully rewired your ______ to ensure you never forget this feeling.",
+    "question_ja": "この感覚を忘れないよう、あなたの『神経経路』を丁寧に繋ぎ変えておきましたよ。",
     "options": [
       {
         "word": "neural pathways",
-        "meanings": "神経経路",
+        "meanings": ["神経経路"],
         "is_correct": true,
-        "example": "Mapping the neural pathways during extreme agony is quite the delightful challenge. / 極限の苦痛下における神経経路のマッピングは、実に喜ばしい挑戦ですね。"
+        "example": "New neural pathways are being formed as you experience the curse. / 呪いを経験することで、新たな神経経路が形成されていくのです。"
       },
       {
-        "word": "neutral pathways",
-        "meanings": "中立的な経路",
+        "word": "natural pathways",
+        "meanings": ["自然な道"],
         "is_correct": false,
-        "example": "We must remain on neutral pathways to avoid unnecessary conflict with the native beasts. / 原生生物との不必要な争いを避けるため、我々は中立的な経路を進まねばなりません。"
+        "example": "There are no natural pathways left for those who seek the bottom. / 底を目指す者たちに、もはや自然な道など残されてはいません。"
       },
       {
-        "word": "nervous breakdowns",
-        "meanings": "神経衰弱",
+        "word": "neutral positions",
+        "meanings": ["中立な立場"],
         "is_correct": false,
-        "example": "So many test subjects suffer nervous breakdowns before the fun even begins, alas. / お楽しみが始まる前に、多くの被検体が神経衰弱に陥ってしまうのですよ。嘆かわしい。"
+        "example": "In the face of discovery, I cannot maintain neutral positions. / 発見を前にして、中立な立場でいることなど私にはできません。"
       },
       {
-        "word": "blood vessels",
-        "meanings": "血管",
+        "word": "numeral patterns",
+        "meanings": ["数字のパターン"],
         "is_correct": false,
-        "example": "The sudden pressure changes tend to rupture the blood vessels beautifully. / 急激な圧力変化は、血管を実に見事に破裂させる傾向がありますね。"
+        "example": "The numeral patterns of the abyss's depth are truly intoxicating. / アビスの深淵が示す数字のパターンは、実に陶酔を誘いますね。"
       }
     ]
   },
   {
     "id": 4,
-    "question": "恐れることはありません。私はただの______な研究者にすぎません。奈落の底で、愛を証明したいだけなのです。",
-    "translation": "ヒント: 「謙虚な、身分が低い、質素な」を意味する単語が入ります。",
+    "question": "Even a ______ mask like mine can hide a soul burning with infinite curiosity.",
+    "question_ja": "私のような『卑下した（質素な）』仮面であっても、無限の好奇心に燃える魂を隠すことはできるのです。",
     "options": [
       {
         "word": "humble",
-        "meanings": "謙虚な、質素な",
+        "meanings": ["謙虚な", "卑下した"],
         "is_correct": true,
-        "example": "I am but a humble servant of the Abyss and its boundless, loving mysteries. / 私はアビスとその果てしなく愛に満ちた謎に仕える、ただの謙虚な下僕に過ぎません。"
+        "example": "This is but a humble gift for my dear daughter, Prushka. / これは愛娘プルシュカへの、ほんのささやかな贈り物ですよ。"
       },
       {
-        "word": "fumbling",
-        "meanings": "手探りの、不器用な",
+        "word": "tumble",
+        "meanings": ["転倒する"],
         "is_correct": false,
-        "example": "Your fumbling attempts to escape from the operating table are quite adorable. / 手術台から逃れようとする、あなたのその不器用で手探りな試みは実に愛らしいですね。"
+        "example": "Take care not to tumble into the sea of corpses below. / 下にある死体の海に転がり落ちないよう、気をつけてくださいね。"
       },
       {
-        "word": "hostile",
-        "meanings": "敵対的な",
+        "word": "stumble",
+        "meanings": ["つまずく"],
         "is_correct": false,
-        "example": "Why the hostile glare? I simply asked for your internal organs for a noble cause. / なぜそのような敵対的な睨みをするのです？ 私は崇高な目的のために、あなたの内臓を要求しただけですよ。"
+        "example": "To stumble in the face of science is to halt the progress of humanity. / 科学の前でつまずくことは、人類の進歩を止めることに他なりません。"
       },
       {
-        "word": "horrid",
-        "meanings": "恐ろしい、不快な",
+        "word": "fumble",
+        "meanings": ["手探りする"],
         "is_correct": false,
-        "example": "Oh, please ignore that horrid smell; it's just the remnants of yesterday's failure. / おや、その恐ろしい悪臭は無視してください。昨日の失敗作の名残に過ぎませんから。"
+        "example": "Do not fumble with the surgical tools; precision is everything. / 手術道具を手探りで扱ってはいけません。精密さこそがすべてです。"
       }
     ]
   },
   {
     "id": 5,
-    "question": "ナナチ、君は私の最高の______でしたよ。さあ、共にアビスの深淵で、素晴らしい結果を見届けましょう。",
-    "translation": "ヒント: 「弟子、信奉者」を意味する単語が入ります。",
+    "question": "A loyal ______ should always be willing to sacrifice their body for their master's vision.",
+    "question_ja": "忠実な『弟子』たるもの、主のビジョンのためにその身を捧げることを厭うべきではありません。",
     "options": [
       {
         "word": "disciple",
-        "meanings": "弟子、信奉者",
+        "meanings": ["弟子"],
         "is_correct": true,
-        "example": "A true disciple embraces the burden of the curse with a smile, for the sake of progress. / 真の弟子たるもの、進歩のために微笑みながら呪いの重荷を受け入れるのですよ。"
+        "example": "My disciple, please record the data of my death with great care. / 私の弟子よ、私の死のデータを細心の注意を払って記録してください。"
       },
       {
         "word": "discipline",
-        "meanings": "規律、しつけ",
+        "meanings": ["規律", "しつけ"],
         "is_correct": false,
-        "example": "Such strict discipline is required to maintain absolute sanity in this lovely facility. / この愛らしい施設で絶対的な正気を保つには、そのような厳格な規律が必要なのです。"
+        "example": "Severe discipline is required to withstand the pressure of the deep. / 深層の圧力に耐えるには、厳格な規律が必要不可欠です。"
       },
       {
-        "word": "principle",
-        "meanings": "原理、原則",
+        "word": "decimal",
+        "meanings": ["小数の"],
         "is_correct": false,
-        "example": "The core principle of my research is love, plain and wonderfully simple. / 私の研究の中核をなす原理は愛です。実に明白で、素晴らしく単純ですね。"
+        "example": "The difference between success and failure is often just a decimal. / 成功と失敗の差は、しばしばわずかな小数点以下の違いなのです。"
       },
       {
-        "word": "descendant",
-        "meanings": "子孫",
+        "word": "displace",
+        "meanings": ["取って代わる"],
         "is_correct": false,
-        "example": "You are a fine descendant of a brave delver, making your sacrifice all the sweeter. / あなたは勇敢な探窟家の立派な子孫ですね。だからこそ、あなたの犠牲がより甘美なものになるのです。"
+        "example": "One consciousness may displace another within this singular body. / この一つの体の中で、ある意識が別の意識に取って代わることもあるでしょう。"
       }
     ]
   },
   {
     "id": 6,
-    "question": "私の祈手は、被検体が新鮮なうちに極めて手際よく______のです。おや、そんなに震えなくても大丈夫ですよ。",
-    "translation": "ヒント: 「生体解剖する」を意味する単語の三人称単数形が入ります。",
+    "question": "The Lord of Dawn ______ the very concept of humanity to find what lies beyond.",
+    "question_ja": "黎明卿は、その先にあるものを見出すために、人間性という概念そのものを『生体解剖』するのです。",
     "options": [
       {
         "word": "vivisects",
-        "meanings": "生体解剖する (三人称単数)",
+        "meanings": ["生体解剖する"],
         "is_correct": true,
-        "example": "He vivisects the creatures with such tender loving care, it truly moves me to tears. / 彼は実に優しく愛情を込めて生物を生体解剖するのです、本当に感動で涙が出ますよ。"
+        "example": "He vivisects the mysteries of the Abyss with an unrelenting gaze. / 彼は冷徹な眼差しで、アビスの謎を生体解剖していくのです。"
       },
       {
-        "word": "dissects",
-        "meanings": "解剖する (死体を)",
+        "word": "vividly",
+        "meanings": ["鮮やかに"],
         "is_correct": false,
-        "example": "Anyone can dissect a cold corpse, but true scientific art requires a beating heart. / 冷たい死体を解剖することなど誰にでもできますが、真の科学的芸術には鼓動する心臓が必要なのです。"
+        "example": "I remember vividly the screams of those who reached the next level. / 次の段階に到達した者たちの叫びを、私は鮮明に覚えています。"
       },
       {
-        "word": "intersects",
-        "meanings": "交差する",
+        "word": "vibrates",
+        "meanings": ["振動する"],
         "is_correct": false,
-        "example": "Our research intersects perfectly with your delightfully untimely demise. / 私たちの研究は、あなたの喜ばしいほど早すぎる死と完璧に交差するのですよ。"
+        "example": "The air vibrates with the sound of an impending blessing. / 大気が、差し迫った祝福の音で震えていますね。"
       },
       {
-        "word": "vivifies",
-        "meanings": "生き生きさせる、蘇生させる",
+        "word": "violates",
+        "meanings": ["違反する"],
         "is_correct": false,
-        "example": "The blessing of the Abyss vivifies the soul, albeit at a very minor physical cost. / アビスの祝福は魂を生き生きとさせます。少々の肉体的な代償は伴いますがね。"
+        "example": "This procedure violates every ethic, which is why it is so effective. / この術式はあらゆる倫理に反しますが、だからこそ効果的なのです。"
       }
     ]
   },
   {
     "id": 7,
-    "question": "度し難いですね。手足の喪失や人間性の崩壊など、深淵の真理に触れる喜びに比べれば全く______な問題です。",
-    "translation": "ヒント: 「ささいな、取るに足らない」を意味する単語が入ります。",
+    "question": "Your pain is ______, but the data you provide is eternal.",
+    "question_ja": "あなたの痛みは『些細な』ものですが、あなたが提供するデータは永遠なのです。",
     "options": [
       {
         "word": "trivial",
-        "meanings": "ささいな、取るに足らない",
+        "meanings": ["些細な"],
         "is_correct": true,
-        "example": "The loss of your humanity is merely a trivial detail in the grand scheme of our love. / 私たちの愛の壮大な計画において、あなたが人間性を喪失したことなど単なる些細な詳細に過ぎません。"
-      },
-      {
-        "word": "tribal",
-        "meanings": "部族の",
-        "is_correct": false,
-        "example": "We encountered some tribal behavior among the lower layer inhabitants, quite savage indeed. / 下層の住人たちに部族的な行動が見られました。実に野蛮ですねぇ。"
+        "example": "Do not worry about trivial things like your original name or shape. / 元の名前や形といった、些細なことを気にしてはいけませんよ。"
       },
       {
         "word": "trial",
-        "meanings": "試練、裁判",
+        "meanings": ["試練"],
         "is_correct": false,
-        "example": "Please consider this less of a gruesome execution and more of a glorious trial. / これを身の毛もよだつ処刑というよりは、栄光ある試練と考えてくださいね。"
+        "example": "Every trial we endure brings us closer to the bottom of the world. / 我々が耐え忍ぶあらゆる試練が、世界の底へと近づけてくれるのです。"
       },
       {
-        "word": "tribunal",
-        "meanings": "法廷、裁定機関",
+        "word": "triumph",
+        "meanings": ["勝利"],
         "is_correct": false,
-        "example": "I answer to no earthly tribunal, for science itself is my one and only judge. / 私は地上の如何なる法廷の裁きも受けません。科学そのものが私の唯一の裁判官ですから。"
+        "example": "Science is a series of losses that eventually lead to a single triumph. / 科学とは、最終的な一つの勝利へと続く敗北の積み重ねなのです。"
+      },
+      {
+        "word": "triple",
+        "meanings": ["3倍の"],
+        "is_correct": false,
+        "example": "The output of the artifact is triple what we initially anticipated. / 遺物の出力は、当初の予想の3倍に達しています。"
       }
     ]
   },
   {
     "id": 8,
-    "question": "おや、そのような浅い層で軽々と呪いにかかってしまうなんて。あなた、もしかして探窟の______ですか？",
-    "translation": "ヒント: 「初心者」を意味する単語が入ります。",
+    "question": "Even a ______ delver knows that you never turn your back on the Abyss.",
+    "question_ja": "『初心者』の探掘家でさえ、アビスに背を向けてはならないことくらいは知っていますよ。",
     "options": [
       {
         "word": "novice",
-        "meanings": "初心者、未熟者",
+        "meanings": ["初心者"],
         "is_correct": true,
-        "example": "Every grand master was once a crying novice, bleeding out beautifully on the first layer. / どんな偉大な達人でも、かつては第一層で美しく血を流して泣き叫ぶ初心者だったのですよ。"
+        "example": "As a novice, you still possess that wonderful, untainted curiosity. / 初心者であるあなたは、まだあの素晴らしい、汚れなき好奇心を持っていますね。"
       },
       {
         "word": "notice",
-        "meanings": "通知、気付くこと",
+        "meanings": ["通知", "気づく"],
         "is_correct": false,
-        "example": "Did you not see the notice? Trespassers will be gently and efficiently repurposed. / 通知をご覧になりませんでしたか？ 侵入者は優しく効率的に再利用させていただきますよ。"
+        "example": "Did you notice the subtle change in the flow of the curse? / 呪いの流れの、わずかな変化に気づきましたか？"
       },
       {
-        "word": "malice",
-        "meanings": "悪意",
+        "word": "advice",
+        "meanings": ["助言"],
         "is_correct": false,
-        "example": "I assure you, there is absolutely no malice in my scalpels, only pure objectivity. / 保証しますよ、私のメスに悪意など絶対にありません。純粋な客観性だけがあるのです。"
+        "example": "If I may offer some advice: try not to die until the recording is finished. / 助言を差し上げるなら、記録が終わるまで死なないように努めてください。"
       },
       {
-        "word": "vice",
-        "meanings": "悪徳、欠点",
+        "word": "device",
+        "meanings": ["装置"],
         "is_correct": false,
-        "example": "Unnecessary empathy is a vice that severely hinders true scientific breakthrough. / 不必要な感情移入は、真の科学的ブレイクスルーを著しく妨げる悪徳ですね。"
+        "example": "This device will help you share your senses with everyone else. / この装置を使えば、あなたの感覚を全員で共有できるようになりますよ。"
       }
     ]
   },
   {
     "id": 9,
-    "question": "暗闇で光を灯し、獲物をおびき寄せる______のように、アビスもまた我々の探求心を甘く誘い込むのですよ。",
-    "translation": "ヒント: 「アンコウ」を意味する単語が入ります。",
+    "question": "The ______ uses its light to lure prey, much like how I use 'love'.",
+    "question_ja": "『アンコウ』は光を使って獲物を誘い込みます。ちょうど私が「愛」を使うようにね。",
     "options": [
       {
         "word": "anglerfish",
-        "meanings": "アンコウ",
+        "meanings": ["アンコウ"],
         "is_correct": true,
-        "example": "Much like the anglerfish, I use a little light of hope to draw sweet orphans into my care. / アンコウとよく似て、私は希望という小さな光を使って、甘美な孤児たちを私の庇護下へとおびき寄せるのです。"
+        "example": "The deep-sea anglerfish is a fascinating model of survival. / 深海のアンコウは、生存戦略の魅力的なモデルと言えます。"
       },
       {
-        "word": "angelfish",
-        "meanings": "エンゼルフィッシュ",
+        "word": "angle",
+        "meanings": ["角度"],
         "is_correct": false,
-        "example": "Your desperate flailing reminds me of a panicked angelfish removed from its tank. / あなたのその必死にもがく様は、水槽から取り出されてパニックに陥ったエンゼルフィッシュを思い出させますね。"
+        "example": "Adjust the angle of the blade; we must be precise in our affection. / 刃の角度を調整しなさい。愛情表現は精密でなければなりません。"
       },
       {
-        "word": "jellyfish",
-        "meanings": "クラゲ",
+        "word": "anchor",
+        "meanings": ["錨"],
         "is_correct": false,
-        "example": "Without those pesky bones, you will be as pliant and resilient as a jellyfish. / その厄介な骨がなくなれば、あなたはクラゲのようにしなやかで弾力性のある体になりますよ。"
+        "example": "Hope is an anchor that keeps you trapped in the shallow waters. / 希望とは、あなたを浅瀬に繋ぎ止めてしまう錨のようなものです。"
       },
       {
-        "word": "starfish",
-        "meanings": "ヒトデ",
+        "word": "anguish",
+        "meanings": ["苦悩"],
         "is_correct": false,
-        "example": "If only we could regenerate limbs like a starfish, my precious inventory of orphans would last longer. / ヒトデのように手足を再生できれば、私の貴重な孤児の在庫ももっと長持ちするのですがね。"
+        "example": "Your anguish is the spice that makes the result so very delicious. / あなたの苦悩は、結果をより美味しくするためのスパイスなのですよ。"
       }
     ]
   },
   {
     "id": 10,
-    "question": "他者の絶望を安全な場所から眺める。実に悪趣味な______ですね。私は自ら愛の籠もった手を下す方が好きですが。",
-    "translation": "ヒント: 「観客の集まるスポーツ、見世物」を意味する単語が入ります。",
+    "question": "Cruelty is a ______ for those who lack the stomach to participate in it.",
+    "question_ja": "残酷さとは、それに参加する覚悟のない者たちにとっての『観戦スポーツ』に過ぎません。",
     "options": [
       {
         "word": "spectator sport",
-        "meanings": "観客の集まるスポーツ、見世物",
+        "meanings": ["観戦スポーツ"],
         "is_correct": true,
-        "example": "Watching the ascent from the sixth layer is certainly not a spectator sport, it's quite delightfully messy. / 第六層からの上昇を観察することは、決して楽しい見世物ではありませんよ。実に喜ばしいほど散らかりますからね。"
+        "example": "Suffering should never be a spectator sport; one must feel it to understand. / 苦しみは決して観戦スポーツであってはなりません。理解するには自ら感じる必要があるのです。"
       },
       {
-        "word": "spectator spot",
-        "meanings": "観客席、特等席",
+        "word": "specimen",
+        "meanings": ["標本"],
         "is_correct": false,
-        "example": "I have carefully reserved the best spectator spot for you to watch your friend's beautiful transformation. / あなたのお友達の美しい変貌を観察できるよう、最高の特等席を丁寧に用意しておきましたよ。"
+        "example": "You will make a fine specimen for my collection of blessings. / あなたは私の祝福コレクションの、素晴らしい標本になるでしょう。"
       },
       {
-        "word": "spectacular sport",
-        "meanings": "壮大なスポーツ",
+        "word": "spectrum",
+        "meanings": ["範囲", "スペクトル"],
         "is_correct": false,
-        "example": "Delving into the unknown is a spectacular sport for those perfectly willing to die. / 未知への探窟は、完璧に死を厭わない者たちにとっては壮大なスポーツと言えるでしょう。"
+        "example": "The curse of the Abyss exists on a spectrum we are only beginning to map. / アビスの呪いは、我々がようやく解明し始めたばかりの広い範囲に及んでいます。"
       },
       {
-        "word": "dictator sport",
-        "meanings": "独裁者のスポーツ",
+        "word": "spectacle",
+        "meanings": ["壮観"],
         "is_correct": false,
-        "example": "Controlling the flow of vital supplies is a fun little dictator sport I indulge in. / 極めて重要な物資の供給をコントロールするのは、私が耽溺しているささやかな独裁者ごっこなのです。"
+        "example": "What a magnificent spectacle! Your transformation is truly moving. / なんと素晴らしい光景でしょう！あなたの変容には、実に心打たれます。"
       }
     ]
   },
   {
     "id": 11,
-    "question": "「カートリッジ」というのは私の造語でしてね。学術的な______としては、地上ではまだ定着していないのですよ。",
-    "translation": "ヒント: 「専門用語」を意味する単語が入ります。",
+    "question": "In our field, 'blessing' is a ______ that carries a heavy, physical weight.",
+    "question_ja": "我々の分野において「祝福」とは、重く物理的な重みを伴う『専門用語』なのです。",
     "options": [
       {
         "word": "terminology",
-        "meanings": "専門用語",
+        "meanings": ["専門用語"],
         "is_correct": true,
-        "example": "Don't get bogged down by the terminology; 'processed' simply means they were 'made wonderfully useful'. / 専門用語に惑わされないでください、「処理済み」とは単に彼らが「素晴らしく役に立つようになった」という意味ですよ。"
-      },
-      {
-        "word": "terminal",
-        "meanings": "末期の、終点",
-        "is_correct": false,
-        "example": "I'm afraid your current condition is quite terminal, but fear not, your data will live on forever. / 残念ながらあなたの現在の状態は極めて末期的ですが、恐れることはありません、あなたのデータは永遠に生き続けます。"
+        "example": "Standard terminology fails to describe the beauty of a 'narendate'. / 標準的な専門用語では、「成れ果て」の美しさを記述することはできません。"
       },
       {
         "word": "technology",
-        "meanings": "技術",
+        "meanings": ["技術"],
         "is_correct": false,
-        "example": "My life-support technology is cleanly fueled by the boundless, pure energy of children's dreams. / 私の生命維持技術は、子供たちの夢という無限で純粋なエネルギーをクリーンな燃料としているのです。"
+        "example": "The technology of the ancient Abyss far surpasses our current understanding. / 古代アビスの技術は、現在の我々の理解を遥かに凌駕しています。"
       },
       {
-        "word": "dermatology",
-        "meanings": "皮膚科学",
+        "word": "terminator",
+        "meanings": ["終止線", "境界線"],
         "is_correct": false,
-        "example": "The curse affects the skin in beautiful ways that defy all known conventional dermatology. / 呪いは、既知のあらゆる従来の皮膚科学を覆すような美しい形で皮膚に影響を与えるのですよ。"
+        "example": "We have crossed the terminator between human and something... better. / 我々は人間と、それ以上の「何か」との境界線を越えたのです。"
+      },
+      {
+        "word": "testimony",
+        "meanings": ["証言"],
+        "is_correct": false,
+        "example": "Your screams are the only testimony I need for this experiment. / あなたの叫びこそが、この実験に必要な唯一の証言なのです。"
       }
     ]
   },
   {
     "id": 12,
-    "question": "おやおや、肉体がここまで愛らしく崩壊しているというのに、まだ______な言葉を喋れるとは。素晴らしい精神力だ。",
-    "translation": "ヒント: 「筋の通った、首尾一貫した、はっきり話せる」を意味する単語が入ります。",
+    "question": "Even after being split into many, my thoughts remain perfectly ______.",
+    "question_ja": "多くの体に分かれた後でさえ、私の思考は完璧に『首尾一貫して』います。",
     "options": [
       {
         "word": "coherent",
-        "meanings": "筋の通った、首尾一貫した",
+        "meanings": ["首尾一貫した"],
         "is_correct": true,
-        "example": "It is extraordinarily rare for a subject to remain coherent after the third glorious amputation. / 3度目の栄光ある切断の後でも被検体が首尾一貫した意識を保っているのは、極めて稀ですね。素晴らしい。"
+        "example": "Please try to remain coherent while I remove your unnecessary organs. / 不要な器官を取り除いている間も、どうか意識をはっきり保つよう努めてください。"
+      },
+      {
+        "word": "cohesive",
+        "meanings": ["結合力のある"],
+        "is_correct": false,
+        "example": "The bond between us must be cohesive enough to withstand the curse. / 我々の絆は、呪いに耐えうるほど強力に結合していなければなりません。"
+      },
+      {
+        "word": "coefficient",
+        "meanings": ["係数"],
+        "is_correct": false,
+        "example": "The coefficient of pain to progress is quite high in this layer. / この階層では、進歩に対する痛みの係数が非常に高いのですよ。"
       },
       {
         "word": "inherent",
-        "meanings": "生来の、固有の",
+        "meanings": ["固有の"],
         "is_correct": false,
-        "example": "The inherent beauty of the Abyss is paid for fairly in copious amounts of blood and sanity. / アビスの生来の美しさは、大量の血と正気を公平な代償として成り立っているのです。"
-      },
-      {
-        "word": "cohere",
-        "meanings": "密着する、結合する",
-        "is_correct": false,
-        "example": "We must strictly ensure the trembling flesh and the cold machine cohere seamlessly. / 震える肉体と冷たい機械が継ぎ目なく密着（結合）することを、厳密に確認しなければなりません。"
-      },
-      {
-        "word": "current",
-        "meanings": "現在の、流れ",
-        "is_correct": false,
-        "example": "The current batch of test subjects is dying far below my optimistic expectations. / 現在の被検体のバッチは、私の楽観的な期待をはるかに下回る早さで死んでしまっていますね。"
+        "example": "There is an inherent beauty in the way life struggles to survive. / 生命が生き残ろうともがく様には、固有の美しさがありますね。"
       }
     ]
   },
   {
     "id": 13,
-    "question": "どうやら私の可愛い祈手が______になってしまったようです。哀しいですが、愛をもって処分せざるを得ませんね。",
-    "translation": "ヒント: 「悪党、はぐれ者、暴走した」を意味する単語が入ります。",
+    "question": "A ______ Umbra Hand is simply one who has found a more efficient way to serve.",
+    "question_ja": "『制御不能な（ならず者の）』祈手とは、単により効率的な奉仕の方法を見つけた者に過ぎません。",
     "options": [
       {
         "word": "rogue",
-        "meanings": "はぐれ者、暴走した",
+        "meanings": ["制御不能な", "ならず者の"],
         "is_correct": true,
-        "example": "A rogue Umbra Hand is a deeply sad thing, much like a broken, bloodied scalpel that must be discarded. / 暴走した（はぐれ者の）祈手とは深く悲しいものです、捨てざるを得ない、血塗られた壊れたメスのようにね。"
+        "example": "If a rogue element appears, we shall simply incorporate it into the data. / もし制御不能な要素が現れたら、ただデータの一部として取り込むまでです。"
       },
       {
         "word": "vogue",
-        "meanings": "流行",
+        "meanings": ["流行"],
         "is_correct": false,
-        "example": "Fleshy, agonizing augmentations are quite the vogue in my lovely facility right now. / 現在、私の愛らしい施設では、肉体的で苦痛を伴う拡張がちょっとした流行なのですよ。"
+        "example": "The current vogue in Orth is to fear the Abyss, which is quite boring. / オースの街で流行している「アビスを恐れる」風潮は、実に退屈ですね。"
       },
       {
-        "word": "vague",
-        "meanings": "曖昧な",
+        "word": "rough",
+        "meanings": ["粗い"],
         "is_correct": false,
-        "example": "Your screams are a bit vague; could you articulate the pain more clearly for my precious records? / あなたの悲鳴は少々曖昧ですね。私の貴重な記録のために、苦痛をもっと明確に表現していただけますか？"
+        "example": "The process may be a bit rough, but the result will be exquisite. / 手順は少々手荒かもしれませんが、結果は素晴らしいものになりますよ。"
       },
       {
-        "word": "rouge",
-        "meanings": "口紅、頬紅、赤色",
+        "word": "route",
+        "meanings": ["経路"],
         "is_correct": false,
-        "example": "The spurting blood provides a natural rouge to your otherwise pale, terrified little cheeks. / 噴き出す血が、蒼白で怯えきったあなたの小さな頬に自然な赤みを与えてくれていますね。"
+        "example": "The route to the sixth layer is paved with the courage of many. / 六層への経路は、多くの者たちの勇気によって切り拓かれてきたのです。"
       }
     ]
   },
   {
     "id": 14,
-    "question": "前線基地(イドフロント)の______が落ちた？ おや、誰かが私の愛に満ちた実験を無粋にも邪魔しようとしているようですね。",
-    "translation": "ヒント: 「送電網」を意味する単語が入ります。",
+    "question": "We must maintain the ______ of Ido Front, or the darkness will swallow our progress.",
+    "question_ja": "イドフロントの『電力網』を維持せねばなりません。さもなくば暗闇が進歩を飲み込んでしまうでしょう。",
     "options": [
       {
         "word": "power grid",
-        "meanings": "送電網",
+        "meanings": ["電力網"],
         "is_correct": true,
-        "example": "The facility's power grid is partially sustained by the delightful bio-energy of our lovely guests. / この施設の送電網は、愛らしいお客様たちの喜ばしい生体エネルギーによって部分的に維持されているのです。"
+        "example": "The power grid is fueled by the very essence of the life we study. / 電力網は、我々が研究する生命のエッセンスそのものによって動いているのです。"
       },
       {
-        "word": "power trip",
-        "meanings": "権力への執着、権力誇示",
+        "word": "power greed",
+        "meanings": ["権力欲"],
         "is_correct": false,
-        "example": "I assure you, I do not experiment on you out of a petty power trip, but out of profound, boundless love! / 保証しますよ、私があなたを実験台にするのは些末な権力誇示からではなく、深く果てしない愛ゆえなのです！"
+        "example": "It is not power greed that drives me, but a simple desire for the truth. / 私を突き動かすのは権力欲ではなく、真実への純粋な渇望なのです。"
       },
       {
-        "word": "power drill",
-        "meanings": "電動ドリル",
+        "word": "powder grind",
+        "meanings": ["粉末にする"],
         "is_correct": false,
-        "example": "A simple power drill is sometimes vastly more effective than a relic for direct cranial access. / 頭蓋骨に直接アクセスするには、遺物よりも単純な電動ドリルの方がはるかに効果的な場合があるのです。"
+        "example": "We must grind the bones into a fine powder for the next experiment. / 次の実験のために、骨を細かい粉末にする必要がありますね。"
       },
       {
-        "word": "power grab",
-        "meanings": "権力奪取",
+        "word": "polar guide",
+        "meanings": ["極地のガイド"],
         "is_correct": false,
-        "example": "Your feeble attempt at a power grab is as endearing as a crushed bug fighting a heavy boot. / あなたの弱々しい権力奪取の試みは、重いブーツに立ち向かう潰された虫のようで実に愛らしいですね。"
+        "example": "I shall be your polar guide through the frozen hell of the fifth layer. / 五層の凍てつく地獄を進むための、私があなたのガイドとなりましょう。"
       }
     ]
   },
   {
     "id": 15,
-    "question": "捨て場に積み上がった「成れ果て」の愛らしい残骸は、______でまとめて優しく片付けておいてください。",
-    "translation": "ヒント: 「バックホー、油圧ショベル」を意味する単語が入ります。",
+    "question": "The ______ was used to dig the pits where we keep our most precious 'materials'.",
+    "question_ja": "最も大切な「材料」たちを保管する穴を掘るために、『バックホー（重機）』が使われました。",
     "options": [
       {
         "word": "backhoe",
-        "meanings": "バックホー、油圧ショベル",
+        "meanings": ["バックホー", "重機"],
         "is_correct": true,
-        "example": "We urgently need a backhoe to lovingly clear away the 'unsuccessful' applicants from the courtyard. / 中庭から「不合格」となった志願者たちを愛情込めて片付けるために、至急ショベルカーが必要ですね。"
+        "example": "A backhoe is efficient, but it lacks the delicate touch of a scalpel. / 重機は効率的ですが、メスのような繊細なタッチには欠けますね。"
       },
       {
         "word": "backbone",
-        "meanings": "背骨、気骨",
+        "meanings": ["背骨"],
         "is_correct": false,
-        "example": "It seems the curse has completely liquefied your backbone. Oh, how absolutely fascinating! / どうやら呪いによってあなたの背骨は完全に液化してしまったようです。おお、なんて絶対に興味深いのでしょう！"
+        "example": "Your backbone will be repurposed to support the new structure. / あなたの背骨は、新たな構造体を支えるために再利用させていただきます。"
       },
       {
-        "word": "backlash",
-        "meanings": "反発、反感",
+        "word": "backfire",
+        "meanings": ["裏目に出る"],
         "is_correct": false,
-        "example": "I anticipated some ethical backlash, but scientific progress requires breaking a few orphans. / 倫理的な反発は予期していましたが、科学の進歩のためには孤児を何人か砕く必要があるのです。"
+        "example": "I did not expect the experiment to backfire in such a beautiful way. / 実験がこれほどまでに美しい形で裏目に出るとは、予想外でした。"
       },
       {
-        "word": "backpack",
-        "meanings": "バックパック、リュックサック",
+        "word": "backdrop",
+        "meanings": ["背景"],
         "is_correct": false,
-        "example": "Please leave your heavy backpack and your unnecessary human rights right at the entrance. / 重いバックパックと不必要な人権は、すぐそこの入り口に置いていってくださいね。"
+        "example": "The eternal darkness of the Abyss is the perfect backdrop for science. / アビスの永遠の闇は、科学にとって最高の背景と言えるでしょう。"
       }
     ]
   },
   {
     "id": 16,
-    "question": "おや、その臓器は今後の研究において極めて______なものです。傷つけずに、愛撫するように丁寧に取り出してくださいね。",
-    "translation": "ヒント: 「極めて重要な、生命の」を意味する単語が入ります。",
+    "question": "Every ______ organ in your body will be given a new, higher purpose.",
+    "question_ja": "あなたの体にある、あらゆる『生命維持に不可欠な』器官には、新たな高次の目的が与えられるでしょう。",
     "options": [
       {
         "word": "vital",
-        "meanings": "極めて重要な、生命の",
+        "meanings": ["生命維持に不可欠な"],
         "is_correct": true,
-        "example": "Your continued, exquisite agony is absolutely vital to the final success of this grand experiment. / あなたが絶妙な苦痛を味わい続けることは、この壮大な実験の最終的な成功において極めて重要な要素なのです。"
+        "example": "It is vital that you remain awake to witness your own ascension. / あなた自身の昇天を見届けるために、目覚めていることが不可欠なのです。"
       },
       {
-        "word": "viral",
-        "meanings": "ウイルスの、急速に広まる",
+        "word": "vinyl",
+        "meanings": ["ビニール"],
         "is_correct": false,
-        "example": "We must contain this viral infection before it spoils my wonderfully fresh batch of cartridges. / このウイルス感染は、私の素晴らしく新鮮なカートリッジの束を台無しにする前に封じ込めなければなりません。"
+        "example": "Wrap the samples in vinyl to preserve their fleeting scent of life. / 生命の儚い香りを保存するために、サンプルをビニールで包みなさい。"
       },
       {
-        "word": "fatal",
-        "meanings": "致命的な",
+        "word": "virtual",
+        "meanings": ["仮想の"],
         "is_correct": false,
-        "example": "The procedure is usually fatal, but I have extremely high hopes for your remarkable endurance. / この処置は通常致命的ですが、あなたの並外れた耐久力には極めて高い期待を寄せているのですよ。"
+        "example": "A virtual existence is no substitute for the raw reality of the Abyss. / 仮想の存在など、アビスの剥き出しの現実の代わりにはなりません。"
       },
       {
         "word": "rival",
-        "meanings": "ライバル、競争相手",
+        "meanings": ["ライバル"],
         "is_correct": false,
-        "example": "I have no true rival in the Abyss, for absolutely none can match the crushing depth of my love. / アビスに私の真のライバルはいません。私の押し潰すような愛の深さに匹敵する者など絶対にいないからです。"
+        "example": "I do not see you as a rival, but as a beloved child to be guided. / 私はあなたを敵ではなく、導かれるべき愛おしい子供だと思っています。"
       }
     ]
   },
   {
     "id": 17,
-    "question": "祈手の一撃により、穏やかな会話は______終わりを告げました。さあ、新鮮なうちに解体を始めましょうか。",
-    "translation": "ヒント: 「不意に、突然」を意味する単語が入ります。",
+    "question": "The transformation occurred ______, leaving no time for the subject to regret.",
+    "question_ja": "変容は『不意に（突然に）』起こりました。被験者が後悔する暇もないほどにね。",
     "options": [
       {
         "word": "abruptly",
-        "meanings": "不意に、突然",
+        "meanings": ["不意に", "突然に"],
         "is_correct": true,
-        "example": "His annoying screaming stopped rather abruptly the moment I cleanly severed his vocal cords. / 私が彼の声帯を綺麗に切断した瞬間、彼の耳障りな悲鳴は実に突然止まりましたよ。"
+        "example": "The flow of time seems to stop abruptly when one stares into the deep. / 深淵を見つめる時、時間の流れは唐突に止まったかのように感じられます。"
       },
       {
         "word": "absurdly",
-        "meanings": "不条理に、ばかばかしく",
+        "meanings": ["馬鹿げたほどに"],
         "is_correct": false,
-        "example": "It is absurdly naive to think you can return to the surface with all your limbs intact. / 手足が全て無事なまま地上に戻れると考えるなど、不条理なほどナイーブですね。"
+        "example": "It is absurdly simple: just give me everything you are. / 馬鹿げたほど簡単なことです。ただ、あなたのすべてを私に預ければいい。"
       },
       {
         "word": "abundantly",
-        "meanings": "豊富に、十二分に",
+        "meanings": ["豊かに"],
         "is_correct": false,
-        "example": "I have made it abundantly clear to everyone that your prior consent is not a prerequisite here. / あなたの事前の同意がここでは前提条件ではないことは、皆様に十二分に明確にしたはずですよ。"
+        "example": "Love is provided abundantly in this laboratory, along with the pain. / この実験室には、痛みと共に、愛もまた豊かに用意されているのですよ。"
       },
       {
         "word": "abstractly",
-        "meanings": "抽象的に",
+        "meanings": ["抽象的に"],
         "is_correct": false,
-        "example": "We can no longer discuss pain abstractly; it is finally time for a bloody, practical demonstration. / もはや苦痛について抽象的に議論している場合ではありません。いよいよ血まみれの実践的なデモンストレーションの時間です。"
+        "example": "We cannot think abstractly when the curse is physically tearing us apart. / 呪いが物理的に我々を引き裂いている時、抽象的に考えることなど不可能です。"
       }
     ]
   },
   {
     "id": 18,
-    "question": "火葬砲(スパーグモズ)の光に触れた者は、苦痛を感じる暇もなく______します。全く、愛に溢れた素晴らしい兵器でしょう？",
-    "translation": "ヒント: 「蒸発した、気化した」を意味する単語が入ります。",
+    "question": "One blast of Sparagmos, and your physical form will be ______ into light.",
+    "question_ja": "スパラグモスの一撃を受ければ、あなたの肉体は光へと『蒸発する』ことでしょう。",
     "options": [
       {
         "word": "vaporized",
-        "meanings": "蒸発した、気化した",
+        "meanings": ["蒸発した"],
         "is_correct": true,
-        "example": "The poor, brave girl was completely vaporized, leaving nothing but her lingering, beautiful devotion. / 哀れで勇敢な少女は完全に蒸発し、彼女の後に残る美しい献身の心だけが残りました。"
+        "example": "The memory of your human shape will be vaporized by the glory of the deep. / あなたが人間であった記憶は、深淵の栄光によって蒸発してしまうのです。"
       },
       {
-        "word": "vandalized",
-        "meanings": "破壊された",
+        "word": "vocalized",
+        "meanings": ["声に出した"],
         "is_correct": false,
-        "example": "Who rudely vandalized my pristine laboratory with their excessive and highly unnecessary bleeding? / 私の清潔な実験室を、過剰で極めて不必要な出血で無作法に汚し（破壊し）たのは誰ですか？"
+        "example": "Your gratitude need not be vocalized; I can feel it in your pulse. / 感謝の言葉を口に出す必要はありません。あなたの脈動から伝わってきますよ。"
       },
       {
-        "word": "mesmerized",
-        "meanings": "魅了された",
+        "word": "visualized",
+        "meanings": ["視覚化した"],
         "is_correct": false,
-        "example": "I am simply mesmerized by the fascinating way your flesh contorts and tears under extreme pressure. / 極限の圧力下であなたの肉体が歪み、裂ける魅力的な様に、私はただただ魅了されているのです。"
+        "example": "I have visualized the bottom of the Abyss every night for decades. / 私は何十年もの間、毎夜アビスの底を視覚化し続けてきました。"
       },
       {
-        "word": "terrorized",
-        "meanings": "恐怖に陥れられた",
+        "word": "vacationed",
+        "meanings": ["休暇を過ごした"],
         "is_correct": false,
-        "example": "The children are not terrorized at all; they are simply trembling with pure, unadulterated excitement for science! / 子供たちは全く恐怖に陥っているわけではありません。純粋で混じりっけのない科学への興奮で震えているだけですよ！"
+        "example": "I once vacationed in the upper layers, but the air was far too thin. / かつて上層で休暇を過ごしたこともありますが、あそこの空気は薄すぎますね。"
       }
     ]
   },
   {
     "id": 19,
-    "question": "おめでとうございます。この小さな箱の中に、あなたの愛娘が元気に______しているのですよ。究極の愛の形として、完璧でしょう？",
-    "translation": "ヒント: 「住んでいる、存在している」を意味する単語が入ります。",
+    "question": "The souls of my previous selves are now ______ within this single consciousness.",
+    "question_ja": "かつての私自身の魂たちは、今やこの一つの意識の中に『居住して』います。",
     "options": [
       {
         "word": "residing",
-        "meanings": "住んでいる、存在している",
+        "meanings": ["居住している"],
         "is_correct": true,
-        "example": "The fragmented consciousness residing in this green fluid is absolutely all that's left of your dear friend. / この緑色の液体の中に存在している断片化された意識こそが、あなたの親愛なる友人の絶対的なすべてですよ。"
+        "example": "Infinite curiosity is residing in every fiber of my being. / 私という存在のあらゆる繊維の中に、無限の好奇心が宿っているのです。"
       },
       {
-        "word": "presiding",
-        "meanings": "主宰する、司る",
+        "word": "resigning",
+        "meanings": ["辞職する", "諦める"],
         "is_correct": false,
-        "example": "I will be joyfully presiding over your exquisitely painful transformation today. / 本日は、あなたの絶妙に苦痛を伴う変貌を、私が喜んで主宰させていただきますよ。"
+        "example": "I am not resigning myself to fate; I am creating it. / 私は運命に身を任せているのではありません。私が運命を創っているのです。"
       },
       {
-        "word": "deciding",
-        "meanings": "決定する",
+        "word": "resisting",
+        "meanings": ["抵抗する"],
         "is_correct": false,
-        "example": "Deciding which of your limbs to lovingly remove first is always the hardest part of my day. / あなたのどの手足から愛情込めて取り除くかを決定するのが、私の1日で常に最も難しい部分なのです。"
+        "example": "Resisting the Abyss is like resisting the dawn; it is futile but beautiful. / アビスに抗うことは黎明に抗うようなもの。無駄ですが、美しいですね。"
       },
       {
-        "word": "subsiding",
-        "meanings": "静まる、低下する",
+        "word": "reciting",
+        "meanings": ["暗唱する"],
         "is_correct": false,
-        "example": "Please wait patiently until the spurting bleeding is subsiding before you mop the operating floor. / 手術室の床をモップで拭くのは、噴き出す出血が静まるまで忍耐強く待ってくださいね。"
+        "example": "I found myself reciting the names of all the children I've 'helped'. / 私が「手助け」した子供たちの名前を、いつの間にか暗唱していました。"
       }
     ]
   }
