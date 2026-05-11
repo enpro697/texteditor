@@ -1,0 +1,653 @@
+
+Gemini との会話
+htmlで読み込めるJSONを作成して作成したアプリで読み込ませたい
+
+四択問題の内容
+
+例文は覚えやすいようなパンチラインが効いたものになっている
+
+単語集の46の部分のみ(量が多すぎるので19くらいで区切ってある)対象としたい
+
+必ず19単語分の問題があるとよい
+
+ 
+
+誤答の英単語について、間違いを誘発しやすい意味が似通ったもの、発音、見た目が紛らわしいものなどにしたい
+
+
+
+正解の単語のアコーディオンで隠されている例文は設問の例文とはまた異なるものにしたい
+
+
+
+jsonformat - コピー.txtは最初の19個目でコンテキストはなんでもありで自由に作成してもらえるととてもたすかる
+
+
+
+他のユーザが使う可能性があるので自分の過去履歴から個人的な嗜好に合わせたものにする必要はない
+
+  
+
+正解の例文だけでなく誤答の例文も和訳つきにしてね
+
+正誤に関係なく全ての例文について下記の内容に即するようにする
+
+
+
+ナラティブの(大蛇丸の(ユーモア)とするとする)とする
+
+ご要望通り、単語集「46」の19単語を対象にした、大蛇丸のナラティブが効いたJSON形式の単語クイズデータを作成しました！
+ご用意いただいたHTMLアプリのエディタ画面で全削除した後に、生成したJSONの中身を貼り付けて「取り込み」を行ってご活用ください。
+
+Your JSON file is ready
+JSON のアイコン
+ orochimaru...vocab_quiz 
+JSON
+
+こだわりポイント:
+
+大蛇丸のユーモアと世界観: 問題文だけでなく、正解・不正解問わずすべての選択肢の例文に「不老不死」「人体実験」「サスケ君」「木ノ葉崩し」など大蛇丸らしいエッセンスと口調（～だわ、～かしら、ククク…）を盛り込みました。
+
+誤答の工夫: 綴りが似ている単語（例：sheer に対して shear, sneer）、発音が似ている単語、品詞や接頭辞が紛らわしい単語（例：impregnable に対して impregnated, impracticable）を配置し、学習効果を高めています。
+
+アコーディオンの例文: 問題文（空欄補充）とは別の、パンチラインの効いた新しい例文を用意しています。
+
+アプリの「読み込みデータ編集」画面のテキストエリアにこのJSONデータをコピー＆ペーストすれば、すぐに19問の「大蛇丸の語彙力強化テスト」をお楽しみいただけます！
+
+
+
+
+
+Gemini は AI であり、間違えることがあります。
+
+[
+  {
+    "id": 1,
+    "question": "If my little test subjects keep failing, I suppose I must _________... kukuku.",
+    "question_ja": "もし可愛いモルモットたちが失敗し続けるなら、彼らの_________わね…ククク。",
+    "options": [
+      {
+        "word": "scatter the role across the wind",
+        "meanings": "役割を風の彼方に散らす",
+        "is_correct": true,
+        "example": "\"I scattered his role across the wind after he outlived his usefulness. / 彼の利用価値がなくなった後、その役割を風の彼方に散らしてやったのよ。\""
+      },
+      {
+        "word": "shatter the soul against the wall",
+        "meanings": "魂を壁に打ち砕く",
+        "is_correct": false,
+        "example": "\"With my genjutsu, I will shatter your soul against the wall. / 私の幻術で、アナタの魂を壁に打ち砕いてあげるわ。\""
+      },
+      {
+        "word": "gather the toll from the blind",
+        "meanings": "盲人から通行料を取り立てる",
+        "is_correct": false,
+        "example": "\"Even I wouldn't bother to gather the toll from the blind. / さすがの私でも、目の見えない子から通行料を取り立てるような真似はしないわ。\""
+      },
+      {
+        "word": "flatter the mole in the ground",
+        "meanings": "土の中のモグラをおだてる",
+        "is_correct": false,
+        "example": "\"Why would I flatter the mole in the ground when I command the serpents? / 蛇を従えるこの私が、どうして土の中のモグラをおだてる必要があるのかしら？\""
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "The barrier protecting my new hidden laboratory is _________, you know. Not even Konoha's ANBU could breach it.",
+    "question_ja": "私の新しい隠し研究施設を守る結界は_________なのよ。木ノ葉の暗部でさえ突破できないわ。",
+    "options": [
+      {
+        "word": "impregnable",
+        "meanings": "難攻不落の、揺るぎない",
+        "is_correct": true,
+        "example": "\"My resolve to learn every jutsu is as impregnable as my cursed seals. / 全ての術を手に入れるという私の決意は、呪印と同じくらい揺るぎないのよ。\""
+      },
+      {
+        "word": "impregnated",
+        "meanings": "染み込ませた、妊娠した",
+        "is_correct": false,
+        "example": "\"I impregnated this scroll with highly toxic venom. / この巻物には猛毒をたっぷりと染み込ませておいたわ。\""
+      },
+      {
+        "word": "impracticable",
+        "meanings": "実行不可能な",
+        "is_correct": false,
+        "example": "\"Your naive plan to save Sasuke is utterly impracticable. / サスケ君を救うというアナタの甘い計画は、全くもって実行不可能よ。\""
+      },
+      {
+        "word": "impeccable",
+        "meanings": "非の打ち所がない",
+        "is_correct": false,
+        "example": "\"Kimimaro's bone manipulation was truly impeccable... until his illness. / 君麻呂の屍骨脈は本当に非の打ち所がなかったわ…病に倒れるまではね。\""
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "Those beautiful white bones of yours... they shine like polished _________. May I add them to my collection?",
+    "question_ja": "アナタのその美しい白い骨…磨き上げられた_________のように輝いているわ。私のコレクションに加えてもいいかしら？",
+    "options": [
+      {
+        "word": "ivory",
+        "meanings": "象牙、象牙色の",
+        "is_correct": true,
+        "example": "\"Her skin was as pale as ivory, the perfect canvas for a cursed seal. / 彼女の肌は象牙のように白く、呪印を刻むには完璧なキャンバスだったわ。\""
+      },
+      {
+        "word": "irony",
+        "meanings": "皮肉",
+        "is_correct": false,
+        "example": "\"Oh, the irony of the Third Hokage dying by the jutsu he taught me. / 三代目火影が、私に教えた術で死ぬなんて…なんという皮肉かしら。\""
+      },
+      {
+        "word": "ivy",
+        "meanings": "ツタ",
+        "is_correct": false,
+        "example": "\"Poisonous ivy is creeping up the walls of my abandoned hideout. / 私の放棄されたアジトの壁には、毒のツタが這い上がっているわ。\""
+      },
+      {
+        "word": "ovary",
+        "meanings": "卵巣",
+        "is_correct": false,
+        "example": "\"Extracting a specimen's ovary is just step one of my genetic modifications. / 標本の卵巣を摘出するのは、私の遺伝子操作のほんの第一段階に過ぎないのよ。\""
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "Awakening the Sharingan at such a young age... that is a demonstration of _________ talent.",
+    "question_ja": "あの若さで写輪眼を開眼するなんて…あれは_________天才の証明ね。",
+    "options": [
+      {
+        "word": "sheer",
+        "meanings": "全くの、純然たる",
+        "is_correct": true,
+        "example": "\"The sheer destructive power of the Edo Tensei is intoxicating. / 穢土転生の純然たる破壊力…本当に酔いしれるわね。\""
+      },
+      {
+        "word": "shear",
+        "meanings": "刈り取る、切断する",
+        "is_correct": false,
+        "example": "\"I will shear off your limbs if you try to escape my laboratory. / 研究室から逃げ出そうとするなら、アナタの手足を切り落としてあげるわ。\""
+      },
+      {
+        "word": "sneer",
+        "meanings": "冷笑する",
+        "is_correct": false,
+        "example": "\"You dare sneer at my immortal body? / この不老不死の肉体を冷笑する気かしら？\""
+      },
+      {
+        "word": "steer",
+        "meanings": "操縦する、導く",
+        "is_correct": false,
+        "example": "\"I will steer Sasuke away from Konoha's pathetic ideology. / サスケ君を木ノ葉のくだらない思想から切り離して導いてあげるのよ。\""
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Your _________ will to fight against a Sannin... it only makes me want your body more.",
+    "question_ja": "伝説の三忍に立ち向かうアナタのその_________意志…ますますアナタの体が欲しくなっちゃうわ。",
+    "options": [
+      {
+        "word": "unyielding",
+        "meanings": "不屈の、断固とした",
+        "is_correct": true,
+        "example": "\"My unyielding desire for all worldly knowledge will never fade. / この世の全ての知識を求める私の不屈の欲望は、決して色褪せないわ。\""
+      },
+      {
+        "word": "unshielding",
+        "meanings": "盾を持たない、無防備な",
+        "is_correct": false,
+        "example": "\"An unshielding approach to my venom will result in instant death. / 私の毒に対して無防備なまま近づけば、即死するわよ。\""
+      },
+      {
+        "word": "unwieldy",
+        "meanings": "扱いにくい",
+        "is_correct": false,
+        "example": "\"That giant sword looks terribly unwieldy for such a small ninja. / その巨大な剣は、そんな小さな忍者にはひどく扱いにくそうね。\""
+      },
+      {
+        "word": "unwilling",
+        "meanings": "気が進まない",
+        "is_correct": false,
+        "example": "\"Even an unwilling subject is useful on my dissection table. / たとえ気が進まない被検体でも、私の解剖台の上では役に立つのよ。\""
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "I don't just collect jutsu; I am the _________ of all forbidden arts.",
+    "question_ja": "私はただ術を集めるだけじゃないわ。あらゆる禁術の_________なのよ。",
+    "options": [
+      {
+        "word": "curator",
+        "meanings": "キュレーター、管理者",
+        "is_correct": true,
+        "example": "\"As a curator of rare bloodlines, I must acquire the Uchiha clan. / 希少な血継限界の管理者として、うちは一族はどうしても手に入れないとね。\""
+      },
+      {
+        "word": "creator",
+        "meanings": "創造者",
+        "is_correct": false,
+        "example": "\"I am the creator of the cursed seal, my beautiful mark of ownership. / 私は呪印の創造者よ。私の所有物であることを示す、美しい印ね。\""
+      },
+      {
+        "word": "curative",
+        "meanings": "治療の、治癒力のある",
+        "is_correct": false,
+        "example": "\"This serum has no curative properties; it solely induces pain. / この血清に治療効果なんてないわ。ただ苦痛を引き起こすだけよ。\""
+      },
+      {
+        "word": "senator",
+        "meanings": "上院議員",
+        "is_correct": false,
+        "example": "\"A foolish senator means nothing before the raw power of a true shinobi. / 愚かな政治家なんて、真の忍の圧倒的な力の前では無意味ね。\""
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "To _________ reject my generous offer of power... you really are a foolish child.",
+    "question_ja": "力を与えてあげるという私の親切な申し出を_________拒絶するなんて…アナタは本当に愚かな子ね。",
+    "options": [
+      {
+        "word": "outright",
+        "meanings": "完全に、公然と、率直に",
+        "is_correct": true,
+        "example": "\"I outright laughed when the Leaf Village thought they could capture me. / 木ノ葉の連中が私を捕まえられると思っているのを見て、完全に笑っちゃったわ。\""
+      },
+      {
+        "word": "outrage",
+        "meanings": "激怒、暴行",
+        "is_correct": false,
+        "example": "\"His outrage was quite amusing when I resurrected his fallen sensei. / 彼の死んだ恩師を穢土転生で呼び覚ました時の、彼の激怒ぶりはなかなか滑稽だったわ。\""
+      },
+      {
+        "word": "outcast",
+        "meanings": "追放された者、のけ者",
+        "is_correct": false,
+        "example": "\"An outcast like you belongs in my Sound Village, don't you think? / アナタのようなのけ者は、私の音隠れの里がふさわしいと思わない？\""
+      },
+      {
+        "word": "outgrow",
+        "meanings": "大きくなりすぎる、脱却する",
+        "is_correct": false,
+        "example": "\"I will outgrow this frail vessel and find a much stronger one. / この脆い器からは早々に脱却して、もっと強い体を見つけるわ。\""
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "_________ you scream or cry, the cursed seal will fuse with your chakra.",
+    "question_ja": "アナタが叫ぼうが泣こうが_________、呪印はアナタのチャクラと融合するのよ。",
+    "options": [
+      {
+        "word": "It matters not if",
+        "meanings": "〜かどうかは問題ではない",
+        "is_correct": true,
+        "example": "\"It matters not if you try to hide; my snakes will sniff out your scent. / アナタが隠れようが問題ではないわ。私の蛇たちが匂いを嗅ぎつけるもの。\""
+      },
+      {
+        "word": "It mutters not if",
+        "meanings": "〜が呟かなくても（意味不明）",
+        "is_correct": false,
+        "example": "\"It mutters not if the test subject is conscious. / 被検体が意識を持って呟かなくてもね。（意味不明だけど不気味ね）\""
+      },
+      {
+        "word": "It shatters not if",
+        "meanings": "〜が粉砕しなくても（意味不明）",
+        "is_correct": false,
+        "example": "\"It shatters not if your bones are hard, Kimimaro. / 君麻呂、アナタの骨が砕けなくてもね…（ふふっ）\""
+      },
+      {
+        "word": "It batters not if",
+        "meanings": "〜が連打しなくても（意味不明）",
+        "is_correct": false,
+        "example": "\"It batters not if the Sound Four lose. / 音の四人衆が打ちのめされなくても…（どうでもいいわ）\""
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "question": "I always install a fail-safe in my experiments, just in case one _________.",
+    "question_ja": "万が一実験体が_________した時のために、私はいつもフェイルセーフを仕込んでおくのよ。",
+    "options": [
+      {
+        "word": "goes rogue",
+        "meanings": "暴走する、反抗する、群れを離れる",
+        "is_correct": true,
+        "example": "\"If Kabuto ever goes rogue, I have ways to ensure his silence. / もしカブトが暴走するようなことがあれば、彼を黙らせる方法は用意してあるわ。\""
+      },
+      {
+        "word": "goes vogue",
+        "meanings": "流行に乗る",
+        "is_correct": false,
+        "example": "\"Wearing giant purple ropes goes vogue in my village. / 巨大な紫のしめ縄を巻くのは、私の里では流行なのよ。\""
+      },
+      {
+        "word": "goes vague",
+        "meanings": "曖昧になる",
+        "is_correct": false,
+        "example": "\"His memory goes vague after I tamper with his brain. / 私が脳をいじった後、彼の記憶は曖昧になるわ。\""
+      },
+      {
+        "word": "goes rouge",
+        "meanings": "赤面する",
+        "is_correct": false,
+        "example": "\"Even a killer goes rouge when I whisper in their ear. / どんな殺し屋でも、私が耳元で囁けば赤面するわよ。\""
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "question": "That Uchiha boy... his heart is entirely consumed by hatred. He is the _________ of an avenger.",
+    "question_ja": "あのうちはの少年…心は完全に憎しみに染まっているわね。彼は復讐者の_________よ。",
+    "options": [
+      {
+        "word": "epitome",
+        "meanings": "典型、権化",
+        "is_correct": true,
+        "example": "\"My jutsu collection is the epitome of shinobi evolution. / 私の術のコレクションは、忍の進化の権化なのよ。\""
+      },
+      {
+        "word": "episode",
+        "meanings": "エピソード、出来事",
+        "is_correct": false,
+        "example": "\"That little episode in the Forest of Death was very entertaining. / 死の森でのちょっとした出来事は、とても楽しませてもらったわ。\""
+      },
+      {
+        "word": "epicenter",
+        "meanings": "震央、中心点",
+        "is_correct": false,
+        "example": "\"My laboratory is the epicenter of all illegal bio-research. / 私の研究室は、あらゆる違法な生体研究の中心点よ。\""
+      },
+      {
+        "word": "epitaph",
+        "meanings": "墓碑銘",
+        "is_correct": false,
+        "example": "\"I don't need an epitaph, because I will never truly die. / 墓碑銘なんていらないわ。だって私は絶対に死なないのだから。\""
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "question": "My snakes have detected intruders breaching the _________ of the northern hideout.",
+    "question_ja": "北のアジトの_________を突破した侵入者を、私の蛇たちが感知したわ。",
+    "options": [
+      {
+        "word": "perimeter",
+        "meanings": "周辺、境界",
+        "is_correct": true,
+        "example": "\"Secure the perimeter before I begin the soul transfer ritual. / 魂の器の移動の儀式を始める前に、周辺の警戒を怠らないでちょうだい。\""
+      },
+      {
+        "word": "parameter",
+        "meanings": "媒介変数、設定値",
+        "is_correct": false,
+        "example": "\"Adjusting the chakra parameter is crucial for Edo Tensei. / 穢土転生には、チャクラの設定値を調整することが極めて重要なの。\""
+      },
+      {
+        "word": "barometer",
+        "meanings": "気圧計、指標",
+        "is_correct": false,
+        "example": "\"Fear is a good barometer of a ninja's true strength. / 恐怖は、忍の真の強さを測る良い指標になるわね。\""
+      },
+      {
+        "word": "centimeter",
+        "meanings": "センチメートル",
+        "is_correct": false,
+        "example": "\"A mere centimeter to the left, and that kunai would have pierced my heart. / あと1センチ左だったら、そのクナイは私の心臓を貫いていたわね。\""
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "question": "Nothing in this world is _________. Even life itself can be prolonged and transferred.",
+    "question_ja": "この世に_________なものなんてないわ。命ですら延ばしたり、移し替えたりできるのだから。",
+    "options": [
+      {
+        "word": "immutable",
+        "meanings": "不変の",
+        "is_correct": true,
+        "example": "\"The only immutable truth is that power rules all. / 唯一の不変の真理は、力が全てを支配するということよ。\""
+      },
+      {
+        "word": "imputable",
+        "meanings": "負わせられる、帰せられる",
+        "is_correct": false,
+        "example": "\"The blame for Konoha's destruction is imputable to their own weakness. / 木ノ葉の崩壊の責任は、彼ら自身の弱さに帰せられるべきね。\""
+      },
+      {
+        "word": "impenetrable",
+        "meanings": "貫通できない、不可解な",
+        "is_correct": false,
+        "example": "\"The Third Hokage's resolve was irritatingly impenetrable. / 三代目火影の決意は、苛立つほど不可解だったわ。\""
+      },
+      {
+        "word": "mutable",
+        "meanings": "変わりやすい",
+        "is_correct": false,
+        "example": "\"My physical form is completely mutable; I can shed it like snake skin. / 私の肉体は完全に変わりやすいの。蛇の抜け殻のように脱ぎ捨てられるわ。\""
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "question": "My perfected Edo Tensei is flawless. _________ the reanimated soul's free will.",
+    "question_ja": "私の完璧な穢土転生に死角はないわ。蘇生した魂の自由意志の_________のよ。",
+    "options": [
+      {
+        "word": "It leaves no room for",
+        "meanings": "〜の余地を残さない",
+        "is_correct": true,
+        "example": "\"It leaves no room for error when carving a cursed seal. / 呪印を刻む時、少しの失敗の余地も残してはいけないのよ。\""
+      },
+      {
+        "word": "It reaps no room for",
+        "meanings": "〜のための部屋を刈り取らない",
+        "is_correct": false,
+        "example": "\"It reaps no room for the weak souls. / 弱い魂のための部屋なんて刈り取らないわ。（意味不明）\""
+      },
+      {
+        "word": "It weaves no doom for",
+        "meanings": "〜のための破滅を織りなさない",
+        "is_correct": false,
+        "example": "\"It weaves no doom for my precious Sasuke. / 私の可愛いサスケ君のための破滅なんて織りなさないわよ。\""
+      },
+      {
+        "word": "It heaves no tomb for",
+        "meanings": "〜のための墓を投げ上げない",
+        "is_correct": false,
+        "example": "\"It heaves no tomb for those who defy me. / 私に逆らう者のための墓なんて投げ上げないわ。\""
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "question": "This new jutsu is _________ complete. All I need now are a few dozen live test subjects.",
+    "question_ja": "この新術は_________は完成しているの。あとは生きた実験体が数十人必要なだけよ。",
+    "options": [
+      {
+        "word": "conceptually",
+        "meanings": "概念的に",
+        "is_correct": true,
+        "example": "\"Conceptually, achieving immortality is simple. The execution is the fun part. / 概念的に言えば、不老不死の達成なんて簡単なこと。実行に移す過程が楽しいんじゃない。\""
+      },
+      {
+        "word": "contextually",
+        "meanings": "文脈的に",
+        "is_correct": false,
+        "example": "\"Contextually, my betrayal was just an evolution of my research. / 文脈的に言えば、私の裏切りは単なる研究の進化よ。\""
+      },
+      {
+        "word": "perceptually",
+        "meanings": "知覚的に",
+        "is_correct": false,
+        "example": "\"Perceptually, I appear as a monster, but I am merely a scholar. / 知覚的には私は怪物に見えるでしょうけど、単なる学者なのよ。\""
+      },
+      {
+        "word": "consensually",
+        "meanings": "合意の上で",
+        "is_correct": false,
+        "example": "\"None of my experiments are done consensually, where's the fun in that? / 私の実験で合意の上で行われたものなんてないわ。それじゃつまらないじゃない？\""
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "question": "If you are exposed to this unique venom, your flesh _________ at a cellular level.",
+    "question_ja": "この特製の毒を浴びれば、肉体が細胞レベルで_________わよ。",
+    "options": [
+      {
+        "word": "disintegrates",
+        "meanings": "崩壊する、分解する",
+        "is_correct": true,
+        "example": "\"Watch closely as his body disintegrates into a pile of ashes. / 彼の体が崩壊して灰の山になるのを、よーく見てなさい。\""
+      },
+      {
+        "word": "integrates",
+        "meanings": "統合する",
+        "is_correct": false,
+        "example": "\"My body integrates the genetic material of my captured vessels. / 私の肉体は、捕獲した器の遺伝物質を統合するのよ。\""
+      },
+      {
+        "word": "discriminates",
+        "meanings": "差別する、区別する",
+        "is_correct": false,
+        "example": "\"My poison never discriminates; it kills Kage and genin alike. / 私の毒は決して差別しないわ。影も下忍も平等に殺すのよ。\""
+      },
+      {
+        "word": "disorients",
+        "meanings": "方向感覚を失わせる",
+        "is_correct": false,
+        "example": "\"My genjutsu disorients the victim before the snakes strike. / 蛇が噛みつく前に、私の幻術が獲物の方向感覚を失わせるわ。\""
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "question": "Your _________ of chakra nature transformation is pitifully weak for a Jonin.",
+    "question_ja": "上忍のくせに、チャクラの性質変化の_________がひどく甘いわね。",
+    "options": [
+      {
+        "word": "conceptual grasp",
+        "meanings": "概念の把握・理解",
+        "is_correct": true,
+        "example": "\"Sasuke's conceptual grasp of ninjutsu is far superior to his brother's at that age. / 忍術の概念の把握において、サスケ君はあの年の兄をはるかに凌駕しているわ。\""
+      },
+      {
+        "word": "perceptual gasp",
+        "meanings": "知覚的喘ぎ（意味不明）",
+        "is_correct": false,
+        "example": "\"I enjoy listening to their perceptual gasp right before they die. / 彼らが死ぬ直前に漏らす喘ぎ声を聞くのが好きなのよ。\""
+      },
+      {
+        "word": "contextual clasp",
+        "meanings": "文脈的な留め金",
+        "is_correct": false,
+        "example": "\"Undo the contextual clasp on this scroll to unleash the curse. / この巻物の封印を解いて、呪いを解き放ち鼻さい。\""
+      },
+      {
+        "word": "consensual trap",
+        "meanings": "合意の罠",
+        "is_correct": false,
+        "example": "\"Luring them with power isn't a trap, it's a consensual trap! Kukuku. / 力で誘惑するのは罠じゃないわ、合意の罠よ！ククク。\""
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "question": "A new vessel must be able to _________ contain my immense soul, otherwise it will tear them apart.",
+    "question_ja": "新しい器は、私の強大な魂を_________収めることができなければならないわ。さもないと体が引き裂かれてしまうもの。",
+    "options": [
+      {
+        "word": "adequately",
+        "meanings": "適切に、十分に",
+        "is_correct": true,
+        "example": "\"Kabuto adequately manages the day-to-day torments of the prisoners. / カブトは囚人たちの毎日の拷問を適切に管理してくれているわ。\""
+      },
+      {
+        "word": "inadequately",
+        "meanings": "不十分に",
+        "is_correct": false,
+        "example": "\"An inadequately prepared body will rot within days of my possession. / 不十分にしか準備されていない体は、私が憑依して数日で腐ってしまうのよ。\""
+      },
+      {
+        "word": "articulately",
+        "meanings": "はっきりと、理路整然と",
+        "is_correct": false,
+        "example": "\"He screamed quite articulately while I removed his organs. / 内臓を摘出している間、彼はかなりはっきりと悲鳴を上げていたわ。\""
+      },
+      {
+        "word": "accurately",
+        "meanings": "正確に",
+        "is_correct": false,
+        "example": "\"Aim your kunai accurately, or I might get bored and kill you. / クナイは正確に狙いなさい。さもないと飽きて殺しちゃうわよ。\""
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "question": "People call my obsession with corpses a _________ hobby, but it is essential for the pursuit of ultimate truth.",
+    "question_ja": "死体集めを_________な趣味だと人は言うけれど、究極の真理の探求には不可欠なことなのよ。",
+    "options": [
+      {
+        "word": "morbid",
+        "meanings": "病的な、恐ろしい",
+        "is_correct": true,
+        "example": "\"My morbid curiosity led me to dissect my own clan members. / 私の病的な好奇心が、一族の人間を解剖するに至らせたのよ。\""
+      },
+      {
+        "word": "mortal",
+        "meanings": "死すべき、致命的な",
+        "is_correct": false,
+        "example": "\"To remain a mere mortal is the true tragedy of human existence. / 単なる死すべき運命のままでいることこそ、人間の真の悲劇ね。\""
+      },
+      {
+        "word": "mordant",
+        "meanings": "辛辣な、皮肉な",
+        "is_correct": false,
+        "example": "\"His mordant remarks annoyed me, so I removed his tongue. / 彼の辛辣な発言が鬱陶しかったから、舌を抜いてやったわ。\""
+      },
+      {
+        "word": "turbid",
+        "meanings": "濁った",
+        "is_correct": false,
+        "example": "\"The turbid green fluid in this tank preserves the organs beautifully. / このタンクの中の濁った緑色の液体は、臓器を美しく保存してくれるの。\""
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "question": "My grand battle with the Third Hokage _________ in a rather unfortunate tragedy for both of us.",
+    "question_ja": "三代目火影との私の壮絶な戦いは、お互いにとって少し不幸な悲劇として_________わね。",
+    "options": [
+      {
+        "word": "concluded",
+        "meanings": "結論づけた、終結した",
+        "is_correct": true,
+        "example": "\"I concluded that human life is too fragile, so I abandoned it. / 人の命はあまりにも脆いと結論づけたから、私は人間をやめたのよ。\""
+      },
+      {
+        "word": "included",
+        "meanings": "含まれた",
+        "is_correct": false,
+        "example": "\"My price for this jutsu included your eternal servitude. / この術の代償には、アナタの永遠の服従も含まれていたのよ。\""
+      },
+      {
+        "word": "colluded",
+        "meanings": "共謀した",
+        "is_correct": false,
+        "example": "\"I colluded with the Sand Village to orchestrate the Leaf's downfall. / 私は砂隠れの里と共謀して、木ノ葉崩しを画策したのよ。\""
+      },
+      {
+        "word": "concussed",
+        "meanings": "脳震盪を起こした",
+        "is_correct": false,
+        "example": "\"I dropped the test subject, and now he is severely concussed. / 実験体を落としちゃって、彼ひどい脳震盪を起こしているわ。\""
+      }
+    ]
+  }
+]
