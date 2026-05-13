@@ -2700,155 +2700,110 @@ New way (Right - Cloud WAN): One giant alien mothership hovering over the Earth.
 
 (竜胆) 怜空さんの病的で陰惨な執着はさておき、論理は妥当だ。我々は、なぜGWLBをL7デバイスとして扱えないのか、なぜHTTPヘッダーを付与しないのか、なぜインバウンドルーティングではアウトバウンドの問題を解決できないのか、そしてエンドポイントアーキテクチャがいかにして安全にトラフィックを検査するのかを確立した。これを理解できぬというのであれば、クラウドインフラストラクチャには全くもって不適格と言わざるを得ない。今日の講義はこれで終わりだ。
 @025
-## **The Lecture of Eternal Frost and Crimson Insight: AWS Architecture Deep Dive**
+(竜胆) We shall commence the dissection of this architectural conundrum. Our objective today is to construct an impenetrable fortress for an EdTech platform, distributing educational videos and materials.
+(竜胆) これより、このアーキテクチャの難題の解剖を開始する。本日の我々の目的は、教育用動画や教材を配信するEdTechプラットフォームのための、難攻不落の要塞を構築することだ。
 
----
+(竜胆) The primary directive is simple: we must employ token authentication via query strings to verify user access, and subsequently inject a custom header before routing the traffic to the Application Load Balancer. Do you comprehend the premise, Io?
+(竜胆) 最優先事項は単純明快だ。クエリストリング経由のトークン認証を用いてユーザーのアクセス権を検証し、その後、Application Load Balancerへとトラフィックをルーティングする前にカスタムヘッダーを注入せねばならん。前提は理解したか、イオち？
 
-### **Prologue: The Shadow over the Cloud**
+(惟緒) Ugh... my brain is already buffering at 144p. "Token authentication"? "Custom headers"? Sounds like we're trying to sneak into an underground VIP club using a fake ID written on a napkin.
+(惟緒) うぇ…脳みそがすでに144pの低画質でバッファリング中なんだけど。「トークン認証」？「カスタムヘッダー」？なんか、紙ナプキンに書いた偽造IDで地下のVIPクラブに潜入しようとしてるみたいじゃん。
 
-**Rindo**: Listen well, Io. Today, we shall dissect a problem regarding educational content protection. The digital world is a den of thieves; without proper gatekeeping, your intellectual property will be pilfered faster than a dropped wallet in a crowded station. Rea-san, I trust you are ready to provide your... unique perspective.
+(怜空) Your analogy is as pathetic as it is tragically accurate, Io. Imagine a horde of ravenous, non-paying parasites attempting to leech high-definition video content from your servers.
+(怜空) 貴様の例えは、悲惨なまでに的を射ていると言えよう、イオち。想像してみるがいい。高画質の動画コンテンツを貴様のサーバーから貪り食おうとする、無課金の飢えた寄生虫の群れをな。
 
-**日乃竜胆**: よく聞きなさい、イオち。今日は教育用コンテンツの保護に関する問題を解剖するわよ。デジタルの世界は泥棒の巣窟。適切な門番がいなければ、あなたの知的財産は、混雑した駅で落とした財布よりも早く盗み取られる。怜空さん、あなたの……独特な視点を提供してくれる準備はできているかしら？
+(怜空) If you leave the gates wide open, these leeches will consume your bandwidth until your AWS billing statement resembles the national debt of a small, collapsing country. You will be bankrupt before you even finish your morning coffee. The "token" is the blood-seal that separates the worthy from the damned.
+(怜空) もし門を全開にしておけば、このヒル共は貴様の帯域幅を食い尽くし、AWSの請求書は崩壊寸前の小国の国家債務のような有様となるだろう。朝のコーヒーを飲み終える前に、貴様は破産するというわけだ。「トークン」とは、価値ある者と呪われし者を分かつ、血の契約印のようなものにすぎない。
 
-**Rea**: My readiness is as absolute as the despair of a junior dev facing a production outage at 3 AM on a Sunday. Cloud architecture is not just technology; it is a grand theater of suffering where we attempt to keep the "unwashed masses" away from the "sacred data."
+(惟緒) Yikes... okay, so we need a bouncer to check the blood-seal. But why do we have so many options? Just pick the strongest bouncer and let's go back to sleep.
+(惟緒) ひえっ…オッケー、つまり血の契約印をチェックする用心棒が必要ってことね。でも、なんでこんなに選択肢があるの？一番つよい用心棒を選んで、さっさと二度寝しようよ。
 
-**蒞星怜空**: 私の準備は、日曜の午前3時に本番障害に直面した新人開発者の絶望と同じくらい絶対的だ。クラウドアーキテクチャは単なる技術ではない。それは「不浄な大衆」を「神聖なデータ」から遠ざけようとする、苦悩の壮大な劇場なのだよ。
+(竜胆) A naive, lazy proposition. In cloud architecture, assigning the wrong entity to a task is not merely inefficient; it is a catastrophic architectural sin. We shall examine the incorrect methodologies first, so that their failures may serve as your foundation.
+(竜胆) 怠惰かつ甘美な提案だな。クラウドアーキテクチャにおいて、誤ったリソースに任務を割り当てることは、単に非効率というだけでなく、破滅的な設計の罪となる。まずは誤った手法から検証し、その失敗の屍を貴様の礎としようではないか。
 
-**Io**: Ugh... so much energy. I just wanted to know how to keep people from stealing my cat videos—I mean, educational videos. Hinorin, what are we even looking at? My brain is currently at absolute zero.
+(竜胆) Let us evaluate the third option: "Relaying the EdTech material authentication through a Lambda function positioned between CloudFront and the EC2 instances."
+(竜胆) では、第三の選択肢を評価する。「CloudFrontとEC2インスタンスの間に配置したLambda関数で、EdTech教材の認証を中継する」構成だ。
 
-**月凪惟緒**: うぅ……熱量が高すぎ。私はただ、誰かに私の猫動画……じゃなくて、教育動画を盗まれないようにする方法を知りたかっただけなんだけど。ヒノりん、私たちは一体何を見てるの？ 私の脳みそ、今絶対零度なんだけど。
+(惟緒) Oh, I know Lambda! It's that serverless thingy that runs code without managing servers, right? So we just put it in the middle to check the ticket and pass the video along. Sounds like a solid middleman to me.
+(惟緒) あ、Lambdaなら知ってる！サーバーの管理なしでコードを実行してくれる、あのサーバーレスのやつっしょ？じゃあ、真ん中に置いてチケット確認して、動画をパスさせりゃいいじゃん。優秀な仲介業者っぽくてアリじゃない？
 
----
+(怜空) "Solid"? I am genuinely astounded by the sheer magnitude of your ignorance. It is nothing short of an architectural war crime.
+(怜空) 「アリ」だと？貴様の無知の深淵には、心底驚かされるな。それはアーキテクチャに対する明確な戦争犯罪に他ならん。
 
-### **Phase 1: Understanding the Foundation (The "Why" and "What")**
+(怜空) Lambda functions have strict physical limitations. A maximum payload of a mere 6 Megabytes for synchronous responses, and a hard execution timeout of 15 minutes. You are proposing that we force massive, gigabyte-heavy educational videos to flow through a microscopic serverless execution environment.
+(怜空) Lambda関数には、厳格な物理的制限が存在するのだ。同期レスポンスの最大ペイロードはわずか6メガバイト、そして実行時間のハードリミットは15分だ。貴様は、何ギガバイトもある巨大な教育用動画を、極小のサーバーレス実行環境という極細の管を通して流し込もうと提案しているのだぞ。
 
-**Rindo**: The scenario is simple. A company delivers educational materials via **Amazon S3** and **Amazon CloudFront**. They want to ensure only authorized users—those with a specific **custom token**—can access them. We must verify this token before the content is served.
+(怜空) It is akin to forcing the violent, raging torrent of Niagara Falls through a paper drinking straw. The straw will instantly obliterate, the water will drown everyone in the vicinity, and your application will die a sudden, humiliating death via HTTP 502 Bad Gateway errors.
+(怜空) それは、ナイアガラの滝の如き荒れ狂う激流を、紙製のストローを通して無理やり流し込もうとするようなものだ。ストローは瞬時に粉砕され、周囲の者すべてが水底に沈み、貴様のアプリケーションはHTTP 502 Bad Gatewayエラーと共に、突発的かつ屈辱的な死を迎えることになるのだ。
 
-**日乃竜胆**: シナリオは単純よ。ある企業が **Amazon S3** と **Amazon CloudFront** を使って教材を配信している。彼らは、特定の「独自トークン」を持つ認証済みユーザーだけがアクセスできるようにしたいと考えている。コンテンツが提供される前に、このトークンを検証しなければならない。
+(惟緒) Woah, okay, RIP paper straw. So putting Lambda directly in the traffic path for heavy media files is a big no-no. Got it. What about the WAF option? The second incorrect choice says "AWS WAF cannot implement custom token authentication."
+(惟緒) うわ、オッケー、紙ストローに合掌。つまり、重いメディアファイルの通信経路上にLambdaを直接置くのは絶対NGってことね。りょ。じゃあWAFの選択肢はどうなん？2つ目の不正解には「AWS WAFでは独自トークン認証を実装できない」って書いてあるけど。
 
-**Io**: Wait, wait. S3? CloudFront? Token? It sounds like you're casting a high-level magic spell. Can you explain that in human words?
+(惟緒) I thought WAF was the firewall? The ultimate security guard? Why can't it check our VIP tokens?
+(惟緒) WAFってファイアウォールじゃなかったっけ？究極の警備員っしょ？なんでうちらのVIPトークンを確認できないわけ？
 
-**月凪惟緒**: 待って、待って。S3？ CloudFront？ トークン？ なんか高位の魔法でも唱えてるみたい。人間がわかる言葉で説明してよ。
+(竜胆) Your perception of AWS WAF is superficial. WAF stands for Web Application Firewall. Its primary directive is to inspect incoming HTTP requests for malicious patterns—such as SQL injection, Cross-Site Scripting, or known bad IP addresses. It operates on predefined rules and pattern matching.
+(竜胆) 貴様のAWS WAFに対する認識はひどく表層的だ。WAFとはWeb Application Firewallの略だ。その主要な任務は、入力されるHTTPリクエストを監視し、SQLインジェクションやクロスサイトスクリプティング、あるいは既知の悪意あるIPアドレスといった、悪意あるパターンを検知することにある。あらかじめ定義されたルールとパターンマッチングに基づいて稼働するのだ。
 
-**Rindo**: Very well. **S3** is your storage—a massive, infinite warehouse for your files. **CloudFront** is the **CDN (Content Delivery Network)**—think of it as a series of local convenience stores that cache copies of your files so users don't have to travel all the way to the main warehouse. A **Token** is a digital ticket. If you have the right ticket, you get the goods.
+(竜胆) However, custom token authentication requires business logic. It requires dynamic computation: decrypting the token, perhaps verifying an expiration date, cross-referencing a database, and then appending a completely new, custom HTTP header to route the traffic. WAF is not a compute engine; it cannot execute arbitrary business logic scripts.
+(竜胆) しかし、独自のトークン認証にはビジネスロジックが要求される。トークンを復号し、有効期限を検証し、データベースと照合し、その上でトラフィックをルーティングするための全く新しいカスタムHTTPヘッダーを付与するといった、動的な計算が必要なのだ。WAFはコンピューティングエンジンではない。任意のビジネスロジックのスクリプトを実行することなど不可能なのだ。
 
-**日乃竜胆**: よかろう。**S3** はストレージ、つまりファイルの巨大で無限な倉庫だ。**CloudFront** は **CDN（コンテンツ配信ネットワーク）**。ユーザーがメインの倉庫までわざわざ行かなくて済むように、ファイルのコピーを置いておく各地のコンビニのようなものだと思いなさい。そして **トークン** はデジタルチケットだ。正しいチケットを持っていれば、商品を受け取れる。
+(怜空) Precisely. Asking AWS WAF to execute complex custom token logic is like hiring a heavily armored SWAT team equipped with assault rifles, and ordering them to delicately knit a lace doily with a microscopic crochet hook.
+(怜空) 然り。AWS WAFに複雑な独自トークンのロジックを実行させようとするのは、アサルトライフルで完全武装したSWAT部隊を雇い入れ、彼らに極小のかぎ針を使って繊細なレース編みのドイリーを編むよう命じるようなものだ。
 
-**Rea**: In reality, it’s more like a dystopian border checkpoint. The users are desperate refugees seeking the "Knowledge," and the architecture is the wall. We are deciding where to place the guard who checks their papers. If the guard is incompetent, the whole system collapses into a chaotic abyss of unauthorized downloads and soaring egress costs.
+(怜空) They are designed to annihilate threats, not to perform intricate, bespoke administrative choreography. Furthermore, WAF billing is based on the number of web requests inspected. Funneling every single video segment request through WAF merely for a proprietary token check would inflate your costs to an absurd degree. You would be paying elite mercenaries to check bus passes.
+(怜空) 奴らは脅威を殲滅するために設計されているのであって、複雑で特注の事務的舞踏を披露するためではない。さらに言えば、WAFの課金は検査したWebリクエストの数に基づく。独自のトークンチェックのためだけに、動画セグメントの全リクエストをWAFに通すなど、コストを狂気的な次元まで膨れ上がらせる行為だ。バスの定期券を確認させるために、エリート傭兵部隊に金を払うようなものと言えよう。
 
-**蒞星怜空**: 実際には、ディストピアの国境検問所のようなものだ。ユーザーは「知識」を求める必死の難民であり、アーキテクチャは壁だ。我々は、誰が書類を検査する門番をどこに配置するかを決めているのだ。もし門番が無能なら、システム全体が不正ダウンロードと急増するデータ転送費用の混沌たる深淵に陥るだろう。
+(惟緒) A SWAT team knitting lace... that's a visual I won't easily forget. Yeah, let's not make the scary guys do crafts. Okay, so what about the first incorrect option? "Application Load Balancer cannot validate custom tokens for routing."
+(惟緒) レース編みするSWAT部隊…その映像、なかなか頭から離れないわ。うん、怖い人たちに手芸させるのはやめとこ。じゃあ、1つ目の不正解の選択肢は？「Application Load Balancerでは独自トークン検証でのルーティング制御不可」ってやつ。
 
----
+(惟緒) It's a "Load Balancer", right? Doesn't it balance things? Like, "You have a good ticket, go here. You have a bad ticket, go away." Why can't ALB do this?
+(惟緒) 「ロードバランサー」でしょ？なんかバランス取ってくれるやつじゃん。なんかこう、「君はいいチケット持ってるからこっち。君はダメなチケットだから帰れ」みたいな。なんでALBじゃダメなの？
 
-### **Phase 2: Dismantling the Failures (Why the Wrong Answers are Wrong)**
+(竜胆) To understand this failure, you must understand the ALB's inherent capabilities. An Application Load Balancer operates at Layer 7 of the OSI model. It can indeed route traffic based on path, host, or standard HTTP headers. It even possesses native integration with Amazon Cognito for standard OIDC (OpenID Connect) authentication.
+(竜胆) この失敗を理解するには、ALBの生来の能力を理解せねばならん。Application Load BalancerはOSI参照モデルのレイヤー7で動作する。確かに、パスやホスト、あるいは標準的なHTTPヘッダーに基づいてトラフィックをルーティングすることは可能だ。標準的なOIDC（OpenID Connect）認証のために、Amazon Cognitoとのネイティブな統合機能すら備えている。
 
-**Io**: Okay, I get the guard thing. So, there are four ways to place this guard in the picture? Let's talk about the bad ones first, because I love seeing things fail. Why is **Option B (ALB)** a disaster?
+(竜胆) But the prompt explicitly demands "custom token authentication via query strings." ALB routing rules are deterministic and static. They cannot extract a proprietary string from a URL parameter, run a custom cryptographic validation algorithm to prove its authenticity, and then dynamically inject a new header based on that result. ALB lacks the cognitive processing required for arbitrary custom validation.
+(竜胆) だが、設問では明確に「クエリストリングの独自トークンによる認証」を要求しているのだ。ALBのルーティングルールは決定論的であり、静的なものだ。URLパラメータから独自の文字列を抽出し、その真正性を証明するための独自の暗号検証アルゴリズムを実行し、その結果に基づいて動的に新たなヘッダーを注入するなど不可能だ。ALBには、任意の独自検証に要求される認知処理能力が欠落しているのだ。
 
-**月凪惟緒**: オッケー、門番のことはわかった。で、画像には門番を置く方法が4つあるってこと？ まずはダメなやつから話そうよ、失敗を見るのは大好きだから。なんで **選択肢B（ALB）** は最悪なの？
+(怜空) Expecting an ALB to execute custom cryptography is like expecting a traffic light to interrogate drivers about their deeply held philosophical beliefs before turning green. The traffic light only knows red, yellow, and green based on simple timers or sensors.
+(怜空) ALBに独自の暗号処理を実行させようなどと期待するのは、信号機に対して、青に変わる前に運転手の深く根付いた哲学的信条について尋問するよう期待するようなものだ。信号機は、単純なタイマーやセンサーに基づいた赤、黄、青しか知らぬのだからな。
 
-**Rea**: **ALB (Application Load Balancer)**... a tragic choice for this specific task. Using an ALB here is like hiring a bouncer who only knows how to count people entering a club, and then asking him to perform a complex DNA sequence analysis on every single guest. It’s not in his nature.
+(怜空) It is a mindless router, a mere switchboard operator. It possesses no soul, no intellect to parse your convoluted, proprietary security mechanics. If you entrust this to the ALB, unauthorized users will bypass it entirely, or the system will simply fail to comprehend the routing instruction, sending everything into the abyss.
+(怜空) 奴は思考を持たぬルーター、単なる交換手の端くれにすぎない。貴様の複雑怪奇で独自のセキュリティ機構を解読するような魂も知性も持ち合わせておらんのだ。もしこれをALBに委ねれば、認証されていないユーザーが完全に素通りするか、システムがルーティング指示を理解できず、すべてを深淵へと葬り去ることになるだろう。
 
-**蒞星怜空**: **ALB（Application Load Balancer）**……この特定のタスクにおいては悲劇的な選択だ。ここで ALB を使うのは、クラブに入る人数を数えることしか知らない用心棒を雇って、すべての客に対して複雑な DNA 配列分析をしろと要求するようなものだ。それは彼の本分ではない。
+(惟緒) So... Lambda is a paper straw that will explode, WAF is a SWAT team failing at knitting, and ALB is a brainless traffic light. Awesome. We're running out of options here, Hino-rin. How do we actually build this without causing a digital apocalypse?
+(惟緒) てことは…Lambdaは爆発する紙ストローで、WAFは編み物に失敗するSWAT部隊で、ALBは脳死状態の信号機ってわけね。最高じゃん。もう選択肢残ってないんだけど、ヒノりん。デジタル世界の終末を引き起こさずに、一体どうやってこれを構築すればいいのさ？
 
-**Rindo**: Precisely. While an ALB can handle basic authentication (like OIDC), it cannot natively execute custom logic to verify a *proprietary, custom token* format. Furthermore, the problem states we are using **CloudFront**. Putting an ALB behind CloudFront just to check a token is like driving to a different city just to use a specific vending machine. It adds unnecessary latency and complexity.
+(竜胆) The solution lies at the frontier of our architecture. The correct answer is: "Use Lambda@Edge at CloudFront to validate the token and append a custom header for routing to the ALB."
+(竜胆) 解決策は、我々のアーキテクチャの最前線に存在する。正解は、「CloudFrontでLambda@Edgeを使用してトークンを検証し、ALBへルーティングするためのカスタムヘッダーを付与する」だ。
 
-**日乃竜胆**: その通りだ。ALB は基本的な認証（OIDCなど）は扱えるが、独自形式のトークンを検証するための「カスタムロジック」をネイティブに実行することはできない。さらに、問題文には CloudFront を使っているとある。トークンをチェックするためだけに CloudFront の背後に ALB を置くのは、特定の自動販売機を使うためだけに別の街まで車を走らせるようなものだ。不必要な遅延と複雑さを招くだけだ。
+(竜胆) CloudFront is our Content Delivery Network. It sits at the edge locations, closest to the end-users globally. Lambda@Edge allows us to execute lightweight Node.js or Python functions directly at these edge locations, intercepting the HTTP requests before they ever reach our core infrastructure.
+(竜胆) CloudFrontとはコンテンツ配信ネットワーク（CDN）のことだ。これは、世界中のエンドユーザーに最も近いエッジロケーションに鎮座している。Lambda@Edgeを用いることで、我々は軽量なNode.jsやPythonの関数をこれらのエッジロケーションで直接実行し、HTTPリクエストが我々のコアインフラに到達する前に迎撃することが可能となる。
 
-**Io**: Total fail. Next! What about **Option C (WAF)**? It’s a "Firewall," right? Firewalls are cool. They block things!
+(惟緒) Oh, "Edge"! Like, standing on the edge of a cliff? So we're putting a tiny Lambda function right at the front door instead of the middle of the house?
+(惟緒) あ、「エッジ」！崖っぷちに立ってるみたいな？つまり、家の真ん中じゃなくて、玄関のドアの真ん前にちっちゃいLambda関数を置くってこと？
 
-**月凪惟緒**: 完全な失敗ね。次！ **選択肢C（WAF）** はどう？ 「ファイアウォール」でしょ？ ファイアウォールって響きはカッコいいじゃん。ブロックするやつ！
+(怜空) For once, your hollow skull has produced a somewhat accurate visual. Yes, the "Edge." By deploying Lambda@Edge as a Viewer Request or Origin Request trigger, you install an invisible, hyper-intelligent assassin at the outermost perimeter of your fortress.
+(怜空) 珍しく、貴様の空っぽの頭蓋骨がいくらか正確な映像を思い描いたようだな。そうだ、「エッジ（辺境）」だ。Lambda@EdgeをViewer RequestまたはOrigin Requestのトリガーとしてデプロイすることで、貴様は不可視の超知能を持つ暗殺者を、要塞の最外周に配置することになる。
 
-**Rindo**: A **WAF (Web Application Firewall)** is indeed a shield. It blocks SQL injections, cross-site scripting, and malicious IP addresses. However, it is a *static* shield. It looks for patterns. It is not designed to run a script that decrypts or validates a custom cryptographic token.
+(怜空) When the user's request arrives, bearing this "custom token", the assassin intercepts it. In a fraction of a millisecond, it inspects the token. If the seal is forged or invalid, the assassin executes the request immediately—returning a 403 Forbidden—sparing your backend servers from even perceiving the malicious attempt.
+(怜空) ユーザーのリクエストが「独自トークン」を携えて到達した瞬間、暗殺者がこれを迎撃する。1ミリ秒のさらに数分の一の速度でトークンを検査し、もしその印が偽造されたものや無効なものであったなら、暗殺者は即座にそのリクエストを処刑する。つまり403 Forbiddenを返すのだ。これにより、バックエンドサーバーは悪意ある企てを感知することすらなく守られる。
 
-**日乃竜胆**: **WAF（Web Application Firewall）** は確かに盾だ。SQLインジェクションやクロスサイトスクリプティング、悪意のあるIPアドレスをブロックする。しかし、それは「静的」な盾だ。パターンを探すだけ。独自の暗号トークンを復号したり検証したりするスクリプトを実行するようには設計されていない。
+(竜胆) Exactly. And if the token is valid, the Lambda@Edge function executes the second crucial requirement: it dynamically modifies the request. It injects the specific "custom header" into the HTTP payload, and then permits the request to proceed to the origin, which in this case, is the Application Load Balancer.
+(竜胆) その通りだ。そしてトークンが正当なものであれば、Lambda@Edge関数は第二の極めて重要な要求を実行する。すなわち、リクエストを動的に改変するのだ。特定の「カスタムヘッダー」をHTTPペイロードに注入し、その後、オリジン——この場合はApplication Load Balancerだが——へとリクエストを進行させることを許可するのだ。
 
-**Rea**: Indeed. Asking a WAF to verify a custom token is like asking a bulletproof vest to tell you if a person’s ID card is a forgery. The vest will stop a bullet, but it has no eyes to read the name. It is a mindless, unfeeling wall. If you try to force it, you’ll end up with a configuration so bloated it will become a monument to human arrogance before it eventually breaks.
+(竜胆) Because this validation happens at the CloudFront level, the heavy video files streaming *back* from the origin to the user do not need to pass through the Lambda function's memory space. The Lambda@Edge only inspects the *request*, not the massive *response* payload. Therefore, the 6MB synchronous limitation is completely bypassed.
+(竜胆) この検証がCloudFrontの層で行われるがゆえに、オリジンからユーザーへとストリーミングで送り返される重い動画ファイル自体が、Lambda関数のメモリ空間を通過する必要はない。Lambda@Edgeが監視するのはあくまで「リクエスト」であり、巨大な「レスポンス」のペイロードではないからだ。故に、6メガバイトの同期制限という致命的な制約を完全に回避できるのである。
 
-**蒞星怜空**: まさに。WAF に独自トークンの検証を頼むのは、防弾チョッキに相手の身分証が偽造かどうかを判定しろと言っているようなものだ。チョッキは弾丸を止めるが、名前を読む目はない。それは意志を持たず、感情もない壁なのだ。無理に従わせようとすれば、設定が肥大化し、やがて壊れる前に人間の傲慢さの記念碑と化すだろう。
+(惟緒) Mind. Blown. So the edge assassin checks the ID, stamps a glowing "VIP" mark on their forehead (the custom header), and then opens the gate. The ALB sees the glowing VIP mark, doesn't need to think, and just routes them to the video! And since the video flows back through a different door, the paper straw doesn't explode!
+(惟緒) 頭パーンッてなったわ。つまり、エッジの暗殺者がIDチェックして、おでこに光る「VIP」スタンプ（カスタムヘッダー）をバーンって押して、ゲートを開けるわけね。ALBは光るVIPスタンプを見るだけで、何も考えずに動画の方へ案内すればいいんだ！で、動画は別のドアから流れて戻ってくるから、紙ストローも爆発しないってワケね！
 
-**Io**: Ouch... poor WAF. Okay, last bad one. **Option D (Lambda middleware)**. It says "Lambda," and Lambda is like a mini-robot that does tasks, right? Why is the robot bad here?
+(怜空) Hmph. "Glowing VIP mark." A profoundly undignified way to describe HTTP header injection, but fundamentally... adequate. Yes. The mindless ALB merely obeys the header that the intelligent edge layer has bestowed upon the request. It is a perfect delegation of responsibility.
+(怜空) ふん。「光るVIPスタンプ」か。HTTPヘッダーの注入を表現するにしては極めて品格に欠ける言い回しだが、本質的には…妥当と言えよう。そうだ。脳死状態のALBは、知性あるエッジ層がリクエストに授けたヘッダーにただ従うのみとなる。完璧なる責任の委譲というわけだ。
 
-**月凪惟緒**: うわぁ……かわいそうな WAF。じゃあ、最後のダメなやつ。**選択肢D（中継 Lambda）**。 「Lambda」って書いてあるし、Lambda ってタスクをこなすミニロボットみたいなもんでしょ？ なんでそのロボットはここではダメなの？
-
-**Rindo**: Because in this configuration, the Lambda sits *between* CloudFront and S3. This creates a "Double Hop." When a user requests a file, it goes to CloudFront, then to Lambda, then to S3, and back again. This is inefficient. It’s like wanting a glass of water from the kitchen but insisting someone brings it to the hallway first, and then to you. It doubles the time you wait.
-
-**日乃竜胆**: なぜなら、この構成では Lambda が CloudFront と S3 の「中間」に位置しているからだ。これは「ダブルホップ」を生み出す。ユーザーがファイルをリクエストすると、CloudFront へ行き、次に Lambda へ行き、それから S3 へ行って、また戻ってくる。これは非効率だ。キッチンにあるコップ一杯の水が欲しいのに、わざわざ一旦廊下に持ってこさせてから、それを受け取るようなものだ。待ち時間が2倍になる。
-
-**Rea**: It’s the "Administrative Hell" of architecture. You are adding a middleman who serves no purpose other than to slow down the inevitable. In the world of high-speed delivery, latency is a cancer that eats away at the user experience. You don't put a toll booth in the middle of a racetrack.
-
-**蒞星怜空**: アーキテクチャにおける「行政の地獄」だな。不可避な遅延を生む以外に何の役にも立たない仲介人を追加しているに過ぎない。高速配信の世界において、レイテンシー（遅延）はユーザー体験を蝕む癌だ。サーキットのど真ん中に料金所を置くような真似はしないものだよ。
-
----
-
-### **Phase 3: The Elegant Solution (Why Option A is the Winner)**
-
-**Io**: So... the only one left is **Option A**. **Lambda@Edge**. It sounds like the robot is living on the "Edge"? Like, in a cool, rebellious way?
-
-**月凪惟緒**: じゃあ……残るは **選択肢A** だけ。**Lambda@Edge**。ロボットが「エッジ」に住んでるってこと？ なんか、反抗的でカッコいい感じ？
-
-**Rindo**: Exactly. **Lambda@Edge** allows you to run your code at the **CloudFront Edge Locations**—the "convenience stores" we mentioned earlier. The guard stands right at the door where the user first arrives. If the token is invalid, the request is rejected immediately at the edge. S3—the warehouse—never even sees the request. This is the peak of efficiency.
-
-**日乃竜胆**: その通りだ。**Lambda@Edge** を使えば、先ほど言った「コンビニ」、つまり **CloudFront のエッジロケーション** でコードを実行できる。門番は、ユーザーが最初に到着するドアのすぐそばに立っているのだ。トークンが無効なら、リクエストはエッジですぐに拒否される。倉庫である S3 にはリクエストすら届かない。これこそが効率の頂点だ。
-
-**Rea**: It is the "Silent Assassin." It intercepts the intruder at the perimeter before they even smell the scent of the data. By using Lambda@Edge to inspect the headers and verify the token, you keep your origin server—S3—pristine and unburdened. It is cold, fast, and surgical.
-
-**蒞星怜空**: 「静かなる暗殺者」だ。侵入者がデータの匂いを嗅ぐ前に、境界線で阻止する。Lambda@Edge を使ってヘッダーを検査し、トークンを検証することで、オリジンサーバーである S3 を清浄で負担のない状態に保つのだ。冷徹で、速く、外科的な手法だと言えよう。
-
-**Io**: I think I get it! So, we write a little script for the Edge Robot, it checks the ticket, and if it's good, it lets the person in. And since it's at the "Edge," it's super fast because it's close to the person.
-
-**月凪惟緒**: わかった気がする！ つまり、エッジロボット用にちょっとしたスクリプトを書いて、そいつがチケットをチェックして、良ければ中に入れる。で、そいつは「エッジ」にいるから、ユーザーの近くにあってめちゃくちゃ速いってことね。
-
-**Rindo**: Correct, Io. Here is the step-by-step process of how we would build this from scratch:
-
-1. **Generate a Token**: Your application (where the user logs in) creates a signed token.
-2. **Attach to Header**: The user sends this token in a custom HTTP header (e.g., `X-Custom-Token`).
-3. **Deploy Lambda@Edge**: Create a Lambda function that reads this header, validates the signature, and is triggered by CloudFront's **Viewer Request**.
-4. **Authorization Logic**: If the token is valid, the Lambda allows the request to pass to S3. If not, it returns a `403 Forbidden` response immediately.
-5. **Success**: The content is served securely and efficiently.
-
-**日乃竜胆**: 正解だ、イオち。これを一から構築する手順は次のようになるわ。
-
-1. **トークンの生成**: あなたのアプリケーション（ユーザーがログインする場所）で署名付きトークンを作成する。
-2. **ヘッダーへの付与**: ユーザーはこのトークンをカスタム HTTP ヘッダー（例: `X-Custom-Token`）に入れて送信する。
-3. **Lambda@Edge のデプロイ**: このヘッダーを読み取り、署名を検証する Lambda 関数を作成する。これは CloudFront の **ビューワーリクエスト** をトリガーとして動かす。
-4. **認可ロジック**: トークンが有効なら、Lambda はリクエストを S3 へ通す。無効なら、即座に `403 Forbidden` を返す。
-5. **完了**: コンテンツが安全かつ効率的に配信される。
-
----
-
-### **Epilogue: The Architect's Gaze**
-
-**Rea**: And thus, the boundary is secure. The data remains behind the veil, and only those with the "Golden Ticket" may gaze upon it. Now, go back to your sleep, Io. Your brain has likely exceeded its daily quota of logic.
-
-**蒞星怜空**: こうして、境界は守られた。データは帳の向こうに留まり、「黄金のチケット」を持つ者だけがそれを拝むことができる。さて、イオち、もう眠りに戻るがいい。君の脳は、今日の論理のクォータ（制限）を使い果たしただろうから。
-
-**Io**: *Yawns.* You said it, Rea-san... I can already feel my brain cells turning back into ice... But hey, at least my cat videos are safe. Thanks, Hinorin!
-
-**月凪惟緒**: *あくび*。その通りだよ、怜空さん……。もう脳細胞が氷に戻っていくのがわかる……。でも、まあ、これで私の猫動画は安全だね。ありがと、ヒノりん！
-
-**Rindo**: You're welcome. Just remember: in AWS, like in life, the best defense is the one that stops the problem before it even reaches your front door. Class dismissed.
-
-**日乃竜胆**: どういたしまして。覚えておきなさい。AWS においても、人生においても、最高の防御とは、問題が玄関先に届く前に食い止めることなのだから。これにて、講義終了。
-
----
-
-### **Quick Reference Table for Architecture Review**
-
-| Option | Technology | Verdict | Reason |
-| --- | --- | --- | --- |
-| **A** | **Lambda@Edge** | **Correct** | **Verifies tokens at the edge location (closest to user), providing low latency and high security.** |
-| B | ALB | Incorrect | ALB lacks custom token logic support and adds unnecessary hops behind CloudFront. |
-| C | AWS WAF | Incorrect | WAF is for pattern-based filtering, not for complex cryptographic token verification. |
-| D | Lambda (Mid) | Incorrect | Creating a proxy Lambda between CF and S3 causes high latency (double hop). |
-
-**アーキテクチャ復習用クイック参照テーブル**
-
-| 選択肢 | 技術 | 判定 | 理由 |
-| --- | --- | --- | --- |
-| **A** | **Lambda@Edge** | **正解** | **エッジロケーション（ユーザーに最も近い場所）でトークンを検証し、低遅延と高セキュリティを実現する。** |
-| B | ALB | 不正解 | ALB は独自トークンのロジックをサポートしておらず、CloudFront の背後で不必要なホップを追加する。 |
-| C | AWS WAF | 不正解 | WAF はパターンベースのフィルタリング用であり、複雑な暗号トークンの検証には向かない。 |
-| D | 中継 Lambda | 不正解 | CF と S3 の間にプロキシ Lambda を置くと、高遅延（ダブルホップ）の原因になる。 |
+(竜胆) This is the essence of well-architected cloud design. Security at the perimeter, logic where it is most efficient, and heavy lifting delegated to components designed for it. Do not forget this, Io. The cloud does not forgive architectural ignorance.
+(竜胆) これこそが、適切に構築されたクラウド設計の真髄だ。外周部でのセキュリティ、最も効率的な場所へのロジックの配置、そして重量級の処理はそれに特化したコンポーネントへ委ねること。忘れるなよ、イオち。クラウドは、アーキテクチャへの無知を決して許しはしないのだからな。
 @026
 @027
 @028
