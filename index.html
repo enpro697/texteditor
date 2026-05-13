@@ -653,6 +653,27 @@
                 showToast("🗑️ テキストをクリアしました");
             }
         });
+
+        // --- キーボードショートカット機能 ---
+        textarea.addEventListener('keydown', (e) => {
+            // テキストが範囲選択されている場合のみ実行
+            if (textarea.selectionStart !== textarea.selectionEnd) {
+                switch (e.key) {
+                    case 'a':
+                        e.preventDefault(); // デフォルトの「a」の文字入力を防ぐ
+                        insertTextAround('(', '');
+                        break;
+                    case 's':
+                        e.preventDefault(); // デフォルトの「s」の文字入力を防ぐ
+                        insertTextAround('(', ')');
+                        break;
+                    case 'd':
+                        e.preventDefault(); // デフォルトの「d」の文字入力を防ぐ
+                        insertTextAround('*', '*');
+                        break;
+                }
+            }
+        });
     </script>
 </body>
 </html>
