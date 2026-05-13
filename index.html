@@ -674,6 +674,29 @@
                 }
             }
         });
+
+        // 1. マウスホイール（上・下）の操作
+        textarea.addEventListener('wheel', (e) => {
+            if (textarea.selectionStart !== textarea.selectionEnd) {
+                e.preventDefault(); // デフォルトのスクロール動作を防ぐ
+                
+                if (e.deltaY < 0) {
+                    // ホイールを上に回したとき (deltaY がマイナス)
+                    insertTextAround('(', '');
+                } else if (e.deltaY > 0) {
+                    // ホイールを下に回したとき (deltaY がプラス)
+                    insertTextAround('(', ')');
+                }
+            }
+        });
+
+        // 2. 右クリックの操作
+        textarea.addEventListener('contextmenu', (e) => {
+            if (textarea.selectionStart !== textarea.selectionEnd) {
+                e.preventDefault(); // デフォルトの右クリックメニュー表示を防ぐ
+                insertTextAround('*', '*');
+            }
+        });
     </script>
 </body>
 </html>
