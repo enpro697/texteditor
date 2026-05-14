@@ -426,22 +426,27 @@
         // ------------------------------------
 
         // --- テキスト挿入・装飾機能 ---
-        function insertTextAround(before, after) {
-            const start = textarea.selectionStart;
-            const end = textarea.selectionEnd;
-            const text = textarea.value;
-            const currentScroll = textarea.scrollTop; // スクロール位置を記憶
-            
-            const selectedText = text.substring(start, end);
-            const newText = before + selectedText + after;
-            
-            textarea.value = text.substring(0, start) + newText + text.substring(end);
-            
-            textarea.focus();
-            textarea.setSelectionRange(start + before.length, end + before.length);
-            textarea.scrollTop = currentScroll; // スクロール位置を元に戻す
-            textarea.blur();
-        }
+       function insertTextAround(before, after) {
+            const start = textarea.selectionStart;
+            const end = textarea.selectionEnd;
+            const text = textarea.value;
+            const currentScroll = textarea.scrollTop; // スクロール位置を記憶
+            
+            const selectedText = text.substring(start, end);
+            const newText = before + selectedText + after;
+            
+            textarea.value = text.substring(0, start) + newText + text.substring(end);
+            
+            textarea.focus();
+            
+            // 【修正】選択状態を解除し、カーソルを装飾したテキストの末尾に移動させる
+            const newCursorPos = start + newText.length;
+            textarea.setSelectionRange(newCursorPos, newCursorPos);
+            
+            textarea.scrollTop = currentScroll; // スクロール位置を元に戻す
+            
+            // textarea.blur(); は削除（フォーカスを維持した方が自然に操作を続けられるため）
+        }
 
         // ボタンイベントの紐付け
         btnWrapLeftParen.addEventListener('click', () => insertTextAround('(', ''));
