@@ -4918,5 +4918,5 @@ From the very moment you met my eyes, you were lined up on the giant "chopping b
 まな板の上の豚よ、まずはその無駄口から三枚におろしてやろう。
 Pig on the chopping board, first I shall fillet that useless mouth of yours into three pieces.
 
-━━━━！ 斬（カイ）
-━━━━！ DISMANTLE 
+━━━━ 斬 ━━！（カイ）
+━━━━ DISMANTLE ━━！
