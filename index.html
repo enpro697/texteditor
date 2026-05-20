@@ -181,8 +181,8 @@
             position: absolute;
             top: 60px;
             left: 16px;
-            display: none; /* 通常時は非表示 */
-            background-color: rgba(30, 30, 30, 0.85); /* 半透明の背景 */
+            display: none;
+            background-color: rgba(30, 30, 30, 0.85);
             backdrop-filter: blur(4px);
             padding: 6px;
             border-radius: 8px;
@@ -194,10 +194,9 @@
         }
 
         .editor-container.fullscreen .fullscreen-floating-bar {
-            display: flex; /* 全画面時に表示 */
+            display: flex;
         }
 
-        /* ドラッグ用のつまみ部分 */
         .drag-handle {
             cursor: grab;
             padding: 8px 12px;
@@ -214,7 +213,6 @@
             cursor: grabbing;
         }
 
-        /* ツールバー内の仕切り線 */
         .fs-divider {
             width: 1px;
             height: 24px;
@@ -227,7 +225,6 @@
             font-size: 16px;
             line-height: 1;
         }
-        /* -------------------------- */
 
         textarea {
             width: 100%;
@@ -243,12 +240,10 @@
             color: var(--text-color);
         }
 
-        /* 読み取り専用時のスタイル */
         textarea[readonly] {
-            cursor: text; /* 選択はできることを示す */
+            cursor: text;
         }
 
-        /* 全画面時のテキストエリアの余白調整 */
         .editor-container.fullscreen textarea {
             padding-top: 120px;
             padding-right: 20px;
@@ -281,7 +276,6 @@
             bottom: 50px;
         }
 
-        /* スマホ用のレイアウト調整 */
         @media (max-width: 600px) {
             body { padding: 8px; }
             .toolbar { flex-direction: column; padding: 8px; gap: 8px; }
@@ -311,10 +305,8 @@
         </div>
 
         <div class="tools-group">
-            <!-- 初期状態をロック解除ボタン（危険色）に変更 -->
             <button id="btn-toggle-edit" class="btn-theme" title="単語選択時にキーボードが出るのを防ぎます" style="color: var(--danger-color); border-color: var(--danger-color);">🔓 ロック解除</button>
             
-            <!-- 通常画面用の装飾ボタン -->
             <button id="btn-wrap-left-paren" class="btn-wrap">(</button>
             <button id="btn-wrap-both-paren" class="btn-wrap">()</button>
             <button id="btn-wrap-asterisk" class="btn-wrap">**</button>
@@ -322,16 +314,12 @@
             <button id="btn-load" class="btn-info">読込</button>
             <button id="btn-copy" class="btn-success">📋 コピー</button>
             <button id="btn-clear" class="btn-danger">🗑️</button>
-            <!-- 全画面ボタン -->
             <button id="btn-fullscreen" class="btn-theme">🔲 全画面</button>
         </div>
     </div>
 
     <div class="editor-container" id="editor-container">
-        
-        <!-- フローティングツールバー (全画面モード時のみ表示) -->
         <div class="fullscreen-floating-bar" id="fs-floating-bar">
-            <!-- ドラッグ用のつまみ -->
             <div class="drag-handle" id="fs-drag-handle" title="ドラッグして移動">⠿</div>
             
             <button id="btn-fs-wrap-left-paren" class="btn-wrap">(</button>
@@ -340,11 +328,9 @@
             
             <div class="fs-divider"></div>
             
-            <!-- 閉じるボタンもここにまとめる -->
             <button id="btn-close-fullscreen" class="btn-danger btn-fs-close">×</button>
         </div>
         
-        <!-- 初期状態に readonly 属性を付与 -->
         <textarea id="main-textarea" placeholder="ここにテキストを入力、またはファイルを読み込んでください...（手打ちやペーストをする場合は上部の「🔓 ロック解除」を押してください）" readonly></textarea>
     </div>
 
@@ -366,19 +352,16 @@
         const btnFullscreen = document.getElementById('btn-fullscreen');
         const btnCloseFullscreen = document.getElementById('btn-close-fullscreen');
         
-        // 通常ボタン
         const btnWrapLeftParen = document.getElementById('btn-wrap-left-paren');
         const btnWrapBothParen = document.getElementById('btn-wrap-both-paren');
         const btnWrapAsterisk = document.getElementById('btn-wrap-asterisk');
         
-        // 全画面用ボタン
         const btnFsWrapLeftParen = document.getElementById('btn-fs-wrap-left-paren');
         const btnFsWrapBothParen = document.getElementById('btn-fs-wrap-both-paren');
         const btnFsWrapAsterisk = document.getElementById('btn-fs-wrap-asterisk');
 
         const btnToggleEdit = document.getElementById('btn-toggle-edit');
 
-        // フローティングバーの要素
         const fsFloatingBar = document.getElementById('fs-floating-bar');
         const fsDragHandle = document.getElementById('fs-drag-handle');
 
@@ -390,8 +373,6 @@
             }, 3000);
         }
 
-        // --- 編集ロック機能（スマホキーボード対策） ---
-        // 初期状態を true に変更
         let isEditLocked = true;
         
         btnToggleEdit.addEventListener('click', () => {
@@ -402,8 +383,8 @@
                 btnToggleEdit.textContent = '🔓 ロック解除';
                 btnToggleEdit.style.color = 'var(--danger-color)';
                 btnToggleEdit.style.borderColor = 'var(--danger-color)';
-                showToast("🔒 編集をロックしました（単語を選択してもキーボードが出ません）");
-                textarea.blur(); // 現在出ているキーボードも閉じる
+                showToast("🔒 編集をロックしました（1タップで英単語を選択できます）");
+                textarea.blur();
             } else {
                 btnToggleEdit.textContent = '🔒 編集ロック';
                 btnToggleEdit.style.color = 'var(--text-color)';
@@ -412,7 +393,7 @@
             }
         });
 
-        // --- ドラッグ（移動）機能のロジック ---
+        // --- ドラッグ（移動）機能 ---
         let isDragging = false;
         let initialX, initialY;
 
@@ -451,31 +432,26 @@
 
         fsDragHandle.addEventListener('pointerup', stopDrag);
         fsDragHandle.addEventListener('pointercancel', stopDrag);
-        // ------------------------------------
 
         // --- テキスト挿入・装飾機能 ---
         function insertTextAround(before, after) {
             const start = textarea.selectionStart;
             const end = textarea.selectionEnd;
             const text = textarea.value;
-            const currentScroll = textarea.scrollTop; // スクロール位置を記憶
+            const currentScroll = textarea.scrollTop;
             
             const selectedText = text.substring(start, end);
             const newText = before + selectedText + after;
             
             textarea.value = text.substring(0, start) + newText + text.substring(end);
             
-            // 選択状態を解除し、カーソルを装飾したテキストの末尾に移動させる
             const newCursorPos = start + newText.length;
             textarea.setSelectionRange(newCursorPos, newCursorPos);
             
-            textarea.scrollTop = currentScroll; // スクロール位置を元に戻す
-            
-            // 装飾が完了したらフォーカスを外してキーボードを閉じる
+            textarea.scrollTop = currentScroll;
             textarea.blur();
         }
 
-        // ボタンイベントの紐付け
         btnWrapLeftParen.addEventListener('click', () => insertTextAround('(', ''));
         btnWrapBothParen.addEventListener('click', () => insertTextAround('(', ')'));
         btnWrapAsterisk.addEventListener('click', () => insertTextAround('*', '*'));
@@ -484,7 +460,6 @@
         btnFsWrapBothParen.addEventListener('click', () => insertTextAround('(', ')'));
         btnFsWrapAsterisk.addEventListener('click', () => insertTextAround('*', '*'));
 
-        // --- 全画面切り替え機能 ---
         btnFullscreen.addEventListener('click', () => {
             editorContainer.classList.add('fullscreen');
             if (!isEditLocked) textarea.focus();
@@ -498,7 +473,6 @@
             fsFloatingBar.style.top = '60px';
         });
 
-        // ダークモード切り替え機能
         btnTheme.addEventListener('click', () => {
             document.body.classList.toggle('dark-mode');
             if (document.body.classList.contains('dark-mode')) {
@@ -508,7 +482,6 @@
             }
         });
 
-        // 読み込み機能
         btnLoad.addEventListener('click', async () => {
             const fileName = searchInput.value.trim();
             if (!fileName) {
@@ -529,7 +502,6 @@
             }
         });
 
-        // 検索・スクロール機能
         btnSearchOnly.addEventListener('click', () => {
             const searchValue = searchInput.value;
             if (!searchValue) {
@@ -592,7 +564,6 @@
             }
         });
 
-        // 一括置換機能
         btnReplace.addEventListener('click', () => {
             const searchValue = searchInput.value;
             const replaceValue = replaceInput.value;
@@ -633,7 +604,6 @@
             }
         });
 
-        // コピー機能
         btnCopy.addEventListener('click', async () => {
             const textToCopy = textarea.value;
             if (!textToCopy) {
@@ -655,7 +625,6 @@
             const currentStart = textarea.selectionStart;
             const currentEnd = textarea.selectionEnd;
 
-            // コピー用に一時的にreadonlyにするが、元の状態に戻す
             const wasLocked = isEditLocked;
             textarea.readOnly = true; 
             textarea.setSelectionRange(0, textToCopy.length);
@@ -676,7 +645,6 @@
             }
         });
 
-        // クリア機能
         btnClear.addEventListener('click', () => {
             if (confirm("テキストをすべて削除してもよろしいですか？")) {
                 textarea.value = '';
@@ -684,6 +652,45 @@
                 replaceInput.value = '';
                 if (!isEditLocked) textarea.focus();
                 showToast("🗑️ テキストをクリアしました");
+            }
+        });
+
+        // --- 1タップで英単語を選択する機能 ---
+        textarea.addEventListener('click', (e) => {
+            // ロック解除中（手入力モード）の場合は、通常のカーソル配置を優先
+            if (!isEditLocked) return;
+
+            // すでにユーザーがドラッグで範囲選択をしている場合は上書きしない
+            if (textarea.selectionStart !== textarea.selectionEnd) return;
+
+            const text = textarea.value;
+            const cursorPos = textarea.selectionStart;
+
+            if (!text || text.length === 0) return;
+
+            // 英数字とアンダースコアを単語の一部として判定
+            const isWordChar = (char) => /[a-zA-Z0-9_]/.test(char);
+
+            let start = cursorPos;
+            let end = cursorPos;
+
+            // タップした位置が英単語の上かどうかを判定し、左右の境界を探す
+            if (cursorPos < text.length && isWordChar(text[cursorPos])) {
+                // カーソルの右側が英文字の場合
+                while (start > 0 && isWordChar(text[start - 1])) start--;
+                while (end < text.length && isWordChar(text[end])) end++;
+            } else if (cursorPos > 0 && isWordChar(text[cursorPos - 1])) {
+                // カーソルの左側が英文字の場合
+                while (start > 0 && isWordChar(text[start - 1])) start--;
+                while (end < text.length && isWordChar(text[end])) end++;
+            } else {
+                // 英単語以外の場所（日本語や空白など）をタップした場合は何もしない
+                return; 
+            }
+
+            if (start < end) {
+                // 見つけた英単語を範囲選択状態にする
+                textarea.setSelectionRange(start, end);
             }
         });
 
@@ -707,7 +714,6 @@
             }
         });
 
-        // 1. マウスホイール（上・下）の操作
         textarea.addEventListener('wheel', (e) => {
             if (textarea.selectionStart !== textarea.selectionEnd) {
                 e.preventDefault(); 
@@ -720,7 +726,6 @@
             }
         });
 
-        // 2. 右クリックの操作
         textarea.addEventListener('contextmenu', (e) => {
             if (textarea.selectionStart !== textarea.selectionEnd) {
                 e.preventDefault();
