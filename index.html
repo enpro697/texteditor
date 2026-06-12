@@ -463,6 +463,39 @@
         btnFullscreen.addEventListener('click', () => {
             editorContainer.classList.add('fullscreen');
             if (!isEditLocked) textarea.focus();
+
+            // --- ここから追加 ---
+        const text = textarea.value;
+        const lastParenIndex = text.lastIndexOf(')');
+
+        if (lastParenIndex !== -1) {
+          // mirrorDivを作成してスクロール位置を計算
+          const mirrorDiv = document.createElement('div');
+          const style = window.getComputedStyle(textarea);
+          
+          [
+            'fontFamily', 'fontSize', 'lineHeight', 'padding', 
+            'width', 'boxSizing', 'whiteSpace', 'wordWrap'
+          ].forEach(prop => mirrorDiv.style[prop] = style[prop]);
+
+          mirrorDiv.style.position = 'absolute';
+          mirrorDiv.style.visibility = 'hidden';
+          mirrorDiv.style.left = '-9999px';
+          
+          mirrorDiv.textContent = text.substring(0, lastParenIndex);
+
+          const marker = document.createElement('span');
+          marker.textContent = ')';
+          mirrorDiv.appendChild(marker);
+          document.body.appendChild(mirrorDiv);
+
+          // マーカーの位置までスクロール
+          const targetY = marker.offsetTop;
+          textarea.scrollTop = targetY;
+
+          document.body.removeChild(mirrorDiv);
+        }
+            
         });
 
         btnCloseFullscreen.addEventListener('click', () => {
