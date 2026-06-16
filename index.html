@@ -354,6 +354,25 @@
             font-size: 12px;
             background-color: var(--panel-bg);
         }
+
+        /* 新規追加：行移動エリア */
+        .popup-line-nav {
+            width: 85%;
+            margin-top: 10px;
+            padding: 16px 0;
+            background-color: var(--input-bg);
+            border: 1px dashed var(--border-color);
+            border-radius: 6px;
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-color);
+            cursor: ns-resize;
+            transition: background-color 0.2s;
+        }
+        .popup-line-nav:hover {
+            background-color: rgba(128, 128, 128, 0.1);
+        }
+
         .popup-footer-text {
             font-size: 10px;
             opacity: 0.6;
@@ -426,6 +445,11 @@
             <button id="btn-shrink" class="btn-theme" title="下ホイールでも可">➖縮小</button>
             <button id="btn-expand" class="btn-theme" title="下ホイールでも可">➕拡大</button>
         </div>
+
+        <div class="popup-line-nav" id="popup-line-nav" title="上ホイール:前の行 / 下ホイール:次の行">
+            ⇅ 行移動
+        </div>
+
         <div class="popup-footer-text">※余白で下ホイール：モード切替</div>
     </div>
 
@@ -450,6 +474,7 @@
         const wheelStatus = document.getElementById('wheel-status');
         const btnExpand = document.getElementById('btn-expand');
         const btnShrink = document.getElementById('btn-shrink');
+        const popupLineNav = document.getElementById('popup-line-nav');
         let isScrollLocked = false;
         
         const btnWrapLeftParen = document.getElementById('btn-wrap-left-paren');
@@ -562,6 +587,20 @@
         btnFsWrapLeftParen.addEventListener('click', () => insertTextAround('(', ''));
         btnFsWrapBothParen.addEventListener('click', () => insertTextAround('(', ')'));
         btnFsWrapAsterisk.addEventListener('click', () => insertTextAround('*', '*'));
+
+        // 新機能：各装飾ボタン上で「下ホイール」を回した時の処理
+        const wrapButtonsList = [
+            btnWrapLeftParen, btnWrapBothParen, btnWrapAsterisk,
+            btnFsWrapLeftParen, btnFsWrapBothParen, btnFsWrapAsterisk
+        ];
+        wrapButtonsList.forEach(btn => {
+            btn.addEventListener('wheel', (e) => {
+                e.preventDefault(); // スクロールを防止
+                if (e.deltaY > 0) { // 下ホイールの場合
+                    btn.click();
+                }
+            });
+        });
 
         btnFullscreen.addEventListener('click', () => {
             editorContainer.classList.add('fullscreen');
@@ -685,6 +724,50 @@
             }
         }
 
+        // 行を移動して最初の英単語を選択する関数
+        function moveLine(direction) {
+            const text = textarea.value;
+            const cursorPos = textarea.selectionStart;
+            
+            const lines = text.split('\n');
+            if (lines.length === 0) return;
+
+            let currentLineIdx = 0;
+            let currentPosCounter = 0;
+            
+            // 現在の行を特定
+            for (let i = 0; i < lines.length; i++) {
+                const lineLen = lines[i].length;
+                if (cursorPos <= currentPosCounter + lineLen) {
+                    currentLineIdx = i;
+                    break;
+                }
+                currentPosCounter += lineLen + 1; // +1は改行文字分
+            }
+
+            // 移動先の行を決定
+            let targetLineIdx = currentLineIdx + direction;
+            if (targetLineIdx < 0) targetLineIdx = 0;
+            if (targetLineIdx >= lines.length) targetLineIdx = lines.length - 1;
+
+            // 移動先の行の開始インデックスを計算
+            let targetStartPos = 0;
+            for (let i = 0; i < targetLineIdx; i++) {
+                targetStartPos += lines[i].length + 1;
+            }
+
+            // 移動先の行の最初の英単語を検索
+            const targetLineText = lines[targetLineIdx];
+            const match = /[a-zA-Z0-9_]+/.exec(targetLineText);
+            
+            if (match) {
+                textarea.setSelectionRange(targetStartPos + match.index, targetStartPos + match.index + match[0].length);
+            } else {
+                // 英単語が見つからない場合は行の先頭にカーソルを置く
+                textarea.setSelectionRange(targetStartPos, targetStartPos);
+            }
+        }
+
         // 範囲選択を拡大する関数
         function expandSelection() {
             const words = getAllWords();
@@ -735,7 +818,17 @@
             
             // ボタン上でのホイールはクリック扱い
             if (e.target === btnExpand || e.target === btnShrink) {
-                if (e.deltaY > 0) e.target.click(); // 下ホイールで発動
+                if (e.deltaY > 0) e.target.click(); 
+                return;
+            }
+
+            // 行移動エリア上でのホイール操作
+            if (e.target === popupLineNav || popupLineNav.contains(e.target)) {
+                if (e.deltaY > 0) {
+                    moveLine(1); // 下ホイールで次の行へ
+                } else if (e.deltaY < 0) {
+                    moveLine(-1); // 上ホイールで前の行へ
+                }
                 return;
             }
 
