@@ -299,7 +299,7 @@
             align-items: center;
             user-select: none;
             transition: background-color 0.3s, border-color 0.3s; 
-            padding-bottom: 12px;
+            overflow: hidden; /* 子要素のはみ出し防止 */
         }
         #wheel-popup.show {
             display: flex;
@@ -314,7 +314,6 @@
             align-items: center;
             background-color: rgba(0,0,0,0.05);
             border-bottom: 1px solid var(--border-color);
-            border-radius: 6px 6px 0 0;
         }
         body.dark-mode .popup-header { background-color: rgba(255,255,255,0.05); }
 
@@ -355,7 +354,6 @@
             background-color: var(--panel-bg);
         }
 
-        /* 新規追加：行移動エリア */
         .popup-line-nav {
             width: 85%;
             margin-top: 10px;
@@ -377,7 +375,24 @@
             font-size: 10px;
             opacity: 0.6;
             margin-top: 8px;
+            margin-bottom: 8px;
         }
+
+        /* 新規追加：通常スクロール領域 */
+        #popup-scroll-area {
+            width: 100%;
+            padding: 8px 0;
+            background-color: rgba(0,0,0,0.05);
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 11px;
+            color: var(--text-color);
+            cursor: ns-resize;
+            opacity: 0.8;
+            transition: background-color 0.2s, opacity 0.2s;
+        }
+        body.dark-mode #popup-scroll-area { background-color: rgba(255,255,255,0.05); }
+        #popup-scroll-area:hover { background-color: rgba(128, 128, 128, 0.1); opacity: 1; }
     </style>
 </head>
 <body>
@@ -451,6 +466,8 @@
         </div>
 
         <div class="popup-footer-text">※余白で下ホイール：モード切替</div>
+        
+        <div id="popup-scroll-area" title="ここでホイール: テキストを通常スクロール">↕️ 通常スクロール</div>
     </div>
 
     <script>
@@ -475,6 +492,7 @@
         const btnExpand = document.getElementById('btn-expand');
         const btnShrink = document.getElementById('btn-shrink');
         const popupLineNav = document.getElementById('popup-line-nav');
+        const popupScrollArea = document.getElementById('popup-scroll-area');
         let isScrollLocked = false;
         
         const btnWrapLeftParen = document.getElementById('btn-wrap-left-paren');
@@ -561,6 +579,27 @@
         makeDraggable(document.getElementById('fs-drag-handle'), document.getElementById('fs-floating-bar'));
         makeDraggable(document.getElementById('popup-drag-handle'), wheelPopup);
 
+        // 次/前の単語を選択する関数（insertTextAround内で呼ぶために上に移動）
+        function selectNextWord(direction) {
+            const words = getAllWords();
+            if(words.length === 0) return;
+
+            const currentStart = textarea.selectionStart;
+            let targetWord = null;
+
+            if (direction === 1) { // 次へ (下ホイール)
+                targetWord = words.find(w => w.start > currentStart);
+                if (!targetWord) targetWord = words[0]; // 末尾なら最初へ
+            } else { // 前へ (上ホイール)
+                targetWord = [...words].reverse().find(w => w.start < currentStart);
+                if (!targetWord) targetWord = words[words.length - 1]; // 最初なら末尾へ
+            }
+
+            if (targetWord) {
+                textarea.setSelectionRange(targetWord.start, targetWord.end);
+            }
+        }
+
         // --- テキスト挿入・装飾機能 ---
         function insertTextAround(before, after) {
             const start = textarea.selectionStart;
@@ -577,7 +616,11 @@
             textarea.setSelectionRange(newCursorPos, newCursorPos);
             
             textarea.scrollTop = currentScroll;
-            textarea.blur();
+
+            // --- 新規追加: 編集ロック状態（選択モード）なら自動的に次の単語へ移動 ---
+            if (isEditLocked) {
+                selectNextWord(1);
+            }
         }
 
         btnWrapLeftParen.addEventListener('click', () => insertTextAround('(', ''));
@@ -588,7 +631,7 @@
         btnFsWrapBothParen.addEventListener('click', () => insertTextAround('(', ')'));
         btnFsWrapAsterisk.addEventListener('click', () => insertTextAround('*', '*'));
 
-        // 新機能：各装飾ボタン上で「下ホイール」を回した時の処理
+        // 装飾ボタン上で「下ホイール」を回した時の処理
         const wrapButtonsList = [
             btnWrapLeftParen, btnWrapBothParen, btnWrapAsterisk,
             btnFsWrapLeftParen, btnFsWrapBothParen, btnFsWrapAsterisk
@@ -703,27 +746,6 @@
             textarea.setSelectionRange(closest.start, closest.end);
         }
 
-        // 次/前の単語を選択する関数
-        function selectNextWord(direction) {
-            const words = getAllWords();
-            if(words.length === 0) return;
-
-            const currentStart = textarea.selectionStart;
-            let targetWord = null;
-
-            if (direction === 1) { // 次へ (下ホイール)
-                targetWord = words.find(w => w.start > currentStart);
-                if (!targetWord) targetWord = words[0]; // 末尾なら最初へ
-            } else { // 前へ (上ホイール)
-                targetWord = [...words].reverse().find(w => w.start < currentStart);
-                if (!targetWord) targetWord = words[words.length - 1]; // 最初なら末尾へ
-            }
-
-            if (targetWord) {
-                textarea.setSelectionRange(targetWord.start, targetWord.end);
-            }
-        }
-
         // 行を移動して最初の英単語を選択する関数
         function moveLine(direction) {
             const text = textarea.value;
@@ -816,6 +838,12 @@
         wheelPopup.addEventListener('wheel', (e) => {
             e.preventDefault(); // ポップアップ上のスクロール防止
             
+            // 新規追加：通常スクロール領域での操作
+            if (e.target === popupScrollArea || popupScrollArea.contains(e.target)) {
+                textarea.scrollTop += e.deltaY;
+                return;
+            }
+
             // ボタン上でのホイールはクリック扱い
             if (e.target === btnExpand || e.target === btnShrink) {
                 if (e.deltaY > 0) e.target.click(); 
