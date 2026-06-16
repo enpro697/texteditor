@@ -114,40 +114,43 @@
             font-weight: 600;
             color: white;
             cursor: pointer;
-            transition: background-color 0.2s, transform 0.1s, border-color 0.2s, color 0.2s;
+            transition: background-color 0.2s, transform 0.1s, border-color 0.2s, color 0.2s, opacity 0.2s;
             display: inline-flex;
             align-items: center;
             justify-content: center;
         }
 
-        button:active { transform: scale(0.97); }
+        button:active:not(:disabled) { transform: scale(0.97); }
+
+        /* 新規追加：無効化されたボタンのスタイル */
+        button:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
 
         .btn-primary { background-color: var(--primary-color); }
-        .btn-primary:hover { background-color: var(--primary-hover); }
+        .btn-primary:hover:not(:disabled) { background-color: var(--primary-hover); }
 
         .btn-success { background-color: var(--success-color); }
-        .btn-success:hover { background-color: var(--success-hover); }
+        .btn-success:hover:not(:disabled) { background-color: var(--success-hover); }
 
         .btn-danger { background-color: var(--danger-color); }
-        .btn-danger:hover { background-color: var(--danger-hover); }
+        .btn-danger:hover:not(:disabled) { background-color: var(--danger-hover); }
 
         .btn-info { background-color: var(--info-color); }
-        .btn-info:hover { background-color: var(--info-hover); }
+        .btn-info:hover:not(:disabled) { background-color: var(--info-hover); }
 
         .btn-search { background-color: var(--search-color); }
-        .btn-search:hover { background-color: var(--search-hover); }
+        .btn-search:hover:not(:disabled) { background-color: var(--search-hover); }
         
-        .btn-wrap { background-color: var(--wrap-color); padding: 8px 12px;}
-        .btn-wrap:hover { background-color: var(--wrap-hover); }
-
         .btn-theme {
             background-color: transparent;
             color: var(--text-color);
             border: 1px solid var(--border-color);
-            padding: 16px 12px;
+            padding: 8px 12px;
             font-size: 13px;
         }
-        .btn-theme:hover {
+        .btn-theme:hover:not(:disabled) {
             background-color: rgba(128, 128, 128, 0.1);
         }
 
@@ -421,6 +424,9 @@
         <div class="tools-group">
             <button id="btn-toggle-edit" class="btn-theme" title="単語選択時にキーボードが出るのを防ぎます" style="color: var(--danger-color); border-color: var(--danger-color);">🔓 ロック解除</button>
             
+            <button id="btn-undo" class="btn-theme" title="元に戻す (Ctrl+Z)" disabled>🔙</button>
+            <button id="btn-redo" class="btn-theme" title="やり直す (Ctrl+Y)" disabled>🔜</button>
+
             <button id="btn-load" class="btn-info">読込</button>
             <button id="btn-copy" class="btn-success">📋 コピー</button>
             <button id="btn-clear" class="btn-danger">🗑️</button>
@@ -498,9 +504,86 @@
         let isScrollLocked = false;
         
         const btnToggleEdit = document.getElementById('btn-toggle-edit');
+        const btnUndo = document.getElementById('btn-undo');
+        const btnRedo = document.getElementById('btn-redo');
 
-        // --- 追加：ホイール連射防止用のタイマー変数 ---
+        // ホイール連射防止用のタイマー変数
         let lastWheelFormatTime = 0;
+
+        // --- 新規追加：履歴管理（Undo/Redo）機構 ---
+        let historyStack = [];
+        let historyIndex = -1;
+        const MAX_HISTORY = 50;
+
+        function updateUndoRedoButtons() {
+            btnUndo.disabled = historyIndex <= 0;
+            btnRedo.disabled = historyIndex >= historyStack.length - 1;
+        }
+
+        function saveState() {
+            const currentValue = textarea.value;
+            // 連続して同じ状態が保存されるのを防ぐ
+            if (historyIndex >= 0 && historyStack[historyIndex].value === currentValue) {
+                return;
+            }
+
+            // 現在地以降の未来の履歴があれば破棄（新しく分岐するため）
+            if (historyIndex < historyStack.length - 1) {
+                historyStack = historyStack.slice(0, historyIndex + 1);
+            }
+
+            historyStack.push({
+                value: currentValue,
+                selectionStart: textarea.selectionStart,
+                selectionEnd: textarea.selectionEnd
+            });
+
+            if (historyStack.length > MAX_HISTORY) {
+                historyStack.shift();
+            } else {
+                historyIndex++;
+            }
+            updateUndoRedoButtons();
+        }
+
+        function performUndo() {
+            if (historyIndex > 0) {
+                historyIndex--;
+                restoreState();
+            }
+        }
+
+        function performRedo() {
+            if (historyIndex < historyStack.length - 1) {
+                historyIndex++;
+                restoreState();
+            }
+        }
+
+        function restoreState() {
+            const state = historyStack[historyIndex];
+            textarea.value = state.value;
+            textarea.setSelectionRange(state.selectionStart, state.selectionEnd);
+            updateUndoRedoButtons();
+        }
+
+        btnUndo.addEventListener('click', performUndo);
+        btnRedo.addEventListener('click', performRedo);
+
+        // 手動入力の履歴も適度に保存する（入力が1秒止まったら保存）
+        let inputTimeout;
+        textarea.addEventListener('input', () => {
+            clearTimeout(inputTimeout);
+            inputTimeout = setTimeout(() => {
+                saveState();
+            }, 1000);
+        });
+
+        // ページ読み込み完了時に最初の状態を保存
+        document.addEventListener("DOMContentLoaded", () => {
+            saveState();
+        });
+        // ----------------------------------------
 
         function showToast(message) {
             toast.textContent = message;
@@ -558,7 +641,7 @@
 
                 targetElem.style.left = `${currentX}px`;
                 targetElem.style.top = `${currentY}px`;
-                targetElem.style.right = 'auto'; // ドラッグ時はright/bottomを無効化
+                targetElem.style.right = 'auto'; 
                 targetElem.style.bottom = 'auto'; 
             });
 
@@ -585,4 +668,526 @@
 
             if (direction === 1) { // 次へ (下ホイール)
                 targetWord = words.find(w => w.start > currentStart);
-                if (!targetWord) targetWord = words
+                if (!targetWord) targetWord = words[0]; 
+            } else { // 前へ (上ホイール)
+                targetWord = [...words].reverse().find(w => w.start < currentStart);
+                if (!targetWord) targetWord = words[words.length - 1]; 
+            }
+
+            if (targetWord) {
+                textarea.setSelectionRange(targetWord.start, targetWord.end);
+            }
+        }
+
+        // --- テキスト挿入・装飾機能 ---
+        function insertTextAround(before, after) {
+            const start = textarea.selectionStart;
+            const end = textarea.selectionEnd;
+            const text = textarea.value;
+            const currentScroll = textarea.scrollTop;
+            
+            const selectedText = text.substring(start, end);
+            const newText = before + selectedText + after;
+            
+            textarea.value = text.substring(0, start) + newText + text.substring(end);
+            
+            const newCursorPos = start + newText.length;
+            textarea.setSelectionRange(newCursorPos, newCursorPos);
+            
+            textarea.scrollTop = currentScroll;
+
+            // 履歴に保存
+            saveState();
+
+            if (isEditLocked) {
+                selectNextWord(1);
+            }
+        }
+
+        btnPopupWrapBothParen.addEventListener('click', () => insertTextAround('(', ')'));
+        btnPopupWrapAsterisk.addEventListener('click', () => insertTextAround('*', '*'));
+
+        const wrapButtonsList = [btnPopupWrapBothParen, btnPopupWrapAsterisk];
+        wrapButtonsList.forEach(btn => {
+            btn.addEventListener('wheel', (e) => {
+                e.preventDefault(); 
+                if (e.deltaY > 0) { 
+                    const now = Date.now();
+                    if (now - lastWheelFormatTime < 500) return; 
+                    lastWheelFormatTime = now;
+                    btn.click();
+                }
+            });
+        });
+
+        btnFullscreen.addEventListener('click', () => {
+            editorContainer.classList.add('fullscreen');
+            if (!isEditLocked) textarea.focus();
+
+            const text = textarea.value;
+            const lastParenIndex = text.lastIndexOf(')');
+
+            if (lastParenIndex !== -1) {
+                const mirrorDiv = document.createElement('div');
+                const style = window.getComputedStyle(textarea);
+                
+                [
+                    'fontFamily', 'fontSize', 'lineHeight', 'padding', 
+                    'width', 'boxSizing', 'whiteSpace', 'wordWrap'
+                ].forEach(prop => mirrorDiv.style[prop] = style[prop]);
+
+                mirrorDiv.style.position = 'absolute';
+                mirrorDiv.style.visibility = 'hidden';
+                mirrorDiv.style.left = '-9999px';
+                
+                mirrorDiv.textContent = text.substring(0, lastParenIndex);
+
+                const marker = document.createElement('span');
+                marker.textContent = ')';
+                mirrorDiv.appendChild(marker);
+                document.body.appendChild(mirrorDiv);
+
+                const targetY = marker.offsetTop;
+                textarea.scrollTop = targetY;
+
+                document.body.removeChild(mirrorDiv);
+            }
+        });
+
+        btnCloseFullscreen.addEventListener('click', () => {
+            editorContainer.classList.remove('fullscreen');
+            if (!isEditLocked) textarea.focus();
+            
+            const fsFloatingBar = document.getElementById('fs-floating-bar');
+            fsFloatingBar.style.left = '16px';
+            fsFloatingBar.style.top = '60px';
+        });
+
+        btnTheme.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            if (document.body.classList.contains('dark-mode')) {
+                btnTheme.textContent = '☀️ ライトモード';
+            } else {
+                btnTheme.textContent = '🌙 ダークモード';
+            }
+        });
+
+        btnLoad.addEventListener('click', async () => {
+            const fileName = searchInput.value.trim();
+            if (!fileName) {
+                showToast("⚠️ 読み込むファイル名を入力してください");
+                return;
+            }
+            try {
+                const response = await fetch(fileName);
+                if (response.ok) {
+                    const text = await response.text();
+                    textarea.value = text;
+                    saveState(); // 履歴を保存
+                    showToast(`📄 ${fileName} を読み込みました`);
+                } else {
+                    showToast(`❌ ファイルが見つかりません (${response.status})`);
+                }
+            } catch (error) {
+                showToast("❌ 読み込みに失敗しました");
+            }
+        });
+
+        btnWheelMode.addEventListener('click', () => {
+            wheelPopup.classList.toggle('show');
+        });
+
+        function getAllWords() {
+            const text = textarea.value;
+            const regex = /[a-zA-Z0-9_]+/g;
+            let match;
+            const words = [];
+            while ((match = regex.exec(text)) !== null) {
+                words.push({ start: match.index, end: regex.lastIndex });
+            }
+            return words;
+        }
+
+        function initWordSelection() {
+            const words = getAllWords();
+            if(words.length === 0) return;
+            
+            const start = textarea.selectionStart;
+            let closest = words.find(w => w.start >= start);
+            if (!closest) closest = words[words.length - 1];
+
+            textarea.setSelectionRange(closest.start, closest.end);
+        }
+
+        function moveLine(direction) {
+            const text = textarea.value;
+            const cursorPos = textarea.selectionStart;
+            
+            const lines = text.split('\n');
+            if (lines.length === 0) return;
+
+            let currentLineIdx = 0;
+            let currentPosCounter = 0;
+            
+            for (let i = 0; i < lines.length; i++) {
+                const lineLen = lines[i].length;
+                if (cursorPos <= currentPosCounter + lineLen) {
+                    currentLineIdx = i;
+                    break;
+                }
+                currentPosCounter += lineLen + 1; 
+            }
+
+            let targetLineIdx = currentLineIdx + direction;
+            let match = null;
+            
+            while (targetLineIdx >= 0 && targetLineIdx < lines.length) {
+                match = /[a-zA-Z0-9_]+/.exec(lines[targetLineIdx]);
+                if (match) {
+                    break; 
+                }
+                targetLineIdx += direction;
+            }
+
+            if (!match) return;
+
+            let targetStartPos = 0;
+            for (let i = 0; i < targetLineIdx; i++) {
+                targetStartPos += lines[i].length + 1;
+            }
+
+            textarea.setSelectionRange(targetStartPos + match.index, targetStartPos + match.index + match[0].length);
+        }
+
+        function expandSelection() {
+            const words = getAllWords();
+            if(words.length === 0) return;
+            
+            const start = textarea.selectionStart;
+            const end = textarea.selectionEnd;
+            
+            if (start === end) {
+                initWordSelection();
+                return;
+            }
+            
+            const currentEndWordIndex = words.findIndex(w => w.end === end);
+            if (currentEndWordIndex !== -1 && currentEndWordIndex < words.length - 1) {
+                const nextWord = words[currentEndWordIndex + 1];
+                textarea.setSelectionRange(start, nextWord.end);
+            }
+        }
+
+        function shrinkSelection() {
+            const words = getAllWords();
+            if(words.length === 0) return;
+
+            const start = textarea.selectionStart;
+            const end = textarea.selectionEnd;
+            
+            if (start === end) return;
+            
+            const currentStartWordIndex = words.findIndex(w => w.start === start);
+            const currentEndWordIndex = words.findIndex(w => w.end === end);
+            
+            if (currentStartWordIndex !== -1 && currentEndWordIndex !== -1 && currentEndWordIndex > currentStartWordIndex) {
+                const prevWord = words[currentEndWordIndex - 1];
+                textarea.setSelectionRange(start, prevWord.end);
+            }
+        }
+
+        btnExpand.addEventListener('click', expandSelection);
+        btnShrink.addEventListener('click', shrinkSelection);
+
+        wheelPopup.addEventListener('wheel', (e) => {
+            e.preventDefault(); 
+            
+            if (e.target === popupScrollArea || popupScrollArea.contains(e.target)) {
+                textarea.scrollTop += e.deltaY;
+                return;
+            }
+
+            if (e.target === btnExpand || e.target === btnShrink) {
+                if (e.deltaY > 0) e.target.click(); 
+                return;
+            }
+
+            if (e.target === popupLineNav || popupLineNav.contains(e.target)) {
+                if (e.deltaY > 0) {
+                    moveLine(1); 
+                } else if (e.deltaY < 0) {
+                    moveLine(-1); 
+                }
+                return;
+            }
+
+            if (e.deltaY > 0) { 
+                isScrollLocked = !isScrollLocked;
+                if (isScrollLocked) {
+                    wheelPopup.classList.add('locked');
+                    wheelStatus.textContent = "固定モード";
+                    initWordSelection();
+                } else {
+                    wheelPopup.classList.remove('locked');
+                    wheelStatus.textContent = "通常モード";
+                }
+            }
+        });
+        
+        btnSearchOnly.addEventListener('click', () => {
+            const searchValue = searchInput.value;
+            if (!searchValue) {
+                showToast("⚠️ 検索する文字列を入力してください");
+                return;
+            }
+
+            const text = textarea.value;
+            if (!text) return;
+
+            let searchStartIndex = textarea.selectionEnd;
+            let foundIndex = text.indexOf(searchValue, searchStartIndex);
+
+            if (foundIndex === -1) {
+                foundIndex = text.indexOf(searchValue, 0);
+                if (foundIndex !== -1) {
+                    showToast("🔄 一番上に戻って検索しました");
+                }
+            }
+
+            if (foundIndex === -1) {
+                showToast("❌ 対象の文字列は見つかりませんでした");
+                return;
+            }
+
+            const hitCount = text.split(searchValue).length - 1;
+
+            if (!isEditLocked) textarea.focus();
+            textarea.setSelectionRange(foundIndex, foundIndex + searchValue.length);
+
+            const mirrorDiv = document.createElement('div');
+            const style = window.getComputedStyle(textarea);
+
+            [
+                'fontFamily', 'fontSize', 'lineHeight', 'padding', 
+                'width', 'boxSizing', 'whiteSpace', 'wordWrap'
+            ].forEach(prop => mirrorDiv.style[prop] = style[prop]);
+
+            mirrorDiv.style.position = 'absolute';
+            mirrorDiv.style.visibility = 'hidden';
+            mirrorDiv.style.left = '-9999px';
+
+            mirrorDiv.textContent = text.substring(0, foundIndex);
+
+            const marker = document.createElement('span');
+            marker.textContent = searchValue;
+            mirrorDiv.appendChild(marker);
+            document.body.appendChild(mirrorDiv);
+
+            const targetY = marker.offsetTop - (textarea.clientHeight / 2);
+            textarea.scrollTop = targetY > 0 ? targetY : 0;
+
+            document.body.removeChild(mirrorDiv);
+
+            if (text.indexOf(searchValue, searchStartIndex) !== -1) {
+                 showToast(`🔍 ${hitCount}件ヒットしました`);
+            }
+        });
+
+        btnReplace.addEventListener('click', () => {
+            const searchValue = searchInput.value;
+            const replaceValue = replaceInput.value;
+
+            if (!searchValue) {
+                showToast("⚠️ 検索する文字列を入力してください");
+                return;
+            }
+
+            const originalText = textarea.value;
+            const start = textarea.selectionStart;
+            const end = textarea.selectionEnd;
+
+            if (start !== end) {
+                const beforeSelection = originalText.substring(0, start);
+                const selectedText = originalText.substring(start, end);
+                const afterSelection = originalText.substring(end);
+
+                const replacedSelection = selectedText.replaceAll(searchValue, replaceValue);
+
+                if (selectedText === replacedSelection) {
+                    showToast("選択範囲内に対象の文字列が見つかりませんでした");
+                    return;
+                }
+
+                textarea.value = beforeSelection + replacedSelection + afterSelection;
+                textarea.setSelectionRange(start, start + replacedSelection.length);
+                if (!isEditLocked) textarea.focus();
+                
+                saveState(); // 履歴に保存
+                showToast("✨ 選択範囲内のみ置換しました");
+            } else {
+                const newText = originalText.replaceAll(searchValue, replaceValue);
+                if (originalText === newText) {
+                    showToast("対象の文字列が見つかりませんでした");
+                } else {
+                    textarea.value = newText;
+                    saveState(); // 履歴に保存
+                    showToast("✨ 全体の一括置換が完了しました");
+                }
+            }
+        });
+
+        btnCopy.addEventListener('click', async () => {
+            const textToCopy = textarea.value;
+            if (!textToCopy) {
+                showToast("コピーするテキストがありません");
+                return;
+            }
+
+            if (navigator.clipboard && window.isSecureContext) {
+                try {
+                    await navigator.clipboard.writeText(textToCopy);
+                    showToast("📋 クリップボードにコピーしました！");
+                    return;
+                } catch (err) {
+                    console.warn("Clipboard API failed, falling back...", err);
+                }
+            }
+
+            const currentScroll = textarea.scrollTop;
+            const currentStart = textarea.selectionStart;
+            const currentEnd = textarea.selectionEnd;
+
+            const wasLocked = isEditLocked;
+            textarea.readOnly = true; 
+            textarea.setSelectionRange(0, textToCopy.length);
+            
+            try {
+                const successful = document.execCommand('copy');
+                if (successful) {
+                    showToast("📋 コピーしました！");
+                } else {
+                    showToast("❌ コピーに失敗しました");
+                }
+            } catch (err) {
+                showToast("❌ お使いのブラウザではコピーできません");
+            } finally {
+                textarea.readOnly = wasLocked;
+                textarea.setSelectionRange(currentStart, currentEnd);
+                textarea.scrollTop = currentScroll;
+            }
+        });
+
+        btnClear.addEventListener('click', () => {
+            if (confirm("テキストをすべて削除してもよろしいですか？")) {
+                textarea.value = '';
+                searchInput.value = '';
+                replaceInput.value = '';
+                if (!isEditLocked) textarea.focus();
+                
+                saveState(); // 履歴に保存
+                showToast("🗑️ テキストをクリアしました");
+            }
+        });
+
+        function selectWordAtCursor() {
+            if (!isEditLocked) return;
+            if (textarea.selectionStart !== textarea.selectionEnd) return;
+
+            const text = textarea.value;
+            const cursorPos = textarea.selectionStart;
+            if (!text || text.length === 0) return;
+
+            const isWordChar = (char) => /[a-zA-Z0-9_]/.test(char);
+            let start = cursorPos;
+            let end = cursorPos;
+
+            if (cursorPos < text.length && isWordChar(text[cursorPos])) {
+                while (start > 0 && isWordChar(text[start - 1])) start--;
+                while (end < text.length && isWordChar(text[end])) end++;
+            } else if (cursorPos > 0 && isWordChar(text[cursorPos - 1])) {
+                while (start > 0 && isWordChar(text[start - 1])) start--;
+                while (end < text.length && isWordChar(text[end])) end++;
+            } else {
+                return; 
+            }
+
+            if (start < end) {
+                textarea.setSelectionRange(start, end);
+            }
+        }
+
+        textarea.addEventListener('click', (e) => {
+            selectWordAtCursor();
+        });
+
+        textarea.addEventListener('wheel', (e) => {
+            if (isScrollLocked) {
+                e.preventDefault(); 
+                if (e.deltaY > 0) {
+                    selectNextWord(1); 
+                } else if (e.deltaY < 0) {
+                    selectNextWord(-1); 
+                }
+            } else {
+                if (textarea.selectionStart !== textarea.selectionEnd) {
+                    e.preventDefault(); 
+
+                    const now = Date.now();
+                    if (now - lastWheelFormatTime < 500) return; 
+                    lastWheelFormatTime = now;
+
+                    if (e.deltaY < 0) {
+                        insertTextAround('(', '');
+                    } else if (e.deltaY > 0) {
+                        insertTextAround('(', ')');
+                    }
+                }
+            }
+        });
+
+        // 既存のショートカットキーに加え、Undo(Ctrl+Z)とRedo(Ctrl+Y / Ctrl+Shift+Z)に対応
+        textarea.addEventListener('keydown', (e) => {
+            // Undo / Redo のショートカット
+            if (e.ctrlKey || e.metaKey) {
+                if (e.key.toLowerCase() === 'z') {
+                    e.preventDefault();
+                    if (e.shiftKey) {
+                        performRedo();
+                    } else {
+                        performUndo();
+                    }
+                    return;
+                } else if (e.key.toLowerCase() === 'y') {
+                    e.preventDefault();
+                    performRedo();
+                    return;
+                }
+            }
+
+            if (textarea.selectionStart !== textarea.selectionEnd) {
+                switch (e.key) {
+                    case 'a':
+                        e.preventDefault();
+                        insertTextAround('(', '');
+                        break;
+                    case 's':
+                        e.preventDefault();
+                        insertTextAround('(', ')');
+                        break;
+                    case 'd':
+                        e.preventDefault();
+                        insertTextAround('*', '*');
+                        break;
+                }
+            }
+        });
+
+        textarea.addEventListener('contextmenu', (e) => {
+            if (textarea.selectionStart !== textarea.selectionEnd) {
+                e.preventDefault();
+                insertTextAround('*', '*');
+            }
+        });
+    </script>
+</body>
+</html>
