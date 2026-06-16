@@ -282,6 +282,45 @@
             .tools-group { width: 100%; justify-content: space-between; }
             .input-group, input[type="text"] { width: 100%; }
         }
+        /* --- ホイール操作モード用ポップアップ --- */
+#wheel-popup {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 140px;
+    height: 90px;
+    background-color: var(--panel-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 10002;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+#wheel-popup.show {
+    display: flex;
+}
+#wheel-popup.locked {
+    background-color: rgba(220, 38, 38, 0.1);
+    border-color: var(--danger-color);
+}
+#wheel-popup .popup-title {
+    opacity: 0.8;
+    margin-bottom: 6px;
+}
+#wheel-status {
+    font-weight: bold;
+    font-size: 15px;
+    color: var(--text-color);
+}
+#wheel-popup.locked #wheel-status {
+    color: var(--danger-color);
+}
     </style>
 </head>
 <body>
@@ -335,7 +374,12 @@
     </div>
 
     <div id="toast">通知メッセージ</div>
+<button id="btn-wheel-mode" class="btn-theme">🖲️ ホイール設定</button>
 
+<div id="wheel-popup">
+    <div class="popup-title">ホイール下で切替</div>
+    <div id="wheel-status">通常モード</div>
+</div>
     <script>
         const textarea = document.getElementById('main-textarea');
         const searchInput = document.getElementById('search-text');
@@ -350,6 +394,10 @@
         
         const editorContainer = document.getElementById('editor-container');
         const btnFullscreen = document.getElementById('btn-fullscreen');
+        const btnWheelMode = document.getElementById('btn-wheel-mode');
+const wheelPopup = document.getElementById('wheel-popup');
+const wheelStatus = document.getElementById('wheel-status');
+let isScrollLocked = false;
         const btnCloseFullscreen = document.getElementById('btn-close-fullscreen');
         
         const btnWrapLeftParen = document.getElementById('btn-wrap-left-paren');
@@ -535,6 +583,26 @@
             }
         });
 
+        // モード設定ボタンのクリックで表示/非表示
+btnWheelMode.addEventListener('click', () => {
+    wheelPopup.classList.toggle('show');
+});
+
+// ポップアップ上でのホイール操作でモード切替
+wheelPopup.addEventListener('wheel', (e) => {
+    e.preventDefault(); // ポップアップ上では画面スクロールさせない
+    if (e.deltaY > 0) { // ホイールを下向きに回した場合
+        isScrollLocked = !isScrollLocked;
+        if (isScrollLocked) {
+            wheelPopup.classList.add('locked');
+            wheelStatus.textContent = "固定モード";
+        } else {
+            wheelPopup.classList.remove('locked');
+            wheelStatus.textContent = "通常モード";
+        }
+    }
+});
+        
         btnSearchOnly.addEventListener('click', () => {
             const searchValue = searchInput.value;
             if (!searchValue) {
@@ -688,44 +756,59 @@
             }
         });
 
-        // --- 1タップで英単語を選択する機能 ---
-        textarea.addEventListener('click', (e) => {
-            // ロック解除中（手入力モード）の場合は、通常のカーソル配置を優先
-            if (!isEditLocked) return;
+// --- 1タップ（またはホイール）で英単語を選択する共通関数 ---
+function selectWordAtCursor() {
+    if (!isEditLocked) return;
+    if (textarea.selectionStart !== textarea.selectionEnd) return;
 
-            // すでにユーザーがドラッグで範囲選択をしている場合は上書きしない
-            if (textarea.selectionStart !== textarea.selectionEnd) return;
+    const text = textarea.value;
+    const cursorPos = textarea.selectionStart;
+    if (!text || text.length === 0) return;
 
-            const text = textarea.value;
-            const cursorPos = textarea.selectionStart;
+    const isWordChar = (char) => /[a-zA-Z0-9_]/.test(char);
+    let start = cursorPos;
+    let end = cursorPos;
 
-            if (!text || text.length === 0) return;
+    if (cursorPos < text.length && isWordChar(text[cursorPos])) {
+        while (start > 0 && isWordChar(text[start - 1])) start--;
+        while (end < text.length && isWordChar(text[end])) end++;
+    } else if (cursorPos > 0 && isWordChar(text[cursorPos - 1])) {
+        while (start > 0 && isWordChar(text[start - 1])) start--;
+        while (end < text.length && isWordChar(text[end])) end++;
+    } else {
+        return; 
+    }
 
-            // 英数字とアンダースコアを単語の一部として判定
-            const isWordChar = (char) => /[a-zA-Z0-9_]/.test(char);
+    if (start < end) {
+        textarea.setSelectionRange(start, end);
+    }
+}
 
-            let start = cursorPos;
-            let end = cursorPos;
+// クリック時は共通関数を呼ぶだけ
+textarea.addEventListener('click', (e) => {
+    selectWordAtCursor();
+});
 
-            // タップした位置が英単語の上かどうかを判定し、左右の境界を探す
-            if (cursorPos < text.length && isWordChar(text[cursorPos])) {
-                // カーソルの右側が英文字の場合
-                while (start > 0 && isWordChar(text[start - 1])) start--;
-                while (end < text.length && isWordChar(text[end])) end++;
-            } else if (cursorPos > 0 && isWordChar(text[cursorPos - 1])) {
-                // カーソルの左側が英文字の場合
-                while (start > 0 && isWordChar(text[start - 1])) start--;
-                while (end < text.length && isWordChar(text[end])) end++;
-            } else {
-                // 英単語以外の場所（日本語や空白など）をタップした場合は何もしない
-                return; 
-            }
-
-            if (start < end) {
-                // 見つけた英単語を範囲選択状態にする
-                textarea.setSelectionRange(start, end);
-            }
-        });
+// --- ホイール操作の改修 ---
+textarea.addEventListener('wheel', (e) => {
+    if (textarea.selectionStart !== textarea.selectionEnd) {
+        // 【範囲選択されている場合】既存のカッコ付与動作
+        e.preventDefault(); 
+        if (e.deltaY < 0) {
+            insertTextAround('(', '');
+        } else if (e.deltaY > 0) {
+            insertTextAround('(', ')');
+        }
+    } else {
+        // 【範囲選択されていない場合】
+        if (isScrollLocked && e.deltaY > 0) {
+            // スクロール固定モード ＋ ホイール下向き
+            e.preventDefault(); // スクロールを止める
+            selectWordAtCursor(); // クリック時と同じ単語選択を実行
+        }
+        // 固定モードでない、または上向きの場合は通常のスクロールを許可
+    }
+});
 
         // --- キーボードショートカット機能 ---
         textarea.addEventListener('keydown', (e) => {
@@ -756,10 +839,6 @@
                 } else if (e.deltaY > 0) {
                     insertTextAround('(', ')');
                 }
-            }else {
-                // ↓ここを追加↓
-                // 範囲選択されていない場合はクリックイベントを発生させ、単語選択処理を流用する
-                textarea.dispatchEvent(new Event('click'));
             }
         });
 
