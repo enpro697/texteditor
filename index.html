@@ -347,16 +347,29 @@
         .popup-controls {
             display: flex;
             gap: 8px;
+            margin-bottom: 8px;
         }
         .popup-controls button {
             padding: 6px 10px;
             font-size: 12px;
             background-color: var(--panel-bg);
         }
+        
+        /* ポップアップ内の装飾ボタン用スタイル */
+        .popup-controls .btn-wrap {
+            background-color: var(--wrap-color);
+            color: white;
+            border: none;
+            padding: 6px 16px;
+            font-size: 14px;
+        }
+        .popup-controls .btn-wrap:hover {
+            background-color: var(--wrap-hover);
+        }
 
         .popup-line-nav {
             width: 85%;
-            margin-top: 10px;
+            margin-top: 4px;
             padding: 16px 0;
             background-color: var(--input-bg);
             border: 1px dashed var(--border-color);
@@ -378,10 +391,10 @@
             margin-bottom: 8px;
         }
 
-        /* 新規追加：通常スクロール領域 */
+        /* 通常スクロール領域 */
         #popup-scroll-area {
             width: 100%;
-            padding: 32px 0;
+            padding: 8px 0;
             background-color: rgba(0,0,0,0.05);
             border-top: 1px solid var(--border-color);
             text-align: center;
@@ -418,10 +431,6 @@
         <div class="tools-group">
             <button id="btn-toggle-edit" class="btn-theme" title="単語選択時にキーボードが出るのを防ぎます" style="color: var(--danger-color); border-color: var(--danger-color);">🔓 ロック解除</button>
             
-            <button id="btn-wrap-left-paren" class="btn-wrap">(</button>
-            <button id="btn-wrap-both-paren" class="btn-wrap">()</button>
-            <button id="btn-wrap-asterisk" class="btn-wrap">**</button>
-            
             <button id="btn-load" class="btn-info">読込</button>
             <button id="btn-copy" class="btn-success">📋 コピー</button>
             <button id="btn-clear" class="btn-danger">🗑️</button>
@@ -434,12 +443,6 @@
     <div class="editor-container" id="editor-container">
         <div class="fullscreen-floating-bar" id="fs-floating-bar">
             <div class="drag-handle" id="fs-drag-handle" title="ドラッグして移動">⠿</div>
-            
-            <button id="btn-fs-wrap-left-paren" class="btn-wrap">(</button>
-            <button id="btn-fs-wrap-both-paren" class="btn-wrap">()</button>
-            <button id="btn-fs-wrap-asterisk" class="btn-wrap">**</button>
-            
-            <div class="fs-divider"></div>
             
             <button id="btn-close-fullscreen" class="btn-danger btn-fs-close">×</button>
         </div>
@@ -459,6 +462,11 @@
         <div class="popup-controls">
             <button id="btn-shrink" class="btn-theme" title="下ホイールでも可">➖縮小</button>
             <button id="btn-expand" class="btn-theme" title="下ホイールでも可">➕拡大</button>
+        </div>
+        
+        <div class="popup-controls">
+            <button id="btn-popup-wrap-both-paren" class="btn-wrap" title="下ホイールでも可">()</button>
+            <button id="btn-popup-wrap-asterisk" class="btn-wrap" title="下ホイールでも可">**</button>
         </div>
 
         <div class="popup-line-nav" id="popup-line-nav" title="上ホイール:前の行 / 下ホイール:次の行">
@@ -491,18 +499,14 @@
         const wheelStatus = document.getElementById('wheel-status');
         const btnExpand = document.getElementById('btn-expand');
         const btnShrink = document.getElementById('btn-shrink');
+        
+        const btnPopupWrapBothParen = document.getElementById('btn-popup-wrap-both-paren');
+        const btnPopupWrapAsterisk = document.getElementById('btn-popup-wrap-asterisk');
+        
         const popupLineNav = document.getElementById('popup-line-nav');
         const popupScrollArea = document.getElementById('popup-scroll-area');
         let isScrollLocked = false;
         
-        const btnWrapLeftParen = document.getElementById('btn-wrap-left-paren');
-        const btnWrapBothParen = document.getElementById('btn-wrap-both-paren');
-        const btnWrapAsterisk = document.getElementById('btn-wrap-asterisk');
-        
-        const btnFsWrapLeftParen = document.getElementById('btn-fs-wrap-left-paren');
-        const btnFsWrapBothParen = document.getElementById('btn-fs-wrap-both-paren');
-        const btnFsWrapAsterisk = document.getElementById('btn-fs-wrap-asterisk');
-
         const btnToggleEdit = document.getElementById('btn-toggle-edit');
 
         function showToast(message) {
@@ -579,7 +583,7 @@
         makeDraggable(document.getElementById('fs-drag-handle'), document.getElementById('fs-floating-bar'));
         makeDraggable(document.getElementById('popup-drag-handle'), wheelPopup);
 
-        // 次/前の単語を選択する関数（insertTextAround内で呼ぶために上に移動）
+        // 次/前の単語を選択する関数
         function selectNextWord(direction) {
             const words = getAllWords();
             if(words.length === 0) return;
@@ -617,25 +621,17 @@
             
             textarea.scrollTop = currentScroll;
 
-            // --- 新規追加: 編集ロック状態（選択モード）なら自動的に次の単語へ移動 ---
+            // 編集ロック状態（選択モード）なら自動的に次の単語へ移動
             if (isEditLocked) {
                 selectNextWord(1);
             }
         }
 
-        btnWrapLeftParen.addEventListener('click', () => insertTextAround('(', ''));
-        btnWrapBothParen.addEventListener('click', () => insertTextAround('(', ')'));
-        btnWrapAsterisk.addEventListener('click', () => insertTextAround('*', '*'));
-
-        btnFsWrapLeftParen.addEventListener('click', () => insertTextAround('(', ''));
-        btnFsWrapBothParen.addEventListener('click', () => insertTextAround('(', ')'));
-        btnFsWrapAsterisk.addEventListener('click', () => insertTextAround('*', '*'));
+        btnPopupWrapBothParen.addEventListener('click', () => insertTextAround('(', ')'));
+        btnPopupWrapAsterisk.addEventListener('click', () => insertTextAround('*', '*'));
 
         // 装飾ボタン上で「下ホイール」を回した時の処理
-        const wrapButtonsList = [
-            btnWrapLeftParen, btnWrapBothParen, btnWrapAsterisk,
-            btnFsWrapLeftParen, btnFsWrapBothParen, btnFsWrapAsterisk
-        ];
+        const wrapButtonsList = [btnPopupWrapBothParen, btnPopupWrapAsterisk];
         wrapButtonsList.forEach(btn => {
             btn.addEventListener('wheel', (e) => {
                 e.preventDefault(); // スクロールを防止
@@ -838,14 +834,14 @@
         wheelPopup.addEventListener('wheel', (e) => {
             e.preventDefault(); // ポップアップ上のスクロール防止
             
-            // 新規追加：通常スクロール領域での操作
+            // 通常スクロール領域での操作
             if (e.target === popupScrollArea || popupScrollArea.contains(e.target)) {
                 textarea.scrollTop += e.deltaY;
                 return;
             }
 
             // ボタン上でのホイールはクリック扱い
-            if (e.target === btnExpand || e.target === btnShrink) {
+            if (e.target === btnExpand || e.target === btnShrink || e.target === btnPopupWrapBothParen || e.target === btnPopupWrapAsterisk) {
                 if (e.deltaY > 0) e.target.click(); 
                 return;
             }
