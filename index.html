@@ -542,7 +542,7 @@
                 textarea.value = state.text;
                 textarea.setSelectionRange(state.start, state.end);
                 updateUndoRedoButtons();
-                scrollToSelection(); // 戻した時も見切れないように
+                scrollToSelection(); 
                 if (!isEditLocked) textarea.focus();
             }
         }
@@ -641,7 +641,7 @@
         makeDraggable(document.getElementById('fs-drag-handle'), document.getElementById('fs-floating-bar'));
         makeDraggable(document.getElementById('popup-drag-handle'), wheelPopup);
 
-        // --- 追加：選択範囲を見切れないように自動スクロールする関数 ---
+        // --- 選択範囲を見切れないように＆画面半分超えなら中央に自動スクロール ---
         function scrollToSelection() {
             const start = textarea.selectionStart;
             const text = textarea.value;
@@ -672,16 +672,16 @@
             const scrollTop = textarea.scrollTop;
             const clientHeight = textarea.clientHeight;
             const paddingTop = parseFloat(style.paddingTop) || 0;
-            const paddingBottom = parseFloat(style.paddingBottom) || 0;
             const lineHeight = parseFloat(style.lineHeight) || (parseFloat(style.fontSize) * 1.5);
 
             // 上に見切れている場合
             if (targetY < scrollTop + paddingTop) {
                 textarea.scrollTop = targetY - paddingTop - lineHeight;
             } 
-            // 下に見切れている場合
-            else if (targetY + lineHeight > scrollTop + clientHeight - paddingBottom) {
-                textarea.scrollTop = targetY + lineHeight - clientHeight + paddingBottom + lineHeight;
+            // フォーカス位置が画面の半分より下に行く場合
+            else if (targetY > scrollTop + clientHeight / 2) {
+                // 画面の真ん中付近にフォーカスが来るようにスクロール調整
+                textarea.scrollTop = targetY - (clientHeight / 2) + (lineHeight / 2);
             }
         }
 
@@ -720,11 +720,11 @@
             const newCursorPos = start + newText.length;
             textarea.setSelectionRange(newCursorPos, newCursorPos);
             
-            textarea.scrollTop = currentScroll; // 一旦元の位置を維持
+            textarea.scrollTop = currentScroll; 
             saveHistory();
 
             if (isEditLocked) {
-                selectNextWord(1); // ここで scrollToSelection も呼ばれる
+                selectNextWord(1); 
             } else {
                 scrollToSelection();
             }
@@ -732,6 +732,19 @@
 
         btnPopupWrapBothParen.addEventListener('click', () => insertTextAround('(', ')'));
         btnPopupWrapAsterisk.addEventListener('click', () => insertTextAround('*', '*'));
+
+        const wrapButtonsList = [btnPopupWrapBothParen, btnPopupWrapAsterisk];
+        wrapButtonsList.forEach(btn => {
+            btn.addEventListener('wheel', (e) => {
+                e.preventDefault(); 
+                if (e.deltaY > 0) { 
+                    const now = Date.now();
+                    if (now - lastWheelFormatTime < 500) return; 
+                    lastWheelFormatTime = now;
+                    btn.click();
+                }
+            });
+        });
 
         btnFullscreen.addEventListener('click', () => {
             editorContainer.classList.add('fullscreen');
@@ -896,15 +909,12 @@
                 return;
             }
 
-            // --- 修正：ボタングループ内での誤爆を防ぐ ---
             const controls = e.target.closest('.popup-controls');
             if (controls) {
                 const btn = e.target.closest('button');
-                // ホイールが下向き、かつ対象がボタンの場合のみクリック実行
                 if (btn && e.deltaY > 0) { 
                     btn.click();
                 }
-                // ボタンの隙間でもモード切替は発火させないため、ここでリターン
                 return;
             }
 
@@ -960,6 +970,30 @@
             if (!isEditLocked) textarea.focus();
             textarea.setSelectionRange(foundIndex, foundIndex + searchValue.length);
             scrollToSelection(); // 検索後も自動スクロール
+
+            const mirrorDiv = document.createElement('div');
+            const style = window.getComputedStyle(textarea);
+
+            [
+                'fontFamily', 'fontSize', 'lineHeight', 'padding', 
+                'width', 'boxSizing', 'whiteSpace', 'wordWrap'
+            ].forEach(prop => mirrorDiv.style[prop] = style[prop]);
+
+            mirrorDiv.style.position = 'absolute';
+            mirrorDiv.style.visibility = 'hidden';
+            mirrorDiv.style.left = '-9999px';
+
+            mirrorDiv.textContent = text.substring(0, foundIndex);
+
+            const marker = document.createElement('span');
+            marker.textContent = searchValue;
+            mirrorDiv.appendChild(marker);
+            document.body.appendChild(mirrorDiv);
+
+            const targetY = marker.offsetTop - (textarea.clientHeight / 2);
+            textarea.scrollTop = targetY > 0 ? targetY : 0;
+
+            document.body.removeChild(mirrorDiv);
 
             if (text.indexOf(searchValue, searchStartIndex) !== -1) {
                  showToast(`🔍 ${hitCount}件ヒットしました`);
