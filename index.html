@@ -756,6 +756,10 @@
                 } else if (e.deltaY > 0) {
                     insertTextAround('(', ')');
                 }
+            }else {
+                // ↓ここを追加↓
+                // 範囲選択されていない場合はクリックイベントを発生させ、単語選択処理を流用する
+                textarea.dispatchEvent(new Event('click'));
             }
         });
 
