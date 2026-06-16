@@ -282,45 +282,83 @@
             .tools-group { width: 100%; justify-content: space-between; }
             .input-group, input[type="text"] { width: 100%; }
         }
+
         /* --- ホイール操作モード用ポップアップ --- */
-#wheel-popup {
-    display: none;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    width: 140px;
-    height: 90px;
-    background-color: var(--panel-bg);
-    border: 2px solid var(--border-color);
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    z-index: 10002;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 13px;
-    user-select: none;
-    transition: all 0.3s ease;
-}
-#wheel-popup.show {
-    display: flex;
-}
-#wheel-popup.locked {
-    background-color: rgba(220, 38, 38, 0.1);
-    border-color: var(--danger-color);
-}
-#wheel-popup .popup-title {
-    opacity: 0.8;
-    margin-bottom: 6px;
-}
-#wheel-status {
-    font-weight: bold;
-    font-size: 15px;
-    color: var(--text-color);
-}
-#wheel-popup.locked #wheel-status {
-    color: var(--danger-color);
-}
+        #wheel-popup {
+            display: none;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 180px;
+            background-color: var(--panel-bg);
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            z-index: 10002;
+            flex-direction: column;
+            align-items: center;
+            user-select: none;
+            transition: background-color 0.3s, border-color 0.3s; 
+            padding-bottom: 12px;
+        }
+        #wheel-popup.show {
+            display: flex;
+        }
+        #wheel-popup.locked {
+            background-color: rgba(220, 38, 38, 0.1);
+            border-color: var(--danger-color);
+        }
+        .popup-header {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            background-color: rgba(0,0,0,0.05);
+            border-bottom: 1px solid var(--border-color);
+            border-radius: 6px 6px 0 0;
+        }
+        body.dark-mode .popup-header { background-color: rgba(255,255,255,0.05); }
+
+        .popup-drag-handle {
+            cursor: grab;
+            padding: 8px 12px;
+            font-size: 16px;
+            color: var(--text-color);
+        }
+        .popup-drag-handle:active { cursor: grabbing; }
+
+        .popup-title {
+            flex-grow: 1;
+            text-align: center;
+            font-weight: bold;
+            font-size: 13px;
+            padding-right: 16px; 
+            opacity: 0.8;
+        }
+
+        #wheel-status {
+            font-weight: bold;
+            font-size: 15px;
+            color: var(--text-color);
+            margin: 12px 0 8px 0;
+        }
+        #wheel-popup.locked #wheel-status {
+            color: var(--danger-color);
+        }
+
+        .popup-controls {
+            display: flex;
+            gap: 8px;
+        }
+        .popup-controls button {
+            padding: 6px 10px;
+            font-size: 12px;
+            background-color: var(--panel-bg);
+        }
+        .popup-footer-text {
+            font-size: 10px;
+            opacity: 0.6;
+            margin-top: 8px;
+        }
     </style>
 </head>
 <body>
@@ -354,6 +392,8 @@
             <button id="btn-copy" class="btn-success">📋 コピー</button>
             <button id="btn-clear" class="btn-danger">🗑️</button>
             <button id="btn-fullscreen" class="btn-theme">🔲 全画面</button>
+            
+            <button id="btn-wheel-mode" class="btn-theme">🖲️ ホイール設定</button>
         </div>
     </div>
 
@@ -374,12 +414,21 @@
     </div>
 
     <div id="toast">通知メッセージ</div>
-<button id="btn-wheel-mode" class="btn-theme">🖲️ ホイール設定</button>
 
-<div id="wheel-popup">
-    <div class="popup-title">ホイール下で切替</div>
-    <div id="wheel-status">通常モード</div>
-</div>
+    <div id="wheel-popup">
+        <div class="popup-header">
+            <div class="popup-drag-handle" id="popup-drag-handle" title="ドラッグして移動">⠿</div>
+            <div class="popup-title">設定・モード</div>
+        </div>
+        <div id="wheel-status">通常モード</div>
+        
+        <div class="popup-controls">
+            <button id="btn-shrink" class="btn-theme" title="下ホイールでも可">➖縮小</button>
+            <button id="btn-expand" class="btn-theme" title="下ホイールでも可">➕拡大</button>
+        </div>
+        <div class="popup-footer-text">※余白で下ホイール：モード切替</div>
+    </div>
+
     <script>
         const textarea = document.getElementById('main-textarea');
         const searchInput = document.getElementById('search-text');
@@ -394,11 +443,14 @@
         
         const editorContainer = document.getElementById('editor-container');
         const btnFullscreen = document.getElementById('btn-fullscreen');
-        const btnWheelMode = document.getElementById('btn-wheel-mode');
-const wheelPopup = document.getElementById('wheel-popup');
-const wheelStatus = document.getElementById('wheel-status');
-let isScrollLocked = false;
         const btnCloseFullscreen = document.getElementById('btn-close-fullscreen');
+        
+        const btnWheelMode = document.getElementById('btn-wheel-mode');
+        const wheelPopup = document.getElementById('wheel-popup');
+        const wheelStatus = document.getElementById('wheel-status');
+        const btnExpand = document.getElementById('btn-expand');
+        const btnShrink = document.getElementById('btn-shrink');
+        let isScrollLocked = false;
         
         const btnWrapLeftParen = document.getElementById('btn-wrap-left-paren');
         const btnWrapBothParen = document.getElementById('btn-wrap-both-paren');
@@ -409,9 +461,6 @@ let isScrollLocked = false;
         const btnFsWrapAsterisk = document.getElementById('btn-fs-wrap-asterisk');
 
         const btnToggleEdit = document.getElementById('btn-toggle-edit');
-
-        const fsFloatingBar = document.getElementById('fs-floating-bar');
-        const fsDragHandle = document.getElementById('fs-drag-handle');
 
         function showToast(message) {
             toast.textContent = message;
@@ -441,45 +490,51 @@ let isScrollLocked = false;
             }
         });
 
-        // --- ドラッグ（移動）機能 ---
-        let isDragging = false;
-        let initialX, initialY;
+        // --- ドラッグ（移動）共通関数 ---
+        function makeDraggable(dragHandleElem, targetElem) {
+            let isDragging = false;
+            let initialX, initialY;
 
-        fsDragHandle.addEventListener('pointerdown', (e) => {
-            isDragging = true;
-            initialX = e.clientX - fsFloatingBar.offsetLeft;
-            initialY = e.clientY - fsFloatingBar.offsetTop;
-            fsDragHandle.setPointerCapture(e.pointerId);
-            fsDragHandle.style.cursor = 'grabbing';
-        });
+            dragHandleElem.addEventListener('pointerdown', (e) => {
+                isDragging = true;
+                initialX = e.clientX - targetElem.offsetLeft;
+                initialY = e.clientY - targetElem.offsetTop;
+                dragHandleElem.setPointerCapture(e.pointerId);
+                dragHandleElem.style.cursor = 'grabbing';
+            });
 
-        fsDragHandle.addEventListener('pointermove', (e) => {
-            if (!isDragging) return;
-            e.preventDefault();
+            dragHandleElem.addEventListener('pointermove', (e) => {
+                if (!isDragging) return;
+                e.preventDefault();
 
-            let currentX = e.clientX - initialX;
-            let currentY = e.clientY - initialY;
+                let currentX = e.clientX - initialX;
+                let currentY = e.clientY - initialY;
 
-            const containerRect = editorContainer.getBoundingClientRect();
-            const barRect = fsFloatingBar.getBoundingClientRect();
-            const maxX = containerRect.width - barRect.width;
-            const maxY = containerRect.height - barRect.height;
-            
-            currentX = Math.max(0, Math.min(currentX, maxX));
-            currentY = Math.max(0, Math.min(currentY, maxY));
+                const maxX = window.innerWidth - targetElem.offsetWidth;
+                const maxY = window.innerHeight - targetElem.offsetHeight;
+                
+                currentX = Math.max(0, Math.min(currentX, maxX));
+                currentY = Math.max(0, Math.min(currentY, maxY));
 
-            fsFloatingBar.style.left = `${currentX}px`;
-            fsFloatingBar.style.top = `${currentY}px`;
-        });
+                targetElem.style.left = `${currentX}px`;
+                targetElem.style.top = `${currentY}px`;
+                targetElem.style.right = 'auto'; // ドラッグ時はright/bottomを無効化
+                targetElem.style.bottom = 'auto'; 
+            });
 
-        const stopDrag = (e) => {
-            isDragging = false;
-            fsDragHandle.releasePointerCapture(e.pointerId);
-            fsDragHandle.style.cursor = 'grab';
-        };
+            const stopDrag = (e) => {
+                isDragging = false;
+                dragHandleElem.releasePointerCapture(e.pointerId);
+                dragHandleElem.style.cursor = 'grab';
+            };
 
-        fsDragHandle.addEventListener('pointerup', stopDrag);
-        fsDragHandle.addEventListener('pointercancel', stopDrag);
+            dragHandleElem.addEventListener('pointerup', stopDrag);
+            dragHandleElem.addEventListener('pointercancel', stopDrag);
+        }
+
+        // 全画面ツールバーとポップアップにドラッグ機能を追加
+        makeDraggable(document.getElementById('fs-drag-handle'), document.getElementById('fs-floating-bar'));
+        makeDraggable(document.getElementById('popup-drag-handle'), wheelPopup);
 
         // --- テキスト挿入・装飾機能 ---
         function insertTextAround(before, after) {
@@ -512,44 +567,41 @@ let isScrollLocked = false;
             editorContainer.classList.add('fullscreen');
             if (!isEditLocked) textarea.focus();
 
-            // --- ここから追加 ---
-        const text = textarea.value;
-        const lastParenIndex = text.lastIndexOf(')');
+            const text = textarea.value;
+            const lastParenIndex = text.lastIndexOf(')');
 
-        if (lastParenIndex !== -1) {
-          // mirrorDivを作成してスクロール位置を計算
-          const mirrorDiv = document.createElement('div');
-          const style = window.getComputedStyle(textarea);
-          
-          [
-            'fontFamily', 'fontSize', 'lineHeight', 'padding', 
-            'width', 'boxSizing', 'whiteSpace', 'wordWrap'
-          ].forEach(prop => mirrorDiv.style[prop] = style[prop]);
+            if (lastParenIndex !== -1) {
+                const mirrorDiv = document.createElement('div');
+                const style = window.getComputedStyle(textarea);
+                
+                [
+                    'fontFamily', 'fontSize', 'lineHeight', 'padding', 
+                    'width', 'boxSizing', 'whiteSpace', 'wordWrap'
+                ].forEach(prop => mirrorDiv.style[prop] = style[prop]);
 
-          mirrorDiv.style.position = 'absolute';
-          mirrorDiv.style.visibility = 'hidden';
-          mirrorDiv.style.left = '-9999px';
-          
-          mirrorDiv.textContent = text.substring(0, lastParenIndex);
+                mirrorDiv.style.position = 'absolute';
+                mirrorDiv.style.visibility = 'hidden';
+                mirrorDiv.style.left = '-9999px';
+                
+                mirrorDiv.textContent = text.substring(0, lastParenIndex);
 
-          const marker = document.createElement('span');
-          marker.textContent = ')';
-          mirrorDiv.appendChild(marker);
-          document.body.appendChild(mirrorDiv);
+                const marker = document.createElement('span');
+                marker.textContent = ')';
+                mirrorDiv.appendChild(marker);
+                document.body.appendChild(mirrorDiv);
 
-          // マーカーの位置までスクロール
-          const targetY = marker.offsetTop;
-          textarea.scrollTop = targetY;
+                const targetY = marker.offsetTop;
+                textarea.scrollTop = targetY;
 
-          document.body.removeChild(mirrorDiv);
-        }
-            
+                document.body.removeChild(mirrorDiv);
+            }
         });
 
         btnCloseFullscreen.addEventListener('click', () => {
             editorContainer.classList.remove('fullscreen');
             if (!isEditLocked) textarea.focus();
             
+            const fsFloatingBar = document.getElementById('fs-floating-bar');
             fsFloatingBar.style.left = '16px';
             fsFloatingBar.style.top = '60px';
         });
@@ -584,24 +636,122 @@ let isScrollLocked = false;
         });
 
         // モード設定ボタンのクリックで表示/非表示
-btnWheelMode.addEventListener('click', () => {
-    wheelPopup.classList.toggle('show');
-});
+        btnWheelMode.addEventListener('click', () => {
+            wheelPopup.classList.toggle('show');
+        });
 
-// ポップアップ上でのホイール操作でモード切替
-wheelPopup.addEventListener('wheel', (e) => {
-    e.preventDefault(); // ポップアップ上では画面スクロールさせない
-    if (e.deltaY > 0) { // ホイールを下向きに回した場合
-        isScrollLocked = !isScrollLocked;
-        if (isScrollLocked) {
-            wheelPopup.classList.add('locked');
-            wheelStatus.textContent = "固定モード";
-        } else {
-            wheelPopup.classList.remove('locked');
-            wheelStatus.textContent = "通常モード";
+        // 全英単語の開始・終了位置を取得する補助関数
+        function getAllWords() {
+            const text = textarea.value;
+            const regex = /[a-zA-Z0-9_]+/g;
+            let match;
+            const words = [];
+            while ((match = regex.exec(text)) !== null) {
+                words.push({ start: match.index, end: regex.lastIndex });
+            }
+            return words;
         }
-    }
-});
+
+        // カーソル位置に一番近い単語を初期選択する関数
+        function initWordSelection() {
+            const words = getAllWords();
+            if(words.length === 0) return;
+            
+            const start = textarea.selectionStart;
+            let closest = words.find(w => w.start >= start);
+            if (!closest) closest = words[words.length - 1]; // 後ろに無ければ末尾の単語
+
+            textarea.setSelectionRange(closest.start, closest.end);
+        }
+
+        // 次/前の単語を選択する関数
+        function selectNextWord(direction) {
+            const words = getAllWords();
+            if(words.length === 0) return;
+
+            const currentStart = textarea.selectionStart;
+            let targetWord = null;
+
+            if (direction === 1) { // 次へ (下ホイール)
+                targetWord = words.find(w => w.start > currentStart);
+                if (!targetWord) targetWord = words[0]; // 末尾なら最初へ
+            } else { // 前へ (上ホイール)
+                targetWord = [...words].reverse().find(w => w.start < currentStart);
+                if (!targetWord) targetWord = words[words.length - 1]; // 最初なら末尾へ
+            }
+
+            if (targetWord) {
+                textarea.setSelectionRange(targetWord.start, targetWord.end);
+            }
+        }
+
+        // 範囲選択を拡大する関数
+        function expandSelection() {
+            const words = getAllWords();
+            if(words.length === 0) return;
+            
+            const start = textarea.selectionStart;
+            const end = textarea.selectionEnd;
+            
+            if (start === end) { // 選択されていない場合は直近の単語を選択
+                initWordSelection();
+                return;
+            }
+            
+            const currentEndWordIndex = words.findIndex(w => w.end === end);
+            if (currentEndWordIndex !== -1 && currentEndWordIndex < words.length - 1) {
+                const nextWord = words[currentEndWordIndex + 1];
+                textarea.setSelectionRange(start, nextWord.end);
+            }
+        }
+
+        // 範囲選択を縮小する関数
+        function shrinkSelection() {
+            const words = getAllWords();
+            if(words.length === 0) return;
+
+            const start = textarea.selectionStart;
+            const end = textarea.selectionEnd;
+            
+            if (start === end) return;
+            
+            const currentStartWordIndex = words.findIndex(w => w.start === start);
+            const currentEndWordIndex = words.findIndex(w => w.end === end);
+            
+            // 2単語以上選択されている場合のみ縮小
+            if (currentStartWordIndex !== -1 && currentEndWordIndex !== -1 && currentEndWordIndex > currentStartWordIndex) {
+                const prevWord = words[currentEndWordIndex - 1];
+                textarea.setSelectionRange(start, prevWord.end);
+            }
+        }
+
+        // 拡大・縮小ボタンのクリックイベント
+        btnExpand.addEventListener('click', expandSelection);
+        btnShrink.addEventListener('click', shrinkSelection);
+
+        // ポップアップ上でのホイール操作
+        wheelPopup.addEventListener('wheel', (e) => {
+            e.preventDefault(); // ポップアップ上のスクロール防止
+            
+            // ボタン上でのホイールはクリック扱い
+            if (e.target === btnExpand || e.target === btnShrink) {
+                if (e.deltaY > 0) e.target.click(); // 下ホイールで発動
+                return;
+            }
+
+            // それ以外の場所で下ホイールを回した場合はモード切替
+            if (e.deltaY > 0) { 
+                isScrollLocked = !isScrollLocked;
+                if (isScrollLocked) {
+                    wheelPopup.classList.add('locked');
+                    wheelStatus.textContent = "固定モード";
+                    initWordSelection(); // 固定モードに入った瞬間に単語を選択
+                } else {
+                    wheelPopup.classList.remove('locked');
+                    wheelStatus.textContent = "通常モード";
+                }
+            }
+        });
         
         btnSearchOnly.addEventListener('click', () => {
             const searchValue = searchInput.value;
@@ -636,14 +786,11 @@ wheelPopup.addEventListener('wheel', (e) => {
             const mirrorDiv = document.createElement('div');
             const style = window.getComputedStyle(textarea);
 
-            mirrorDiv.style.fontFamily = style.fontFamily;
-            mirrorDiv.style.fontSize = style.fontSize;
-            mirrorDiv.style.lineHeight = style.lineHeight;
-            mirrorDiv.style.padding = style.padding;
-            mirrorDiv.style.width = style.width;
-            mirrorDiv.style.boxSizing = style.boxSizing;
-            mirrorDiv.style.whiteSpace = 'pre-wrap';
-            mirrorDiv.style.wordWrap = 'break-word';
+            [
+                'fontFamily', 'fontSize', 'lineHeight', 'padding', 
+                'width', 'boxSizing', 'whiteSpace', 'wordWrap'
+            ].forEach(prop => mirrorDiv.style[prop] = style[prop]);
+
             mirrorDiv.style.position = 'absolute';
             mirrorDiv.style.visibility = 'hidden';
             mirrorDiv.style.left = '-9999px';
@@ -756,59 +903,62 @@ wheelPopup.addEventListener('wheel', (e) => {
             }
         });
 
-// --- 1タップ（またはホイール）で英単語を選択する共通関数 ---
-function selectWordAtCursor() {
-    if (!isEditLocked) return;
-    if (textarea.selectionStart !== textarea.selectionEnd) return;
+        // --- 1タップ（またはホイール）で英単語を選択する共通関数 ---
+        function selectWordAtCursor() {
+            if (!isEditLocked) return;
+            if (textarea.selectionStart !== textarea.selectionEnd) return;
 
-    const text = textarea.value;
-    const cursorPos = textarea.selectionStart;
-    if (!text || text.length === 0) return;
+            const text = textarea.value;
+            const cursorPos = textarea.selectionStart;
+            if (!text || text.length === 0) return;
 
-    const isWordChar = (char) => /[a-zA-Z0-9_]/.test(char);
-    let start = cursorPos;
-    let end = cursorPos;
+            const isWordChar = (char) => /[a-zA-Z0-9_]/.test(char);
+            let start = cursorPos;
+            let end = cursorPos;
 
-    if (cursorPos < text.length && isWordChar(text[cursorPos])) {
-        while (start > 0 && isWordChar(text[start - 1])) start--;
-        while (end < text.length && isWordChar(text[end])) end++;
-    } else if (cursorPos > 0 && isWordChar(text[cursorPos - 1])) {
-        while (start > 0 && isWordChar(text[start - 1])) start--;
-        while (end < text.length && isWordChar(text[end])) end++;
-    } else {
-        return; 
-    }
+            if (cursorPos < text.length && isWordChar(text[cursorPos])) {
+                while (start > 0 && isWordChar(text[start - 1])) start--;
+                while (end < text.length && isWordChar(text[end])) end++;
+            } else if (cursorPos > 0 && isWordChar(text[cursorPos - 1])) {
+                while (start > 0 && isWordChar(text[start - 1])) start--;
+                while (end < text.length && isWordChar(text[end])) end++;
+            } else {
+                return; 
+            }
 
-    if (start < end) {
-        textarea.setSelectionRange(start, end);
-    }
-}
-
-// クリック時は共通関数を呼ぶだけ
-textarea.addEventListener('click', (e) => {
-    selectWordAtCursor();
-});
-
-// --- ホイール操作の改修 ---
-textarea.addEventListener('wheel', (e) => {
-    if (textarea.selectionStart !== textarea.selectionEnd) {
-        // 【範囲選択されている場合】既存のカッコ付与動作
-        e.preventDefault(); 
-        if (e.deltaY < 0) {
-            insertTextAround('(', '');
-        } else if (e.deltaY > 0) {
-            insertTextAround('(', ')');
+            if (start < end) {
+                textarea.setSelectionRange(start, end);
+            }
         }
-    } else {
-        // 【範囲選択されていない場合】
-        if (isScrollLocked && e.deltaY > 0) {
-            // スクロール固定モード ＋ ホイール下向き
-            e.preventDefault(); // スクロールを止める
-            selectWordAtCursor(); // クリック時と同じ単語選択を実行
-        }
-        // 固定モードでない、または上向きの場合は通常のスクロールを許可
-    }
-});
+
+        // クリック時は共通関数を呼ぶだけ
+        textarea.addEventListener('click', (e) => {
+            selectWordAtCursor();
+        });
+
+        // --- ホイール操作の改修（上スクロール固定とフォーカス移動の統合） ---
+        textarea.addEventListener('wheel', (e) => {
+            if (isScrollLocked) {
+                // 【固定モード中】上下スクロールを完全に無効化
+                e.preventDefault(); 
+                if (e.deltaY > 0) {
+                    selectNextWord(1); // 下ホイールで次の単語
+                } else if (e.deltaY < 0) {
+                    selectNextWord(-1); // 上ホイールで前の単語
+                }
+            } else {
+                // 【通常モード中】既存のカッコ付与動作
+                if (textarea.selectionStart !== textarea.selectionEnd) {
+                    e.preventDefault(); 
+                    if (e.deltaY < 0) {
+                        insertTextAround('(', '');
+                    } else if (e.deltaY > 0) {
+                        insertTextAround('(', ')');
+                    }
+                }
+                // 通常モードで範囲選択がない場合は通常のスクロールを許可
+            }
+        });
 
         // --- キーボードショートカット機能 ---
         textarea.addEventListener('keydown', (e) => {
@@ -826,18 +976,6 @@ textarea.addEventListener('wheel', (e) => {
                         e.preventDefault();
                         insertTextAround('*', '*');
                         break;
-                }
-            }
-        });
-
-        textarea.addEventListener('wheel', (e) => {
-            if (textarea.selectionStart !== textarea.selectionEnd) {
-                e.preventDefault(); 
-                
-                if (e.deltaY < 0) {
-                    insertTextAround('(', '');
-                } else if (e.deltaY > 0) {
-                    insertTextAround('(', ')');
                 }
             }
         });
