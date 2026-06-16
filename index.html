@@ -569,7 +569,7 @@
             inputTimeout = setTimeout(saveHistory, 500);
         });
 
-        saveHistory(); // 初期状態
+        saveHistory(); 
 
         function showToast(message) {
             toast.textContent = message;
@@ -641,7 +641,6 @@
         makeDraggable(document.getElementById('fs-drag-handle'), document.getElementById('fs-floating-bar'));
         makeDraggable(document.getElementById('popup-drag-handle'), wheelPopup);
 
-        // --- 選択範囲を見切れないように＆画面半分超えなら中央に自動スクロール ---
         function scrollToSelection() {
             const start = textarea.selectionStart;
             const text = textarea.value;
@@ -674,14 +673,56 @@
             const paddingTop = parseFloat(style.paddingTop) || 0;
             const lineHeight = parseFloat(style.lineHeight) || (parseFloat(style.fontSize) * 1.5);
 
-            // 上に見切れている場合
             if (targetY < scrollTop + paddingTop) {
                 textarea.scrollTop = targetY - paddingTop - lineHeight;
             } 
-            // フォーカス位置が画面の半分より下に行く場合
             else if (targetY > scrollTop + clientHeight / 2) {
-                // 画面の真ん中付近にフォーカスが来るようにスクロール調整
                 textarea.scrollTop = targetY - (clientHeight / 2) + (lineHeight / 2);
+            }
+        }
+
+        // --- 追加：画面の上から1/3付近の行の先頭単語を選択する関数 ---
+        function selectWordNearOneThird() {
+            const text = textarea.value;
+            // 画面の上から1/3のY座標を算出
+            const targetY = textarea.scrollTop + (textarea.clientHeight / 3);
+            const style = window.getComputedStyle(textarea);
+            const paddingTop = parseFloat(style.paddingTop) || 0;
+            const lineHeight = parseFloat(style.lineHeight) || (parseFloat(style.fontSize) * 1.5);
+            
+            // 行番号をざっくり計算
+            let approximateLineIdx = Math.floor((targetY - paddingTop) / lineHeight);
+            if (approximateLineIdx < 0) approximateLineIdx = 0;
+            
+            const lines = text.split('\n');
+            if (lines.length === 0) return;
+            if (approximateLineIdx >= lines.length) approximateLineIdx = lines.length - 1;
+            
+            let match = null;
+            let targetLineIdx = approximateLineIdx;
+            
+            // 下方向に英単語を探す
+            while (targetLineIdx < lines.length) {
+                match = /[a-zA-Z0-9_]+/.exec(lines[targetLineIdx]);
+                if (match) break;
+                targetLineIdx++;
+            }
+            // 見つからなければ上方向に探す
+            if (!match) {
+                targetLineIdx = approximateLineIdx - 1;
+                while (targetLineIdx >= 0) {
+                    match = /[a-zA-Z0-9_]+/.exec(lines[targetLineIdx]);
+                    if (match) break;
+                    targetLineIdx--;
+                }
+            }
+            
+            if (match) {
+                let targetStartPos = 0;
+                for (let i = 0; i < targetLineIdx; i++) {
+                    targetStartPos += lines[i].length + 1;
+                }
+                textarea.setSelectionRange(targetStartPos + match.index, targetStartPos + match.index + match[0].length);
             }
         }
 
@@ -702,7 +743,7 @@
 
             if (targetWord) {
                 textarea.setSelectionRange(targetWord.start, targetWord.end);
-                scrollToSelection(); // 自動スクロール
+                scrollToSelection(); 
             }
         }
 
@@ -815,7 +856,7 @@
             if (!closest) closest = words[words.length - 1];
 
             textarea.setSelectionRange(closest.start, closest.end);
-            scrollToSelection(); // 自動スクロール
+            scrollToSelection(); 
         }
 
         function moveLine(direction) {
@@ -856,7 +897,7 @@
             }
 
             textarea.setSelectionRange(targetStartPos + match.index, targetStartPos + match.index + match[0].length);
-            scrollToSelection(); // 自動スクロール
+            scrollToSelection(); 
         }
 
         function expandSelection() {
@@ -875,7 +916,7 @@
             if (currentEndWordIndex !== -1 && currentEndWordIndex < words.length - 1) {
                 const nextWord = words[currentEndWordIndex + 1];
                 textarea.setSelectionRange(start, nextWord.end);
-                scrollToSelection(); // 自動スクロール
+                scrollToSelection(); 
             }
         }
 
@@ -894,7 +935,7 @@
             if (currentStartWordIndex !== -1 && currentEndWordIndex !== -1 && currentEndWordIndex > currentStartWordIndex) {
                 const prevWord = words[currentEndWordIndex - 1];
                 textarea.setSelectionRange(start, prevWord.end);
-                scrollToSelection(); // 自動スクロール
+                scrollToSelection(); 
             }
         }
 
@@ -906,6 +947,8 @@
             
             if (e.target === popupScrollArea || popupScrollArea.contains(e.target)) {
                 textarea.scrollTop += e.deltaY;
+                // --- 変更：通常スクロール時は上から1/3の単語にフォーカスを合わせる ---
+                selectWordNearOneThird();
                 return;
             }
 
@@ -969,7 +1012,7 @@
 
             if (!isEditLocked) textarea.focus();
             textarea.setSelectionRange(foundIndex, foundIndex + searchValue.length);
-            scrollToSelection(); // 検索後も自動スクロール
+            scrollToSelection(); 
 
             const mirrorDiv = document.createElement('div');
             const style = window.getComputedStyle(textarea);
@@ -1028,7 +1071,7 @@
                 textarea.value = beforeSelection + replacedSelection + afterSelection;
                 textarea.setSelectionRange(start, start + replacedSelection.length);
                 if (!isEditLocked) textarea.focus();
-                scrollToSelection(); // 自動スクロール
+                scrollToSelection(); 
                 saveHistory(); 
                 showToast("✨ 選択範囲内のみ置換しました");
             } else {
@@ -1119,7 +1162,7 @@
 
             if (start < end) {
                 textarea.setSelectionRange(start, end);
-                scrollToSelection(); // 自動スクロール
+                scrollToSelection(); 
             }
         }
 
