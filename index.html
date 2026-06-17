@@ -3,1124 +3,1420 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vocab Master - 語彙力強化アプリ</title>
+    <title>テキスト一括置換ツール</title>
     <style>
       :root {
-        --primary-color: #4a90e2;
-        --primary-hover: #357abd;
-        --primary-light: #e1efff;
-        --correct-color: #4caf50;
-        --correct-bg: #e8f5e9;
-        --incorrect-color: #f44336;
-        --incorrect-bg: #ffebee;
-        --bg-color: #f8f9fa;
-        --card-bg: #ffffff;
-        --text-main: #333333;
-        --text-muted: #666666;
-        --border-color: #e0e0e0;
-        --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-        --transition: all 0.3s ease;
+        /* --- 変わらない色（ボタン類） --- */
+        --primary-color: #2563eb;
+        --primary-hover: #1d4ed8;
+        --success-color: #059669;
+        --success-hover: #047857;
+        --danger-color: #dc2626;
+        --danger-hover: #b91c1c;
+        --info-color: #0ea5e9;
+        --info-hover: #0284c7;
+        --search-color: #8b5cf6;
+        --search-hover: #7c3aed;
+        --wrap-color: #f59e0b;
+        --wrap-hover: #d97706;
+
+        /* --- ライトモードの色 --- */
+        --bg-color: #f3f4f6;
+        --panel-bg: #ffffff;
+        --border-color: #d1d5db;
+        --text-color: #1f2937;
+        --input-bg: #ffffff;
+      }
+
+      /* --- ダークモード時の色（純黒・ニュートラルグレー） --- */
+      body.dark-mode {
+        --bg-color: #000000;
+        --panel-bg: #1a1a1a;
+        --border-color: #333333;
+        --text-color: #e5e5e5;
+        --input-bg: #262626;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
       }
 
       body {
-        font-family:
-          "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans",
-          Meiryo, sans-serif;
+        font-family: "Segoe UI", "Meiryo", "Noto Sans JP", sans-serif;
         background-color: var(--bg-color);
-        color: var(--text-main);
-        margin: 0;
-        padding: 20px;
+        color: var(--text-color);
+        height: 100dvh;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        padding: 16px;
+        overflow: hidden;
+        transition:
+          background-color 0.3s,
+          color 0.3s;
       }
 
-      #app {
-        width: 100%;
-        max-width: 800px;
-        background: var(--card-bg);
-        border-radius: 12px;
-        box-shadow: var(--shadow);
-        padding: 20px 30px 30px;
-        min-height: 80vh;
-        position: relative;
-        box-sizing: border-box;
-        overflow-x: hidden;
-      }
-
-      .hidden {
-        display: none !important;
-      }
-
-      h2 {
-        border-bottom: 2px solid var(--primary-color);
-        padding-bottom: 10px;
-        margin-top: 0;
-      }
-      .nav-link {
-        color: var(--primary-color);
-        text-decoration: none;
+      .app-header {
+        font-size: 1.25rem;
         font-weight: bold;
-        display: inline-block;
-        cursor: pointer;
+        margin-bottom: 12px;
+        color: var(--text-color);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
       }
-      .nav-link:hover {
-        text-decoration: underline;
+
+      .toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        background-color: var(--panel-bg);
+        padding: 12px 20px;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        margin-bottom: 12px;
+        align-items: center;
+        justify-content: space-between;
+        transition: background-color 0.3s;
+      }
+
+      .tools-group {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      .input-group {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      input[type="text"] {
+        padding: 8px 12px;
+        background-color: var(--input-bg);
+        color: var(--text-color);
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        font-size: 14px;
+        outline: none;
+        transition:
+          border-color 0.2s,
+          box-shadow 0.2s,
+          background-color 0.3s,
+          color 0.3s;
+        width: 220px;
+        color-scheme: light dark;
+      }
+
+      input[type="text"]:focus {
+        border-color: var(--primary-color);
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
       }
 
       button {
-        background-color: var(--primary-color);
-        color: white;
+        padding: 8px 16px;
         border: none;
-        padding: 10px 20px;
         border-radius: 6px;
         font-size: 14px;
-        font-weight: bold;
+        font-weight: 600;
+        color: white;
         cursor: pointer;
-        transition: var(--transition);
-      }
-      button:hover {
-        background-color: var(--primary-hover);
-      }
-      button:disabled {
-        background-color: #cccccc;
-        cursor: not-allowed;
-        opacity: 0.5;
+        transition:
+          background-color 0.2s,
+          transform 0.1s,
+          border-color 0.2s,
+          color 0.2s;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
       }
 
-      /* エディタ画面 */
+      button:active {
+        transform: scale(0.97);
+      }
+
+      .btn-primary {
+        background-color: var(--primary-color);
+      }
+      .btn-primary:hover {
+        background-color: var(--primary-hover);
+      }
+
+      .btn-success {
+        background-color: var(--success-color);
+      }
+      .btn-success:hover {
+        background-color: var(--success-hover);
+      }
+
+      .btn-danger {
+        background-color: var(--danger-color);
+      }
+      .btn-danger:hover {
+        background-color: var(--danger-hover);
+      }
+
+      .btn-info {
+        background-color: var(--info-color);
+      }
+      .btn-info:hover {
+        background-color: var(--info-hover);
+      }
+
+      .btn-search {
+        background-color: var(--search-color);
+      }
+      .btn-search:hover {
+        background-color: var(--search-hover);
+      }
+
+      .btn-theme {
+        background-color: transparent;
+        color: var(--text-color);
+        border: 1px solid var(--border-color);
+        padding: 8px 12px;
+        font-size: 13px;
+      }
+      .btn-theme:hover {
+        background-color: rgba(128, 128, 128, 0.1);
+      }
+
+      /* Undo/Redoボタンの無効状態 */
+      #btn-undo:disabled,
+      #btn-redo:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+      }
+
       .editor-container {
+        flex-grow: 1;
         display: flex;
-        flex-direction: column;
-        gap: 15px;
+        background-color: var(--panel-bg);
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        border: 1px solid var(--border-color);
+        overflow: hidden;
+        position: relative;
+        transition:
+          background-color 0.3s,
+          border-color 0.3s,
+          z-index 0s;
       }
-      .editor-toolbar {
+
+      /* --- 全画面モードのスタイル --- */
+      .editor-container.fullscreen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100dvh;
+        z-index: 9999;
+        border-radius: 0;
+        border: none;
+        margin: 0;
+      }
+
+      /* --- フローティング（ドラッグ可能）ツールバー --- */
+      .fullscreen-floating-bar {
+        position: absolute;
+        top: 60px;
+        left: 16px;
+        display: none;
+        background-color: rgba(30, 30, 30, 0.85);
+        backdrop-filter: blur(4px);
+        padding: 6px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        z-index: 10000;
+        gap: 6px;
+        align-items: center;
+      }
+
+      .editor-container.fullscreen .fullscreen-floating-bar {
         display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-        margin-bottom: -5px;
       }
-      .btn-secondary {
-        background-color: #f0f0f0;
-        color: #333;
-        border: 1px solid #ccc;
+
+      .drag-handle {
+        cursor: grab;
+        padding: 8px 12px;
+        color: #fff;
+        font-size: 18px;
+        user-select: none;
+        touch-action: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
-      .btn-secondary:hover {
-        background-color: #e4e4e4;
+
+      .drag-handle:active {
+        cursor: grabbing;
+      }
+
+      .btn-fs-close {
+        padding: 8px 12px;
+        font-size: 16px;
+        line-height: 1;
       }
 
       textarea {
         width: 100%;
-        height: 50vh;
-        padding: 15px;
-        border: 1px solid var(--border-color);
-        border-radius: 8px;
-        font-family: monospace;
-        font-size: 14px;
-        resize: vertical;
-        box-sizing: border-box;
-        background-color: #fafafa;
-      }
-      textarea:focus {
-        outline: none;
-        border-color: var(--primary-color);
-        box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
-      }
-      .error-message {
-        color: var(--incorrect-color);
-        background-color: var(--incorrect-bg);
-        padding: 10px;
-        border-radius: 6px;
-        font-size: 14px;
-        font-weight: bold;
-      }
-      .editor-actions {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 10px;
-      }
-
-      /* クイズ画面ヘッダー周り */
-      .top-nav-bar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 20px;
-      }
-      .menu-btn {
-        background: none;
-        color: var(--text-main);
-        font-size: 24px;
-        padding: 5px;
-        box-shadow: none;
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .menu-btn:hover {
-        background-color: #eee;
-      }
-
-      .quiz-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        margin-bottom: 10px;
-      }
-      .question-number {
-        font-weight: bold;
-        color: var(--text-muted);
-        font-size: 18px;
-        margin-bottom: 5px;
-      }
-
-      /* 矢印ナビゲーション */
-      .arrow-nav-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 15px;
-      }
-      .arrow-btn {
-        background: none;
-        color: var(--primary-color);
-        font-size: 32px;
-        font-weight: bold;
-        padding: 0 10px;
-        box-shadow: none;
-        border-radius: 4px;
-      }
-      .arrow-btn:hover {
-        background-color: var(--primary-light);
-      }
-      .arrow-btn:disabled {
-        color: #ccc;
-        background: none;
-      }
-
-      .question-text {
-        font-size: 20px;
-        font-weight: bold;
-        margin-bottom: 15px;
-        line-height: 1.5;
-        padding: 15px;
-        background: #f0f4f8;
-        border-radius: 8px;
-        border-left: 5px solid var(--primary-color);
-        cursor: pointer; /* 追加: クリックできることを示す指マーク */
-        transition: background-color 0.2s ease; /* 追加: ホバー時のアニメーション */
-      }
-      .question-text:hover {
-        background-color: #e4ebf1; /* 追加: マウスオーバー時に少し色を濃くしてボタンっぽくする */
-      }
-      * {
-        -webkit-tap-highlight-color: transparent;
-      }
-
-      /* 追加: アコーディオン開閉ボタンの個別サイズ調整 */
-      #toggle-accordion-btn {
-        padding: 8px 16px; /* デフォルトより少し幅と高さをコンパクトに */
-        font-size: 13px;
-      }
-      .question-translation {
-        font-size: 15px;
-        color: var(--text-muted);
-        margin-bottom: 25px;
-        padding: 12px 15px;
-        background: #eef2f5;
-        border-radius: 6px;
-        border-left: 5px solid #8e9eab;
-        font-weight: 500;
-        animation: fadeIn 0.4s ease-in-out;
-        transition: background-color 0.2s ease;
-      }
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-          transform: translateY(-5px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-      /* 新規追加: ホバー時のスタイル */
-      .question-translation:hover {
-        background-color: #eaeff3; /* マウスオーバー時に少し色を濃くする */
-      }
-      /* 選択肢とアコーディオン */
-      .options-list {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-      }
-      .option-item {
-        border: 1px solid var(--border-color);
-        border-radius: 8px;
-        overflow: hidden;
-        background: var(--card-bg);
-        transition: var(--transition);
-      }
-      .option-button {
-        width: 100%;
-        text-align: left;
-        background: none;
-        border: none;
-        padding: 15px 20px;
-        font-size: 16px;
-        cursor: pointer;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: var(--text-main);
-        font-weight: 500;
-        box-shadow: none;
-      }
-      .option-button:hover {
-        background-color: #fcfcfc;
-      }
-
-      .option-item.answered-correct {
-        border-color: var(--correct-color);
-      }
-      .option-item.answered-correct .option-button {
-        background-color: var(--correct-bg);
-        color: var(--correct-color);
-        font-weight: bold;
-      }
-      .option-item.answered-incorrect {
-        border-color: var(--incorrect-color);
-      }
-      .option-item.answered-incorrect .option-button {
-        background-color: var(--incorrect-bg);
-        color: var(--incorrect-color);
-      }
-
-      .accordion-content {
-        display: grid;
-        grid-template-rows: 0fr;
-        transition: grid-template-rows 0.3s ease;
-        background-color: #fafafa;
-      }
-      .accordion-inner {
-        overflow: hidden;
-      }
-      .accordion-body {
-        padding: 0 20px 20px 20px;
-      }
-      .option-item.open .accordion-content {
-        grid-template-rows: 1fr;
-      }
-      .option-item.open .option-button {
-        border-bottom: 1px solid var(--border-color);
-      }
-
-      .result-mark {
-        font-size: 20px;
-        font-weight: bold;
-        margin-bottom: 10px;
-      }
-      .mark-o {
-        color: var(--correct-color);
-      }
-      .mark-x {
-        color: var(--incorrect-color);
-      }
-      .meaning-text {
-        font-weight: bold;
-        margin-bottom: 8px;
-        font-size: 15px;
-      }
-      .example-text {
-        color: var(--text-muted);
-        font-size: 14px;
-        line-height: 1.5;
-        font-style: italic;
-        background: #fff;
-        padding: 10px;
-        border-radius: 6px;
-        border: 1px solid #eee;
-      }
-      /* フッターナビゲーションのスタイル */
-      .app-footer {
-        margin-top: 30px;
-        padding-top: 20px;
-        border-top: 1px solid var(--border-color);
-        display: flex;
-        justify-content: right;
-        align-items: center;
-      }
-
-      .footer-link {
-        color: var(--text-muted);
-        text-decoration: none;
-        font-size: 14px;
-        font-weight: 500;
-        padding: 2.5px 5px;
-        border-radius: 10px;
-      }
-
-      .footer-link:hover {
-        color: var(--primary-color);
-        text-decoration: none;
-      }
-      /* サイドバー（ドロワーメニュー） */
-      .sidebar-overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.5);
-        z-index: 99;
-        opacity: 0;
-        visibility: hidden;
-        transition: var(--transition);
-      }
-      .sidebar-overlay.active {
-        opacity: 1;
-        visibility: visible;
-      }
-
-      .sidebar {
-        position: fixed;
-        top: 0;
-        left: -300px;
-        width: 260px;
         height: 100%;
-        background: var(--card-bg);
-        z-index: 100;
-        box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
-        overflow-y: auto;
-        transition: left 0.3s ease;
         padding: 20px;
-        box-sizing: border-box;
-      }
-      .sidebar.open {
-        left: 0;
-      }
-      .sidebar-header {
-        font-size: 18px;
-        font-weight: bold;
-        border-bottom: 2px solid var(--primary-color);
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-        color: var(--primary-color);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-      .close-sidebar-btn {
-        background: none;
         border: none;
-        font-size: 24px;
-        color: var(--text-muted);
-        cursor: pointer;
-        padding: 0;
-        box-shadow: none;
-        height: 30px;
-        width: 30px;
-        line-height: 1;
-      }
-      .close-sidebar-btn:hover {
-        color: var(--incorrect-color);
+        resize: none;
+        font-size: 15px;
+        font-family: "Consolas", "Courier New", "Myrica M", monospace;
+        line-height: 1.6;
+        outline: none;
+        background: transparent;
+        color: var(--text-color);
       }
 
-      .sidebar details {
-        margin-bottom: 10px;
-        border: 1px solid var(--border-color);
-        border-radius: 6px;
-        overflow: hidden;
+      textarea[readonly] {
+        cursor: text;
       }
-      .sidebar summary {
-        background: #f0f4f8;
-        padding: 12px 15px;
+
+      .editor-container.fullscreen textarea {
+        padding-top: 120px;
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+
+      #toast {
+        visibility: hidden;
+        min-width: 250px;
+        background-color: #333333;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 12px 16px;
+        position: fixed;
+        z-index: 10001;
+        left: 50%;
+        bottom: 30px;
+        transform: translateX(-50%);
+        font-size: 14px;
         font-weight: bold;
-        cursor: pointer;
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
+        opacity: 0;
+        transition:
+          opacity 0.3s,
+          bottom 0.3s;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      #toast.show {
+        visibility: visible;
+        opacity: 1;
+        bottom: 50px;
+      }
+
+      @media (max-width: 600px) {
+        body {
+          padding: 8px;
+        }
+        .toolbar {
+          flex-direction: column;
+          padding: 8px;
+          gap: 8px;
+        }
+        .tools-group {
+          width: 100%;
+          justify-content: space-between;
+        }
+        .input-group,
+        input[type="text"] {
+          width: 100%;
+        }
+      }
+
+      /* --- ホイール操作モード用ポップアップ --- */
+      #wheel-popup {
+        display: none;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        width: 180px;
+        background-color: var(--panel-bg);
+        border: 2px solid var(--border-color);
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        z-index: 10002;
+        flex-direction: column;
         align-items: center;
         user-select: none;
+        transition:
+          background-color 0.3s,
+          border-color 0.3s;
+        overflow: hidden;
       }
-      .sidebar summary::-webkit-details-marker {
-        display: none;
+      #wheel-popup.show {
+        display: flex;
       }
-      .sidebar summary::after {
-        content: "▼";
-        font-size: 12px;
-        transition: transform 0.3s ease;
+      #wheel-popup.locked {
+        background-color: rgba(220, 38, 38, 0.1);
+        border-color: var(--danger-color);
       }
-      .sidebar details[open] summary::after {
-        transform: rotate(180deg);
-      }
-      .sidebar details[open] summary {
+      .popup-header {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.05);
         border-bottom: 1px solid var(--border-color);
-        background: var(--primary-light);
-        color: var(--primary-hover);
+      }
+      body.dark-mode .popup-header {
+        background-color: rgba(255, 255, 255, 0.05);
       }
 
-      .sidebar-list {
-        padding: 5px 0;
-        background: #fff;
+      .popup-drag-handle {
+        cursor: grab;
+        padding: 8px 12px;
+        font-size: 16px;
+        color: var(--text-color);
       }
-      .sidebar-item {
-        padding: 10px 20px;
-        font-size: 14px;
-        color: var(--text-main);
-        cursor: pointer;
-        border-left: 4px solid transparent;
-        transition: all 0.2s;
+      .popup-drag-handle:active {
+        cursor: grabbing;
       }
-      .sidebar-item:hover {
-        background: #f9f9f9;
-      }
-      .sidebar-item.active {
-        background: var(--primary-light);
+
+      .popup-title {
+        flex-grow: 1;
+        text-align: center;
         font-weight: bold;
-        color: var(--primary-color);
-        border-left-color: var(--primary-color);
+        font-size: 13px;
+        padding-right: 16px;
+        opacity: 0.8;
+      }
+
+      #wheel-status {
+        font-weight: bold;
+        font-size: 15px;
+        color: var(--text-color);
+        margin: 12px 0 8px 0;
+      }
+      #wheel-popup.locked #wheel-status {
+        color: var(--danger-color);
+      }
+
+      .popup-controls {
+        width: 85%;
+        display: flex;
+        gap: 8px;
+        margin-bottom: 8px;
+      }
+      .popup-controls button {
+        width: 80%;
+        padding: 16px 10px;
+        font-size: 12px;
+        background-color: var(--panel-bg);
+      }
+
+      .popup-footer-text {
+        font-size: 10px;
+        opacity: 0.6;
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
+
+      /* 範囲選択移動領域 */
+      #popup-scroll-area {
+        width: 100%;
+        padding: 32px 0;
+        background-color: rgba(0, 0, 0, 0.05);
+        border-top: 1px solid var(--border-color);
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+        color: var(--text-color);
+        cursor: ns-resize;
+        opacity: 0.8;
+        transition:
+          background-color 0.2s,
+          opacity 0.2s;
+      }
+      body.dark-mode #popup-scroll-area {
+        background-color: rgba(255, 255, 255, 0.05);
+      }
+      #popup-scroll-area:hover {
+        background-color: rgba(128, 128, 128, 0.1);
+        opacity: 1;
       }
     </style>
   </head>
   <body>
-    <div
-      class="sidebar-overlay"
-      id="sidebar-overlay"
-      onclick="app.toggleSidebar(false)"
-    ></div>
-    <div class="sidebar" id="sidebar">
-      <div class="sidebar-header">
-        設問メニュー
-        <button class="close-sidebar-btn" onclick="app.toggleSidebar(false)">
-          ×
-        </button>
-      </div>
-      <div id="sidebar-content"></div>
+    <div class="app-header">
+      <div>📝 テキスト一括置換・編集ツール</div>
+      <button id="btn-theme" class="btn-theme">🌙 ダークモード</button>
     </div>
 
-    <div id="app">
-      <div id="editor-view" class="view">
-        <div class="top-nav-bar" style="justify-content: flex-end">
-          <a class="nav-link" onclick="app.switchView('quiz')"
-            >設問ページへ遷移するリンク →</a
-          >
+    <div class="toolbar">
+      <div class="tools-group">
+        <div class="input-group">
+          <input type="text" id="search-text" placeholder="検索したい文字列" />
         </div>
-        <h2>読み込みデータ編集</h2>
-
-        <div class="editor-container">
-          <div class="editor-toolbar">
-            <button class="btn-secondary" onclick="app.clearText()">
-              全削除
-            </button>
-            <button class="btn-secondary" onclick="app.scrollToBottom()">
-              最下部へスクロール
-            </button>
-            <button
-              style="background-color: #ff9800; color: white; border: none"
-              onclick="app.fetchRemoteData(true)"
-            >
-              クラウドから最新データを取得
-            </button>
-          </div>
-
-          <textarea
-            id="json-input"
-            placeholder="ここにJSONデータを貼り付けてください。複数の配列をペーストしても自動で結合されます。"
-          ></textarea>
-
-          <div id="json-error" class="error-message hidden">
-            JSONの形式を満たしていません。記述を確認してください。
-          </div>
-
-          <div class="editor-actions">
-            <span style="font-size: 12px; color: var(--text-muted)"
-              >※差分がある場合のみボタンが活性化します</span
-            >
-            <button id="import-btn" disabled onclick="app.importData()">
-              取り込みボタン
-            </button>
-          </div>
+        <span>→</span>
+        <div class="input-group">
+          <input type="text" id="replace-text" placeholder="置換後の文字列" />
         </div>
+        <button id="btn-search-only" class="btn-primary">検索</button>
+        <button id="btn-replace" class="btn-primary">一括置換</button>
       </div>
 
-      <div id="quiz-view" class="view hidden">
-        <div class="top-nav-bar">
-          <button class="menu-btn" onclick="app.toggleSidebar(true)">
-            <svg
-              viewBox="0 0 24 24"
-              width="24"
-              height="24"
-              stroke="currentColor"
-              stroke-width="2"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <line x1="3" y1="12" x2="21" y2="12"></line>
-              <line x1="3" y1="6" x2="21" y2="6"></line>
-              <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg>
-          </button>
-        </div>
+      <div class="tools-group">
+        <button
+          id="btn-toggle-edit"
+          class="btn-theme"
+          title="単語選択時にキーボードが出るのを防ぎます"
+          style="color: var(--danger-color); border-color: var(--danger-color)"
+        >
+          🔓 ロック解除
+        </button>
 
-        <div class="quiz-header">
-          <div>
-            <div class="question-number">
-              Question <span id="q-current">1</span> /
-              <span id="q-total">1</span>
-            </div>
-          </div>
-          <button id="toggle-accordion-btn" onclick="app.toggleAllAccordions()">
-            回答を見る
-          </button>
-        </div>
+        <button
+          id="btn-undo"
+          class="btn-theme"
+          title="元に戻す (Ctrl+Z)"
+          disabled
+        >
+          🔙
+        </button>
+        <button
+          id="btn-redo"
+          class="btn-theme"
+          title="やり直す (Ctrl+Y)"
+          disabled
+        >
+          🔜
+        </button>
 
-        <div class="arrow-nav-container">
-          <button class="arrow-btn" id="btn-prev" onclick="app.prevPage()">
-            ＜
-          </button>
-          <button class="arrow-btn" id="btn-next" onclick="app.nextPage()">
-            ＞
-          </button>
-        </div>
+        <button id="btn-load" class="btn-info">読込</button>
+        <button id="btn-copy" class="btn-success">📋 コピー</button>
+        <button id="btn-clear" class="btn-danger">🗑️</button>
+        <button id="btn-fullscreen" class="btn-theme">🔲 全画面</button>
 
-        <div
-          id="question-text"
-          class="question-text"
-          onclick="app.toggleAllAccordions()"
-          title="クリックで回答を開閉"
-        ></div>
-        <div
-          id="question-translation"
-          class="question-translation hidden"
-          onclick="app.scrollToNextOptionOfCorrect()"
-          style="cursor: pointer"
-          title="クリックで正解の次の選択肢へ移動"
-        ></div>
-        <div id="options-container" class="options-list"></div>
-        <div class="app-footer">
-          <a class="footer-link" onclick="app.switchView('editor')"
-            >設定・データ編集を開く</a
+        <button id="btn-wheel-mode" class="btn-theme">🖲️ ホイール設定</button>
+      </div>
+    </div>
+
+    <div class="editor-container" id="editor-container">
+      <div class="fullscreen-floating-bar" id="fs-floating-bar">
+                <div class="drag-handle" id="fs-drag-handle" title="ドラッグして移動">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           >
+            <circle cx="12" cy="12" r="1"></circle>
+            <circle cx="12" cy="5" r="1"></circle>
+            <circle cx="12" cy="19" r="1"></circle>
+          </svg>
         </div>
+        <button id="fs-btn-wrap-paren" class="btn-theme" title="選択範囲を括弧で囲む">( )</button>
+        <button id="fs-btn-wrap-asterisk" class="btn-theme" title="選択範囲をアスタリスクで囲む">* *</button>
+        <button id="btn-close-fullscreen" class="btn-danger btn-fs-close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      </div>
+
+      <textarea
+        id="main-textarea"
+        placeholder="ここにテキストを入力、またはファイルを読み込んでください...（手打ちやペーストをする場合は上部の「🔓 ロック解除」を押してください）"
+        readonly
+      ></textarea>
+    </div>
+
+    <div id="toast">通知メッセージ</div>
+
+    <div id="wheel-popup">
+      <div class="popup-header">
+        <div
+          class="popup-drag-handle"
+          id="popup-drag-handle"
+          title="ドラッグして移動"
+        >
+          ⠿
+        </div>
+        <div class="popup-title">設定・モード</div>
+      </div>
+      <div id="wheel-status">通常モード</div>
+
+      <div class="popup-controls">
+        <button id="btn-shrink" class="btn-theme" title="下ホイールでも可">
+          ➖縮小
+        </button>
+        <button id="btn-expand" class="btn-theme" title="下ホイールでも可">
+          ➕拡大
+        </button>
+      </div>
+
+      <div class="popup-controls">
+        <button
+          id="btn-popup-wrap-both-paren"
+          class="btn-theme"
+          title="下ホイールでも可"
+        >
+          ()追加
+        </button>
+        <button
+          id="btn-popup-wrap-asterisk"
+          class="btn-theme"
+          title="下ホイールでも可"
+        >
+          **追加
+        </button>
+      </div>
+
+      <div class="popup-footer-text">※余白で下ホイール：モード切替</div>
+
+      <div id="popup-scroll-area" title="ここでホイール: 1単語ずつ次/前へ移動">
+        ↔️ 範囲選択移動
       </div>
     </div>
 
     <script>
-      const app = {
-        data: [],
-        savedJsonString: "",
-        currentIndex: 0,
-        isAllAccordionsOpen: false,
+      const textarea = document.getElementById("main-textarea");
+      const searchInput = document.getElementById("search-text");
+      const replaceInput = document.getElementById("replace-text");
+      const btnReplace = document.getElementById("btn-replace");
+      const btnSearchOnly = document.getElementById("btn-search-only");
+      const btnLoad = document.getElementById("btn-load");
+      const btnCopy = document.getElementById("btn-copy");
+      const btnClear = document.getElementById("btn-clear");
+      const btnTheme = document.getElementById("btn-theme");
+      const toast = document.getElementById("toast");
 
-        // スワイプ判定用の座標データ
-        touchStartX: 0,
-        touchEndX: 0,
-        touchStartY: 0,
-        touchEndY: 0,
+      const editorContainer = document.getElementById("editor-container");
+      const btnFullscreen = document.getElementById("btn-fullscreen");
+      const btnCloseFullscreen = document.getElementById(
+        "btn-close-fullscreen",
+      );
 
-        // 例: "https://raw.githubusercontent.com/yourname/yourrepo/main/data.json"
-        REMOTE_JSON_URL:
-          "https://raw.githubusercontent.com/enpro697/eitangoapp/refs/heads/main/eitango1.json",
+      const fsBtnWrapParen = document.getElementById("fs-btn-wrap-paren");
+      const fsBtnWrapAsterisk = document.getElementById("fs-btn-wrap-asterisk");
 
-        init() {
-          this.data = [];
-          this.savedJsonString = "[]";
-          const jsonInput = document.getElementById("json-input");
-          jsonInput.value = this.savedJsonString;
-          jsonInput.addEventListener("input", () => this.validateJsonInput());
-          // タッチイベントの初期化を追加
-          this.setupTouchEvents();
-          // アプリ起動時に自動でクラウドからデータを取得して適用
-          this.fetchRemoteData(false);
-          // --- 追加: 左右の端クリックでページ遷移 ---
-          document
-            .getElementById("app")
-            .addEventListener("click", (e) => this.handleEdgeClick(e));
-        },
+      const btnWheelMode = document.getElementById("btn-wheel-mode");
+      const wheelPopup = document.getElementById("wheel-popup");
+      const wheelStatus = document.getElementById("wheel-status");
+      const btnExpand = document.getElementById("btn-expand");
+      const btnShrink = document.getElementById("btn-shrink");
 
-        // --- 追加: 左右の端クリック処理 ---
-        handleEdgeClick(e) {
-          // クイズビューが表示されていない場合は何もしない
-          if (
-            document.getElementById("quiz-view").classList.contains("hidden")
-          ) {
-            return;
+      const btnPopupWrapBothParen = document.getElementById(
+        "btn-popup-wrap-both-paren",
+      );
+      const btnPopupWrapAsterisk = document.getElementById(
+        "btn-popup-wrap-asterisk",
+      );
+
+      const popupScrollArea = document.getElementById("popup-scroll-area");
+
+      const btnToggleEdit = document.getElementById("btn-toggle-edit");
+      const btnUndo = document.getElementById("btn-undo");
+      const btnRedo = document.getElementById("btn-redo");
+
+      let isScrollLocked = false;
+      let isEditLocked = true;
+      let lastWheelFormatTime = 0;
+
+      // --- 履歴（Undo/Redo）管理 ---
+      const MAX_HISTORY = 20;
+      let historyStack = [];
+      let historyIndex = -1;
+
+      function updateUndoRedoButtons() {
+        btnUndo.disabled = historyIndex <= 0;
+        btnRedo.disabled = historyIndex >= historyStack.length - 1;
+      }
+
+      function saveHistory() {
+        const currentState = {
+          text: textarea.value,
+          start: textarea.selectionStart,
+          end: textarea.selectionEnd,
+        };
+
+        if (
+          historyStack.length > 0 &&
+          historyStack[historyIndex].text === currentState.text
+        ) {
+          historyStack[historyIndex].start = currentState.start;
+          historyStack[historyIndex].end = currentState.end;
+          return;
+        }
+
+        historyStack = historyStack.slice(0, historyIndex + 1);
+        historyStack.push(currentState);
+
+        if (historyStack.length > MAX_HISTORY) {
+          historyStack.shift();
+        } else {
+          historyIndex++;
+        }
+        updateUndoRedoButtons();
+      }
+
+      function restoreHistory() {
+        if (historyIndex >= 0 && historyIndex < historyStack.length) {
+          const state = historyStack[historyIndex];
+          textarea.value = state.text;
+          textarea.setSelectionRange(state.start, state.end);
+          updateUndoRedoButtons();
+          scrollToSelection(false);
+          if (!isEditLocked) textarea.focus();
+        }
+      }
+
+      btnUndo.addEventListener("click", () => {
+        if (historyIndex > 0) {
+          historyIndex--;
+          restoreHistory();
+          showToast("🔙 元に戻しました");
+        }
+      });
+
+      btnRedo.addEventListener("click", () => {
+        if (historyIndex < historyStack.length - 1) {
+          historyIndex++;
+          restoreHistory();
+          showToast("🔜 やり直しました");
+        }
+      });
+
+      let inputTimeout;
+      textarea.addEventListener("input", () => {
+        clearTimeout(inputTimeout);
+        inputTimeout = setTimeout(saveHistory, 500);
+      });
+
+      saveHistory();
+
+      function showToast(message) {
+        toast.textContent = message;
+        toast.className = "show";
+        setTimeout(() => {
+          toast.className = toast.className.replace("show", "");
+        }, 3000);
+      }
+
+      btnToggleEdit.addEventListener("click", () => {
+        isEditLocked = !isEditLocked;
+        textarea.readOnly = isEditLocked;
+
+        if (isEditLocked) {
+          btnToggleEdit.textContent = "🔓 ロック解除";
+          btnToggleEdit.style.color = "var(--danger-color)";
+          btnToggleEdit.style.borderColor = "var(--danger-color)";
+          showToast("🔒 編集をロックしました（1タップで英単語を選択できます）");
+          textarea.blur();
+        } else {
+          btnToggleEdit.textContent = "🔒 編集ロック";
+          btnToggleEdit.style.color = "var(--text-color)";
+          btnToggleEdit.style.borderColor = "var(--border-color)";
+          showToast("🔓 ロックを解除しました（文字入力・ペーストが可能です）");
+        }
+      });
+
+      function makeDraggable(dragHandleElem, targetElem) {
+        let isDragging = false;
+        let initialX, initialY;
+
+        dragHandleElem.addEventListener("pointerdown", (e) => {
+          isDragging = true;
+          initialX = e.clientX - targetElem.offsetLeft;
+          initialY = e.clientY - targetElem.offsetTop;
+          dragHandleElem.setPointerCapture(e.pointerId);
+          dragHandleElem.style.cursor = "grabbing";
+        });
+
+        dragHandleElem.addEventListener("pointermove", (e) => {
+          if (!isDragging) return;
+          e.preventDefault();
+
+          let currentX = e.clientX - initialX;
+          let currentY = e.clientY - initialY;
+
+          const maxX = window.innerWidth - targetElem.offsetWidth;
+          const maxY = window.innerHeight - targetElem.offsetHeight;
+
+          currentX = Math.max(0, Math.min(currentX, maxX));
+          currentY = Math.max(0, Math.min(currentY, maxY));
+
+          targetElem.style.left = `${currentX}px`;
+          targetElem.style.top = `${currentY}px`;
+          targetElem.style.right = "auto";
+          targetElem.style.bottom = "auto";
+        });
+
+        const stopDrag = (e) => {
+          isDragging = false;
+          dragHandleElem.releasePointerCapture(e.pointerId);
+          dragHandleElem.style.cursor = "grab";
+        };
+
+        dragHandleElem.addEventListener("pointerup", stopDrag);
+        dragHandleElem.addEventListener("pointercancel", stopDrag);
+      }
+
+      makeDraggable(
+        document.getElementById("fs-drag-handle"),
+        document.getElementById("fs-floating-bar"),
+      );
+      makeDraggable(document.getElementById("popup-drag-handle"), wheelPopup);
+
+      function scrollToSelection(alignTopThird = false) {
+        const start = textarea.selectionStart;
+        const text = textarea.value;
+
+        const mirrorDiv = document.createElement("div");
+        const style = window.getComputedStyle(textarea);
+
+        [
+          "fontFamily",
+          "fontSize",
+          "lineHeight",
+          "padding",
+          "width",
+          "boxSizing",
+          "whiteSpace",
+          "wordWrap",
+        ].forEach((prop) => (mirrorDiv.style[prop] = style[prop]));
+
+        mirrorDiv.style.position = "absolute";
+        mirrorDiv.style.visibility = "hidden";
+        mirrorDiv.style.left = "-9999px";
+        mirrorDiv.style.top = "0";
+
+        mirrorDiv.textContent = text.substring(0, start);
+
+        const marker = document.createElement("span");
+        marker.textContent = "|";
+        mirrorDiv.appendChild(marker);
+        document.body.appendChild(mirrorDiv);
+
+        const targetY = marker.offsetTop;
+        document.body.removeChild(mirrorDiv);
+
+        const scrollTop = textarea.scrollTop;
+        const clientHeight = textarea.clientHeight;
+        const paddingTop = parseFloat(style.paddingTop) || 0;
+        const lineHeight =
+          parseFloat(style.lineHeight) || parseFloat(style.fontSize) * 1.5;
+
+        if (alignTopThird) {
+          textarea.scrollTop = targetY - clientHeight / 3 + lineHeight / 2;
+        } else {
+          if (targetY < scrollTop + paddingTop) {
+            textarea.scrollTop = targetY - paddingTop - lineHeight;
+          } else if (targetY > scrollTop + clientHeight / 2) {
+            textarea.scrollTop = targetY - clientHeight / 2 + lineHeight / 2;
           }
+        }
+      }
 
-          // クリックされた要素がボタンやリンクなど、特定の役割を持つ場合は何もしない
-          const ignoredElements = ["BUTTON", "A", "TEXTAREA", "INPUT"];
-          if (
-            ignoredElements.includes(e.target.tagName) ||
-            e.target.closest(".option-item, .sidebar, .menu-btn, .nav-link")
-          ) {
-            return;
+      function selectWordNearOneThird() {
+        const text = textarea.value;
+        const targetY = textarea.scrollTop + textarea.clientHeight / 3;
+        const style = window.getComputedStyle(textarea);
+        const paddingTop = parseFloat(style.paddingTop) || 0;
+        const lineHeight =
+          parseFloat(style.lineHeight) || parseFloat(style.fontSize) * 1.5;
+
+        let approximateLineIdx = Math.floor(
+          (targetY - paddingTop) / lineHeight,
+        );
+        if (approximateLineIdx < 0) approximateLineIdx = 0;
+
+        const lines = text.split("\n");
+        if (lines.length === 0) return;
+        if (approximateLineIdx >= lines.length)
+          approximateLineIdx = lines.length - 1;
+
+        let match = null;
+        let targetLineIdx = approximateLineIdx;
+
+        while (targetLineIdx < lines.length) {
+          match = /[a-zA-Z0-9_]+/.exec(lines[targetLineIdx]);
+          if (match) break;
+          targetLineIdx++;
+        }
+        if (!match) {
+          targetLineIdx = approximateLineIdx - 1;
+          while (targetLineIdx >= 0) {
+            match = /[a-zA-Z0-9_]+/.exec(lines[targetLineIdx]);
+            if (match) break;
+            targetLineIdx--;
           }
+        }
 
-          const rect = e.currentTarget.getBoundingClientRect();
-          const clickX = e.clientX - rect.left;
-          const edgeWidth = rect.width * 0.07; // 画面の左右7%を判定領域とする
-
-          if (clickX < edgeWidth) {
-            // 左端をクリック
-            this.prevPage();
-          } else if (clickX > rect.width - edgeWidth) {
-            // 右端をクリック
-            this.nextPage();
+        if (match) {
+          let targetStartPos = 0;
+          for (let i = 0; i < targetLineIdx; i++) {
+            targetStartPos += lines[i].length + 1;
           }
-        },
-
-        // クラウドからJSONを取得する関数
-        async fetchRemoteData(isManualClick = false) {
-          try {
-            if (isManualClick) {
-              document.getElementById("json-input").value = "通信中...";
-            }
-
-            const response = await fetch(this.REMOTE_JSON_URL);
-            if (!response.ok) throw new Error("Network response was not ok");
-
-            const rawText = await response.text();
-            const remoteData = this.parseCustomJSON(rawText);
-
-            const formattedJson = JSON.stringify(remoteData, null, 2);
-            document.getElementById("json-input").value = formattedJson;
-
-            this.importData();
-
-            if (isManualClick) {
-              alert("クラウドから最新の単語データを取得し、適用しました！");
-            }
-          } catch (error) {
-            console.error("データの取得に失敗しました:", error);
-            if (isManualClick) {
-              alert(
-                "データの取得・解析に失敗しました。JSONの記述に深刻なエラーがある可能性があります。",
-              );
-              document.getElementById("json-input").value =
-                this.savedJsonString; // 元に戻す
-            }
-          }
-        },
-
-        parseCustomJSON(inputStr) {
-          try {
-            return JSON.parse(inputStr);
-          } catch (e) {
-            let fixedStr = inputStr.replace(/\]\s*[^\[\]\{\}]*\s*\[/g, ",");
-            try {
-              return JSON.parse(fixedStr);
-            } catch (e2) {
-              throw new Error("Invalid JSON format");
-            }
-          }
-        },
-
-        normalizeAndReassignIds(rawData) {
-          let flatQuestions = [];
-
-          const extractQuestions = (data) => {
-            if (Array.isArray(data)) {
-              data.forEach((item) => extractQuestions(item));
-            } else if (data && typeof data === "object") {
-              if (
-                data.question ||
-                data.options ||
-                data.choices ||
-                data.punchline ||
-                data.sentence
-              ) {
-                flatQuestions.push(data);
-              } else if (Array.isArray(data.questions)) {
-                extractQuestions(data.questions);
-              } else {
-                for (const key in data) {
-                  if (typeof data[key] === "object") {
-                    extractQuestions(data[key]);
-                  }
-                }
-              }
-            }
-          };
-
-          extractQuestions(rawData);
-
-          flatQuestions.forEach((q, index) => {
-            q.id = index + 1;
-          });
-
-          return flatQuestions;
-        },
-
-        validateJsonInput() {
-          const inputVal = document.getElementById("json-input").value;
-          const errorMsg = document.getElementById("json-error");
-          const importBtn = document.getElementById("import-btn");
-
-          if (!inputVal.trim()) {
-            errorMsg.classList.add("hidden");
-            importBtn.disabled = true;
-            return;
-          }
-
-          try {
-            this.parseCustomJSON(inputVal);
-            errorMsg.classList.add("hidden");
-            const isDifferent = inputVal.trim() !== this.savedJsonString;
-            importBtn.disabled = !isDifferent;
-          } catch (e) {
-            errorMsg.classList.remove("hidden");
-            importBtn.disabled = true;
-          }
-        },
-
-        importData() {
-          const inputVal = document.getElementById("json-input").value;
-          try {
-            let parsedData = this.parseCustomJSON(inputVal);
-            parsedData = this.normalizeAndReassignIds(parsedData);
-            this.data = parsedData;
-
-            this.savedJsonString = JSON.stringify(this.data, null, 2);
-            document.getElementById("json-input").value = this.savedJsonString;
-
-            document.getElementById("import-btn").disabled = true;
-            this.currentIndex = 0;
-            this.renderSidebar();
-            this.switchView("quiz");
-          } catch (e) {
-            console.error(e);
-            alert("データの取り込みに失敗しました。");
-          }
-        },
-
-        // --- 修正: 次の選択肢へスクロールする関数 ---
-        scrollToNextOption(currentIndex) {
-          const items = document.querySelectorAll(".option-item");
-          const nextIndex = (currentIndex + 1) % items.length;
-          const targetItem = document.getElementById(
-            `option-item-${nextIndex}`,
+          textarea.setSelectionRange(
+            targetStartPos + match.index,
+            targetStartPos + match.index + match[0].length,
           );
-          if (targetItem) {
-            targetItem.scrollIntoView({ behavior: "smooth", block: "center" });
+          textarea.focus(); // フォーカスを当てて選択状態を表示
+        }
+      }
+
+      function selectNextWord(direction) {
+        const words = getAllWords();
+        if (words.length === 0) return;
+
+        const currentStart = textarea.selectionStart;
+        let targetWord = null;
+
+        if (direction === 1) {
+          targetWord = words.find((w) => w.start > currentStart);
+          if (!targetWord) targetWord = words[0];
+        } else {
+          targetWord = [...words].reverse().find((w) => w.start < currentStart);
+          if (!targetWord) targetWord = words[words.length - 1];
+        }
+
+        if (targetWord) {
+          textarea.setSelectionRange(targetWord.start, targetWord.end);
+          scrollToSelection(false);
+          textarea.focus(); // フォーカスを当てて選択状態を表示
+        }
+      }
+
+      function moveLine(direction) {
+        const text = textarea.value;
+        const cursorPos = textarea.selectionStart;
+
+        const lines = text.split("\n");
+        if (lines.length === 0) return;
+
+        let currentLineIdx = 0;
+        let currentPosCounter = 0;
+
+        for (let i = 0; i < lines.length; i++) {
+          const lineLen = lines[i].length;
+          if (cursorPos <= currentPosCounter + lineLen) {
+            currentLineIdx = i;
+            break;
           }
-        },
+          currentPosCounter += lineLen + 1;
+        }
 
-        clearText() {
-          document.getElementById("json-input").value = "";
-          this.validateJsonInput();
-        },
+        let targetLineIdx = currentLineIdx + direction;
+        let match = null;
 
-        scrollToBottom() {
-          const ta = document.getElementById("json-input");
-          ta.scrollTop = ta.scrollHeight;
-        },
-
-        switchView(viewName) {
-          document.getElementById("editor-view").classList.add("hidden");
-          document.getElementById("quiz-view").classList.add("hidden");
-          document
-            .getElementById(`${viewName}-view`)
-            .classList.remove("hidden");
-          if (viewName === "quiz" && this.data.length > 0) {
-            this.renderQuiz();
+        while (targetLineIdx >= 0 && targetLineIdx < lines.length) {
+          match = /[a-zA-Z0-9_]+/.exec(lines[targetLineIdx]);
+          if (match) {
+            break;
           }
-        },
+          targetLineIdx += direction;
+        }
 
-        // --- 修正: 正解の「次」の選択肢へスクロールする関数 ---
-        scrollToNextOptionOfCorrect() {
-          const correctMark = document.querySelector(".mark-o");
-          if (correctMark) {
-            const correctItem = correctMark.closest(".option-item");
-            if (correctItem) {
-              const currentIndex = parseInt(correctItem.id.split("-")[2]);
-              this.scrollToNextOption(currentIndex);
-            }
-          }
-        },
+        if (!match) return;
 
-        renderQuiz() {
-          if (!this.data || this.data.length === 0) return;
+        let targetStartPos = 0;
+        for (let i = 0; i < targetLineIdx; i++) {
+          targetStartPos += lines[i].length + 1;
+        }
 
-          this.isAllAccordionsOpen = false;
-          const q = this.data[this.currentIndex];
+        textarea.setSelectionRange(
+          targetStartPos + match.index,
+          targetStartPos + match.index + match[0].length,
+        );
+        scrollToSelection(true);
+        textarea.focus(); // フォーカスを当てて選択状態を表示
+      }
 
-          document.getElementById("q-current").innerText =
-            this.currentIndex + 1;
-          document.getElementById("q-total").innerText = this.data.length;
-          document.getElementById("question-text").innerText =
-            q.question || q.word || "問題文がありません";
+      function insertTextAround(before, after) {
+        const start = textarea.selectionStart;
+        const end = textarea.selectionEnd;
+        const text = textarea.value;
+        const currentScroll = textarea.scrollTop;
 
-          const transDiv = document.getElementById("question-translation");
-          transDiv.innerText =
-            q.question_ja || q.meaning || q.translation || "";
-          transDiv.classList.add("hidden");
+        const selectedText = text.substring(start, end);
+        const newText = before + selectedText + after;
 
-          const container = document.getElementById("options-container");
-          container.innerHTML = "";
+        textarea.value =
+          text.substring(0, start) + newText + text.substring(end);
 
-          if (!q.options && !q.choices) {
-            container.innerHTML =
-              '<div style="padding: 20px;">この問題には選択肢データがありません。データの形式を確認してください。</div>';
-            return;
-          }
+        const newCursorPos = start + newText.length;
+        textarea.setSelectionRange(newCursorPos, newCursorPos);
 
-          let shuffledOptions = q.options ? [...q.options] : [...q.choices];
-          for (let i = shuffledOptions.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [shuffledOptions[i], shuffledOptions[j]] = [
-              shuffledOptions[j],
-              shuffledOptions[i],
-            ];
-          }
+        textarea.scrollTop = currentScroll;
+        saveHistory();
 
-          shuffledOptions.forEach((opt, index) => {
-            const itemDiv = document.createElement("div");
-            itemDiv.className = "option-item";
-            itemDiv.id = `option-item-${index}`;
+        if (isEditLocked) {
+          selectNextWord(1);
+        } else {
+          scrollToSelection(false);
+        }
 
-            let wordStr = opt.word || opt;
-            let meaningStr = Array.isArray(opt.meanings)
-              ? opt.meanings.join(", ")
-              : opt.meanings || "";
-            let isCorrect =
-              opt.is_correct === true ||
-              q.answer === wordStr ||
-              q.answer_index === index;
-            let exampleStr =
-              opt.example || q.example || q.sentence || q.punchline || "";
+        textarea.focus(); // 【修正】強制的にフォーカスを戻してハイライトを復活させる
+      }
 
-            // --- 修正: onclickの呼び出し先を変更 ---
-            itemDiv.innerHTML = `
-                <button class="option-button" onclick="app.handleOptionClick(${index}, ${isCorrect})">
-                    <span class="word-text">${index + 1}. ${wordStr}</span>
-                    <span class="icon-toggle">▼</span>
-                </button>
-                <div class="accordion-content">
-                    <div class="accordion-inner">
-                        <div class="accordion-body" 
-                             ${
-                               isCorrect
-                                 ? 'onclick="app.scrollToQuestion()" style="cursor: pointer;" title="クリックで設問へ戻る"'
-                                 : `onclick="app.scrollToNextOption(${index})" style="cursor: pointer;" title="クリックで次の選択肢へ移動"`
-                             }>
-                            <div class="result-mark ${isCorrect ? "mark-o" : "mark-x"}">
-                                ${isCorrect ? "〇 正解" : "× 不正解"}
-                            </div>
-                            ${meaningStr ? `<div class="meaning-text">意味: ${meaningStr}</div>` : ""}
-                            <div class="example-text">"${exampleStr}"</div>
-                        </div>
-                    </div>
-                </div>
-            `;
-            container.appendChild(itemDiv);
-          });
+      btnPopupWrapBothParen.addEventListener("click", () =>
+        insertTextAround("(", ")"),
+      );
+      btnPopupWrapAsterisk.addEventListener("click", () =>
+        insertTextAround("*", "*"),
+      );
 
-          this.updateNavButtons();
-          this.updateSidebarHighlight();
-        },
+      fsBtnWrapParen.addEventListener("click", () => insertTextAround("(", ")"));
+      fsBtnWrapAsterisk.addEventListener("click", () => insertTextAround("*", "*"));
 
-        // --- 修正: 設問へスクロールする関数 ---
-        scrollToQuestion() {
-          const questionEl = document.getElementById("question-text");
-          if (questionEl) {
-            questionEl.scrollIntoView({ behavior: "smooth", block: "center" });
-          }
-        },
+      btnFullscreen.addEventListener("click", () => {
+        editorContainer.classList.add("fullscreen");
+        if (!isEditLocked) textarea.focus();
+        scrollToSelection(false);
+      });
 
-        handleOptionClick(index, isCorrect) {
-          const item = document.getElementById(`option-item-${index}`);
-          if (item.classList.contains("open")) {
-            item.classList.remove("open");
+      btnCloseFullscreen.addEventListener("click", () => {
+        editorContainer.classList.remove("fullscreen");
+        if (!isEditLocked) textarea.focus();
+
+        const fsFloatingBar = document.getElementById("fs-floating-bar");
+        fsFloatingBar.style.left = "16px";
+        fsFloatingBar.style.top = "60px";
+      });
+
+      btnTheme.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        if (document.body.classList.contains("dark-mode")) {
+          btnTheme.textContent = "☀️ ライトモード";
+        } else {
+          btnTheme.textContent = "🌙 ダークモード";
+        }
+      });
+
+      btnLoad.addEventListener("click", async () => {
+        const fileName = searchInput.value.trim();
+        if (!fileName) {
+          showToast("⚠️ 読み込むファイル名を入力してください");
+          return;
+        }
+        try {
+          const response = await fetch(fileName);
+          if (response.ok) {
+            const text = await response.text();
+            textarea.value = text;
+            saveHistory();
+            showToast(`📄 ${fileName} を読み込みました`);
           } else {
-            item.classList.add("open");
-            item.classList.add(
-              isCorrect ? "answered-correct" : "answered-incorrect",
-            );
-            setTimeout(() => {
-              item.scrollIntoView({ behavior: "smooth", block: "center" });
-            }, 150);
+            showToast(`❌ ファイルが見つかりません (${response.status})`);
           }
-          this.checkTranslationVisibility();
-        },
+        } catch (error) {
+          showToast("❌ 読み込みに失敗しました");
+        }
+      });
 
-        toggleAllAccordions() {
-          this.isAllAccordionsOpen = !this.isAllAccordionsOpen;
-          const items = document.querySelectorAll(".option-item");
-          items.forEach((item) => {
-            const isCorrect = item.querySelector(".mark-o") !== null;
-            if (this.isAllAccordionsOpen) {
-              item.classList.add("open");
-              item.classList.add(
-                isCorrect ? "answered-correct" : "answered-incorrect",
-              );
-            } else {
-              item.classList.remove("open");
+      btnWheelMode.addEventListener("click", () => {
+        wheelPopup.classList.toggle("show");
+      });
+
+      function getAllWords() {
+        const text = textarea.value;
+        const regex = /[a-zA-Z0-9_]+/g;
+        let match;
+        const words = [];
+        while ((match = regex.exec(text)) !== null) {
+          words.push({ start: match.index, end: regex.lastIndex });
+        }
+        return words;
+      }
+
+      function initWordSelection() {
+        const words = getAllWords();
+        if (words.length === 0) return;
+
+        const start = textarea.selectionStart;
+        let closest = words.find((w) => w.start >= start);
+        if (!closest) closest = words[words.length - 1];
+
+        textarea.setSelectionRange(closest.start, closest.end);
+        scrollToSelection(false);
+        textarea.focus();
+      }
+
+      function expandSelection() {
+        const words = getAllWords();
+        if (words.length === 0) return;
+
+        const start = textarea.selectionStart;
+        const end = textarea.selectionEnd;
+
+        if (start === end) {
+          initWordSelection();
+          return;
+        }
+
+        const currentEndWordIndex = words.findIndex((w) => w.end === end);
+        if (
+          currentEndWordIndex !== -1 &&
+          currentEndWordIndex < words.length - 1
+        ) {
+          const nextWord = words[currentEndWordIndex + 1];
+          textarea.setSelectionRange(start, nextWord.end);
+          scrollToSelection(false);
+          textarea.focus();
+        }
+      }
+
+      function shrinkSelection() {
+        const words = getAllWords();
+        if (words.length === 0) return;
+
+        const start = textarea.selectionStart;
+        const end = textarea.selectionEnd;
+
+        if (start === end) return;
+
+        const currentStartWordIndex = words.findIndex((w) => w.start === start);
+        const currentEndWordIndex = words.findIndex((w) => w.end === end);
+
+        if (
+          currentStartWordIndex !== -1 &&
+          currentEndWordIndex !== -1 &&
+          currentEndWordIndex > currentStartWordIndex
+        ) {
+          const prevWord = words[currentEndWordIndex - 1];
+          textarea.setSelectionRange(start, prevWord.end);
+          scrollToSelection(false);
+          textarea.focus();
+        }
+      }
+
+      btnExpand.addEventListener("click", expandSelection);
+      btnShrink.addEventListener("click", shrinkSelection);
+
+      wheelPopup.addEventListener("wheel", (e) => {
+        e.preventDefault();
+
+        if (
+          e.target === popupScrollArea ||
+          popupScrollArea.contains(e.target)
+        ) {
+          if (e.deltaY > 0) {
+            selectNextWord(1);
+          } else if (e.deltaY < 0) {
+            selectNextWord(-1);
+          }
+          return;
+        }
+
+        const controls = e.target.closest(".popup-controls");
+        if (controls) {
+          const btn = e.target.closest("button");
+          if (btn && e.deltaY > 0) {
+            if (btn === btnPopupWrapBothParen || btn === btnPopupWrapAsterisk) {
+              const now = Date.now();
+              if (now - lastWheelFormatTime < 500) return;
+              lastWheelFormatTime = now;
             }
-          });
-          this.checkTranslationVisibility();
-          if (this.isAllAccordionsOpen) {
-            setTimeout(() => {
-              const correctItem = Array.from(items).find(
-                (item) => item.querySelector(".mark-o") !== null,
-              );
-              if (correctItem) {
-                correctItem.scrollIntoView({
-                  behavior: "smooth",
-                  block: "center",
-                });
-              }
-            }, 300);
+            btn.click();
           }
-        },
+          return;
+        }
 
-        checkTranslationVisibility() {
-          const openItemsCount =
-            document.querySelectorAll(".option-item.open").length;
-          const transDiv = document.getElementById("question-translation");
-          if (openItemsCount > 0 && transDiv.innerText.trim() !== "") {
-            transDiv.classList.remove("hidden");
+        if (e.deltaY > 0) {
+          isScrollLocked = !isScrollLocked;
+          if (isScrollLocked) {
+            wheelPopup.classList.add("locked");
+            wheelStatus.textContent = "範囲選択モード";
+            initWordSelection();
           } else {
-            transDiv.classList.add("hidden");
+            wheelPopup.classList.remove("locked");
+            wheelStatus.textContent = "通常モード";
           }
-        },
+        }
+      });
 
-        prevPage() {
-          if (this.currentIndex > 0) {
-            this.currentIndex--;
-            this.renderQuiz();
+      btnSearchOnly.addEventListener("click", () => {
+        // ... (省略せずに記述します)
+        const searchValue = searchInput.value;
+        if (!searchValue) {
+          showToast("⚠️ 検索する文字列を入力してください");
+          return;
+        }
+
+        const text = textarea.value;
+        if (!text) return;
+
+        let searchStartIndex = textarea.selectionEnd;
+        let foundIndex = text.indexOf(searchValue, searchStartIndex);
+
+        if (foundIndex === -1) {
+          foundIndex = text.indexOf(searchValue, 0);
+          if (foundIndex !== -1) {
+            showToast("🔄 一番上に戻って検索しました");
           }
-        },
+        }
 
-        nextPage() {
-          if (this.currentIndex < this.data.length - 1) {
-            this.currentIndex++;
-            this.renderQuiz();
-          }
-        },
+        if (foundIndex === -1) {
+          showToast("❌ 対象の文字列は見つかりませんでした");
+          return;
+        }
 
-        goToPage(index) {
-          if (index >= 0 && index < this.data.length) {
-            this.currentIndex = index;
-            this.renderQuiz();
-          }
-        },
+        const hitCount = text.split(searchValue).length - 1;
 
-        updateNavButtons() {
-          document.getElementById("btn-prev").disabled =
-            this.currentIndex === 0;
-          document.getElementById("btn-next").disabled =
-            this.currentIndex === this.data.length - 1;
-        },
+        if (!isEditLocked) textarea.focus();
+        textarea.setSelectionRange(foundIndex, foundIndex + searchValue.length);
+        scrollToSelection(false);
 
-        setupTouchEvents() {
-          const quizView = document.getElementById("quiz-view");
+        const mirrorDiv = document.createElement("div");
+        const style = window.getComputedStyle(textarea);
 
-          quizView.addEventListener(
-            "touchstart",
-            (e) => {
-              this.touchStartX = e.changedTouches[0].screenX;
-              this.touchStartY = e.changedTouches[0].screenY;
-            },
-            { passive: true },
+        [
+          "fontFamily",
+          "fontSize",
+          "lineHeight",
+          "padding",
+          "width",
+          "boxSizing",
+          "whiteSpace",
+          "wordWrap",
+        ].forEach((prop) => (mirrorDiv.style[prop] = style[prop]));
+
+        mirrorDiv.style.position = "absolute";
+        mirrorDiv.style.visibility = "hidden";
+        mirrorDiv.style.left = "-9999px";
+
+        mirrorDiv.textContent = text.substring(0, foundIndex);
+
+        const marker = document.createElement("span");
+        marker.textContent = searchValue;
+        mirrorDiv.appendChild(marker);
+        document.body.appendChild(mirrorDiv);
+
+        const targetY = marker.offsetTop - textarea.clientHeight / 2;
+        textarea.scrollTop = targetY > 0 ? targetY : 0;
+
+        document.body.removeChild(mirrorDiv);
+
+        if (text.indexOf(searchValue, searchStartIndex) !== -1) {
+          showToast(`🔍 ${hitCount}件ヒットしました`);
+        }
+      });
+
+      btnReplace.addEventListener("click", () => {
+        const searchValue = searchInput.value;
+        const replaceValue = replaceInput.value;
+
+        if (!searchValue) {
+          showToast("⚠️ 検索する文字列を入力してください");
+          return;
+        }
+
+        const originalText = textarea.value;
+        const start = textarea.selectionStart;
+        const end = textarea.selectionEnd;
+
+        if (start !== end) {
+          const beforeSelection = originalText.substring(0, start);
+          const selectedText = originalText.substring(start, end);
+          const afterSelection = originalText.substring(end);
+
+          const replacedSelection = selectedText.replaceAll(
+            searchValue,
+            replaceValue,
           );
 
-          quizView.addEventListener(
-            "touchend",
-            (e) => {
-              this.touchEndX = e.changedTouches[0].screenX;
-              this.touchEndY = e.changedTouches[0].screenY;
-              this.handleSwipe();
-            },
-            { passive: true },
-          );
-        },
-
-        handleSwipe() {
-          const xDiff = this.touchStartX - this.touchEndX;
-          const yDiff = this.touchStartY - this.touchEndY;
-
-          if (Math.abs(xDiff) > Math.abs(yDiff) && Math.abs(xDiff) > 75) {
-            if (xDiff > 0) {
-              this.nextPage();
-            } else {
-              this.prevPage();
-            }
+          if (selectedText === replacedSelection) {
+            showToast("選択範囲内に対象の文字列が見つかりませんでした");
+            return;
           }
-        },
 
-        toggleSidebar(show) {
-          const sidebar = document.getElementById("sidebar");
-          const overlay = document.getElementById("sidebar-overlay");
-          if (show) {
-            sidebar.classList.add("open");
-            overlay.classList.add("active");
+          textarea.value = beforeSelection + replacedSelection + afterSelection;
+          textarea.setSelectionRange(start, start + replacedSelection.length);
+          if (!isEditLocked) textarea.focus();
+          scrollToSelection(false);
+          saveHistory();
+          showToast("✨ 選択範囲内のみ置換しました");
+        } else {
+          const newText = originalText.replaceAll(searchValue, replaceValue);
+          if (originalText === newText) {
+            showToast("対象の文字列が見つかりませんでした");
           } else {
-            sidebar.classList.remove("open");
-            overlay.classList.remove("active");
+            textarea.value = newText;
+            saveHistory();
+            showToast("✨ 全体の一括置換が完了しました");
           }
-        },
+        }
+      });
 
-        renderSidebar() {
-          const container = document.getElementById("sidebar-content");
-          container.innerHTML = "";
+      btnCopy.addEventListener("click", async () => {
+        const textToCopy = textarea.value;
+        if (!textToCopy) {
+          showToast("コピーするテキストがありません");
+          return;
+        }
 
-          const groupSize = 50;
-          const totalGroups = Math.ceil(this.data.length / groupSize);
+        if (navigator.clipboard && window.isSecureContext) {
+          try {
+            await navigator.clipboard.writeText(textToCopy);
+            showToast("📋 クリップボードにコピーしました！");
+            return;
+          } catch (err) {
+            console.warn("Clipboard API failed, falling back...", err);
+          }
+        }
 
-          for (let g = 0; g < totalGroups; g++) {
-            const start = g * groupSize + 1;
-            const end = Math.min((g + 1) * groupSize, this.data.length);
+        const currentScroll = textarea.scrollTop;
+        const currentStart = textarea.selectionStart;
+        const currentEnd = textarea.selectionEnd;
 
-            const details = document.createElement("details");
-            const summary = document.createElement("summary");
-            summary.innerText = `${start} 〜 ${end} 件目`;
-            details.appendChild(summary);
+        const wasLocked = isEditLocked;
+        textarea.readOnly = true;
+        textarea.setSelectionRange(0, textToCopy.length);
 
-            const list = document.createElement("div");
-            list.className = "sidebar-list";
+        try {
+          const successful = document.execCommand("copy");
+          if (successful) {
+            showToast("📋 コピーしました！");
+          } else {
+            showToast("❌ コピーに失敗しました");
+          }
+        } catch (err) {
+          showToast("❌ お使いのブラウザではコピーできません");
+        } finally {
+          textarea.readOnly = wasLocked;
+          textarea.setSelectionRange(currentStart, currentEnd);
+          textarea.scrollTop = currentScroll;
+        }
+      });
 
-            for (let i = start - 1; i < end; i++) {
-              const item = document.createElement("div");
-              item.className = "sidebar-item";
-              item.id = `sidebar-item-${i}`;
-              item.innerText = `- Question ${i + 1}`;
-              item.onclick = () => {
-                this.goToPage(i);
-                this.toggleSidebar(false);
-              };
-              list.appendChild(item);
+      btnClear.addEventListener("click", () => {
+        if (confirm("テキストをすべて削除してもよろしいですか？")) {
+          textarea.value = "";
+          searchInput.value = "";
+          replaceInput.value = "";
+          if (!isEditLocked) textarea.focus();
+          saveHistory();
+          showToast("🗑️ テキストをクリアしました");
+        }
+      });
+
+      function selectWordAtCursor() {
+        if (!isEditLocked) return;
+        if (textarea.selectionStart !== textarea.selectionEnd) return;
+
+        const text = textarea.value;
+        const cursorPos = textarea.selectionStart;
+        if (!text || text.length === 0) return;
+
+        const isWordChar = (char) => /[a-zA-Z0-9_]/.test(char);
+        let start = cursorPos;
+        let end = cursorPos;
+
+        if (cursorPos < text.length && isWordChar(text[cursorPos])) {
+          while (start > 0 && isWordChar(text[start - 1])) start--;
+          while (end < text.length && isWordChar(text[end])) end++;
+        } else if (cursorPos > 0 && isWordChar(text[cursorPos - 1])) {
+          while (start > 0 && isWordChar(text[start - 1])) start--;
+          while (end < text.length && isWordChar(text[end])) end++;
+        } else {
+          return;
+        }
+
+        if (start < end) {
+          textarea.setSelectionRange(start, end);
+          textarea.focus(); // 【修正】手動クリック時はフォーカスを当てるだけに留め、スクロールはさせない
+        }
+      }
+
+      // 【修正】クリック時はごくわずかな遅延を挟むことで、ブラウザ標準のキャレット移動と競合するのを防ぐ
+      textarea.addEventListener("click", (e) => {
+        setTimeout(() => {
+          selectWordAtCursor();
+        }, 10);
+      });
+
+      textarea.addEventListener("wheel", (e) => {
+        if (isScrollLocked) {
+          e.preventDefault();
+          if (e.deltaY > 0) {
+            moveLine(1);
+          } else if (e.deltaY < 0) {
+            moveLine(-1);
+          }
+        } else {
+          if (textarea.selectionStart !== textarea.selectionEnd) {
+            e.preventDefault();
+
+            const now = Date.now();
+            if (now - lastWheelFormatTime < 500) return;
+            lastWheelFormatTime = now;
+
+            if (e.deltaY < 0) {
+              insertTextAround("(", "");
+            } else if (e.deltaY > 0) {
+              insertTextAround("(", ")");
             }
-            details.appendChild(list);
-            container.appendChild(details);
           }
-        },
+        }
+      });
 
-        updateSidebarHighlight() {
-          document
-            .querySelectorAll(".sidebar-item")
-            .forEach((el) => el.classList.remove("active"));
-
-          const activeEl = document.getElementById(
-            `sidebar-item-${this.currentIndex}`,
-          );
-          if (activeEl) {
-            activeEl.classList.add("active");
-
-            const parentDetails = activeEl.closest("details");
-            if (parentDetails) {
-              parentDetails.open = true;
-            }
-
-            activeEl.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      textarea.addEventListener("keydown", (e) => {
+        if ((e.ctrlKey || e.metaKey) && e.key === "z") {
+          e.preventDefault();
+          if (e.shiftKey) {
+            btnRedo.click();
+          } else {
+            btnUndo.click();
           }
-        },
-      };
+          return;
+        }
+        if ((e.ctrlKey || e.metaKey) && e.key === "y") {
+          e.preventDefault();
+          btnRedo.click();
+          return;
+        }
 
-      document.addEventListener("DOMContentLoaded", () => app.init());
+        if (textarea.selectionStart !== textarea.selectionEnd) {
+          switch (e.key) {
+            case "a":
+              e.preventDefault();
+              insertTextAround("(", "");
+              break;
+            case "s":
+              e.preventDefault();
+              insertTextAround("(", ")");
+              break;
+            case "d":
+              e.preventDefault();
+              insertTextAround("*", "*");
+              break;
+          }
+        }
+      });
+
+      textarea.addEventListener("contextmenu", (e) => {
+        if (textarea.selectionStart !== textarea.selectionEnd) {
+          e.preventDefault();
+          insertTextAround("*", "*");
+        }
+      });
     </script>
   </body>
 </html>
