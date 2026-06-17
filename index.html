@@ -179,6 +179,49 @@
             margin: 0;
         }
 
+        /* --- フローティング（ドラッグ可能）ツールバー --- */
+        .fullscreen-floating-bar {
+            position: absolute;
+            top: 60px;
+            left: 16px;
+            display: none;
+            background-color: rgba(30, 30, 30, 0.85);
+            backdrop-filter: blur(4px);
+            padding: 6px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            z-index: 10000;
+            gap: 6px;
+            align-items: center;
+        }
+
+        .editor-container.fullscreen .fullscreen-floating-bar {
+            display: flex;
+        }
+
+        .drag-handle {
+            cursor: grab;
+            padding: 8px 12px;
+            color: #fff;
+            font-size: 18px;
+            user-select: none;
+            touch-action: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .drag-handle:active {
+            cursor: grabbing;
+        }
+
+        .btn-fs-close {
+            padding: 8px 12px;
+            font-size: 16px;
+            line-height: 1;
+        }
+
         textarea {
             width: 100%;
             height: 100%;
@@ -198,7 +241,7 @@
         }
 
         .editor-container.fullscreen textarea {
-            padding-top: 20px;
+            padding-top: 120px;
             padding-right: 20px;
             padding-left: 20px;
         }
@@ -371,7 +414,11 @@
     </div>
 
     <div class="editor-container" id="editor-container">
-        <!-- フローティングバー（黒い赤丸部分）を削除しました -->
+        <div class="fullscreen-floating-bar" id="fs-floating-bar">
+            <div class="drag-handle" id="fs-drag-handle" title="ドラッグして移動">⠿</div>
+            <button id="btn-close-fullscreen" class="btn-danger btn-fs-close">×</button>
+        </div>
+        
         <textarea id="main-textarea" placeholder="ここにテキストを入力、またはファイルを読み込んでください...（手打ちやペーストをする場合は上部の「🔓 ロック解除」を押してください）" readonly></textarea>
     </div>
 
@@ -413,6 +460,7 @@
         
         const editorContainer = document.getElementById('editor-container');
         const btnFullscreen = document.getElementById('btn-fullscreen');
+        const btnCloseFullscreen = document.getElementById('btn-close-fullscreen');
         
         const btnWheelMode = document.getElementById('btn-wheel-mode');
         const wheelPopup = document.getElementById('wheel-popup');
@@ -569,6 +617,7 @@
             dragHandleElem.addEventListener('pointercancel', stopDrag);
         }
 
+        makeDraggable(document.getElementById('fs-drag-handle'), document.getElementById('fs-floating-bar'));
         makeDraggable(document.getElementById('popup-drag-handle'), wheelPopup);
 
         function scrollToSelection(alignTopThird = false) {
@@ -615,7 +664,6 @@
             }
         }
 
-        // 画面の上から1/3付近の行の先頭単語を選択する関数
         function selectWordNearOneThird() {
             const text = textarea.value;
             const targetY = textarea.scrollTop + (textarea.clientHeight / 3);
@@ -653,7 +701,7 @@
                     targetStartPos += lines[i].length + 1;
                 }
                 textarea.setSelectionRange(targetStartPos + match.index, targetStartPos + match.index + match[0].length);
-                textarea.focus(); 
+                textarea.focus(); // フォーカスを当てて選択状態を表示
             }
         }
 
@@ -675,7 +723,7 @@
             if (targetWord) {
                 textarea.setSelectionRange(targetWord.start, targetWord.end);
                 scrollToSelection(false); 
-                textarea.focus(); 
+                textarea.focus(); // フォーカスを当てて選択状態を表示
             }
         }
 
@@ -718,7 +766,7 @@
 
             textarea.setSelectionRange(targetStartPos + match.index, targetStartPos + match.index + match[0].length);
             scrollToSelection(true); 
-            textarea.focus(); 
+            textarea.focus(); // フォーカスを当てて選択状態を表示
         }
 
         function insertTextAround(before, after) {
@@ -744,7 +792,7 @@
                 scrollToSelection(false);
             }
             
-            textarea.focus(); 
+            textarea.focus(); // 【修正】強制的にフォーカスを戻してハイライトを復活させる
         }
 
         btnPopupWrapBothParen.addEventListener('click', () => insertTextAround('(', ')'));
@@ -754,15 +802,15 @@
             editorContainer.classList.add('fullscreen');
             if (!isEditLocked) textarea.focus();
             scrollToSelection(false);
-            showToast("🔲 全画面モードにしました（Escキーで解除できます）");
         });
 
-        // --- 全画面解除をEscキーで対応 ---
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && editorContainer.classList.contains('fullscreen')) {
-                editorContainer.classList.remove('fullscreen');
-                if (!isEditLocked) textarea.focus();
-            }
+        btnCloseFullscreen.addEventListener('click', () => {
+            editorContainer.classList.remove('fullscreen');
+            if (!isEditLocked) textarea.focus();
+            
+            const fsFloatingBar = document.getElementById('fs-floating-bar');
+            fsFloatingBar.style.left = '16px';
+            fsFloatingBar.style.top = '60px';
         });
 
         btnTheme.addEventListener('click', () => {
@@ -897,7 +945,7 @@
                 isScrollLocked = !isScrollLocked;
                 if (isScrollLocked) {
                     wheelPopup.classList.add('locked');
-                    wheelStatus.textContent = "範囲選択モード";
+                    wheelStatus.textContent = "範囲選択モード"; 
                     initWordSelection();
                 } else {
                     wheelPopup.classList.remove('locked');
@@ -907,6 +955,7 @@
         });
         
         btnSearchOnly.addEventListener('click', () => {
+            // ... (省略せずに記述します)
             const searchValue = searchInput.value;
             if (!searchValue) {
                 showToast("⚠️ 検索する文字列を入力してください");
@@ -1061,7 +1110,7 @@
             }
         });
 
-        function selectWordAtCursor(autoScroll = true) {
+        function selectWordAtCursor() {
             if (!isEditLocked) return;
             if (textarea.selectionStart !== textarea.selectionEnd) return;
 
@@ -1085,13 +1134,14 @@
 
             if (start < end) {
                 textarea.setSelectionRange(start, end);
-                if (autoScroll) scrollToSelection(false); 
+                textarea.focus(); // 【修正】手動クリック時はフォーカスを当てるだけに留め、スクロールはさせない
             }
         }
 
+        // 【修正】クリック時はごくわずかな遅延を挟むことで、ブラウザ標準のキャレット移動と競合するのを防ぐ
         textarea.addEventListener('click', (e) => {
             setTimeout(() => {
-                selectWordAtCursor(false);
+                selectWordAtCursor();
             }, 10);
         });
 
