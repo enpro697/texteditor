@@ -971,9 +971,20 @@
       fsBtnWrapParen.addEventListener("click", () => insertTextAround("(", ")"));
       fsBtnWrapAsterisk.addEventListener("click", () => insertTextAround("*", "*"));
 
-      btnFullscreen.addEventListener("click", () => {
+btnFullscreen.addEventListener("click", () => {
         editorContainer.classList.add("fullscreen");
         if (!isEditLocked) textarea.focus();
+
+        // テキスト全体から最後の半角閉じ括弧 ')' の位置を検索
+        const text = textarea.value;
+        const lastParenIndex = text.lastIndexOf(")");
+
+        // ')' が見つかった場合、その位置を選択状態にしてキャレットを移動
+        if (lastParenIndex !== -1) {
+          textarea.setSelectionRange(lastParenIndex, lastParenIndex + 1);
+        }
+
+        // キャレットの位置（')' の場所、なければ元の場所）へ自動スクロール
         scrollToSelection(false);
       });
 
