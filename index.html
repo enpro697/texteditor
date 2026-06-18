@@ -464,7 +464,8 @@
         <div class="input-group">
           <input type="text" id="replace-text" placeholder="置換後の文字列" />
         </div>
-        <button id="btn-search-only" class="btn-primary">検索</button>
+        <button id="btn-search-up" class="btn-primary">検索↑</button>
+        <button id="btn-search-down" class="btn-primary">検索↓</button>
         <button id="btn-replace" class="btn-primary">一括置換</button>
       </div>
 
@@ -558,7 +559,7 @@
         <button
           id="btn-popup-wrap-both-paren"
           class="btn-theme"
-         
+          
           title="下ホイールでも可"
         >
           ()追加
@@ -566,7 +567,7 @@
         <button
           id="btn-popup-wrap-asterisk"
           class="btn-theme"
-       
+        
           title="下ホイールでも可"
         >
           **追加
@@ -585,7 +586,8 @@
       const searchInput = document.getElementById("search-text");
       const replaceInput = document.getElementById("replace-text");
       const btnReplace = document.getElementById("btn-replace");
-      const btnSearchOnly = document.getElementById("btn-search-only");
+      const btnSearchUp = document.getElementById("btn-search-up");
+      const btnSearchDown = document.getElementById("btn-search-down");
       const btnLoad = document.getElementById("btn-load");
       const btnCopy = document.getElementById("btn-copy");
       const btnClear = document.getElementById("btn-clear");
@@ -971,7 +973,7 @@
       fsBtnWrapParen.addEventListener("click", () => insertTextAround("(", ")"));
       fsBtnWrapAsterisk.addEventListener("click", () => insertTextAround("*", "*"));
 
-btnFullscreen.addEventListener("click", () => {
+      btnFullscreen.addEventListener("click", () => {
         editorContainer.classList.add("fullscreen");
         if (!isEditLocked) textarea.focus();
 
@@ -1148,8 +1150,7 @@ btnFullscreen.addEventListener("click", () => {
         }
       });
 
-      btnSearchOnly.addEventListener("click", () => {
-        // ... (省略せずに記述します)
+      function performSearch(direction) {
         const searchValue = searchInput.value;
         if (!searchValue) {
           showToast("⚠️ 検索する文字列を入力してください");
@@ -1159,13 +1160,25 @@ btnFullscreen.addEventListener("click", () => {
         const text = textarea.value;
         if (!text) return;
 
-        let searchStartIndex = textarea.selectionEnd;
-        let foundIndex = text.indexOf(searchValue, searchStartIndex);
+        let foundIndex = -1;
 
-        if (foundIndex === -1) {
-          foundIndex = text.indexOf(searchValue, 0);
-          if (foundIndex !== -1) {
-            showToast("🔄 一番上に戻って検索しました");
+        if (direction === "down") {
+          // 下検索：現在の選択終了位置から下へ探す
+          let searchStartIndex = textarea.selectionEnd;
+          foundIndex = text.indexOf(searchValue, searchStartIndex);
+
+          if (foundIndex === -1) {
+            foundIndex = text.indexOf(searchValue, 0); // 見つからなければ一番上から
+            if (foundIndex !== -1) showToast("🔄 一番上に戻って検索しました");
+          }
+        } else if (direction === "up") {
+          // 上検索：現在の選択開始位置の直前から上へ探す
+          let searchStartIndex = textarea.selectionStart - 1;
+          foundIndex = text.lastIndexOf(searchValue, Math.max(0, searchStartIndex));
+
+          if (foundIndex === -1) {
+            foundIndex = text.lastIndexOf(searchValue, text.length); // 見つからなければ一番下から
+            if (foundIndex !== -1) showToast("🔄 一番下に戻って検索しました");
           }
         }
 
@@ -1210,10 +1223,15 @@ btnFullscreen.addEventListener("click", () => {
 
         document.body.removeChild(mirrorDiv);
 
-        if (text.indexOf(searchValue, searchStartIndex) !== -1) {
-          showToast(`🔍 ${hitCount}件ヒットしました`);
+        if ((direction === "down" && text.indexOf(searchValue, textarea.selectionEnd) !== -1) ||
+            (direction === "up" && text.lastIndexOf(searchValue, Math.max(0, textarea.selectionStart - 1)) !== -1)) {
+           showToast(`🔍 ${hitCount}件ヒットしました`);
         }
-      });
+      }
+
+      btnSearchUp.addEventListener("click", () => performSearch("up"));
+      btnSearchDown.addEventListener("click", () => performSearch("down"));
+
 
       btnReplace.addEventListener("click", () => {
         const searchValue = searchInput.value;
