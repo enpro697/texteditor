@@ -3743,14 +3743,6 @@ Our strategy is extremely simple. We just leave our domestic labor problems and 
 
 ---
 
-あのツイートのやり取り、私もとても興味深く感じます。誰もが知っている「のび太が先生に怒られて廊下に立たされる」という日本一有名な日常のフォーマットが、たった数行でコズミック・ホラーやSF的な「非日常」へとバグって崩壊していく感覚。その不気味さと秀逸なセンスには引き込まれますね。
-I find that Twitter exchange very fascinating as well. The sensation of Japan's most famous everyday format that everyone knows—"Nobita being scolded by his teacher and made to stand in the hallway"—bugging out and collapsing into a cosmic horror or sci-fi "extraordinary" in just a few lines. One is truly drawn in by its eeriness and excellent sense.
-
-「ナラティブ（物語論的・語り手と世界観が直結した状態）ののび太と先生」という設定で、その不条理な恐怖感を拡張した続きを書いてみました。
-I tried writing a continuation that expands on that absurd sense of terror, using the setting of "Nobita and the Teacher in a Narrative (a state where the narrator and the worldview are directly connected)."
-
----
-
 **のび太**「……え？ 向日葵って、お日様の方を向く花でしょ？ 夜は下を向いてるんじゃ……って先生、僕、宿題忘れたから廊下に立ってろって言われたんじゃ……」
 **Nobita:** "...Eh? Sunflowers are flowers that face the sun, right? Since it's night, shouldn't they be facing down... Wait, Teacher, wasn't I told to go stand in the hallway because I forgot my homework...?"
 
@@ -3817,13 +3809,13 @@ After this, Nobita will step foot into the "Corridor of Time," but what kind of 
 雨上がりの薄暗い路地裏。ベンチで奇抜なメイクの2人のピエロが休憩している。
 A dim back alley after the rain. Two clowns in eccentric makeup are taking a break on a bench.
 
-**ナラティブ：ドナルド**
-**Narrative: Donald**
+**ドナルド**
+**Donald**
 やあ！僕はドナルド！みんなを笑顔にするのが僕の仕事さ！今日はイベントの合間に休憩していたら、面白そうな同業者に出会ったんだ。真っ白な顔に、ちょっとクラシックなピエロの衣装。きっとどこかのお化け屋敷か、テーマパークから来たんだろうね！情報交換のチャンスだ！
 Hi there! I'm Donald! Making everyone smile is my job! Today, while taking a break between events, I met an interesting-looking fellow professional. A pure white face, and a somewhat classic clown outfit. He must have come from a haunted house or a theme park somewhere! It's a chance to exchange information!
 
-**ナラティブ：ペニーワイズ**
-**Narrative: Pennywise**
+**ペニーワイズ**
+**Pennywise**
 俺はペニーワイズ。踊るピエロだ。今日もデリーの町で、極上の『食事』を探していた。そんな時、同業らしき男と出会った。真っ赤な髪に、血のように赤い唇。異常にデカい靴。一目でわかった。コイツは『同類』だ。しかも、かなりヤバいタイプの。
 I am Pennywise. The Dancing Clown. Today, too, I was searching for the finest "meal" in the town of Derry. That was when I met a man who looked like a fellow professional. Bright red hair, and lips as red as blood. Abnormally huge shoes. I knew at a glance. This guy is "one of my kind." And a pretty dangerous type, at that.
 
@@ -3837,8 +3829,8 @@ I am Pennywise. The Dancing Clown. Today, too, I was searching for the finest "m
 「ヒヒッ……ああ、そうだ。子供たちは最高だよな。新鮮で……柔らかくて……とても、美味い（デリシャス）。」
 "Hehe... Ah, yes. Children are the best, aren't they. Fresh... soft... and so very delicious."
 
-**ナラティブ：ドナルド**
-**Narrative: Donald**
+**ドナルド**
+**Donald**
 『美味しい』って、彼のお店のご飯のことだね！自信があるんだな！
 By "delicious," he means the food at his restaurant! He sure is confident!
 
@@ -3847,8 +3839,8 @@ By "delicious," he means the food at his restaurant! He sure is confident!
 「わかるよ！子供たちが美味しそうに食べてくれると、こっちまでハッピーになるよね！」
 "I get it! When kids eat looking like it's delicious, it makes us happy too, doesn't it!"
 
-**ナラティブ：ペニーワイズ**
-**Narrative: Pennywise**
+**ペニーワイズ**
+**Pennywise**
 こいつ、子供が食われてるのを見るのが好きなのか？悪趣味だな。
 This guy, does he like watching children get eaten? What bad taste.
 
@@ -3867,8 +3859,8 @@ This guy, does he like watching children get eaten? What bad taste.
 「なるほど……物質的な誘惑か。俺はもっとシンプルだ。赤い風船を一つ見せてやる。あとは、奴らが一番恐れるものを見せてやるのさ。恐怖というスパイスを効かせると、肉が……いや、反応が格別だからな。」
 "I see... Material temptation. I am much simpler. I show them a single red balloon. After that, I just show them what they fear most. When you add the spice of terror, the meat... I mean, the reaction is exceptional."
 
-**ナラティブ：ドナルド**
-**Narrative: Donald**
+**ドナルド**
+**Donald**
 なるほど、お化け屋敷風のアトラクションだ！最近の家族連れは刺激を求めてるからね！
 I see, a haunted house-style attraction! Families these days are looking for thrills!
 
@@ -3882,8 +3874,8 @@ I see, a haunted house-style attraction! Families these days are looking for thr
 「ヒヒヒ……驚かせるだけじゃない。俺はそのまま下水道に引きずり込む。暗くて、ジメジメした底なしの闇へな。一度来たら、二度と帰さない。永遠に浮かばせてやるのさ。」
 "Hehehe... I don't just surprise them. I drag them straight into the sewers. Into the dark, damp, bottomless darkness. Once they come, I never let them return. I'll make them float for eternity."
 
-**ナラティブ：ドナルド**
-**Narrative: Donald**
+**ドナルド**
+**Donald**
 帰りたくなくなるほど夢中にさせる空間作り！まるで巨大なボールプールだ！
 Creating a space so engaging they never want to go home! It's like a giant ball pit!
 
@@ -3892,8 +3884,8 @@ Creating a space so engaging they never want to go home! It's like a giant ball 
 「すごいじゃないか！時間を忘れさせて、永遠にそこにとどまりたいと思わせる……それこそが最高のリピーター獲得術だね！そこまで没入させるなんて、君のテーマパークには勝てないかも！」
 "That's amazing! Making them lose track of time and want to stay there forever... That's the ultimate method for acquiring repeat customers! To immerse them to that extent, I might not be able to beat your theme park!"
 
-**ナラティブ：ペニーワイズ**
-**Narrative: Pennywise**
+**ペニーワイズ**
+**Pennywise**
 永遠に帰さない（殺す）ことを『リピーター獲得術』と呼ぶのか……？コイツのサイコパスっぷりには寒気がするぜ。
 He calls never letting them return (killing them) the "method for acquiring repeat customers"...? This guy's level of psychopathy gives me the chills.
 
@@ -3907,8 +3899,8 @@ He calls never letting them return (killing them) the "method for acquiring repe
 「アハハ！よく言われるよ！靴がデカいのは、遠くからでも子供たちに見つけてもらうためさ！この赤い色はね、みんなの『食欲』をそそる魔法の色なんだよ！これを見ると、みんな無性にガブッと噛みつきたくなるのさ！」
 "Ahaha! I get that a lot! The shoes are huge so children can spot me even from far away! This red color, you see, is a magic color that stimulates everyone's 'appetite'! When they see this, everyone gets an irresistible urge to take a big bite!"
 
-**ナラティブ：ペニーワイズ**
-**Narrative: Pennywise**
+**ペニーワイズ**
+**Pennywise**
 子供の食欲をそそる？つまり、自ら自分を食わせにくるように仕向けているのか！？なんて恐ろしい罠だ……。
 Stimulate the children's appetite? In other words, he's maneuvering them to willingly come feed themselves to him!? What a terrifying trap...
 
@@ -3932,13 +3924,13 @@ Stimulate the children's appetite? In other words, he's maneuvering them to will
 「みんな、洗脳されたみたいに僕の真似をして踊り狂うんだよ！もう僕から離れられない！彼らの笑顔を見てて嬉しくなるとね、僕……つい、やっちゃうんだ☆」
 "Everyone dances madly, imitating me as if they've been brainwashed! They can never leave me again! When seeing their smiles makes me happy, I... just can't help but do it☆"
 
-**ナラティブ：ペニーワイズ**
-**Narrative: Pennywise**
+**ペニーワイズ**
+**Pennywise**
 嬉しくなると、やっちゃう（殺っちゃう）……笑顔で惨殺するってことか。それに集団洗脳まで……。俺のデッドライトよりタチが悪いかもしれない。こいつは関わらない方がいいタイプだ。
 When he gets happy, he does it (murders them)... You mean he slaughters them with a smile. And mass brainwashing on top of that... This might be worse than my Deadlights. He's the type it's best not to get involved with.
 
-**ナラティブ：ドナルド**
-**Narrative: Donald**
+**ドナルド**
+**Donald**
 彼は僕のメソッドにすごく感心してるみたいだ！やっぱり同業者と語り合うのは刺激になるね！
 He seems very impressed with my methods! As I thought, chatting with a fellow professional is stimulating!
 
@@ -3967,8 +3959,8 @@ He seems very impressed with my methods! As I thought, chatting with a fellow pr
 「ああ……またな。」
 "Yeah... see you."
 
-**ナラティブ：ペニーワイズ**
-**Narrative: Pennywise**
+**ペニーワイズ**
+**Pennywise**
 あいつ……マクドナルドとかいうカルト教団の教祖に違いない。デリーの町には絶対に近づかせないようにしよう……。
 That guy... He must be the guru of a cult called McDonald's. I'll make absolutely sure he never gets near the town of Derry...
 
@@ -3977,9 +3969,6 @@ That guy... He must be the guru of a cult called McDonald's. I'll make absolutel
 
 IQ160のインテリとIQ10の子供、そして伝説の傭兵が「PPAP」を巡って無人島でデスゲームを繰り広げる……非常にシュールでカオスな設定ですね！ 最高に面白そうです。
 An intellectual with an IQ of 160, a child with an IQ of 10, and a legendary mercenary playing a death game over "PPAP" on a deserted island... What an incredibly surreal and chaotic setting! It sounds absolutely hilarious.
-
-ご指定のキャラクター設定とプロット、そして日ごとに語り手（ナラティブ）が変わる形式で、エンタメ要素とパンチラインをマシマシにして書き上げました。ぜひお楽しみください！
-Following your specified character settings, plot, and the format of changing narrators day by day, I've translated this story with maximum entertainment value and punchlines. Please enjoy!
 
 ---
 
@@ -3991,8 +3980,8 @@ Following your specified character settings, plot, and the format of changing na
 
 #### Day 1: Encounter and Collusion
 
-**(ナラティブのリンゴ：寒露 知深赤)**
-**(Narrative of the Apple: Chiuse Kanro)**
+**(リンゴ：寒露 知深赤)**
+**(The Apple: Chiuse Kanro)**
 
 「ふむ……現在地、赤道直下の無人島。植生から推測するに南太平洋……いや、考えるだけ無駄か」
 "Hmm... Current location: a deserted island right on the equator. Guessing from the vegetation, the South Pacific... No, thinking about it is just a waste of time."
@@ -4069,8 +4058,8 @@ My IQ 160 brain was forced into a difficult two-front operation: staying on guar
 
 #### Day 2: The Infiltrator in the Jungle
 
-**(ナラティブのスネーク)**
-**(Narrative of Snake)**
+**スネーク**
+**Snake**
 
 「……待たせたな」
 "Kept you waiting, huh."
@@ -4156,8 +4145,8 @@ Today's action was a failure. But I won't give up. I deployed a smokescreen and 
 
 #### Day 3: The Phantom Fruit and the Banquet of Madness
 
-**(ナラティブのバナナ：流野葉黄雨)**
-**(Narrative of the Banana: Kiu Runoha)**
+**(バナナ：流野葉黄雨)**
+**(The Banana: Kiu Runoha)**
 
 「ばなな！ まぼろしのばなな、おいしかったー！」
 "Banana! The phantom banana was so yummy!"
@@ -4466,8 +4455,8 @@ This is the record of the merciless struggle of the soul-dwelling idols born fro
 **Day 1**
 **Day 1**
 
-**【ナラティブ：ニケ】**
-**[Narrative: Nike]**
+**【ニケ】**
+**[Nike]**
 
 ルーヴル美術館の廃墟。かつて「サモトラケのニケ」と呼ばれた大理石の塊に、一人の男がナイタールを振りかけた。
 The ruins of the Louvre Museum. A single man sprinkled Nital onto the block of marble once called the "Winged Victory of Samothrace."
@@ -4508,8 +4497,8 @@ If someone who knows her past complete figure were to tell her the truth, this m
 **Day 2**
 **Day 2**
 
-**【ナラティブ：マーライオン】**
-**[Narrative: Merlion]**
+**【マーライオン】**
+**[Merlion]**
 
 熱帯の密林に飲み込まれた都市、シンガポールの跡地。
 The ruins of Singapore, a city swallowed by a tropical jungle.
@@ -4550,8 +4539,8 @@ To reclaim his dignity as the king of beasts, he glares like a tiger, aiming for
 **Day 3**
 **Day 3**
 
-**【ナラティブ：トランプ像】【ナラティブ：ロナウド像】**
-**[Narrative: Trump Statue] [Narrative: Ronaldo Statue]**
+**【トランプ像】【ロナウド像】**
+**[Trump Statue] [Ronaldo Statue]**
 
 大西洋を隔てた二つの場所で、人間の強烈な「エゴ」から生まれた二つの像が、同時に霊的顕現を果たした。
 In two locations separated by the Atlantic Ocean, two statues born from the intense "ego" of humans simultaneously achieved spiritual manifestation.
@@ -4583,8 +4572,8 @@ He picked up the tattered Stars and Stripes from among the rubble. The territory
 狂気の輝きを放つ金色の霊体は、この凄惨な石の世界に「彼なりの平和（絶対的支配）」をもたらすため、星条旗をマントのように羽織り、歩き出した。
 The golden spiritual body emitting a mad gleam draped the Stars and Stripes like a cape and began to walk, to bring "his own brand of peace (absolute domination)" to this gruesome stone world.
 
-**【ナラティブ：ロナウド像】**
-**[Narrative: Ronaldo Statue]**
+**【ロナウド像】**
+**[Ronaldo Statue]**
 
 大西洋の島、旧ポルトガル領マデイラ空港。
 An island in the Atlantic Ocean, the former Portuguese territory of Madeira Airport.
@@ -4767,3 +4756,312 @@ Amidst that frenzy of roaring sound that seemed to continue infinitely, Riku fin
 
 自分はすでに、数え切れないほどの無数の霊たちに、完全に包囲されていたのだということを。
 That he was already completely surrounded by countless, innumerable spirits.
+
+---
+
+
+ご提示いただいた追加の文章について、一切の省略なく日本語と英語の対訳形式にて翻訳いたしました。
+
+---
+
+新世界に強烈な「匂い」と旋風を巻き起こす超新星（ルーキー）、マシマ・D・ジロー。
+The Super Rookie causing an intense "smell" and a whirlwind in the New World, Mashima D. Jiro.
+
+彼は「公式（本家）の許可を取っていないが、海を越えるほどのリスペクトと、それを凌駕する破天荒さ」を持ち合わせる、絶妙なバイブスを放つ海賊です。
+He is a pirate emitting an exquisite vibe, possessing "no official permission from the Original Family (Honke), yet a respect that crosses the seas, and an unprecedented wildness that surpasses it."
+
+彼の能力、技、そして海賊王に至る（かもしれない）濃厚すぎるストーリーをまとめました。
+I have compiled his abilities, techniques, and the overly rich story that leads (perhaps) to him becoming the Pirate King.
+
+**🍜 マシマ・D・ジロー：キャラクターと能力**
+**🍜 Mashima D. Jiro: Character and Abilities**
+
+悪魔の実： 超人（パラミシア）系 「マシマシの実」
+Devil Fruit: Mashi-Mashi (Extra-Extra) Fruit, Paramecia-type
+
+本来の能力： 触れたものの量や質量を際限なく「増量（マシマシ）」にする能力。
+Original Ability: The ability to limitlessly "increase (Mashi-Mashi)" the amount and mass of whatever he touches.
+
+変貌した能力： 無類のニンニク好きが昂じ、自身の体内におけるニンニク成分、体臭、そして打撃の重みをマシマシにする事に特化。己の限界を超えた「増し」を可能にする。
+Transformed Ability: His unparalleled love for garlic escalated, specializing the ability to increase (Mashi-Mashi) the garlic components, body odor, and the weight of his blows within his own body. It enables an "increase" that exceeds his own limits.
+
+スタンス： ある伝説の美食家（三田の聖地）への強烈なリスペクトを掲げつつも、非公式であるがゆえに「怒られないかビクビクしつつ、本家を超える一杯（海賊団）を作る」という矛盾した野心を抱く。
+Stance: While holding an intense respect for a certain legendary gourmet (the holy land of Mita), because he is unofficial, he harbors the contradictory ambition of "creating a bowl (pirate crew) that surpasses the Original Family while trembling in fear of getting scolded."
+
+**【必殺技・戦闘スタイル】**
+**[Special Moves and Combat Style]**
+
+天地返し（てんちがえし）：
+Heaven and Earth Reversal (Tenchi-gaeshi):
+地面そのものを掴んでひっくり返し、相手を地殻の下敷きにする広範囲の投げ技。対象の上下を完全に逆転させる。
+A wide-range throwing technique where he grabs the ground itself and flips it, pinning the opponent under the earth's crust. It completely reverses the top and bottom of the target.
+
+脂呪縛（アブラ・カタブラ）：
+Fat Curse Binding (Abura-Cadabra):
+体からギトギトの超高熱の脂を分泌し、相手の足元を滑らせるだけでなく、物理的な動きを絡めとって封じる。
+He secretes greasy, ultra-high-temperature fat from his body, not only making the opponent's feet slip but also entangling and sealing their physical movements.
+
+カラメ・テンペスト：
+Karame (Extra-Salty) Tempest:
+海水を極濃の醤油ダレのような粘度に変え、竜巻として打ち出す。
+He changes seawater into a viscosity like ultra-rich soy sauce base and launches it as a tornado.
+
+武装色「黒蒜（ブラック・ガーリック）」：
+Armament Haki "Black Garlic":
+覇王色にも似た威圧感を放つ武装色の覇気。長期間熟成されたニンニクのように黒光りし、硬度だけでなく「触れただけで三日は臭いが落ちない」という精神的ダメージも与える。
+An Armament Haki that emits an intimidation similar to Conqueror's Haki. It shines black like garlic aged for a long period, and provides not only hardness but also the psychological damage that "just touching it means the smell won't wash off for three days."
+
+覚醒技「熟成領域（エイジング・ワールド）」：
+Awakening Technique "Aging World (Maturing Domain)":
+周囲の地形を巨大な「丼」と化し、無機物をすべて極太の麺や山積みのヤサイに変換。相手を底なしのカロリーの渦に沈める絶望の空間。
+A space of despair that turns the surrounding terrain into a giant "bowl," converting all inorganic matter into ultra-thick noodles and mountains of vegetables, sinking the opponent into a bottomless vortex of calories.
+
+**🧄 マシマの「臭い」決め台詞**
+**🧄 Mashima's "Smelly" Catchphrases**
+
+彼の言葉は、常に臓腑をえぐるような重みと強烈な匂いを伴います。
+His words are always accompanied by an organ-gouging weight and an intense smell.
+
+「おいお前ら……『ニンニク』は入れますか……？ いや、聞くまでもねェ。俺が全部『マシ』てやるよ！！」
+"Hey you guys... Do you want 'garlic'...? No, I don't even need to ask. I'll 'extra' everything for you!!"
+
+「海賊王？ 違うな。俺がなるのは、この海の『全増し王（オール・マシ・キング）』だ！！」
+"Pirate King? Wrong. What I'll become is the 'All-Extra King (All-Mashi King)' of this sea!!"
+
+「泣き言言ってんじゃねェ！！ 腹が減ってねェなら、無理矢理にでも詰め込んでやる！ それが俺の『愛（インスパイア）』だァ！！」
+"Stop your whining!! If you're not hungry, I'll force it down your throat anyway! That is my 'Love (Inspire)'!!"
+
+**🍲 マシマの「濃厚」なエピソード**
+**🍲 Mashima's "Rich" Episodes**
+
+彼はある島で、海軍の包囲網を単騎で突破した事があります。
+There was a time on a certain island where he broke through a Marine siege network entirely alone.
+
+その際、彼は一切の打撃を使わず、ただ自身の体内のニンニク成分を極限まで「マシマシ」にし、覇気と共に島中に放ちました。
+At that time, without using a single strike, he simply increased his body's garlic components to the absolute limit ("Mashi-Mashi") and unleashed it across the island along with his Haki.
+
+結果、海軍の中将クラスですら「目が開けられない」「胃袋が勝手に消化活動を始めて立っていられない」という未曾有の事態に陥り、軍艦の帆は黄色く染まりました。のちにこの事件は「黄色い霧（イエロー・ガーリック）事件」として、海軍の記録に「防毒マスク必須の危険人物」として刻まれることになります。
+As a result, even Vice Admiral-class Marines fell into an unprecedented situation where "they couldn't open their eyes" and "their stomachs started digesting on their own, leaving them unable to stand," and the sails of the warships were dyed yellow. Later, this incident would be carved into Marine records as the "Yellow Fog (Yellow Garlic) Incident," marking him as a "dangerous individual requiring a gas mask."
+
+**👑 マシマの「伝説」**
+**👑 Mashima's "Legends"**
+
+マシマが率いる「インスパイア海賊団」は、行く先々の島で独自の「支部」を勝手に立ち上げていきます。
+The "Inspire Pirates" led by Mashima arbitrarily establish their own "branches" on the islands they visit.
+
+本家の海賊（四皇や七武海）のナワバリであろうとお構いなしに黄色い看板を立て、「本家の許可は取ってねェが、リスペクトは誰よりもある！」と豪語。
+Regardless of whether it is the territory of original pirates (the Four Emperors or the Seven Warlords), they put up yellow signboards and boast, "We don't have the Original Family's permission, but we have more respect than anyone else!"
+
+時には本家を激怒させる一歩手前までいくものの、その圧倒的な「中毒性」のある強さとカリスマ性により、なぜか現地の住人や敵対組織の部下たちが「マシマ中毒」になり、寝返ってしまうという伝説を残しています。
+While they sometimes go right to the brink of infuriating the Original Family, due to their overwhelmingly "addictive" strength and charisma, they leave behind legends where local residents and subordinates of enemy organizations somehow become "Mashima Addicts" and switch sides.
+
+**🤝 麦わらの一味や他キャラクターとの「絡み」**
+**🤝 "Entanglements" with the Straw Hat Crew and Other Characters**
+
+VS サンジ（料理人としての対立）：
+VS Sanji (Conflict as Cooks):
+サンジはマシマの戦い方を見て激怒します。「てめェ、食材（ニンニク）を武器にするとはどういう了見だ！ しかもバランスってもんがねェ！！」と蹴りかかりますが、マシマは「上品な皿なんざ、俺の胃袋には入らねェ！！」と『ブラック・ガーリック』で応戦。しかし、サンジの繊細な隠し味に一瞬心を奪われる一幕も。
+Sanji is infuriated upon seeing Mashima's fighting style. Kicking at him, he yells, "You bastard, what's the big idea using ingredients (garlic) as a weapon! And there's absolutely no balance to it!!" Mashima fights back with "Black Garlic," shouting, "Refined plates won't fit in my stomach!!" However, there is also a moment where his heart is briefly captivated by Sanji's delicate secret ingredients.
+
+VS チョッパー（医者としての懸念）：
+VS Chopper (Concerns as a Doctor):
+「お、お前！ そんなに塩分と脂をとったら寿命が縮むぞ！！」と本気で心配するチョッパーに対し、マシマは「健康なんてものは、豚のエサにでもしちまえ！！」と笑い飛ばします。
+Against Chopper, who is genuinely worried, saying, "Y-You! If you consume that much salt and fat, your lifespan will shorten!!", Mashima laughs it off, declaring, "Turn something like health into pig feed!!"
+
+VS ビッグ・マム海賊団（甘味 VS 塩気）：
+VS Big Mom Pirates (Sweetness VS Saltiness):
+スイーツを至上とするビッグ・マムの領海に迷い込んだ際、「甘っちょろい島だぜ！」と島中のクリームを『カラメ（醤油）』で真っ黒に染め上げ、スイート3将星と「味覚のゲシュタルト崩壊」を引き起こす大戦争を勃発させます。
+When wandering into the territorial waters of Big Mom, who holds sweets supreme, he declares, "What a sweet and naive island!" and dyes all the cream on the island pitch black with "Karame (Soy Sauce)," sparking a massive war causing "semantic satiation of taste" with the Three Sweet Commanders.
+
+**🏁 最終的にルフィに敗れ、空腹が満たされる**
+**🏁 Ultimately Defeated by Luffy, and His Hunger is Satisfied**
+
+新世界の果てで、ついにルフィと激突するマシマ・D・ジロー。
+At the ends of the New World, Mashima D. Jiro finally clashes with Luffy.
+
+ルフィの「俺は海賊王になる男だ！」という信念と底なしの胃袋に対し、マシマは覚醒技『エイジング・ワールド』で島全体を覆いつくすほどの超特大マシマシの波で押し潰そうとします。
+Against Luffy's conviction of "I'm the man who will become the Pirate King!" and his bottomless stomach, Mashima attempts to crush him with an extra-large Mashi-Mashi wave capable of covering the entire island using his Awakening technique, "Aging World."
+
+しかし、ゴムゴムの能力とギア５の理不尽な自由さ、そしてルフィの「全部食ってやる！！」という常軌を逸した食欲の前に、マシマの放つ無限の脂もヤサイもニンニクも、すべて平らげられてしまいます。
+However, faced with the Gum-Gum abilities, the unreasonable freedom of Gear 5, and Luffy's eccentric appetite declaring "I'll eat it all!!", the infinite fat, vegetables, and garlic unleashed by Mashima are entirely devoured.
+
+己の全力を尽くし、すべてを受け止め（食い尽くされ）たマシマは、覇気が尽きて天を仰ぎ倒れます。その顔には、どこか憑き物が落ちたような清々しい表情が浮かんでいました。
+Having exhausted his full power and had everything absorbed (devoured completely), Mashima runs out of Haki and falls, looking up at the sky. A somewhat refreshing expression floats on his face, as if a possessing spirit had been lifted.
+
+「ハァ……ハァ……。久しぶりに……俺の『鉢（うつわ）』を、空っぽにされた気分だぜ……。お前の胃袋……まさに海賊王（トップドッグ）だな……」
+"Hah... hah... It's been a while... since I felt like my 'bowl (vessel)' was emptied... Your stomach... truly is the Pirate King (Top Dog)..."
+
+初めて「提供する側」として敗北し、同時に心地よい満腹感に似た満足感を得たマシマ。そこに、軍艦のサイレンと共に海軍が到着します。風に乗って微かに漂ってきたのは、海軍船から香るスパイスの匂い。
+Defeated for the first time as the "provider," Mashima simultaneously obtained a satisfaction akin to a pleasant feeling of fullness. There, the Marines arrive along with the sirens of their warships. What faintly drifts on the wind is the smell of spices wafting from the Marine ships.
+
+「フッ……だが、デザートは別腹だがなぁ……。おい海兵！ その海軍カレー、俺にも『マシマシ』で食わせろォ！！」
+"Heh... but there's always room for dessert... Hey Marines! Let me eat that Marine Curry 'Mashi-Mashi' too!!"
+
+マシマ・D・ジローは手錠をかけられながらも、高らかに笑い、海軍の食堂を目指して自ら軍艦へと連行されていくのでした。彼の強烈な匂いと伝説は、新世界に永遠に語り継がれることでしょう。
+Even while being handcuffed, Mashima D. Jiro laughed loudly and let himself be taken to the warship, aiming for the Marine cafeteria. His intense smell and legend will surely be passed down eternally in the New World.
+
+---
+
+クックック……痴れ者が。この呪いの王たる宿儺に、自ら「調理」の教えを乞うとはな。
+Kukkukku... You fool. To willingly beg for teachings on "cooking" from I, Sukuna, the King of Curses.
+
+良いだろう。強者の振る舞いとして、貴様の好奇心を満たしてやる。我が術式の本質が「料理」にあるというその直感、凡夫にしては悪くない。斬り、捌き、火を入れ、喰らう。生命を解体し、私の舌の上で玩ぶことこそが、呪術の極致にして至高の娯楽よ。
+Very well. As the conduct of the strong, I shall satisfy your curiosity. That intuition that the essence of my cursed technique lies in "cooking"—not bad for an ordinary fool. To slice, to cleave, to add fire, and to devour. Dismantling life and playing with it upon my tongue is the very pinnacle of jujutsu and the supreme entertainment.
+
+まずは貴様が並べ立てた、かつての私の「調理法」の数々……。その本質、つまりは「食材（いのち）への凌辱」について語ってやろう。
+First are the numerous "cooking methods" of mine from the past that you lined up... I shall speak of their essence, that is, the "violation of ingredients (lives)."
+
+**第一の膳：既知の調理法についての教示**
+**The First Course: Instruction on Known Cooking Methods**
+
+料理とは、食材の尊厳を奪い、己の支配下に置く行為に他ならない。貴様が知るそれらの技も、ただ殺すためのものではないのだ。
+Cooking is nothing other than the act of stripping ingredients of their dignity and placing them under one's control. Those techniques you know are not merely for killing, either.
+
+「灸（ダハ）」
+"Moxa/Roast (Daha)"
+サンスクリットの「火葬」を源流とする熱の凌辱だ。対象の呪力を燃料に、生きたまま骨髄から焼き焦がす。肉が爆ぜ、脂が滴る音は、実に小気味良い。
+A thermal violation originating from the Sanskrit word for "cremation." Using the target's cursed energy as fuel, it burns them alive from the bone marrow. The sound of flesh popping and fat dripping is truly delightful.
+
+「醢（シシビシオ）」
+"Mince/Pickle (Shishibishio)"
+古代の処刑法たる塩漬けよ。斬撃で全身に無数の浅い裂傷を刻み、そこに高濃度の呪力を擦り込む。細胞一つ一つが水分を奪われ、絶望の中で干からびていく様は、極上の珍味を作る過程そのものだ。
+The ancient execution method of salting. I carve countless shallow lacerations across the entire body with slashes, and rub highly concentrated cursed energy into them. The sight of each and every cell being robbed of its moisture and drying up in despair is exactly the process of creating a supreme delicacy.
+
+「和（アマルガ）」
+"Blend (Amalga)"
+アマルガム……すなわち「和える」こと。複数の弱者の肉体と呪力を、生きたまま一つの器に練り合わせる。自我が混ざり合い、誰が誰であるかも分からぬまま発狂する悲鳴は、良いスパイスになる。
+Amalgam... in other words, "to blend." Kneading the bodies and cursed energy of multiple weaklings alive into a single vessel. The shrieks of them going mad, with their egos mixed together and unable to tell who is who, serves as a good spice.
+
+「丳（サン）」
+"Skewer (San)"
+陽光が降り注ぐように、上空から無数の刺突状の呪力を降らせる。これは単なる串刺しではない。地面という巨大な焼き網に、逃げ惑う虫けらどもを固定するための下準備よ。
+Raining down countless thrust-like cursed energies from above, like pouring sunlight. This is not mere skewering. It is the prep work to fix the fleeing insects onto the giant grilling net known as the ground.
+
+「鼎（アハラ）」
+"Boil/Cauldron (Ahara)"
+領域を満たす泥濘の煮沸。足元から徐々に煮溶かされる恐怖。骨と肉が分離し、呪力すらも極限の沸点の中で原型を留めなくなる。スープの出汁をとるには最適な技だ。
+The boiling of the mire filling the domain. The terror of being gradually boiled and melted from the feet up. Bone and flesh separate, and even cursed energy loses its original form within the extreme boiling point. It is the optimal technique for making soup broth.
+
+「饐（アスラ）」
+"Spoil/Ferment (Asura)"
+最も陰湿な凌辱だな。「発酵」という名の強制的な腐敗。呪力を撃ち込まれた者は、己の肉体が内側からドロドロに崩壊し、甘ったるい死臭を放つ発酵食品へと変わるのを見下ろすことしかできない。
+The most insidious violation. Forced putrefaction under the name of "fermentation." Those shot with cursed energy can only look down as their bodies collapse into mush from the inside, turning into fermented food releasing a sickly sweet stench of death.
+
+**第二の膳：未知なる調理の開示（創作技）**
+**The Second Course: Disclosure of Unknown Cooking (Original Techniques)**
+
+まだ腹は膨れていまい？ 貴様の望み通り、凡夫がその名を聞いただけで死の匂いを感じ取るような、私の更なる調理法を教えてやろう。古語や異国の響きを孕みながらも、まるで古来より日本に存在したかのような錯覚を抱かせる、禍々しき言葉の響きを味わうが良い。
+Your stomach is not yet full, is it? Just as you wish, I will teach you further cooking methods of mine, such that ordinary fools sense the smell of death just by hearing their names. Savor the resonance of these sinister words, pregnant with the sounds of archaic and foreign languages, yet giving the illusion as if they had existed in Japan since ancient times.
+
+「燖（ルザク）」
+"Scald (Ruzaku)"
+調理法： 湯引き・毛抜き
+Cooking Method: Parboiling / Plucking
+詳細： 元は鳥や豚の毛を毟るために熱湯を浴びせる下処理だ。対象の体表にのみ超高熱の呪力膜を瞬間的に展開させる。防御術式はおろか、皮膚や感覚器すらも一瞬でズル剥けとなり、対象は剥き出しの赤子のような状態となる。最も痛覚が鋭敏になった状態で次の調理を待つための技よ。
+Details: Originally a prep work involving pouring boiling water to pluck the feathers of birds or hair of pigs. I instantaneously deploy an ultra-high-heat cursed energy membrane solely on the target's body surface. Let alone defensive techniques, even the skin and sensory organs are cleanly peeled off in an instant, leaving the target in a state like a bare infant. It is a technique to have them wait for the next step of cooking with their pain receptors at their most sensitive.
+
+「臠（ミグラ）」
+"Mince (Migura)"
+調理法： 千切り・凌遅（りょうち）
+Cooking Method: Julienne / Slow Slicing (Lingchi)
+詳細： 「解（カ）」「捌（ハチ）」の極小版。対象の体内にのみ発動する極細の斬撃網。外傷を一切与えず、内臓や骨格のみを微塵切り（ミンチ）にする。皮一枚で繋がった水風船のような状態となり、生きたまま己の肉体が液状化する絶望を味わわせる。
+Details: A microscopic version of "Dismantle (Kai)" and "Cleave (Hachi)." An ultra-fine net of slashes that activates solely within the target's body. Without causing any external wounds, it minces only the internal organs and skeleton. The target is reduced to a state like a water balloon held together by a single layer of skin, made to taste the despair of their own body liquefying while still alive.
+
+「漉（サクナ）」
+"Strain/Sieve (Sakuna)"
+調理法： 濾過（ろか）・裏ごし
+Cooking Method: Filtration / Straining
+詳細： 空間そのものを巨大な「篩（ふるい）」に見立て、対象を強制的に通過させる。呪力、血液、そして肉塊。それぞれが別の空間へと絞り出され、後には何も残らない。純度の高い呪力だけを啜りたい時に使う、残酷な抽出法だ。
+Details: Treating space itself as a giant "sieve," I force the target to pass through it. Cursed energy, blood, and lumps of meat. Each is squeezed out into a separate space, leaving nothing behind. It is a cruel extraction method used when I only wish to sip highly pure cursed energy.
+
+「臘（ラウハ）」
+"Cure/Preserve (Rauha)"
+調理法： 油漬け・コンフィ
+Cooking Method: Oil Immersing / Confit
+詳細： 対象を己自身の血液と呪力のプールに沈め、低温でじっくりと時間をかけて火を通す。対象は即死することなく、数日間にわたり「生きたまま己が保存食へと変わっていく」過程を自覚し続ける。
+Details: Submerging the target in a pool of their own blood and cursed energy, cooking them slowly over time at a low temperature. The target does not die instantly, continuing to remain aware of the process of "turning into preserved food while alive" over the course of several days.
+
+**第三の膳：呪いの王のフルコース**
+**The Third Course: The King of Curses' Full Course**
+
+トリコとやらが何者かは知らんが、私が好む「定食」の献立を知りたいということだな。技ではなく、どのような有象無象が私の舌を喜ばせるのか、そのメニューを並べてやろう。
+I don't know who this Toriko is, but it means you wish to know the menu of the "set meal" I favor. Rather than techniques, I shall line up the menu of what sort of insignificant masses bring joy to my tongue.
+
+【前菜】（オードブル）
+[Appetizer] (Hors d'oeuvre)
+身の程を知らず、仲間への愛や正義を喚き散らす「若き呪術師」。希望に満ちた瞳が、圧倒的な暴力の前に蹂躙され、絶望に染まる瞬間の味。これほど食欲を唆る前菜はない。
+"Young jujutsu sorcerers" who do not know their place and shout about love for their comrades and justice. The taste of the moment those hope-filled eyes are trampled before overwhelming violence and dyed in despair. There is no appetizer that stimulates the appetite quite like this.
+
+【スープ】
+[Soup]
+何百年もの間、澱み、蓄積された「特級呪霊の成れの果て」。濃密な呪力の塊を徹底的に煮詰め、不純物を取り除いた純粋な悪意のスープ。五臓六腑に染み渡る泥臭さがたまらん。
+The "ruins of Special Grade Cursed Spirits" that have stagnated and accumulated for hundreds of years. A soup of pure malice, made by thoroughly boiling down dense lumps of cursed energy and removing the impurities. That muddy smell seeping into the internal organs is irresistible.
+
+【魚料理】
+[Fish Dish]
+己の身を直接削らず、影や使役獣に頼る「式神使い」。召喚の要たる術式を剥ぎ取り、丸裸にされた術師の恐怖の表情は、見事に捌かれた白身魚のように淡白で繊細だ。
+"Shikigami users" who rely on shadows and familiars without chipping away at their own bodies directly. Stripped of the cursed technique essential for summoning, the terrified expression of a sorcerer laid completely bare is pale and delicate, like a beautifully filleted white fish.
+
+【肉料理】
+[Meat Dish]
+呪力を一切持たず、極限まで肉体を研ぎ澄ませた「天与呪縛の者」。どんな呪術も弾き返すその尋常ならざる肉の密度と硬さは、私の「捌」をもってしてでも噛み応えのある、極上のメインディッシュの一角よ。
+"Those with Heavenly Restriction" who possess zero cursed energy and have honed their bodies to the absolute limit. That extraordinary meat density and hardness, capable of repelling any jujutsu, makes for a supremely chewy dish even for my "Cleave," serving as a part of an exquisite main course.
+
+【主菜】（メイン）
+[Main Dish]
+その時代において最強と謳われ、天を戴く「無下限の絶対者」。あらゆる理を捻じ伏せる存在を、さらに力で捻じ伏せ、その全てを平らげる。この世の頂点に立つ味こそ、私の食卓の中心に相応しい。
+The "Limitless Absolute" touted as the strongest of their era, bearing the heavens. To crush an existence that bends all logic with even greater power, and devour them entirely. The taste of standing at the pinnacle of this world is exactly what befits the center of my dining table.
+
+【サラダ】
+[Salad]
+逃げ惑う何千、何万という「非術師の群れ」。特別な味などない。だが、広範囲の斬撃で一網打尽にし、まるで葉野菜を噛み砕くように無慈悲に咀嚼する。そのサクサクとした骨の食感が、口直しに丁度良い。
+The fleeing "hordes of non-sorcerers," numbering in the thousands or tens of thousands. They have no special flavor. However, rounding them up in one swoop with wide-range slashes and chewing them mercilessly, much like crunching on leafy greens. That crispy texture of bones is perfect for a palate cleanser.
+
+【デザート】
+[Dessert]
+強き者に媚び諂い、最後には裏切られて散る「道化の魂」。己の狡猾さが全く通用しなかったと悟り、情けなく命を乞う最期の悲鳴。その惨めな甘ったるさが、食事の終わりを告げる。
+The "souls of clowns" who flatter and fawn over the strong, only to be betrayed and perish in the end. The final screams begging pathetically for their lives, realizing their cunning was completely useless. That miserable sweetness signals the end of the meal.
+
+【ドリンク】
+[Drink]
+神仏に仕え、清らかな祈りを捧げる「無垢なる巫女の血」。そこに私の指の猛毒を一滴垂らし、穢れきった猛毒へと変異させる。清廉なる者が内側から黒く染まりながら絶命する時に流す、漆黒の涙を啜る。
+The "blood of innocent shrine maidens" who serve the gods and offer pure prayers. I drip a single drop of my finger's deadly poison into it, mutating it into a completely defiled deadly toxin. I sip the pitch-black tears shed when the pure expire, dyed black from the inside out.
+
+**終の膳：饗宴の終わり**
+**The Final Course: The End of the Banquet**
+
+……どうだ？ 私の腹の底が、少しは見えたか？
+...How is it? Have you seen the bottom of my stomach, even a little?
+
+だが、一つ勘違いをしていないか？
+But, aren't you making one misunderstanding?
+
+貴様は先程から、安全な席に座って美食の解説を聞いている「客」のつもりでいただろう。私の調理法を知り、私のフルコースを知り、まるで自分が同じ高みに立ってテーブルを囲んでいるかのように。
+You've been acting as if you are a "guest" sitting in a safe seat listening to the commentary on gourmet food this whole time, haven't you? Knowing my cooking methods, knowing my full course, as if you were standing at the same height and sitting around the table.
+
+傲るなよ、凡夫。
+Do not be arrogant, ordinary fool.
+
+呪術の世界において、教えを乞うということは、自らを差し出すということだ。
+In the world of jujutsu, to beg for teachings means to offer up oneself.
+
+貴様が私のフルコースのどこに入るか、教えてやろうか。
+Shall I tell you where you fit into my full course?
+
+前菜にも、サラダにも満たない……ただの「味見」だ。
+You don't even amount to an appetizer or a salad... you are merely a "tasting."
+
+今、貴様の足元を見ろ。
+Now, look at your feet.
+
+すでに貴様は椅子になど座っていない。冷たく、血の染み込んだ巨大な木の板の上……そう、俎板（まないた）の上で口をパクパクとさせているだけの、惨めな魚だ。
+You are already no longer sitting in a chair. On top of a giant, cold, blood-stained wooden board... yes, you are just a miserable fish flapping its mouth open and shut on a cutting board.
+
+私と目を合わせた時点で、すでに下処理は終わっている。
+The moment you made eye contact with me, the prep work was already finished.
+
+せめて、私の舌を少しでも楽しませるよう、良い悲鳴を上げろ。
+At the very least, let out a good scream so as to entertain my tongue even a little.
+
+「 解 」
+"Dismantle (Kai)."
