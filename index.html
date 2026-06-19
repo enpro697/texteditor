@@ -464,7 +464,6 @@
         <div class="input-group">
           <input type="text" id="replace-text" placeholder="置換後の文字列" />
         </div>
-        <!-- <button id="btn-search-only" class="btn-primary">検索</button> -->
         <button id="btn-search-up" class="btn-primary">検索↑</button>
         <button id="btn-search-down" class="btn-primary">検索↓</button>
         <button id="btn-replace" class="btn-primary">一括置換</button>
@@ -480,22 +479,8 @@
           🔓 ロック解除
         </button>
 
-        <button
-          id="btn-undo"
-          class="btn-theme"
-          title="元に戻す (Ctrl+Z)"
-          disabled
-        >
-          🔙
-        </button>
-        <button
-          id="btn-redo"
-          class="btn-theme"
-          title="やり直す (Ctrl+Y)"
-          disabled
-        >
-          🔜
-        </button>
+        <button id="btn-undo" class="btn-theme" title="元に戻す (Ctrl+Z)" disabled>🔙</button>
+        <button id="btn-redo" class="btn-theme" title="やり直す (Ctrl+Y)" disabled>🔜</button>
 
         <button id="btn-load" class="btn-info">読込</button>
         <button id="btn-copy" class="btn-success">📋 コピー</button>
@@ -507,7 +492,7 @@
     </div>
 
     <div class="editor-container" id="editor-container">
-        <div class="fullscreen-floating-bar" id="fs-floating-bar">
+      <div class="fullscreen-floating-bar" id="fs-floating-bar">
         <div class="drag-handle" id="fs-drag-handle" title="ドラッグして移動">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="1"></circle>
@@ -536,50 +521,24 @@
 
     <div id="wheel-popup">
       <div class="popup-header">
-        <div
-          class="popup-drag-handle"
-          id="popup-drag-handle"
-          title="ドラッグして移動"
-        >
-          ⠿
-        </div>
+        <div class="popup-drag-handle" id="popup-drag-handle" title="ドラッグして移動">⠿</div>
         <div class="popup-title">設定・モード</div>
       </div>
       <div id="wheel-status">通常モード</div>
 
       <div class="popup-controls">
-        <button id="btn-shrink" class="btn-theme" title="下ホイールでも可">
-          ➖縮小
-        </button>
-        <button id="btn-expand" class="btn-theme" title="下ホイールでも可">
-          ➕拡大
-        </button>
+        <button id="btn-shrink" class="btn-theme" title="下ホイールでも可">➖縮小</button>
+        <button id="btn-expand" class="btn-theme" title="下ホイールでも可">➕拡大</button>
       </div>
 
       <div class="popup-controls">
-        <button
-          id="btn-popup-wrap-both-paren"
-          class="btn-theme"
-         
-          title="下ホイールでも可"
-        >
-          ()追加
-        </button>
-        <button
-          id="btn-popup-wrap-asterisk"
-          class="btn-theme"
-       
-          title="下ホイールでも可"
-        >
-          **追加
-        </button>
+        <button id="btn-popup-wrap-both-paren" class="btn-theme" title="下ホイールでも可">()追加</button>
+        <button id="btn-popup-wrap-asterisk" class="btn-theme" title="下ホイールでも可">**追加</button>
       </div>
 
       <div class="popup-footer-text">※余白で下ホイール：モード切替</div>
 
-      <div id="popup-scroll-area" title="ここでホイール: 1単語ずつ次/前へ移動">
-        ↔️ 範囲選択移動
-      </div>
+      <div id="popup-scroll-area" title="ここでホイール: 1単語ずつ次/前へ移動">↔️ 範囲選択移動</div>
     </div>
 
     <script>
@@ -587,7 +546,6 @@
       const searchInput = document.getElementById("search-text");
       const replaceInput = document.getElementById("replace-text");
       const btnReplace = document.getElementById("btn-replace");
-      // const btnSearchOnly = document.getElementById("btn-search-only");
       const btnSearchUp = document.getElementById("btn-search-up");
       const btnSearchDown = document.getElementById("btn-search-down");
       const btnLoad = document.getElementById("btn-load");
@@ -598,9 +556,7 @@
 
       const editorContainer = document.getElementById("editor-container");
       const btnFullscreen = document.getElementById("btn-fullscreen");
-      const btnCloseFullscreen = document.getElementById(
-        "btn-close-fullscreen",
-      );
+      const btnCloseFullscreen = document.getElementById("btn-close-fullscreen");
 
       const fsBtnWrapParen = document.getElementById("fs-btn-wrap-paren");
       const fsBtnWrapAsterisk = document.getElementById("fs-btn-wrap-asterisk");
@@ -611,12 +567,8 @@
       const btnExpand = document.getElementById("btn-expand");
       const btnShrink = document.getElementById("btn-shrink");
 
-      const btnPopupWrapBothParen = document.getElementById(
-        "btn-popup-wrap-both-paren",
-      );
-      const btnPopupWrapAsterisk = document.getElementById(
-        "btn-popup-wrap-asterisk",
-      );
+      const btnPopupWrapBothParen = document.getElementById("btn-popup-wrap-both-paren");
+      const btnPopupWrapAsterisk = document.getElementById("btn-popup-wrap-asterisk");
 
       const popupScrollArea = document.getElementById("popup-scroll-area");
 
@@ -628,7 +580,6 @@
       let isEditLocked = true;
       let lastWheelFormatTime = 0;
 
-      // --- 履歴（Undo/Redo）管理 ---
       const MAX_HISTORY = 20;
       let historyStack = [];
       let historyIndex = -1;
@@ -769,7 +720,7 @@
 
       makeDraggable(
         document.getElementById("fs-drag-handle"),
-        document.getElementById("fs-floating-bar"),
+        document.getElementById("fs-floating-bar")
       );
       makeDraggable(document.getElementById("popup-drag-handle"), wheelPopup);
 
@@ -809,8 +760,7 @@
         const scrollTop = textarea.scrollTop;
         const clientHeight = textarea.clientHeight;
         const paddingTop = parseFloat(style.paddingTop) || 0;
-        const lineHeight =
-          parseFloat(style.lineHeight) || parseFloat(style.fontSize) * 1.5;
+        const lineHeight = parseFloat(style.lineHeight) || parseFloat(style.fontSize) * 1.5;
 
         if (alignTopThird) {
           textarea.scrollTop = targetY - clientHeight / 3 + lineHeight / 2;
@@ -828,12 +778,9 @@
         const targetY = textarea.scrollTop + textarea.clientHeight / 3;
         const style = window.getComputedStyle(textarea);
         const paddingTop = parseFloat(style.paddingTop) || 0;
-        const lineHeight =
-          parseFloat(style.lineHeight) || parseFloat(style.fontSize) * 1.5;
+        const lineHeight = parseFloat(style.lineHeight) || parseFloat(style.fontSize) * 1.5;
 
-        let approximateLineIdx = Math.floor(
-          (targetY - paddingTop) / lineHeight,
-        );
+        let approximateLineIdx = Math.floor((targetY - paddingTop) / lineHeight);
         if (approximateLineIdx < 0) approximateLineIdx = 0;
 
         const lines = text.split("\n");
@@ -865,9 +812,9 @@
           }
           textarea.setSelectionRange(
             targetStartPos + match.index,
-            targetStartPos + match.index + match[0].length,
+            targetStartPos + match.index + match[0].length
           );
-          textarea.focus(); // フォーカスを当てて選択状態を表示
+          textarea.focus();
         }
       }
 
@@ -889,7 +836,7 @@
         if (targetWord) {
           textarea.setSelectionRange(targetWord.start, targetWord.end);
           scrollToSelection(false);
-          textarea.focus(); // フォーカスを当てて選択状態を表示
+          textarea.focus();
         }
       }
 
@@ -932,10 +879,10 @@
 
         textarea.setSelectionRange(
           targetStartPos + match.index,
-          targetStartPos + match.index + match[0].length,
+          targetStartPos + match.index + match[0].length
         );
         scrollToSelection(true);
-        textarea.focus(); // フォーカスを当てて選択状態を表示
+        textarea.focus();
       }
 
       function insertTextAround(before, after) {
@@ -962,16 +909,11 @@
           scrollToSelection(false);
         }
 
-        textarea.focus(); // 【修正】強制的にフォーカスを戻してハイライトを復活させる
+        textarea.focus();
       }
 
-      btnPopupWrapBothParen.addEventListener("click", () =>
-        insertTextAround("(", ")"),
-      );
-      btnPopupWrapAsterisk.addEventListener("click", () =>
-        insertTextAround("*", "*"),
-      );
-
+      btnPopupWrapBothParen.addEventListener("click", () => insertTextAround("(", ")"));
+      btnPopupWrapAsterisk.addEventListener("click", () => insertTextAround("*", "*"));
       fsBtnWrapParen.addEventListener("click", () => insertTextAround("(", ")"));
       fsBtnWrapAsterisk.addEventListener("click", () => insertTextAround("*", "*"));
 
@@ -979,16 +921,13 @@
         editorContainer.classList.add("fullscreen");
         if (!isEditLocked) textarea.focus();
 
-        // テキスト全体から最後の半角閉じ括弧 ')' の位置を検索
         const text = textarea.value;
         const lastParenIndex = text.lastIndexOf(")");
 
-        // ')' が見つかった場合、その位置を選択状態にしてキャレットを移動
         if (lastParenIndex !== -1) {
           textarea.setSelectionRange(lastParenIndex, lastParenIndex + 1);
         }
 
-        // キャレットの位置（')' の場所、なければ元の場所）へ自動スクロール
         scrollToSelection(false);
       });
 
@@ -1152,7 +1091,7 @@
         }
       });
 
-function performSearch(direction) {
+      function performSearch(direction) {
         const searchValue = searchInput.value;
         if (!searchValue) {
           showToast("⚠️ 検索する文字列を入力してください");
@@ -1165,21 +1104,19 @@ function performSearch(direction) {
         let foundIndex = -1;
 
         if (direction === "down") {
-          // 下検索：現在の選択終了位置から下へ探す
           let searchStartIndex = textarea.selectionEnd;
           foundIndex = text.indexOf(searchValue, searchStartIndex);
 
           if (foundIndex === -1) {
-            foundIndex = text.indexOf(searchValue, 0); // 見つからなければ一番上から
+            foundIndex = text.indexOf(searchValue, 0);
             if (foundIndex !== -1) showToast("🔄 一番上に戻って検索しました");
           }
         } else if (direction === "up") {
-          // 上検索：現在の選択開始位置の直前から上へ探す
           let searchStartIndex = textarea.selectionStart - 1;
           foundIndex = text.lastIndexOf(searchValue, Math.max(0, searchStartIndex));
 
           if (foundIndex === -1) {
-            foundIndex = text.lastIndexOf(searchValue, text.length); // 見つからなければ一番下から
+            foundIndex = text.lastIndexOf(searchValue, text.length);
             if (foundIndex !== -1) showToast("🔄 一番下に戻って検索しました");
           }
         }
@@ -1228,7 +1165,7 @@ function performSearch(direction) {
         if (text.indexOf(searchValue, searchStartIndex) !== -1) {
           showToast(`🔍 ${hitCount}件ヒットしました`);
         }
-      });
+      }
 
       btnSearchUp.addEventListener("click", () => performSearch("up"));
       btnSearchDown.addEventListener("click", () => performSearch("down"));
@@ -1253,7 +1190,7 @@ function performSearch(direction) {
 
           const replacedSelection = selectedText.replaceAll(
             searchValue,
-            replaceValue,
+            replaceValue
           );
 
           if (selectedText === replacedSelection) {
@@ -1355,11 +1292,10 @@ function performSearch(direction) {
 
         if (start < end) {
           textarea.setSelectionRange(start, end);
-          textarea.focus(); // 【修正】手動クリック時はフォーカスを当てるだけに留め、スクロールはさせない
+          textarea.focus();
         }
       }
 
-      // 【修正】クリック時はごくわずかな遅延を挟むことで、ブラウザ標準のキャレット移動と競合するのを防ぐ
       textarea.addEventListener("click", (e) => {
         setTimeout(() => {
           selectWordAtCursor();
