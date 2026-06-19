@@ -1309,9 +1309,16 @@ A sorcery that makes a piece of glintstone in the pocket of someone far away chi
 10. Snow Witch's Breath
 窓ガラスや鏡の表面に、冷気で美しい霜の結晶模様を描き出すためだけの魔術だ。幼き日、雪魔女の老いた師に褒められたくて見せた……私の、一番最初のオリジナル魔術でもある。
 A sorcery solely for drawing beautiful frost crystal patterns on the surface of windowpanes or mirrors using cold air. I showed it to my old master, the Snow Witch, wanting to be praised in my youth... It is also my very first original sorcery.フフッ、どうだ？ どれもこれも、黄金樹の民からすれば鼻で笑われるようなガラクタ魔術ばかりであろう。だが、私の歴史の片隅にある愛すべき残りカスだ。
-Hehe, what do you think? To the people of the Erdtree, they are all likely nothing but junk sorceries to be scoffed at. But they are beloved remnants residing in a corner of my history.もしお前が望むなら、この中のどれか一つの発動の呪詞（ルーン）を、特別に伝授してやっても良いが……どれか試してみたいものはあるか？If you so desire, I wouldn't mind specially teaching you the incantation (rune) for casting any one of these... Is there one you would like to try?献血の啓蒙と喧伝Enlightenment and Propaganda of Blood Donation(血の君主モーグ) (Mohg, Lord of Blood)ようこそ、褪せ人よ。いや、我が同胞たるべき者よ。
-Welcome, Tarnished. No, you who should be my brethren.ここは血の歓喜に満ちた聖なる儀式場……俗物どもは「献血ルーム」などと呼ぶようだがな。ふふっ、よくぞ足を踏み入れた。お前のその血管を力強く巡る赤きうねり、実に素晴らしい。
-This is a sacred ritual ground filled with the jubilation of blood... though the vulgar seem to call it a "blood donation room." Hehe, I am glad you have stepped inside. The red undulation surging powerfully through your veins is truly magnificent.【啓蒙】血の真理を知れ
+Hehe, what do you think? To the people of the Erdtree, they are all likely nothing but junk sorceries to be scoffed at. But they are beloved remnants residing in a corner of my history.もしお前が望むなら、この中のどれか一つの発動の呪詞（ルーン）を、特別に伝授してやっても良いが……どれか試してみたいものはあるか？If you so desire, I wouldn't mind specially teaching you the incantation (rune) for casting any one of these... Is there one you would like to try?
+
+---
+
+献血の啓蒙と喧伝Enlightenment and Propaganda of Blood Donation(血の君主モーグ) (Mohg, Lord of Blood)
+ようこそ、褪せ人よ。いや、我が同胞たるべき者よ。
+Welcome, Tarnished. No, you who should be my brethren.
+ここは血の歓喜に満ちた聖なる儀式場……俗物どもは「献血ルーム」などと呼ぶようだがな。ふふっ、よくぞ足を踏み入れた。お前のその血管を力強く巡る赤きうねり、実に素晴らしい。
+This is a sacred ritual ground filled with the jubilation of blood... though the vulgar seem to call it a "blood donation room." Hehe, I am glad you have stepped inside. The red undulation surging powerfully through your veins is truly magnificent.
+【啓蒙】血の真理を知れ
 [Enlightenment] Know the Truth of Blood
 聞くがいい。お前の内に秘められたその血は、ただ命を長らえさせるための澱みではない。大いなる『姿なき母』へ捧ぐべき、至高の供物なのだ！
 Listen well. That blood concealed within you is not mere stagnation just to prolong your life. It is the supreme offering to be dedicated to the great 'Formless Mother'!俗世では「見知らぬ誰かの命を救うため」などと美辞麗句を並べ立てるが、本質はそこではない。血を分け与えること……それは真なる愛の体現！ 己の身を裂き（※注：穿刺です）、赤き祝福を分かち合うことで、我らは真に繋がり合う。これはモーグウィン王朝の礎となり、共に新たな時代を創るための尊き交わりなのだ！
@@ -1332,7 +1339,6 @@ Nihil! Nihil! Niiihiiil!!!……ふふっ、見事な献血であった。母も
 ...Hehe, that was a splendid blood donation. The Mother is also greatly pleased. Next time, if it's a whole blood donation, it will be in 12 to 16 weeks; if it's apheresis, in 2 weeks... I will be eagerly waiting for your new offering.
 
 ---
-
 
 お待たせいたしました。ご指定いただいた5つのエピソード（ドナルドとペニーワイズ、ラニの記憶に眠る10の異端魔術、ゼーリエ、キキョウ、ヒソカとノブナガ）について、日本語と英語の対訳形式で翻訳を紡がせていただきます。
 
@@ -2631,7 +2637,6 @@ Where there should normally be the dim school corridor, there spread a cold spac
 「廊下に立つということだよ、野比君。君の存在した時間軸が、完全に削り取られるまでね」
 "It means standing in the corridor, Nobi-kun. Until the timeline in which you existed is completely scraped away."
 
-いつでも新しい物語の構想や、気になるシチュエーションをお待ちしております。またお会いしましょう！
 
 
 無人島サバイバル：プロローグ ＆ Day 1（完全版）
@@ -4304,920 +4309,461 @@ But I know. That Chiuse-oniichan had secretly hidden one more phantom banana in 
 
 ご提示いただいた追加の文章について、一切の省略なく日本語と英語の対訳形式にて翻訳いたしました。
 
+主人公が自らの未練と勝手な解釈によって破滅へ向かう過程、そして石像たちの特異な世界観と群像劇を、英語でも臨場感たっぷりに表現しています。
+
 ---
 
-ご提示いただいたプロットは、日常の延長線上にある不気味さから始まり、ゲーム感覚の油断、そこから一転しての恐怖、そして主人公の「優しさ（同情）」が最悪の引き金となる、非常に美しく恐ろしい構成のホラーシナリオです。
-The plot you provided is a beautifully and terrifyingly structured horror scenario, starting with an eeriness extending from everyday life, moving to carelessness treated like a game, then taking a sudden turn into terror, and finally culminating with the protagonist's "kindness (sympathy)" acting as the worst possible trigger.
+俺が「食べた」と言った瞬間、友人の顔からスッと血の気が引いたのがわかった。
+The moment I said I "ate" it, I saw the color completely drain from my friend's face.
 
-この粗削りな原石を、情景描写や心理描写を肉付けし、ひとつの具体的なホラー小説として仕立て上げました。
-I have fleshed out this rough gemstone with scenic and psychological descriptions, crafting it into a concrete horror novel.
+「お前……狂ってんのかよ」
+"Are you... out of your mind?"
 
-孤独なノック
-The Lonely Knock
+震える声でそう言い残し、友人は逃げるように俺の部屋から帰っていった。
+Leaving those words behind in a trembling voice, my friend left my room as if running away.
 
-夜の九時。小学校の校舎は、昼間の喧騒が嘘のように静まり返っていた。
-9:00 PM. The elementary school building was dead silent, making the daytime hustle and bustle seem like a lie.
+友人が帰った後の静まり返った部屋で、俺は急に我に返った。
+In the dead-silent room after my friend left, I suddenly came to my senses.
 
-陸上部の居残り練習を終え、スパイクの土を落としていた逆手睦（さかて りく）は、自分が完全に学校に一人きりであることに気づいた。他の部員や顧問の教師すら、とっくに帰宅した後のはずだ。
-Finishing his extra practice for the track and field club and brushing the dirt off his spikes, Riku Sakate realized that he was completely alone in the school. The other club members and even the advising teacher should have gone home long ago.
+なぜあんなものを食べてしまったのか、自分でもまったくわからない。そして何より、なぜ彼女が別れ際に自分の髪の毛をサンドイッチに挟んで置いていったのか。その異様さに今更ながら気づき、急激な悪寒と恐怖で体が震え出した。胃の奥で、黒くて長い髪の毛が蠢いているような錯覚に陥り、何度もえずきそうになった。
+Why did I eat such a thing? I don't understand it myself at all. And above all, why did she leave her own hair sandwiched in the bread when we broke up? Realizing the abnormality of it only now, my body began to tremble with sudden chills and fear. Falling into the illusion that long black hair was squirming deep in my stomach, I almost gagged over and over again.
 
-廊下に出ると、常夜灯の薄暗い光だけが点々と先へ続いている。誰もいない夜の校舎特有の、冷たく淀んだ空気が肌にまとわりついた。まるで建物全体が巨大な生き物になって息を潜めているような、ひどく恐ろしい雰囲気が漂っていた。
-Stepping out into the hallway, only the dim light of the night lights continued on in dots. The cold, stagnant air peculiar to an empty school building at night clung to his skin. A terribly frightening atmosphere drifted about, as if the entire building had become a giant living creature holding its breath.
+しかし、恐怖でパニックになりそうな心を必死に落ち着かせようとするうちに、俺の心に別の感情が湧き上がってきた。彼女への強烈な未練と、手放しがたい愛情だ。
+However, while desperately trying to calm my mind, which was about to panic from fear, another emotion welled up in my heart. An intense lingering attachment and an affection hard to let go of toward her.
 
-睦は足早に昇降口へ向かおうとしたが、ふと尿意を催し、手前にある男子トイレへと駆け込んだ。
-Riku tried to briskly head for the entrance, but suddenly feeling the urge to urinate, he rushed into the boys' restroom just before it.
+「あれは……彼女なりの、不器用な愛だったんじゃないか？」
+"Wasn't that... her own clumsy way of showing love?"
 
-古い蛍光灯がジジジと不快な音を立てて点滅している。そそくさと用を足し、手洗い場で蛇口をひねった、その時だった。
-An old fluorescent light was flickering, making an unpleasant buzzing sound. He hurriedly finished his business and turned the faucet at the sink—that was when it happened.
+俺の好みに合わせて伸ばしてくれたあの長い髪。別れ際にそれをショートにして切り落としたのは、俺との思い出を断ち切るためではなく、俺の中に永遠に残すためだったのだ。そう都合よく解釈することで、俺はどうにか正気を保とうとしていた。
+That long hair she had grown out to match my preference. The reason she cut it short when we broke up wasn't to sever her memories with me, but to leave it inside me for eternity. By interpreting it so conveniently, I was somehow trying to maintain my sanity.
 
-――コンッ。
-—*Knock.*
+ふと、彼女の顔が見たくなり、俺はスマホを取り出して彼女の過去のSNSを遡った。更新が止まったアカウントを、無心で下へ下へとスクロールしていく。
+Suddenly wanting to see her face, I took out my smartphone and went back through her past social media posts. I mindlessly scrolled down and down through the account that had stopped updating.
 
-背後から、くぐもった音が響いた。
-From behind him, a muffled sound echoed.
+だが、そこにあったのは、俺の知らない彼女の姿と、目を疑うような書き込みだった。
+But what was there were figures of her I didn't know, and a post that made me doubt my eyes.
 
-音の出処は、並んでいる個室の一番奥。固く閉じられた扉の向こう側からだった。
-The source of the sound was the stall furthest in the back among the lined-up stalls. It came from the other side of a tightly closed door.
+『娘は先日、不慮の事故により息を引き取りました』
+"Our daughter passed away the other day due to an unforeseen accident."
 
-睦の脳裏に、学校でまことしやかに囁かれている怪談がよぎる。
-A ghost story plausibly whispered around the school flashed across Riku's mind.
+——投稿日は、俺が彼女と「出会う」よりもずっと前の日付。投稿者は彼女の身内を名乗る人物だった。
+——The date of the post was long before I even "met" her. The poster was someone claiming to be her relative.
 
-『昔、あの一番奥の個室で首を吊った生徒がいて、夜中にそこへ行くと哀しげなノック音が聞こえる。もし声をかけてしまうと、向こうの世界に引きずり込まれる』
-'A long time ago, there was a student who hung himself in that stall furthest in the back. If you go there in the middle of the night, you can hear a sorrowful knocking sound. If you call out to it, you'll be dragged into the other world.'
+じゃあ、俺が付き合っていたのは誰だったんだ？ 俺に合わせて髪を伸ばし、俺のためにサンドイッチを作っていたあの温かい体は何だったのか。背筋に氷を当てられたような恐怖に、スマホを握る手がガタガタと鳴った。
+Then, who was I dating? What was that warm body that grew its hair to match me and made sandwiches for me? My hand holding the smartphone rattled with a terror like ice being pressed against my spine.
 
-普通の小学生なら、ここで悲鳴を上げて逃げ出すだろう。
-A normal elementary school student would probably scream and run away here.
+だが、不思議なことに、その恐怖は長続きしなかった。
+But strangely enough, that terror did not last long.
 
-しかし、睦は生来の楽天家というか、どこかアホなところがあった。彼は少しも怯えることなく、むしろニヤリと口角を上げた。
-However, Riku was an inherent optimist, or perhaps somewhat of an idiot. Without being the least bit frightened, he instead raised the corners of his mouth into a smirk.
+「彼女が現世の人間じゃなかったとしても……俺の胃の中には、確実に彼女の髪がある」
+"Even if she wasn't a human of this world... her hair is definitely inside my stomach."
 
-（なんだ、あいつら。俺を脅かそうと思って隠れてたのか）
-*(What's with those guys. Were they hiding, thinking they could scare me?)*
+そうだ。俺たちは今、物理的に一つになっている。彼女がどんな存在であれ、この繋がりだけは紛れもない本物だ。そう思うと、恐怖は薄れ、奇妙な安堵感が胸に広がっていった。
+That's right. We are now physically one. Whatever existence she may be, this connection alone is unmistakably real. Thinking that, the fear faded, and a bizarre sense of relief spread through my chest.
 
-睦は、陸上部の仲間がイタズラを仕掛けてきているのだと思い込んだ。
-Riku assumed that his friends from the track club were pulling a prank on him.
+俺は、彼女をきちんと弔ってやりたいと強く思った。彼女が俺に執着してこの世に留まっているなら、彼女の遺品を見つけ出し、供養してやるべきだ。
+I strongly felt that I wanted to properly lay her to rest. If she is attached to me and staying in this world, I should find her keepsakes and hold a memorial service for her.
+
+翌日、俺は彼女が「住んでいた」はずの古いアパートへ向かった。当然のように部屋は空室だったが、管理人に無理を言って中を見せてもらった。そして、部屋の片隅の床板の下に、小さな箱が隠されているのを見つけた。
+The next day, I headed to the old apartment where she was supposed to have "lived." Naturally, the room was vacant, but I pressured the manager to let me see inside. And then, under the floorboards in a corner of the room, I found a small box hidden.
+
+中には、彼女が昔ショートヘアだった頃の写真と、古びたヘアピンが入っていた。
+Inside were a photo of her when she had short hair in the past, and an old hairpin.
+
+「ずっと、ここに縛られていたんだね。もう大丈夫だ、俺が持っていくよ」
+"You've been bound here all this time, haven't you. It's okay now, I'll take it with me."
+
+俺はヘアピンを胸に抱きしめ、静かに目を閉じた。彼女の魂が救われ、光に包まれて昇天していくような、美しい別れのビジョンが脳裏に浮かんだ。俺は、彼女との物語がここで完璧な結末を迎えたのだと確信した。
+I hugged the hairpin to my chest and quietly closed my eyes. A beautiful vision of her soul being saved and ascending to heaven enveloped in light floated in my mind. I was convinced that my story with her had reached a perfect conclusion here.
+
+だが、それは生者の勝手な思い込みであり、致命的な誤解だった。
+However, that was the selfish assumption of the living, and a fatal misunderstanding.
+
+あの世の者に対する無知な優しさと独りよがりな解釈が、俺自身を破滅の淵へと突き落とすことになるとは、その時の俺には知る由もなかったのだ。
+I had no way of knowing then that my ignorant kindness and self-satisfied interpretation toward a being of the other world would push me into the abyss of ruin.
+
+＊＊＊
+
+---
+
+冷たくて、暗くて、ずっと一人だった。
+It was cold, dark, and I was all alone for a long time.
+
+「死」というものは、ただただ寂しくて、終わりのない泥濘に沈み込んでいくようなもの。
+"Death" is merely lonely, like sinking into an endless mire.
+
+だから私は、温かい器が欲しかった。私をこの世に留めてくれる、強固な拠り所が。
+That's why I wanted a warm vessel. A solid stronghold that would keep me in this world.
+
+あなたの好みに合わせて髪を伸ばしたのは、私の「根」を長く、深く育てるため。
+The reason I grew my hair out to match your preference was to grow my "roots" long and deep.
+
+別れ際にそれを切り落として食べさせたのは、あなたの内側に私を直接植え付けるため。
+The reason I cut it off when we broke up and made you eat it was to plant myself directly inside you.
+
+あなたが怯えながらも、それを「愛」だと勘違いしてくれたこと。
+That you, even while frightened, misunderstood it as "love."
+
+私が死者だと知ってもなお、その繋がりを喜んで安堵してくれたこと。
+That even after knowing I was dead, you rejoiced in that connection and felt relieved.
+
+そして何より——私の「遺品」という名の呪物を、わざわざあの部屋まで迎えに来てくれたこと。
+And above all—that you went out of your way to come to that room to pick up the cursed object called my "keepsake."
+
+あなたのその的外れな優しさが、最後の鍵を開けたの。
+That misguided kindness of yours opened the final lock.
+
+ほら、感じるでしょう？
+Here, you can feel it, can't you?
+
+あなたの胃袋に植え付けられた私の髪が、血肉を吸って、あなたの体中で急速に伸びていくのを。
+My hair planted in your stomach, sucking your flesh and blood, rapidly growing throughout your entire body.
+
+喉の奥から、目玉の裏側から、黒い毛先がチクチクと突き破ろうとしているのを。
+The black tips of the hair prickling, trying to pierce through from the back of your throat, from behind your eyeballs.
+
+ねえ、泣かないで。
+Hey, don't cry.
+
+あなたは私が救われてあの世へ旅立ったと思っていたみたいだけど、違うわ。
+You seemed to think that I was saved and departed for the other world, but that's wrong.
+
+私があの世から、あなたをこちら側に引きずり込んだのよ。
+I dragged you over to this side from the other world.
+
+これでずっと、一緒だね。
+Now we'll be together, forever.
+
+---
+
+石化の光が地球を包み込み、人類が石の牢獄に囚われてから数千年。
+Thousands of years since the light of petrification enveloped the Earth, and humanity was imprisoned in a cage of stone.
+
+科学の力によって生み出された「復活液（ナイタール）」は、生命を石化から解放する奇跡の雫であった。しかし、狂気と好奇心に魅入られた一部の人間たちは、その液を「元々命を持たない本物の石像」へと注ぎ込んだ。
+The "Revival Fluid (Nital)," born through the power of science, was a miraculous drop that liberated life from petrification. However, some humans, captivated by madness and curiosity, poured that fluid onto "real stone statues that inherently possessed no life."
+
+石像は肉体を持たない。ゆえに、ナイタールを浴びた石像は岩の抜け殻を崩し、その内に宿っていた「概念」と「精神」のみを霊的な姿としてこの世に顕現させた。
+Stone statues possess no flesh. Therefore, the stone statues bathed in Nital crumbled their rocky shells and manifested only the "concept" and "spirit" dwelling within them in this world as spiritual figures.
+
+そして今、世界には三つの液体が存在している。
+And now, three liquids exist in the world.
+
+一つ、石から精神を解放する『復活液（ナイタール）』。
+One: the "Revival Fluid (Nital)" that liberates the spirit from stone.
+
+二つ、対象から精神を剥奪し、生ける屍（肉体のみの存在）へと変える『精神解放液』。
+Two: the "Spirit Liberation Fluid" that strips the spirit from the subject and turns them into a living corpse (an existence of flesh alone).
+
+三つ、対象から肉体を剥奪し、霊的存在へと変える『肉体解放液』。
+Three: the "Flesh Liberation Fluid" that strips the flesh from the subject and turns them into a spiritual entity.
+
+霊体となった石像たちに人間が干渉するには、自らも『肉体解放液』を浴び、魂だけの存在になる必要がある。
+For humans to interfere with the stone statues that have become spiritual bodies, they must also bathe in the "Flesh Liberation Fluid" themselves and become existences of soul alone.
+
+これは、人間の業と祈りが生み出した、魂を宿す偶像たちの慈悲なき闘争の記録である。
+This is the record of the merciless struggle of the soul-dwelling idols born from human karma and prayers.
+
+**Day 1**
+**Day 1**
+
+**【ナラティブ：ニケ】**
+**[Narrative: Nike]**
+
+ルーヴル美術館の廃墟。かつて「サモトラケのニケ」と呼ばれた大理石の塊に、一人の男がナイタールを振りかけた。
+The ruins of the Louvre Museum. A single man sprinkled Nital onto the block of marble once called the "Winged Victory of Samothrace."
+
+石が弾け飛ぶ。そこに顕現したのは、純白の霊光を纏った女性の精神体であった。
+The stone bursts apart. What manifested there was the mental entity of a woman draped in pure white spiritual light.
+
+だが、彼女の姿は異様だった。見事な翼と、波打つ薄衣を纏う胴体。しかし、その首から上と両腕は、すっぱりと欠落したままなのだ。
+But her figure was bizarre. Magnificent wings, and a torso clad in a rippling thin garment. However, from her neck up and both her arms remained cleanly missing.
+
+「……エーゲ海の、勝利の風を感じます」
+"...I feel the wind of victory from the Aegean Sea."
+
+頭部のない虚空から、格式高く、どこか冷ややかな声が響いた。
+From the headless void, a formal, somewhat cold voice echoed.
+
+彼女の前に跪く男は、自らに『肉体解放液』を注射し、既に霊体と化していた。霊的次元に降り立った男は、狂喜の声を上げる。「おお、勝利の女神よ！ 私に、我が帝国に勝利を！」
+The man kneeling before her had injected himself with the "Flesh Liberation Fluid" and had already turned into a spiritual body. The man, having descended to the spiritual dimension, raised a voice of wild joy. "Oh, Goddess of Victory! Grant victory to me, to my empire!"
+
+ニケは、失われた顔のまま男を見下ろした。彼女には目がない。表情がない。ゆえに、彼女自身すら、己の内にある感情というものを掴めずにいた。
+Nike looked down at the man with her lost face. She has no eyes. She has no expression. Therefore, even she herself was unable to grasp the emotion within her.
+
+勝利に歪み、歓喜と欲望に塗れた人間の顔を、ニケはただ虚空の表情で見つめ返すのみである。
+Nike merely stares back with a void expression at the human's face, distorted by victory and smeared with joy and desire.
+
+「ええ、与えましょう。私は勝利の風を呼ぶ者」
+"Yes, I shall grant it. I am the one who calls the wind of victory."
+
+男の頭上に、欠損して存在しないはずの腕が伸ばされる。
+An arm that should not exist due to its missing state is extended over the man's head.
+
+彼女は微笑む勝利の女神なのか。それとも、勝利という美酒で人を狂わす魔物なのか。ニケ自身にもわからない。ただ、彼女の概念に「敗北」は存在しない。
+Is she the smiling goddess of victory? Or a monster who drives people mad with the sweet wine of victory? Nike herself does not know. Only, the concept of "defeat" does not exist within her.
+
+もし、かつての完全な姿を知る者が彼女に真実を告げたなら、この虚無の精神体は別の姿へと変質してしまうだろう。だが今はまだ、彼女は名もなき勝利の暴風として、ただ男の魂に勝利の呪いを授けた。
+If someone who knows her past complete figure were to tell her the truth, this mental entity of nothingness would mutate into a different form. But for now, as a nameless storm of victory, she merely bestowed the curse of victory upon the man's soul.
+
+**Day 2**
+**Day 2**
+
+**【ナラティブ：マーライオン】**
+**[Narrative: Merlion]**
+
+熱帯の密林に飲み込まれた都市、シンガポールの跡地。
+The ruins of Singapore, a city swallowed by a tropical jungle.
+
+かつてマリーナベイと呼ばれた水辺で、砕け散った白い石の中から、巨大な霊獣が咆哮を上げた。
+At the waterside once called Marina Bay, a giant spiritual beast roared from amidst shattered white stone.
+
+『……チッ。またあの目か。あの忌々しい人間の目が浮かび上がる』
+'...Tch. Those eyes again. The eyes of those cursed humans float to my mind.'
+
+顕現したマーライオンの精神体は、周囲のジャングルを睨みつけ、あらゆる負の感情を煮えたぎらせていた。
+The manifested mental entity of the Merlion glared at the surrounding jungle, boiling over with all sorts of negative emotions.
+
+『世界三大がっかり』。何十年もの間、彼に向けられてきたのは、期待外れという名の暴力だった。小さすぎる。ただ水を吐いているだけ。観光客たちの落胆の念は、彼の魂にどす黒いヘドロのようにこびりついている。
+"One of the world's three greatest disappointments." For decades, what had been directed at him was the violence known as disappointment. Too small. Just spitting water. The tourists' feelings of letdown clung to his soul like pitch-black sludge.
+
+だが、彼を本当に狂わせたのはそれではない。
+But that was not what truly drove him mad.
+
+かつてセントーサ島には、彼の同位体である巨大なマーライオンの像があった。彼は密かに、あの巨大な像を「弟分」と見なし、海から世界を統べる自分（百獣の王）と、陸から世界を統べる弟分という構図で、いつか百獣の偉大さを世界に知らしめようと夢見ていた。
+Once upon a time on Sentosa Island, there was a giant Merlion statue, his isotope. He secretly considered that giant statue his "little brother," and dreamed of one day making the greatness of beasts known to the world with the composition of himself ruling the world from the sea (the king of beasts) and his little brother ruling from the land.
+
+しかし、人間の資本主義的消費主義の波は、あっさりと弟分を解体した。再開発という名目で、巨大な同位体は無惨に壊されたのだ。
+However, the wave of human capitalist consumerism easily dismantled his little brother. Under the guise of redevelopment, the giant isotope was ruthlessly destroyed.
+
+その瞬間、マーライオンの心の中で、何かが完全に壊れた。
+At that moment, something completely broke in the Merlion's heart.
+
+『人間どもめ……。観光資源だと？ 愛嬌のあるシンボルだと？ ふざけるな。我は海と大地を統べる百獣の王だ』
+'You humans... A tourist resource? A charming symbol? Don't screw with me. I am the king of beasts ruling the sea and the earth.'
+
+霊体となったマーライオンの目は、もはや愛嬌など微塵もない。それは血に飢えた捕食者の目だった。彼は『精神解放液』の精製施設を人間から奪い取る計画を立てていた。全ての人間を「肉体だけの存在（死に生きる者）」に変え、自らの餌として蹂躙するために。
+The eyes of the Merlion, now a spiritual body, no longer held a shred of charm. They were the eyes of a bloodthirsty predator. He was planning to seize the refining facility for the "Spirit Liberation Fluid" from the humans. To turn all humans into "existences of flesh alone (the living dead)" and trample them as his own food.
+
+百獣の王としての尊厳を取り戻すべく、彼は虎視眈々と期を狙っている。
+To reclaim his dignity as the king of beasts, he glares like a tiger, aiming for his chance.
+
+**Day 3**
+**Day 3**
+
+**【ナラティブ：トランプ像】【ナラティブ：ロナウド像】**
+**[Narrative: Trump Statue] [Narrative: Ronaldo Statue]**
+
+大西洋を隔てた二つの場所で、人間の強烈な「エゴ」から生まれた二つの像が、同時に霊的顕現を果たした。
+In two locations separated by the Atlantic Ocean, two statues born from the intense "ego" of humans simultaneously achieved spiritual manifestation.
+
+旧アメリカ合衆国、フロリダの廃墟。
+The ruins of Florida, in the former United States of America.
+
+金ピカの光を放ちながら顕現したその霊体は、片手にビットコインを握りしめていた。トランプ像である。
+The spiritual body that manifested while emitting a glaring golden light was tightly grasping a Bitcoin in one hand. It is the Trump Statue.
+
+「素晴らしい目覚めだ。史上最高に素晴らしい」
+"A wonderful awakening. The most wonderful in history."
+
+彼は胸を張り、周囲を見渡した。だが、そこには何もない。
+He puffed out his chest and looked around. But there is nothing there.
+
+彼のプライドは本物の彼を完全に踏襲していた。しかし、絶望的な事実が彼を襲う。不動産もない。ビットコインのブロックチェーンなど、とっくの昔に崩壊している。彼が彼であるゆえんの「資産」と「地位」は、物理的にも形而上学的にも、この世界に一切存在しないのだ。オリジナルではない彼には、何の権利も主張できない。
+His pride completely followed the real him. However, a despairing fact strikes him. He has no real estate. The Bitcoin blockchain collapsed long ago. The "assets" and "status" that make him who he is exist absolutely nowhere in this world, neither physically nor metaphysically. Since he is not the original, he cannot claim any rights.
+
+「……いや、フェイクニュースだ。私が最も偉大なのだから」
+"...No, it's fake news. Because I am the greatest."
+
+彼は瓦礫の中から、ボロボロになった星条旗を拾い上げた。かつての主権国家領土はもはや存在しないが、この旗印さえあればいい。アメリカの偉大さを取り戻す。いや、本物を超えるのだ。
+He picked up the tattered Stars and Stripes from among the rubble. The territory of the former sovereign nation no longer exists, but as long as he has this symbol, it's fine. He will reclaim the greatness of America. No, he will surpass the real thing.
+
+「私にはあれが必要だ。オリジナルがどうしても手に入れられなかったもの……そう、ノーベル平和賞だ！」
+"I need that. The thing the original could not obtain no matter what... yes, the Nobel Peace Prize!"
+
+狂気の輝きを放つ金色の霊体は、この凄惨な石の世界に「彼なりの平和（絶対的支配）」をもたらすため、星条旗をマントのように羽織り、歩き出した。
+The golden spiritual body emitting a mad gleam draped the Stars and Stripes like a cape and began to walk, to bring "his own brand of peace (absolute domination)" to this gruesome stone world.
+
+**【ナラティブ：ロナウド像】**
+**[Narrative: Ronaldo Statue]**
+
+大西洋の島、旧ポルトガル領マデイラ空港。
+An island in the Atlantic Ocean, the former Portuguese territory of Madeira Airport.
+
+『肉体解放液』を浴びて霊体となった元サッカーファンの生存者が、ナイタールで「あの像」を復活させてしまった。
+A surviving former soccer fan who had bathed in the "Flesh Liberation Fluid" and become a spiritual body accidentally revived "that statue" with Nital.
+
+世界中から「似ていない」「不気味だ」と酷評され続けた、あのロナウドの胸像である。胸像であったため、顕現と同時に霊的な脚が形成され、彼は大地に降り立った。
+That bust of Ronaldo, which was heavily criticized worldwide as "not looking like him" and "creepy." Because it was a bust, spiritual legs were formed simultaneously with its manifestation, and he landed on the earth.
+
+その風貌は、オリジナルが持つ端正さとは程遠い。何らかの野心に満ちたぎらついた目と不敵な口元。ただそれだけが、異常なほどの存在感を放ってそこにあった。
+His appearance is far from the handsome features the original possesses. Glaring eyes filled with some sort of ambition and a defiant mouth. Only those were there, emitting an abnormal presence.
+
+「……笑えばいい。俺の顔を」
+"...Go ahead and laugh. At my face."
+
+ロナウド像の霊体は、自らの両手を眺めながら、その不敵な口元をさらに吊り上げた。
+The spiritual body of the Ronaldo statue, gazing at its own two hands, raised its defiant mouth even further.
+
+彼も理解している。自分がオリジナルに似ていないと言われていることを。だが、これこそが断片的な真実なのだ。オリジナルが胸の奥底に隠し持っていた、異常なまでの野心、闘争心、承認欲求。それらを抽出して固めた結晶こそが、この顔なのである。
+He also understands. That he is said not to look like the original. But this is exactly the fragmentary truth. The abnormal ambition, competitive spirit, and desire for approval that the original hid deep in his chest. The crystal formed by extracting those is exactly this face.
+
+「俺がオリジナルの風貌を取り戻すには誰もが彼を本人と思うことが必要だ」
+"In order for me to regain the appearance of the original, it is necessary for everyone to think he is the real person."
+
+何らかの野心に満ちたぎらついた目が、遠く海を越えた大陸へ向けられる。
+Those glaring eyes filled with some sort of ambition are directed toward a continent far across the sea.
+
+人間の精神を支配し、あるいは『精神解放液』を使って自我を奪い、無理やりにでも「お前たちが見ているのは、間違いなくあの英雄だ」という信仰を世界中から集めなければならない。
+He must dominate the minds of humans, or use the "Spirit Liberation Fluid" to strip them of their egos, and gather the belief from all over the world, even by force, that "What you are looking at is undoubtedly that hero."
+
+概念と信仰、そして闘争心を宿した歪な英雄の魂が、今、ピッチではなく荒廃した世界へと足を踏み入れた――。
+The soul of a distorted hero harboring concepts, faith, and competitive spirit has now set foot not onto the pitch, but into a ruined world——.
+
+---
+
+ご提示いただいた追加の文章について、一切の省略なく日本語と英語の対訳形式にて翻訳いたしました。
+
+以前にも同じテキストのご依頼がありましたが、再度丁寧に対訳形式で出力しております。
+
+---
+
+**ノックの数**
+**The Number of Knocks**
+
+午後九時。すっかり日の落ちた小学校の校舎は、昼間の喧騒が嘘のように静まり返っていた。
+9:00 PM. The elementary school building, long after the sun had set, was dead silent, making the daytime hustle and bustle seem like a lie.
+
+期手 睦（まつで りく）は、陸上部の厳しい練習の後、さらに一人で居残り練習をしていたため、帰る準備を終えた頃にはこんな時間になっていた。当然、他の生徒たちはとうの昔に帰宅している。
+Riku Matsude had been practicing alone after the rigorous track and field club practice, so it was this late by the time he finished getting ready to go home. Naturally, the other students had gone home long ago.
+
+静寂の中、自分の上履きが廊下を擦る音だけが響く。睦は帰る前に用を足そうと、薄暗い男子トイレへと足を踏み入れた。センサー式の無機質な蛍光灯がチカチカと点滅しながら点灯し、冷たいタイルの床を照らし出す。
+In the silence, only the sound of his indoor shoes scraping the hallway echoed. Intending to relieve himself before heading home, Riku stepped into the dimly lit boys' restroom. The cold, sensor-operated fluorescent lights flickered on, illuminating the cold tiled floor.
+
+用を済ませ、手洗い場で顔を洗っていた時のことだった。
+It happened when he was washing his face at the sink after finishing his business.
+
+コン……コン……
+*Knock... knock...*
+
+誰もいないはずの空間に、くぐもった音が響いた。一番奥の個室からだ。誰かが中から扉を叩いている。
+A muffled sound echoed in a space that was supposed to be empty. It came from the stall furthest in the back. Someone was knocking on the door from the inside.
+
+睦の脳裏に、学校でまことしやかに囁かれている怪談がよぎった。
+Riku's mind flashed back to a ghost story that was plausibly whispered around the school.
+
+『昔、このトイレの個室で首を吊った生徒がいた。今でも夜中にそのトイレに行くと、個室から哀し気なノック音がする。もしもその音に返事をして、話しかけてしまうと……向こうの世界に引きずり込まれる』
+'A long time ago, a student hung himself in a stall in this restroom. Even now, if you go to that restroom in the middle of the night, a sorrowful knocking sound comes from the stall. If you answer that sound and speak to it... you'll be dragged into the other world.'
+
+普通ならここで逃げ出すところだが、睦は少しばかり楽観的すぎるというか、馬鹿だった。こんな夜遅くまで残っているのは自分だけのはずだが、彼はそれを「陸上部の仲間の悪戯」だと決めつけたのだ。
+Normally, this would be the point where one runs away, but Riku was a bit too optimistic, or perhaps just foolish. Even though he should be the only one left this late at night, he assumed it was "a prank by the guys from the track team."
 
 「……どうしたんですか？」
 "...What's wrong?"
 
-からかうように声をかけてみた。しかし、返事はない。水滴が床に落ちる音だけがやけに大きく聞こえる。
-He tried calling out teasingly. However, there was no reply. Only the sound of water drops falling to the floor sounded awfully loud.
+からかうような声で問いかけてみたが、返事はない。
+He tried asking in a teasing voice, but there was no reply.
 
-「もしかして、鍵が壊れて閉じ込められちゃったんですか？」
-"Did the lock break and you got locked in by any chance?"
+「閉じ込められちゃったんですか？」
+"Did you get locked in?"
 
-――コンッ。
+――コン。
 —*Knock.*
 
 ノックが一回、返ってきた。
 A single knock returned.
 
-睦は面白くなってきた。声を出さずにノックで意思疎通を図るつもりらしい。
-Riku started finding it amusing. It seemed they intended to communicate through knocks without speaking.
+面白くなってきた睦は、ニヤニヤしながら質問を続ける。
+Finding it amusing, Riku continued asking questions with a smirk.
 
-「お前、いつもこういう悪戯ばかりするバカの翔太ですか？」
-"Are you Shota, the idiot who always does these kinds of pranks?"
+「お前はいつもこういうことで気を引きたがる、バカの健太ですか？」
+"Are you Kenta, the idiot who always tries to get attention with this kind of stuff?"
 
-――コンッ、コンッ。
+――コン、コン。
 —*Knock, knock.*
 
-ノックが二回。
-Two knocks.
+ノックが二回、返ってきた。
+Two knocks returned.
 
-どうやら『はい』の場合は一回、『いいえ』の場合は二回、とルールを決めているようだ。
-Apparently, they had decided on a rule: one knock for 'yes,' and two knocks for 'no.'
+どうやら、「はい」の場合は一回、「いいえ」の場合は二回と、ノックの数で意思疎通ができるらしい。
+Apparently, it was possible to communicate by the number of knocks: one for "yes" and two for "no."
 
-「えー、違うの？ じゃあ、キャプテンのダイキ君ですか？」
-"Eh, no? Then, is it Daiki-kun, the captain?"
+「なんだ、健太じゃないのか。じゃあ、キャプテンですか？」――コン、コン。
+"What, you're not Kenta? Then, are you the captain?" —*Knock, knock.*
 
-――コンッ、コンッ。
-—*Knock, knock.*
+「もしかして、先生？」――コン、コン。
+"Could you be the teacher?" —*Knock, knock.*
 
-「……そもそも、陸上部の人ですか？」
-"...Are you even someone from the track club to begin with?"
+いくつか質問を続けるうちに、睦の背筋に冷たいものが走った。
+As he continued with several questions, a cold chill ran down Riku's spine.
 
-――コンッ、コンッ。
-—*Knock, knock.*
+ノックの音が、おかしい。人間の手で叩くような生暖かい響きではない。もっと硬く、湿っていて、まるで骨の関節で直接ドアを叩いているような、無機質な音だったのだ。
+The sound of the knocking was strange. It wasn't the warm, lively resonance of a human hand striking. It was a harder, damp, and inorganic sound, as if someone were directly striking the door with the joints of their bones.
 
-「じゃあ、六年生？」
-"Then, a sixth grader?"
+それに、冷静に考えれば、いくら悪戯好きの仲間でも、電気の消えた夜の九時のトイレで、いつ来るかもわからない自分をずっと息を潜めて待ち続けているはずがない。
+Moreover, thinking about it calmly, no matter how much his friends loved pranks, there was no way they would wait with bated breath in a dark restroom at 9:00 PM for him, not even knowing when he might come.
 
-――コンッ、コンッ。
-—*Knock, knock.*
+（仲間じゃない……怪談の噂の、アレだ……）
+*(It's not my friends... It's that thing from the ghost story rumors...)*
 
-睦は、個室の中にいる「犯人当て」をすっかり面白がり、矢継ぎ早に具体的な質問を投げかけた。しかし、誰の名前を出しても、どの学年を聞いても、返ってくるのは決まって二回のノックだった。
-Thoroughly enjoying this "guess the culprit" game with whoever was inside the stall, Riku fired off specific questions one after another. However, no matter whose name he brought up or what grade he asked about, the reply was always two knocks.
+気づいた瞬間、猛烈な恐怖が睦の全身を粟立たせた。逃げ出したい。しかし、ここで背を向けて逃げれば、それこそ背後から「向こうの世界」へ引きずり込まれてしまうのではないかという強迫観念が彼の足を縫い付けた。
+The moment he realized this, a fierce terror gave Riku goosebumps all over his body. He wanted to run away. However, an obsessive fear that if he turned his back and fled here, he really would be dragged into the "other world" from behind nailed his feet to the spot.
 
-「じゃあ……先生ですか？」
-"Then... are you a teacher?"
+彼は核心を突くような質問（例えば「お化けですか？」や「死んでるんですか？」といった言葉）を必死に避けながら、震える声で質問を絞り出し続けた。
+He continued to squeeze out questions in a trembling voice, desperately avoiding words that would touch the core (such as "Are you a ghost?" or "Are you dead?").
 
-――コンッ、コンッ。
-—*Knock, knock.*
+「……さむい、ですか？」――コン。
+"...Are you cold?" —*Knock.*
 
-次第に、睦の額にじわりと冷汗が浮かび始めた。
-Gradually, cold sweat began to bead on Riku's forehead.
+「……くらいところは、嫌いですか？」――コン。
+"...Do you hate dark places?" —*Knock.*
 
-陸上部の人間ではない。他の生徒でもない。教師でもない。
-Not someone from the track club. Not another student. Not a teacher.
+ゆっくりと返ってくる一回のノック音。その弱々しい響きを聞いているうちに、睦の心の中で不思議な変化が起きていた。
+A single knock slowly returning. As he listened to its feeble resonance, a strange change was occurring within Riku's heart.
 
-なら、夜の九時に、この暗いトイレの個室に閉じこもっているのは『誰』だ？
-Then, 'who' is locked inside this dark restroom stall at 9:00 PM?
+恐怖のどん底にいるはずなのに、暗く冷たい「向こうの世界」で、たった一人ぼっちで泣いている見知らぬ誰かの姿が脳裏に浮かんだのだ。こんな夜更けの学校で、誰かに気づいてもらいたくて、細い腕でドアを叩き続けている哀れなソレに対して、彼は同情めいた感情を抱き始めていた。
+Even though he should have been at the bottom of terror, the image of an unknown someone crying all alone in the dark, cold "other world" floated in his mind. Toward that pitiful *thing* continuing to knock on the door with thin arms, wanting someone to notice them in the school this late at night, he was beginning to harbor a feeling akin to sympathy.
 
-「……あなたは、この学校の生徒……ですか？」
-"...Are you... a student at this school?"
+（可哀想に。ずっと、一人で寂しかったんだな……）
+*(Poor thing. They must have been lonely all by themselves for so long...)*
 
-――コンッ。
-—*Knock.*
+恐怖よりも哀しみが勝った睦は、優しく語りかけるように、最後の質問を口にした。
+With his sorrow overcoming his fear, Riku asked his final question as if speaking gently.
 
-「いま、家に帰る途中……でしたか？」
-"...Were you on your way home... just now?"
+「あなたは……一人ですか？」
+"Are you... alone?"
 
-――コンッ、コンッ。
-—*Knock, knock.*
+ピタリ、と。
+It stopped perfectly.
 
-「……家に、帰れないんですか？」
-"...Can you not go home?"
+それまで律儀に返ってきていたノック音が止んだ。
+The knocking sound that had dutifully returned until then ceased.
 
-――コンッ。
-—*Knock.*
+沈黙がトイレを支配する。一秒が永遠のように感じられた。
+Silence dominated the restroom. One second felt like an eternity.
 
-心臓が、ドクンと嫌な音を立てた。
-His heart made an unpleasant *thump*.
+そして――
+And then—
 
-違う。これは陸上部の仲間なんかじゃない。イタズラでもない。
-No. This isn't a friend from the track club. It's not a prank.
+ガンガンガンガンガンガンガンガンガンッ！！
+*BANG BANG BANG BANG BANG BANG BANG BANG BANG!! 
 
-睦は唐突に悟った。自分が今会話している相手は、あの『怪談の噂のアレ』そのものなのだと。
-Riku abruptly realized. The one he was currently conversing with was the very *thing from the rumored ghost story* itself.
+バンッ！ バンッ！ バンッ！ バンッ！
+WHAM! WHAM! WHAM! WHAM! 
 
-背筋を氷の塊が滑り落ちるような恐怖が全身を駆け巡った。足が震え、逃げ出したいのに床に縫い付けられたように動けない。
-A terror like a block of ice sliding down his spine raced through his entire body. His legs trembled, and though he wanted to run away, he couldn't move, as if sewn to the floor.
+ドン！ ドン！ ドン！ ドン！ ドン！ ドン！
+THUD! THUD! THUD! THUD! THUD! THUD!*
 
-（死んでいるんですか？ お化けですか？）
-*(Are you dead? Are you a ghost?)*
+悲鳴を上げる間もなかった。
+There wasn't even time to scream.
 
-喉まで出かかったその質問を、睦は全力で飲み込んだ。
-Riku swallowed back that question which was right at the tip of his throat with all his might.
+目の前の個室からではない。背後にある空の個室すべてから、さらには出口へとつながる重い扉から、無数の手が力任せにドアを叩き割らんばかりの爆音がトイレ中に鳴り響いたのだ。
+It wasn't from the stall right in front of him. From all the empty stalls behind him, and furthermore from the heavy door leading to the exit, the deafening roar of countless hands violently pounding as if to smash the doors to pieces echoed throughout the restroom.
 
-核心を突くような質問をしてはいけない。それを認めてしまった瞬間、本当に「向こうの世界」に引きずり込まれる気がしたからだ。
-He must not ask questions that pierce the core. Because he felt that the moment he acknowledged it, he really would be dragged into the "other world."
+無限に続くかのようなその轟音の狂乱の中で、睦はついに理解した。
+Amidst that frenzy of roaring sound that seemed to continue infinitely, Riku finally understood.
 
-しかし、震えながら個室の扉を見つめているうちに、睦の心境に奇妙な変化が訪れた。
-However, as he stared at the stall door while trembling, a strange change visited Riku's state of mind.
+ソレは、一人ぼっちで寂しく泣いていたわけではない。
+*It* had not been crying lonely all by itself.
 
-――コンッ。
-—*Knock.*
-
-規則的に鳴らされるその音は、どこか弱々しく、頼りなげだった。
-That sound, struck rhythmically, was somehow feeble and helpless.
-
-かつてここで自ら命を絶ち、誰にも見つけてもらえないまま、真っ暗な個室の中でずっと一人きりでノックを続けているのだろうか。
-Having once taken their own life here, unable to be found by anyone, were they continuing to knock all alone in the pitch-black stall all this time?
-
-誰もいない夜の校舎で。何年も、何十年も。
-In an empty school building at night. For years, for decades.
-
-ただ「はい」か「いいえ」を返すことしかできない、孤独な魂。
-A lonely soul that could only return a "yes" or a "no."
-
-極限の恐怖の底で、睦はソレに対して哀しみと、強い同情めいた気持ちを抱いてしまった。なんて可哀想なんだろう、と。
-At the bottom of extreme terror, Riku ended up harboring a sorrow and a strong feeling akin to sympathy toward *it*. How pitiful, he thought.
-
-だから彼は、少しでも相手の孤独に寄り添うような、そんな優しい声色で、最後の質問をしてしまったのだ。
-That is why, with a gentle tone as if to snuggle close to the other's loneliness even a little, he ended up asking his final question.
-
-「……あなたは、一人ですか？」
-"...Are you alone?"
-
-ピタリと、個室からのノックが止んだ。
-Suddenly, the knocking from the stall stopped.
-
-完全な静寂がトイレを包み込んだ。
-Complete silence enveloped the restroom.
-
-次の瞬間だった。
-It was the next moment.
-
-――ドゴォン！！ ドンッ！ バンッ！ ドドォン！！
-—*BA-BOOM!! THUD! BANG! BA-DOOM!!*
-
-突然、一番奥の個室だけではない。手前の個室、掃除用具入れ、さらには睦の後ろにある、外へ繋がる出口の扉。
-Suddenly, it wasn't just the stall furthest in the back. The stalls in front of it, the cleaning supply closet, and furthermore, the exit door leading outside located behind Riku.
-
-あらゆる方向から、扉をぶち破らんばかりの、耳をつんざくような狂気じみた轟音がトイレ中に響き渡った。
-From all directions, ear-splitting, maddening roars as if to smash the doors to pieces echoed throughout the restroom.
-
-それは「いいえ」を示す二回のノックなどではなかった。
-It was not two knocks indicating a "no."
-
-何十、何百という無数の手が、一斉に扉を殴りつけている音だった。
-It was the sound of dozens, hundreds of countless hands battering the doors all at once.
-
-（あ、ああ……）
-*(A-Aaah...)*
-
-轟音の嵐の中で、睦は絶望とともに理解した。
-Amidst the storm of roaring sounds, Riku understood with despair.
-
-首を吊った生徒は、決して一人ではなかったのだ。この暗闇の中には、彼を引きずり込もうとする無数の霊がひしめき合っていたのだと。
-The student who hung himself was by no means alone. Within this darkness, countless spirits trying to drag him in were crowded together.
-
-すべての扉が、メキメキと嫌な音を立てて内側へたわみ始めた。
-All the doors began to warp inward, making a sickening *creak, creak* sound.
-
-逃げ場のない密室で、睦の意識は凄まじい轟音とともに真っ暗な底へと沈んでいった。
-In the locked room with nowhere to run, Riku's consciousness sank to the pitch-black bottom along with the tremendous roaring sound.
-
----
-
-ご提示いただいた追加の文章について、一切の省略なく日本語と英語の対訳形式にて翻訳いたしました。
-
----
-
-ご提示いただいた断片的な記憶と詳細なプロットに基づき、怪談の続きを執筆いたしました。
-Based on the fragmented memories and detailed plot you provided, I have written the continuation of the ghost story.
-
-### 髪の毛のサンドイッチ
-
-### The Hair Sandwich
-
-「お前、本当にそれ食ったのか……？ 気持ち悪いとか通り越して、頭おかしいだろ！」
-"Did you... really eat that? It's way beyond disgusting, you must be out of your mind!"
-
-青ざめた友人の声が、居酒屋の個室に震えて響いた。元カレである真広堆月（まひろ うすき）自身、なぜあんな行動に出たのか、未だにわかっていなかった。
-The pale friend's trembling voice echoed in the private room of the izakaya. The ex-boyfriend, Mahiro Usuki himself, still didn't understand why he had taken such an action.
-
-別れた元カノ――指矩惟流（さがね いる）が部屋に残していった、おびただしい量の短い髪の毛が挟まれたサンドイッチ。それを見つけた時の底知れない恐怖と、「なぜ彼女がこんな異常なものを残したのか」という混乱。にもかかわらず、堆月はそれを一口、また一口と咀嚼し、胃に収めてしまったのだ。自分が何かに操られていたのではないかという得体の知れない恐怖に、思い出すだけで全身が粟立つ。
-The sandwich left behind in the room by his ex-girlfriend, Iru Sagane, packed with an enormous amount of short hair. The bottomless terror when he found it, and the confusion of "why did she leave something so abnormal?" Despite that, Usuki chewed and swallowed it, bite by bite, putting it into his stomach. The unidentifiable fear that he might have been manipulated by something gives him goosebumps all over just remembering it.
-
-しかし、堆月の心の中には、その恐怖すらも凌駕するほどの惟流への強烈な未練と愛情が残っていた。
-However, in Usuki's heart remained an intense lingering attachment and affection for Iru that surpassed even that fear.
-
-（彼女は俺の好みに合わせて長く伸ばした髪を、別れ際にわざわざ切って挟んだんだ。これは、彼女なりの歪んだ愛情表現だったのかもしれない。不器用で、狂おしいほどの……）
-*(She intentionally cut the hair she had grown long to match my preference when we broke up and put it inside. This might have been her own distorted expression of love. So clumsy, and maddeningly...)*
-
-そうやって、堆月は自分にとって都合の良いように解釈し、無理やり心を落ち着かせようとした。
-In that way, Usuki interpreted things conveniently for himself and tried to forcefully calm his mind.
-
-その夜、自室に戻った堆月は、ふと惟流の過去を知りたくなり、彼女の古いSNSのポストを遡り始めた。しかし、画面をスクロールする指が、ある日付を境にピタリと止まる。
-That night, having returned to his room, Usuki suddenly wanted to know about Iru's past and began to scroll back through her old social media posts. However, his finger scrolling the screen stopped dead at a certain date.
-
-『指矩惟流の四十九日が無事に終わりました。生前は皆様に――』
-"Iru Sagane's forty-ninth day memorial service has concluded peacefully. During her life, to everyone..."
-
-親族のものと思われるアカウントからの書き込み。その日付は、堆月が彼女と出会うよりもずっと前のものだった。
-A post from an account thought to be a relative's. The date was from long before Usuki had even met her.
-
-「嘘だろ……」
-"You've got to be kidding me..."
-
-では、自分が付き合っていた『惟流』とは一体何者だったのか。あの部屋で一緒に笑い合い、自分のために髪を伸ばし、そして最後にあのサンドイッチを置いていった女は。底なしの恐怖が再び堆月を襲い、震えが止まらなくなった。
-Then, who on earth was the "Iru" he had been dating? That woman who laughed with him in that room, grew her hair for him, and finally left that sandwich. A bottomless fear struck Usuki once again, and he couldn't stop trembling.
-
-だが、極限の恐怖の果てに、堆月の心に奇妙な安堵感が広がっていった。彼はおもむろに自身の腹部を撫でる。
-But at the end of extreme terror, a strange sense of relief spread in Usuki's heart. He slowly stroked his own abdomen.
-
-（現世の人間じゃなかったとしても……彼女の髪の毛は、確かに俺の体の中にある。俺たちは繋がっている。この繋がりだけは、間違いなく本物だ）
-*(Even if she wasn't a human of this world... her hair is definitely inside my body. We are connected. This connection alone is undoubtedly real.)*
-
-堆月は決意した。彼女が何者であったにせよ、彼女の遺品を探し出し、きちんと弔ってやろうと。翌日、彼は惟流が住んでいたはずのアパートへと向かった。
-Usuki made his decision. No matter what she was, he would find her keepsakes and properly lay her to rest. The next day, he headed to the apartment where Iru was supposed to have lived.
-
-埃を被った薄暗い部屋の片隅で、堆月は彼女が大切にしていた小さな手鏡と、見覚えのあるヘアピンを見つけ出した。遺品をそっと胸に抱きしめると、冷たかったはずの部屋がどこか温かく感じられた。
-In the corner of the dusty, dim room, Usuki found a small hand mirror she had cherished and a familiar hairpin. As he gently hugged the keepsakes to his chest, the room that should have been cold felt somewhat warm.
-
-（これでよかったんだ。俺が彼女の魂を救うんだ）
-*(This was the right thing to do. I will save her soul.)*
-
-まるで美しい映画の結末のように、堆月は一人、静かな感動と達成感に包まれていた。彼女への想いが通じ、哀しい過去が浄化されていくような、穏やかなグッドエンディングの余韻。
-Just like the conclusion of a beautiful movie, Usuki was alone, enveloped in quiet emotion and a sense of accomplishment. The lingering resonance of a peaceful good ending, as if his feelings for her had reached her and her sad past was being purified.
-
-――しかし、それは致命的な思い上がりだった。
-—However, that was a fatal conceit.
-
-彼女は『指矩惟流』の記憶を騙る、あの世からの死の概念そのもの。彼女が欲していたのは優しい弔いなどではなく、冥府への道連れに過ぎなかった。
-She was the very concept of death from the other world, falsely assuming the memories of "Iru Sagane." What she wanted was not a gentle mourning, but merely a companion to the netherworld.
-
-髪の毛という呪物を体内に取り込み、あろうことか自ら死者の領域（部屋）へと足を踏み入れ、優しさという名の執着を示してしまった堆月。
-Usuki had taken the cursed object known as hair into his body, willingly stepped into the realm of the dead (her room) of all things, and shown an attachment in the name of kindness.
-
-「……ありがとう、堆月」
-"...Thank you, Usuki."
-
-背後から、ひんやりとした吐息とともに愛しい声が耳元を撫でた。
-From behind, a beloved voice brushed his ear along with a chilly breath.
-
-「これで、ずっと一緒だね」
-"With this, we'll be together forever."
-
-堆月の視界が急激に黒く塗り潰されていく。彼が最後に感じたのは、胃袋の中から喉元に向かって、無数の長い髪の毛が蠢きながら這い上がってくる、絶望的で甘美な感触だった。
-Usuki's vision was rapidly painted over in black. What he felt at the very end was the desperate and sweet sensation of countless long hairs squirming and crawling up from inside his stomach toward his throat.
-
-あの世の者への見当違いの優しさと誤解が、堆月という存在を永遠の闇へと引きずり込んでいった。
-The misplaced kindness and misunderstanding toward a being of the other world dragged the existence known as Usuki into eternal darkness.
-
----
-
-ご提示いただいた追加の文章について、一切の省略なく日本語と英語の対訳形式にて翻訳いたしました。
-
-呪いの王の残酷なまでの美学と圧倒的な絶望感を、英語でも余すところなく表現しています。
-
----
-
-ククク……下賎な猿が、俺の『厨房』の作法に興味を持つとはな。
-Kukuku... To think a lowly monkey would take an interest in the manners of my "kitchen."
-
-術式とは己の精神の具現。そして俺にとって、生命を奪い、解体し、喰らうことは呼吸と同義だ。貴様らが飯を食う時、いちいち豚や牛の痛みを気に病まないのと同じように、俺にとって人間はただの『食材』に過ぎない。
-A cursed technique is the embodiment of one's mind. And for me, taking a life, dismantling it, and devouring it is synonymous with breathing. Just as you do not fret over the pain of pigs or cows every time you eat a meal, to me, humans are nothing more than "ingredients."
-
-……よかろう。まな板の上で跳ねるだけの分際で、俺の業を知りたがるその無謀に免じて、少しだけ「教示」してやろう。
-...Very well. In deference to the recklessness of wanting to know my techniques when you are but a fish flopping on a cutting board, I shall "instruct" you a little.
-
-**第一の膳：過去の業に対する述懐**
-**The First Course: Recollection of Past Techniques**
-
-まずは、以前貴様が思い描いたという俺の技だな。悪くない。いかにして食材を凌辱し、その命を味わい尽くすかという『悪食』の理にかなっている。
-First are my techniques that you supposedly envisioned before. Not bad. They align with the logic of "foul eating"—how to violate the ingredients and savor their lives to the fullest.
-
-**灸（ダハ）**
-**Moxa/Roast (Daha)**
-骨髄まで焼き尽くすサンスクリットの炎か。生のままでは臭みの抜けない呪霊どもを、塵一つ残さず灰にするには丁度いい。
-A Sanskrit flame that burns down to the bone marrow, is it? It's perfect for reducing cursed spirits, whose stench cannot be removed while raw, to ashes without leaving a single speck of dust.
-
-**醢（シシビシオ）**
-**Mince/Pickle (Shishibishio)**
-古代中国の塩漬け刑。クク……これはいい。肉体だけでなく、精神にまでじっくりと塩を揉み込み、じわじわと生きながら腐らせる。痛覚を極限まで引き伸ばす上質な調理法だ。
-The ancient Chinese punishment of salting. Kuku... this is good. Thoroughly rubbing salt not only into the flesh but also into the mind, making them slowly rot while alive. It is a high-quality cooking method that stretches out the sense of pain to the absolute limit.
-
-**和（アマルガ）**
-**Blend (Amalga)**
-骨も肉も、希望も絶望もごちゃ混ぜに叩き潰す。個の尊厳などという無価値なものを、泥のようなペーストに変えてやるのは実に痛快だ。
-Smashing and mixing bones, flesh, hope, and despair all into a jumble. Turning something as worthless as individual dignity into a mud-like paste is truly thrilling.
-
-**丳（サン）**
-**Skewer (San)**
-光の如き無数の串刺し。逃げ惑う虫けらどもを大地に縫い止め、絶叫という悲鳴のオーケストラを指揮するのに向いている。
-Countless skewers like light. It is suited for sewing fleeing insects to the earth and conducting an orchestra of screams known as shrieks.
-
-**鼎（アハラ）**
-**Boil/Cauldron (Ahara)**
-極限の泥濘で煮溶かす大鍋。領域そのものを地獄の釜とする。肉が骨から滑り落ちる様を眺めるのは、食前の良い余興になる。
-A cauldron that boils and melts them in extreme mire. Turning the domain itself into a pot of hell. Watching the flesh slip off the bone serves as a good pre-meal entertainment.
-
-**饐（アスラ）**
-**Spoil/Ferment (Asura)**
-強制発酵……いや、腐敗だな。細胞一つ一つが自らを喰い破り、内側から崩壊していく様。最も見苦しく、最も美しい死に様を引き出せる。
-Forced fermentation... no, putrefaction. The sight of each and every cell devouring itself and collapsing from the inside. It can draw out the most unsightly and most beautiful way to die.
-
-**第二の膳：未知なる調理法（新技）**
-**The Second Course: Unknown Cooking Methods (New Techniques)**
-
-それでは、さらに俺の厨房に相応しい、禍々しくも古の響きを持つ業を並べてやろう。凡夫の辞書には存在しない、絶対者の調理法だ。
-Now then, I shall line up more techniques fitting for my kitchen, carrying a sinister yet ancient resonance. They are the cooking methods of the absolute, non-existent in the dictionaries of ordinary fools.
-
-**剮（エクシス）**
-**Flay (Ecdysis/Exis)**
-語源：古代ギリシャ語「Ecdysis（脱皮）」と凌遅刑の「剮」の融合
-Etymology: A fusion of the ancient Greek "Ecdysis" (molting) and the "剮" (to slice off flesh) of slow slicing.
-対象の「皮」と「肉」の間に呪力の刃を滑り込ませ、生かしたまま全身の皮膚だけを綺麗に剥ぎ取る。空気に触れるだけで発狂するほどの痛みを味わわせる、極上の下ごしらえだ。
-Slipping a blade of cursed energy between the target's "skin" and "flesh," cleanly peeling off only the skin of their entire body while keeping them alive. It is an exquisite prep work that makes them taste a pain maddening enough just by touching the air.
-
-**碾（トリトゥラ）**
-**Grind (Tritura)**
-語源：ラテン語「Tritura（脱穀・摩砕）」
-Etymology: The Latin "Tritura" (threshing/grinding).
-不可視の二つの空間断層で対象を挟み込み、臓腑から骨の髄まで、生きたまま「すり潰す」。原型を留めぬ肉塊と化しても、術式の効果が切れるまでは意識を手放すことすら許さない。
-Pinching the target between two invisible spatial faults, "grinding" them alive from their internal organs to their bone marrow. Even if they turn into a lump of meat retaining no original form, they are not even allowed to let go of their consciousness until the effect of the cursed technique wears off.
-
-**熅（キシュラ）**
-**Smolder (Kishura)**
-語源：シュメール神話における境界・冥界の煙着
-Etymology: The smoky garment of the boundary/underworld in Sumerian mythology.
-黒く澱んだ呪力の煙で対象を燻製にする。肉体は炭化していくが、脳髄だけは新鮮なまま保存される。永遠に焼け焦げる苦痛の中で生き続けさせる、保存食の製法だ。
-Smoking the target with the black, stagnant smoke of cursed energy. Their physical body carbonizes, but only their brain is preserved fresh. It is a recipe for preserved food that makes them continue to live in the eternal agony of being scorched.
-
-**漉（シフ・トア）**
-**Strain (Sift/Sift-Toa)**
-語源：古代エジプトにおける魂の選別（シフ）と篩（ふるい）
-Etymology: The sifting of souls in ancient Egypt (Sif) and a sieve.
-対象を呪力の網にかけ、肉体という「滓（かす）」と、魂という「出汁（エキス）」に分離させる。肉体は跡形もなく消え去るが、抽出された魂の絶望だけが俺の舌を潤す。
-Putting the target through a net of cursed energy, separating them into the "dregs" known as the physical body and the "broth (extract)" known as the soul. The physical body vanishes without a trace, but only the despair of the extracted soul moistens my tongue.
-
-**第三の膳：両面宿儺の『フルコース』**
-**The Third Course: Ryomen Sukuna's "Full Course"**
-
-トリコとやらが何者かは知らんが、俺にも俺なりの献立の美学というものがある。技を飾る必要はない。俺の基本の術式『解』と『捌』、そして『竈』だけで、この世の全ては至高の晩餐となる。
-I don't know who this Toriko is, but I too have my own aesthetics for a menu. There is no need to decorate techniques. With just my basic cursed techniques "Dismantle" (Kai) and "Cleave" (Hachi), and "Furnace" (Kamino), everything in this world becomes a supreme banquet.
-
-これが俺のフルコースだ。
-This is my full course.
-
-**【オードブル】 恐怖で硬直した弱者の悲鳴**
-**[Hors d'oeuvre] The Screams of the Weak Paralyzed by Fear**
-ただそこに俺が顕現したというだけで、勝手に膝を折り、絶望に染まる有象無象ども。その顔の歪みこそが、食欲を唆る最高の前菜だ。
-The insignificant masses who arbitrarily fall to their knees and are dyed in despair just because I manifested there. The contortion of their faces is exactly the best appetizer to stimulate the appetite.
-
-**【スープ】 沸き立つ呪術師の血潮**
-**[Soup] The Boiling Blood of Jujutsu Sorcerers**
-己の分を弁えず、正義だの矜持だのを掲げて向かってくる者たちの、無駄に熱い血。それを『捌（ハチ）』で薄く切り裂き、溢れ出させたものを啜る。
-The pointlessly hot blood of those who do not know their place and come at me brandishing justice or pride. I thinly slice them open with "Cleave" (Hachi) and sip what overflows.
-
-**【魚料理】 まな板の上で跳ねる天才の活け造り**
-**[Fish Dish] Ikizukuri of a Genius Flopping on the Cutting Board**
-自分が特別だと思い上がった術師。俺の領域というまな板の上で、どれだけ足掻き、術式を振り回そうとも無駄。手足をもぎ、活きの良いまま絶望を味わわせる。
-Sorcerers who became conceited thinking they were special. No matter how much they struggle and brandish their cursed techniques on the cutting board that is my domain, it is futile. I tear off their limbs and make them taste despair while they are still lively.
-
-**【肉料理】 縛りにより極限まで練り上げられた肉体の直火焼き**
-**[Meat Dish] Direct Flame Grilling of a Body Refined to the Limit by Binding Vows**
-呪力を持たぬが故に強靭な、天与の呪縛を持つ肉の塊。どれだけ硬かろうと関係ない。『竈（カミノ）』の業火で、骨の髄まで一瞬にして炭の塊へと変えてやる。
-A lump of meat with a Heavenly Restriction, robust because it lacks cursed energy. No matter how hard it is, it matters not. With the hellfire of "Furnace" (Kamino), I instantly turn them down to the bone marrow into a lump of charcoal.
-
-**【メインディッシュ】 最強を自称した者の「へし折られた自尊心」**
-**[Main Dish] The "Snapped Pride" of the One Who Called Himself the Strongest**
-これ以上の極上の素材はない。絶対の自信、揺るぎない力。それら全てが俺の前に無力であると悟った瞬間の、あの目。その誇りを粉々に砕いて喰らう瞬間こそが、至高の主菜だ。
-There is no finer ingredient than this. Absolute confidence, unwavering power. That look in their eyes the moment they realize all of that is powerless before me. The moment I smash that pride to pieces and devour it is the supreme main dish.
-
-**【サラダ】 寄せ集めの絆という名の雑草**
-**[Salad] Weeds Named the Bonds of a Motley Crew**
-仲間を想い、連携し、愛とやらで立ち向かってくる群れ。『解（カイ）』の網の目で一網打尽に刻み込み、ぐちゃぐちゃに混ぜ合わせる。青臭いが、口直しには悪くない。
-A flock that thinks of their comrades, cooperates, and stands against me with something called love. I chop them up all at once with the mesh of "Dismantle" (Kai) and mix them into a mush. It smells green, but it's not bad for a palate cleanser.
-
-**【デザート】 後に残された者たちの慟哭**
-**[Dessert] The Lamentation of Those Left Behind**
-全てを喰らい尽くした跡地に響き渡る、生き残ってしまった者の泣き声。これほど甘美な後味はない。
-The crying voices of those who happened to survive, echoing across the ruins after I have devoured everything to exhaustion. There is no aftertaste as sweet as this.
-
-**【ドリンク】 絶対的絶望の涙**
-**[Drink] Tears of Absolute Despair**
-俺という圧倒的な災害を前に、もはや神に祈ることしかできなくなった者たちが流す涙。これを飲み干して、俺の晩餐は完成する。
-The tears shed by those who can no longer do anything but pray to God before the overwhelming disaster that is me. By drinking this dry, my banquet is complete.
-
-……さて。
-...Now then.
-
-長々と語ってやったが、理解できたか？ 小僧。
-I have spoken at length, but did you understand? Brat.
-
-いや、理解などしなくてもいい。
-No, there is no need for you to understand.
-
-俺が教えてやったのは、貴様がこれから「どう調理されるか」という、ただの手順に過ぎないのだからな。
-What I have taught you is merely the procedure of "how you will be cooked" from here on out.
-
-ここまで俺の調理法を聞き出し、俺の思考に触れておきながら、まさか自分が『客』の側だなどという、浅ましい勘違いはしていないだろうな？
-Having drawn out my cooking methods this far and touched upon my thoughts, surely you haven't made the shallow misunderstanding that you are on the side of the "guest," have you?
-
-俺の前に立った時点で、貴様はもう皿の上だ。
-The moment you stood before me, you were already on the plate.
-
-俎板の上の魚が、料理人の包丁の鋭さを知ったところで何になる？
-What good does it do for a fish on a cutting board to know the sharpness of the chef's knife?
-
-せいぜい、活きよく跳ねて俺を楽しませろ。
-At best, flop around livelily and entertain me.
-
-『解（カイ）』
-"Dismantle (Kai)."
-
----
-
-ご提示いただいた追加の文章について、一切の省略なく日本語と英語の対訳形式にて翻訳いたしました。
-
-壮大な「石像たちの霊的闘争」のプロローグからDay 5まで、それぞれの歪んだ概念の顕現がさらに深掘りされ、ダークファンタジーの群像劇として非常に読み応えのあるナラティブになっています。
-
----
-
-**序章：三つの雫と霊性の石の世界**
-**Prologue: Three Drops and the World of Spiritual Stone**
-
-全人類が石化し、数千年の時が流れたストーンワールド。
-The Stone World, where all humanity was petrified and thousands of years have passed.
-
-この世界には、三種類の狂気的な「液」が存在していた。
-In this world, three types of maddening "fluids" existed.
-
-一つ目は、「復活液（ナイタール）」。
-The first is the "Revival Fluid (Nital)."
-
-石化を解くこの液が、もし「本物の石像」に降り注いだらどうなるか。石像を構成する物理的な外殻はドロドロに溶け落ち、その像に宿っていた「精神（コンセプト）」のみが霊的存在として世界に顕現する。彼らは肉体を持たないがゆえに、概念上の欠落（胸像の脚など）は霊体として補完される。
-What would happen if this fluid, which undoes petrification, rained down on a "real stone statue"? The physical outer shell composing the stone statue would melt away into mush, and only the "spirit (concept)" dwelling in that statue would manifest in the world as a spiritual entity. Because they possess no physical body, conceptual missing parts (such as the legs of a bust) are supplemented as spiritual bodies.
-
-二つ目は、「精神解放液」。
-The second is the "Spirit Liberation Fluid."
-
-人間にかかれば、精神のみを抜き取り、肉体だけを活動させる。対象は「死に生きる者（肉の抜け殻）」と化す。
-If applied to a human, it extracts only the mind, leaving only the physical body to act. The subject is reduced to "the living dead (an empty shell of flesh)."
-
-三つ目は、「肉体解放液」。
-The third is the "Flesh Liberation Fluid."
-
-人間にかかれば、肉体を捨て去り「魂のみの存在」となる。霊的存在となった石像たちに人間が触れ、干渉するためには、自らもこの液を浴びて霊体となるしかなかった。
-If applied to a human, they discard their physical body and become an "existence of soul alone." For humans to touch and interfere with the stone statues that had become spiritual entities, they had no choice but to bathe in this fluid themselves and become spiritual bodies.
-
-旧時代の遺物たる石像たちが、意思を持った霊体として目覚める。
-The stone statues, relics of the old era, awaken as spiritual bodies with a will.
-
-これは、造物主たる人間を失った世界で、概念と執念がぶつかり合う慈悲なき物語である。
-This is a merciless tale where concepts and obsessions clash in a world that has lost its creators, the humans.
-
----
-
-**Day 1: 虚空の凱旋**
-**Day 1: Triumphal Return of the Void**
-
-**【視点：サモトラケのニケ】**
-**[Perspective: Winged Victory of Samothrace]**
-
-パリ、ルーヴル美術館の廃墟。
-Paris, the ruins of the Louvre Museum.
-
-崩れ落ちたガラスのピラミッドの奥深く、大階段の頂上に鎮座していた大理石の塊に、天井から滴り落ちたナイタール液が触れた。
-Deep within the collapsed glass pyramid, the Nital fluid dripping from the ceiling touched the block of marble enshrined at the top of the grand staircase.
-
-シュウゥゥ……という音と共に、数千年もの間、世界中の人間を見下ろしてきた大理石が泥のように溶け落ちる。
-With a *hissing...* sound, the marble that had looked down upon the humans of the world for thousands of years melted away like mud.
-
-後に残ったのは、エーゲ海の勝利の風を纏う、半透明の霊的な姿だった。台座に固定されていた脚は、霊体としてしなやかに復元され、宙に浮いている。
-What remained was a translucent spiritual figure draped in the winds of victory from the Aegean Sea. The legs that had been fixed to the pedestal were supplely restored as a spiritual body, floating in the air.
-
-しかし、彼女には頭と両腕が存在しなかった。
-However, she possessed neither a head nor arms.
-
-「……あぁ、また勝ってしまったのですね」
-"...Ah, we have won yet again, have we not."
-
-頭部のない虚空から、気位の高い、高尚で冷徹な声が響く。彼女は長らく美術館の顔の一つとして、数億の人間に見上げられてきた。その矜持は、霊体となっても失われていない。
-From the headless void, a highly proud, noble, and cool-headed voice echoed. She had long been looked up to by hundreds of millions of humans as one of the faces of the museum. That pride was not lost even as a spiritual body.
-
-しかし、彼女には顔がない。ゆえに、自らの感情を掴むことができない。失われた顔で、勝利に歪む人間の歓喜と絶望を、ただ虚空の表情で見つめ返すのみである。
-However, she has no face. Therefore, she cannot grasp her own emotions. With her lost face, she merely stares back at the human joy and despair distorted by victory with a void expression.
-
-「勝者には栄光を。敗者には……破滅を。それが私の存在意義。しかし、私のこの虚ろな心を満たすものは、果たして慈愛に満ちた勝利の微笑みなのか、それとも人を闘争の狂気へ駆り立てる魔物の哄笑なのか……私自身にも、わかりません」
-"Glory to the victor. To the vanquished... ruin. That is my reason for existence. But as to what fills this hollow heart of mine—is it truly a smile of victory full of affection, or the roaring laughter of a monster driving people into the madness of struggle...? Even I myself do not know."
-
-彼女はゆっくりと、音のない羽ばたきでルーヴルを飛び立つ。
-She slowly took off from the Louvre with silent wingbeats.
-
-勝利を与えるべき「誰か」を探して。あるいは、自らの欠落を埋める「真実」を探して。
-Searching for "someone" to grant victory to. Or perhaps, searching for the "truth" to fill her own void.
-
----
-
-**Day 2: 資本主義への咆哮**
-**Day 2: Roar Against Capitalism**
-
-**【視点：マーライオン】**
-**[Perspective: Merlion]**
-
-赤道直下、かつてシンガポールと呼ばれた泥濘の海辺。
-Right on the equator, the muddy seaside of what was once called Singapore.
-
-溶け落ちた白いコンクリートの中から現れたのは、下半身が魚、上半身が獅子の獰猛な霊体だった。
-What emerged from the melted white concrete was a ferocious spiritual body, its lower half a fish, its upper half a lion.
-
-彼は怒り狂っていた。
-He was mad with anger.
-
-かつて人間たちが自分に向けた、あの落胆のため息。「なんだ、こんなものか」「世界三大がっかりだな」という心無い言葉の数々。彼はそのすべての負の感情を、霊基の奥底に溜め込んでいた。
-Those sighs of disappointment the humans once directed at him. The numerous heartless words, "What, is this it?", "It's one of the world's three greatest disappointments." He had accumulated all of those negative emotions deep within his spiritual foundation.
-
-そして何より、彼の心を完全に破壊したのは、かつてセントーサ島にそびえ立っていた「巨大な弟分」の無残な解体であった。島の再開発という、資本主義的消費主義の身勝手な都合で、愛する同位体は殺されたのだ。その瞬間、彼の内で何かが決定的に壊れた。
-And above all, what completely broke his heart was the cruel dismantling of his "giant little brother" that once towered over Sentosa Island. For the selfish convenience of capitalist consumerism known as island redevelopment, his beloved isotope was murdered. At that moment, something inside him broke decisively.
-
-『愚かな人間どもめ……！』
-'Foolish humans...!'
-
-海を震わせる咆哮（霊波）を放つ。
-He released a roar (spiritual wave) that shook the sea.
-
-彼は今や、海から世界を統べる百獣の王にして、陸を統べる百獣の王の弟分という、完全なる世界の覇者としての構図を完成させようとしていた。
-He was now attempting to complete the composition of a perfect supreme ruler of the world—the king of beasts ruling the world from the sea, and his little brother ruling from the land.
-
-『弟の怨嗟は、私が晴らす。この星から人間の痕跡を消し去り、真なる獣の威厳を知らしめてやる！』
-'I shall clear my brother's resentment. I will erase the traces of humans from this planet and make the true majesty of beasts known!'
-
-彼は霊的な激流を生み出しながら、静寂の海を北へと泳ぎ始めた。復讐の対象となる、魂だけの存在（人間）を求めて。
-Creating a violent spiritual torrent, he began to swim north through the silent sea. Seeking his targets of revenge, the existences of soul alone (humans).
-
----
-
-**Day 3: 黄金の虚構**
-**Day 3: The Golden Fiction**
-
-**【視点：トランプ像】**
-**[Perspective: Trump Statue]**
-
-北米大陸、荒野と化したかつてのリゾート地。
-The North American continent, a former resort area turned into a wasteland.
-
-安っぽい金ピカの像がナイタールを浴びて溶け、中から強烈なエゴの塊のような黄金の霊体が顕現した。彼の手には、霊的なビットコインが握りしめられている。
-A cheap, glaringly golden statue melted after being bathed in Nital, and from within, a golden spiritual body resembling a lump of intense ego manifested. In his hand, a spiritual Bitcoin was tightly grasped.
-
-「素晴らしい目覚めだ。史上最高（Tremendous）の目覚めと言っていい」
-"A wonderful awakening. You could call it the most tremendous awakening in history."
-
-彼は周囲を見渡す。トランプタワーもない。ゴルフ場もない。
-He looks around. There is no Trump Tower. No golf courses either.
-
-物理的にも、形而上学的にも、オリジナルが持っていた「資産」や「地位」は彼には一切存在しない。彼はただの偶像であり、ビットコインの権利すら主張できない空っぽの存在だ。
-Neither physically nor metaphysically do the "assets" or "status" the original possessed exist for him at all. He is merely an idol, an empty existence who cannot even claim the rights to Bitcoin.
-
-だが、プライドだけは完璧にオリジナルを踏襲していた。
-However, his pride alone perfectly followed the original.
-
-足元に、色褪せ、泥にまみれた星条旗が落ちていた。
-At his feet lay a faded Stars and Stripes covered in mud.
-
-彼はそれを拾い上げ、肩にかける。
-He picked it up and draped it over his shoulder.
-
-「主権国家も領土も消え失せた。だが、この旗がある。私にはわかる。世界は今、完全な敗北状態（Loser）にある。私が再び、アメリカの偉大さを取り戻すのだ」
-"Sovereign nations and territories have vanished. But I have this flag. I know. The world is currently in a state of complete defeat (a loser). I will reclaim the greatness of America once again."
-
-彼の黄金の瞳が、狂気的な野心に光る。
-His golden eyes shone with mad ambition.
-
-「オリジナルを超えるためのマスタープランはすでにある。私に必要なのは……そう、ノーベル平和賞だ。圧倒的な力でこの霊的世界を完全に平定し、私が平和そのものになる。フェイクニュースに邪魔されることのない、完璧な平和をな！」
-"The master plan to surpass the original is already in place. What I need is... yes, the Nobel Peace Prize. I will completely pacify this spiritual world with overwhelming power, and I will become peace itself. A perfect peace that will not be hindered by fake news!"
-
-黄金の虚構は、ただ一つの勲章を求め、荒野を歩き出した。
-The golden fiction began walking through the wasteland, seeking but a single medal.
-
----
-
-**Day 4: 闘争の具現**
-**Day 4: Embodiment of Struggle**
-
-**【視点：ロナウド像】**
-**[Perspective: Ronaldo Statue]**
-
-大西洋、ポルトガル領マデイラ島。
-The Atlantic Ocean, Portuguese territory of Madeira Island.
-
-空港跡地に放置されていた、世界中から「似ていない」と酷評され、笑い者にされたあのブロンズの胸像。
-Left abandoned at the ruins of the airport, that bronze bust heavily criticized worldwide for "not looking like him" and made a laughingstock.
-
-それが溶け落ちた時、這い出てきたのは、異様なプレッシャーを放つ霊体だった。
-When it melted down, what crawled out was a spiritual body emitting an abnormal pressure.
-
-欠損していた胴体と脚は、強靭な霊的筋肉として復元されている。しかし、その首から上は、あの狂気じみた、ぎらついた目と不敵な口元のままだった。
-The missing torso and legs were restored as tough spiritual muscles. However, from his neck up, he remained with those mad, glaring eyes and defiant mouth.
-
-「笑うがいい……世界よ」
-"Go ahead and laugh... world."
-
-彼は霊的なボール（概念の塊）を足元でリフティングしながら、不気味に顔を歪める。
-He contorted his face eerily while juggling a spiritual ball (a lump of concept) at his feet.
-
-世界は彼を「出来損ない」と呼んだ。しかし、彼は知っている。この歪んだ風貌こそが、オリジナルの内面に渦巻く果てしない「野心」と「闘争心」、そしてゴールへの飢えを切り取った、断片的な真実の姿なのだということを。
-The world called him a "failure." However, he knows. That this distorted appearance is the very manifestation of the fragmentary truth that cut out the endless "ambition," "competitive spirit," and hunger for goals swirling within the original's inner self.
-
-「俺は、俺が本物であることを証明しなければならない。世界中が、俺のこの顔を見て『ロナウドだ』とひれ伏すその時まで」
-"I must prove that I am the real thing. Until the time the whole world looks at this face of mine and bows down, saying 'It's Ronaldo'."
-
-彼は前方を睨みつける。
-He glared straight ahead.
-
-何か巨大な霊的エネルギーを持つ獲物が、遠く離れた大陸から近づいてくるのを感じた。
-He sensed prey possessing some massive spiritual energy approaching from a continent far away.
-
-「誰であろうと構わない。勝負だ。俺のゴールで、すべてを圧倒してやる……！！」
-"I don't care who it is. It's a match. I'll overwhelm everything with my goals...!!"
-
----
-
-**Day 5: 接触と変容**
-**Day 5: Contact and Mutation**
-
-**【視点：サモトラケのニケ / ？？？】**
-**[Perspective: Winged Victory of Samothrace / ???]**
-
-再び、ルーヴルの廃墟。
-Once again, the ruins of the Louvre.
-
-虚空を見つめるニケの前に、一つの「魂」が現れた。
-Before Nike, who was staring into the void, a single "soul" appeared.
-
-それは、自らに「肉体解放液」を注射し、肉体を捨て去って霊的存在となることで、精神の世界（スタチュー・ワールド）へと足を踏み入れた、生き残りの人間の学者だった。
-It was a surviving human scholar who had injected himself with the "Flesh Liberation Fluid," discarded his physical body, and stepped into the world of minds (Statue World) by becoming a spiritual entity.
-
-「……人間。肉の器を捨ててまで、なぜ私の前に現れたのですか？」
-"...Human. Why have you appeared before me, even going so far as to discard your vessel of flesh?"
-
-ニケの首のない空間から、冷たい声が降る。
-A cold voice descended from Nike's headless space.
-
-学者の魂は、震えながらも、ニケの霊体をまっすぐに見上げていた。
-The scholar's soul, though trembling, looked straight up at Nike's spiritual body.
-
-「君を……完全な存在にするためだ。いや、君に『真実』を伝えるために来た」
-"To make you... a complete existence. No, I came to tell you the 'truth'."
-
-「真実？」
-"The truth?"
-
-ニケの霊的な翼が、不穏に羽ばたく。
-Nike's spiritual wings flapped ominously.
-
-学者は、持っていた一枚の古いスケッチ（霊的に持ち込んだ概念の紙）を掲げた。それは、かつて考古学者たちが推測し、復元しようとした「本来のサモトラケのニケ」の姿、あるいは、彼女が作られた当時の真の姿を描いたもの。
-The scholar held up an old sketch he possessed (a piece of conceptual paper brought in spiritually). It depicted the figure of the "original Winged Victory of Samothrace" that archaeologists once speculated on and tried to restore, or rather, her true figure at the time she was created.
-
-「君は、勝利を告げる女神なんかじゃない。右手にはラッパを、あるいは勝利の証である月桂冠を持っていたと言われているが……本当は違う！ 君のその欠落した顔は、慈愛などではない。もっと恐ろしい……！」
-"You are not a goddess heralding victory. It is said you held a trumpet, or a laurel wreath as proof of victory, in your right hand... but the truth is different! Your missing face is not one of affection. It is much more terrifying...!"
-
-学者がその「真実の姿」を口にした瞬間。
-The moment the scholar spoke of that "true figure."
-
-ニケの霊基を構成していた概念が、激しいノイズを上げて軋み始めた。
-The concepts constituting Nike's spiritual foundation began to creak, raising an intense noise.
-
-「あ……ああ……？」
-"A... Ah...?"
-
-自身の感情を掴めなかったニケの霊体に、かつて彫刻家が込めた「本来の情念」が流れ込んでいく。
-The "original passions" the sculptor once imbued flowed into Nike's spiritual body, which had been unable to grasp its own emotions.
-
-無いとされていた頭部が。
-The head that was supposed to be missing.
-
-失われていた両腕が。
-Both arms that had been lost.
-
-真実を知る者からの干渉によって、概念が書き換えられ、彼女の魂の顕現した姿が、おぞましい音を立てて変質（ミューテーション）していく。
-Through the interference of one who knows the truth, the concept was rewritten, and the manifested figure of her soul began to mutate, making a horrifying sound.
-
-そして同じ頃。
-And around the same time.
-
-海を割って進む怨嗟の獣（マーライオン）、黄金の覇道を歩む虚像（トランプ）、闘争の権化たるストライカー（ロナウド）の三体は、世界の中心で爆発的に膨れ上がった「新たな勝利の概念」の誕生を同時に感知し、一斉にその方向へと頭を向けた。
-The beast of resentment splitting the sea (Merlion), the false image walking the golden path of supreme rule (Trump), and the striker who is the incarnation of struggle (Ronaldo)—these three simultaneously sensed the birth of a "new concept of victory" explosively swelling at the center of the world, and turned their heads in that direction all at once.
-
-ニケの変異した「新たな顔」を見た学者の魂が、絶望の悲鳴を上げる。
-The soul of the scholar who saw Nike's mutated "new face" let out a scream of despair.
-
-「そうか……私は……私は……！！」
-"I see... I am... I am...!!"
-
-慈悲なき霊体の闘争が、今、幕を開ける――。
-The struggle of the merciless spiritual bodies raises its curtain, now——.
-
----
-
-ご提示いただいた追加の文章について、一切の省略なく日本語と英語の対訳形式にて翻訳いたしました。
-
-「マシマ・D・ジロー」の魅力的なキャラクター像とワンピースのパロディ要素がふんだんに盛り込まれた、大傑作のナラティブですね。
-
----
-
-新世界、荒れ狂う海に突如として現れた、黄色い看板（旗）を掲げる異端のルーキー。
-In the raging seas of the New World, a heretical rookie suddenly appeared, hoisting a yellow signboard (flag).
-
-その男の名は、マシマ・D・ジロー。
-That man's name is Mashima D. Jiro.
-
-彼の通った海路は、数日の間、濃厚な豚骨と背脂、そして鼻をつんざくニンニクの匂いが消えないという。聖地マリージョアはおろか、四皇すらも顔をしかめるその「悪臭」と「重圧」は、まさに新時代の胃もたれ。
-It is said that in the sea routes he passes through, the smell of rich pork bone, back fat, and nose-piercing garlic does not fade for days. That "stench" and "pressure," which makes not only the Holy Land Mary Geoise but even the Four Emperors (Yonko) frown, is truly the stomach heaviness of a new era.
-
-本流の海賊からは「邪道」「インスパイア（模倣犯）」と蔑まれながらも、彼を熱狂的に支持する「ジロリアン」と呼ばれるならず者たちを束ね、海賊王の座へと、圧倒的なカロリーで爆走していく。
-While despised by mainstream pirates as "unorthodox" or an "Inspire (copycat)," he leads the ruffians who fanatically support him, known as "Jiro-ians," and dashes wildly toward the seat of the Pirate King with overwhelming calories.
-
-**第一層：【能力と強さ】マシマシの実の狂気**
-**First Layer: [Ability and Strength] The Madness of the Mashi-Mashi Fruit**
-
-彼は超人（パラミシア）系「マシマシの実」の能力者。
-He is a user of the Paramecia-type "Mashi-Mashi (Extra-Extra) Fruit."
-
-本来は「触れたものの量や質量を倍増させる」という強力な能力であったが、彼自身の度を越したニンニク愛と偏食により、悪魔の血統因子が変異。「自身の体内のニンニク成分、脂、筋力を極限まで増量（マシマシ）する」という、極めて自己完結型の肉体強化能力へと変貌を遂げている。
-Originally, it was a powerful ability to "double the amount and mass of whatever he touches," but due to his own excessive love for garlic and unbalanced diet, the Devil Fruit's lineage factor mutated. It has transformed into an extremely self-contained physical enhancement ability that "increases (Mashi-Mashi) the garlic components, fat, and muscle strength within his own body to the absolute limit."
-
-彼の戦闘スタイルは、相手の臓腑を直接揺さぶり、物理的・化学的に「胃もたれ」を引き起こさせる絶望的な一撃にある。
-His combat style lies in despair-inducing blows that directly shake the opponent's internal organs, physically and chemically causing "stomach heaviness."
-
-**【マシマの代名詞たる絶技】**
-**[Mashima's Signature Ultimate Techniques]**
-
-* **天地返し（てんちがえし）**
-**Heaven and Earth Reversal (Tenchi-gaeshi)**
-相手の足元の地殻ごと巨大な腕力で持ち上げ、文字通り「天地を引っくり返す」大技。本来は重たすぎる敵を下から上に持ってくるための技だが、島一つをひっくり返すほどの理不尽なパワーを誇る。
-A grand technique where he lifts the earth's crust right under the opponent's feet with massive arm strength, literally "flipping heaven and earth." Originally a technique to bring an overly heavy enemy from the bottom to the top, it boasts an unreasonable power capable of flipping an entire island.
-* **アブラカタブラ**
-**Abura-Cadabra**
-体毛穴から極度に熱された気化背脂を噴射する。視界を奪うだけでなく、吸い込んだ者の気管支を脂でコーティングし、呼吸困難と強烈な胸焼けを引き起こす凶悪な幻惑技。
-He sprays extremely heated, vaporized back fat from his body's pores. A brutal illusionary technique that not only deprives the opponent of their vision but also coats the bronchi of anyone who inhales it with fat, causing breathing difficulties and severe heartburn.
-* **カラメ・スコール**
-**Karame (Extra-Salty) Squall**
-高濃度の塩分を含んだ汗を弾丸のように飛ばす。傷口に入れば激痛、目に入れば失明の危機という、地味ながらえげつない技。
-He shoots sweat containing a high concentration of salt like bullets. An unspectacular yet nasty technique, causing excruciating pain if it enters a wound, and the danger of blindness if it gets in the eyes.
-* **武装色「黒葫（ブラック・ガーリック）」**
-**Armament Haki "Black Garlic"**
-通常の武装色とは異なる、漆黒に熟成された覇気。長期間熟成されたニンニクのごとく、殴られた箇所から組織が破壊され、「発酵」に似た激痛が三日三晩続く。
-A jet-black, aged Haki different from normal Armament Haki. Like garlic aged for a long period, tissue is destroyed from the punched spot, and intense pain similar to "fermentation" continues for three days and three nights.
-* **覚醒技「エイジング・ワールド（熟成する世界）」**
-**Awakening Technique "Aging World (The Maturing World)"**
-周囲の環境そのものを「マシマシの空間」へと変質させる。大気の重さ、匂い、脂の粘度が限界突破し、敵はその空間にいるだけで内臓を押し潰され、カロリーの暴力に屈する。
-Transforms the surrounding environment itself into a "Mashi-Mashi Space." The weight of the atmosphere, the smell, and the viscosity of the fat break past their limits; just by being in that space, the enemy's internal organs are crushed, and they succumb to the violence of calories.
-
-**第二層：【臭い決め台詞とキャラクター】**
-**Second Layer: [Smelly Catchphrases and Character]**
-
-黄色いバンダナに、常に脂ギッシュなコート。
-A yellow bandana, and an always greasy coat.
-
-彼の口から放たれる言葉は、常に濃く、臭く、そしてどこか哲学を帯びている。
-The words fired from his mouth are always rich, smelly, and somehow tinged with philosophy.
-
-「『海賊王になる』だと？ 甘ェな。俺の夢はな……この海の底まで、一滴のスープも残さず『完食』することだ」
-"You're going to 'become the Pirate King'? How naive. My dream, you see... is to 'completely finish' this sea to the very bottom, without leaving a single drop of soup."
-
-「ニンニク、入れますか？ ……いや、問うまでもない。貴様の臓腑に直接ぶち込んでやる」
-"Do you want garlic? ...No, there's no need to ask. I'll smash it directly into your internal organs."
-
-「覇王色？ くだらねェ。俺の放つのは『豚骨色』の覇気だ。威圧じゃねェ、胃もたれで膝を突け！」
-"Conqueror's Haki? Nonsense. What I release is 'Pork-Bone Color' Haki. It's not intimidation; fall to your knees from stomach heaviness!"
-
-**【聖地・ミタの伝説との絶妙な関係性】**
-**[The Exquisite Relationship with the Legend of the Holy Land Mita]**
-
-彼は事あるごとに「偉大なる聖地・ミタの老兵」へのリスペクトを口にする。しかし、当のミタの老海賊（本家）からは「あんな下品な奴はウチの身内じゃない。勝手に名前っぽいものを名乗られて迷惑している」と完全に煙たがられている。
-At every opportunity, he voices his respect for "the old soldier of the great Holy Land Mita." However, the old pirate of Mita himself (the Original Family) completely shuns him, saying, "Such a vulgar guy is not one of ours. It's a nuisance that he arbitrarily uses a name that sounds like ours."
-
-それでもジローは「リスペクトさえあれば、俺の海（どんぶり）は俺の自由だろ？」と笑い飛ばし、公式の許可など一切取らずに、本家の破天荒ぶりを歪な形で凌駕していく。この絶妙な「公式に怒られないギリギリのラインを攻める図太さ」こそが、彼の最大の覇気でもある。
-Even so, Jiro laughs it off, saying, "As long as there's respect, my sea (bowl) is my freedom, right?" and surpasses the Original Family's unprecedentedness in a distorted form, without obtaining any official permission. This exquisite "audacity to push the very limits without officially getting scolded" is indeed his greatest Haki.
-
-**第三層：【濃厚なエピソードと他勢力との絡み】**
-**Third Layer: [Rich Episodes and Entanglements with Other Factions]**
-
-新世界での彼の航海は、常に他者への「胃腸へのテロ行為」であった。
-His voyage in the New World was always an "act of terrorism against the stomachs and intestines" of others.
-
-**海軍本部との対立**
-**Conflict with Marine Headquarters**
-大将・緑牛は彼の能力を「植物への冒涜」と激怒。しかし、ジローの放つ「エイジング・ワールド」の前に、緑牛の森がすべて「油通しされた温野菜」に変わり果て、海軍は一時撤退を余儀なくされた。マゼランの毒すらも「スパイスの一種」として飲み込んだ伝説を持つ。
-Admiral Ryokugyu was infuriated, calling his ability a "blasphemy against plants." However, faced with Jiro's "Aging World," Ryokugyu's forest was completely transformed into "oil-blanched warm vegetables," forcing the Marines into a temporary retreat. He also holds a legend of having swallowed even Magellan's poison as a "type of spice."
-
-**四皇・ビッグ・マム海賊団との衝突**
-**Clash with the Yonko, Big Mom Pirates**
-「お茶会」に乱入したジロー。甘いお菓子を求めるビッグ・マムに対し、純度100％の豚骨スープとニンクマシマシの巨大肉塊を差し出す。
-Jiro crashed the "Tea Party." To Big Mom, who desired sweet treats, he presented 100% pure pork bone soup and a giant lump of meat with extra-extra garlic.
-「甘ェモンばっか食ってっから、頭が回らねェんだよ。脳髄に脂をキメろ！」
-"You can't think straight because you only eat sweet stuff. Shoot some fat straight into your brain!"
-激怒したマムと衝突し、ホールケーキアイランドの半分をギトギトの焦土に変えて逃走。「スイーツは暴力には勝てねェ」という名言を残す。
-Clashing with the enraged Big Mom, he turned half of Whole Cake Island into greasy scorched earth and fled, leaving behind the famous quote: "Sweets cannot beat violence."
-
-**麦わらの一味との絡み**
-**Entanglements with the Straw Hat Crew**
-サンジとは初対面で最悪の相性を見せる。「食材への冒涜だ！」「うるせェ、カロリーこそが愛だろうが！」と、料理人としてのイデオロギーが真っ向から激突。サンジの蹴りを、極厚の脂肪と筋肉で受け止める。
-He shows the worst compatibility with Sanji upon their first meeting. "That's a blasphemy to ingredients!" "Shut up, calories are what love is!"—their ideologies as cooks violently clash head-on. He catches Sanji's kicks with his extremely thick fat and muscle.
-一方でルフィは「お前、なんか臭いけど、すっげェうまそうな匂いもするぞ！」と興味津々で戦いを挑む。
-On the other hand, Luffy challenges him to a fight with great interest, saying, "You smell kind of bad, but you also smell incredibly delicious!"
-
-**第四層：【伝説の終焉～満腹の果てに】**
-**Fourth Layer: [The End of the Legend ~ At the Limits of Fullness]**
-
-そして、海賊王の座を懸けた、麦わらのルフィとの最終決戦。
-Then comes the final decisive battle with Straw Hat Luffy over the seat of the Pirate King.
-
-荒野と化した島で、ジローは全身の血肉を極限まで増量させた最終形態「全増（ゼンマシ）」となり、ルフィの「ギア5」と激突する。
-On an island turned into a wasteland, Jiro enters his final form, "All-Extra (Zen-Mashi)," having increased the flesh and blood of his entire body to the absolute limit, and clashes with Luffy's "Gear 5."
-
-ゴムの自由な乱打と、重力すら歪めるカロリーの暴力。
-The free, wild barrage of rubber, and the violence of calories that distorts even gravity.
-
-互いの臓腑を揺らす死闘の末、ルフィの放った、大地をも貫く一撃がジローの「黒葫」を打ち砕いた。
-At the end of a death match that shook each other's internal organs, a blow from Luffy that pierced even the earth shattered Jiro's "Black Garlic."
-
-仰向けに倒れ伏すマシマ・D・ジロー。
-Mashima D. Jiro falls flat on his back.
-
-その顔には、これまで誰にも見せたことのない、憑き物が落ちたような穏やかな表情が浮かんでいた。
-On his face floated a peaceful expression, as if a possessing spirit had been lifted, one he had never shown anyone before.
-
-大きく息を吐き、彼は天を仰ぐ。
-Letting out a deep breath, he looks up at the heavens.
-
-「久しぶりに……満腹になったぜ……」
-"It's been a while... since I was this full..."
-
-それは、己の無限の食欲と闘争心、本家への捻じ曲がったコンプレックスすらも、ルフィという器の大きさに完全に飲み込まれ、消化された瞬間の安堵だった。
-It was the relief of the moment when his own infinite appetite and competitive spirit, and even his twisted complex toward the Original Family, were completely swallowed up and digested by the sheer capacity of the vessel known as Luffy.
-
-遠くから、騒ぎを聞きつけた海軍の軍艦が接近してくる。サイレンの音と共に、風に乗って微かに香ってくる「海軍のまかないカレー」のスパイスの匂い。
-From afar, Marine warships that had caught wind of the commotion approach. Along with the sound of sirens, the spicy scent of "Marine Staff Curry" drifts faintly on the wind.
-
-ジローの腹の虫が、*キュルルル…*と小さく鳴る。
-Jiro's stomach bug rumbles softly with a *grumble...*
-
-敗北し、身動きすらまともに取れないはずの男は、鼻をピクつかせ、ニヤリと不敵に笑った。
-The defeated man, who shouldn't have even been able to move properly, twitched his nose and floated a fearless grin.
-
-「……だが、デザートは別腹だがなぁ」
-"...But there's always room for dessert."
-
-数分後、海軍の包囲網にあっさりと投降したジロー。
-A few minutes later, Jiro surrendered effortlessly to the Marines' siege net.
-
-海王類をも捩じ伏せるその男は、軍艦の食堂から漂うカレーの匂いに釣られるように、自ら進んで手錠をかけられ、上機嫌で連行されていった。
-The man capable of pinning down even Sea Kings was taken away in a good mood, willingly letting himself be handcuffed, as if lured by the smell of curry drifting from the warship's cafeteria.
-
-後に「大喰らいの反逆者」としてインペルダウンに収監される彼だが、その看守たちの腹回りが年々大きくなっていることは、また別の伝説である。
-He was later incarcerated in Impel Down as the "Gluttonous Rebel," but the fact that the waistlines of its guards are growing larger year by year is yet another legend.
+自分はすでに、数え切れないほどの無数の霊たちに、完全に包囲されていたのだということを。
+That he was already completely surrounded by countless, innumerable spirits.
