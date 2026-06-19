@@ -840,7 +840,7 @@
         }
       }
 
-      function moveLine(direction) {
+     function moveLine(direction) {
         const text = textarea.value;
         const cursorPos = textarea.selectionStart;
 
@@ -863,8 +863,14 @@
         let match = null;
 
         while (targetLineIdx >= 0 && targetLineIdx < lines.length) {
-          match = /[a-zA-Z0-9_]+/.exec(lines[targetLineIdx]);
-          if (match) {
+          // 行内のすべての単語マッチを取得
+          const regex = /[a-zA-Z0-9_]+/g;
+          const matches = [...lines[targetLineIdx].matchAll(regex)];
+
+          if (matches.length > 0) {
+            // 下スクロール (direction === 1) なら最初の単語
+            // 上スクロール (direction === -1) なら最後の単語
+            match = direction === 1 ? matches[0] : matches[matches.length - 1];
             break;
           }
           targetLineIdx += direction;
