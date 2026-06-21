@@ -425,9 +425,9 @@
       }
 
       /* 範囲選択移動領域 */
-      #popup-scroll-area {
+      .popup-scroll-area {
         width: 100%;
-        padding: 32px 0;
+        padding: 12px 0;
         background-color: rgba(0, 0, 0, 0.05);
         border-top: 1px solid var(--border-color);
         text-align: center;
@@ -440,10 +440,10 @@
           background-color 0.2s,
           opacity 0.2s;
       }
-      body.dark-mode #popup-scroll-area {
+      body.dark-mode .popup-scroll-area {
         background-color: rgba(255, 255, 255, 0.05);
       }
-      #popup-scroll-area:hover {
+      .popup-scroll-area:hover {
         background-color: rgba(128, 128, 128, 0.1);
         opacity: 1;
       }
@@ -538,7 +538,9 @@
 
       <div class="popup-footer-text">※余白で下ホイール：モード切替</div>
 
-      <div id="popup-scroll-area" title="ここでホイール: 1単語ずつ次/前へ移動">↔️ 範囲選択移動</div>
+      <div class="popup-scroll-area" data-step="1" title="ここでホイール: 1単語ずつ次/前へ移動">↔️ 1単語移動</div>
+      <div class="popup-scroll-area" data-step="2" title="ここでホイール: 1単語飛ばしで移動">⏭️ 1単語飛ばし</div>
+      <div class="popup-scroll-area" data-step="3" title="ここでホイール: 2単語飛ばしで移動">⏭️⏭️ 2単語飛ばし</div>
     </div>
 
     <script>
@@ -569,8 +571,6 @@
 
       const btnPopupWrapBothParen = document.getElementById("btn-popup-wrap-both-paren");
       const btnPopupWrapAsterisk = document.getElementById("btn-popup-wrap-asterisk");
-
-      const popupScrollArea = document.getElementById("popup-scroll-area");
 
       const btnToggleEdit = document.getElementById("btn-toggle-edit");
       const btnUndo = document.getElementById("btn-undo");
@@ -818,19 +818,40 @@
         }
       }
 
-      function selectNextWord(direction) {
+      function selectNextWord(step) {
         const words = getAllWords();
         if (words.length === 0) return;
 
         const currentStart = textarea.selectionStart;
         let targetWord = null;
 
-        if (direction === 1) {
-          targetWord = words.find((w) => w.start > currentStart);
-          if (!targetWord) targetWord = words[0];
+        if (step > 0) {
+          // 前へ進む処理
+          let nextIdx = words.findIndex((w) => w.start > currentStart);
+          if (nextIdx === -1) {
+            targetWord = words[0]; // 末尾を超えたら先頭へループ
+          } else {
+            let targetIdx = nextIdx + (step - 1);
+            if (targetIdx >= words.length) targetIdx = words.length - 1; // 飛び越えた場合は最後の単語でストップ
+            targetWord = words[targetIdx];
+          }
         } else {
-          targetWord = [...words].reverse().find((w) => w.start < currentStart);
-          if (!targetWord) targetWord = words[words.length - 1];
+          // 後ろへ戻る処理（stepはマイナスの値）
+          let prevIdx = -1;
+          for (let i = words.length - 1; i >= 0; i--) {
+            if (words[i].start < currentStart) {
+              prevIdx = i;
+              break;
+            }
+          }
+
+          if (prevIdx === -1) {
+            targetWord = words[words.length - 1]; // 先頭を超えたら末尾へループ
+          } else {
+            let targetIdx = prevIdx + (step + 1); // 例: step=-2 なら prevIdx - 1
+            if (targetIdx < 0) targetIdx = 0; // 飛び越えた場合は最初の単語でストップ
+            targetWord = words[targetIdx];
+          }
         }
 
         if (targetWord) {
@@ -840,7 +861,7 @@
         }
       }
 
-     function moveLine(direction) {
+      function moveLine(direction) {
         const text = textarea.value;
         const cursorPos = textarea.selectionStart;
 
@@ -1058,14 +1079,13 @@
       wheelPopup.addEventListener("wheel", (e) => {
         e.preventDefault();
 
-        if (
-          e.target === popupScrollArea ||
-          popupScrollArea.contains(e.target)
-        ) {
+        const scrollArea = e.target.closest(".popup-scroll-area");
+        if (scrollArea) {
+          const step = parseInt(scrollArea.getAttribute("data-step"), 10) || 1;
           if (e.deltaY > 0) {
-            selectNextWord(1);
+            selectNextWord(step);
           } else if (e.deltaY < 0) {
-            selectNextWord(-1);
+            selectNextWord(-step); // マイナスの移動量にして逆方向へ
           }
           return;
         }
