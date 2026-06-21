@@ -424,10 +424,10 @@
         margin-bottom: 8px;
       }
 
-      /* 範囲選択移動領域 */
+     /* 範囲選択移動領域 */
       .popup-scroll-area {
         width: 100%;
-        padding: 12px 0;
+        padding: 12px 0; /* 3つ並べるため余白を少し減らします */
         background-color: rgba(0, 0, 0, 0.05);
         border-top: 1px solid var(--border-color);
         text-align: center;
@@ -538,9 +538,9 @@
 
       <div class="popup-footer-text">※余白で下ホイール：モード切替</div>
 
-      <div class="popup-scroll-area" data-step="1" title="ここでホイール: 1単語ずつ次/前へ移動">↔️ 1単語移動</div>
-      <div class="popup-scroll-area" data-step="2" title="ここでホイール: 1単語飛ばしで移動">⏭️ 1単語飛ばし</div>
-      <div class="popup-scroll-area" data-step="3" title="ここでホイール: 2単語飛ばしで移動">⏭️⏭️ 2単語飛ばし</div>
+      <div class="popup-scroll-area" data-step="1" title="ここでホイール: 1単語ずつ次/前へ移動">↔️ 範囲選択移動</div>
+      <div class="popup-scroll-area" data-step="2" title="ここでホイール: 1単語飛ばしで移動">⏭️ 範囲選択移動(1単語飛ばし)</div>
+      <div class="popup-scroll-area" data-step="3" title="ここでホイール: 2単語飛ばしで移動">⏭️⏭️ 範囲選択移動(2単語飛ばし)</div>
     </div>
 
     <script>
@@ -571,6 +571,8 @@
 
       const btnPopupWrapBothParen = document.getElementById("btn-popup-wrap-both-paren");
       const btnPopupWrapAsterisk = document.getElementById("btn-popup-wrap-asterisk");
+
+
 
       const btnToggleEdit = document.getElementById("btn-toggle-edit");
       const btnUndo = document.getElementById("btn-undo");
@@ -818,7 +820,7 @@
         }
       }
 
-      function selectNextWord(step) {
+    function selectNextWord(step) {
         const words = getAllWords();
         if (words.length === 0) return;
 
@@ -860,8 +862,7 @@
           textarea.focus();
         }
       }
-
-      function moveLine(direction) {
+     function moveLine(direction) {
         const text = textarea.value;
         const cursorPos = textarea.selectionStart;
 
@@ -1076,7 +1077,7 @@
       btnExpand.addEventListener("click", expandSelection);
       btnShrink.addEventListener("click", shrinkSelection);
 
-      wheelPopup.addEventListener("wheel", (e) => {
+     wheelPopup.addEventListener("wheel", (e) => {
         e.preventDefault();
 
         const scrollArea = e.target.closest(".popup-scroll-area");
