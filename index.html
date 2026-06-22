@@ -424,14 +424,20 @@
         margin-bottom: 8px;
       }
 
-     /* 範囲選択移動領域 */
-      .popup-scroll-area {
+/* 横並び用のコンテナ */
+      .scroll-area-wrapper {
+        display: flex;
         width: 100%;
-        padding: 12px 0; /* 3つ並べるため余白を少し減らします */
-        background-color: rgba(0, 0, 0, 0.05);
         border-top: 1px solid var(--border-color);
+      }
+
+      /* 範囲選択移動領域（左右分割） */
+      .popup-scroll-area {
+        flex: 1; /* 半分ずつ均等に分割 */
+        padding: 16px 2px; /* クリックしやすいように上下の幅を広めに */
+        background-color: rgba(0, 0, 0, 0.05);
         text-align: center;
-        font-size: 12px;
+        font-size: 11px; /* 枠に収まるように少し小さく */
         font-weight: bold;
         color: var(--text-color);
         cursor: ns-resize;
@@ -439,13 +445,23 @@
         transition:
           background-color 0.2s,
           opacity 0.2s;
+        /* 文字がはみ出ないように設定 */
+        white-space: nowrap;
+        overflow: hidden;
       }
+
       body.dark-mode .popup-scroll-area {
         background-color: rgba(255, 255, 255, 0.05);
       }
+
       .popup-scroll-area:hover {
         background-color: rgba(128, 128, 128, 0.1);
         opacity: 1;
+      }
+
+      /* 左側（🔜）の右側に区切り線を入れる */
+      #area-forward {
+        border-right: 1px solid var(--border-color);
       }
     </style>
   </head>
@@ -536,10 +552,12 @@
         <button id="btn-popup-wrap-asterisk" class="btn-theme" title="下ホイールでも可">**追加</button>
       </div>
 
-      <div class="popup-footer-text">※余白で下ホイール：モード切替</div>
+<div class="popup-footer-text">※余白で下ホイール：モード切替</div>
 
-      <div class="popup-scroll-area" id="area-forward" title="下ホイール: 2単語飛ばし(次へ) / 上ホイール: 1単語(次へ)">範囲選択移動🔜</div>
-      <div class="popup-scroll-area" id="area-backward" title="下ホイール: 2単語飛ばし(前へ) / 上ホイール: 1単語(前へ)">範囲選択移動🔙</div>
+      <div class="scroll-area-wrapper">
+        <div class="popup-scroll-area" id="area-forward" title="下ホイール: 2単語飛ばし(次へ) / 上ホイール: 1単語(次へ)">範囲選択🔜</div>
+        <div class="popup-scroll-area" id="area-backward" title="下ホイール: 2単語飛ばし(前へ) / 上ホイール: 1単語(前へ)">範囲選択🔙</div>
+      </div>
     </div>
 
     <script>
