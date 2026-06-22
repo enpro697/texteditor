@@ -431,7 +431,7 @@
         border-top: 1px solid var(--border-color);
       }
 
-      /* 範囲選択移動領域（左右分割） */
+      /* 移動領域（左右分割） */
       .popup-scroll-area {
         flex: 1; /* 半分ずつ均等に分割 */
         padding: 16px 2px; /* クリックしやすいように上下の幅を広めに */
@@ -541,7 +541,13 @@
         <div class="popup-title">設定・モード</div>
       </div>
       <div id="wheel-status">通常モード</div>
-
+      
+      <div class="popup-footer-text">※余白で下ホイール：モード切替</div>
+      <div class="popup-controls">
+        <button id="area-forward" class="btn-theme" title="下ホイール: 2単語飛ばし(次へ) / 上ホイール: 1単語(次へ)">範囲選択🔜</button>
+        <button id="area-backward" class="btn-theme" title="下ホイール: 2単語飛ばし(前へ) / 上ホイール: 1単語(前へ)">範囲選択🔙</button>
+      </div>
+      
       <div class="popup-controls">
         <button id="btn-expand" class="btn-theme" title="下ホイールでも可">➕拡大</button>
         <button id="btn-shrink" class="btn-theme" title="下ホイールでも可">➖縮小</button>
@@ -552,12 +558,9 @@
         <button id="btn-popup-wrap-asterisk" class="btn-theme" title="下ホイールでも可">**追加</button>
       </div>
 
-<div class="popup-footer-text">※余白で下ホイール：モード切替</div>
 
-      <div class="scroll-area-wrapper">
-        <div class="popup-scroll-area" id="area-forward" title="下ホイール: 2単語飛ばし(次へ) / 上ホイール: 1単語(次へ)">範囲選択🔜</div>
-        <div class="popup-scroll-area" id="area-backward" title="下ホイール: 2単語飛ばし(前へ) / 上ホイール: 1単語(前へ)">範囲選択🔙</div>
-      </div>
+
+
     </div>
 
     <script>
