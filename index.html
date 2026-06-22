@@ -538,9 +538,8 @@
 
       <div class="popup-footer-text">※余白で下ホイール：モード切替</div>
 
-      <div class="popup-scroll-area" data-step="1" title="ここでホイール: 1単語ずつ次/前へ移動">↔️ 範囲選択移動</div>
-      <div class="popup-scroll-area" data-step="2" title="ここでホイール: 1単語飛ばしで移動">⏭️ 範囲選択移動(1単語飛ばし)</div>
-      <div class="popup-scroll-area" data-step="3" title="ここでホイール: 2単語飛ばしで移動">⏭️⏭️ 範囲選択移動(2単語飛ばし)</div>
+      <div class="popup-scroll-area" id="area-forward" title="下ホイール: 2単語飛ばし(次へ) / 上ホイール: 1単語(次へ)">範囲選択移動🔜</div>
+      <div class="popup-scroll-area" id="area-backward" title="下ホイール: 2単語飛ばし(前へ) / 上ホイール: 1単語(前へ)">範囲選択移動🔙</div>
     </div>
 
     <script>
@@ -1077,16 +1076,27 @@
       btnExpand.addEventListener("click", expandSelection);
       btnShrink.addEventListener("click", shrinkSelection);
 
-     wheelPopup.addEventListener("wheel", (e) => {
+wheelPopup.addEventListener("wheel", (e) => {
         e.preventDefault();
 
-        const scrollArea = e.target.closest(".popup-scroll-area");
-        if (scrollArea) {
-          const step = parseInt(scrollArea.getAttribute("data-step"), 10) || 1;
+        // 🔜 エリア（前へ進む）
+        const forwardArea = e.target.closest("#area-forward");
+        if (forwardArea) {
           if (e.deltaY > 0) {
-            selectNextWord(step);
+            selectNextWord(3); // 下ホイール：2単語飛ばし（3つ先へ）
           } else if (e.deltaY < 0) {
-            selectNextWord(-step); // マイナスの移動量にして逆方向へ
+            selectNextWord(1); // 上ホイール：通常の一単語移動（1つ先へ）
+          }
+          return;
+        }
+
+        // 🔙 エリア（後ろへ戻る）
+        const backwardArea = e.target.closest("#area-backward");
+        if (backwardArea) {
+          if (e.deltaY > 0) {
+            selectNextWord(-3); // 下ホイール：2単語飛ばしで逆向き（3つ前へ）
+          } else if (e.deltaY < 0) {
+            selectNextWord(-1); // 上ホイール：通常の一単語移動で逆向き（1つ前へ）
           }
           return;
         }
