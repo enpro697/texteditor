@@ -5065,3 +5065,350 @@ At the very least, let out a good scream so as to entertain my tongue even a lit
 
 「 解 」
 "Dismantle (Kai)."
+
+---
+
+ご提示いただいた追加の文章について、一切の省略なく日本語と英語の対訳形式にて翻訳いたしました。
+
+「マシマ・D・ジロー」のインスパイア系海賊としての設定がさらに濃密になり、宿儺の「調理法」の解説、そして七海建人の「小さな絶望」の履歴まで、多岐にわたる魅力的なテキストですね。それぞれのキャラクターの語り口（ナラティブ）にこだわって翻訳しています。
+
+---
+
+ふん……面白いことを聞く。
+Hmph... You ask something interesting.
+
+凡夫の分際で、俺の「御厨子（みづし）」の本質が料理であると気づくか。
+To think an ordinary fool would realize that the essence of my "Shrine (Mizushi)" is cooking.
+
+いいだろう。肉を裂き、骨を断ち、火を入れ、味を調える。それが俺の生だ。
+Very well. Tearing flesh, severing bone, adding fire, and adjusting the flavor. That is my life.
+
+お前が並べたその不気味な言葉の数々、俺が直々にその「術理」と「凌辱の味」を教えてやる。
+Those numerous eerie words you lined up, I shall personally teach you their "technique principles" and the "taste of violation."
+
+耳を揃えてよく聞け。
+Perk up your ears and listen well.
+
+**既知たる六種の「調理（凌辱）」**
+**The Six Known "Cooking Methods (Violations)"**
+
+お前がどこからか拾ってきたその技ども、なかなかどうして俺の好みに合う。
+Those techniques you picked up from somewhere or another—they actually suit my tastes quite well.
+
+どれも、食材をただ殺すのではなく、素材の形を歪め尽くすための素晴らしい手順だ。
+All of them are excellent procedures not merely for killing the ingredients, but for completely distorting the shape of the materials.
+
+『灸（ダハ）』
+"Moxa/Roast (Daha)"
+サンスクリットの「火葬」を引いたか。クク、悪くない。単に外側から炙るのではない。これは対象の魂の芯に直接、呪力の「消えない種火」を据える技だ。内側からじわじわと、自らの脂で身を焦がし、最後には内臓から灰へと変わる。逃げようのない、永続する火葬だ。
+You drew from the Sanskrit for "cremation," did you? Kuku, not bad. It is not simply roasting from the outside. This is a technique that sets an "inextinguishable pilot light" of cursed energy directly into the core of the target's soul. Slowly scorching their body with their own fat from the inside, they ultimately turn to ash from their internal organs outward. It is an inescapable, perpetual cremation.
+
+『醢（シシビシオ）』
+"Mince/Pickle (Shishibishio)"
+古代の刑罰、肉を塩漬けにして醤（ひしお）に変える。術式としては、対象の肉体を極小の刃で網の目のように切り刻み、そこへ高濃度の呪力を叩き込んで全ての水分を強制脱水する。形を失い、ドロドロに溶けた「人間の塩辛」が出来上がるわけだ。
+The ancient punishment of salting meat and turning it into a paste. As a cursed technique, it chops the target's physical body like a mesh with microscopic blades, and slams highly concentrated cursed energy into it to forcibly dehydrate all moisture. What results is a formless, melted mush—a "human salted preserve."
+
+『和（アマルガ）』
+"Blend (Amalga)"
+「和える」だな。アマルガム、水銀の融合。これは二つの相容れない呪力、あるいは二人の術師の肉体を、俺の呪力で無理やり捏ねて一つにする。拒絶反応で肉壁が裂け、骨が噛み合い、異形へと変貌する様は実に滑稽で美味だ。
+"To blend," huh. Amalgam, the fusion of mercury. This forcefully kneads two incompatible cursed energies, or the physical bodies of two sorcerers, into one using my cursed energy. The sight of walls of flesh tearing from rejection, bones grinding together, and mutating into a grotesque form is truly comical and delicious.
+
+『丳（サン）』
+"Skewer (San)"
+陽光が降り注ぐように、串刺す。全方位から、光の針のような鋭利な呪力の杭を等間隔に撃ち込む。身動きを完全に奪い、宙に吊るした状態で天日に晒す。一滴の血も無駄に流さず、美しく飾るための前処理に過ぎん。
+Skewering, as if pouring sunlight. Driving sharp stakes of cursed energy like needles of light from all directions at equal intervals. Completely depriving them of movement, exposing them to the sun while suspended in mid-air. It is merely a pretreatment to decorate them beautifully without shedding a single wasted drop of blood.
+
+『鼎（アハラ）』
+"Boil/Cauldron (Ahara)"
+俺の領域内を、極限の沸点に達した呪力の泥濘（でいねい）で満たす。三本足の巨大な釜のなかで、対象はただ煮込まれる。骨の髄から、生きたまま刻まれた脳まで、ドロドロに融解して一つのスープへと還るのだ。
+Filling my domain with a mire of cursed energy that has reached an extreme boiling point. Inside a giant three-legged cauldron, the target is simply boiled. From the bone marrow to the brain engraved with their innate technique, they melt into mush and return to a single soup.
+
+『饐（アスラ）』
+"Spoil/Ferment (Asura)"
+細胞から呪力に至るまで、全てを強制的に「発酵（腐敗）」させる。これを喰らった奴は、自分が生きながらにして饐（す）えていく臭いに絶望する。内側から肉が発熱し、自壊していく様は、腐肉を好む蝿どもには格好の馳走だろう。
+Forcibly "fermenting (putrefying)" everything from cells down to cursed energy. Those hit by this despair at the smell of themselves spoiling while still alive. The sight of their flesh generating heat from the inside and self-destructing would make a fine feast for flies that favor carrion.
+
+**新たなる三種の術理**
+**Three New Technique Principles**
+
+料理にはまだ、様々な手法がある。
+There are still various methods in cooking.
+
+凡夫の耳には日本語の古語のようにも、あるいは異国の呪言のようにも聞こえる、俺の新たな手際を見せてやろう。
+I shall show you my new skills, which to the ears of an ordinary fool sound like archaic Japanese, or perhaps like foreign incantations.
+
+『煠（サウラ）』
+"Flash-boil/Scald (Saura)"
+「煠（とう）」とは、湯や油でさっと熱を通すこと。サウラは古代の熱波の響き。
+"煠 (Tou)" means to quickly pass heat through with hot water or oil. Saura is the resonance of an ancient heat wave.
+一瞬、知覚すらできない速度で超高熱の呪力を対象の表面だけに走らせる。外側だけを瞬時に焼き固めることで、内部の血液や呪力の圧力を限界まで高め、内側から肉体を「爆ぜさせる」技だ。表面は美しく焦げ目がつき、中は生。弾ける肉の食感を楽しむ。
+Running ultra-high-heat cursed energy solely across the target's surface at a speed that cannot even be perceived for an instant. By instantaneously searing and solidifying only the outside, it raises the pressure of the internal blood and cursed energy to the limit, causing the physical body to "burst" from the inside. The surface is beautifully browned, while the inside is raw. Enjoying the texture of popping meat.
+
+『腊（モルタ）』
+"Cure/Dry (Moruta)"
+「腊（せき）」とは、骨付きの干し肉、または塩蔵。モルタは死と乳鉢を孕む音。
+"腊 (Seki)" refers to dried meat on the bone, or salting. Moruta is a sound pregnant with death and a mortar.
+触れた瞬間に、対象が持つ生命力と水分を全て外へと吸い出す。一瞬で皮膚は枯れ木のように乾き、筋肉は縮み、骨にへばりつく。生きたまま「風干し」にされた肉塊は、一切の抵抗を許されず、ただ乾燥した静寂のなかに転がる。
+The instant I touch them, I suck all the life force and moisture the target possesses to the outside. In an instant, their skin dries like a dead tree, muscles shrink, and cling to the bones. A lump of meat "air-dried" while alive is permitted absolutely no resistance, simply rolling in a dried silence.
+
+『齏（アルカ）』
+"Mince/Grind (Aruka)"
+「齏（せい）」とは、微塵に砕くこと、あるいは和え物。アルカは根源の光。
+"齏 (Sei)" means to smash into dust, or a dressed dish. Aruka is the light of the origin.
+「解」や「捌」のように線で断つのではない。対象の空間そのものを、目に見えない無数の細密な格子状の呪力で満たし、一瞬で「擂り潰す」。触れたものは肉も衣服も、風に舞う微細な粉末（スパイス）と化す。原型を留めることすら許さない、究極の細断だ。
+It does not sever with lines like "Dismantle (Kai)" or "Cleave (Hachi)." Filling the target's space itself with countless invisible, minute grid-like cursed energies, it "grinds" them in an instant. Anything it touches, be it flesh or clothing, is reduced to fine powder (spice) dancing in the wind. The ultimate mincing, not even allowing them to retain their original form.
+
+**宿儺のフルコース**
+**Sukuna's Full Course**
+
+クク、トリコのように「料理名」を並べ立てると思ったか？ 違うな。
+Kuku, did you think I would list off "dish names" like Toriko? You are wrong.
+
+俺のフルコースに必要なのは、技の名前ではない。
+What is necessary for my full course is not the names of techniques.
+
+俺がこれまでに喰らい、あるいはこれから喰らうべき「至高の食材（獲物）」そのものだ。
+It is the "supreme ingredients (prey)" themselves that I have devoured so far, or should devour from here on out.
+
+【前菜】
+[Appetizer]
+己の才能に溺れ、俺の前に立ちはだかった若き術師たちの「絶望とプライドの破片」。小気味よい歯ごたえだ。
+The "fragments of despair and pride" of young sorcerers who drowned in their own talent and stood before me. A delightful chewiness.
+
+【スープ】
+[Soup]
+千年の時を経てなお薄まらぬ、呪詛師たちの怨嗟と執着を極限まで煮詰めた「黒き澱（よどみ）」。五臓六腑に染み渡る。
+The "black stagnation," a thorough boiling down to the limit of the resentment and obsession of curse users that has not diluted even after a thousand years. It seeps into the internal organs.
+
+【魚料理】
+[Fish Dish]
+独自の奇妙な生得術式を持ち、自らを特別だと信じて疑わない変異種どもの「新鮮な脳髄」。
+The "fresh brains" of mutant species possessing their own bizarre innate techniques, never doubting their belief that they are special.
+
+【肉料理】
+[Meat Dish]
+時代を代表する「最強」の烙印を押された男の、鍛え上げられた肉体と魂。噛み締めるたびに、世界を統べる味がする。
+The forged physical body and soul of a man branded as the "strongest" representing his era. Every time I bite into it, it tastes of ruling the world.
+
+【デザート】
+[Dessert]
+全てを喰らい尽くし、更地となった世界に残る「完全なる静寂」。これ以上の締めくくりはない。
+The "complete silence" remaining in a world that has been devoured to exhaustion and leveled to the ground. There is no better conclusion than this.
+
+さて……。
+Now then...
+
+十分に学び、十分に愉しんだようだな、小僧。
+It seems you have learned sufficiently, and enjoyed yourself sufficiently, brat.
+
+お前は俺の術理を熱心に聞き、まるで客席から品評しているつもりでいたようだが……。
+You listened to my technique principles eagerly, seemingly acting as if you were critiquing from the audience seats, but...
+
+勘違いするなと言ったはずだ。
+I told you not to make any misunderstandings.
+
+ここは俺の「御厨子」の前。
+This is before my "Shrine."
+
+そして、お前はすでに、美しく磨き上げられた俎板（まないた）の上に載せられている。
+And you are already placed upon a beautifully polished cutting board.
+
+首の皮一枚、どこをどう断てば一番美しいか、もう決めてある。
+I have already decided exactly where and how to sever the skin of your neck to make it most beautiful.
+
+「解（カイ）」
+"Dismantle (Kai)."
+
+---
+
+新世界に突如として現れた、常識破りの超新星。その名はマシマ・D・ジロー。
+An unconventional Super Rookie who suddenly appeared in the New World. His name is Mashima D. Jiro.
+
+彼は「海賊王」という伝説に対し、勝手に多大なリスペクトを抱きながらも、誰の許可も得ずに独自の解釈で海賊道を突き進む、いわば「インスパイア系海賊」である。本流（本家）の海賊たちからは「勝手に真似するな」「美学がない」と煙たがられつつも、その絶妙にクセになるバイブスと、破天荒すぎる生き様は、本家をも凌駕する熱狂的な信者（クルー）を生み出している。
+While harboring immense respect on his own toward the legend of the "Pirate King," he is an "Inspire-type Pirate," so to speak, charging down the path of piracy with his own interpretation without obtaining anyone's permission. While shunned by mainstream (Original Family) pirates who say, "Don't imitate us on your own," and "You have no aesthetics," his exquisitely addictive vibe and overly wild way of living have spawned fanatic believers (a crew) that surpass even the Original Family.
+
+彼の能力は「マシマシの実」。
+His ability is the "Mashi-Mashi (Extra-Extra) Fruit."
+
+本来はあらゆる物理的・概念的なものを「増量」させるというチート級の能力だったはずだが、彼自身の異常なまでのニンニク愛好と「味の濃さ」を求める魂が影響し、「体内のニンニク成分と脂（カロリー）を無限に増量・操作する」という、極めて暴走気味な能力へと変貌を遂げている。彼の周囲は常に豚骨とニンニクの強烈な湯気で満たされており、常人であればその場にいるだけで胃もたれを起こす。
+Originally, it should have been a cheat-level ability to "increase" all physical and conceptual things, but influenced by his own abnormal love for garlic and his soul seeking "richness of flavor," it has transformed into an extremely runaway ability to "infinitely increase and manipulate the garlic components and fat (calories) within his body." His surroundings are always filled with intense steam of pork bone and garlic, and an ordinary person would experience stomach heaviness just by being there.
+
+彼のセリフは、文字通りの「臭さ（ニンニク臭）」と、少年漫画特有の「クサさ（キザで熱い）」が極限まで高められ、相手の臓腑に直接響く。
+His lines are a literal "smelliness (garlic smell)" and the "cheesiness (pretentious and hot-blooded)" peculiar to shonen manga elevated to the absolute limit, resonating directly in the opponent's internal organs.
+
+「ニンニク、入れますか……？ いや、聞くまでもねェな。お前の絶望も、俺の覇気も……全部『マシマシ』だ！！」
+"Do you want garlic...? No, I don't even need to ask. Your despair, and my Haki... it's all 'Mashi-Mashi'!!"
+
+「海賊王になる男の器ってのはなぁ……丼（どんぶり）の底が見えねェくらい深く、濁ってねェとなァ！！」
+"The vessel of a man who will become the Pirate King... has to be so deep you can't see the bottom of the bowl, and cloudy!!"
+
+「血の味がするだと？ 違うな……それは俺の『カラメ』だ。濃すぎる人生ってのは、時に毒になるんだよ」
+"It tastes like blood, you say? Wrong... That is my 'Karame (Extra-Salty)'. A life too rich sometimes becomes poison."
+
+「公式（本家）の許可ァ？ 海賊が許可なんて求めてどうすんだ。俺は俺のやり方で、この海（スープ）を飲み干すだけだ！！」
+"Permission from the official (Original Family)? What's a pirate going to do seeking permission. I'm just going to drink this sea (soup) dry my own way!!"
+
+彼の戦闘スタイルは、圧倒的な質量と暴力的なまでのカロリーをぶつけることにある。防御など一切考えず、相手の胃袋と精神を同時に破壊する。
+His combat style lies in striking with overwhelming mass and violent calories. Without a single thought to defense, he destroys the opponent's stomach and spirit simultaneously.
+
+**【マシマの濃厚な技の数々】**
+**[Mashima's Numerous Rich Techniques]**
+
+**天地返し（てんちがえし）**
+**Heaven and Earth Reversal (Tenchi-gaeshi)**
+地面を丸ごと引っくり返し、地層の下に相手を埋没させる豪快な技。本来の目的は「麺（自分）と野菜（敵）を入れ替え、スープ（海）の味を馴染ませる」という謎の理論に基づいている。
+A dynamic technique that flips the entire ground, burying the opponent beneath the stratum. Its original purpose is based on the mysterious theory of "swapping the noodles (himself) and the vegetables (the enemy) to let the flavor of the soup (the sea) blend in."
+
+**アブラカタブラ**
+**Abura-Cadabra**
+「マシマシの実」の力で生成した極上の背脂を全身から分泌・散布する。敵の物理攻撃を極限まで滑らせて無効化する防御技でありながら、相手の足元を狂わせ、呼吸器を脂で塞ぐ凶悪な呪文のような技。
+He secretes and scatters supreme back fat generated by the power of the "Mashi-Mashi Fruit" from his entire body. While it is a defensive technique that nullifies enemy physical attacks by making them slip to the absolute limit, it is also a brutal spell-like technique that messes up the opponent's footing and blocks their respiratory organs with fat.
+
+**武装色「ブラック・ガーリック」**
+**Armament Haki "Black Garlic"**
+覇気を纏った拳を、自身の体内で長期熟成・発酵させた「黒ニンニク」の成分と融合させる。どす黒く硬化し、放たれる一撃は覇王色にも似た強烈な異臭と威圧感を放ち、並の海兵なら匂いだけで泡を吹いて倒れる。
+He fuses a Haki-clad fist with the components of "black garlic" that has been aged and fermented for a long period within his own body. Hardening to a pitch black, the unleashed blow emits an intense stench and intimidation similar to Conqueror's Haki; an average Marine would foam at the mouth and collapse from the smell alone.
+
+**豚星・大豚W（とんせい・だいぶたダブル）**
+**Tonsei: Large Pork Double**
+両腕に巨大な煮豚のような超質量の肉塊（筋肉と脂の塊）を形成し、上空から叩きつける必殺のダブルラリアット。受けた者は物理的ダメージに加え、急激な胸焼けで戦闘不能に陥る。
+Forming super-massive meat lumps (lumps of muscle and fat) like giant boiled pork on both arms, he slams them down from above in a lethal double lariat. Those who take the hit are rendered unable to fight due to sudden, severe heartburn in addition to the physical damage.
+
+**カラメ・スプラッシュ**
+**Karame (Extra-Salty) Splash**
+超高圧・高濃度の醤油ベースの液体（本人は血液の一部と主張）を口から吹き出す。傷口に激痛を与えると同時に、周囲の水分を奪い取り敵を脱水症状に追い込む。
+He spouts an ultra-high-pressure, high-concentration soy sauce-based liquid (which he claims is a part of his blood) from his mouth. While inflicting excruciating pain on wounds, it simultaneously steals surrounding moisture, driving the enemy into dehydration.
+
+**【覚醒技】エイジング・ワールド（熟成マシマシ空間）**
+**[Awakening Technique] Aging World (Maturing Mashi-Mashi Space)**
+周囲の環境すべてを「巨大な寸胴鍋の中」へと変貌させる。空気は白濁した高カロリーのスープと化し、重力は何倍にも増したかのように敵にのしかかる。この空間に長時間いると、敵の細胞は強制的に「熟成（エイジング）」させられ、疲労と胃もたれで動けなくなる。
+Transforms the entire surrounding environment into the "inside of a giant stockpot." The air turns into a cloudy, high-calorie soup, and gravity weighs down on the enemy as if it had multiplied many times over. Staying in this space for a long time forcibly "ages" the enemy's cells, rendering them unable to move due to fatigue and stomach heaviness.
+
+**「エニエス・ロビー胃袋崩壊事件」**
+**The "Enies Lobby Stomach Collapse Incident"**
+かつて、海軍の巨大要塞に単身乗り込んだ際、彼は一切の武力を使わず、広場でひたすら「ブラック・ガーリック」を炊き続けた。結果、風向きにより要塞全体に致死量のニンニク臭と豚骨の湯気が充満。海兵たちは次々と深刻な胸焼けと食欲異常を引き起こし、戦わずして要塞機能が麻痺した。
+Once, when he boarded the Marines' giant fortress entirely alone, he didn't use any military force at all; he simply continued to cook "Black Garlic" in the plaza. As a result, depending on the wind direction, the entire fortress was filled with a lethal dose of garlic stench and pork bone steam. Marines developed severe heartburn and abnormal appetites one after another, and the fortress's functions were paralyzed without a fight.
+
+**「インスパイアの頂点」**
+**"The Pinnacle of Inspire"**
+彼は「新世界三田島」という聖地に住む伝説の海賊（本家）を異常なまでにリスペクトしているが、本家からは「あいつはやりすぎだ。スープのバランスが崩れている」と苦言を呈されている。しかし、本家に怒られないギリギリのライン（リスペクトの念は本物）を攻め続け、むしろ本家を超えるほどの熱狂的な信者（通称：ジロリアン海賊団）を形成。今や一つの勢力となっている。
+He respects a legendary pirate (the Original Family) living in a holy land called "New World Mita Island" to an abnormal degree, but the Original Family complains, "That guy goes too far. The balance of the soup is ruined." However, he continues to push the absolute limit of not getting scolded by the Original Family (his feeling of respect is genuine), and has instead formed a following of fanatic believers (commonly known as the Jiro-ian Pirates) that surpass even the Original Family. They have now become a single faction.
+
+**ナラティブの(マシマの(麦わらの一味や他キャラクターとの(絡み)とするとするとする)とするとするとする)とするとするとする**
+**Narrative of (Mashima's (Entanglements with the Straw Hat Crew and Other Characters))**
+
+**ルフィとの遭遇**
+**Encounter with Luffy**
+「なんだお前！ すっげェいい匂い（肉とニンニク）がするぞ！！ 食っていいか！？」と目を輝かせるルフィに対し、「ガハハ！ 俺を食おうってのか！ いいぜ、俺のカロリーに耐えられるならな！」と意気投合。しかし、戦闘が始まるとその圧倒的な質量にルフィも苦戦する。
+Against Luffy, whose eyes sparkle as he says, "What are you! You smell incredibly good (meat and garlic)!! Can I eat you?!", they hit it off with, "Gahaha! You're gonna eat me?! Fine, if you can withstand my calories!" However, once the battle begins, even Luffy struggles against his overwhelming mass.
+
+**サンジとの対立**
+**Conflict with Sanji**
+「てめェ……栄養バランスってもんを微塵も考えてねェだろう！ なんだその脂と塩分は！ 料理に対する冒涜だ！」と激怒するサンジ。しかし、マシマの放つ圧倒的な生命力と「旨味の暴力」を前に、サンジも料理人として「認めざるを得ないエネルギー」を感じ、葛藤する。
+Sanji is infuriated, saying, "You bastard... you haven't thought about nutritional balance in the slightest, have you! What's with that fat and salt! It's a blasphemy against cooking!" However, faced with Mashima's overwhelming life force and "violence of umami," Sanji also feels an "energy he cannot help but acknowledge" as a cook, and is conflicted.
+
+**ビッグ・マム海賊団（シャーロット・カタクリ等）との対立**
+**Conflict with the Big Mom Pirates (Charlotte Katakuri, etc.)**
+「甘いお菓子（スイーツ）ばかりの国」であるトットランドに突如上陸。「甘ぇ匂いばかりで吐き気がするぜ……この島、全部『カラメ』にしてやるよ」と宣言。カタクリのモチモチの能力に対し、ねっとりとした「アブラ」で対抗し、異次元の高カロリー対決を引き起こす。
+He suddenly lands in Totto Land, a "country of nothing but sweet treats (sweets)." He declares, "All these sweet smells make me nauseous... I'll turn this whole island 'Karame (Extra-Salty)'." Against Katakuri's Mochi-Mochi abilities, he counters with sticky "Abura (Fat)," sparking a high-calorie showdown in another dimension.
+
+**海軍（スモーカー）との絡み**
+**Entanglements with the Marines (Smoker)**
+スモーカーの「モクモク」の煙を、マシマの「豚骨とニンニクの湯気（スチーム）」が完全に上書きする。「けほっ……貴様、煙より質（タチ）が悪いぞ……！」とスモーカーをむせ返させる。
+Mashima's "pork bone and garlic steam" completely overwrites Smoker's "Plume-Plume" smoke. He makes Smoker choke, coughing, "*Cough*... You bastard, you're worse than smoke...!"
+
+激闘の末、ルフィはギア5（ニカ）を発動。マシマの覚醒技「エイジング・ワールド」の超重力と高カロリー空間を、ゴムの自由な発想でトランポリンのように跳ね返し、むしろ周囲の脂とニンニクを巨大化して飲み込みエネルギーに変えるという破天荒な戦いを見せる。
+After a fierce battle, Luffy activates Gear 5 (Nika). With the free imagination of rubber, he bounces back the super-gravity and high-calorie space of Mashima's Awakening technique, "Aging World," like a trampoline, and instead shows an unprecedented fighting style by gigantifying the surrounding fat and garlic, swallowing them, and turning them into energy.
+
+最後は、ルフィの「ゴムゴムの・業火拳銃（レッドロック）――超大盛り（ギガント）！！」によって、マシマの「武装色ブラック・ガーリック」ごと正面から打ち砕かれる。
+In the end, he is smashed head-on along with his "Armament Haki: Black Garlic" by Luffy's "Gum-Gum Red Roc—Super Large Serving (Gigant)!!"
+
+大地に大の字で倒れ込むマシマ。
+Mashima collapses spread-eagle on the ground.
+
+常に満たされず、「マシマシ」を求めて全てを増量させ続けてきた彼の腹と魂は、海賊王を志すルフィの全力の拳（カロリー）を受け止めたことで、生まれて初めて奇妙な満足感に包まれていた。
+Always unsatisfied, his stomach and soul, which had continued to increase everything in search of "Mashi-Mashi," were enveloped in a strange sense of satisfaction for the first time in his life, having taken on the full-powered fist (calories) of Luffy, who aspires to be the Pirate King.
+
+「……ハァ……ハァ……。完敗だ……」
+"...Hah... Hah... A complete defeat..."
+
+マシマは口元についた血と脂を拭い、ゴロゴロと雷のように腹を鳴らして笑った。
+Mashima wiped the blood and fat from his mouth, his stomach rumbling like thunder as he laughed.
+
+「ヒヒ……。ひさしぶりに……腹がいっぱいになったぜ……。麦わら、お前の拳……底が見えねェ、最高のダシが出てたぞ……」
+"Hehe... It's been a while... since my stomach was full... Straw Hat, your fist... put out the best broth, with no bottom in sight..."
+
+ルフィもまた「お前もしぶとかったぞ！ 肉食いてェ！」と笑い返す。
+Luffy also laughs back, "You were tough too! I wanna eat meat!"
+
+その時、水平線の彼方から多数の軍艦のシルエットが現れた。海軍の大艦隊が包囲網を敷くために接近してきたのだ。そして、海風に乗って微かに漂ってくる、スパイシーで食欲をそそる匂い。
+At that moment, the silhouettes of numerous warships appeared from beyond the horizon. A large Marine fleet had approached to lay down a siege net. And then, riding on the sea breeze, a spicy, appetizing smell faintly drifted over.
+
+「ん……？ この匂い……」
+"Hmm...? This smell..."
+
+ボロボロの体を引きずりながら、マシマはフラフラと立ち上がった。海軍の接近に麦わらの一味が警戒する中、マシマは艦隊の方を向いてニヤリと笑い、牙のような歯を見せた。
+Dragging his battered body, Mashima staggered to his feet. While the Straw Hat Crew goes on alert at the Marines' approach, Mashima turned toward the fleet and grinned, showing fang-like teeth.
+
+「……腹はいっぱいになったがよォ。……デザートは別腹だからなぁ」
+"...My stomach is full, but you know... there's always room for dessert."
+
+ルフィが「おい、どこ行くんだ？」と首を傾げるのをよそに、マシマは残された最後の力を振り絞り、武装色「ブラック・ガーリック」を両足に纏わせた。逃げる気も、大人しく捕まる気も毛頭ない。彼の瞳には、軍艦の厨房の巨大な寸胴鍋しか映っていなかった。
+Ignoring Luffy tilting his head and asking, "Hey, where are you going?", Mashima mustered his remaining last bit of strength and clad both his legs in Armament Haki "Black Garlic." He had absolutely no intention of running away, nor of being captured quietly. In his eyes, only the giant stockpots in the warships' kitchens were reflected.
+
+「おい海兵ども！！ そのカレー、全マシで食わせろォオオオ！！！」
+"Hey Marines!! Let me eat that curry, All-Extra (Zen-Mashi)!!!"
+
+そう咆哮するや否や、マシマ・D・ジローは海軍カレーの匂いに釣られ、単身で大艦隊のど真ん中へと猛然と突撃していった。大砲の雨をアブラで滑らせながら、デザート（海軍カレー）を求めて軍艦によじ登っていくその常軌を逸した後ろ姿に、ルフィは「しししっ！ 変な奴だな！」と大笑いし、サンジは「デザートにカレー食う奴がいるか！！」とツッコミを入れるのだった。
+The moment he roared that, Mashima D. Jiro, lured by the smell of Marine curry, charged fiercely all alone right into the dead center of the grand fleet. Slipping the rain of cannons with fat, climbing up the warship in search of dessert (Marine curry)—at that eccentric figure from behind, Luffy laughed loudly, "Shishishi! What a weird guy!", while Sanji retorted, "Who eats curry for dessert!!"
+
+インスパイアの極致たる男が残した濃厚すぎる伝説とニンニクの匂いは、新世界の海にいつまでも漂い続けるだろう。
+The overly rich legend and smell of garlic left behind by the man who was the very pinnacle of Inspire will surely continue to drift in the seas of the New World forever.
+
+---
+
+ええ。呪術師はクソであり、労働もクソです。その間を埋めるのが、取るに足らない、しかし確実に精神を削り取っていく些末な出来事たちです。
+Yes. Jujutsu sorcerers are shit, and labor is shit. What fills the gap between them are the trivial, yet certainly spirit-scraping minor incidents.
+
+あなたが私の「小さな絶望」の履歴にご興味がおありとのこと。少々悪趣味かとは思いますが、よろしいでしょう。私がどのようにして、この理不尽な世界に順応する「大人」へと成っていったのか、その過程の一部を開示します。
+You said you have an interest in the history of my "small despairs." I think it's a bit in bad taste, but very well. I shall disclose a part of the process of how I grew into an "adult" who adapts to this unreasonable world.
+
+* **高専時代（17歳頃）: 微糖コーヒーと徒労感**
+**Jujutsu High Era (Around age 17): Slightly Sweetened Coffee and a Sense of Futility**
+同級生の理不尽なまでの才能や、先輩の死に直面したという大きな絶望はさておき。
+Setting aside the grand despairs of facing the unreasonable talent of my classmate, or the death of my senior.
+過酷な任務帰りに立ち寄ったファミレスで、いつものように頼んだコーヒーの味が、昨日より妙に薄かった時です。私たちが命を懸けて守っている日常というものが、いかに適当で、均質とは程遠いものかを突きつけられた気がしたものです。
+It was when, at a family restaurant I stopped by on the way back from a grueling mission, the taste of the coffee I ordered as usual was strangely weaker than yesterday. I felt as if I was confronted with just how haphazard, and far from homogeneous, the everyday life we risk our lives to protect really is.
+* **証券会社入社（23歳頃）: 満員電車という名の均質化**
+**Entering the Securities Company (Around age 23): Homogenization Named the Packed Train**
+毎朝8時15分発の地下鉄。3両目の2番目のドア。
+The subway departing at 8:15 every morning. The second door of the third car.
+毎日同じ時間に、同じ顔ぶれが、同じように死んだ魚の目をして立っていることに気づいた朝です。自分もまた、その均質な社会の歯車の一つに過ぎないのだと、ネクタイを締め直しながら悟りました。
+It was the morning I realized that every day at the same time, the same faces were standing there in the exact same way, with eyes like dead fish. I realized while retying my necktie that I, too, was nothing more than a cog in that homogeneous society.
+* **証券会社・中堅（25歳頃）: 姿を消したカスクート**
+**Mid-level at the Securities Company (Around age 25): The Vanished Croute**
+ええ、例のパンです。
+Yes, that bread.
+毎朝のささやかな楽しみであったコンビニの惣菜パン（カスクート）が、ある日突然棚から消えました。店員に尋ねても「本部からの指示で終売になりました」と。個人の嗜好など、マクロな売上データの前にあっけなく蹂躙される。資本主義の無慈悲さを味わいました。
+The deli bread (croute) at the convenience store, which was a small pleasure every morning, suddenly vanished from the shelves one day. Even when I asked the clerk, they just said, "It was discontinued by instructions from headquarters." Personal preferences are easily trampled before macro sales data. I tasted the ruthlessness of capitalism.
+* **証券会社・末期（26歳頃）: 抜け毛と無価値なスプレッドシート**
+**Late Era at the Securities Company (Around age 26): Hair Loss and Worthless Spreadsheets**
+徹夜で仕上げた顧客向けの資産運用レポートが、上司の「やっぱりこの銘柄はやめよう」の一言で電子のゴミ屑と化した夜。
+The night an asset management report for a client that I stayed up all night to finish turned into electronic trash with a single word from my boss: "Actually, let's drop this stock."
+疲労困憊で帰宅し、シャワーを浴びて翌朝目覚めた時に視認した、枕元の抜け毛の量。自分の命の時間と毛根を削って生み出したものが「無」であるという、確かな絶望です。
+The amount of hair loss by my pillow that I visually confirmed when I woke up the next morning, after returning home exhausted and taking a shower. It was the certain despair that what I had produced by scraping away the time of my life and my hair roots was "nothing."
+* **呪術界への帰還（27歳）: 終わらない残業への回帰**
+**Return to the Jujutsu World (Age 27): Regression to Unending Overtime**
+結局、金持ちの資産を増やすために働くのも、呪いから人を救うために働くのも、どちらも等しくクソであると結論付け、こちらに戻った日のこと。
+On the day I returned here, having concluded that working to increase the assets of the rich and working to save people from curses are ultimately equally shit.
+五条さんに「おかえり、ナナミン！」と軽薄な声で絡まれた瞬間、私の人生における平穏な日々は完全に終わりを告げたと確信しました。
+The moment I was bothered by Gojo-san with a frivolous voice saying, "Welcome back, Nanamin!", I was convinced that the peaceful days in my life had completely come to an end.
+
+いかがでしょうか。一つ一つは、他人に話すのも憚られるほど些細なことです。
+How is that. One by one, they are such trivial things that I even hesitate to speak of them to others.
+
+しかし、これらの小さな絶望が静かに、そして確実に降り積もることで、人は「社会」という理不尽なシステムに適応するための分厚い皮膚を手に入れる。それが大人になるということです。子供は決して、己の毛根の減少やパンの終売で世界の構造を悟ったりはしませんから。
+However, as these small despairs quietly and certainly pile up, a person obtains the thick skin needed to adapt to the unreasonable system known as "society." That is what it means to become an adult. Children will never realize the structure of the world through the decrease of their hair roots or the discontinuation of bread, after all.
+
+では、私はこれから定時上がりで帰らせていただきます。残業は嫌いなので。
+Well then, I will be taking my leave and going home on time now. Because I hate overtime.
