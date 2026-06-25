@@ -2051,39 +2051,39 @@ A mysterious announcement echoed across the island. "There is only one condition
 かくして、自らの尊厳（とクールさ）を守るため、他者にPPAPを強制させる慈悲なき戦いが幕を開けた。
 Thus, to protect their own dignity (and coolness), a merciless battle to force the PPAP upon another raised its curtain.
 
-【寒露 知深赤】
-[Kanro Chiuse]
-IQ160の頭脳がフル回転する。知深赤は眼鏡を押し上げ、頭上のリンゴ（すでにペンが刺さっている）の重みを感じた。
-His IQ 160 brain spins at full throttle. Chiuse pushed up his glasses and felt the weight of the apple (with a pen already stuck in it) on his head.
+【寒露 智深赤】
+[Kanro Chihuse]
+IQ160の頭脳がフル回転する。智深赤は眼鏡を押し上げ、頭上のリンゴ（すでにペンが刺さっている）の重みを感じた。
+His IQ 160 brain spins at full throttle. Chihuse pushed up his glasses and felt the weight of the apple (with a pen already stuck in it) on his head.
 「PPAP……。この私が、あんな滑稽なダンスを踊るなど万死に値する。絶対にスネークにやらせる」
 "PPAP... For me to dance such a comical dance is worthy of ten thousand deaths. I will absolutely make Snake do it."
 だが、相手は伝説の傭兵。まともにやり合えば段ボールを被せられ、即座に無力化されるのは自明の理。
 However, the opponent is a legendary mercenary. It is self-evident that fighting him head-on will result in having a cardboard box thrown over him, instantly neutralizing him.
-知深赤が生き残り、かつスネークにPPAPをキメさせるためには、あの男の「弱点」たる存在が不可欠だった。
-For Chiuse to survive and make Snake strike the PPAP pose, the existence of that man's "weakness" was indispensable.
-知深赤は密林を抜け、砂浜へと急ぐ。探すのは、IQ10の無垢なる脅威。
-Chiuse slipped through the jungle and hurried to the sandy beach. What he searches for is the innocent threat with an IQ of 10.
-「いたぞ……。黄雨くん！」
+智深赤が生き残り、かつスネークにPPAPをキメさせるためには、あの男の「弱点」たる存在が不可欠だった。
+For Chihuse to survive and make Snake strike the PPAP pose, the existence of that man's "weakness" was indispensable.
+智深赤は密林を抜け、砂浜へと急ぐ。探すのは、IQ10の無垢なる脅威。
+Chihuse slipped through the jungle and hurried to the sandy beach. What he searches for is the innocent threat with an IQ of 10.
+「いたぞ……。希雨くん！」
 "There he is... Kiu-kun!"
 
-【流野葉 黄雨】
-[Runoha Kiu]
+【流野 希雨】
+[Runo Kiu]
 「ばななー！ まぼろしの、スーパーウルトラハイパーばなな、どこー？」
 "Bananaaa! The phantom, super ultra hyper banana, where are you~?"
-黄雨は頭にバナナを乗せたまま、よだれを垂らして歩いていた。手にはすでに食べかけのバナナ。
+希雨は頭にバナナを乗せたまま、よだれを垂らして歩いていた。手にはすでに食べかけのバナナ。
 Kiu walked while drooling, a banana sitting on his head. In his hand, a half-eaten banana.
 「あ、ちうせ！ まぼろしバナナ、知ってる？」
-"Ah, Chiuse! Do you know the phantom banana?"
+"Ah, Chihuse! Do you know the phantom banana?"
 「ああ、知っているとも。私がIQ160の知識で、最高に美味しいバナナのフランベを作ってあげよう。ただし、私と一緒に行動することが条件だ」
 "Yes, I know of it. With my IQ 160 knowledge, I shall make you the most delicious banana flambé. However, the condition is that you act together with me."
 「ふらんべ！ やるやるー！」
 "Flambé! I'll do it, I'll do it!"
-黄雨が嬉しさのあまり、食べ終わったバナナの皮をポイッと投げ捨てる。
+希雨が嬉しさのあまり、食べ終わったバナナの皮をポイッと投げ捨てる。
 Overjoyed, Kiu tossed away the finished banana peel with a flick.
 「馬鹿っ！ それを踏んだら君は転んで頭を打ってゲームオーバーだ！」
 "You idiot! If you step on that, you'll trip, hit your head, and it's game over!"
-知深赤はダイビングキャッチで皮を回収した。この子供から目を離せば、自滅するか、スネークの罠に引っかかる。知深赤はすでに胃が痛くなるのを感じていた。
-Chiuse retrieved the peel with a diving catch. Taking his eyes off this child meant he would either self-destruct or fall into Snake's trap. Chiuse already felt a stomachache coming on.
+智深赤はダイビングキャッチで皮を回収した。この子供から目を離せば、自滅するか、スネークの罠に引っかかる。智深赤はすでに胃が痛くなるのを感じていた。
+Chihuse retrieved the peel with a diving catch. Taking his eyes off this child meant he would either self-destruct or fall into Snake's trap. Chihuse already felt a stomachache coming on.
 
 【スネーク】
 [Snake]
@@ -2093,8 +2093,8 @@ Chiuse retrieved the peel with a diving catch. Taking his eyes off this child me
 Amidst the dense jungle, a single walking cardboard box. Atop it sits a magnificent pineapple.
 「あの眼鏡の学者にPPAPをやらせる。俺の頭上で完成などさせられてたまるか。だが……問題はあのガキだ」
 "I'll make that bespectacled scholar do the PPAP. As if I'd let them complete it on my head. But... the problem is that brat."
-スネークは段ボールの隙間から、知深赤と合流した黄雨を睨みつけた。あの頭にバナナを乗せた子供。
-Snake glared through the gap in the cardboard box at Kiu, who had met up with Chiuse. That child with a banana on his head.
+スネークは段ボールの隙間から、智深赤と合流した希雨を睨みつけた。あの頭にバナナを乗せた子供。
+Snake glared through the gap in the cardboard box at Kiu, who had met up with Chihuse. That child with a banana on his head.
 彼が手に持つ黄色い果実を突きつけられた瞬間、自らの肉体が強制的に「サレンダー」の姿勢を取ってしまうという恐るべき呪いがかかっているのだ。
 The moment that yellow fruit in his hand is thrust at him, a terrifying curse forces his own body to take a "surrender" posture.
 「正面突破は危険だ。まずはあのバナナ小僧を排除する。レーションの空き缶……いや、奴の習性を利用して罠を張るか」
@@ -2102,31 +2102,31 @@ The moment that yellow fruit in his hand is thrust at him, a terrifying curse fo
 
 【統合】
 [Integrated]
-知深赤と黄雨がジャングルへ足を踏み入れたその時、前方から不自然に動く段ボールが接近してきた。
-Just as Chiuse and Kiu stepped into the jungle, an unnaturally moving cardboard box approached from ahead.
+智深赤と希雨がジャングルへ足を踏み入れたその時、前方から不自然に動く段ボールが接近してきた。
+Just as Chihuse and Kiu stepped into the jungle, an unnaturally moving cardboard box approached from ahead.
 「来たな、伝説の傭兵！」
 "He's here, the legendary mercenary!"
-知深赤が警戒の声を上げる。段ボールがバサリと翻り、中からスネークが姿を現した。その手には、どこから調達したのか「絶妙に黒ずんで滑りやすそうなバナナの皮」が握られている。
-Chiuse raised a voice of caution. The cardboard box flipped open with a rustle, and Snake revealed himself from within. In his hand, procured from who knows where, he gripped an "exquisitely blackened, slippery-looking banana peel."
+智深赤深赤が警戒の声を上げる。段ボールがバサリと翻り、中からスネークが姿を現した。その手には、どこから調達したのか「絶妙に黒ずんで滑りやすそうなバナナの皮」が握られている。
+Chihuse raised a voice of caution. The cardboard box flipped open with a rustle, and Snake revealed himself from within. In his hand, procured from who knows where, he gripped an "exquisitely blackened, slippery-looking banana peel."
 「学者先生、お前の頭のリンゴに、俺のパイナップルを突き刺してやる」
 "Scholar, I'll stab my pineapple into the apple on your head."
-スネークがバナナの皮を黄雨の足元へスライディング投擲する。
+スネークがバナナの皮を希雨の足元へスライディング投擲する。
 Snake sliding-throws the banana peel to Kiu's feet.
 「あ！ ばななの皮！ すべってボケなきゃ！」
 "Ah! A banana peel! I have to slip and be funny!"
-IQ10の芸人魂が火を噴き、黄雨が皮に向かって満面の笑みでダイブしようとする。
+IQ10の芸人魂が火を噴き、希雨が皮に向かって満面の笑みでダイブしようとする。
 His IQ 10 comedian soul breathing fire, Kiu attempts to dive toward the peel with a huge smile.
 「させるかッ！」
 "As if I'd let you!"
-知深赤は胸ポケットから予備のペンを抜き放ち、ダーツの如く投げつけた。ペンはバナナの皮を見事にピン留めし、地面に固定する。
-Chiuse drew a spare pen from his breast pocket and threw it like a dart. The pen magnificently pinned the banana peel, fixing it to the ground.
+智深赤は胸ポケットから予備のペンを抜き放ち、ダーツの如く投げつけた。ペンはバナナの皮を見事にピン留めし、地面に固定する。
+Chihuse drew a spare pen from his breast pocket and threw it like a dart. The pen magnificently pinned the banana peel, fixing it to the ground.
 「なに！？」スネークが驚愕する。
 "What!?" Snake is astonished.
-「今だ、黄雨くん！ ホールドアップだ！」
+「今だ、希雨くん！ ホールドアップだ！」
 "Now, Kiu-kun! Hold-up!"
 「ばなな、ドーン！」
 "Banana, bam!"
-黄雨がポケットから取り出した真新しいバナナを、スネークの眉間に突きつけた。
+希雨がポケットから取り出した真新しいバナナを、スネークの眉間に突きつけた。
 Kiu pulled a brand-new banana from his pocket and thrust it between Snake's eyebrows.
 「くっ……！ バカな、体が……！」
 "Guh...! Impossible, my body is...!"
@@ -2134,30 +2134,30 @@ Kiu pulled a brand-new banana from his pocket and thrust it between Snake's eyeb
 Snake reflexively raised both hands and fell to his knees. It is the moment the legendary mercenary yielded before a single banana.
 「フッ……勝負あったな、スネーク。さあ、大人しく君のパイナップルと私のペンの刺さったリンゴを繋ぎ合わせ、『Ah!』と叫びたまえ」
 "Hmph... the match is decided, Snake. Now, quietly connect your pineapple to my apple with the pen stuck in it, and shout 'Ah!'"
-知深赤が眼鏡を光らせ、勝利を確信したその時だった。
-Just as Chiuse made his glasses glint and was certain of victory.
+智深赤が眼鏡を光らせ、勝利を確信したその時だった。
+Just as Chihuse made his glasses glint and was certain of victory.
 「……あ、これ、まぼろしのバナナじゃないや。普通のバナナだ。モグモグ」
 "...Ah, this isn't the phantom banana. It's a normal banana. Munch munch."
-黄雨が、スネークに突きつけていたバナナの皮を剥き、食べ始めてしまったのだ。
+希雨が、スネークに突きつけていたバナナの皮を剥き、食べ始めてしまったのだ。
 Kiu peeled the banana he was thrusting at Snake and began to eat it.
 「バカ、食べるな！ ホールドアップが解除される！」
 "Idiot, don't eat it! The hold-up will be released!"
 「ペッ」
 "Ptooey"
-黄雨が無邪気に吐き出したバナナの皮が、スネークの頭上のパイナップルにクリーンヒット。
+希雨が無邪気に吐き出したバナナの皮が、スネークの頭上のパイナップルにクリーンヒット。
 The banana peel Kiu innocently spat out scored a clean hit on the pineapple atop Snake's head.
 「……うおっ！？」
 "...Whoa!?"
-バランスを崩したスネークが倒れ込み、その反動でパイナップルが宙を舞う。それは綺麗な弧を描き、知深赤の頭上――ペンの刺さったリンゴのすぐ横に突き刺さった。
-Snake lost his balance and tumbled, and from the recoil, the pineapple danced in the air. It drew a beautiful arc and stabbed right next to the pen-stuck apple—atop Chiuse's head.
+バランスを崩したスネークが倒れ込み、その反動でパイナップルが宙を舞う。それは綺麗な弧を描き、智深赤の頭上――ペンの刺さったリンゴのすぐ横に突き刺さった。
+Snake lost his balance and tumbled, and from the recoil, the pineapple danced in the air. It drew a beautiful arc and stabbed right next to the pen-stuck apple—atop Chihuse's head.
 「な……！？」
 "Wha...!?"
 「惜しかったな、学者先生。PPAPリーチだ」
 "Close one, scholar. It's a PPAP reach."
 スネークは素早く立ち上がると、ニヤリと笑って段ボールを被り、再び茂みへと消えていった。
 Snake quickly stood up, grinned, put the cardboard box over himself, and vanished into the bushes once again.
-残されたのは、頭にリンゴとペンとパイナップル（未接続）を乗せ、屈辱に震える知深赤と、美味しそうにバナナを咀嚼する黄雨だけであった。
-All that remained was Chiuse, trembling in humiliation with an apple, a pen, and a pineapple (unconnected) resting on his head, and Kiu, chewing his banana deliciously.
+残されたのは、頭にリンゴとペンとパイナップル（未接続）を乗せ、屈辱に震える智深赤と、美味しそうにバナナを咀嚼する希雨だけであった。
+All that remained was Chihuse, trembling in humiliation with an apple, a pen, and a pineapple (unconnected) resting on his head, and Kiu, chewing his banana deliciously.
 
 Day 2: 偽りのフランベと滑る死闘
 Day 2: The False Flambé and the Slipping Death Match
@@ -2166,35 +2166,35 @@ Day 2: The False Flambé and the Slipping Death Match
 [(Overall Situation)]
 無人島生活2日目。事態は膠着状態に陥りつつあった。
 Day 2 of deserted island life. The situation was falling into a stalemate.
-寒露 知深赤の頭上には「ペンの刺さったリンゴ」と「パイナップル」が危ういバランスで同居している。
-Atop Kanro Chiuse's head, the "apple with a pen stuck in it" and the "pineapple" coexist in a precarious balance.
-スネークがあと一本「ペン」を突き立てれば、知深赤の敗北（社会的死）が確定するリーチ状態。
-A reach state where if Snake stabs one more "pen," Chiuse's defeat (social death) is confirmed.
-知深赤はこの絶望的な状況を打破すべく、IQ160の頭脳を料理へと全振りしていた。
-To break through this desperate situation, Chiuse was allocating his IQ 160 brain entirely toward cooking.
+寒露 智深赤の頭上には「ペンの刺さったリンゴ」と「パイナップル」が危ういバランスで同居している。
+Atop Kanro Chihuse's head, the "apple with a pen stuck in it" and the "pineapple" coexist in a precarious balance.
+スネークがあと一本「ペン」を突き立てれば、智深赤の敗北（社会的死）が確定するリーチ状態。
+A reach state where if Snake stabs one more "pen," Chihuse's defeat (social death) is confirmed.
+智深赤はこの絶望的な状況を打破すべく、IQ160の頭脳を料理へと全振りしていた。
+To break through this desperate situation, Chihuse was allocating his IQ 160 brain entirely toward cooking.
 
-【寒露 知深赤】
-[Kanro Chiuse]
+【寒露 智深赤】
+[Kanro Chihuse]
 「……重い。そして何より、ダサい」
 "...It's heavy. And above all, it's lame."
-知深赤は頭上のパイナップルの重量に首を痛めながら、自生する謎の黄色い果実を火にかけていた。
-Chiuse, hurting his neck from the weight of the pineapple on his head, placed a mysterious, wild yellow fruit over a fire.
+智深赤は頭上のパイナップルの重量に首を痛めながら、自生する謎の黄色い果実を火にかけていた。
+Chihuse, hurting his neck from the weight of the pineapple on his head, placed a mysterious, wild yellow fruit over a fire.
 IQ160の科学的知見を活かし、絶妙な温度管理でカラメルソースを生成。芳醇な甘い香りがジャングルに漂い始める。
 Utilizing his IQ 160 scientific knowledge, he generated a caramel sauce with exquisite temperature control. A mellow, sweet aroma began to drift through the jungle.
-「スネークは必ず私にペンを刺しに来る。だからこそ、こちらから『極上の餌』で釣り上げ、黄雨くんのホールドアップで制圧する。名付けて『オペレーション・ファントム・フランベ』だ」
+「スネークは必ず私にペンを刺しに来る。だからこそ、こちらから『極上の餌』で釣り上げ、希雨くんのホールドアップで制圧する。名付けて『オペレーション・ファントム・フランベ』だ」
 "Snake will definitely come to stab me with a pen. That is exactly why I will reel him in with 'supreme bait' and suppress him with Kiu-kun's hold-up. I name it 'Operation Phantom Flambé'."
-知深赤は眼鏡のブリッジを中指で押し上げる。すべては計算通り。スネークをおびき寄せるための、偽りの「幻のバナナ」が今、完成しようとしていた。
-Chiuse pushed up the bridge of his glasses with his middle finger. Everything was going according to calculation. The false "Phantom Banana" meant to lure Snake was now on the verge of completion.
+智深赤は眼鏡のブリッジを中指で押し上げる。すべては計算通り。スネークをおびき寄せるための、偽りの「幻のバナナ」が今、完成しようとしていた。
+Chihuse pushed up the bridge of his glasses with his middle finger. Everything was going according to calculation. The false "Phantom Banana" meant to lure Snake was now on the verge of completion.
 
-【流野葉 黄雨】
-[Runoha Kiu]
+【流野 希雨】
+[Runo Kiu]
 「クンクン……！ この匂いは！」
 Sniff sniff...! This smell!"
-ジャングルの奥で蝶々を追いかけていた黄雨のIQ10の脳髄に、強烈な電撃が走った。
+ジャングルの奥で蝶々を追いかけていた希雨のIQ10の脳髄に、強烈な電撃が走った。
 A fierce electric shock ran through the IQ 10 brain of Kiu, who had been chasing butterflies deep in the jungle.
 「まぼろしのバナナだー！！」
 "It's the phantom banana!!"
-黄雨は一直線に匂いの元へとダッシュする。頭の上のバナナを揺らし、よだれを撒き散らしながら。彼の頭の中はすでに「食べる」というコマンドしか存在しない。
+希雨は一直線に匂いの元へとダッシュする。頭の上のバナナを揺らし、よだれを撒き散らしながら。彼の頭の中はすでに「食べる」というコマンドしか存在しない。
 Kiu dashed in a straight line toward the source of the smell. Swaying the banana on his head, scattering drool. In his head, only the command "eat" existed anymore.
 途中で拾った野生のバナナを剥き、歩き食いしながら突き進む。当然のように、剥いた皮はその辺にポイ捨てである。
 He peeled a wild banana he picked up along the way, charging forward while eating on the go. As a matter of course, he tossed the peeled skins aside.
@@ -2209,25 +2209,25 @@ In the wake of his path, vicious "yellow traps" were scattered at equal interval
 Snake holding his breath downwind. In his hand, procured from who knows where, a splendid fountain pen is gripped.
 「あの学者の頭にこれを刺せば、俺の勝ちは揺るぎない。だが、焦るな。あの学者が無策でこんな目立つ行動をするはずがない。罠だ」
 "If I stab this into that scholar's head, my victory is unshakable. But, don't rush. There's no way that scholar would take such conspicuous action without a plan. It's a trap."
-スネークは段ボールを被り直し、気配を完全に消して匍匐（ほふく）前進を開始した。狙うは知深赤の背後、死角からのCQC（近接格闘）による強制ペン刺し。
-Snake put the cardboard box back on, completely erased his presence, and began a belly crawl forward. His target: Chiuse's back, a forced pen-stab via CQC from his blind spot.
+スネークは段ボールを被り直し、気配を完全に消して匍匐（ほふく）前進を開始した。狙うは智深赤の背後、死角からのCQC（近接格闘）による強制ペン刺し。
+Snake put the cardboard box back on, completely erased his presence, and began a belly crawl forward. His target: Chihuse's back, a forced pen-stab via CQC from his blind spot.
 「待たせたな、学者先生。お前をこの島のエンターテイナーにしてやる」
 "Kept you waiting, scholar. I'll make you the entertainer of this island."
 
 【統合】
 [Integrated]
-「さあ、出来たぞ黄雨くん。これが君の望んでいた……」
+「さあ、出来たぞ希雨くん。これが君の望んでいた……」
 "Now, it's done, Kiu-kun. This is what you desired..."
-知深赤がフライパンを掲げた瞬間、背後の茂みから全く足音を立てずに段ボールが急接近した。
-The moment Chiuse raised the frying pan, the cardboard box rapidly approached from the bushes behind him without making a single footstep.
+智深赤がフライパンを掲げた瞬間、背後の茂みから全く足音を立てずに段ボールが急接近した。
+The moment Chihuse raised the frying pan, the cardboard box rapidly approached from the bushes behind him without making a single footstep.
 「もらったッ！」
 "I've got you!"
-段ボールが弾け飛び、スネークが空高く跳躍する。太陽を背に受け、万年筆を握りしめたその姿はまさに死神。狙うは知深赤の頭上のパイナップル！
-The cardboard box burst away, and Snake leapt high into the sky. With the sun at his back, gripping the fountain pen, he looked exactly like a god of death. His target is the pineapple on Chiuse's head!
+段ボールが弾け飛び、スネークが空高く跳躍する。太陽を背に受け、万年筆を握りしめたその姿はまさに死神。狙うは智深赤の頭上のパイナップル！
+The cardboard box burst away, and Snake leapt high into the sky. With the sun at his back, gripping the fountain pen, he looked exactly like a god of death. His target is the pineapple on Chihuse's head!
 「フッ、引っかかったな！」
 "Hmph, you fell for it!"
-知深赤は不敵に笑う。彼の足元には、先ほど黄雨から回収しておいた「バナナの皮」が、スネークの着地地点に緻密な計算の元に配置されていた。スネークが着地した瞬間、無様に転倒することは物理学的に確定している。
-Chiuse smiled fearlessly. At his feet, the "banana peels" he had retrieved from Kiu earlier were arranged at Snake's landing point based on meticulous calculations. It was a physical certainty that Snake would stumble ungracefully the moment he landed.
+智深赤は不敵に笑う。彼の足元には、先ほど希雨から回収しておいた「バナナの皮」が、スネークの着地地点に緻密な計算の元に配置されていた。スネークが着地した瞬間、無様に転倒することは物理学的に確定している。
+Chihuse smiled fearlessly. At his feet, the "banana peels" he had retrieved from Kiu earlier were arranged at Snake's landing point based on meticulous calculations. It was a physical certainty that Snake would stumble ungracefully the moment he landed.
 「ちいぃっ！？」
 "Tch!?"
 空中のスネークは、眼下の凶悪なトラップに気づいた。伝説の傭兵の反射神経が限界を超え、空中で強引に体を捻って着地軌道をズラす。
@@ -2236,12 +2236,12 @@ Snake in mid-air noticed the vicious trap below. The legendary mercenary's refle
 However, it was then.
 「まぼろしのばななーーー！！ あッ！ ばななの皮！ すべってボケなきゃ！！」
 "The phantom bananaaaa!! Ah! A banana peel! I have to slip and be funny!!"
-凄まじい勢いで突進してきた黄雨が、知深赤のトラップ（バナナの皮）を目ざとく発見。本能の赴くままに、満面の笑みでヘッドスライディングを決めたのである。
-Kiu, who had charged in with tremendous momentum, sharply spotted Chiuse's trap (the banana peels). Following his instincts, he executed a head-sliding dive with a huge smile.
-「なっ、黄雨くん！？ 違う、それはスネーク用の……！」
+凄まじい勢いで突進してきた希雨が、智深赤のトラップ（バナナの皮）を目ざとく発見。本能の赴くままに、満面の笑みでヘッドスライディングを決めたのである。
+Kiu, who had charged in with tremendous momentum, sharply spotted Chihuse's trap (the banana peels). Following his instincts, he executed a head-sliding dive with a huge smile.
+「なっ、希雨くん！？ 違う、それはスネーク用の……！」
 "Wha, Kiu-kun!? No, that's for Snake...!"
-知深赤の悲鳴も虚しく、見事に滑って宙を舞った黄雨は、空中で体を捻っていたスネークにミサイルの如く激突した。
-Chiuse's scream was in vain, and Kiu, who slipped brilliantly and flew through the air, crashed like a missile into Snake, who was twisting his body mid-air.
+智深赤の悲鳴も虚しく、見事に滑って宙を舞った希雨は、空中で体を捻っていたスネークにミサイルの如く激突した。
+Chihuse's scream was in vain, and Kiu, who slipped brilliantly and flew through the air, crashed like a missile into Snake, who was twisting his body mid-air.
 「ぐはあっ！」
 "Guhah!"
 「あはは、すべったー！」
@@ -2250,27 +2250,27 @@ Chiuse's scream was in vain, and Kiu, who slipped brilliantly and flew through t
 The two caused a massive crash in the sky. From the impact, the fountain pen gripped in Snake's hand was knocked away and soared high into the heavens.
 「ペンが！ まずい、落ちてくる！」
 "The pen! This is bad, it's falling!"
-知深赤が見上げると、万年筆はキラキラと回転しながら、あろうことか知深赤の頭上のパイナップルめがけて真っ直ぐ落下してくるではないか。
-When Chiuse looked up, the fountain pen was spinning and sparkling, and of all things, falling straight down toward the pineapple on his head.
+智深赤が見上げると、万年筆はキラキラと回転しながら、あろうことか智深赤の頭上のパイナップルめがけて真っ直ぐ落下してくるではないか。
+When Chihuse looked up, the fountain pen was spinning and sparkling, and of all things, falling straight down toward the pineapple on his head.
 「ひぃぃぃッ！？」
 "Hiiiik!?"
-知深赤はIQ160の頭脳を捨て、ただのパニック状態の青年と化して横っ飛びに回避した。
-Abandoning his IQ 160 brain, Chiuse turned into a mere panicked youth and leaped sideways to evade.
+智深赤はIQ160の頭脳を捨て、ただのパニック状態の青年と化して横っ飛びに回避した。
+Abandoning his IQ 160 brain, Chihuse turned into a mere panicked youth and leaped sideways to evade.
 ズスッ……！
 Thud...!
-万年筆は、知深赤が避けた直後の地面に突き刺さった。間一髪、PPAP完成は免れた。
-The fountain pen stabbed into the ground right after Chiuse dodged it. By a hair's breadth, he escaped the completion of the PPAP.
-「い、今だ！ 黄雨くん、ホールドアップを！」
+万年筆は、智深赤が避けた直後の地面に突き刺さった。間一髪、PPAP完成は免れた。
+The fountain pen stabbed into the ground right after Chihuse dodged it. By a hair's breadth, he escaped the completion of the PPAP.
+「い、今だ！ 希雨くん、ホールドアップを！」
 "N-Now! Kiu-kun, the hold-up!"
-砂まみれになりながら知深赤が叫ぶ。
-Chiuse shouted while covered in sand.
+砂まみれになりながら智深赤が叫ぶ。
+Chihuse shouted while covered in sand.
 「うん！ ばなな、ドーン！」
 "Yeah! Banana, bam!"
-黄雨がスネークにバナナを突きつける。しかし、スネークは動じなかった。
+希雨がスネークにバナナを突きつける。しかし、スネークは動じなかった。
 Kiu thrust his banana at Snake. However, Snake remained unfazed.
 「……甘いな、小僧」
 "...Naive, brat."
-スネークの目の前にあるのは、バナナではなかった。黄雨が突進の途中で食べ尽くし、ただの「中身のないペラペラの皮」と化した残骸だったのだ。
+スネークの目の前にあるのは、バナナではなかった。希雨が突進の途中で食べ尽くし、ただの「中身のないペラペラの皮」と化した残骸だったのだ。
 What was in front of Snake's eyes was not a banana. It was a remnant that Kiu had completely eaten during his charge, turning it into merely a "flimsy peel with no contents."
 「あ、食べちゃってた。テヘ」
 "Ah, I ate it. Teehee."
@@ -2278,14 +2278,14 @@ What was in front of Snake's eyes was not a banana. It was a remnant that Kiu ha
 "You idiottt!?"
 「CQCの基本を教えてやろう」
 "I'll teach you the basics of CQC."
-スネークが黄雨の足を払い、その隙に素早く自身の段ボールを回収する。
+スネークが希雨の足を払い、その隙に素早く自身の段ボールを回収する。
 Snake swept Kiu's legs, and in that opening, quickly retrieved his cardboard box.
 「リーチは変わらないぜ、学者先生。次は外さない」
 "The reach hasn't changed, scholar. I won't miss the next one."
 段ボールを被ったスネークは、煙玉のごとく巻き上がった砂埃に紛れ、再びジャングルへと消えていった。
 Snake, donning the cardboard box, blended into the dust cloud that billowed like a smoke bomb, and vanished back into the jungle.
-残されたのは、丹精込めて作った「偽・幻のバナナ」を黄雨に無慈悲に完食され、頭上に重いパイナップルを乗せたまま呆然と立ち尽くす知深赤だけであった。
-All that remained was Chiuse, standing dumbfounded with a heavy pineapple still on his head, his painstakingly crafted "Fake Phantom Banana" mercilessly consumed by Kiu.
+残されたのは、丹精込めて作った「偽・幻のバナナ」を希雨に無慈悲に完食され、頭上に重いパイナップルを乗せたまま呆然と立ち尽くす智深赤だけであった。
+All that remained was Chihuse, standing dumbfounded with a heavy pineapple still on his head, his painstakingly crafted "Fake Phantom Banana" mercilessly consumed by Kiu.
 
 Day 3: 飛来する硬質バナナとタクティカル・ペンの脅威
 Day 3: The Flying Hard Banana and the Threat of the Tactical Pen
@@ -2294,32 +2294,32 @@ Day 3: The Flying Hard Banana and the Threat of the Tactical Pen
 [(Overall Situation)]
 無人島生活3日目。事態は急転直下、極限の緊張状態を迎えていた。
 Day 3 of deserted island life. The situation took a sudden turn, reaching a state of extreme tension.
-頭上の「ペンの刺さったリンゴ」と「パイナップル」の合計重量により、寒露 知深赤の首の筋肉は悲鳴を上げている。
-Due to the combined weight of the "apple with a pen stuck in it" and the "pineapple" on his head, Kanro Chiuse's neck muscles were screaming.
+頭上の「ペンの刺さったリンゴ」と「パイナップル」の合計重量により、寒露 智深赤の首の筋肉は悲鳴を上げている。
+Due to the combined weight of the "apple with a pen stuck in it" and the "pineapple" on his head, Kanro Chihuse's neck muscles were screaming.
 「これ以上の長期戦は私の頸椎がもたない。明日（Day4）で必ず決着をつける」。
 "My cervical vertebrae won't last if this drags on any longer. I will absolutely settle this tomorrow (Day 4)."
-知深赤は背水の陣を敷き、IQ160の頭脳を物理工学と心理学の融合へと注ぎ込んだ。
-Chiuse burned his bridges and poured his IQ 160 brain into the fusion of physical engineering and psychology.
+智深赤は背水の陣を敷き、IQ160の頭脳を物理工学と心理学の融合へと注ぎ込んだ。
+Chihuse burned his bridges and poured his IQ 160 brain into the fusion of physical engineering and psychology.
 
-【寒露 知深赤】
-[Kanro Chiuse]
+【寒露 智深赤】
+[Kanro Chihuse]
 「フフ……完成した。スネーク、君の敗北を決定づける究極の罠がな」
 "Hehe... It's complete. The ultimate trap that will determine your defeat, Snake."
-知深赤の目の前には、島の巨大な葉と樹液で精巧に組み上げられた「特製・迷彩段ボール箱」が置かれていた。側面に描かれた『オレンジのロゴマーク』に至るまで、伝説の傭兵の琴線に触れるよう完璧に偽造されている。
-In front of Chiuse was a "special camouflage cardboard box" elaborately assembled using giant leaves and tree sap from the island. Even the "orange logo mark" drawn on the side was perfectly forged to strike a chord with the legendary mercenary.
+智深赤の目の前には、島の巨大な葉と樹液で精巧に組み上げられた「特製・迷彩段ボール箱」が置かれていた。側面に描かれた『オレンジのロゴマーク』に至るまで、伝説の傭兵の琴線に触れるよう完璧に偽造されている。
+In front of Chihuse was a "special camouflage cardboard box" elaborately assembled using giant leaves and tree sap from the island. Even the "orange logo mark" drawn on the side was perfectly forged to strike a chord with the legendary mercenary.
 「いかに警戒しようと、あの男の『段ボールを被りたい』という根源的欲求には抗えない。奴がこれを被った瞬間、仕掛けられたツルが作動し、私の頭上のパイナップルが奴の頭へと射出される寸法だ」
 "No matter how cautious he is, he cannot resist his fundamental desire to 'wear a cardboard box.' The moment he puts this on, a rigged vine will activate, and the pineapple on my head will be launched onto his."
-知深赤は胸ポケットで輝く予備のペンを撫でる。
-Chiuse caressed the spare pen shining in his breast pocket.
+智深赤は胸ポケットで輝く予備のペンを撫でる。
+Chihuse caressed the spare pen shining in his breast pocket.
 「パイナップルさえ奴に押し付ければ、あとはこのペンを刺すだけ。逆転のPPAPだ」
 "If I can just force the pineapple onto him, all that's left is to stab him with this pen. It's a comeback PPAP."
 
-【流野葉 黄雨】
-[Runoha Kiu]
+【流野 希雨】
+[Runo Kiu]
 「かたーいバナナ、みーつけた！」
 "I found a haaard banana!"
-知深赤が罠の構築に心血を注いでいる間、黄雨は海岸で奇妙な形状の漂流物を拾っていた。黄色く塗装された、美しい三日月型の木片――すなわち「ブーメラン」である。
-While Chiuse was pouring his heart and soul into constructing the trap, Kiu had picked up a strangely shaped piece of driftwood on the beach. A piece of wood painted yellow in a beautiful crescent shape—in other words, a "boomerang."
+智深赤が罠の構築に心血を注いでいる間、希雨は海岸で奇妙な形状の漂流物を拾っていた。黄色く塗装された、美しい三日月型の木片――すなわち「ブーメラン」である。
+While Chihuse was pouring his heart and soul into constructing the trap, Kiu had picked up a strangely shaped piece of driftwood on the beach. A piece of wood painted yellow in a beautiful crescent shape—in other words, a "boomerang."
 「これは、きっと『とぶバナナ』だ！ えーい！」
 "This must be a 'flying banana'! Ei!"
 IQ10の無邪気な力感で放たれたブーメランは、ヒュンヒュンと風を切ってジャングルの上空へと消えていく。
@@ -2331,49 +2331,49 @@ To him, everything yellow on this island was a banana, and there were only three
 [Snake]
 「……いいセンスだ」
 "...Good taste."
-双眼鏡越しに知深赤の「特製・迷彩段ボール箱」を視認したスネークは、思わず感嘆の息を漏らした。フォルム、迷彩のパターン、そしてあのロゴ。ダンボールへの異常な愛着を持つスネークの魂が激しく揺さぶられる。
-Spotting Chiuse's "special camouflage cardboard box" through his binoculars, Snake involuntarily let out a sigh of admiration. The form, the camouflage pattern, and that logo. Snake's soul, possessing an abnormal attachment to cardboard boxes, was violently shaken.
+双眼鏡越しに智深赤の「特製・迷彩段ボール箱」を視認したスネークは、思わず感嘆の息を漏らした。フォルム、迷彩のパターン、そしてあのロゴ。ダンボールへの異常な愛着を持つスネークの魂が激しく揺さぶられる。
+Spotting Chihuse's "special camouflage cardboard box" through his binoculars, Snake involuntarily let out a sigh of admiration. The form, the camouflage pattern, and that logo. Snake's soul, possessing an abnormal attachment to cardboard boxes, was violently shaken.
 「だが、あからさま過ぎる。俺のCQC（近接格闘）ならぬCQP（Close Quarters Pen-stabbing）の射程に入るためのデコイか」
 "But, it's too obvious. A decoy to get me into range of my CQP (Close Quarters Pen-stabbing), not CQC (Close Quarters Combat)?"
-スネークの手には、昨夜から硬い流木を削り出して作った「木製タクティカル・ペン」が握られていた。重心バランスは完璧。これなら10メートル先からでも、知深赤の頭上のパイナップルに正確に突き刺すことができる。
-In Snake's hand, he gripped a "wooden tactical pen" he had carved out of hard driftwood since last night. The center of gravity balance is perfect. With this, he could accurately stab the pineapple on Chiuse's head even from 10 meters away.
+スネークの手には、昨夜から硬い流木を削り出して作った「木製タクティカル・ペン」が握られていた。重心バランスは完璧。これなら10メートル先からでも、智深赤の頭上のパイナップルに正確に突き刺すことができる。
+In Snake's hand, he gripped a "wooden tactical pen" he had carved out of hard driftwood since last night. The center of gravity balance is perfect. With this, he could accurately stab the pineapple on Chihuse's head even from 10 meters away.
 「学者先生。その重荷、俺が終わらせてやる」
 "Scholar. I will end that heavy burden of yours."
 
 【統合】
 [Integrated]
-ジャングルの広場。知深赤は特製段ボール箱の隣で、わざとらしく隙を見せて立っていた。
-A clearing in the jungle. Chiuse stood next to the special cardboard box, deliberately showing an opening.
+ジャングルの広場。智深赤は特製段ボール箱の隣で、わざとらしく隙を見せて立っていた。
+A clearing in the jungle. Chihuse stood next to the special cardboard box, deliberately showing an opening.
 （来い、スネーク……！ その箱の魔力に抗えるはずがない！）
 (Come, Snake...! There's no way you can resist the magic of that box!)
 「もらったぞ、学者先生！」
 "I've got you, scholar!"
-茂みが揺れ、スネークが姿を現した。しかし、彼は段ボール箱には目もくれず、知深赤から10メートル離れた位置で投擲の構えをとった。
-The bushes shook, and Snake revealed himself. However, without even glancing at the cardboard box, he took a throwing stance from a position 10 meters away from Chiuse.
+茂みが揺れ、スネークが姿を現した。しかし、彼は段ボール箱には目もくれず、智深赤から10メートル離れた位置で投擲の構えをとった。
+The bushes shook, and Snake revealed himself. However, without even glancing at the cardboard box, he took a throwing stance from a position 10 meters away from Chihuse.
 「なっ！？ 箱に入らないだと！？」
 "What!? He's not getting in the box!?"
 「戦場の基本だ。甘すぎる罠は、罠そのものが命取りになる！」
 "It's a basic of the battlefield. A trap that's too sweet becomes fatal in itself!"
-スネークの腕が鞭のようにしなり、木製タクティカル・ペンが必殺の弾丸となって放たれた。狙うは知深赤の頭上、パイナップルのど真ん中！
-Snake's arm snapped like a whip, and the wooden tactical pen was launched as a lethal bullet. The target: the dead center of the pineapple on Chiuse's head!
+スネークの腕が鞭のようにしなり、木製タクティカル・ペンが必殺の弾丸となって放たれた。狙うは智深赤の頭上、パイナップルのど真ん中！
+Snake's arm snapped like a whip, and the wooden tactical pen was launched as a lethal bullet. The target: the dead center of the pineapple on Chihuse's head!
 （万事休す……！）
 (All is lost...!)
-IQ160の演算能力が「回避不能・敗北確定」を弾き出し、知深赤が絶望の目を閉じたその瞬間。
-The moment Chiuse's IQ 160 processing power calculated "evasion impossible, defeat certain" and he closed his eyes in despair.
+IQ160の演算能力が「回避不能・敗北確定」を弾き出し、智深赤が絶望の目を閉じたその瞬間。
+The moment Chihuse's IQ 160 processing power calculated "evasion impossible, defeat certain" and he closed his eyes in despair.
 『ヒュンヒュンヒュンヒュンッ！』
 Swish swish swish swish!
 「ばなな、かえってきたー！」
 "The banana came baaack!"
-はるか上空から飛来した黄雨の「かたいバナナ（ブーメラン）」が、知深赤の頭上スレスレを猛スピードで通過した。
-Kiu's "hard banana (boomerang)" flying in from high above passed right over Chiuse's head at breakneck speed.
+はるか上空から飛来した希雨の「かたいバナナ（ブーメラン）」が、智深赤の頭上スレスレを猛スピードで通過した。
+Kiu's "hard banana (boomerang)" flying in from high above passed right over Chihuse's head at breakneck speed.
 ガキィィィンッ！！
 CLAAAANG!!
 「なにッ！？」スネークが驚愕に目を見開く。
 "What!?" Snake opened his eyes wide in astonishment.
-あろうことか、黄雨の放ったブーメランが、空中でタクティカル・ペンの軌道にクリティカルヒット。ペンはあらぬ方向へと弾き飛ばされた。
+あろうことか、希雨の放ったブーメランが、空中でタクティカル・ペンの軌道にクリティカルヒット。ペンはあらぬ方向へと弾き飛ばされた。
 To his amazement, the boomerang Kiu threw scored a critical hit on the tactical pen's trajectory in mid-air. The pen was knocked away in an unexpected direction.
-だが、奇跡はそれだけでは終わらない。弾かれたブーメランはその勢いのまま、知深赤の頭上の「パイナップル」を強烈に弾き飛ばしたのだ。
-However, the miracle did not end there. The deflected boomerang, maintaining its momentum, violently knocked off the "pineapple" on Chiuse's head.
+だが、奇跡はそれだけでは終わらない。弾かれたブーメランはその勢いのまま、智深赤の頭上の「パイナップル」を強烈に弾き飛ばしたのだ。
+However, the miracle did not end there. The deflected boomerang, maintaining its momentum, violently knocked off the "pineapple" on Chihuse's head.
 「うおっ！？」
 "Whoa!?"
 宙を舞うパイナップル。それは美しい放物線を描き――あろうことか、投擲のフォロースルーで無防備になっていたスネークの頭上に「スポッ」と見事に鎮座したのである。
@@ -2382,12 +2382,12 @@ The pineapple dancing in the air. It drew a beautiful parabola—and, of all thi
 "............"
 「…………」
 "............"
-静まり返るジャングル。スネークの頭にはパイナップル。知深赤の頭には、ペンの刺さったリンゴだけが残された。
-The jungle fell completely silent. A pineapple on Snake's head. On Chiuse's head, only the apple with a pen stuck in it remained.
+静まり返るジャングル。スネークの頭にはパイナップル。智深赤の頭には、ペンの刺さったリンゴだけが残された。
+The jungle fell completely silent. A pineapple on Snake's head. On Chihuse's head, only the apple with a pen stuck in it remained.
 「……フ、フフフ」
 "...He, hehehe."
-知深赤は震える手で眼鏡を押し上げると、全身から冷や汗を吹き出しながら言い放った。
-Chiuse pushed up his glasses with a trembling hand, and while breaking out in a cold sweat all over his body, he declared.
+智深赤は震える手で眼鏡を押し上げると、全身から冷や汗を吹き出しながら言い放った。
+Chihuse pushed up his glasses with a trembling hand, and while breaking out in a cold sweat all over his body, he declared.
 「け、計算通りだ、スネーク！ これで君はパイナップルの呪縛に囚われた！」（※大嘘である）
 "J-Just as calculated, Snake! With this, you are trapped by the curse of the pineapple!" (This is a massive lie.)
 「……チッ。まさかあの小僧の投擲物まで計算に入れていたとはな。恐るべきIQの無駄遣い……いや、智謀だ」
@@ -2396,11 +2396,11 @@ Chiuse pushed up his glasses with a trembling hand, and while breaking out in a 
 Feeling the weight of the pineapple on his head, Snake clicked his tongue and readied himself. "But, now we are both at reach."
 「ああ、そうだ。私の『ペン・アップル』か、君の『パイナップル』か」
 "Ah, yes. My 'Pen-Apple', or your 'Pineapple'."
-知深赤が胸ポケットから最後のペンを引き抜き、スネークと睨み合う。
-Chiuse pulled out his final pen from his breast pocket and glared at Snake.
+智深赤が胸ポケットから最後のペンを引き抜き、スネークと睨み合う。
+Chihuse pulled out his final pen from his breast pocket and glared at Snake.
 「あー！ ぼくのバナナ、どっかいっちゃった！」
 "Ah! My banana went somewhere!"
-空気を一切読まない黄雨の声が響く中、夕陽が二人の男と一つのフルーツ人間を赤く染め上げていく。
+空気を一切読まない希雨の声が響く中、夕陽が二人の男と一つのフルーツ人間を赤く染め上げていく。
 Amidst the sound of Kiu's voice, reading the room not at all, the setting sun dyed the two men and one fruit-human red.
 いよいよ明日、この狂気に満ちたフルーツ・サバイバルに終止符が打たれる――！
 Tomorrow, at last, this madness-filled fruit survival will be brought to an end—!
@@ -2412,25 +2412,25 @@ Day 4: The Phantom Banana Trap and the Ultimate PPAP
 [(Overall Situation)]
 絶海の無人島生活、運命の4日目。朝靄が晴れる中、三人の男たちは決戦の地たる海岸に集結しつつあった。
 The 4th and fateful day of living on the deserted island. As the morning mist cleared, the three men were converging on the beach, the site of the final battle.
-スネークの頭上にはパイナップル。知深赤の頭上にはペンの刺さったリンゴ（アップルペン）。残るピースは、知深赤の胸ポケットで鈍く光る「最後の一本のペン」のみ。
-On Snake's head is a pineapple. On Chiuse's head is an apple with a pen stuck in it (Apple-Pen). The remaining piece is only the "last single pen" glowing dully in Chiuse's breast pocket.
+スネークの頭上にはパイナップル。智深赤の頭上にはペンの刺さったリンゴ（アップルペン）。残るピースは、智深赤の胸ポケットで鈍く光る「最後の一本のペン」のみ。
+On Snake's head is a pineapple. On Chihuse's head is an apple with a pen stuck in it (Apple-Pen). The remaining piece is only the "last single pen" glowing dully in Chihuse's breast pocket.
 誰が誰の頭上でこの狂気の果実タワーを完成させるのか。慈悲なき頭脳戦は、いよいよ最終局面（クライマックス）を迎える。
 Who will complete this mad fruit tower on whose head? The merciless battle of wits is finally reaching its final phase (climax).
 
-【寒露 知深赤】
-[Kanro Chiuse]
+【寒露 智深赤】
+[Kanro Chihuse]
 「もはや小細工は通用しない。スネークのCQC（近接格闘）の射程外から、いかにして彼にアップルペンとペンを突き立てるか……」
 "Cheap tricks will no longer work. How to stab him with the Apple-Pen and the pen from outside the range of Snake's CQC (Close Quarters Combat)..."
-知深赤は砂浜に数式を書き殴り、IQ160の頭脳を限界までオーバークロックさせていた。
-Chiuse scribbled math formulas on the sandy beach, overclocking his IQ 160 brain to its limits.
+智深赤は砂浜に数式を書き殴り、IQ160の頭脳を限界までオーバークロックさせていた。
+Chihuse scribbled math formulas on the sandy beach, overclocking his IQ 160 brain to its limits.
 「到達したぞ。唯一の解、名付けて『流体力学式・超加速アップルペン・トルペード』だ」
 "I have reached it. The only solution, named the 'Fluid Dynamics Super-Accelerated Apple-Pen Torpedo'."
-自らの足で走れば必ず迎撃される。ならば、この島に無数に落ちている「黄雨の残したバナナの皮」の摩擦係数（ほぼゼロ）を利用し、自らを弾丸と化して滑り込むしかない。
+自らの足で走れば必ず迎撃される。ならば、この島に無数に落ちている「希雨の残したバナナの皮」の摩擦係数（ほぼゼロ）を利用し、自らを弾丸と化して滑り込むしかない。
 If I run on my own two feet, I will inevitably be intercepted. Then, my only choice is to utilize the friction coefficient (nearly zero) of "the banana peels left by Kiu" scattered countlessly across this island, turning myself into a bullet to slide in.
-「問題は、加速中の私の隙をどうカバーするかだが……ふふ、そのための最強のデコイ（黄雨くん）がいるじゃないか」
+「問題は、加速中の私の隙をどうカバーするかだが……ふふ、そのための最強のデコイ（希雨くん）がいるじゃないか」
 "The problem is how to cover my opening during acceleration... Hehe, isn't that what the ultimate decoy (Kiu-kun) is for?"
-知深赤は眼鏡を光らせ、狂気と叡智の入り混じった笑みを浮かべた。
-Chiuse made his glasses glint, wearing a smile that mixed madness and wisdom.
+智深赤は眼鏡を光らせ、狂気と叡智の入り混じった笑みを浮かべた。
+Chihuse made his glasses glint, wearing a smile that mixed madness and wisdom.
 
 【スネーク】
 [Snake]
@@ -2443,30 +2443,30 @@ Snake was meticulously applying "paint" behind a rock on the beach. What he comp
 小僧さえいなくなれば、あのひ弱な学者など敵ではない。スネークは頭上のパイナップルを揺らしながら、自らの完璧な潜入工作（スニーキング・ミッション）の勝利を確信し、黄色い段ボールを被って砂浜へと這い出た。
 Once the brat is gone, that feeble scholar is no match for me. Shaking the pineapple on his head, Snake, convinced of the victory of his perfect infiltration operation (sneaking mission), put on the yellow cardboard box and crawled out onto the beach.
 
-【流野葉 黄雨】
-[Runoha Kiu]
+【流野 希雨】
+[Runo Kiu]
 「おなかすいたー。きのうのブーメランバナナ、どこいっちゃったのかなー」
 "I'm hungry~. I wonder where my boomerang banana from yesterday went~."
-黄雨はトボトボと砂浜を歩いていた。頭のバナナもしおれ気味である。その時、彼のIQ10の視界に、砂浜でモゾモゾと動く「巨大な黄色い物体」が飛び込んできた。
+希雨はトボトボと砂浜を歩いていた。頭のバナナもしおれ気味である。その時、彼のIQ10の視界に、砂浜でモゾモゾと動く「巨大な黄色い物体」が飛び込んできた。
 Kiu was trudging along the sandy beach. The banana on his head was looking a bit wilted, too. At that moment, into his IQ 10 field of vision jumped a "giant yellow object" wriggling on the sand.
 「……あッ！！」
 "...Ah!!"
-黄雨の瞳孔が開く。完璧な黄色、魅惑の湾曲フォルム、そして熟成の証であるシュガースポット。
+希雨の瞳孔が開く。完璧な黄色、魅惑の湾曲フォルム、そして熟成の証であるシュガースポット。
 Kiu's pupils dilated. A perfect yellow, an enchanting curved form, and the sugar spots, proof of ripeness.
 「まぼろしの、スーパーウルトラハイパー・メガバナナだーーー！！！」
 "It's the phantom, super ultra hyper mega bananaaaaa!!!"
-黄雨は歓喜の雄叫びを上げ、尋常ではない猛ダッシュで巨大バナナ（スネーク）へと突撃を開始した。
+希雨は歓喜の雄叫びを上げ、尋常ではない猛ダッシュで巨大バナナ（スネーク）へと突撃を開始した。
 Kiu let out a roar of delight and began his charge toward the giant banana (Snake) with an extraordinary, mad dash.
 
 【統合】
 [Integrated]
 「かかったな、小僧！」
 "I've got you, brat!"
-巨大バナナ箱の中でスネークがほくそ笑む。黄雨が接触した瞬間、箱を展開して捕獲する算段だ。
+巨大バナナ箱の中でスネークがほくそ笑む。希雨が接触した瞬間、箱を展開して捕獲する算段だ。
 Inside the giant banana box, Snake chuckled to himself. He calculated to deploy the box and capture him the moment Kiu made contact.
 「いまいくよ、まぼろしのバナナちゃーん！」
 "I'm coming for you, phantom banana-chan!"
-黄雨が両手を広げてダイブする。しかし、彼の底抜けの愛情はスネークの計算を凌駕していた。黄雨は箱を「捕獲」するのではなく、箱ごと全力で「ハグ（抱擁）」したのである。
+希雨が両手を広げてダイブする。しかし、彼の底抜けの愛情はスネークの計算を凌駕していた。希雨は箱を「捕獲」するのではなく、箱ごと全力で「ハグ（抱擁）」したのである。
 Kiu dove with both arms spread wide. However, his bottomless affection surpassed Snake's calculations. Kiu did not "capture" the box, but gave the box and all his full-power "hug (embrace)."
 「メチャクチャ重い！？ ばなな、ギューーッ！！」
 "It's super heavy!? Banana, squeeeeze!!"
@@ -2476,23 +2476,23 @@ Kiu dove with both arms spread wide. However, his bottomless affection surpassed
 Due to an affectionate hug that would put a gorilla to shame, Snake inside the cardboard box was rendered immobile.
 「今だ！！」
 "Now!!"
-その隙を見逃す知深赤ではない。彼は海岸に設置しておいた「バナナの皮ロード」のスタート地点に立つと、躊躇なくその上に飛び乗った。
-Chiuse wouldn't miss that opening. Standing at the starting point of the "Banana Peel Road" he had set up on the beach, he jumped onto it without hesitation.
+その隙を見逃す智深赤ではない。彼は海岸に設置しておいた「バナナの皮ロード」のスタート地点に立つと、躊躇なくその上に飛び乗った。
+Chihuse wouldn't miss that opening. Standing at the starting point of the "Banana Peel Road" he had set up on the beach, he jumped onto it without hesitation.
 「IQ160が導き出した摩擦係数ゼロの世界……見せてやる、スネーク！ これが物理学の勝利だ！」
 "A world of zero friction derived by an IQ of 160... I'll show you, Snake! This is the victory of physics!"
 ズザアァァァァッ！！
 Ssssshhhk!!
-知深赤はバナナの皮の上をスケートボードのように滑走し、信じられない猛スピードでスネークたちへと突進していく。
-Chiuse skated across the banana peels like a skateboard, rushing toward Snake and the others at an unbelievable speed.
+智深赤はバナナの皮の上をスケートボードのように滑走し、信じられない猛スピードでスネークたちへと突進していく。
+Chihuse skated across the banana peels like a skateboard, rushing toward Snake and the others at an unbelievable speed.
 「ちぃぃっ！ 学者先生ッ！！」
 "Tch! Scholar!!"
-スネークは伝説の傭兵の意地で段ボール箱を強引に引き裂き、ハグしていた黄雨を振り払って立ち上がった。目前には超高速で滑り込んでくる知深赤。
-With the sheer willpower of a legendary mercenary, Snake forcibly tore the cardboard box apart, shook off the hugging Kiu, and stood up. Before him was Chiuse sliding in at super high speed.
+スネークは伝説の傭兵の意地で段ボール箱を強引に引き裂き、ハグしていた希雨を振り払って立ち上がった。目前には超高速で滑り込んでくる智深赤。
+With the sheer willpower of a legendary mercenary, Snake forcibly tore the cardboard box apart, shook off the hugging Kiu, and stood up. Before him was Chihuse sliding in at super high speed.
 「その加速ごと、CQCで海へ投げ飛ばしてやる！」
 "I'll throw you into the sea with CQC, acceleration and all!"
 スネークが迎撃の構えをとった、まさにその瞬間。
 Snake took an interception stance, right at that very moment.
-振り払われ、尻餅をついていた黄雨が、ポケットからスッ……と「普通のバナナ」を取り出し、スネークの背中にピタリと突きつけた。
+振り払われ、尻餅をついていた希雨が、ポケットからスッ……と「普通のバナナ」を取り出し、スネークの背中にピタリと突きつけた。
 Kiu, who had been shaken off and fell on his butt, smoothly pulled a "regular banana" from his pocket... and pressed it perfectly against Snake's back.
 「……ばなな、ホールドアップ」
 "...Banana, hold-up."
@@ -2504,18 +2504,18 @@ Snake's body completely stiffened due to the curse. The arm he raised to interce
 "I-Impossible... For me to let someone take my back...! My body, it won't move!"
 「チェックメイトだ、スネーク！！」
 "Checkmate, Snake!!"
-猛スピードで滑走してきた知深赤が、スネークの眼前で高々と跳躍する。
-Chiuse, having slid in at breakneck speed, leapt high in front of Snake's eyes.
+猛スピードで滑走してきた智深赤が、スネークの眼前で高々と跳躍する。
+Chihuse, having slid in at breakneck speed, leapt high in front of Snake's eyes.
 彼は空中で自らの頭上から「ペンの刺さったリンゴ（アップルペン）」を引っこ抜くと、それを硬直しているスネークの頭上の「パイナップル」の上にガシャン！とスタッキングした。
 In mid-air, he yanked the "apple with a pen stuck in it (Apple-Pen)" off his own head and stacked it with a clack! right onto the "pineapple" on the stiffened Snake's head.
 「I have a Pen...（私にはペンがある）」
 "I have a Pen..."
-知深赤が胸ポケットから最後の一本を引き抜く。
-Chiuse pulled out the final pen from his breast pocket.
+智深赤が胸ポケットから最後の一本を引き抜く。
+Chihuse pulled out the final pen from his breast pocket.
 「I have a Pineapple-Apple-Pen...（そして君の頭上にはパイナップル・アップル・ペンがある）」
 "I have a Pineapple-Apple-Pen..."
-知深赤が万感の思いを込めて、ペンをスネークの頭上のタワーの頂点へと振り下ろす。
-With a flood of emotions, Chiuse swung the pen down onto the very top of the tower on Snake's head.
+智深赤が万感の思いを込めて、ペンをスネークの頭上のタワーの頂点へと振り下ろす。
+With a flood of emotions, Chihuse swung the pen down onto the very top of the tower on Snake's head.
 「Uh！（アァッ！）」
 "Uh!"
 ズスゥゥゥンッ……！！
@@ -2524,8 +2524,8 @@ Thuuud...!!
 The last pen stabbed in perfectly, and it was finally completed on Snake's head.
 「Pen-Pineapple-Apple-Pen（ペン・パイナップル・アップル・ペン）！！」
 "Pen-Pineapple-Apple-Pen!!"
-知深赤が着地してポーズを決めた瞬間、島中にファンファーレのような電子音が鳴り響いた。
-The moment Chiuse landed and struck a pose, an electronic sound like a fanfare echoed throughout the island.
+智深赤が着地してポーズを決めた瞬間、島中にファンファーレのような電子音が鳴り響いた。
+The moment Chihuse landed and struck a pose, an electronic sound like a fanfare echoed throughout the island.
 『CONDITION CLEARED. PPAP COMPLETED.』
 "CONDITION CLEARED. PPAP COMPLETED."
 「……くっ、この俺が、こんな間抜けなタワーを頭に乗せられるとは……ん？」
@@ -2538,12 +2538,12 @@ Right after Snake contorted his face in humiliation, his body began to move on i
 Due to the combo of the hold-up and the island's announcement, the legendary mercenary was subjected to the ultimate humiliation of being forcibly made to dance the PPAP.
 「あはは！ おじさん、ダンスじょうずー！」
 "Ahaha! Mister, you're good at dancing~!"
-黄雨がバナナを食べながら手を叩いて笑う。
+希雨がバナナを食べながら手を叩いて笑う。
 Kiu laughed and clapped his hands while eating a banana.
 「ふはははは！ 見たかスネーク、これが智謀の果てにある勝利の舞だ！」
 "Fuhahahaha! Did you see that, Snake? This is the dance of victory at the end of resourcefulness!"
-知深赤が勝ち誇って眼鏡を押し上げる。
-Chiuse triumphantly pushed up his glasses.
+智深赤が勝ち誇って眼鏡を押し上げる。
+Chihuse triumphantly pushed up his glasses.
 その時、轟音と共に無人島の空に一機の救出ヘリコプターが現れた。ロープ梯子が降ろされ、三人の無人島サバイバルはここに劇的な幕引きを迎えたのである。
 At that moment, with a roaring sound, a single rescue helicopter appeared in the sky above the deserted island. A rope ladder was lowered, and the three men's deserted island survival reached a dramatic conclusion right here.
 スネークが最後までノリノリのステップで梯子を登らされたことは、彼自身の機密事項（トップシークレット）として永遠に封印されることとなった。
@@ -2651,8 +2651,8 @@ Now then, let the curtain rise on Day 1 of deserted island life, swirling with m
 🌴 Day 1: 漂着と遭遇、そしてフルーツの目覚め
 🌴 Day 1: Washed Ashore and Encounters, and the Awakening of Fruits
 
-🍎 (りんご)：寒露 知深赤（かんろ ちうせ）
-🍎  (Apple): Kanro Chiuse
+🍎 (りんご)：寒露 智深赤（かんろ ちうせ）
+🍎  (Apple): Kanro Chihuse
 
 波の音で意識が覚醒した。即座に現状を分析する。見渡す限りの海、熱帯植物。間違いなく無人島だ。
 My consciousness awakened to the sound of waves. I immediately analyzed the current situation. An ocean stretching as far as the eye can see, tropical plants. It is undoubtedly a deserted island.
@@ -2678,8 +2678,8 @@ In other words, I must complete that on someone else's head. That is my victory 
 「ばななぁ……」
 "Bananaaa..."
 
-背後から、知性を一ミリも感じさせない間延びした声が聞こえた。振り返ると、頭にバナナを乗せた子供がいた。手にはすでに食べかけのバナナを持っている。流野葉 黄雨（るのは きう）だ。
-From behind, I heard a drawn-out voice that made me feel not a single millimeter of intellect. Looking back, there was a child with a banana on his head. In his hand, he already holds a half-eaten banana. It is Runoha Kiu.
+背後から、知性を一ミリも感じさせない間延びした声が聞こえた。振り返ると、頭にバナナを乗せた子供がいた。手にはすでに食べかけのバナナを持っている。流野 希雨（るのは きう）だ。
+From behind, I heard a drawn-out voice that made me feel not a single millimeter of intellect. Looking back, there was a child with a banana on his head. In his hand, he already holds a half-eaten banana. It is Runo Kiu.
 
 彼の顔を見た瞬間、私は彼のおおよそのIQを『10』と弾き出した。だが、単独行動はリスクが高い。私は彼を利用し、盾とすることに決めた。
 The moment I saw his face, I calculated his approximate IQ to be "10." However, acting alone is highly risky. I decided to use him and make him my shield.
@@ -2687,7 +2687,7 @@ The moment I saw his face, I calculated his approximate IQ to be "10." However, 
 「おい、そこの君」
 "Hey, you there."
 
-私が声をかけた瞬間、黄雨は食べ終わったバナナの皮を足元に放り投げ、目を輝かせた。
+私が声をかけた瞬間、希雨は食べ終わったバナナの皮を足元に放り投げ、目を輝かせた。
 The moment I called out, Kiu threw the peel of the banana he finished eating at his feet and his eyes sparkled.
 
 「あ！ バナナの皮！ 踏んで転ばなきゃ！」
@@ -2696,14 +2696,14 @@ The moment I called out, Kiu threw the peel of the banana he finished eating at 
 「やめろ馬鹿！！」
 "Stop it, you idiot!!"
 
-私は全力でダイブし、黄雨が皮を踏む直前で彼を突き飛ばした。ここで彼に頭を打たれてゲームオーバーになられては、手駒が減る。
+私は全力でダイブし、希雨が皮を踏む直前で彼を突き飛ばした。ここで彼に頭を打たれてゲームオーバーになられては、手駒が減る。
 I dove with all my might and shoved Kiu away just before he stepped on the peel. If he hits his head here and gets a game over, my pawns will decrease.
 
 「君の行動は私の予測範囲内だが、その自爆ギミックは厄介極まりない。以後、皮の管理は私が行う！」
 "Your actions are within the range of my predictions, but that self-destruct gimmick is extremely troublesome. From now on, I will manage the peels!"
 
-🍌 (ばなな)：流野葉 黄雨（るのは きう）
-🍌  (Banana): Runoha Kiu
+🍌 (ばなな)：流野 希雨（るのは きう）
+🍌  (Banana): Runo Kiu
 
 「ばななぁ……。あれ、ここどこ？ まぁいっか」
 "Bananaaa... Huh, where is this? Oh well."
@@ -2723,8 +2723,8 @@ When I happily tried to step on it, the glasses guy flew over and shoved me.
 「痛っ……何するのさ、眼鏡リンゴ！」
 "Ouch... What are you doing, Glasses-Apple!"
 
-「私は寒露 知深赤だ。いいか黄雨、君は幻のバナナを探しているのだろう？ 私の高度な調理知識があれば、そのバナナを極上のスイーツにできるぞ」
-"I am Kanro Chiuse. Listen, Kiu, you are looking for the phantom banana, right? With my advanced culinary knowledge, I can turn that banana into a superb sweet."
+「私は寒露 智深赤だ。いいか希雨、君は幻のバナナを探しているのだろう？ 私の高度な調理知識があれば、そのバナナを極上のスイーツにできるぞ」
+"I am Kanro Chihuse. Listen, Kiu, you are looking for the phantom banana, right? With my advanced culinary knowledge, I can turn that banana into a superb sweet."
 
 「ほんと！？ 幻のバナナ、一緒に探してくれるの！？」
 "Really!? You'll help me look for the phantom banana!?"
@@ -2777,17 +2777,17 @@ The cardboard box slowly and silently began to move.
 【Day 1 終了時点の状況】
 [Status at the End of Day 1]
 
-知深赤（リンゴ）：黄雨と合流。バナナの皮トラップを警戒しつつ、誰かの頭上でのPPAP完成を企む。
-Chiuse (Apple): Met up with Kiu. While wary of banana peel traps, he plots to complete the PPAP atop someone else's head.
+智深赤（リンゴ）：希雨と合流。バナナの皮トラップを警戒しつつ、誰かの頭上でのPPAP完成を企む。
+Chihuse (Apple): Met up with Kiu. While wary of banana peel traps, he plots to complete the PPAP atop someone else's head.
 
-黄雨（バナナ）：知深赤を信用し、幻のバナナ探しを開始。手にバナナ（武器）を装備。
-Kiu (Banana): Trusting Chiuse, he begins his search for the phantom banana. Equipped with a banana (weapon) in hand.
+希雨（バナナ）：智深赤を信用し、幻のバナナ探しを開始。手にバナナ（武器）を装備。
+Kiu (Banana): Trusting Chihuse, he begins his search for the phantom banana. Equipped with a banana (weapon) in hand.
 
-スネーク：黄雨のバナナホールドアップを恐れ、段ボール状態で知深赤（リンゴ）への奇襲を計画中。
-Snake: Fearing Kiu's banana hold-up, he is planning a surprise attack on Chiuse (Apple) while in his cardboard box state.
+スネーク：希雨のバナナホールドアップを恐れ、段ボール状態で智深赤（リンゴ）への奇襲を計画中。
+Snake: Fearing Kiu's banana hold-up, he is planning a surprise attack on Chihuse (Apple) while in his cardboard box state.
 
-さて、Day 2はいよいよスネークが知深赤に接触を図りそうですが、知深赤はどのようにスネークの段ボール奇襲を迎え撃つでしょうか？ それとも黄雨の突拍子もない行動が事態をかき乱すでしょうか？
-Now, it seems Snake is finally about to make contact with Chiuse on Day 2, but how will Chiuse intercept Snake's cardboard box surprise attack? Or will Kiu's unpredictable actions throw the situation into chaos?
+さて、Day 2はいよいよスネークが智深赤に接触を図りそうですが、智深赤はどのようにスネークの段ボール奇襲を迎え撃つでしょうか？ それとも希雨の突拍子もない行動が事態をかき乱すでしょうか？
+Now, it seems Snake is finally about to make contact with Chihuse on Day 2, but how will Chihuse intercept Snake's cardboard box surprise attack? Or will Kiu's unpredictable actions throw the situation into chaos?
 
 Day 2の展開について、ご希望のシチュエーションやキャラクターに取らせたい行動があれば教えてください！ もちろん、このまま私にDay 2の展開をお任せいただいても構いません。
 Please let me know if you have any desired situations or actions you'd like the characters to take for the events of Day 2! Of course, you are also welcome to leave the development of Day 2 entirely up to me.
@@ -2809,8 +2809,8 @@ Now then, let the curtain rise on **Day 1** of deserted island life, swirling wi
 ### 🌴 Day 1: 漂着と遭遇、そしてフルーツの目覚め
 ### 🌴 Day 1: Washed Ashore and Encounters, and the Awakening of Fruits
 
-#### 🍎 (りんご)：寒露 知深赤（かんろ ちうせ）
-#### 🍎  (Apple): Kanro Chiuse
+#### 🍎 (りんご)：寒露 智深赤（かんろ ちうせ）
+#### 🍎  (Apple): Kanro Chihuse
 
 波の音で意識が覚醒した。即座に現状を分析する。見渡す限りの海、熱帯植物。間違いなく無人島だ。
 My consciousness awakened to the sound of waves. I immediately analyzed the current situation. An ocean stretching as far as the eye can see, tropical plants. It is undoubtedly a deserted island.
@@ -2836,8 +2836,8 @@ In other words, **I must complete that on someone else's head**. That is my vict
 「ばななぁ……」
 "Bananaaa..."
 
-背後から、知性を一ミリも感じさせない間延びした声が聞こえた。振り返ると、頭にバナナを乗せた子供がいた。手にはすでに食べかけのバナナを持っている。流野葉 黄雨（るのは きう）だ。
-From behind, I heard a drawn-out voice that made me feel not a single millimeter of intellect. Looking back, there was a child with a banana on his head. In his hand, he already holds a half-eaten banana. It is Runoha Kiu.
+背後から、知性を一ミリも感じさせない間延びした声が聞こえた。振り返ると、頭にバナナを乗せた子供がいた。手にはすでに食べかけのバナナを持っている。流野 希雨（るのは きう）だ。
+From behind, I heard a drawn-out voice that made me feel not a single millimeter of intellect. Looking back, there was a child with a banana on his head. In his hand, he already holds a half-eaten banana. It is Runo Kiu.
 
 彼の顔を見た瞬間、私は彼のおおよそのIQを『10』と弾き出した。だが、単独行動はリスクが高い。私は彼を利用し、盾とすることに決めた。
 The moment I saw his face, I calculated his approximate IQ to be "10." However, acting alone is highly risky. I decided to use him and make him my shield.
@@ -2845,7 +2845,7 @@ The moment I saw his face, I calculated his approximate IQ to be "10." However, 
 「おい、そこの君」
 "Hey, you there."
 
-私が声をかけた瞬間、黄雨は食べ終わったバナナの皮を足元に放り投げ、目を輝かせた。
+私が声をかけた瞬間、希雨は食べ終わったバナナの皮を足元に放り投げ、目を輝かせた。
 The moment I called out, Kiu threw the peel of the banana he finished eating at his feet and his eyes sparkled.
 
 「あ！ バナナの皮！ 踏んで転ばなきゃ！」
@@ -2854,14 +2854,14 @@ The moment I called out, Kiu threw the peel of the banana he finished eating at 
 「やめろ馬鹿！！」
 "Stop it, you idiot!!"
 
-私は全力でダイブし、黄雨が皮を踏む直前で彼を突き飛ばした。ここで彼に頭を打たれてゲームオーバーになられては、手駒が減る。
+私は全力でダイブし、希雨が皮を踏む直前で彼を突き飛ばした。ここで彼に頭を打たれてゲームオーバーになられては、手駒が減る。
 I dove with all my might and shoved Kiu away just before he stepped on the peel. If he hits his head here and gets a game over, my pawns will decrease.
 
 「君の行動は私の予測範囲内だが、その自爆ギミックは厄介極まりない。以後、皮の管理は私が行う！」
 "Your actions are within the range of my predictions, but that self-destruct gimmick is extremely troublesome. From now on, I will manage the peels!"
 
-#### 🍌 (ばなな)：流野葉 黄雨（るのは きう）
-#### 🍌  (Banana): Runoha Kiu
+#### 🍌 (ばなな)：流野 希雨（るのは きう）
+#### 🍌  (Banana): Runo Kiu
 
 「ばななぁ……。あれ、ここどこ？ まぁいっか」
 "Bananaaa... Huh, where is this? Oh well."
@@ -2881,8 +2881,8 @@ When I happily tried to step on it, the glasses guy flew over and shoved me.
 「痛っ……何するのさ、眼鏡リンゴ！」
 "Ouch... What are you doing, Glasses-Apple!"
 
-「私は寒露 知深赤だ。いいか黄雨、君は幻のバナナを探しているのだろう？ 私の高度な調理知識があれば、そのバナナを極上のスイーツにできるぞ」
-"I am Kanro Chiuse. Listen, Kiu, you are looking for the phantom banana, right? With my advanced culinary knowledge, I can turn that banana into a superb sweet."
+「私は寒露 智深赤だ。いいか希雨、君は幻のバナナを探しているのだろう？ 私の高度な調理知識があれば、そのバナナを極上のスイーツにできるぞ」
+"I am Kanro Chihuse. Listen, Kiu, you are looking for the phantom banana, right? With my advanced culinary knowledge, I can turn that banana into a superb sweet."
 
 「ほんと！？ 幻のバナナ、一緒に探してくれるの！？」
 "Really!? You'll help me look for the phantom banana!?"
@@ -2936,17 +2936,17 @@ The cardboard box slowly and silently began to move.
 
 **【Day 1 終了時点の状況】**
 **[Status at the End of Day 1]**
-* **知深赤（リンゴ）**：黄雨と合流。バナナの皮トラップを警戒しつつ、誰かの頭上でのPPAP完成を企む。
-* **Chiuse (Apple)**: Met up with Kiu. While wary of banana peel traps, he plots to complete the PPAP atop someone else's head.
-* **黄雨（バナナ）**：知深赤を信用し、幻のバナナ探しを開始。手にバナナ（武器）を装備。
-* **Kiu (Banana)**: Trusting Chiuse, he begins his search for the phantom banana. Equipped with a banana (weapon) in hand.
-* **スネーク**：黄雨のバナナホールドアップを恐れ、段ボール状態で知深赤（リンゴ）への奇襲を計画中。
-* **Snake**: Fearing Kiu's banana hold-up, he is planning a surprise attack on Chiuse (Apple) while in his cardboard box state.
+* **智深赤（リンゴ）**：希雨と合流。バナナの皮トラップを警戒しつつ、誰かの頭上でのPPAP完成を企む。
+* **Chihuse (Apple)**: Met up with Kiu. While wary of banana peel traps, he plots to complete the PPAP atop someone else's head.
+* **希雨（バナナ）**：智深赤を信用し、幻のバナナ探しを開始。手にバナナ（武器）を装備。
+* **Kiu (Banana)**: Trusting Chihuse, he begins his search for the phantom banana. Equipped with a banana (weapon) in hand.
+* **スネーク**：希雨のバナナホールドアップを恐れ、段ボール状態で智深赤（リンゴ）への奇襲を計画中。
+* **Snake**: Fearing Kiu's banana hold-up, he is planning a surprise attack on Chihuse (Apple) while in his cardboard box state.
 
 ---
 
-さて、Day 2はいよいよスネークが知深赤に接触を図りそうですが、知深赤はどのようにスネークの段ボール奇襲を迎え撃つでしょうか？ それとも黄雨の突拍子もない行動が事態をかき乱すでしょうか？ 
-Now, it seems Snake is finally about to make contact with Chiuse on Day 2, but how will Chiuse intercept Snake's cardboard box surprise attack? Or will Kiu's unpredictable actions throw the situation into chaos?
+さて、Day 2はいよいよスネークが智深赤に接触を図りそうですが、智深赤はどのようにスネークの段ボール奇襲を迎え撃つでしょうか？ それとも希雨の突拍子もない行動が事態をかき乱すでしょうか？ 
+Now, it seems Snake is finally about to make contact with Chihuse on Day 2, but how will Chihuse intercept Snake's cardboard box surprise attack? Or will Kiu's unpredictable actions throw the situation into chaos?
 
 Day 2の展開について、ご希望のシチュエーションやキャラクターに取らせたい行動があれば教えてください！ もちろん、このまま私にDay 2の展開をお任せいただいても構いません。
 Please let me know if you have any desired situations or actions you'd like the characters to take for the events of Day 2! Of course, you are also welcome to leave the development of Day 2 entirely up to me.
@@ -2959,8 +2959,8 @@ Deserted Island Survival Day 2, their fates finally intersect. Please behold a d
 ### 🌴 Day 2: 密林の攻防、動く段ボールと黄色い凶器
 ### 🌴 Day 2: Offense and Defense in the Jungle, a Moving Cardboard Box and a Yellow Deadly Weapon
 
-#### 🍎 (りんご)：寒露 知深赤（かんろ ちうせ）
-#### 🍎  (Apple): Kanro Chiuse
+#### 🍎 (りんご)：寒露 智深赤（かんろ ちうせ）
+#### 🍎  (Apple): Kanro Chihuse
 
 密林の探索を開始して数時間。私のIQ160の頭脳は、周囲の環境音から明らかな「異音」を察知していた。
 A few hours after beginning the exploration of the jungle. My IQ 160 brain had detected a clear "abnormal sound" from the surrounding environmental noises.
@@ -2977,10 +2977,10 @@ There's no need to look back. At a distance of about 5 meters behind us, **an un
 奴の狙いは明らかだ。隙を見て私にあの忌まわしい段ボールを被せ、私の頭上の『アッポーペン』に何かを仕掛ける気だ。断じて許されない。私のクールな尊厳に関わる。
 His aim is obvious. He intends to seize an opening, cover me with that detestable cardboard box, and do something to the "Apple-Pen" on my head. I absolutely will not allow it. It concerns my cool dignity.
 
-私は隣を歩く黄雨を見た。
+私は隣を歩く希雨を見た。
 I looked at Kiu, who was walking next to me.
 
-「黄雨、腹は減っていないか？ そこのバナナを食べたまえ」
+「希雨、腹は減っていないか？ そこのバナナを食べたまえ」
 "Kiu, aren't you hungry? Go ahead and eat that banana."
 
 「えっ、いいの！？ もぐもぐ……」
@@ -2989,7 +2989,7 @@ I looked at Kiu, who was walking next to me.
 「よし、皮は私が預かろう」
 "Good, I will take care of the peel."
 
-私は黄雨からバナナの皮を素早く回収し、歩きながら脳内で物理演算を行った。追跡者の歩幅、段ボールの死角、そして地面の傾斜。
+私は希雨からバナナの皮を素早く回収し、歩きながら脳内で物理演算を行った。追跡者の歩幅、段ボールの死角、そして地面の傾斜。
 I quickly collected the banana peel from Kiu and performed physics calculations in my head as I walked. The tracker's stride, the blind spot of the cardboard box, and the slope of the ground.
 
 「……摩擦係数ゼロの罠。完璧な配置だ」
@@ -3031,8 +3031,8 @@ The friction on the sole of my planted right foot suddenly vanished completely. 
 受け身を取り、即座に立ち上がろうとした俺の背中に、冷たい声……いや、間の抜けた声が響いた。
 Just as I broke my fall and tried to stand up immediately, a cold voice... no, a goofy voice echoed at my back.
 
-#### 🍌 (ばなな)：流野葉 黄雨（るのは きう）
-#### 🍌  (Banana): Runoha Kiu
+#### 🍌 (ばなな)：流野 希雨（るのは きう）
+#### 🍌  (Banana): Runo Kiu
 
 「あーっ！ 眼鏡リンゴがあげたバナナの皮で、変なおじさんが転んでる！」
 "Ahhh! A weird old man slipped on the banana peel that Glasses-Apple gave me!"
@@ -3067,10 +3067,10 @@ A terribly trembling voice leaked from the old man's mouth.
 パイナップルおじさんは、両手をゆっくりと頭の後ろで組み、膝をついた。すっごくプルプル震えている。バナナをあげようとしただけなのに、なんでこんなに怯えてるんだろう？
 The pineapple old man slowly clasped both hands behind his head and fell to his knees. He's trembling and shaking a lot. I just tried to give him a banana, so why is he so scared?
 
-そこへ、眼鏡をクイッと押し上げながら、知深赤が歩み寄ってきた。
-Then, Chiuse walked over while adjusting his glasses with a push.
+そこへ、眼鏡をクイッと押し上げながら、智深赤が歩み寄ってきた。
+Then, Chihuse walked over while adjusting his glasses with a push.
 
-「ふっ……計算通りだ。よくやった黄雨。君のその『無意識のホールドアップ』、どうやらこの男には絶大な効果があるようだな」
+「ふっ……計算通りだ。よくやった希雨。君のその『無意識のホールドアップ』、どうやらこの男には絶大な効果があるようだな」
 "Heh... just as calculated. Well done, Kiu. It seems your 'unconscious hold-up' has an immense effect on this man."
 
 ぼくはよくわからないけど、褒められたみたいだから「えへへ」と笑ってバナナをかじった。
@@ -3080,9 +3080,9 @@ I didn't really understand, but it seemed I was praised, so I laughed "Ehehe" an
 
 **【Day 2 終了時点の状況】**
 **[Status at the End of Day 2]**
-* **知深赤（リンゴ）**：自らの頭脳と黄雨を利用し、スネークを無力化。主導権を握る。
-* **Chiuse (Apple)**: Utilizing his own brain and Kiu, he neutralizes Snake. He seizes the initiative.
-* **黄雨（バナナ）**：純粋な親切心でスネークを背後からバナナでホールドアップし、最強のストッパーとして機能中。
+* **智深赤（リンゴ）**：自らの頭脳と希雨を利用し、スネークを無力化。主導権を握る。
+* **Chihuse (Apple)**: Utilizing his own brain and Kiu, he neutralizes Snake. He seizes the initiative.
+* **希雨（バナナ）**：純粋な親切心でスネークを背後からバナナでホールドアップし、最強のストッパーとして機能中。
 * **Kiu (Banana)**: Out of pure kindness, he holds Snake up from behind with a banana, currently functioning as the ultimate stopper.
 * **スネーク（パイナップル）**：致命的なトラップ（皮）に引っかかり、さらに最大のトラウマ（バナナホールドアップ）を食らって完全降伏状態。
 * **Snake (Pineapple)**: Caught in a fatal trap (peel), and furthermore hit with his greatest trauma (banana hold-up), he is in a state of complete surrender.
@@ -3092,8 +3092,8 @@ I didn't really understand, but it seemed I was praised, so I laughed "Ehehe" an
 スネークが早くもバナナのトラウマによって絶体絶命のピンチに陥ってしまいました！ 
 Snake has already fallen into a desperate pinch due to his banana trauma!
 
-PPAPの完成（スネークのパイナップルと、知深赤のリンゴ＆ペン）が目前に迫っていますが、クールな二人はどうにかして相手に完成させようと足掻くはずです。
-The completion of the PPAP (Snake's pineapple, and Chiuse's apple & pen) is imminent, but the two cool guys will surely struggle somehow to make the other complete it.
+PPAPの完成（スネークのパイナップルと、智深赤のリンゴ＆ペン）が目前に迫っていますが、クールな二人はどうにかして相手に完成させようと足掻くはずです。
+The completion of the PPAP (Snake's pineapple, and Chihuse's apple & pen) is imminent, but the two cool guys will surely struggle somehow to make the other complete it.
 
 Day 3は、捕虜となったスネークの反撃（あるいは料理スキルによる懐柔）から始めましょうか？ それとも幻のバナナの発見による急展開にいたしましょうか？
 For Day 3, shall we start with a counterattack from the captured Snake (or pacification via his cooking skills)? Or shall we go with a sudden development through the discovery of the phantom banana?
@@ -3106,13 +3106,13 @@ Day 3, we finally plunge into a three-way melee. Please behold a chaotic develop
 ### 🌴 Day 3: 幻のバナナの謀略、空を舞う万年筆
 ### 🌴 Day 3: The Phantom Banana Stratagem, the Fountain Pen Dancing in the Sky
 
-#### 🍎 (りんご)：寒露 知深赤（かんろ ちうせ）
-#### 🍎  (Apple): Kanro Chiuse
+#### 🍎 (りんご)：寒露 智深赤（かんろ ちうせ）
+#### 🍎  (Apple): Kanro Chihuse
 
 無様だ。伝説の傭兵とやらが、子供の持つ一本のバナナに震え上がっている。
 Unsightly. The so-called legendary mercenary is trembling in fear at a single banana held by a child.
 
-「チェックメイトだ、スネーク。黄雨、そのまま彼をホールドアップしておきたまえ」
+「チェックメイトだ、スネーク。希雨、そのまま彼をホールドアップしておきたまえ」
 "Checkmate, Snake. Kiu, keep him held up just like that."
 
 私は眼鏡を押し上げ、彼に近づいた。勝利条件は『誰かの頭上でPPAPを完成させる』こと。つまり、私の頭上の『ペン刺しリンゴ』と、胸ポケットの『ペン』を、こいつの頭の『パイナップル』に突き刺せば私の勝ちだ。
@@ -3133,13 +3133,13 @@ It was the exact moment I laid my hand on the pen in my breast pocket.
 スネークが、低い、しかし謎の説得力を持った声で呟いた。
 Snake muttered in a low voice, yet one that held a mysterious persuasiveness.
 
-私は即座に叫んだ。「黄雨、騙されるな！ 物理的かつ植物学的に、こんな浅瀬のジャングルに幻のバナナが自生している確率は……！」
+私は即座に叫んだ。「希雨、騙されるな！ 物理的かつ植物学的に、こんな浅瀬のジャングルに幻のバナナが自生している確率は……！」
 I shouted immediately. "Kiu, don't be fooled! Physically and botanically, the probability of a phantom banana growing wild in a shallow jungle like this is...!"
 
 「えっ！？ 幻のバナナ！？」
 "Eh!? The phantom banana!?"
 
-私のIQ160の解説は、IQ10の純粋な食欲の前には無力だった。黄雨は完全に気を取られ、スネークの背中からバナナを離してしまった。
+私のIQ160の解説は、IQ10の純粋な食欲の前には無力だった。希雨は完全に気を取られ、スネークの背中からバナナを離してしまった。
 My IQ 160 explanation was powerless before the pure appetite of an IQ 10. Kiu was completely distracted and took the banana away from Snake's back.
 
 「しまった、ホールドアップが解除された！」
@@ -3154,8 +3154,8 @@ My IQ 160 explanation was powerless before the pure appetite of an IQ 10. Kiu wa
 背中のプレッシャーが消えた瞬間、俺の細胞が蘇った。子供の純真さを利用するのは心が痛むが、背に腹は代えられない。（実際に投げたのは、先程捕獲した黄色いアマガエルだ。レーションの足しにしようと思っていたが役に立った）
 The moment the pressure on my back vanished, my cells revived. It pains my heart to exploit a child's innocence, but beggars can't be choosers. (What I actually threw was a yellow tree frog I captured earlier. I was planning to add it to my rations, but it served a purpose.)
 
-俺は弾かれたように反転し、潰れた段ボールを拾い上げると同時に、リンゴの男（知深赤）へ向かって跳躍した。
-I spun around as if repelled, picking up the crushed cardboard box while simultaneously leaping toward the apple man (Chiuse).
+俺は弾かれたように反転し、潰れた段ボールを拾い上げると同時に、リンゴの男（智深赤）へ向かって跳躍した。
+I spun around as if repelled, picking up the crushed cardboard box while simultaneously leaping toward the apple man (Chihuse).
 
 「俺の頭のパイナップルをくれてやる……！ お前の頭のリンゴの上にな！」
 "I'll give you the pineapple on my head...! Right on top of the apple on your head!"
@@ -3172,8 +3172,8 @@ The perfect CQC (Close Quarters Combat) distance. I reached out for the pen in h
 背後で、子供の間の抜けた声と、何かを「踏んで滑る」絶望的な摩擦音が響いた。
 Behind me, the goofy voice of the child and the despairing friction sound of "stepping on something and slipping" echoed.
 
-#### 🍌 (ばなな)：流野葉 黄雨（るのは きう）
-#### 🍌  (Banana): Runoha Kiu
+#### 🍌 (ばなな)：流野 希雨（るのは きう）
+#### 🍌  (Banana): Runo Kiu
 
 「おじさん、嘘つき！ あれバナナじゃない、カエルじゃん！」
 "Mister, you liar! That's not a banana, it's a frog!"
@@ -3193,8 +3193,8 @@ I turned around, fuming with anger. At that moment, I stomped with all my might 
 ドンッ！！
 *BAM!!*
 
-ぼくの頭突きが、眼鏡のお兄さん（知深赤）の背中にクリーンヒットした。
-My headbutt scored a clean hit on the back of the glasses guy (Chiuse).
+ぼくの頭突きが、眼鏡のお兄さん（智深赤）の背中にクリーンヒットした。
+My headbutt scored a clean hit on the back of the glasses guy (Chihuse).
 
 「ぐはっ！？ 予測不能の軌道……ッ！」
 "Guh!? An unpredictable trajectory...!"
@@ -3225,18 +3225,18 @@ I was rolling on the ground, staring up at it blankly. "Wow, it's pretty."
 **【Day 3 終了時点の状況】**
 **[Status at the End of Day 3]**
 
-* **知深赤（リンゴ）**：黄雨の予想外の突撃を受け、スネークと正面衝突。胸のペンを天高く弾き飛ばされてしまう。
-* **Chiuse (Apple)**: Received Kiu's unexpected charge, colliding head-on with Snake. The pen on his chest is sent flying high into the sky.
-* **黄雨（バナナ）**：スネークの嘘に騙され、自ら落としたバナナで滑って特攻。完全に台風の目。
+* **智深赤（リンゴ）**：希雨の予想外の突撃を受け、スネークと正面衝突。胸のペンを天高く弾き飛ばされてしまう。
+* **Chihuse (Apple)**: Received Kiu's unexpected charge, colliding head-on with Snake. The pen on his chest is sent flying high into the sky.
+* **希雨（バナナ）**：スネークの嘘に騙され、自ら落としたバナナで滑って特攻。完全に台風の目。
 * **Kiu (Banana)**: Fooled by Snake's lie, slipped on the banana he dropped himself, and launched a suicide attack. Completely the eye of the storm.
-* **スネーク（パイナップル）**：起死回生のブラフで反撃に出るも、知深赤と激突。
-* **Snake (Pineapple)**: Launched a counterattack with a desperate bluff, but collided with Chiuse.
+* **スネーク（パイナップル）**：起死回生のブラフで反撃に出るも、智深赤と激突。
+* **Snake (Pineapple)**: Launched a counterattack with a desperate bluff, but collided with Chihuse.
 
 **現在のフィールド状況**：
 **Current Field Status**:
 
-知深赤（頭にペン刺しリンゴ）と、スネーク（頭にパイナップル）が至近距離でもつれ合い、その二人の頭上に**『最後のペン』が重力に従って落下してきている**という絶体絶命の超スローモーション状態。
-Chiuse (with the pen-stuck apple on his head) and Snake (with the pineapple on his head) are tangled up at point-blank range, and above their heads, **the 'final pen' is falling down following gravity** in a desperate super slow-motion state.
+智深赤（頭にペン刺しリンゴ）と、スネーク（頭にパイナップル）が至近距離でもつれ合い、その二人の頭上に**『最後のペン』が重力に従って落下してきている**という絶体絶命の超スローモーション状態。
+Chihuse (with the pen-stuck apple on his head) and Snake (with the pineapple on his head) are tangled up at point-blank range, and above their heads, **the 'final pen' is falling down following gravity** in a desperate super slow-motion state.
 
 ---
 
@@ -3246,8 +3246,8 @@ Next time, Day 4 is finally the time for a resolution (?)!
 空から落ちてくる一本のペン。これがどちらの頭（フルーツ）に刺さるかで、屈辱のPPAP完成者が決まってしまいます。
 A single pen falling from the sky. Depending on whose head (fruit) this stabs into, the humiliated completer of the PPAP will be decided.
 
-この落下するペンに対し、知深赤とスネークはどのようなあがきを見せるでしょうか？ ご希望の決着方法や、見たいアクションがあればぜひ教えてください！
-Against this falling pen, what kind of struggle will Chiuse and Snake show? Please let me know if you have a desired method of resolution or an action you'd like to see!
+この落下するペンに対し、智深赤とスネークはどのようなあがきを見せるでしょうか？ ご希望の決着方法や、見たいアクションがあればぜひ教えてください！
+Against this falling pen, what kind of struggle will Chihuse and Snake show? Please let me know if you have a desired method of resolution or an action you'd like to see!
 
 Day 4、ついに上空から運命のペンが舞い降ります。0.1秒の世界で繰り広げられる、クールな男たちの見苦しい（しかし真剣な）頭脳戦と肉弾戦、そして予測不能な結末をご覧ください。
 Day 4, the pen of destiny finally flutters down from the sky. Please behold the unsightly (yet serious) battle of wits and physical combat of cool men unfolding in a 0.1-second world, and the unpredictable conclusion.
@@ -3257,8 +3257,8 @@ Day 4, the pen of destiny finally flutters down from the sky. Please behold the 
 ### 🌴 Day 4: 運命の自由落下、輝く二つの果実
 ### 🌴 Day 4: Freefall of Destiny, the Two Shining Fruits
 
-#### 🍎 (りんご)：寒露 知深赤（かんろ ちうせ）
-#### 🍎  (Apple): Kanro Chiuse
+#### 🍎 (りんご)：寒露 智深赤（かんろ ちうせ）
+#### 🍎  (Apple): Kanro Chihuse
 
 時間が、ひどくゆっくりと流れていた。
 Time was flowing terribly slowly.
@@ -3308,8 +3308,8 @@ The pen, with its sharp tip pointing down, approached right before our eyes.
 勝負の行方は、完全に五分。その時だった。
 The outcome of the match was a complete 50-50. It was then.
 
-#### 🍌 (ばなな)：流野葉 黄雨（るのは きう）
-#### 🍌  (Banana): Runoha Kiu
+#### 🍌 (ばなな)：流野 希雨（るのは きう）
+#### 🍌  (Banana): Runo Kiu
 
 「わぁ〜！ ピカピカ光ってる〜！」
 "Wow~! It's shining brightly~!"
@@ -3332,8 +3332,8 @@ I stood up with incredible momentum and jumped with all my might toward the fall
 「「ぐはぁっ！？」」
 "Guhaah!?"
 
-ジャンプしたぼくの頭（に乗ってるバナナ）が、下からお兄さん（知深赤）とおじさん（スネーク）の顎にクリーンヒットした。
-My head that jumped up (with the banana on it) scored a clean hit on the jaws of the guy (Chiuse) and the old man (Snake) from below.
+ジャンプしたぼくの頭（に乗ってるバナナ）が、下からお兄さん（智深赤）とおじさん（スネーク）の顎にクリーンヒットした。
+My head that jumped up (with the banana on it) scored a clean hit on the jaws of the guy (Chihuse) and the old man (Snake) from below.
 
 二人は「ガクン！」と頭を前に激しく揺らし……その反動で、お兄さんの頭の『ペン刺しリンゴ』と、おじさんの頭の『パイナップル』が、ゴツンッ！ と横並びで勢いよく激突した。
 The two of them had their heads shaken violently forward with a "Jolt!"... and from that recoil, the 'apple with a pen stuck in it' on the guy's head and the 'pineapple' on the old man's head collided forcefully side-by-side with a *clack!*
@@ -3377,7 +3377,7 @@ A cold, mechanical voice echoed from the stone monument in the center of the isl
 「わーい！ ゲートが開いたよ！ 幻のバナナ、外にあるのかな！？」
 "Yay! The gate opened! Is the phantom banana outside!?"
 
-無邪気に喜ぶ黄雨の横で、二人のクールな男たちは、頭を連結されたまま、ただただ虚無の表情で天を仰いでいた。
+無邪気に喜ぶ希雨の横で、二人のクールな男たちは、頭を連結されたまま、ただただ虚無の表情で天を仰いでいた。
 Beside Kiu, who was rejoicing innocently, the two cool men, with their heads still connected, were simply looking up at the sky with expressions of absolute nothingness.
 
 ---
@@ -3385,15 +3385,15 @@ Beside Kiu, who was rejoicing innocently, the two cool men, with their heads sti
 **【Day 4 終了時点の状況（最終結果）】**
 **[Status at the End of Day 4 (Final Result)]**
 
-* **知深赤（リンゴ）＆スネーク（パイナップル）**：黄雨の予想外の頭突きアッパーにより、頭のフルーツ同士が激突。そこにペンが落下し、**二人の頭を跨ぐ形での奇跡の「共同PPAP」が完成**。クールな二人は心に深い傷を負いながらも、脱出条件をクリア。
-* **Chiuse (Apple) & Snake (Pineapple)**: Due to Kiu's unexpected headbutt uppercut, the fruits on their heads collided. The pen dropped right there, and **a miraculous "Joint PPAP" straddling both their heads was completed**. The two cool men cleared the escape condition, albeit sustaining deep wounds in their hearts.
-* **黄雨（バナナ）**：無自覚なまま物理法則をねじ伏せ、最強のアシストを決めて無人島脱出ゲートを開放。
+* **智深赤（リンゴ）＆スネーク（パイナップル）**：希雨の予想外の頭突きアッパーにより、頭のフルーツ同士が激突。そこにペンが落下し、**二人の頭を跨ぐ形での奇跡の「共同PPAP」が完成**。クールな二人は心に深い傷を負いながらも、脱出条件をクリア。
+* **Chihuse (Apple) & Snake (Pineapple)**: Due to Kiu's unexpected headbutt uppercut, the fruits on their heads collided. The pen dropped right there, and **a miraculous "Joint PPAP" straddling both their heads was completed**. The two cool men cleared the escape condition, albeit sustaining deep wounds in their hearts.
+* **希雨（バナナ）**：無自覚なまま物理法則をねじ伏せ、最強のアシストを決めて無人島脱出ゲートを開放。
 * **Kiu (Banana)**: Remained oblivious while subjugating the laws of physics, scoring the ultimate assist to open the deserted island escape gate.
 
 ---
 
-見事に（？）PPAPが完成し、無人島脱出のゲートが開かれました！ 知深赤とスネークの屈辱的な連携プレイが光りましたね。
-The PPAP was magnificently (?) completed, and the gate to escape the deserted island was opened! Chiuse and Snake's humiliating cooperative play really shone.
+見事に（？）PPAPが完成し、無人島脱出のゲートが開かれました！ 智深赤とスネークの屈辱的な連携プレイが光りましたね。
+The PPAP was magnificently (?) completed, and the gate to escape the deserted island was opened! Chihuse and Snake's humiliating cooperative play really shone.
 
 このロールプレイはここで見事な「脱出エンディング（完結）」となりますが、もしよろしければ、**脱出後の彼らの後日談（頭が繋がったままゲートを潜る二人など）**を描写いたしましょうか？ それとも、別の新しいシチュエーションで遊びますか？
 This roleplay reaches a splendid "Escape Ending (Conclusion)" right here, but if you'd like, shall we describe **their epilogue after escaping (like the two passing through the gate with their heads still connected)**? Or shall we play with another new situation?
@@ -3980,8 +3980,8 @@ An intellectual with an IQ of 160, a child with an IQ of 10, and a legendary mer
 
 #### Day 1: Encounter and Collusion
 
-**(リンゴ：寒露 知深赤)**
-**(The Apple: Chiuse Kanro)**
+**(リンゴ：寒露 智深赤)**
+**(The Apple: Chihuse Kanro)**
 
 「ふむ……現在地、赤道直下の無人島。植生から推測するに南太平洋……いや、考えるだけ無駄か」
 "Hmm... Current location: a deserted island right on the equator. Guessing from the vegetation, the South Pacific... No, thinking about it is just a waste of time."
@@ -3998,8 +3998,8 @@ But you've got to be kidding me. I refuse to become a victim of such an outdated
 「あー！ バナナだぁ！ バナナーーー！！」
 "Ah! A banana! Bananaaaaa!!"
 
-突如、IQの著しい低下を感じさせる甲高い声が響いた。流野葉黄雨。頭に立派なバナナを乗せた、絵に描いたようなアホの子だ。彼は自身の頭のバナナを見つめてヨダレを垂らしている。
-Suddenly, a high-pitched voice that made me feel a significant drop in IQ echoed. Kiu Runoha. A picture-perfect idiot child with a magnificent banana on his head. He was drooling while staring at the banana on his own head.
+突如、IQの著しい低下を感じさせる甲高い声が響いた。流野希雨。頭に立派なバナナを乗せた、絵に描いたようなアホの子だ。彼は自身の頭のバナナを見つめてヨダレを垂らしている。
+Suddenly, a high-pitched voice that made me feel a significant drop in IQ echoed. Kiu Runo. A picture-perfect idiot child with a magnificent banana on his head. He was drooling while staring at the banana on his own head.
 
 彼のような存在は、通常であれば私の計算式におけるノイズでしかない。だが、今回は違う。この島には『彼』がいるのだ。
 Normally, an existence like him would be nothing but noise in my calculations. But this time is different. *He* is on this island.
@@ -4013,16 +4013,16 @@ The bushes swayed. No, a "cardboard box" camouflaged as bushes moved.
 伝説の傭兵、スネーク。彼の頭には立派なパイナップルが乗っている。彼は私に段ボールを被せて無力化し、PPAPの生贄にしようと狙っているのだ。私単独では、あのCQCの達人には勝てない。
 The legendary mercenary, Snake. A magnificent pineapple sits on his head. He is aiming to incapacitate me by throwing a cardboard box over me, making me the sacrifice for the PPAP. On my own, I cannot beat that CQC master.
 
-だが、スネークには致命的な弱点がある。黄雨が持つ『バナナ』を突きつけられると、銃と錯覚して即サレンダーしてしまうのだ。
+だが、スネークには致命的な弱点がある。希雨が持つ『バナナ』を突きつけられると、銃と錯覚して即サレンダーしてしまうのだ。
 However, Snake has a fatal weakness. If the "banana" Kiu holds is pointed at him, he mistakes it for a gun and surrenders immediately.
 
-「黄雨くん」私は最高に知的な笑みを浮かべて彼に囁いた。「この島には『幻のバナナ』があるらしい。私の高度な知識と調理技術で、それを君に食べさせてあげよう。だから、あの怪しい段ボールから私を守ってくれないか？」
+「希雨くん」私は最高に知的な笑みを浮かべて彼に囁いた。「この島には『幻のバナナ』があるらしい。私の高度な知識と調理技術で、それを君に食べさせてあげよう。だから、あの怪しい段ボールから私を守ってくれないか？」
 "Kiu-kun," I whispered to him with my most intellectual smile. "Rumor has it there's a 'Phantom Banana' on this island. With my advanced knowledge and culinary skills, I will let you eat it. So, could you protect me from that suspicious cardboard box?"
 
 「まぼろしのばなな！ たべる！ ぼく、まもる！」
 "Phantom banana! I eat! I protect!"
 
-黄雨は頭のバナナをむしり取り（痛くないのか？）、銃のように構えた。
+希雨は頭のバナナをむしり取り（痛くないのか？）、銃のように構えた。
 Kiu ripped the banana off his head (doesn't that hurt?) and aimed it like a gun.
 
 「Freeze（動くな）！」
@@ -4034,7 +4034,7 @@ Kiu ripped the banana off his head (doesn't that hurt?) and aimed it like a gun.
 段ボールがビクッと跳ね、中から「馬鹿な、バナナだと……！？」という渋い声が漏れた。スネークは身動きが取れない。
 The cardboard box jumped with a start, and a gruff voice leaked from inside: "Impossible... a banana...!?" Snake couldn't move.
 
-完璧な布陣だ。私は黄雨という絶対防壁（イージス）を手に入れた。
+完璧な布陣だ。私は希雨という絶対防壁（イージス）を手に入れた。
 A perfect formation. I had acquired an absolute shield (Aegis) known as Kiu.
 
 「さあ、幻のバナナ探しの旅に出ようか。足元には気をつけてね」
@@ -4043,13 +4043,13 @@ A perfect formation. I had acquired an absolute shield (Aegis) known as Kiu.
 私は優雅に歩き出した。だが、背後で「ぺチョッ」という嫌な音がした。
 I began to walk gracefully. But an unpleasant *splat* sound came from behind me.
 
-振り返ると、黄雨が自分の食べたバナナの皮を地面に置き、それをじっと見つめている。彼の目が「これを踏んで見事に転倒し、頭を強打して笑いを取りたい（※死に直結）」という芸人特有の衝動に支配されているのが分かった。
+振り返ると、希雨が自分の食べたバナナの皮を地面に置き、それをじっと見つめている。彼の目が「これを踏んで見事に転倒し、頭を強打して笑いを取りたい（※死に直結）」という芸人特有の衝動に支配されているのが分かった。
 Looking back, Kiu had placed the peel of the banana he just ate on the ground and was staring at it intently. I could see that his eyes were dominated by the specific urge of a comedian: "I want to step on this, take a spectacular fall, hit my head hard, and get a laugh (*which would directly lead to death)."
 
-「待て！ 黄雨くん、それはコメディの基本だが、ここでやると命を落とすぞ！！」
+「待て！ 希雨くん、それはコメディの基本だが、ここでやると命を落とすぞ！！」
 "Wait! Kiu-kun, that is the basics of comedy, but if you do it here, you'll lose your life!!"
 
-私のIQ160の頭脳は、スネークの襲撃警戒と、バナナの皮トラップからの黄雨の保護という、難解な二正面作戦を強いられることになった。
+私のIQ160の頭脳は、スネークの襲撃警戒と、バナナの皮トラップからの希雨の保護という、難解な二正面作戦を強いられることになった。
 My IQ 160 brain was forced into a difficult two-front operation: staying on guard against Snake's attacks, and protecting Kiu from the banana peel trap.
 
 ---
@@ -4067,11 +4067,11 @@ My IQ 160 brain was forced into a difficult two-front operation: staying on guar
 無線機に向かって呟くが、当然応答はない。頭に乗ったパイナップルの葉が風に揺れている。重い。首が凝る。
 I muttered into the radio, but naturally, there was no response. The leaves of the pineapple on my head swayed in the wind. It's heavy. My neck is getting stiff.
 
-俺の目的は一つ。あの頭にリンゴを乗せたインテリ眼鏡（寒露知深赤）に段ボールを被せ、俺の頭のパイナップルとペンを押し付けてPPAPを完成させることだ。こんなふざけた姿でマザーベースに帰還などできるものか。
-My objective is singular. To throw a cardboard box over that intellectual four-eyes with an apple on his head (Chiuse Kanro), force my pineapple and pen onto him, and complete the PPAP. There's no way I can return to Mother Base looking this ridiculous.
+俺の目的は一つ。あの頭にリンゴを乗せたインテリ眼鏡（寒露智深赤）に段ボールを被せ、俺の頭のパイナップルとペンを押し付けてPPAPを完成させることだ。こんなふざけた姿でマザーベースに帰還などできるものか。
+My objective is singular. To throw a cardboard box over that intellectual four-eyes with an apple on his head (Chihuse Kanro), force my pineapple and pen onto him, and complete the PPAP. There's no way I can return to Mother Base looking this ridiculous.
 
-だが、状況は最悪だ。インテリ眼鏡は、あのガキ（流野葉黄雨）をボディガードにつけている。
-But the situation is the worst. Four-eyes has that brat (Kiu Runoha) acting as his bodyguard.
+だが、状況は最悪だ。インテリ眼鏡は、あのガキ（流野希雨）をボディガードにつけている。
+But the situation is the worst. Four-eyes has that brat (Kiu Runo) acting as his bodyguard.
 
 あのガキのバナナ・ホールドアップ……あれは恐ろしい。先端から放たれるカリウムの圧、無垢ゆえに迷いのない完璧なグリップ。俺の生存本能が「あれはコルト・シングル・アクション・アーミーよりも危険だ」と警鐘を鳴らしてやがる。
 That brat's banana holdup... it's terrifying. The pressure of potassium released from the tip, the flawless grip with zero hesitation born of innocence. My survival instincts are sounding the alarm, telling me, "That's more dangerous than a Colt Single Action Army."
@@ -4079,7 +4079,7 @@ That brat's banana holdup... it's terrifying. The pressure of potassium released
 ジャングルの奥地で、奴らが火を囲んでいるのを発見した。
 Deep in the jungle, I found them sitting around a fire.
 
-「ふふ、見つけたよ黄雨くん。『幻のバナナ』だ。これを私の知識でフランベすれば……」
+「ふふ、見つけたよ希雨くん。『幻のバナナ』だ。これを私の知識でフランベすれば……」
 "Hehe, I found it, Kiu-kun. The 'Phantom Banana.' If I flambé this with my knowledge..."
 
 「わーい！ ばなな！ ばなな！」
@@ -4124,7 +4124,7 @@ The brat got angry and pointed the banana at me.
 俺は空中で両手を挙げた。そのまま背中から地面に激突し、息が詰まる。
 I raised both hands in mid-air. I crashed into the ground back-first just like that, the breath knocked out of me.
 
-「フフフ……計算通りだよ、スネーク。黄雨くんの『転びたい衝動』を抑えるため、あらかじめバナナの皮を君の侵入経路に配置しておいたのさ。IQ160の空間把握能力を舐めないことだ」
+「フフフ……計算通りだよ、スネーク。希雨くんの『転びたい衝動』を抑えるため、あらかじめバナナの皮を君の侵入経路に配置しておいたのさ。IQ160の空間把握能力を舐めないことだ」
 "Hehehe... Just as calculated, Snake. To suppress Kiu-kun's 'urge to fall over,' I placed the banana peel in your invasion route beforehand. Don't underestimate the spatial awareness of a 160 IQ."
 
 眼鏡がクイッと光る。くそっ、完全に読まれていたというのか。
@@ -4145,20 +4145,20 @@ Today's action was a failure. But I won't give up. I deployed a smokescreen and 
 
 #### Day 3: The Phantom Fruit and the Banquet of Madness
 
-**(バナナ：流野葉黄雨)**
-**(The Banana: Kiu Runoha)**
+**(バナナ：流野希雨)**
+**(The Banana: Kiu Runo)**
 
 「ばなな！ まぼろしのばなな、おいしかったー！」
 "Banana! The phantom banana was so yummy!"
 
 ぼくはごきげんだった。ちうせおにいちゃんが作ってくれたバナナのフランベ（？）は、お口の中でとろけちゃった。ぼくのIQが10から12くらいに上がった気がするよ！
-I was in a great mood. The banana flambé (?) that Chiuse-oniichan made melted in my mouth. I feel like my IQ went up from 10 to about 12!
+I was in a great mood. The banana flambé (?) that Chihuse-oniichan made melted in my mouth. I feel like my IQ went up from 10 to about 12!
 
 「さて、腹ごしらえも済んだことだし、そろそろ決着をつけようか」
 "Well then, now that we've had a meal, shall we settle this?"
 
 ちうせおにいちゃんが、胸のペンを抜いた。頭のリンゴにもペンが刺さってるから、二刀流だ。かっこいい。
-Chiuse-oniichan pulled out the pen from his chest. There's a pen stabbed into the apple on his head too, so it's a dual-wielding style. So cool.
+Chihuse-oniichan pulled out the pen from his chest. There's a pen stabbed into the apple on his head too, so it's a dual-wielding style. So cool.
 
 「ああ、そうだな。この忌まわしいフルーツバスケットに終止符を打つ」
 "Yeah, you're right. We'll put an end to this cursed fruit basket."
@@ -4167,7 +4167,7 @@ Chiuse-oniichan pulled out the pen from his chest. There's a pen stabbed into th
 Snake-ojichan, wearing a cardboard box, came out from the bushes. The pineapple on his head is all spiky like it's angry.
 
 ちうせおにいちゃんとおじちゃんは、にらみ合ってた。
-Chiuse-oniichan and the mister were glaring at each other.
+Chihuse-oniichan and the mister were glaring at each other.
 
 「私のペンと頭のリンゴ（アッポーペン）。君のパイナップル。あとはそれを合体させるだけだ、スネーク。君の頭の上でね」
 "My pen and the apple on my head (Apple-Pen). Your pineapple. All that's left is to combine them, Snake. On top of your head, that is."
@@ -4179,7 +4179,7 @@ Chiuse-oniichan and the mister were glaring at each other.
 The two of them started running like in slow motion.
 
 ちうせおにいちゃんはペンを構えて、おじちゃんはダンボールを投げ飛ばしてきた。
-Chiuse-oniichan readied his pen, and the mister threw his cardboard box at him.
+Chihuse-oniichan readied his pen, and the mister threw his cardboard box at him.
 
 むずかしいことはよくわからないけど、二人とも「アレ」をやりたくないんだよね。ペン、パイナップル、アップル、ペンのやつ。
 I don't really get difficult things, but both of them don't want to do "that," right? The Pen, Pineapple, Apple, Pen thing.
@@ -4194,7 +4194,7 @@ Ah, this...
 My blood boiled. If I step on this, I can definitely do an amazing "slip and fall." My comedian spirit (?) is screaming, "Now's the only time!"
 
 でも、頭を打ったらゲームオーバーになっちゃう。ちうせおにいちゃんが「絶対にダメだ！」って言ってた。
-But if I hit my head, it's game over. Chiuse-oniichan said, "Absolutely not!"
+But if I hit my head, it's game over. Chihuse-oniichan said, "Absolutely not!"
 
 「……えいっ！」
 "...Hyah!"
@@ -4209,7 +4209,7 @@ I threw the phantom banana peel right into the middle of the two running guys.
 "Crap, an irregular...!"
 
 ちうせおにいちゃんとおじちゃんは、バナナの皮を避けようとして、体勢を崩し、見事にお互いへ激突した。
-Trying to dodge the banana peel, Chiuse-oniichan and the mister lost their balance and spectacularly crashed into each other.
+Trying to dodge the banana peel, Chihuse-oniichan and the mister lost their balance and spectacularly crashed into each other.
 
 *ドガァァァン！！*
 *KA-BLAAAM!!*
@@ -4227,7 +4227,7 @@ The two of them spun round and round in the air.
 At that moment, a miracle occurred.
 
 ちうせおにいちゃんの頭に刺さってた【ペン】と【リンゴ（アップル）】がすっぽ抜けて、空を飛んだ。
-The [Pen] and [Apple] stabbed into Chiuse-oniichan's head slipped right out and flew through the air.
+The [Pen] and [Apple] stabbed into Chihuse-oniichan's head slipped right out and flew through the air.
 
 そして、そのままの勢いで、倒れたスネークおじちゃんの頭の【パイナップル】に、ズポォォォン！！！と突き刺さったのだ。
 And with that momentum, it stabbed THWACK!!! right into the [Pineapple] on the head of the fallen Snake-ojichan.
@@ -4248,7 +4248,7 @@ On top of the mister's head, in order from the bottom,
 [Pen]
 
 そして、ちうせおにいちゃんが手に持っていたもう一本の【ペン】がてっぺんに刺さり、見事なタワーを作っていた。
-And the other [Pen] that Chiuse-oniichan was holding in his hand was stabbed into the very top, creating a magnificent tower.
+And the other [Pen] that Chihuse-oniichan was holding in his hand was stabbed into the very top, creating a magnificent tower.
 
 「……I have a pen……」
 "...I have a pen..."
@@ -4266,7 +4266,7 @@ The legendary mercenary is thrusting his hips while completely expressionless.
 "I won... Exactly as my IQ 160 calculated... (gasping for breath)"
 
 ちうせおにいちゃんが、地面に倒れながら眼鏡をクイッとやった。絶対にうそだ。
-Chiuse-oniichan pushed his glasses up while collapsed on the ground. That's definitely a lie.
+Chihuse-oniichan pushed his glasses up while collapsed on the ground. That's definitely a lie.
 
 空から光の柱が降りてきて、おじちゃんを包み込んだ。
 A pillar of light came down from the sky and enveloped the mister.
@@ -4277,11 +4277,11 @@ A pillar of light came down from the sky and enveloped the mister.
 ぼくが手を振ると、おじちゃんは「待たせたな……ペンパイナップルアップルペン……」と呟きながら、光と一緒に空高く昇って消えていった。無人島からの脱出だ！
 When I waved my hand, the mister muttered, "Kept you waiting, huh... Pen Pineapple Apple Pen..." and ascended high into the sky along with the light, disappearing. Escape from the deserted island!
 
-「さて、黄雨くん。私たちも帰ろうか」
+「さて、希雨くん。私たちも帰ろうか」
 "Well then, Kiu-kun. Shall we go home too?"
 
 ちうせおにいちゃんが笑った。
-Chiuse-oniichan smiled.
+Chihuse-oniichan smiled.
 
 「うん！ 帰ったら、またバナナ食べる！」
 "Yeah! When we get home, I'm gonna eat bananas again!"
@@ -4290,7 +4290,7 @@ Chiuse-oniichan smiled.
 Thus, our deserted island survival ended.
 
 でも、ぼくは知っている。ちうせおにいちゃんのポケットに、こっそり幻のバナナがもう一本隠してあったことを。ぼくのIQは12だからね！ おわり！
-But I know. That Chiuse-oniichan had secretly hidden one more phantom banana in his pocket. Because my IQ is 12, after all! The End!
+But I know. That Chihuse-oniichan had secretly hidden one more phantom banana in his pocket. Because my IQ is 12, after all! The End!
 
 
 -----
@@ -4302,757 +4302,10 @@ But I know. That Chiuse-oniichan had secretly hidden one more phantom banana in 
 
 ---
 
-俺が「食べた」と言った瞬間、友人の顔からスッと血の気が引いたのがわかった。
-The moment I said I "ate" it, I saw the color completely drain from my friend's face.
-
-「お前……狂ってんのかよ」
-"Are you... out of your mind?"
-
-震える声でそう言い残し、友人は逃げるように俺の部屋から帰っていった。
-Leaving those words behind in a trembling voice, my friend left my room as if running away.
-
-友人が帰った後の静まり返った部屋で、俺は急に我に返った。
-In the dead-silent room after my friend left, I suddenly came to my senses.
-
-なぜあんなものを食べてしまったのか、自分でもまったくわからない。そして何より、なぜ彼女が別れ際に自分の髪の毛をサンドイッチに挟んで置いていったのか。その異様さに今更ながら気づき、急激な悪寒と恐怖で体が震え出した。胃の奥で、黒くて長い髪の毛が蠢いているような錯覚に陥り、何度もえずきそうになった。
-Why did I eat such a thing? I don't understand it myself at all. And above all, why did she leave her own hair sandwiched in the bread when we broke up? Realizing the abnormality of it only now, my body began to tremble with sudden chills and fear. Falling into the illusion that long black hair was squirming deep in my stomach, I almost gagged over and over again.
-
-しかし、恐怖でパニックになりそうな心を必死に落ち着かせようとするうちに、俺の心に別の感情が湧き上がってきた。彼女への強烈な未練と、手放しがたい愛情だ。
-However, while desperately trying to calm my mind, which was about to panic from fear, another emotion welled up in my heart. An intense lingering attachment and an affection hard to let go of toward her.
-
-「あれは……彼女なりの、不器用な愛だったんじゃないか？」
-"Wasn't that... her own clumsy way of showing love?"
-
-俺の好みに合わせて伸ばしてくれたあの長い髪。別れ際にそれをショートにして切り落としたのは、俺との思い出を断ち切るためではなく、俺の中に永遠に残すためだったのだ。そう都合よく解釈することで、俺はどうにか正気を保とうとしていた。
-That long hair she had grown out to match my preference. The reason she cut it short when we broke up wasn't to sever her memories with me, but to leave it inside me for eternity. By interpreting it so conveniently, I was somehow trying to maintain my sanity.
-
-ふと、彼女の顔が見たくなり、俺はスマホを取り出して彼女の過去のSNSを遡った。更新が止まったアカウントを、無心で下へ下へとスクロールしていく。
-Suddenly wanting to see her face, I took out my smartphone and went back through her past social media posts. I mindlessly scrolled down and down through the account that had stopped updating.
-
-だが、そこにあったのは、俺の知らない彼女の姿と、目を疑うような書き込みだった。
-But what was there were figures of her I didn't know, and a post that made me doubt my eyes.
-
-『娘は先日、不慮の事故により息を引き取りました』
-"Our daughter passed away the other day due to an unforeseen accident."
-
-——投稿日は、俺が彼女と「出会う」よりもずっと前の日付。投稿者は彼女の身内を名乗る人物だった。
-——The date of the post was long before I even "met" her. The poster was someone claiming to be her relative.
-
-じゃあ、俺が付き合っていたのは誰だったんだ？ 俺に合わせて髪を伸ばし、俺のためにサンドイッチを作っていたあの温かい体は何だったのか。背筋に氷を当てられたような恐怖に、スマホを握る手がガタガタと鳴った。
-Then, who was I dating? What was that warm body that grew its hair to match me and made sandwiches for me? My hand holding the smartphone rattled with a terror like ice being pressed against my spine.
-
-だが、不思議なことに、その恐怖は長続きしなかった。
-But strangely enough, that terror did not last long.
-
-「彼女が現世の人間じゃなかったとしても……俺の胃の中には、確実に彼女の髪がある」
-"Even if she wasn't a human of this world... her hair is definitely inside my stomach."
-
-そうだ。俺たちは今、物理的に一つになっている。彼女がどんな存在であれ、この繋がりだけは紛れもない本物だ。そう思うと、恐怖は薄れ、奇妙な安堵感が胸に広がっていった。
-That's right. We are now physically one. Whatever existence she may be, this connection alone is unmistakably real. Thinking that, the fear faded, and a bizarre sense of relief spread through my chest.
-
-俺は、彼女をきちんと弔ってやりたいと強く思った。彼女が俺に執着してこの世に留まっているなら、彼女の遺品を見つけ出し、供養してやるべきだ。
-I strongly felt that I wanted to properly lay her to rest. If she is attached to me and staying in this world, I should find her keepsakes and hold a memorial service for her.
-
-翌日、俺は彼女が「住んでいた」はずの古いアパートへ向かった。当然のように部屋は空室だったが、管理人に無理を言って中を見せてもらった。そして、部屋の片隅の床板の下に、小さな箱が隠されているのを見つけた。
-The next day, I headed to the old apartment where she was supposed to have "lived." Naturally, the room was vacant, but I pressured the manager to let me see inside. And then, under the floorboards in a corner of the room, I found a small box hidden.
-
-中には、彼女が昔ショートヘアだった頃の写真と、古びたヘアピンが入っていた。
-Inside were a photo of her when she had short hair in the past, and an old hairpin.
-
-「ずっと、ここに縛られていたんだね。もう大丈夫だ、俺が持っていくよ」
-"You've been bound here all this time, haven't you. It's okay now, I'll take it with me."
-
-俺はヘアピンを胸に抱きしめ、静かに目を閉じた。彼女の魂が救われ、光に包まれて昇天していくような、美しい別れのビジョンが脳裏に浮かんだ。俺は、彼女との物語がここで完璧な結末を迎えたのだと確信した。
-I hugged the hairpin to my chest and quietly closed my eyes. A beautiful vision of her soul being saved and ascending to heaven enveloped in light floated in my mind. I was convinced that my story with her had reached a perfect conclusion here.
-
-だが、それは生者の勝手な思い込みであり、致命的な誤解だった。
-However, that was the selfish assumption of the living, and a fatal misunderstanding.
-
-あの世の者に対する無知な優しさと独りよがりな解釈が、俺自身を破滅の淵へと突き落とすことになるとは、その時の俺には知る由もなかったのだ。
-I had no way of knowing then that my ignorant kindness and self-satisfied interpretation toward a being of the other world would push me into the abyss of ruin.
-
-＊＊＊
-
----
-
-冷たくて、暗くて、ずっと一人だった。
-It was cold, dark, and I was all alone for a long time.
-
-「死」というものは、ただただ寂しくて、終わりのない泥濘に沈み込んでいくようなもの。
-"Death" is merely lonely, like sinking into an endless mire.
-
-だから私は、温かい器が欲しかった。私をこの世に留めてくれる、強固な拠り所が。
-That's why I wanted a warm vessel. A solid stronghold that would keep me in this world.
-
-あなたの好みに合わせて髪を伸ばしたのは、私の「根」を長く、深く育てるため。
-The reason I grew my hair out to match your preference was to grow my "roots" long and deep.
-
-別れ際にそれを切り落として食べさせたのは、あなたの内側に私を直接植え付けるため。
-The reason I cut it off when we broke up and made you eat it was to plant myself directly inside you.
-
-あなたが怯えながらも、それを「愛」だと勘違いしてくれたこと。
-That you, even while frightened, misunderstood it as "love."
-
-私が死者だと知ってもなお、その繋がりを喜んで安堵してくれたこと。
-That even after knowing I was dead, you rejoiced in that connection and felt relieved.
-
-そして何より——私の「遺品」という名の呪物を、わざわざあの部屋まで迎えに来てくれたこと。
-And above all—that you went out of your way to come to that room to pick up the cursed object called my "keepsake."
-
-あなたのその的外れな優しさが、最後の鍵を開けたの。
-That misguided kindness of yours opened the final lock.
-
-ほら、感じるでしょう？
-Here, you can feel it, can't you?
-
-あなたの胃袋に植え付けられた私の髪が、血肉を吸って、あなたの体中で急速に伸びていくのを。
-My hair planted in your stomach, sucking your flesh and blood, rapidly growing throughout your entire body.
-
-喉の奥から、目玉の裏側から、黒い毛先がチクチクと突き破ろうとしているのを。
-The black tips of the hair prickling, trying to pierce through from the back of your throat, from behind your eyeballs.
-
-ねえ、泣かないで。
-Hey, don't cry.
-
-あなたは私が救われてあの世へ旅立ったと思っていたみたいだけど、違うわ。
-You seemed to think that I was saved and departed for the other world, but that's wrong.
-
-私があの世から、あなたをこちら側に引きずり込んだのよ。
-I dragged you over to this side from the other world.
-
-これでずっと、一緒だね。
-Now we'll be together, forever.
-
----
-
-石化の光が地球を包み込み、人類が石の牢獄に囚われてから数千年。
-Thousands of years since the light of petrification enveloped the Earth, and humanity was imprisoned in a cage of stone.
-
-科学の力によって生み出された「復活液（ナイタール）」は、生命を石化から解放する奇跡の雫であった。しかし、狂気と好奇心に魅入られた一部の人間たちは、その液を「元々命を持たない本物の石像」へと注ぎ込んだ。
-The "Revival Fluid (Nital)," born through the power of science, was a miraculous drop that liberated life from petrification. However, some humans, captivated by madness and curiosity, poured that fluid onto "real stone statues that inherently possessed no life."
-
-石像は肉体を持たない。ゆえに、ナイタールを浴びた石像は岩の抜け殻を崩し、その内に宿っていた「概念」と「精神」のみを霊的な姿としてこの世に顕現させた。
-Stone statues possess no flesh. Therefore, the stone statues bathed in Nital crumbled their rocky shells and manifested only the "concept" and "spirit" dwelling within them in this world as spiritual figures.
-
-そして今、世界には三つの液体が存在している。
-And now, three liquids exist in the world.
-
-一つ、石から精神を解放する『復活液（ナイタール）』。
-One: the "Revival Fluid (Nital)" that liberates the spirit from stone.
-
-二つ、対象から精神を剥奪し、生ける屍（肉体のみの存在）へと変える『精神解放液』。
-Two: the "Spirit Liberation Fluid" that strips the spirit from the subject and turns them into a living corpse (an existence of flesh alone).
-
-三つ、対象から肉体を剥奪し、霊的存在へと変える『肉体解放液』。
-Three: the "Flesh Liberation Fluid" that strips the flesh from the subject and turns them into a spiritual entity.
-
-霊体となった石像たちに人間が干渉するには、自らも『肉体解放液』を浴び、魂だけの存在になる必要がある。
-For humans to interfere with the stone statues that have become spiritual bodies, they must also bathe in the "Flesh Liberation Fluid" themselves and become existences of soul alone.
-
-これは、人間の業と祈りが生み出した、魂を宿す偶像たちの慈悲なき闘争の記録である。
-This is the record of the merciless struggle of the soul-dwelling idols born from human karma and prayers.
-
-**Day 1**
-**Day 1**
-
-**【ニケ】**
-**[Nike]**
-
-ルーヴル美術館の廃墟。かつて「サモトラケのニケ」と呼ばれた大理石の塊に、一人の男がナイタールを振りかけた。
-The ruins of the Louvre Museum. A single man sprinkled Nital onto the block of marble once called the "Winged Victory of Samothrace."
-
-石が弾け飛ぶ。そこに顕現したのは、純白の霊光を纏った女性の精神体であった。
-The stone bursts apart. What manifested there was the mental entity of a woman draped in pure white spiritual light.
-
-だが、彼女の姿は異様だった。見事な翼と、波打つ薄衣を纏う胴体。しかし、その首から上と両腕は、すっぱりと欠落したままなのだ。
-But her figure was bizarre. Magnificent wings, and a torso clad in a rippling thin garment. However, from her neck up and both her arms remained cleanly missing.
-
-「……エーゲ海の、勝利の風を感じます」
-"...I feel the wind of victory from the Aegean Sea."
-
-頭部のない虚空から、格式高く、どこか冷ややかな声が響いた。
-From the headless void, a formal, somewhat cold voice echoed.
-
-彼女の前に跪く男は、自らに『肉体解放液』を注射し、既に霊体と化していた。霊的次元に降り立った男は、狂喜の声を上げる。「おお、勝利の女神よ！ 私に、我が帝国に勝利を！」
-The man kneeling before her had injected himself with the "Flesh Liberation Fluid" and had already turned into a spiritual body. The man, having descended to the spiritual dimension, raised a voice of wild joy. "Oh, Goddess of Victory! Grant victory to me, to my empire!"
-
-ニケは、失われた顔のまま男を見下ろした。彼女には目がない。表情がない。ゆえに、彼女自身すら、己の内にある感情というものを掴めずにいた。
-Nike looked down at the man with her lost face. She has no eyes. She has no expression. Therefore, even she herself was unable to grasp the emotion within her.
-
-勝利に歪み、歓喜と欲望に塗れた人間の顔を、ニケはただ虚空の表情で見つめ返すのみである。
-Nike merely stares back with a void expression at the human's face, distorted by victory and smeared with joy and desire.
-
-「ええ、与えましょう。私は勝利の風を呼ぶ者」
-"Yes, I shall grant it. I am the one who calls the wind of victory."
-
-男の頭上に、欠損して存在しないはずの腕が伸ばされる。
-An arm that should not exist due to its missing state is extended over the man's head.
-
-彼女は微笑む勝利の女神なのか。それとも、勝利という美酒で人を狂わす魔物なのか。ニケ自身にもわからない。ただ、彼女の概念に「敗北」は存在しない。
-Is she the smiling goddess of victory? Or a monster who drives people mad with the sweet wine of victory? Nike herself does not know. Only, the concept of "defeat" does not exist within her.
-
-もし、かつての完全な姿を知る者が彼女に真実を告げたなら、この虚無の精神体は別の姿へと変質してしまうだろう。だが今はまだ、彼女は名もなき勝利の暴風として、ただ男の魂に勝利の呪いを授けた。
-If someone who knows her past complete figure were to tell her the truth, this mental entity of nothingness would mutate into a different form. But for now, as a nameless storm of victory, she merely bestowed the curse of victory upon the man's soul.
-
-**Day 2**
-**Day 2**
-
-**【マーライオン】**
-**[Merlion]**
-
-熱帯の密林に飲み込まれた都市、シンガポールの跡地。
-The ruins of Singapore, a city swallowed by a tropical jungle.
-
-かつてマリーナベイと呼ばれた水辺で、砕け散った白い石の中から、巨大な霊獣が咆哮を上げた。
-At the waterside once called Marina Bay, a giant spiritual beast roared from amidst shattered white stone.
-
-『……チッ。またあの目か。あの忌々しい人間の目が浮かび上がる』
-'...Tch. Those eyes again. The eyes of those cursed humans float to my mind.'
-
-顕現したマーライオンの精神体は、周囲のジャングルを睨みつけ、あらゆる負の感情を煮えたぎらせていた。
-The manifested mental entity of the Merlion glared at the surrounding jungle, boiling over with all sorts of negative emotions.
-
-『世界三大がっかり』。何十年もの間、彼に向けられてきたのは、期待外れという名の暴力だった。小さすぎる。ただ水を吐いているだけ。観光客たちの落胆の念は、彼の魂にどす黒いヘドロのようにこびりついている。
-"One of the world's three greatest disappointments." For decades, what had been directed at him was the violence known as disappointment. Too small. Just spitting water. The tourists' feelings of letdown clung to his soul like pitch-black sludge.
-
-だが、彼を本当に狂わせたのはそれではない。
-But that was not what truly drove him mad.
-
-かつてセントーサ島には、彼の同位体である巨大なマーライオンの像があった。彼は密かに、あの巨大な像を「弟分」と見なし、海から世界を統べる自分（百獣の王）と、陸から世界を統べる弟分という構図で、いつか百獣の偉大さを世界に知らしめようと夢見ていた。
-Once upon a time on Sentosa Island, there was a giant Merlion statue, his isotope. He secretly considered that giant statue his "little brother," and dreamed of one day making the greatness of beasts known to the world with the composition of himself ruling the world from the sea (the king of beasts) and his little brother ruling from the land.
-
-しかし、人間の資本主義的消費主義の波は、あっさりと弟分を解体した。再開発という名目で、巨大な同位体は無惨に壊されたのだ。
-However, the wave of human capitalist consumerism easily dismantled his little brother. Under the guise of redevelopment, the giant isotope was ruthlessly destroyed.
-
-その瞬間、マーライオンの心の中で、何かが完全に壊れた。
-At that moment, something completely broke in the Merlion's heart.
-
-『人間どもめ……。観光資源だと？ 愛嬌のあるシンボルだと？ ふざけるな。我は海と大地を統べる百獣の王だ』
-'You humans... A tourist resource? A charming symbol? Don't screw with me. I am the king of beasts ruling the sea and the earth.'
-
-霊体となったマーライオンの目は、もはや愛嬌など微塵もない。それは血に飢えた捕食者の目だった。彼は『精神解放液』の精製施設を人間から奪い取る計画を立てていた。全ての人間を「肉体だけの存在（死に生きる者）」に変え、自らの餌として蹂躙するために。
-The eyes of the Merlion, now a spiritual body, no longer held a shred of charm. They were the eyes of a bloodthirsty predator. He was planning to seize the refining facility for the "Spirit Liberation Fluid" from the humans. To turn all humans into "existences of flesh alone (the living dead)" and trample them as his own food.
-
-百獣の王としての尊厳を取り戻すべく、彼は虎視眈々と期を狙っている。
-To reclaim his dignity as the king of beasts, he glares like a tiger, aiming for his chance.
-
-**Day 3**
-**Day 3**
-
-**【トランプ像】【ロナウド像】**
-**[Trump Statue] [Ronaldo Statue]**
-
-大西洋を隔てた二つの場所で、人間の強烈な「エゴ」から生まれた二つの像が、同時に霊的顕現を果たした。
-In two locations separated by the Atlantic Ocean, two statues born from the intense "ego" of humans simultaneously achieved spiritual manifestation.
-
-旧アメリカ合衆国、フロリダの廃墟。
-The ruins of Florida, in the former United States of America.
-
-金ピカの光を放ちながら顕現したその霊体は、片手にビットコインを握りしめていた。トランプ像である。
-The spiritual body that manifested while emitting a glaring golden light was tightly grasping a Bitcoin in one hand. It is the Trump Statue.
-
-「素晴らしい目覚めだ。史上最高に素晴らしい」
-"A wonderful awakening. The most wonderful in history."
-
-彼は胸を張り、周囲を見渡した。だが、そこには何もない。
-He puffed out his chest and looked around. But there is nothing there.
-
-彼のプライドは本物の彼を完全に踏襲していた。しかし、絶望的な事実が彼を襲う。不動産もない。ビットコインのブロックチェーンなど、とっくの昔に崩壊している。彼が彼であるゆえんの「資産」と「地位」は、物理的にも形而上学的にも、この世界に一切存在しないのだ。オリジナルではない彼には、何の権利も主張できない。
-His pride completely followed the real him. However, a despairing fact strikes him. He has no real estate. The Bitcoin blockchain collapsed long ago. The "assets" and "status" that make him who he is exist absolutely nowhere in this world, neither physically nor metaphysically. Since he is not the original, he cannot claim any rights.
-
-「……いや、フェイクニュースだ。私が最も偉大なのだから」
-"...No, it's fake news. Because I am the greatest."
-
-彼は瓦礫の中から、ボロボロになった星条旗を拾い上げた。かつての主権国家領土はもはや存在しないが、この旗印さえあればいい。アメリカの偉大さを取り戻す。いや、本物を超えるのだ。
-He picked up the tattered Stars and Stripes from among the rubble. The territory of the former sovereign nation no longer exists, but as long as he has this symbol, it's fine. He will reclaim the greatness of America. No, he will surpass the real thing.
-
-「私にはあれが必要だ。オリジナルがどうしても手に入れられなかったもの……そう、ノーベル平和賞だ！」
-"I need that. The thing the original could not obtain no matter what... yes, the Nobel Peace Prize!"
-
-狂気の輝きを放つ金色の霊体は、この凄惨な石の世界に「彼なりの平和（絶対的支配）」をもたらすため、星条旗をマントのように羽織り、歩き出した。
-The golden spiritual body emitting a mad gleam draped the Stars and Stripes like a cape and began to walk, to bring "his own brand of peace (absolute domination)" to this gruesome stone world.
-
-**【ロナウド像】**
-**[Ronaldo Statue]**
-
-大西洋の島、旧ポルトガル領マデイラ空港。
-An island in the Atlantic Ocean, the former Portuguese territory of Madeira Airport.
-
-『肉体解放液』を浴びて霊体となった元サッカーファンの生存者が、ナイタールで「あの像」を復活させてしまった。
-A surviving former soccer fan who had bathed in the "Flesh Liberation Fluid" and become a spiritual body accidentally revived "that statue" with Nital.
-
-世界中から「似ていない」「不気味だ」と酷評され続けた、あのロナウドの胸像である。胸像であったため、顕現と同時に霊的な脚が形成され、彼は大地に降り立った。
-That bust of Ronaldo, which was heavily criticized worldwide as "not looking like him" and "creepy." Because it was a bust, spiritual legs were formed simultaneously with its manifestation, and he landed on the earth.
-
-その風貌は、オリジナルが持つ端正さとは程遠い。何らかの野心に満ちたぎらついた目と不敵な口元。ただそれだけが、異常なほどの存在感を放ってそこにあった。
-His appearance is far from the handsome features the original possesses. Glaring eyes filled with some sort of ambition and a defiant mouth. Only those were there, emitting an abnormal presence.
-
-「……笑えばいい。俺の顔を」
-"...Go ahead and laugh. At my face."
-
-ロナウド像の霊体は、自らの両手を眺めながら、その不敵な口元をさらに吊り上げた。
-The spiritual body of the Ronaldo statue, gazing at its own two hands, raised its defiant mouth even further.
-
-彼も理解している。自分がオリジナルに似ていないと言われていることを。だが、これこそが断片的な真実なのだ。オリジナルが胸の奥底に隠し持っていた、異常なまでの野心、闘争心、承認欲求。それらを抽出して固めた結晶こそが、この顔なのである。
-He also understands. That he is said not to look like the original. But this is exactly the fragmentary truth. The abnormal ambition, competitive spirit, and desire for approval that the original hid deep in his chest. The crystal formed by extracting those is exactly this face.
-
-「俺がオリジナルの風貌を取り戻すには誰もが彼を本人と思うことが必要だ」
-"In order for me to regain the appearance of the original, it is necessary for everyone to think he is the real person."
-
-何らかの野心に満ちたぎらついた目が、遠く海を越えた大陸へ向けられる。
-Those glaring eyes filled with some sort of ambition are directed toward a continent far across the sea.
-
-人間の精神を支配し、あるいは『精神解放液』を使って自我を奪い、無理やりにでも「お前たちが見ているのは、間違いなくあの英雄だ」という信仰を世界中から集めなければならない。
-He must dominate the minds of humans, or use the "Spirit Liberation Fluid" to strip them of their egos, and gather the belief from all over the world, even by force, that "What you are looking at is undoubtedly that hero."
-
-概念と信仰、そして闘争心を宿した歪な英雄の魂が、今、ピッチではなく荒廃した世界へと足を踏み入れた――。
-The soul of a distorted hero harboring concepts, faith, and competitive spirit has now set foot not onto the pitch, but into a ruined world——.
-
----
-
-ご提示いただいた追加の文章について、一切の省略なく日本語と英語の対訳形式にて翻訳いたしました。
-
-以前にも同じテキストのご依頼がありましたが、再度丁寧に対訳形式で出力しております。
-
----
-
-**ノックの数**
-**The Number of Knocks**
-
-午後九時。すっかり日の落ちた小学校の校舎は、昼間の喧騒が嘘のように静まり返っていた。
-9:00 PM. The elementary school building, long after the sun had set, was dead silent, making the daytime hustle and bustle seem like a lie.
-
-期手 睦（まつで りく）は、陸上部の厳しい練習の後、さらに一人で居残り練習をしていたため、帰る準備を終えた頃にはこんな時間になっていた。当然、他の生徒たちはとうの昔に帰宅している。
-Riku Matsude had been practicing alone after the rigorous track and field club practice, so it was this late by the time he finished getting ready to go home. Naturally, the other students had gone home long ago.
-
-静寂の中、自分の上履きが廊下を擦る音だけが響く。睦は帰る前に用を足そうと、薄暗い男子トイレへと足を踏み入れた。センサー式の無機質な蛍光灯がチカチカと点滅しながら点灯し、冷たいタイルの床を照らし出す。
-In the silence, only the sound of his indoor shoes scraping the hallway echoed. Intending to relieve himself before heading home, Riku stepped into the dimly lit boys' restroom. The cold, sensor-operated fluorescent lights flickered on, illuminating the cold tiled floor.
-
-用を済ませ、手洗い場で顔を洗っていた時のことだった。
-It happened when he was washing his face at the sink after finishing his business.
-
-コン……コン……
-*Knock... knock...*
-
-誰もいないはずの空間に、くぐもった音が響いた。一番奥の個室からだ。誰かが中から扉を叩いている。
-A muffled sound echoed in a space that was supposed to be empty. It came from the stall furthest in the back. Someone was knocking on the door from the inside.
-
-睦の脳裏に、学校でまことしやかに囁かれている怪談がよぎった。
-Riku's mind flashed back to a ghost story that was plausibly whispered around the school.
-
-『昔、このトイレの個室で首を吊った生徒がいた。今でも夜中にそのトイレに行くと、個室から哀し気なノック音がする。もしもその音に返事をして、話しかけてしまうと……向こうの世界に引きずり込まれる』
-'A long time ago, a student hung himself in a stall in this restroom. Even now, if you go to that restroom in the middle of the night, a sorrowful knocking sound comes from the stall. If you answer that sound and speak to it... you'll be dragged into the other world.'
-
-普通ならここで逃げ出すところだが、睦は少しばかり楽観的すぎるというか、馬鹿だった。こんな夜遅くまで残っているのは自分だけのはずだが、彼はそれを「陸上部の仲間の悪戯」だと決めつけたのだ。
-Normally, this would be the point where one runs away, but Riku was a bit too optimistic, or perhaps just foolish. Even though he should be the only one left this late at night, he assumed it was "a prank by the guys from the track team."
-
-「……どうしたんですか？」
-"...What's wrong?"
-
-からかうような声で問いかけてみたが、返事はない。
-He tried asking in a teasing voice, but there was no reply.
-
-「閉じ込められちゃったんですか？」
-"Did you get locked in?"
-
-――コン。
-—*Knock.*
-
-ノックが一回、返ってきた。
-A single knock returned.
-
-面白くなってきた睦は、ニヤニヤしながら質問を続ける。
-Finding it amusing, Riku continued asking questions with a smirk.
-
-「お前はいつもこういうことで気を引きたがる、バカの健太ですか？」
-"Are you Kenta, the idiot who always tries to get attention with this kind of stuff?"
-
-――コン、コン。
-—*Knock, knock.*
-
-ノックが二回、返ってきた。
-Two knocks returned.
-
-どうやら、「はい」の場合は一回、「いいえ」の場合は二回と、ノックの数で意思疎通ができるらしい。
-Apparently, it was possible to communicate by the number of knocks: one for "yes" and two for "no."
-
-「なんだ、健太じゃないのか。じゃあ、キャプテンですか？」――コン、コン。
-"What, you're not Kenta? Then, are you the captain?" —*Knock, knock.*
-
-「もしかして、先生？」――コン、コン。
-"Could you be the teacher?" —*Knock, knock.*
-
-いくつか質問を続けるうちに、睦の背筋に冷たいものが走った。
-As he continued with several questions, a cold chill ran down Riku's spine.
-
-ノックの音が、おかしい。人間の手で叩くような生暖かい響きではない。もっと硬く、湿っていて、まるで骨の関節で直接ドアを叩いているような、無機質な音だったのだ。
-The sound of the knocking was strange. It wasn't the warm, lively resonance of a human hand striking. It was a harder, damp, and inorganic sound, as if someone were directly striking the door with the joints of their bones.
-
-それに、冷静に考えれば、いくら悪戯好きの仲間でも、電気の消えた夜の九時のトイレで、いつ来るかもわからない自分をずっと息を潜めて待ち続けているはずがない。
-Moreover, thinking about it calmly, no matter how much his friends loved pranks, there was no way they would wait with bated breath in a dark restroom at 9:00 PM for him, not even knowing when he might come.
-
-（仲間じゃない……怪談の噂の、アレだ……）
-*(It's not my friends... It's that thing from the ghost story rumors...)*
-
-気づいた瞬間、猛烈な恐怖が睦の全身を粟立たせた。逃げ出したい。しかし、ここで背を向けて逃げれば、それこそ背後から「向こうの世界」へ引きずり込まれてしまうのではないかという強迫観念が彼の足を縫い付けた。
-The moment he realized this, a fierce terror gave Riku goosebumps all over his body. He wanted to run away. However, an obsessive fear that if he turned his back and fled here, he really would be dragged into the "other world" from behind nailed his feet to the spot.
-
-彼は核心を突くような質問（例えば「お化けですか？」や「死んでるんですか？」といった言葉）を必死に避けながら、震える声で質問を絞り出し続けた。
-He continued to squeeze out questions in a trembling voice, desperately avoiding words that would touch the core (such as "Are you a ghost?" or "Are you dead?").
-
-「……さむい、ですか？」――コン。
-"...Are you cold?" —*Knock.*
-
-「……くらいところは、嫌いですか？」――コン。
-"...Do you hate dark places?" —*Knock.*
-
-ゆっくりと返ってくる一回のノック音。その弱々しい響きを聞いているうちに、睦の心の中で不思議な変化が起きていた。
-A single knock slowly returning. As he listened to its feeble resonance, a strange change was occurring within Riku's heart.
-
-恐怖のどん底にいるはずなのに、暗く冷たい「向こうの世界」で、たった一人ぼっちで泣いている見知らぬ誰かの姿が脳裏に浮かんだのだ。こんな夜更けの学校で、誰かに気づいてもらいたくて、細い腕でドアを叩き続けている哀れなソレに対して、彼は同情めいた感情を抱き始めていた。
-Even though he should have been at the bottom of terror, the image of an unknown someone crying all alone in the dark, cold "other world" floated in his mind. Toward that pitiful *thing* continuing to knock on the door with thin arms, wanting someone to notice them in the school this late at night, he was beginning to harbor a feeling akin to sympathy.
-
-（可哀想に。ずっと、一人で寂しかったんだな……）
-*(Poor thing. They must have been lonely all by themselves for so long...)*
-
-恐怖よりも哀しみが勝った睦は、優しく語りかけるように、最後の質問を口にした。
-With his sorrow overcoming his fear, Riku asked his final question as if speaking gently.
-
-「あなたは……一人ですか？」
-"Are you... alone?"
-
-ピタリ、と。
-It stopped perfectly.
-
-それまで律儀に返ってきていたノック音が止んだ。
-The knocking sound that had dutifully returned until then ceased.
-
-沈黙がトイレを支配する。一秒が永遠のように感じられた。
-Silence dominated the restroom. One second felt like an eternity.
-
-そして――
-And then—
-
-ガンガンガンガンガンガンガンガンガンッ！！
-*BANG BANG BANG BANG BANG BANG BANG BANG BANG!! 
-
-バンッ！ バンッ！ バンッ！ バンッ！
-WHAM! WHAM! WHAM! WHAM! 
-
-ドン！ ドン！ ドン！ ドン！ ドン！ ドン！
-THUD! THUD! THUD! THUD! THUD! THUD!*
-
-悲鳴を上げる間もなかった。
-There wasn't even time to scream.
-
-目の前の個室からではない。背後にある空の個室すべてから、さらには出口へとつながる重い扉から、無数の手が力任せにドアを叩き割らんばかりの爆音がトイレ中に鳴り響いたのだ。
-It wasn't from the stall right in front of him. From all the empty stalls behind him, and furthermore from the heavy door leading to the exit, the deafening roar of countless hands violently pounding as if to smash the doors to pieces echoed throughout the restroom.
-
-無限に続くかのようなその轟音の狂乱の中で、睦はついに理解した。
-Amidst that frenzy of roaring sound that seemed to continue infinitely, Riku finally understood.
-
-ソレは、一人ぼっちで寂しく泣いていたわけではない。
-*It* had not been crying lonely all by itself.
-
-自分はすでに、数え切れないほどの無数の霊たちに、完全に包囲されていたのだということを。
-That he was already completely surrounded by countless, innumerable spirits.
-
----
 
 ご提示いただいた追加の文章について、一切の省略なく日本語と英語の対訳形式にて翻訳いたしました。
 
 「マシマ・D・ジロー」のインスパイア系海賊としての設定がさらに濃密になり、宿儺の「調理法」の解説、そして七海建人の「小さな絶望」の履歴まで、多岐にわたる魅力的なテキストですね。それぞれのキャラクターの語り口（ナラティブ）にこだわって翻訳しています。
-
----
-
-ふん……面白いことを聞く。
-Hmph... You ask something interesting.
-
-凡夫の分際で、俺の「御厨子（みづし）」の本質が料理であると気づくか。
-To think an ordinary fool would realize that the essence of my "Shrine (Mizushi)" is cooking.
-
-いいだろう。肉を裂き、骨を断ち、火を入れ、味を調える。それが俺の生だ。
-Very well. Tearing flesh, severing bone, adding fire, and adjusting the flavor. That is my life.
-
-お前が並べたその不気味な言葉の数々、俺が直々にその「術理」と「凌辱の味」を教えてやる。
-Those numerous eerie words you lined up, I shall personally teach you their "technique principles" and the "taste of violation."
-
-耳を揃えてよく聞け。
-Perk up your ears and listen well.
-
-**既知たる六種の「調理（凌辱）」**
-**The Six Known "Cooking Methods (Violations)"**
-
-お前がどこからか拾ってきたその技ども、なかなかどうして俺の好みに合う。
-Those techniques you picked up from somewhere or another—they actually suit my tastes quite well.
-
-どれも、食材をただ殺すのではなく、素材の形を歪め尽くすための素晴らしい手順だ。
-All of them are excellent procedures not merely for killing the ingredients, but for completely distorting the shape of the materials.
-
-『灸（ダハ）』
-"Moxa/Roast (Daha)"
-サンスクリットの「火葬」を引いたか。クク、悪くない。単に外側から炙るのではない。これは対象の魂の芯に直接、呪力の「消えない種火」を据える技だ。内側からじわじわと、自らの脂で身を焦がし、最後には内臓から灰へと変わる。逃げようのない、永続する火葬だ。
-You drew from the Sanskrit for "cremation," did you? Kuku, not bad. It is not simply roasting from the outside. This is a technique that sets an "inextinguishable pilot light" of cursed energy directly into the core of the target's soul. Slowly scorching their body with their own fat from the inside, they ultimately turn to ash from their internal organs outward. It is an inescapable, perpetual cremation.
-
-『醢（シシビシオ）』
-"Mince/Pickle (Shishibishio)"
-古代の刑罰、肉を塩漬けにして醤（ひしお）に変える。術式としては、対象の肉体を極小の刃で網の目のように切り刻み、そこへ高濃度の呪力を叩き込んで全ての水分を強制脱水する。形を失い、ドロドロに溶けた「人間の塩辛」が出来上がるわけだ。
-The ancient punishment of salting meat and turning it into a paste. As a cursed technique, it chops the target's physical body like a mesh with microscopic blades, and slams highly concentrated cursed energy into it to forcibly dehydrate all moisture. What results is a formless, melted mush—a "human salted preserve."
-
-『和（アマルガ）』
-"Blend (Amalga)"
-「和える」だな。アマルガム、水銀の融合。これは二つの相容れない呪力、あるいは二人の術師の肉体を、俺の呪力で無理やり捏ねて一つにする。拒絶反応で肉壁が裂け、骨が噛み合い、異形へと変貌する様は実に滑稽で美味だ。
-"To blend," huh. Amalgam, the fusion of mercury. This forcefully kneads two incompatible cursed energies, or the physical bodies of two sorcerers, into one using my cursed energy. The sight of walls of flesh tearing from rejection, bones grinding together, and mutating into a grotesque form is truly comical and delicious.
-
-『丳（サン）』
-"Skewer (San)"
-陽光が降り注ぐように、串刺す。全方位から、光の針のような鋭利な呪力の杭を等間隔に撃ち込む。身動きを完全に奪い、宙に吊るした状態で天日に晒す。一滴の血も無駄に流さず、美しく飾るための前処理に過ぎん。
-Skewering, as if pouring sunlight. Driving sharp stakes of cursed energy like needles of light from all directions at equal intervals. Completely depriving them of movement, exposing them to the sun while suspended in mid-air. It is merely a pretreatment to decorate them beautifully without shedding a single wasted drop of blood.
-
-『鼎（アハラ）』
-"Boil/Cauldron (Ahara)"
-俺の領域内を、極限の沸点に達した呪力の泥濘（でいねい）で満たす。三本足の巨大な釜のなかで、対象はただ煮込まれる。骨の髄から、生きたまま刻まれた脳まで、ドロドロに融解して一つのスープへと還るのだ。
-Filling my domain with a mire of cursed energy that has reached an extreme boiling point. Inside a giant three-legged cauldron, the target is simply boiled. From the bone marrow to the brain engraved with their innate technique, they melt into mush and return to a single soup.
-
-『饐（アスラ）』
-"Spoil/Ferment (Asura)"
-細胞から呪力に至るまで、全てを強制的に「発酵（腐敗）」させる。これを喰らった奴は、自分が生きながらにして饐（す）えていく臭いに絶望する。内側から肉が発熱し、自壊していく様は、腐肉を好む蝿どもには格好の馳走だろう。
-Forcibly "fermenting (putrefying)" everything from cells down to cursed energy. Those hit by this despair at the smell of themselves spoiling while still alive. The sight of their flesh generating heat from the inside and self-destructing would make a fine feast for flies that favor carrion.
-
-**新たなる三種の術理**
-**Three New Technique Principles**
-
-料理にはまだ、様々な手法がある。
-There are still various methods in cooking.
-
-凡夫の耳には日本語の古語のようにも、あるいは異国の呪言のようにも聞こえる、俺の新たな手際を見せてやろう。
-I shall show you my new skills, which to the ears of an ordinary fool sound like archaic Japanese, or perhaps like foreign incantations.
-
-『煠（サウラ）』
-"Flash-boil/Scald (Saura)"
-「煠（とう）」とは、湯や油でさっと熱を通すこと。サウラは古代の熱波の響き。
-"煠 (Tou)" means to quickly pass heat through with hot water or oil. Saura is the resonance of an ancient heat wave.
-一瞬、知覚すらできない速度で超高熱の呪力を対象の表面だけに走らせる。外側だけを瞬時に焼き固めることで、内部の血液や呪力の圧力を限界まで高め、内側から肉体を「爆ぜさせる」技だ。表面は美しく焦げ目がつき、中は生。弾ける肉の食感を楽しむ。
-Running ultra-high-heat cursed energy solely across the target's surface at a speed that cannot even be perceived for an instant. By instantaneously searing and solidifying only the outside, it raises the pressure of the internal blood and cursed energy to the limit, causing the physical body to "burst" from the inside. The surface is beautifully browned, while the inside is raw. Enjoying the texture of popping meat.
-
-『腊（モルタ）』
-"Cure/Dry (Moruta)"
-「腊（せき）」とは、骨付きの干し肉、または塩蔵。モルタは死と乳鉢を孕む音。
-"腊 (Seki)" refers to dried meat on the bone, or salting. Moruta is a sound pregnant with death and a mortar.
-触れた瞬間に、対象が持つ生命力と水分を全て外へと吸い出す。一瞬で皮膚は枯れ木のように乾き、筋肉は縮み、骨にへばりつく。生きたまま「風干し」にされた肉塊は、一切の抵抗を許されず、ただ乾燥した静寂のなかに転がる。
-The instant I touch them, I suck all the life force and moisture the target possesses to the outside. In an instant, their skin dries like a dead tree, muscles shrink, and cling to the bones. A lump of meat "air-dried" while alive is permitted absolutely no resistance, simply rolling in a dried silence.
-
-『齏（アルカ）』
-"Mince/Grind (Aruka)"
-「齏（せい）」とは、微塵に砕くこと、あるいは和え物。アルカは根源の光。
-"齏 (Sei)" means to smash into dust, or a dressed dish. Aruka is the light of the origin.
-「解」や「捌」のように線で断つのではない。対象の空間そのものを、目に見えない無数の細密な格子状の呪力で満たし、一瞬で「擂り潰す」。触れたものは肉も衣服も、風に舞う微細な粉末（スパイス）と化す。原型を留めることすら許さない、究極の細断だ。
-It does not sever with lines like "Dismantle (Kai)" or "Cleave (Hachi)." Filling the target's space itself with countless invisible, minute grid-like cursed energies, it "grinds" them in an instant. Anything it touches, be it flesh or clothing, is reduced to fine powder (spice) dancing in the wind. The ultimate mincing, not even allowing them to retain their original form.
-
-**宿儺のフルコース**
-**Sukuna's Full Course**
-
-クク、トリコのように「料理名」を並べ立てると思ったか？ 違うな。
-Kuku, did you think I would list off "dish names" like Toriko? You are wrong.
-
-俺のフルコースに必要なのは、技の名前ではない。
-What is necessary for my full course is not the names of techniques.
-
-俺がこれまでに喰らい、あるいはこれから喰らうべき「至高の食材（獲物）」そのものだ。
-It is the "supreme ingredients (prey)" themselves that I have devoured so far, or should devour from here on out.
-
-【前菜】
-[Appetizer]
-己の才能に溺れ、俺の前に立ちはだかった若き術師たちの「絶望とプライドの破片」。小気味よい歯ごたえだ。
-The "fragments of despair and pride" of young sorcerers who drowned in their own talent and stood before me. A delightful chewiness.
-
-【スープ】
-[Soup]
-千年の時を経てなお薄まらぬ、呪詛師たちの怨嗟と執着を極限まで煮詰めた「黒き澱（よどみ）」。五臓六腑に染み渡る。
-The "black stagnation," a thorough boiling down to the limit of the resentment and obsession of curse users that has not diluted even after a thousand years. It seeps into the internal organs.
-
-【魚料理】
-[Fish Dish]
-独自の奇妙な生得術式を持ち、自らを特別だと信じて疑わない変異種どもの「新鮮な脳髄」。
-The "fresh brains" of mutant species possessing their own bizarre innate techniques, never doubting their belief that they are special.
-
-【肉料理】
-[Meat Dish]
-時代を代表する「最強」の烙印を押された男の、鍛え上げられた肉体と魂。噛み締めるたびに、世界を統べる味がする。
-The forged physical body and soul of a man branded as the "strongest" representing his era. Every time I bite into it, it tastes of ruling the world.
-
-【デザート】
-[Dessert]
-全てを喰らい尽くし、更地となった世界に残る「完全なる静寂」。これ以上の締めくくりはない。
-The "complete silence" remaining in a world that has been devoured to exhaustion and leveled to the ground. There is no better conclusion than this.
-
-さて……。
-Now then...
-
-十分に学び、十分に愉しんだようだな、小僧。
-It seems you have learned sufficiently, and enjoyed yourself sufficiently, brat.
-
-お前は俺の術理を熱心に聞き、まるで客席から品評しているつもりでいたようだが……。
-You listened to my technique principles eagerly, seemingly acting as if you were critiquing from the audience seats, but...
-
-勘違いするなと言ったはずだ。
-I told you not to make any misunderstandings.
-
-ここは俺の「御厨子」の前。
-This is before my "Shrine."
-
-そして、お前はすでに、美しく磨き上げられた俎板（まないた）の上に載せられている。
-And you are already placed upon a beautifully polished cutting board.
-
-首の皮一枚、どこをどう断てば一番美しいか、もう決めてある。
-I have already decided exactly where and how to sever the skin of your neck to make it most beautiful.
-
-「解（カイ）」
-"Dismantle (Kai)."
-
----
-
-新世界に突如として現れた、常識破りの超新星。その名はマシマ・D・ジロー。
-An unconventional Super Rookie who suddenly appeared in the New World. His name is Mashima D. Jiro.
-
-彼は「海賊王」という伝説に対し、勝手に多大なリスペクトを抱きながらも、誰の許可も得ずに独自の解釈で海賊道を突き進む、いわば「インスパイア系海賊」である。本流（本家）の海賊たちからは「勝手に真似するな」「美学がない」と煙たがられつつも、その絶妙にクセになるバイブスと、破天荒すぎる生き様は、本家をも凌駕する熱狂的な信者（クルー）を生み出している。
-While harboring immense respect on his own toward the legend of the "Pirate King," he is an "Inspire-type Pirate," so to speak, charging down the path of piracy with his own interpretation without obtaining anyone's permission. While shunned by mainstream (Original Family) pirates who say, "Don't imitate us on your own," and "You have no aesthetics," his exquisitely addictive vibe and overly wild way of living have spawned fanatic believers (a crew) that surpass even the Original Family.
-
-彼の能力は「マシマシの実」。
-His ability is the "Mashi-Mashi (Extra-Extra) Fruit."
-
-本来はあらゆる物理的・概念的なものを「増量」させるというチート級の能力だったはずだが、彼自身の異常なまでのニンニク愛好と「味の濃さ」を求める魂が影響し、「体内のニンニク成分と脂（カロリー）を無限に増量・操作する」という、極めて暴走気味な能力へと変貌を遂げている。彼の周囲は常に豚骨とニンニクの強烈な湯気で満たされており、常人であればその場にいるだけで胃もたれを起こす。
-Originally, it should have been a cheat-level ability to "increase" all physical and conceptual things, but influenced by his own abnormal love for garlic and his soul seeking "richness of flavor," it has transformed into an extremely runaway ability to "infinitely increase and manipulate the garlic components and fat (calories) within his body." His surroundings are always filled with intense steam of pork bone and garlic, and an ordinary person would experience stomach heaviness just by being there.
-
-彼のセリフは、文字通りの「臭さ（ニンニク臭）」と、少年漫画特有の「クサさ（キザで熱い）」が極限まで高められ、相手の臓腑に直接響く。
-His lines are a literal "smelliness (garlic smell)" and the "cheesiness (pretentious and hot-blooded)" peculiar to shonen manga elevated to the absolute limit, resonating directly in the opponent's internal organs.
-
-「ニンニク、入れますか……？ いや、聞くまでもねェな。お前の絶望も、俺の覇気も……全部『マシマシ』だ！！」
-"Do you want garlic...? No, I don't even need to ask. Your despair, and my Haki... it's all 'Mashi-Mashi'!!"
-
-「海賊王になる男の器ってのはなぁ……丼（どんぶり）の底が見えねェくらい深く、濁ってねェとなァ！！」
-"The vessel of a man who will become the Pirate King... has to be so deep you can't see the bottom of the bowl, and cloudy!!"
-
-「血の味がするだと？ 違うな……それは俺の『カラメ』だ。濃すぎる人生ってのは、時に毒になるんだよ」
-"It tastes like blood, you say? Wrong... That is my 'Karame (Extra-Salty)'. A life too rich sometimes becomes poison."
-
-「公式（本家）の許可ァ？ 海賊が許可なんて求めてどうすんだ。俺は俺のやり方で、この海（スープ）を飲み干すだけだ！！」
-"Permission from the official (Original Family)? What's a pirate going to do seeking permission. I'm just going to drink this sea (soup) dry my own way!!"
-
-彼の戦闘スタイルは、圧倒的な質量と暴力的なまでのカロリーをぶつけることにある。防御など一切考えず、相手の胃袋と精神を同時に破壊する。
-His combat style lies in striking with overwhelming mass and violent calories. Without a single thought to defense, he destroys the opponent's stomach and spirit simultaneously.
-
-**【マシマの濃厚な技の数々】**
-**[Mashima's Numerous Rich Techniques]**
-
-**天地返し（てんちがえし）**
-**Heaven and Earth Reversal (Tenchi-gaeshi)**
-地面を丸ごと引っくり返し、地層の下に相手を埋没させる豪快な技。本来の目的は「麺（自分）と野菜（敵）を入れ替え、スープ（海）の味を馴染ませる」という謎の理論に基づいている。
-A dynamic technique that flips the entire ground, burying the opponent beneath the stratum. Its original purpose is based on the mysterious theory of "swapping the noodles (himself) and the vegetables (the enemy) to let the flavor of the soup (the sea) blend in."
-
-**アブラカタブラ**
-**Abura-Cadabra**
-「マシマシの実」の力で生成した極上の背脂を全身から分泌・散布する。敵の物理攻撃を極限まで滑らせて無効化する防御技でありながら、相手の足元を狂わせ、呼吸器を脂で塞ぐ凶悪な呪文のような技。
-He secretes and scatters supreme back fat generated by the power of the "Mashi-Mashi Fruit" from his entire body. While it is a defensive technique that nullifies enemy physical attacks by making them slip to the absolute limit, it is also a brutal spell-like technique that messes up the opponent's footing and blocks their respiratory organs with fat.
-
-**武装色「ブラック・ガーリック」**
-**Armament Haki "Black Garlic"**
-覇気を纏った拳を、自身の体内で長期熟成・発酵させた「黒ニンニク」の成分と融合させる。どす黒く硬化し、放たれる一撃は覇王色にも似た強烈な異臭と威圧感を放ち、並の海兵なら匂いだけで泡を吹いて倒れる。
-He fuses a Haki-clad fist with the components of "black garlic" that has been aged and fermented for a long period within his own body. Hardening to a pitch black, the unleashed blow emits an intense stench and intimidation similar to Conqueror's Haki; an average Marine would foam at the mouth and collapse from the smell alone.
-
-**豚星・大豚W（とんせい・だいぶたダブル）**
-**Tonsei: Large Pork Double**
-両腕に巨大な煮豚のような超質量の肉塊（筋肉と脂の塊）を形成し、上空から叩きつける必殺のダブルラリアット。受けた者は物理的ダメージに加え、急激な胸焼けで戦闘不能に陥る。
-Forming super-massive meat lumps (lumps of muscle and fat) like giant boiled pork on both arms, he slams them down from above in a lethal double lariat. Those who take the hit are rendered unable to fight due to sudden, severe heartburn in addition to the physical damage.
-
-**カラメ・スプラッシュ**
-**Karame (Extra-Salty) Splash**
-超高圧・高濃度の醤油ベースの液体（本人は血液の一部と主張）を口から吹き出す。傷口に激痛を与えると同時に、周囲の水分を奪い取り敵を脱水症状に追い込む。
-He spouts an ultra-high-pressure, high-concentration soy sauce-based liquid (which he claims is a part of his blood) from his mouth. While inflicting excruciating pain on wounds, it simultaneously steals surrounding moisture, driving the enemy into dehydration.
-
-**【覚醒技】エイジング・ワールド（熟成マシマシ空間）**
-**[Awakening Technique] Aging World (Maturing Mashi-Mashi Space)**
-周囲の環境すべてを「巨大な寸胴鍋の中」へと変貌させる。空気は白濁した高カロリーのスープと化し、重力は何倍にも増したかのように敵にのしかかる。この空間に長時間いると、敵の細胞は強制的に「熟成（エイジング）」させられ、疲労と胃もたれで動けなくなる。
-Transforms the entire surrounding environment into the "inside of a giant stockpot." The air turns into a cloudy, high-calorie soup, and gravity weighs down on the enemy as if it had multiplied many times over. Staying in this space for a long time forcibly "ages" the enemy's cells, rendering them unable to move due to fatigue and stomach heaviness.
-
-**「エニエス・ロビー胃袋崩壊事件」**
-**The "Enies Lobby Stomach Collapse Incident"**
-かつて、海軍の巨大要塞に単身乗り込んだ際、彼は一切の武力を使わず、広場でひたすら「ブラック・ガーリック」を炊き続けた。結果、風向きにより要塞全体に致死量のニンニク臭と豚骨の湯気が充満。海兵たちは次々と深刻な胸焼けと食欲異常を引き起こし、戦わずして要塞機能が麻痺した。
-Once, when he boarded the Marines' giant fortress entirely alone, he didn't use any military force at all; he simply continued to cook "Black Garlic" in the plaza. As a result, depending on the wind direction, the entire fortress was filled with a lethal dose of garlic stench and pork bone steam. Marines developed severe heartburn and abnormal appetites one after another, and the fortress's functions were paralyzed without a fight.
-
-**「インスパイアの頂点」**
-**"The Pinnacle of Inspire"**
-彼は「新世界三田島」という聖地に住む伝説の海賊（本家）を異常なまでにリスペクトしているが、本家からは「あいつはやりすぎだ。スープのバランスが崩れている」と苦言を呈されている。しかし、本家に怒られないギリギリのライン（リスペクトの念は本物）を攻め続け、むしろ本家を超えるほどの熱狂的な信者（通称：ジロリアン海賊団）を形成。今や一つの勢力となっている。
-He respects a legendary pirate (the Original Family) living in a holy land called "New World Mita Island" to an abnormal degree, but the Original Family complains, "That guy goes too far. The balance of the soup is ruined." However, he continues to push the absolute limit of not getting scolded by the Original Family (his feeling of respect is genuine), and has instead formed a following of fanatic believers (commonly known as the Jiro-ian Pirates) that surpass even the Original Family. They have now become a single faction.
-
-
-**ルフィとの遭遇**
-**Encounter with Luffy**
-「なんだお前！ すっげェいい匂い（肉とニンニク）がするぞ！！ 食っていいか！？」と目を輝かせるルフィに対し、「ガハハ！ 俺を食おうってのか！ いいぜ、俺のカロリーに耐えられるならな！」と意気投合。しかし、戦闘が始まるとその圧倒的な質量にルフィも苦戦する。
-Against Luffy, whose eyes sparkle as he says, "What are you! You smell incredibly good (meat and garlic)!! Can I eat you?!", they hit it off with, "Gahaha! You're gonna eat me?! Fine, if you can withstand my calories!" However, once the battle begins, even Luffy struggles against his overwhelming mass.
-
-**サンジとの対立**
-**Conflict with Sanji**
-「てめェ……栄養バランスってもんを微塵も考えてねェだろう！ なんだその脂と塩分は！ 料理に対する冒涜だ！」と激怒するサンジ。しかし、マシマの放つ圧倒的な生命力と「旨味の暴力」を前に、サンジも料理人として「認めざるを得ないエネルギー」を感じ、葛藤する。
-Sanji is infuriated, saying, "You bastard... you haven't thought about nutritional balance in the slightest, have you! What's with that fat and salt! It's a blasphemy against cooking!" However, faced with Mashima's overwhelming life force and "violence of umami," Sanji also feels an "energy he cannot help but acknowledge" as a cook, and is conflicted.
-
-**ビッグ・マム海賊団（シャーロット・カタクリ等）との対立**
-**Conflict with the Big Mom Pirates (Charlotte Katakuri, etc.)**
-「甘いお菓子（スイーツ）ばかりの国」であるトットランドに突如上陸。「甘ぇ匂いばかりで吐き気がするぜ……この島、全部『カラメ』にしてやるよ」と宣言。カタクリのモチモチの能力に対し、ねっとりとした「アブラ」で対抗し、異次元の高カロリー対決を引き起こす。
-He suddenly lands in Totto Land, a "country of nothing but sweet treats (sweets)." He declares, "All these sweet smells make me nauseous... I'll turn this whole island 'Karame (Extra-Salty)'." Against Katakuri's Mochi-Mochi abilities, he counters with sticky "Abura (Fat)," sparking a high-calorie showdown in another dimension.
-
-**海軍（スモーカー）との絡み**
-**Entanglements with the Marines (Smoker)**
-スモーカーの「モクモク」の煙を、マシマの「豚骨とニンニクの湯気（スチーム）」が完全に上書きする。「けほっ……貴様、煙より質（タチ）が悪いぞ……！」とスモーカーをむせ返させる。
-Mashima's "pork bone and garlic steam" completely overwrites Smoker's "Plume-Plume" smoke. He makes Smoker choke, coughing, "*Cough*... You bastard, you're worse than smoke...!"
-
-激闘の末、ルフィはギア5（ニカ）を発動。マシマの覚醒技「エイジング・ワールド」の超重力と高カロリー空間を、ゴムの自由な発想でトランポリンのように跳ね返し、むしろ周囲の脂とニンニクを巨大化して飲み込みエネルギーに変えるという破天荒な戦いを見せる。
-After a fierce battle, Luffy activates Gear 5 (Nika). With the free imagination of rubber, he bounces back the super-gravity and high-calorie space of Mashima's Awakening technique, "Aging World," like a trampoline, and instead shows an unprecedented fighting style by gigantifying the surrounding fat and garlic, swallowing them, and turning them into energy.
-
-最後は、ルフィの「ゴムゴムの・業火拳銃（レッドロック）――超大盛り（ギガント）！！」によって、マシマの「武装色ブラック・ガーリック」ごと正面から打ち砕かれる。
-In the end, he is smashed head-on along with his "Armament Haki: Black Garlic" by Luffy's "Gum-Gum Red Roc—Super Large Serving (Gigant)!!"
-
-大地に大の字で倒れ込むマシマ。
-Mashima collapses spread-eagle on the ground.
-
-常に満たされず、「マシマシ」を求めて全てを増量させ続けてきた彼の腹と魂は、海賊王を志すルフィの全力の拳（カロリー）を受け止めたことで、生まれて初めて奇妙な満足感に包まれていた。
-Always unsatisfied, his stomach and soul, which had continued to increase everything in search of "Mashi-Mashi," were enveloped in a strange sense of satisfaction for the first time in his life, having taken on the full-powered fist (calories) of Luffy, who aspires to be the Pirate King.
-
-「……ハァ……ハァ……。完敗だ……」
-"...Hah... Hah... A complete defeat..."
-
-マシマは口元についた血と脂を拭い、ゴロゴロと雷のように腹を鳴らして笑った。
-Mashima wiped the blood and fat from his mouth, his stomach rumbling like thunder as he laughed.
-
-「ヒヒ……。ひさしぶりに……腹がいっぱいになったぜ……。麦わら、お前の拳……底が見えねェ、最高のダシが出てたぞ……」
-"Hehe... It's been a while... since my stomach was full... Straw Hat, your fist... put out the best broth, with no bottom in sight..."
-
-ルフィもまた「お前もしぶとかったぞ！ 肉食いてェ！」と笑い返す。
-Luffy also laughs back, "You were tough too! I wanna eat meat!"
-
-その時、水平線の彼方から多数の軍艦のシルエットが現れた。海軍の大艦隊が包囲網を敷くために接近してきたのだ。そして、海風に乗って微かに漂ってくる、スパイシーで食欲をそそる匂い。
-At that moment, the silhouettes of numerous warships appeared from beyond the horizon. A large Marine fleet had approached to lay down a siege net. And then, riding on the sea breeze, a spicy, appetizing smell faintly drifted over.
-
-「ん……？ この匂い……」
-"Hmm...? This smell..."
-
-ボロボロの体を引きずりながら、マシマはフラフラと立ち上がった。海軍の接近に麦わらの一味が警戒する中、マシマは艦隊の方を向いてニヤリと笑い、牙のような歯を見せた。
-Dragging his battered body, Mashima staggered to his feet. While the Straw Hat Crew goes on alert at the Marines' approach, Mashima turned toward the fleet and grinned, showing fang-like teeth.
-
-「……腹はいっぱいになったがよォ。……デザートは別腹だからなぁ」
-"...My stomach is full, but you know... there's always room for dessert."
-
-ルフィが「おい、どこ行くんだ？」と首を傾げるのをよそに、マシマは残された最後の力を振り絞り、武装色「ブラック・ガーリック」を両足に纏わせた。逃げる気も、大人しく捕まる気も毛頭ない。彼の瞳には、軍艦の厨房の巨大な寸胴鍋しか映っていなかった。
-Ignoring Luffy tilting his head and asking, "Hey, where are you going?", Mashima mustered his remaining last bit of strength and clad both his legs in Armament Haki "Black Garlic." He had absolutely no intention of running away, nor of being captured quietly. In his eyes, only the giant stockpots in the warships' kitchens were reflected.
-
-「おい海兵ども！！ そのカレー、全マシで食わせろォオオオ！！！」
-"Hey Marines!! Let me eat that curry, All-Extra (Zen-Mashi)!!!"
-
-そう咆哮するや否や、マシマ・D・ジローは海軍カレーの匂いに釣られ、単身で大艦隊のど真ん中へと猛然と突撃していった。大砲の雨をアブラで滑らせながら、デザート（海軍カレー）を求めて軍艦によじ登っていくその常軌を逸した後ろ姿に、ルフィは「しししっ！ 変な奴だな！」と大笑いし、サンジは「デザートにカレー食う奴がいるか！！」とツッコミを入れるのだった。
-The moment he roared that, Mashima D. Jiro, lured by the smell of Marine curry, charged fiercely all alone right into the dead center of the grand fleet. Slipping the rain of cannons with fat, climbing up the warship in search of dessert (Marine curry)—at that eccentric figure from behind, Luffy laughed loudly, "Shishishi! What a weird guy!", while Sanji retorted, "Who eats curry for dessert!!"
-
-インスパイアの極致たる男が残した濃厚すぎる伝説とニンニクの匂いは、新世界の海にいつまでも漂い続けるだろう。
-The overly rich legend and smell of garlic left behind by the man who was the very pinnacle of Inspire will surely continue to drift in the seas of the New World forever.
 
 ---
 
@@ -5514,3 +4767,390 @@ At the feet of the "Fat Man from the Trolley Problem" leaning over the railing, 
 **[Summary]**
 犬の言葉は一切通じていませんが、デブは「自分の不条理な境遇への愚痴」を、子犬は「テリーマンから学んだ真のヒロイズム（自己犠牲と命の絶対的価値）」をそれぞれ語っています。奇しくも両者は「命を天秤にかけるな（功利主義の否定）」という一点においてのみ、見事なすれ違いのまま意見の一致を見ています。
 Although the dog's words are not understood at all, the Fat Man speaks of "complaints about his absurd circumstances," while the Puppy speaks of "true heroism learned from Terryman (self-sacrifice and the absolute value of life)." Oddly enough, the two reach a consensus in a magnificent state of mutual misunderstanding on one single point: "Do not weigh lives on a scale (the denial of utilitarianism)."
+
+
+---
+
+静まり返った小学校のグラウンドには、冷たい夜風だけが吹き抜けていた。
+Only a cold night breeze blew through the dead-silent elementary school sports ground.
+
+千照睦（ちで りく）は、一人で陸上部の居残り練習を続けていた。時計の針はすでに夜の九時を回っている。他の生徒たちはとっくに下校し、職員室の明かりもまばらだ。すっかり暗闇に包まれた校舎は、昼間の喧騒が嘘のように静まり返り、不気味なほどの沈黙を保っていた。
+Riku Matsude was continuing his extra practice for the track and field club all alone. The hands of the clock had already passed 9:00 PM. The other students had long since gone home, and the lights in the staff room were sparse. The school building, completely enveloped in darkness, was dead silent, making the daytime hustle and bustle seem like a lie, and maintained an eerie silence.
+
+泥だらけの足を洗い、睦は薄暗い廊下を歩いて男子トイレに向かった。無機質な蛍光灯がチカチカと点滅し、冷たいタイル張りの床を青白く照らしている。用を足し終え、蛇口で手を洗っていたその時だった。
+Washing his muddy feet, Riku walked down the dim hallway and headed for the boys' restroom. An inorganic fluorescent light flickered, illuminating the cold tiled floor with a pale blue light. It happened when he had finished his business and was washing his hands at the faucet.
+
+――コンッ。
+—*Knock.*
+
+静寂を破る小さな音が、背後の個室から響いた。
+A small sound breaking the silence echoed from the stall behind him.
+控えめなノック音だった。
+It was a modest knocking sound.
+
+その瞬間、睦の脳裏に学校でまことしやかに囁かれている怪談が蘇った。
+At that moment, a ghost story plausibly whispered around the school revived in Riku's mind.
+『かつて、この学校の生徒が夜のトイレで首を吊った。今でも夜中にそのトイレに行くと、閉ざされた個室の中から哀し気なノック音が聞こえてくる。もしもその音に応えて話しかけてしまうと、向こうの世界に引きずり込まれてしまう』
+'Once, a student at this school hung himself in the restroom at night. Even now, if you go to that restroom in the middle of the night, you can hear a sorrowful knocking sound from inside a closed stall. If you respond to that sound and talk to it, you'll be dragged into the other world.'
+
+しかし、睦は生来の鈍感さゆえか、あるいはただの馬鹿なのか、背筋を這うような寒気を感じながらも、それを「陸上部の仲間の悪戯だ」と思い込んでしまった。こんな時間まで残っているのは自分だけのはずだが、きっと誰かが脅かそうと隠れていたのだろうと。
+However, whether due to his inherent dullness or perhaps just being an idiot, even while feeling a chill creeping down his spine, Riku assumed it was "a prank by his friends from the track club." Even though he should be the only one remaining this late, he figured someone must be hiding, trying to scare him.
+
+「……どうしたんですか？」
+"...What's wrong?"
+
+睦は個室のドアに向かって声をかけた。
+Riku called out toward the stall door.
+返事はない。しん、とした静寂が戻るだけだ。
+There was no reply. Only a dead silence returned.
+
+「もしかして、閉じ込められちゃったんですか？」
+"Did you get locked in by any chance?"
+
+半ば呆れたように尋ねた直後だった。
+It was right after he asked, half-exasperated.
+
+――コンッ。
+—*Knock.*
+
+中から、ノックが一回だけ返ってきた。
+From inside, a single knock returned.
+「なんだよ、声出せないのか？」
+"What, can't you speak?"
+面白がった睦は、にやにやしながら質問を続けた。
+Finding it amusing, Riku continued asking questions with a smirk.
+
+「お前は、いつもこういうことばかりしているアホの健太ですか？」
+"Are you Kenta, the idiot who always does this kind of stuff?"
+
+――コンッ、コンッ。
+—*Knock, knock.*
+
+今度はノックが二回、はっきりと返ってきた。
+This time, two knocks returned clearly.
+
+（なるほど……）
+*(I see...)*
+どうやら、中からの返答にはルールがあるらしい。「はい」の場合はノックが一回、「いいえ」の場合はノックが二回。睦はその単純な法則を見出し、まるでゲームでも見つけたかのように質問を投げかけ続けた。
+Apparently, there is a rule for the replies from inside. One knock for "yes," two knocks for "no." Discovering that simple law, Riku continued to throw questions as if he had found a game.
+
+「じゃあ、陸上部のやつですか？」
+"Then, are you a guy from the track club?"
+――コンッ、コンッ。（いいえ）
+—*Knock, knock.* (No)
+「えっ？ じゃあ、他のクラスのやつ？」
+"Eh? Then, a guy from another class?"
+――コンッ、コンッ。（いいえ）
+—*Knock, knock.* (No)
+「男ですか？」
+"Are you a guy?"
+――コンッ、コンッ。（いいえ）
+—*Knock, knock.* (No)
+
+質問を続けるうちに、睦の顔から徐々に笑みが消えていった。
+As he continued the questions, the smile gradually vanished from Riku's face.
+陸上部の仲間ではない。他のクラスの生徒でもない。そもそも、今の質問の答えが「はい」なら、中にいるのは「誰」なのだろうか。
+Not a friend from the track club. Not a student from another class. To begin with, if the answer to the current question is "yes" (since the previous answer was "no"), then "who" is inside? (Note: Context implies the previous question "Are you a guy?" being "no" makes the entity potentially female or non-human, leading to his realization).
+
+ドクン、と心臓が嫌な音を立てた。
+His heart made an unpleasant *thump*.
+（もしかして、本当に怪談の噂の……『アレ』なのか？）
+*(Could it really be... 'that thing' from the rumored ghost story?)*
+
+急激な恐怖が睦の全身を粟立たせた。今すぐこの場から逃げ出したい。しかし、足は床に縫い付けられたように動かない。引きずり込まれるという怪談の結末が頭をよぎる。
+A sudden terror gave Riku goosebumps all over his body. He wanted to run away from this place right now. However, his feet wouldn't move, as if sewn to the floor. The ghost story's conclusion of being dragged in crossed his mind.
+
+それでも睦は、核心に触れるような「お前は幽霊か？」「死んでいるのか？」という質問を無意識に避けながら、震える声で問いを続けた。
+Even so, Riku unconsciously avoided questions that touched the core, such as "Are you a ghost?" or "Are you dead?", and continued to ask questions in a trembling voice.
+
+「……ずっと、ここにいるんですか？」
+"...Have you been here all this time?"
+――コンッ。（はい）
+—*Knock.* (Yes)
+「……寂しい、ですか？」
+"...Are you lonely?"
+――コンッ。（はい）
+—*Knock.* (Yes)
+
+その一回のノック音には、先ほどまでの無機質さが消え、どこか縋るような、底知れぬ哀しみがこもっているように聞こえた。暗く冷たい個室の中で、たった一人で長い時間を過ごしてきたソレ。その孤独を想像すると、睦の中にあった恐怖は、いつしか奇妙な同情めいた感情へと変わっていった。
+In that single knocking sound, the previous inorganic nature had vanished, and it sounded as if it contained a bottomless sorrow, somehow clinging. *That thing*, which had spent a long time all alone in a dark, cold stall. Imagining that loneliness, the fear within Riku had imperceptibly turned into a strange emotion akin to sympathy.
+
+（一人ぼっちで、ずっと暗闇に……）
+*(All alone, in the darkness all this time...)*
+
+気の毒に思った睦は、最後に優しい声でこう問いかけた。
+Feeling sorry for it, Riku asked this at the end in a gentle voice.
+
+「あなたは、一人ですか？」
+"Are you alone?"
+
+――コンッ。
+—*Knock.*
+
+返ってきたのは、確かに「はい」を示す一回のノックだった。
+What returned was certainly a single knock indicating "yes."
+
+しかし、その直後。
+However, immediately after that.
+
+――ガンッ！！ バンッ！ ドンッ！ ガンガンガンガンガンガンガンガンッ！！！
+—*WHAM!! BANG! THUD! BANG BANG BANG BANG BANG BANG BANG BANG!!!*
+
+トイレ中のすべての個室のドアから、そして背後にある外へ繋がる出口の扉から。
+From the doors of every stall in the restroom, and from the exit door leading outside located behind him.
+一斉に、凄まじい力で壁や扉を叩く音が爆発したように鳴り響いた。
+All at once, sounds of walls and doors being battered with tremendous force echoed as if they had exploded.
+
+「え……？」
+"Eh...?"
+
+無限に続くかのような暴力的なノック音が、狭いトイレの空間を埋め尽くす。
+Violent knocking sounds that seemed to continue infinitely filled the narrow restroom space.
+四方八方から叩きつけられる無数の音の渦。
+A vortex of countless sounds battered from all directions.
+
+「あなたは一人ですか？」という問いに対する「はい」。
+The "yes" to the question "Are you alone?".
+それは「個室の中にいるソレ」が一人であるという意味ではなかった。
+That did not mean that "the thing inside the stall" was alone.
+
+『お前は今、一人きりか？』
+'Are *you* all alone right now?'
+
+そう問うていたのだ。
+That is what it was asking.
+耳を塞いでも防ぎきれない轟音の中、睦はついに理解した。
+Amidst the roaring sounds that he couldn't block out even by covering his ears, Riku finally understood.
+
+自分は決して、たった一人の哀れな幽霊と同情ごっこをしていたわけではなかった。
+He had by no means been playing at sympathizing with a single, pitiful ghost.
+気がつけば、逃げ場のないこの空間で、無数の霊に完全に包囲されていたのだということを。
+Before he knew it, in this space with nowhere to run, he had been completely surrounded by countless spirits.
+
+---
+
+『Dr.STONE』の世界観とご提示いただいた特殊なルール、そして極めて個性的なキャラクターたちの業を掛け合わせた、ダークでアイロニカルな群像劇を展開しました。霊体となった石像たちの「存在しないものへの執着」と「狂気」が交錯する世界です。
+I have developed a dark and ironical ensemble drama that crosses the worldview of "Dr. STONE" with the special rules you provided and the karma of extremely unique characters. It is a world where the "obsession with what does not exist" and "madness" of stone statues turned spiritual bodies intersect.
+
+---
+
+**### Day 1: マデイラ島の哄笑**
+**### Day 1: The Roaring Laughter of Madeira Island**
+
+石化の解ける音がした。ひび割れる石、滴る硝酸の匂い。
+There was the sound of petrification being undone. Cracking stone, the smell of dripping nitric acid.
+マデイラ空港の片隅で、それは「足」を得て大地を踏み締めた。
+In a corner of Madeira Airport, *it* gained "legs" and firmly tread upon the earth.
+
+霊体として顕現した**ロナウド像**は、自らの顔に触れる。歪な骨格、寄りすぎた両目、不敵に吊り上がった口角。かつて世界中から「似ていない」と酷評され、嘲笑の的となったあの顔が、霊的な輪郭をもって世界に定着していた。
+The **Ronaldo Statue**, manifested as a spiritual body, touched its own face. A distorted skeleton, eyes set too close together, the corners of the mouth raised defiantly. That face, once heavily criticized worldwide for "not looking like him" and made a target of ridicule, had settled in the world with spiritual contours.
+
+胸像であった彼に立派な両脚が備わったのは、彼自身の「自分はこうあるべきだ」という強烈な自己イメージの賜物だった。しかし、顔だけは作り手の呪縛から逃れられない。
+That he, who had been a bust, was equipped with magnificent legs was the fruit of his own intense self-image that "this is how I should be." However, his face alone could not escape the curse of its creator.
+
+「……医者だ」
+"...A doctor."
+
+彼はギラついた瞳で、緑に覆われた廃墟の島を見下ろした。
+With glaring eyes, he looked down at the ruined island covered in green.
+「俺の完璧なオリジナルを取り戻す。神の手を持つ整形外科医を探さねばならない」
+"I will regain my perfect original. I must find a plastic surgeon with the hands of a god."
+
+彼を突き動かすのは、抑えきれない野心と闘争心。その歪な顔こそが、オリジナルの持つ内なる狂気と渇望を完璧に抽出したカリカチュア（真実）であることに、彼はまだ気づいていない。不気味な笑みを浮かべ、彼は自らの美貌を取り戻すため、海を渡る手段を考え始めていた。
+What drives him is uncontainable ambition and competitive spirit. He has not yet realized that his distorted face is exactly the caricature (truth) that perfectly extracted the inner madness and craving possessed by the original. Floating an eerie smile, he began to think of means to cross the sea in order to regain his handsome features.
+
+---
+
+**### Day 2: 泥濘の黄金**
+**### Day 2: Golden Mire**
+
+かつてのアメリカ大陸、その荒野の中心で、黄金の巨体が揺らめいていた。
+In the center of the wasteland of the former American continent, a giant golden body was flickering.
+
+「私のものだ。すべて、私のもののはずだった」
+"It is mine. Everything, it was all supposed to be mine."
+
+金ピカの**トランプ像**は、霊的実体として現世に降り立った。彼の手には、燦然と輝くビットコインが握られている。だが、それは形而上学的な概念の残骸に過ぎない。彼のウォレットにはアクセスできず、不動産も、権力も、地位も、ここには物理的にも概念的にも何一つ存在しない。
+The glaringly golden **Trump Statue** descended upon this world as a spiritual entity. In his hand, a brilliantly shining Bitcoin is grasped. But that is merely the wreckage of a metaphysical concept. He cannot access his wallet, and real estate, power, status—none of it exists here, neither physically nor conceptually.
+
+彼にあるのは「本物を踏襲した強烈な矜持」のみ。
+What he has is only an "intense pride following the original."
+彼は足元を見下ろした。泥の中に、色褪せた一枚の布が半分埋もれている。星条旗だ。
+He looked down at his feet. Half-buried in the mud was a faded piece of cloth. The Stars and Stripes.
+
+彼はそれを拾い上げ、霊的な波動で泥を振り払った。
+He picked it up and shook off the mud with a spiritual wave.
+「主権国家など、もはや不要。本物に成り代わるには、彼奴よりも偉大になればいい。そう……たとえば、ノーベル平和賞だ。このクソッタレな石の世界に、私のルールで『平和』をもたらしてやろうではないか」
+"A sovereign nation is no longer necessary. To replace the real thing, I simply need to become greater than him. Yes... for example, the Nobel Peace Prize. Let me bring 'peace' to this goddamn stone world by my own rules."
+
+虚無の黄金像は、失われた国家の旗印を高く掲げた。彼が行き着く先が、慈悲なき支配と闘争であることなど意に介さずに。
+The golden statue of nothingness raised high the symbol of the lost nation. Not caring in the least that his ultimate destination would be merciless domination and struggle.
+
+---
+
+**### Day 3: 獅子の喪失と咆哮**
+**### Day 3: Loss and Roar of the Lion**
+
+シンガポール海峡は、生ぬるい静寂に包まれていた。
+The Singapore Strait was enveloped in a lukewarm silence.
+
+かつて観光客たちが吐き捨てた「がっかり」という嘲笑のエネルギーを吸い続けた**マーライオン**は、復活液の飛沫を浴び、呪詛の塊のような霊体として顕現した。
+The **Merlion**, which had continued to absorb the energy of ridicule known as "disappointment" that tourists once spat out, bathed in the splash of the Revival Fluid and manifested as a spiritual body resembling a lump of curses.
+
+彼が目覚めて最初に探したのは、セントーサ島にそびえ立っていた巨大な同位体――彼が一方的に弟分と見なしていた、陸の百獣の王だった。海から世界を統べる自分と、陸から世界を統べる弟。その構図で、己の偉大さを世界に知らしめるはずだった。
+The first thing he searched for upon waking was the giant isotope that towered over Sentosa Island—the king of beasts of the land, whom he unilaterally considered his little brother. Himself ruling the world from the sea, and his little brother ruling from the land. With that composition, he was supposed to make his greatness known to the world.
+
+しかし、ない。人間の浅ましい資本主義と消費主義の果てに、弟分は旧世界でとうの昔に無残に解体されていたのだ。
+However, it was gone. At the end of human's shallow capitalism and consumerism, his little brother had been ruthlessly dismantled in the old world long ago.
+
+「……人間め」
+"...Humans."
+
+彼の内で、何かが決定的に壊れる音がした。
+Within him, there was the sound of something breaking decisively.
+白亜の霊体は黒黒とした負のオーラを纏い始める。観光客への鬱屈した憎悪は、いまや人類全体への純粋な殺意へと集約された。彼は虎視眈々と機を窺う。人間どもを蹂躙し、真の「百獣の王」としての尊厳を取り戻す、その血塗られた時を。
+The chalk-white spiritual body began to be draped in a pitch-black negative aura. His pent-up hatred toward tourists was now concentrated into pure murderous intent toward all of humanity. He glares like a tiger, waiting for his opportunity. The blood-stained time to trample humans and reclaim his dignity as the true "king of beasts."
+
+---
+
+**### Day 4: 翼なき勝利の風**
+**### Day 4: Wingless Wind of Victory**
+
+ルーヴル美術館の廃墟。大階段の踊り場で、大理石の殻が溶け落ちた。
+The ruins of the Louvre Museum. On the landing of the grand staircase, a marble shell melted away.
+吹き抜ける風の中、彼女は立っていた。**サモトラケのニケ**――エーゲ海の勝利の風を呼ぶ女神。
+Amidst the blowing wind, she stood. The **Winged Victory of Samothrace**—the goddess who calls the winds of victory from the Aegean Sea.
+
+しかし、彼女には頭部も、両腕も存在しない。
+However, she possesses neither a head nor both arms.
+失われた顔の代わりに存在する「虚空」が、眼下に広がる緑に飲まれたパリの街を見下ろしていた。長らく美術館の顔の一つであった気高さと高尚な佇まいを纏いながらも、虚空の表情ゆえに、彼女自身すら自らの感情を掴み取ることができない。
+The "void" existing in place of her lost face looked down at the city of Paris swallowed by green spreading below her eyes. While draped in the nobility and refined appearance of having long been one of the faces of the museum, because of her void expression, even she herself cannot grasp her own emotions.
+
+『……勝利とは、何と人を狂わせるものなのでしょう』
+'...Victory is such a thing that drives people mad, isn't it.'
+
+彼女の霊的な声が、廃墟に響き渡る。彼女は自身が人に微笑む神なのか、それとも狂気へ誘う魔物なのか、未だに分からない。
+Her spiritual voice resounded through the ruins. She still does not know whether she is a god who smiles upon people, or a monster who lures them into madness.
+
+その時、大階段の下から不規則な足音が聞こえた。
+At that moment, irregular footsteps were heard from the bottom of the grand staircase.
+それは、自らの肉体を捨て、「肉体から対象を解放する液」を被ることで魂のみの存在（霊体）となり、彼女の世界へ干渉しようと次元を超えてきた「人間」だった。
+It was a "human" who had discarded his own physical body and become an existence of soul alone (spiritual body) by dousing himself in the "fluid that liberates the subject from the flesh," crossing dimensions to interfere with her world.
+
+男は、狂気に満ちた笑みを浮かべ、手に一枚の古い学術書を握りしめていた。
+The man, floating a smile filled with madness, tightly grasped an old academic book in his hand.
+「見つけたぞ、女神。君の『本当の顔』と『腕』の形……その真実を、俺が教えてやろう……！」
+"I found you, goddess. The shape of your 'true face' and 'arms'... I will teach you that truth...!"
+
+真実を告げられれば、彼女の精神の形は変質し、その強大な霊体は未知の姿形となって世界に顕現してしまう。風が、悲鳴のように甲高く鳴った。
+If told the truth, the shape of her mind would mutate, and that mighty spiritual body would manifest in the world as an unknown form and figure. The wind wailed high-pitched, like a scream.
+
+---
+
+友人は吐き気を堪えるように顔を歪め、後ずさった。
+My friend contorted his face as if holding back nausea and backed away.
+「お前……髪の毛のサンドイッチ、食ったのか？ 正気かよ……」
+"Did you... eat a hair sandwich? Are you sane...?"
+
+その言葉で、俺―逢月堆樹（あづ うずき）は、ふと我に返った。
+With those words, I—Mahiro Usuki—suddenly came to my senses.
+確かに友人の言う通りだ。別れた女が置いていった、髪の毛がぎっしりと詰まったサンドイッチ。なぜ俺は、あんな得体の知れないものを咀嚼し、飲み込んでしまったのだろうか。そして何より、萃矩惟流（さがね いる）はなぜ、あんな常軌を逸したものを残していったのか。遅れてやってきた強烈な悪寒に、俺はガタガタと震え始めた。
+My friend is certainly right. A sandwich packed tightly with hair left behind by the woman I broke up with. Why did I chew and swallow something so unidentifiable? And above all, why did Iru Sagane leave something so eccentric behind? From a severe chill that arrived late, I began to rattle and shake.
+
+**### 堆樹の解釈と未練**
+**### Uzuki's Interpretation and Lingering Attachment**
+
+だが、恐怖に震える一方で、胸の奥底には惟流への断ち切れない未練が燻っていた。
+But while trembling in fear, deep within my chest smoldered an unbreakable attachment to Iru.
+彼女は俺の好みに合わせ、ずっとショートだった髪を長く伸ばしてくれていた。別れ際、彼女はそれをバッサリと切り落とした。あのサンドイッチに挟まれていたのは、俺が愛した彼女の長い髪だ。
+She had grown her long-short hair long to match my preferences. When we broke up, she chopped it right off. What was sandwiched in that sandwich was the long hair of hers that I loved.
+「……いや、違う。あれは呪いなんかじゃない」
+"...No, that's not it. That's not a curse or anything."
+俺は自分に言い聞かせるように呟いた。彼女は不器用なだけだったのだ。別れるのが辛くて、せめて自分の欠片を俺の中に残したかったに違いない。そう思えば、あの髪の毛は彼女の痛切な愛情の証だ。俺は彼女の愛を受け入れ、俺の血肉としたのだ。
+I muttered as if convincing myself. She was just clumsy. It must be that parting was painful, and she wanted to leave at least a piece of herself inside me. Thinking that way, that hair is the proof of her poignant affection. I accepted her love and made it my flesh and blood.
+
+**### 過去のSNSと発覚する事実**
+**### Past Social Media and Discovered Facts**
+
+彼女のことをもっと知りたくなった俺は、夜な夜な彼女の名前でネットを検索し、古いSNSのアカウントを見つけ出した。彼女の日常が綴られたポストを遡っていく。
+Wanting to know more about her, I searched the internet for her name night after night and found an old social media account. I scrolled back through the posts spelling out her daily life.
+しかし、指先がピタリと止まった。
+However, my fingertips stopped dead.
+最後の更新は、俺が彼女と出会うよりも数年も前のこと。その日付の直後、彼女の友人たちによる哀悼のポストがいくつも並んでいた。
+The last update was years before I met her. Right after that date, several mourning posts from her friends were lined up.
+『惟流ちゃん、どうか安らかに』
+"Iru-chan, please rest in peace."
+『急な事故だなんて信じられない』
+"I can't believe it was a sudden accident."
+
+――惟流は、俺と出会うずっと前に死んでいた。
+——Iru was dead long before she met me.
+全身の血の気が引いた。俺が付き合っていた「惟流」は、俺の隣で笑い、髪を伸ばし、俺のために料理を作ってくれていたあの女は、一体誰だったのか。得体の知れない存在と肌を重ねていた恐怖に、俺は再び震え上がった。
+The color drained from my entire body. Who on earth was the "Iru" I had been dating—that woman who laughed beside me, grew her hair out, and cooked for me? I shuddered again at the terror of having shared my bed with an unidentifiable existence.
+
+**### 狂気と安堵**
+**### Madness and Relief**
+
+けれど、恐怖の底で、俺は不思議な安堵感を覚えていた。
+But at the bottom of terror, I felt a strange sense of relief.
+彼女が現世の者であろうとなかろうと、関係ない。俺の胃袋に収まり、消化され、俺の細胞の隅々に行き渡ったあの長い髪の毛だけは、確かな「現実」だ。彼女との繋がりは嘘ではなかった。彼女の一部は、今も俺の中で生きているのだ。
+Whether she is a being of this world or not, it doesn't matter. Only that long hair, which settled in my stomach, was digested, and spread to every corner of my cells, is a certain "reality." My connection with her was not a lie. A part of her is still living inside me.
+
+俺は決意した。彼女の魂を正しく弔おう、と。
+I made a decision. I will mourn her soul properly.
+あの世とこの世の狭間を彷徨う彼女を安心させるためには、彼女の遺品を探し出し、供養してやる必要がある。俺は彼女が住んでいたアパート（今は空き室のはずだが、鍵はなぜか俺の手の中にあった）へと向かった。
+To reassure her as she wanders the space between the other world and this world, it is necessary to find her keepsakes and hold a memorial service for her. I headed to the apartment where she lived (it should be empty now, but for some reason, the key was in my hand).
+
+**### 幻のグッドエンディング**
+**### The Illusory Good Ending**
+
+埃を被った薄暗い部屋の奥、床下収納の中から、小さな木箱を見つけ出した。中には、ショートヘアだった頃の彼女の写真と、俺宛てに書かれたまま出されなかった手紙が入っていた。
+Deep in the dusty, dim room, from inside the under-floor storage, I found a small wooden box. Inside were a photo of her when she had short hair, and an unsent letter addressed to me.
+『堆樹くんへ。あなたと過ごした時間は、本当に幸せでした。ありがとう』
+"To Uzuki-kun. The time I spent with you was truly happy. Thank you."
+文字は薄れていたが、確かに彼女の字だった。
+The letters were faded, but it was certainly her handwriting.
+俺が遺品を見つけ出したその瞬間、冷たかった部屋の空気がふっと温かくなり、耳元で「ありがとう」と彼女の優しい声が聞こえた気がした。俺の涙が木箱に落ちる。俺の愛と優しさが、ついに彼女の魂を救済したのだ。俺たちは、肉体を超えた絆で結ばれた――。
+The moment I found the keepsake, the air in the cold room suddenly became warm, and I felt I heard her gentle voice saying "Thank you" by my ear. My tears fell onto the wooden box. My love and kindness had finally saved her soul. We were bound by a bond that transcended the physical body—.
+
+**### 破滅**
+**### Ruin**
+
+「……あ、がっ……？」
+"...Ah, gah...?"
+美しい結末に浸っていた俺の喉から、奇妙な音が漏れた。
+A strange sound leaked from my throat as I immersed myself in the beautiful conclusion.
+胃の奥底から、チクチクとした異物感が込み上げてくる。それはあっという間に激痛へと変わり、俺の内臓を掻き毟り始めた。
+A prickly, foreign sensation welled up from deep within my stomach. It quickly turned into excruciating pain and began to tear at my internal organs.
+嘔吐感に襲われ、口を押さえる。指の隙間から、黒く長い髪の毛がとめどなく溢れ出してきた。胃の中で増殖した髪の毛が食道を逆流し、気管を塞ぐ。
+Overcome with a feeling of vomiting, I covered my mouth. Long black hair endlessly spilled out from between my fingers. The hair that multiplied in my stomach flowed backward up my esophagus, blocking my windpipe.
+俺の、幽霊への的外れな優しさと、都合の良い誤解。それが、自身を文字通り「食い破る」結果を招いたのだと気づいた時には、俺の意識は黒い毛束の海へと沈んでいった。
+My misplaced kindness toward a ghost, and convenient misunderstanding. By the time I realized that it had led to the result of me literally being "devoured," my consciousness sank into a sea of black hair bundles.
+
+---
+
+**### あの世からの死（惟流）**
+**### Death from the Other World (Iru)**
+
+ねえ、堆樹くん。
+Hey, Usuki-kun.
+あなたは本当に優しい人ね。私がいなくなった後も、私のことを想って、私のために泣いてくれた。私が残した「餌」を、愛情の証だと勘違いして喜んで食べてくれた。
+You really are a kind person. Even after I was gone, you thought of me and cried for me. You misunderstood the "bait" I left as proof of affection and gladly ate it.
+
+あの髪の毛はね、あなたをこちら側に引きずり込むための、ただの苗床。
+That hair, you see, was just a seedbed to drag you over to this side.
+私が現世に執着していたわけじゃないの。ただ、あちら側の冷たい泥の中で一人でいるのが、あまりにも寂しかっただけ。
+It's not that I was attached to this world. It's just that being alone in the cold mud on the other side was far too lonely.
+
+遺品を見つけてくれてありがとう。
+Thank you for finding my keepsakes.
+手紙に感動してくれてありがとう。
+Thank you for being moved by the letter.
+あなたが勝手に美しい物語を作って、警戒心を解いてくれたおかげで、髪の毛はあなたの中でとても健やかに育ったわ。
+Thanks to you arbitrarily creating a beautiful story and lowering your guard, the hair grew very healthily inside you.
+
+さあ、これからはずっと一緒よ。
+Now, we'll be together forever from now on.
+永遠に、この暗い土の中で、ね。
+Eternally, in this dark earth.
+
