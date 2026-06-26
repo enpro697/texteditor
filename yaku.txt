@@ -4302,13 +4302,6 @@ But I know. That Chihuse-oniichan had secretly hidden one more phantom banana in
 
 ---
 
-
-ご提示いただいた追加の文章について、一切の省略なく日本語と英語の対訳形式にて翻訳いたしました。
-
-「マシマ・D・ジロー」のインスパイア系海賊としての設定がさらに濃密になり、宿儺の「調理法」の解説、そして七海建人の「小さな絶望」の履歴まで、多岐にわたる魅力的なテキストですね。それぞれのキャラクターの語り口（ナラティブ）にこだわって翻訳しています。
-
----
-
 ええ。呪術師はクソであり、労働もクソです。その間を埋めるのが、取るに足らない、しかし確実に精神を削り取っていく些末な出来事たちです。
 Yes. Jujutsu sorcerers are shit, and labor is shit. What fills the gap between them are the trivial, yet certainly spirit-scraping minor incidents.
 
@@ -4356,10 +4349,6 @@ However, as these small despairs quietly and certainly pile up, a person obtains
 Well then, I will be taking my leave and going home on time now. Because I hate overtime.
 
 
----
-
-
-ご提示いただいた追加の文章について、一切の省略なく日本語と英語の対訳形式にて翻訳いたしました。
 
 ---
 
@@ -4370,10 +4359,6 @@ In the second half of the Grand Line, the "New World," a rookie accompanied by o
 Let's unravel his unprecedented wake and overly rich way of life.
 
 ---
-
-### ナラティブの(マシマ)
-
-### Narrative of (Mashima)
 
 **「海賊王？ ああ、なるさ。だがその前に、この海を俺の『味』で塗り潰してやる」**
 **"Pirate King? Yeah, I'll become one. But before that, I'll paint this sea over with my 'flavor'."**
@@ -4391,9 +4376,9 @@ His greatest feature is that he arbitrarily respects a legendary pirate (commonl
 
 ---
 
-### ナラティブの(マシマの(臭いの(決め台詞)))
+### マシマの臭い決め台詞
 
-### Narrative of (Mashima's (Smelly (Catchphrases)))
+### Mashima's Smelly Catchphrases
 
 マシマの言葉は、物理的な臭気と共に相手の臓腑を直接揺さぶります。
 Mashima's words directly shake the opponent's internal organs along with a physical stench.
@@ -4417,9 +4402,9 @@ Mashima's words directly shake the opponent's internal organs along with a physi
 
 ---
 
-### ナラティブの(マシマの(濃厚な(エピソード)と(伝説)))
+### マシマの濃厚なエピソードと伝説
 
-### Narrative of (Mashima's (Rich (Episodes) and (Legends)))
+### Mashima's Rich Episodes and Legends
 
 **【伝説1：スモーカー中将、むせる】**
 **[Legend 1: Vice Admiral Smoker Chokes]**
@@ -4433,9 +4418,9 @@ Upon landing in Totto Land, he dismissed the town of sweet treats saying, "It la
 
 ---
 
-### ナラティブの(マシマの(麦わらの一味との絡み))
+### マシマの麦わらの一味との絡み
 
-### Narrative of (Mashima's (Entanglements with the Straw Hat Crew))
+### Mashima's Entanglements with the Straw Hat Crew
 
 新世界のとある島で、麦わらの一味と激突。
 Clashing with the Straw Hat Crew on a certain island in the New World.
@@ -4455,9 +4440,9 @@ At first, Luffy's eyes sparkle at the smell drifting from Mashima, saying, "Smel
 
 ---
 
-### ナラティブの(マシマの(技の数々))
+### マシマの技の数々
 
-### Narrative of (Mashima's (Arsenal of Moves))
+### Mashima's Arsenal of Moves
 
 彼の技はどれも圧倒的な質量と物理法則を無視した胸焼けを引き起こします。
 All of his moves induce heartburn, ignoring physical laws and overwhelming mass.
@@ -4485,9 +4470,9 @@ Transforms the surrounding space itself into a giant "prep barrel." A brutal dom
 
 ---
 
-### ナラティブの(マシマの(最終決戦と終幕))
+### マシマの最終決戦と終幕
 
-### Narrative of (Mashima's (Final Battle and Conclusion))
+### Mashima's Final Battle and Conclusion
 
 海賊王を目指す彼の暴走を止めるべく、ルフィ（ギア5）が立ちはだかる。
 To stop his rampage aiming for the Pirate King, Luffy (Gear 5) stands in his way.
