@@ -1278,34 +1278,44 @@ Fufu, I ended up talking a bit too much. This village may seem laid-back, but it
 
 ラニのひそやかなる魔術十選Ranni's Ten Secret Sorceries(ラニ) (Ranni)よく来たな、我が王よ。Welcome, my lord.このような夜更けに私を訪ねてくるとは、また奇妙な調べに興味を持ったものだ。星の動きを読むのに飽き、数多の戦いにも倦んだと見える。
 To visit me at such a late hour... it seems you have taken an interest in another strange melody. You appear tired of reading the movements of the stars, and weary of countless battles.よかろう。偉大なるカーリアの魔術や、星を砕くような大魔術ではなく……かつて私が幼き頃の好奇心や、退屈しのぎに編み出した、ひどく偏執的で、使い所の限られる「秘密の魔術」を特別に教えてやろう。
-Very well. Not the great Carian sorceries, nor grand magic that shatters stars... but terribly obsessive "secret sorceries" with highly limited uses that I devised out of childhood curiosity and to stave off boredom. I shall teach them to you as a special favor.暗月の規律には何の役にも立たぬが、お前の旅の慰みにはなるかもしれんな。They will be of no use to the order of the Dark Moon, but they might serve as a comfort on your journey.1. 星霜の栞（せいそうのしおり）
+Very well. Not the great Carian sorceries, nor grand magic that shatters stars... but terribly obsessive "secret sorceries" with highly limited uses that I devised out of childhood curiosity and to stave off boredom. I shall teach them to you as a special favor.暗月の規律には何の役にも立たぬが、お前の旅の慰みにはなるかもしれんな。They will be of no use to the order of the Dark Moon, but they might serve as a comfort on your journey.
+1. 星霜の栞（せいそうのしおり）
 1. Bookmark of Frost and Stars
 読みかけの本のページを、微小な冷気で固定するだけの魔術だ。風が吹いてもページは捲れないが、無理に剥がそうとすれば羊皮紙ごと破れてしまう。魔術学院の書庫で、両手を塞がれたまま本を読むためだけに編み出した。
-It is a sorcery that merely fixes the page of a half-read book with a minuscule amount of cold air. Even if the wind blows, the page will not turn, but if you try to forcibly peel it away, the parchment itself will tear. I devised it solely to read books while keeping both hands occupied in the archives of the Academy.2. 暗月の茶冷まし（あんげつのちゃざまし）
+It is a sorcery that merely fixes the page of a half-read book with a minuscule amount of cold air. Even if the wind blows, the page will not turn, but if you try to forcibly peel it away, the parchment itself will tear. I devised it solely to read books while keeping both hands occupied in the archives of the Academy.
+2. 暗月の茶冷まし（あんげつのちゃざまし）
 2. Dark Moon Tea Cooler
 淹れたての熱すぎる茶を、私の舌にちょうど良い「微温（ぬる）さ」まで一瞬で冷ます魔術だ。ブライヴは「もっと熱い方が美味い」と文句を言っていたがな。それ以上の冷却力はないため、敵を凍らせることなど到底不可能だ。
-A sorcery that instantly cools freshly brewed, overly hot tea down to a "lukewarmness" that is just right for my tongue. Blaidd used to complain that "it tastes better when it's hotter," though. Because it possesses no cooling power beyond that, it is utterly impossible to freeze an enemy with it.3. 泥知らずの浮遊（どろしらずのふゆう）
+A sorcery that instantly cools freshly brewed, overly hot tea down to a "lukewarmness" that is just right for my tongue. Blaidd used to complain that "it tastes better when it's hotter," though. Because it possesses no cooling power beyond that, it is utterly impossible to freeze an enemy with it.
+3. 泥知らずの浮遊（どろしらずのふゆう）
 3. Mudless Levitation
 地面からわずか一寸（約3cm）だけ体を浮かせ、滑るように移動する魔術。腐敗の沼や毒の地を歩くにはすこぶる重宝するが、小さな石ころほどの段差にぶつかるだけで術が解けてしまうという致命的な欠陥がある。
-A sorcery that levitates the body a mere inch (about 3 cm) off the ground, allowing one to move as if gliding. It is extremely handy for walking across swamps of rot or lands of poison, but it has a fatal flaw: the spell breaks simply by bumping into a step the size of a small pebble.4. 傀儡の瞬き（くぐつのまばたき）
+A sorcery that levitates the body a mere inch (about 3 cm) off the ground, allowing one to move as if gliding. It is extremely handy for walking across swamps of rot or lands of poison, but it has a fatal flaw: the spell breaks simply by bumping into a step the size of a small pebble.
+4. 傀儡の瞬き（くぐつのまばたき）
 4. Puppet's Blink
 魂の入っていないただの人形に、一度だけパチリと瞬きをさせる魔術だ。戦闘には全く無意味だが、かつてこれを使ってセルブスの奴を大層たじろがせてやったことがある。あの時の顔は傑作だったな。
-A sorcery that causes a mere soulless doll to blink just once with a snap. It is entirely meaningless in battle, but I once used this to make that man Seluvis flinch greatly. His face at that time was a masterpiece.5. カーリアの微睡み（かーりあのまどろみ）
+A sorcery that causes a mere soulless doll to blink just once with a snap. It is entirely meaningless in battle, but I once used this to make that man Seluvis flinch greatly. His face at that time was a masterpiece.
+5. カーリアの微睡み（かーりあのまどろみ）
 5. Carian Slumber
 椅子に座ったまま、首をカクンと落とさずに、完璧な姿勢のまま眠ることができる魔術。母レナラの長きにわたる退屈な講義をやり過ごすため、私の持てる叡智を注ぎ込んで完成させたものだ。
-A sorcery that allows one to sleep while seated in a chair, in a perfect posture without letting the head drop. I completed it by pouring all my wisdom into it, in order to endure my mother Rennala's long and tedious lectures.6. 月隠りの足音（つきがくりのあしおと）
+A sorcery that allows one to sleep while seated in a chair, in a perfect posture without letting the head drop. I completed it by pouring all my wisdom into it, in order to endure my mother Rennala's long and tedious lectures.
+6. 月隠りの足音（つきがくりのあしおと）
 6. Moon-Hidden Footsteps
 自身の足音を、古いオルゴールのねじを巻くような「キリキリ」という微かな音に変換する。隠密行動にはかえって目立って不向きだが、静寂が深すぎる夜、己の足音すら疎ましい時に使うと心が落ち着くのだ。
-It transforms one's own footsteps into a faint "winding" sound, like winding the spring of an old music box. It stands out and is rather unsuited for stealth operations, but using it on nights when the silence is too deep and even one's own footsteps are annoying brings peace to the heart.7. 星見の氷眼鏡（ほしみのこおりめがね）
+It transforms one's own footsteps into a faint "winding" sound, like winding the spring of an old music box. It stands out and is rather unsuited for stealth operations, but using it on nights when the silence is too deep and even one's own footsteps are annoying brings peace to the heart.
+7. 星見の氷眼鏡（ほしみのこおりめがね）
 7. Astrologer's Ice Spectacles
 片目にぴったりと収まる、歪みのない氷のレンズを作り出す魔術。遠くの星の瞬きがほんの少しだけ鮮明に見えるようになる。だが、己の体温で数分もすれば溶け出し、まるで泣いているかのように見えてしまうのが玉に瑕だな。
-A sorcery that creates a distortion-free ice lens that fits perfectly over one eye. It makes the twinkling of distant stars look just a little bit clearer. However, it melts in a few minutes from one's own body heat, making it look as if one is crying—that is its only flaw.8. 囁き星（ささやきぼし）
+A sorcery that creates a distortion-free ice lens that fits perfectly over one eye. It makes the twinkling of distant stars look just a little bit clearer. However, it melts in a few minutes from one's own body heat, making it look as if one is crying—that is its only flaw.
+8. 囁き星（ささやきぼし）
 8. Whispering Star
 空の小瓶の中に微小な星屑を閉じ込め、そこから「誰かの微かな寝息」のような音を発生させる魔術。孤独な旅の夜、焚き火のそばでただ誰かの気配だけを感じたい時に開けるが良い。
-A sorcery that traps a minuscule piece of stardust inside an empty vial, producing a sound like "someone's faint breathing in their sleep" from it. You should open it on lonely nights of travel, when you simply wish to feel the presence of someone beside the campfire.9. 輝石の共鳴鳴らし（きせきのきょうめいならし）
+A sorcery that traps a minuscule piece of stardust inside an empty vial, producing a sound like "someone's faint breathing in their sleep" from it. You should open it on lonely nights of travel, when you simply wish to feel the presence of someone beside the campfire.
+9. 輝石の共鳴鳴らし（きせきのきょうめいならし）
 9. Glintstone Resonance Chime
 離れた場所にいる者のポケットに入っている輝石を、チリンと一度だけ鳴らす魔術。合図としては使えるが、対象が輝石を持っていなければ発動せず、相手には「どこから鳴ったか」が全く分からないという不便さがある。
-A sorcery that makes a piece of glintstone in the pocket of someone far away chime just once. It can be used as a signal, but it has the inconvenience of not activating if the target doesn't possess glintstone, and the other party has absolutely no idea "where the sound came from."10. 雪魔女の吐息（ゆきまじょといき）
+A sorcery that makes a piece of glintstone in the pocket of someone far away chime just once. It can be used as a signal, but it has the inconvenience of not activating if the target doesn't possess glintstone, and the other party has absolutely no idea "where the sound came from."
+10. 雪魔女の吐息（ゆきまじょといき）
 10. Snow Witch's Breath
 窓ガラスや鏡の表面に、冷気で美しい霜の結晶模様を描き出すためだけの魔術だ。幼き日、雪魔女の老いた師に褒められたくて見せた……私の、一番最初のオリジナル魔術でもある。
 A sorcery solely for drawing beautiful frost crystal patterns on the surface of windowpanes or mirrors using cold air. I showed it to my old master, the Snow Witch, wanting to be praised in my youth... It is also my very first original sorcery.フフッ、どうだ？ どれもこれも、黄金樹の民からすれば鼻で笑われるようなガラクタ魔術ばかりであろう。だが、私の歴史の片隅にある愛すべき残りカスだ。
