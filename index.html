@@ -343,7 +343,7 @@
         position: fixed;
         right: 20px;
         bottom: 20px;
-        width: 180px;
+        width: 280px; /* 横幅を広げて3列表が収まるように */
         background-color: var(--panel-bg);
         border: 2px solid var(--border-color);
         border-radius: 8px;
@@ -404,19 +404,6 @@
         color: var(--danger-color);
       }
 
-      .popup-controls {
-        width: 85%;
-        display: flex;
-        gap: 8px;
-        margin-bottom: 8px;
-      }
-      .popup-controls button {
-        width: 80%;
-        padding: 16px 10px;
-        font-size: 12px;
-        background-color: var(--panel-bg);
-      }
-
       .popup-footer-text {
         font-size: 10px;
         opacity: 0.6;
@@ -424,44 +411,24 @@
         margin-bottom: 8px;
       }
 
-/* 横並び用のコンテナ */
-      .scroll-area-wrapper {
-        display: flex;
+      /* --- 新しいグリッドレイアウト用 --- */
+      .popup-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
         width: 100%;
-        border-top: 1px solid var(--border-color);
+        padding: 8px 12px 12px 12px;
+        box-sizing: border-box;
       }
 
-      /* 移動領域（左右分割） */
-      .popup-scroll-area {
-        flex: 1; /* 半分ずつ均等に分割 */
-        padding: 16px 2px; /* クリックしやすいように上下の幅を広めに */
-        background-color: rgba(0, 0, 0, 0.05);
-        text-align: center;
-        font-size: 11px; /* 枠に収まるように少し小さく */
+      .popup-btn-grid {
+        width: 100%;
+        padding: 20px 2px;
+        font-size: 11px;
         font-weight: bold;
-        color: var(--text-color);
-        cursor: ns-resize;
-        opacity: 0.8;
-        transition:
-          background-color 0.2s,
-          opacity 0.2s;
-        /* 文字がはみ出ないように設定 */
+        text-align: center;
         white-space: nowrap;
-        overflow: hidden;
-      }
-
-      body.dark-mode .popup-scroll-area {
-        background-color: rgba(255, 255, 255, 0.05);
-      }
-
-      .popup-scroll-area:hover {
-        background-color: rgba(128, 128, 128, 0.1);
-        opacity: 1;
-      }
-
-      /* 左側（🔜）の右側に区切り線を入れる */
-      #area-forward {
-        border-right: 1px solid var(--border-color);
+        background-color: var(--panel-bg);
       }
     </style>
   </head>
@@ -541,26 +508,18 @@
         <div class="popup-title">設定・モード</div>
       </div>
       <div id="wheel-status">通常モード</div>
-      
 
-      
-      <div class="popup-controls">
-        <button id="btn-expand" class="btn-theme" title="下ホイールでも可">➕拡大</button>
-        <button id="btn-shrink" class="btn-theme" title="下ホイールでも可">➖縮小</button>
-      </div>
+      <div class="popup-grid popup-controls">
+        <button id="area-forward" class="btn-theme popup-btn-grid" title="下ホイール: 2単語飛ばし(次へ) / 上ホイール: 1単語(次へ)">範囲選択→</button>
+        <button id="btn-popup-wrap-both-paren" class="btn-theme popup-btn-grid" title="下ホイールでも可">追加()</button>
+        <button id="btn-expand" class="btn-theme popup-btn-grid" title="下ホイールでも可">拡大</button>
 
-      <div class="popup-controls">
-        <button id="btn-popup-wrap-both-paren" class="btn-theme" title="下ホイールでも可">()追加</button>
-        <button id="btn-popup-wrap-asterisk" class="btn-theme" title="下ホイールでも可">**追加</button>
+        <button id="area-backward" class="btn-theme popup-btn-grid" title="下ホイール: 2単語飛ばし(前へ) / 上ホイール: 1単語(前へ)">範囲選択←</button>
+        <button id="btn-popup-wrap-asterisk" class="btn-theme popup-btn-grid" title="下ホイールでも可">追加**</button>
+        <button id="btn-shrink" class="btn-theme popup-btn-grid" title="下ホイールでも可">縮小</button>
       </div>
+      
       <div class="popup-footer-text">ホイール操作：範囲選択モード切替</div>
-      <div class="popup-controls">
-        <button id="area-forward" class="btn-theme" title="下ホイール: 2単語飛ばし(次へ) / 上ホイール: 1単語(次へ)">範囲選択🔜</button>
-        <button id="area-backward" class="btn-theme" title="下ホイール: 2単語飛ばし(前へ) / 上ホイール: 1単語(前へ)">範囲選択🔙</button>
-      </div>
-
-
-
     </div>
 
     <script>
@@ -591,8 +550,6 @@
 
       const btnPopupWrapBothParen = document.getElementById("btn-popup-wrap-both-paren");
       const btnPopupWrapAsterisk = document.getElementById("btn-popup-wrap-asterisk");
-
-
 
       const btnToggleEdit = document.getElementById("btn-toggle-edit");
       const btnUndo = document.getElementById("btn-undo");
@@ -1097,7 +1054,7 @@
       btnExpand.addEventListener("click", expandSelection);
       btnShrink.addEventListener("click", shrinkSelection);
 
-wheelPopup.addEventListener("wheel", (e) => {
+      wheelPopup.addEventListener("wheel", (e) => {
         e.preventDefault();
 
         // 🔜 エリア（前へ進む）
