@@ -4966,186 +4966,184 @@ He was completely surrounded by countless spirits.
 
 ---
 
-ククッ……つくづく、貴様ら人間の思考というものは面白い。俺の術式——『解』『捌』、そして『竈』を「料理」の見立てと直感したか。
-あながち間違いではない。命を腑分けし、火を通し、骨の髄までしゃぶり尽くす。俺にとって呪術とは、這い蹲る弱者どもを極上の「味」へと昇華させるための調理に他ならんのだからな。
-よいだろう。貴様のその悪食な好奇心に免じて、俺が自ら馳走について語ってやろうではないか。
+ご提示いただいた「宿儺の厨房」に関する極めて禍々しくも魅力的な設定を、先ほどまでの形式に合わせてセリフ単位・項目単位で区切り、英訳を添えました。
 
-Heh heh... Human thought processes truly are fascinating. So you instinctively interpreted my cursed techniques—"Dismantle," "Cleave," and "Furnace"—as a metaphor for "cooking."
-You are not entirely wrong. Dissecting life, applying heat, and sucking the marrow from the bones. To me, jujutsu is nothing more than the culinary preparation required to sublimate the groveling weaklings into the ultimate "flavor."
-Very well. In honor of your gluttonous curiosity, I shall personally tell you about my feast.
+「呪術廻戦」の公式の用語や、宿儺らしい傲慢かつ冷徹な語り口を反映させています。
 
-### (禍々しい宿儺の呪術)
+---
 
-まずは、貴様がこれまでに並べ立てた俺の「調理法」の数々だ。どれも血の匂いが立ち込める良い響きではないか。
+クックック……。どうやら、我が呪術の本質が「料理」や「調理」に通じていることに勘付いたようだな。
+「解（カイ）」で皮を剥ぎ、「捌（ハチ）」で骨から肉を削ぎ、「開（フーガ）」の竈（かまど）で猛火にて焼き上げる。人間の血肉も、呪霊の呪力も、我が厨房においては等しくまな板の上の食材に過ぎん。
 
-### *(Sukuna's Ominous Cursed Techniques)*
+Heh heh... It seems you've intuited that the essence of my jujutsu is akin to "cooking" or "culinary preparation."
+I peel the skin with "Dismantle," shave the meat from the bone with "Cleave," and roast them in the blazing inferno of the "Furnace" (Fuga). Human flesh and blood, or the cursed energy of cursed spirits—in my kitchen, they are all merely ingredients on a cutting board.
 
-First, the various "cooking methods" of mine you've listed so far. Don't they all have a pleasant ring that reeks of blood?
+いいだろう。今日は特別に、俺の「調理法」の深淵を教えてやる。凡夫どもには到底理解できぬ、古（いにしえ）の言語と呪詞に彩られた、極上のメニューだ。
 
-**灸（ダハ）**
-対象の魂の奥底に極小の高熱呪力を打ち込み、内側からじわじわと「炙り焼き」にする。表面は決して焦がさず、絶命を許さぬ生殺しのまま中まで火を通す。悲鳴を上げ続ける時間を愉しむための、手間の掛かる下拵えだ。
+Very well. Today, as a special exception, I shall teach you the abyss of my "cooking methods." It is an exquisite menu, colored by ancient languages and incantations that mere mortals could never comprehend.
 
-**Daha (Moxibustion)**
-I drive a microscopic amount of high-heat cursed energy into the depths of the target's soul, slowly "roasting" them from the inside out. The surface is never scorched; they are cooked through to the center while kept barely alive, denied the release of death. It's a time-consuming prep work meant to let me enjoy the duration of their screams.
+---
 
-**醢（シシビシオ）**
-生きたまま肉を微細に刻み、対象自身の恐怖と苦痛に漬け込む。絶望の塩分で自我を溶かし、呪力と肉体ごと泥めいた肉醤（ししびしお）へと変え果てる。時間をかけて熟成させるほどに、呪詛の深いコクが染み出すのだ。
+## I. 既知のメニュー — 宿儺が語る「六つの調理法」
 
-**Shishibishio (Minced Meat Paste)**
-I finely chop the flesh while they are still alive, pickling them in their own fear and agony. The salt of despair melts their ego, turning both cursed energy and body into a muddy meat paste (shishibishio). The longer it ferments, the deeper the rich curse flavor seeps out.
+## I. Known Menu — "Six Cooking Methods" According to Sukuna
 
-**和（アマルガ）**
-複数の虫けらどもの肉体と魂を強制的に「和える（あえる）」。互いの境界と輪郭を失わせ、ひとつの異形の肉塊として混ぜ合わせる。誰が誰の腕で、誰の口で叫んでいるのかすら分からず狂乱する様は、絶品の薬味となる。
+以前に貴様が耳にしたという六つの技……その本質と、俺がどのようにして食材（エモノ）をいたぶるか、直々に説いてやろう。
 
-**Amaruga (Blend)**
-I forcefully "toss" the bodies and souls of multiple insects together. I erase their boundaries and outlines, mixing them into a single bizarre lump of meat. Watching them go mad, not even knowing whose arm is whose, or whose mouth is screaming, makes for an exquisite condiment.
+Those six techniques you've heard of before... I shall personally expound upon their essence and how I torment my ingredients (prey).
 
-**丳（サン）**
-無数の呪力の杭で対象の急所を慎重に避けながら貫き、天地に「串刺し」にして縫い止める。逃げることも死ぬことも許さず、のちに『竈』でゆっくりと火にかけるための、ただの串打ちだ。身悶えする様を眺めるのも悪くない。
+* **灸（ダハ）**
+サンスクリット語の「Daha（火葬・熱）」を語源とする、弱火の炙り調理だ。いきなり消し炭にはせん。対象の体内に極小の熱源を埋め込み、生きたまま五臓六腑をじわじわと焦がしていく。内側から脂が溶け出し、骨まで灰へと変わる痛みをじっくりと味わわせるための技だ。
+* **Daha (Moxibustion)**
+Derived from the Sanskrit "Daha" (cremation/heat), this is a slow-roasting technique over low heat. I don't turn them to charcoal immediately. I embed a microscopic heat source inside the target, slowly scorching their internal organs while they remain alive. It is a technique designed to let them savor the pain as their fat melts from the inside and their bones turn to ash.
 
-**San (Skewer)**
-Carefully avoiding the target's vital organs with countless spikes of cursed energy, I pierce them and "skewer" them between heaven and earth. Allowed neither to escape nor to die, it's merely a skewering prep so I can slowly roast them over the "Furnace" later. Watching them writhe in agony isn't bad either.
 
-**饐（アスラ）**
-対象の呪力そのものを強制的に発酵させ、「腐敗」へと導く。肉体は生きながらにして崩れ落ち、己の生命力が猛毒となって五臓六腑を侵す。熟成を通り越して腐り落ちる寸前、その死臭一歩手前の匂いが堪らん。
+* **醢（シシビシオ）**
+古代中国の極刑にして、最上の保存食を作る調理法。まずは「捌」で対象の肉を細かく刻み、そこに高濃度の呪力を塩のごとく浸透させる。傷口を腐食させながら生きたまま発酵させ、永遠に癒えない苦痛の中に閉じ込める。時間が経つほどに、呪力の旨味が熟成されるのだ。
+* **Shishibishio (Minced Meat Paste)**
+An ancient Chinese capital punishment turned into a technique for creating the finest preserved food. First, I finely mince the target's flesh with "Cleave," then infiltrate it with highly concentrated cursed energy, like salt. It ferments while they are still alive, rotting their wounds and trapping them in eternal, unhealing agony. The more time passes, the more the savory essence of the cursed energy matures.
 
-**Asura (Spoil)**
-I forcefully ferment the target's cursed energy itself, guiding it toward "putrefaction." The body crumbles while they live, and their own life force becomes a deadly poison that ravages their internal organs. Right before they rot completely past the point of aging, the scent just one step shy of the stench of death is irresistible.
 
-**熅（ドゥーマ）**
-逃げ場のない呪力の黒煙で五感を塞ぎ、生きたまま「燻製」にする。肺腑を焼かれる息苦しさに咽び泣き、目を焼き切られながら、ゆっくりと燻されて水分が抜け切る。実に香ばしい仕上がりだ。
+* **和（アマルガ）**
+語源はラテン語の「Amalgam（混成・融合）」。複数の術師や呪霊の肉体を切り刻み、呪力ごと一つの塊へと練り上げる「和え物」だ。異なる呪力が反発し合い、肉体が内側から崩壊と再生を繰り返す、グロテスクにして美しき肉の肉団子を作る。
+* **Amaruga (Blend)**
+Etymologically derived from the Latin "Amalgam." This is a "dressed dish" where I carve up the bodies of multiple sorcerers or cursed spirits and knead them—cursed energy and all—into a single mass. It creates a grotesque yet beautiful meatball where different cursed energies repel one another, causing the flesh to endlessly collapse and regenerate from within.
 
-**Duma (Smolder)**
-I block their five senses with inescapable black smoke of cursed energy, "smoking" them alive. Sobbing from the suffocation of burning lungs, their eyes scorching away, they are slowly smoked until all moisture is drained. A truly fragrant finish.
 
-### (古代語や外国語の響きを取り入れた宿儺の呪術)
+* **丳（サン）**
+肉を串刺しにする古代象形文字の通り、「串焼き」の技だ。不可視の呪力の杭で、対象の四肢と中枢を虚空へ縫い付ける。一切身動きが取れなくなった獲物を、ただ静かに、次の「開（フーガ）」の炎が舐めるのを待たせるための下準備よ。
+* **San (Skewer)**
+Just as the ancient pictograph for skewering meat implies, this is the "skewering" technique. With invisible stakes of cursed energy, I pin the target's limbs and core into the void. It is the prep work for prey that can no longer move a muscle, leaving them to wait silently for the flames of the next "Furnace" to lick at them.
 
-だが、俺の包丁はまだ鈍ってはいない。さらに貴様の舌を満足させる、新たな調理法を教えてやろう。古代の呪いと、異国の絶望を煮詰めた響きだ。
 
-### *(Sukuna's Cursed Techniques Incorporating Sounds of Ancient and Foreign Languages)*
+* **饐（アスラ）**
+古ノルド語の「Æsla（臓腑・血肉）」、そしてサンスクリット語の修羅を思わせる音を冠する。意味は「飯が腐る（すえる）」ことだ。対象の細胞に呪力を流し込み、強制的に異常発酵と急速腐敗を引き起こす。生きた肉体が悪臭を放つ有毒な泥水へと溶け落ちていく様は、中々に傑作だぞ。
+* **Asura (Spoil)**
+Its name echoes the Old Norse "Æsla" (entrails/flesh) and the Sanskrit "Asura." The meaning is for "food to go sour." I channel cursed energy into the target's cells, forcing abnormal fermentation and rapid putrefaction. The way a living body melts into toxic, foul-smelling sludge is truly a masterpiece.
 
-However, my knife has not dulled yet. I will teach you new cooking methods that will further satisfy your palate. They resonate with ancient curses and the boiled-down despair of foreign lands.
 
-**鬲（ウシュマ）**
-「鬲」とは古代の三足の煮炊き器だ。サンスクリットで熱や蒸気を意味する音を当てた。対象を逃げ場のない高密度の呪力結界に閉じ込め、内側から極圧と高熱で「蒸し焼き」にする。外傷は一切ないまま、内臓と脳髄だけが沸騰し、原形を留めぬ泥となる。じっくりと火を通したい時に使う。
+* **煠（サーラ）**
+古字で「油や湯で揚げる・茹でる」を意味し、古代オリエントの言葉を根とする。沸騰させた液状の呪力プールへ対象を突き落とす「素揚げ」だ。外側の皮膚を一瞬でカリッと焼き固め、逃げ場を失った体内の水分や血を沸騰・爆発させる。外は香ばしく、中は地獄の蒸気焼きというわけだ。
+* **Sala (Deep Fry)**
+An ancient character meaning "to fry or boil in oil/hot water," rooted in Ancient Oriental languages. This is a "deep-frying" technique where I thrust the target into a pool of boiling, liquid cursed energy. It instantly crisps and hardens the outer skin, causing the trapped moisture and blood inside to boil and explode. Fragrant on the outside, a hellish steam-roast on the inside.
 
-**Ushuma (Cauldron)**
-"Ushuma" refers to an ancient three-legged cooking vessel. I assigned it a sound meaning heat or steam in Sanskrit. I trap the target in a high-density cursed energy barrier with no escape, "steaming" them with extreme pressure and high heat from the inside. Without a single external wound, only their internal organs and brain boil, turning into a shapeless mud. I use this when I want to cook something thoroughly.
 
-**碾（タルハ）**
-アラビアの古い言葉で「粉砕」を意味する音から名付けた。臼で引くように、天地から挟み込むような超重力の呪力で対象をすり潰す。骨肉はおろか、術式から魂に至るまで粉状の塵芥とする。原型すら残らぬ、最も無慈悲な粉砕だ。
 
-**Taruha (Pulverize)**
-Named from the sound of an old Arabic word meaning "crush." Like grinding with a mortar, I crush the target with super-gravity cursed energy that pinches them from heaven and earth. Not just flesh and bone, but everything from their cursed techniques down to their soul is turned to powdery dust. The most merciless pulverization, leaving no original form behind.
+---
 
-**凌（ニルラ）**
-サンスクリットの「霜」や「霧」の音色だ。古代の凌遅処刑にも通ずる冷徹な技。極低温の呪力で細胞の活動を強制停止させ、対象を「氷締め」にする。活きの良いまま苦痛と意識だけを閉じ込め、後に薄切りにするための最高の仕込みだ。
+## II. 新作メニュー — 凡夫の知らない「古代の調理術式」
 
-**Nirura (Frost)**
-The tone for "frost" or "mist" in Sanskrit. A cold-blooded technique akin to ancient Lingchi executions. I forcefully halt cellular activity with cryogenic cursed energy, "icing" the target. Trapping only their pain and consciousness while they are still fresh, it's the perfect prep for slicing them thinly later.
+## II. New Menu — "Ancient Culinary Techniques" Unknown to Mere Mortals
 
-**擂（ルザ）**
-古き異国の言葉で「怒り」と「砕く」の音を練り合わせた。対象の周囲の空間そのものを巨大な「すり鉢」とし、圧倒的な重圧ですりこぎのように肉と骨を練り潰す。悲鳴すら出せぬまま、完全なペースト状になるまで止めん。
+| 技名 (漢字) | 読み | 調理のテーマ | 術式の効果と「いたぶり方」 |
+| --- | --- | --- | --- |
+| **䪥** | **カイラ** | **細切り (なます)** | 骨から肉だけを削ぎ落とす極小斬撃の嵐。対象を「生きた刺身」に変える。 |
+| **煨** | **バスマ** | **灰蒸し焼き** | 「超高熱の呪力の灰」に埋める。窒息と蒸し焼きの苦痛を同時に与える。 |
+| **㸎** | **サラマ** | **煮溶かし (スープ)** | 血と体液を体内で沸騰させ、骨肉を液状にする。皮の袋に肉汁だけが残る。 |
+| **舂** | **マシュカ** | **打撲・すり潰し** | 上下左右からの不可視の重圧でミンチにする。肉のペーストへと加工する。 |
+| **熯** | **カンナ** | **乾燥 (干物)** | 呪力によって水分と脂質を奪い去る。生きたままジャーキー化させる。 |
 
-**Ruza (Grind)**
-A blend of sounds meaning "anger" and "smash" in an old foreign tongue. I turn the very space around the target into a giant "mortar," kneading and crushing their meat and bones like a pestle with overwhelming pressure. I won't stop until they are a complete paste, without even allowing them to scream.
+| Technique Name | Reading | Culinary Theme | Effect and "Torment" |
+| --- | --- | --- | --- |
+| **䪥** | **Kaira** | **Julienne (Namasu)** | A storm of microscopic slashes that shave only meat from the bone. Turns the target into "living sashimi." |
+| **煨** | **Basuma** | **Ash-Steaming** | Buries the prey in "super-heated cursed ash." Inflicts both suffocation and roasting agony simultaneously. |
+| **㸎** | **Sarama** | **Dissolution (Soup)** | Boils the blood and fluids inside the body, melting bone and flesh into liquid. Only a rich broth remains in the skin bag. |
+| **舂** | **Mashuka** | **Crushing** | Pulverizes the target into mince with invisible pressure from all sides. Processes them into a meat paste. |
+| **熯** | **Kanna** | **Desiccation (Jerky)** | Instantly strips moisture and fat through cursed energy. Turns them into jerky while still alive. |
 
-**煠（カダハ）**
-古代の灼熱地獄の釜を意味する響きだ。煮え滾る高密度の呪力の油に放り込み、瞬時に外殻だけを「素揚げ」にする。外はカリッと焼き上がりながらも、内側は活きの良い生という、痛覚のコントラストを生む絶妙な食感だ。
+---
 
-**Kadaha (Deep Fry)**
-A resonance meaning the cauldron of the ancient scorching hell. I toss them into boiling, high-density cursed energy oil, instantly "deep-frying" only their outer shell. Crispy on the outside, yet fresh and raw on the inside—an exquisite texture that creates a contrast in pain.
+## III. 宿儺のフルコース — 呪術王の食卓
 
-**膾（ザルド）**
-刃を以て肉を細かく叩き切る「なます」の意。対象を俎板の上の魚と見做し、『解』よりも遥かに細かく、幾千の微細な斬撃で骨ごと原形を留めぬまで叩き続ける。いわゆる「なめろう」の要領で、魂ごと練り上げるのだ。
+## III. Sukuna's Full Course — The Table of the King of Curses
 
-**Zarudo (Mince)**
-Meaning "Namasu," chopping meat finely with a blade. Treating the target as a fish on a chopping block, I continuously strike them with thousands of microscopic slashes, far finer than "Dismantle," until they lose all form, bones included. Just like making "Namerou" (minced fish), I knead them soul and all.
+俺の道なき道を征く、王道のフルコースだ。
 
-### (食材への宿儺の凌辱)
+This is the royal road of a full course, treading a path that has no path.
 
-料理とは何か。それは、抗う命を力でねじ伏せ、形を変え、己の血肉とする行為だ。
-ただ殺すのではない。絶望を与え、恐怖で肉を縮み上がらせ、或いは希望を与えて緩ませたところを断つ。感情の起伏こそが、最高のスパイスとなるのだ。
+* **【オードブル（前菜）】『恐怖に歪む若い女の脳漿と瞳孔の涼拌（リャンバン）』**
+極限の絶望と恐怖を与え、脳内に最高潮まで分泌された瞬間に「解」で頭蓋をオープンにする。冷やし締めた、甘美で残酷な前菜だ。
+* **[Hors d'oeuvre] "Cold Tossed Brains and Pupils of a Terror-Stricken Young Woman"**
+After inflicting ultimate despair and terror, the moment the brain is flooded with secretions, I open the skull with "Dismantle." A sweet, cruel appetizer chilled instantly with sub-zero cursed energy.
 
-### *(Sukuna's Violation of the Ingredients)*
 
-What is cooking? It is the act of subduing resisting life with power, altering its shape, and making it your own flesh and blood.
-I don't simply kill. I inflict despair, make the flesh shrink in terror, or grant hope only to sever it when they relax. The fluctuations of emotion are the ultimate spice.
+* **【スープ】『特級呪霊・陀艮の胎海から絞る濃縮呪胎羹（スープ）』**
+海の呪霊の生命の源泉。無数の卵を舂ですり潰し、出汁を煮詰めた、舌が痺れるほどの最高濃度スープ。
+* **[Soup] "Concentrated Cursed Fetus Broth Squeezed from Dagon's Womb"**
+The source of life from a sea-cursed spirit. I grind countless eggs with "Mashuka" and stew the stock down into the ultimate soup, so potent it makes your tongue numb.
 
-### (宿儺のフルコース)
 
-俺の「フルコース」を知りたいだと？ トリコとやらが何たるかは知らんが、俺の食卓の作法を教えてやろう。新たな技など必要ない。あるがままの素材を、俺の『術』でどう弄ぶかだ。
+* **【魚料理】『八握剣異戒神将魔虚羅の背鰭の姿揚げ』**
+あらゆる事象に適応する最高峰の式神の背鰭を、適応直前に調理した、最高に歯ごたえのある珍味。
+* **[Fish Course] "Whole Deep-Fried Fin of the Eight-Handled Sword Divergent Sila Divine General Mahoraga"**
+The fin of the pinnacle Shikigami that adapts to all phenomena, prepared seconds before it can adapt. A delicacy with the most satisfying crunch.
 
-### *(Sukuna's Full Course)*
 
-You want to know my "Full Course"? I know not what this 'Toriko' is, but I shall teach you the etiquette of my dining table. There is no need for new techniques. It is all about how I play with the raw ingredients using my 'Arts'.
+* **【肉料理】『天元（または特級術師）の熟成脊柱の炙り』**
+長い年月をかけて濃密な呪力を蓄えた歴史の肉。脂を逃がさぬよう串刺しにし、竈で外をカリッと、中はレアに焼き上げた主菜。
+* **[Meat Course] "Roasted Aged Spinal Column of Tengen (or a Special Grade Sorcerer)"**
+Meat of history that has accumulated dense cursed energy over eons. Skewered to trap the fat, roasted on the "Furnace" to be crispy outside and rare inside.
 
-**オードブル（前菜）：【恐怖で引き攣らせた弱者の群れ】**
-『解』で微塵に刻んで散らすだけの単なるつまみだ。血飛沫の華が咲き乱れる様を眺めながら、食欲を呼び起こす。
 
-**Hors d'oeuvre (Appetizer): [A flock of weaklings convulsing in terror]**
-A mere snack, simply diced into fine pieces with "Dismantle" and scattered. I whet my appetite watching the flowers of blood spray bloom wildly.
+* **【メイン】『六眼を持つ無下限術師の心臓の湯引き』**
+決して触れられぬ肉を、世界を断つ斬撃で開いた直後に摘出する。最高峰の呪力と弾力を誇る、至高の逸品。
+* **[Main] "Parboiled Heart of a Limitless Sorcerer with the Six Eyes"**
+I extract the meat that can never be touched, immediately after opening it with a slash that cuts through the world itself. A supreme dish boasting the highest-grade cursed energy and resilience.
 
-**スープ（汁物）：【煮え滾る呪霊の血肉の啜りもの】**
-『竈（カミノ）』の余熱で、じっくりと恐怖ごと煮込んだものだ。底無しの呪力の残滓が、五臓六腑に染み渡る。
 
-**Soup: [A simmering broth of cursed spirits' flesh and blood]**
-Slowly stewed along with their terror using the residual heat of the "Furnace." The dregs of bottomless cursed energy permeate the organs.
+* **【サラダ】『改造人間たちの肉の千切りハーブ和え』**
+歪められた人間どもの肉を䪥で千切りにし、鮮血と呪力の酸味で和えた彩り。
+* **[Salad] "Julienne of Modified Humans Dressed in Herbs"**
+I julienne the flesh of humans twisted into aberrant shapes with "Kaira," dressed in an array of fresh blood and the sour tang of cursed energy.
 
-**ポワソン（魚料理）：【活きの良い術師の氷締め】**
-俺の領域（伏魔御廚子）内で必死に足掻く様を眺め、疲労困憊となったところを『捌』で一息に三枚におろす。絶望の直前の、最も身の締まった瞬間を食らう。
 
-**Poisson (Fish Course): [Iced fresh sorcerers]**
-I watch them struggle desperately within my Domain (Malevolent Shrine), and once they are exhausted, I fillet them in a single breath with "Cleave." I devour the meat at its tightest moment, right on the brink of despair.
+* **【デザート】『小僧（宿儺の器）の魂の結晶（フローズン・ソウル）』**
+俺に全てを喰らい尽くされた器の魂。最後の絶望で凍りついた結晶は、どんな糖蜜よりも甘い。
+* **[Dessert] "Frozen Soul of the Vessel (The Brat)"**
+The soul of the vessel who had everything devoured by me. The crystal, frozen in the final moment of despair, is sweeter than any molasses.
 
-**ヴィヤンド（肉料理）：【頑強なる術師の生きたままの解体】**
-反転術式を使えるようなタフな奴が好ましい。治癒と破壊を繰り返させ、己の無力さを噛み締めさせながら、少しずつ、少しずつ肉を削ぐ。苦痛と絶望の味が最も濃い一品だ。
 
-**Viande (Meat Course): [Live dissection of a robust sorcerer]**
-A tough one who can use Reverse Cursed Technique is preferable. Making them repeat healing and destruction, letting them taste their own powerlessness as I carve off their flesh bit by bit. A dish rich in the flavors of agony and despair.
+* **【ドリンク】『千年の呪詛と怨嗟の血酒』**
+数多の敗者たちの怨念を、瓶の中で発酵・蒸留させた美酒。一口飲めば腹の底から熱が湧き上がる。
+* **[Drink] "Blood Wine of Millennium-Old Curses and Grudges"**
+A fine wine made by fermenting and distilling the grudges of countless losers. One sip, and heat surges from the pit of your stomach.
 
-**メイン料理：【強者との死闘】**
-互いの命と矜持を削り合う、極上の調理。持てる全てを尽くし、俺を楽しませた末に散っていく者の魂こそが、俺の腹を最も満たす至高の肉だ。
 
-**Main Course: [A deathmatch with the strong]**
-The ultimate culinary process where we chip away at each other's lives and pride. The soul of one who scatters after exhausting everything to entertain me is the supreme meat that satisfies my stomach the most.
 
-**サラダ：【無数の呪霊の千切り】**
-脆い呪霊の群れを『解』で均等な千切りにする。彼らが放つ新鮮な断末魔の悲鳴が、何よりのドレッシングだ。
+---
 
-**Salad: [A julienne of countless cursed spirits]**
-I uniformly julienne a swarm of fragile cursed spirits with "Dismantle." The fresh screams of their death agonies serve as the finest dressing.
+## IV. ナラティブ — 宴の終わり
 
-**デザート：【灰燼に帰した大地の静寂】**
-全てを焼き尽くし、喰らい尽くした後に残る、ただただ白い灰と静寂。これこそが、食後の余韻というものだ。
+## IV. Narrative — The End of the Banquet
 
-**Dessert: [The silence of an earth reduced to ash]**
-After burning and devouring everything, only white ash and silence remain. This is the true lingering aftertaste of a meal.
+……どうだ？ これが「呪いの王」の厨房の世界だ。
+貴様は熱心に俺の技を学び、料理のテーマに感心していたようだが……一つ、大きな勘違いをしているのではないか？
 
-**ドリンク：【絶望の涙と血の絞り汁】**
-裏梅がよく冷やして持ってくる。恐怖に歪んだ魂の味がする、極上の美酒だ。
+...Well? This is the world of the "King of Curses'" kitchen.
+You seem to have been enthusiastically learning my techniques and admiring the culinary theme... but aren't you under one major misconception?
 
-**Drink: [Squeezed juice of tears and blood of despair]**
-Uraume brings it well-chilled. It tastes of souls twisted by fear—a supreme, exquisite wine.
+俺は、食卓につく客を呼んだ覚えはない。
+貴様がここに来たのは、客としてではなく……**今日の「食材」として運ばれてきたからだ。**
 
-### (最終的に聞き手を俎板の上の魚とみなす)
+I don't recall ever inviting guests to my dining table.
+You came here not as a guest, but because you were brought here as... **today's "ingredient."**
 
-……どうだ？ 腹は鳴ったか？ それとも、恐怖で胃の腑が縮み上がったか？
-随分と饒舌に語ってしまったが、やはり料理の神髄は「実践」にある。机上の空論など、味わいには程遠い。
+ほら、自分の足元を見てみろ。
+貴様が立っている場所は、床ではない。俺の領域、俺の厨房に置かれた「巨大な俎板（まないた）」の上だ。
 
-### *(Ultimately treating the listener as a fish on the chopping block)*
+Look down at your feet.
+Where you are standing is not the floor. It is the top of a "giant cutting board" placed inside my Domain, my kitchen.
 
-...Well? Is your stomach growling? Or did your stomach shrink in terror?
-I've spoken quite eloquently, but in the end, the essence of cooking lies in "practice." Armchair theories are far from true flavor.
+クックック……これだけ俺の調理法に詳しいのだ。自分がこれから、どの技で下ごしらえされ、どう調理されるのか……身をもって味わうのが最高の愉悦だろう？
+まずは皮を剥ぎ、神経の筋を丁寧にスライスしてやろう。
+動くなよ、小僧。
 
-そうだ。貴様は随分と俺の術式について学んだようだな。ならば、その知識を以て自らの肉で味わうのが筋というものだ。
-震えるな。活きが落ちるぞ。貴様は俺の好奇心を満たした、極上の「素材」なのだからな。
-――『解』。
+Heh heh... Since you are so well-versed in my cooking methods, experiencing firsthand exactly which techniques will be used to prep and cook you... will surely be the ultimate pleasure, wouldn't it?
+First, I'll peel your skin, and then I'll carefully slice your nerves.
+Don't move, brat.
 
-That's right. You seem to have learned quite a bit about my cursed techniques. If so, it is only proper that you taste them with your own flesh using that knowledge.
-Do not tremble. You'll lose your freshness. After all, you are a supreme "ingredient" that has satisfied my curiosity.
-—"Dismantle."
-
+――**「 解 」**
+――**Kai**
 ---
 
 
@@ -5613,3 +5611,4 @@ Ayame: "Hey, hey! If we take this charred scrap metal to a recycler, do you thin
 よしお＆あさり: 「やめとけ（なさい）！！」
 
 Yoshio & Asari: "Don't do that!!"
+
