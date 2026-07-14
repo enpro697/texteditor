@@ -5440,23 +5440,23 @@ When considering future developments, should we focus on the battles between the
 
 [Manga Science Special Edition: The Secret of the Giant Motor?]
 
-(シーン：いつものように4人でよしおの家に集まり、ローテーブルを囲んでいる。まなぶが図鑑を開いている)
+(シーン：いつものように4人でよしおクンの家に集まり、ローテーブルを囲んでいる。まなぶクンが図鑑を開いている)
 
 (Scene: As usual, the four of them are gathered at Yoshio's house, sitting around a low table. Manabu has an illustrated reference book open.)
 
-まなぶ: 「…というわけで、モーターってのは磁石の反発力と吸引力を利用して回転を生み出すんだ。ミニ四駆も電車も、基本は同じさ」
+まなぶクン: 「…というわけで、モーターってのは磁石の反発力と吸引力を利用して回転を生み出すんだ。ミニ四駆も電車も、基本は同じさ」
 
 Manabu: "...And that's why motors use the repulsive and attractive forces of magnets to generate rotation. Whether it's a Mini 4WD or a train, the basic principle is the same."
 
-あやめ: 「なるほどー！ つまり、気合と根性でぐるぐる回るってことね！ わたしと同じ！」
+あやめちゃん: 「なるほどー！ つまり、気合と根性でぐるぐる回るってことね！ わたしと同じ！」
 
 Ayame: "I get it now! So basically, it spins around and around with pure grit and guts! Just like me!"
 
-あさり: 「あんたの頭のモーターは年中空回りしてるけどね」
+あさりちゃん: 「あんたの頭のモーターは年中空回りしてるけどね」
 
 Asari: "Though the motor in your head is just spinning uselessly all year round."
 
-よしお: 「あやめちゃん…まなぶクンが今、電磁石の仕組みを論理的に説明したばかりじゃないか…」
+よしおクン: 「あやめちゃん…まなぶクンが今、電磁石の仕組みを論理的に説明したばかりじゃないか…」
 
 Yoshio: "Ayame-chan... Manabu-kun literally just logically explained the mechanics of electromagnets..."
 
@@ -5472,11 +5472,11 @@ The Phantom of Big Motor: "BZZZZT!! That's exactly right! Grit! Guts! And thorou
 
 (The four of them are stunned. Standing in the broken window frame is a man wearing a clean, blue mechanic's jumpsuit. However, his head is a polished, giant electric motor, with an eerily bright smile painted on the side.)
 
-よしお: 「……誰！？」
+よしおクン: 「……誰！？」
 
 Yoshio: "...Who?!"
 
-あさり: 「また変なのが来たわね。っていうか、窓ガラス弁償してよね」
+あさりちゃん: 「また変なのが来たわね。っていうか、窓ガラス弁償してよね」
 
 Asari: "Another weirdo showed up. More importantly, pay for that window."
 
@@ -5484,15 +5484,15 @@ Asari: "Another weirdo showed up. More importantly, pay for that window."
 
 The Phantom of Big Motor: "Hahaha! Don't sweat the small stuff! I am the giant driving force that loves cars and contributes greatly to society! People call me the 'Phantom of the Big Motor'! Today, I have come to teach you how a motor works, and how to apply it to 'building corporate value for overwhelming growth'!"
 
-まなぶ: 「これ、科学まんがだよね…？ 企業価値ってなんだか生々しいんだけど…」
+まなぶクン: 「これ、科学まんがだよね…？ 企業価値ってなんだか生々しいんだけど…」
 
 Manabu: "This is a science manga, right...? 'Corporate value' sounds kind of uncomfortably real..."
 
-あやめ: 「わあ！ ビッグな会社の人！ 企業価値って食べられる？ おやつ出る！？」
+あやめちゃん: 「わあ！ ビッグな会社の人！ 企業価値って食べられる？ おやつ出る！？」
 
 Ayame: "Wow! A guy from a big company! Can you eat corporate value? Do we get snacks?!"
 
-あさり: 「あんたは少し黙ってなさい。……で、その頭がでっかいモーターの人が、私たちに何の用？」
+あさりちゃん: 「あんたは少し黙ってなさい。……で、その頭がでっかいモーターの人が、私たちに何の用？」
 
 Asari: "You just stay quiet for a second. ...So, what does Mr. Giant Motor Head want with us?"
 
@@ -5500,7 +5500,7 @@ Asari: "You just stay quiet for a second. ...So, what does Mr. Giant Motor Head 
 
 The Phantom of Big Motor: "Hehehe, good question, little lady! The basic structure of a motor consists of a 'stator' and a 'rotor'! To make the rotor spin vigorously, you need to run an electric current through the coil to generate the strong repulsive force of a magnetic field!"
 
-まなぶ: 「うん、そこまではさっき僕が説明した通りだね。フレミングの左手の法則だ。」
+まなぶクン: 「うん、そこまではさっき僕が説明した通りだね。フレミングの左手の法則だ。」
 
 Manabu: "Yeah, that's exactly what I just explained earlier. Fleming's left-hand rule."
 
@@ -5508,7 +5508,7 @@ Manabu: "Yeah, that's exactly what I just explained earlier. Fleming's left-hand
 
 The Phantom of Big Motor: "That's right! But merely running a current won't achieve 'overwhelming growth'! To spin the rotor to its absolute limit, you need intense pressure... in other words, 'a mandatory sales quota (overvoltage)'!!"
 
-よしお: 「ちょっと待って。定格以上の電圧をかけたらモーターに負担がかかるんじゃないの？」
+よしおクン: 「ちょっと待って。定格以上の電圧をかけたらモーターに負担がかかるんじゃないの？」
 
 Yoshio: "Wait a minute. If you apply a voltage over the rated limit, doesn't that put too much strain on the motor?"
 
@@ -5520,7 +5520,7 @@ The Phantom of Big Motor: "Hahaha! The word 'impossible' does not exist in our b
 
 (The Phantom slowly pulls a suspicious plastic jug from his jumpsuit pocket and begins spraying liquid around the area.)
 
-あさり: 「ちょっと！ 人の家の中で勝手に除草剤撒かないでよ！ なんでモーターの話で急に草を枯らそうとするのよ！」
+あさりちゃん: 「ちょっと！ 人の家の中で勝手に除草剤撒かないでよ！ なんでモーターの話で急に草を枯らそうとするのよ！」
 
 Asari: "Hey! Don't just spray herbicide inside someone's house! Why are you suddenly trying to kill grass while talking about motors?!"
 
@@ -5528,7 +5528,7 @@ Asari: "Hey! Don't just spray herbicide inside someone's house! Why are you sudd
 
 The Phantom of Big Motor: "Tsk, tsk, tsk. If you improve the appearance and clear the view (line of sight), customers (electric current) will naturally be sucked into the store! Roadside trees... err, air resistance is just an obstacle!"
 
-まなぶ: 「……なんか、科学的というより社会の暗部を見せられている気がするんだけど……」
+まなぶクン: 「……なんか、科学的というより社会の暗部を見せられている気がするんだけど……」
 
 Manabu: "...I feel like we're being shown the dark underbelly of society rather than anything scientific..."
 
@@ -5536,11 +5536,11 @@ Manabu: "...I feel like we're being shown the dark underbelly of society rather 
 
 The Phantom of Big Motor: "Furthermore! The contact between the 'commutator'—which switches the direction of the current—and the 'brushes' is also crucial! To this section that is in constant friction, we sometimes apply an 'intentional shock (impact)' to create new demand (repairs)...!!"
 
-あやめ: 「インパクト！？ こういうこと！？」
+あやめちゃん: 「インパクト！？ こういうこと！？」
 
 Ayame: "Impact?! Like this?!"
 
-（あやめ、どこからか見つけてきた靴下にゴルフボールを詰め込み、ビュンビュンと振り回し始める）
+（あやめちゃん、どこからか見つけてきた靴下にゴルフボールを詰め込み、ビュンビュンと振り回し始める）
 
 (Ayame stuffs a golf ball into a sock she found somewhere and begins swinging it around wildly.)
 
@@ -5552,7 +5552,7 @@ The Phantom of Big Motor: "Y-Yes, exactly! With that golf ball in a sock, you gi
 
 (WHACK!!)
 
-あやめ: 「えいっ！！」
+あやめちゃん: 「えいっ！！」
 
 Ayame: "Take that!!"
 
@@ -5560,7 +5560,7 @@ Ayame: "Take that!!"
 
 The Phantom of Big Motor: "GBAAAAH?! There's a dent in my shiny head (motor)?! A-At this rate, the insurance payout... I mean, the insulation properties will be compromised!!"
 
-よしお: 「今、完全に本音が出たよね！？」
+よしおクン: 「今、完全に本音が出たよね！？」
 
 Yoshio: "Your true motives just slipped out completely right now, didn't they?!"
 
@@ -5572,7 +5572,7 @@ The Phantom of Big Motor: "Argh, if it comes to this, we're breaking past the li
 
 (The motor on the Phantom's head starts spinning at an ultra-high speed with a screeching "Screeeeeeech!!" sound, and dangerous sparks begin to fly.)
 
-まなぶ: 「あっ！ ダメだよ！ そんな無茶な回転させたら、ブラシが焼き切れちゃう！」
+まなぶクン: 「あっ！ ダメだよ！ そんな無茶な回転させたら、ブラシが焼き切れちゃう！」
 
 Manabu: "Ah! Stop! If you force it to spin that fast, the brushes will burn out!"
 
@@ -5592,23 +5592,23 @@ The Phantom of Big Motor: "...C-Customer smiles... come first... (thud)"
 
 (The room falls dead silent. The four of them surround the charred Phantom.)
 
-あさり: 「あーあ。無理な回転（ノルマ）を強要すると、結局は自分自身が燃え尽きるってわけね。」
+あさりちゃん: 「あーあ。無理な回転（ノルマ）を強要すると、結局は自分自身が燃え尽きるってわけね。」
 
 Asari: "Well, look at that. Forcing unreasonable rotation (quotas) just means you end up burning yourself out in the end."
 
-よしお: 「コンプライアンス（絶縁）はしっかり守らないと、社会からもショートさせられちゃうってことか……良い勉強になったよ。」
+よしおクン: 「コンプライアンス（絶縁）はしっかり守らないと、社会からもショートさせられちゃうってことか……良い勉強になったよ。」
 
 Yoshio: "So if you don't properly maintain your compliance (insulation), you'll get short-circuited by society... That was a good lesson."
 
-まなぶ: 「……これ、モーターの原理っていうか、ただの企業事件簿だよね……」
+まなぶクン: 「……これ、モーターの原理っていうか、ただの企業事件簿だよね……」
 
 Manabu: "...This isn't really the principles of a motor, it's just a corporate scandal case file..."
 
-あやめ: 「ねえねえ！ この黒焦げの鉄くず、リサイクル業者に持っていったらおやつ代になるかな！？」
+あやめちゃん: 「ねえねえ！ この黒焦げの鉄くず、リサイクル業者に持っていったらおやつ代になるかな！？」
 
 Ayame: "Hey, hey! If we take this charred scrap metal to a recycler, do you think we can get enough money for snacks?!"
 
-よしお＆あさり: 「やめとけ（なさい）！！」
+よしおクン＆あさりちゃん: 「やめとけ（なさい）！！」
 
 Yoshio & Asari: "Don't do that!!"
 
