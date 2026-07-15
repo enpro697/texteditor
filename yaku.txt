@@ -5612,3 +5612,156 @@ Ayame: "Hey, hey! If we take this charred scrap metal to a recycler, do you thin
 
 Yoshio & Asari: "Don't do that!!"
 
+
+---
+
+ご提示いただいた物語の設定（あらすじ）も、同様の形式で対訳を作成しました。
+
+---
+
+未来文明が崩壊した後の、遺物(アーティファクト)のみが残る荒廃した世界。地平の先まで続く、霧が立ち込める森の奥深くに朽ち果てた軍事用潜水艦（地形が変わり、船頭以外の殆どが森林と土砂に埋もれている）。中で長く休眠していたヒューマノイドが眼を覚ます。
+In a devastated world where only artifacts remain after the collapse of a future civilization, a humanoid wakes from a long slumber deep within a rusted military submarine—half-buried in forest and sediment, its bow the only part still visible—hidden in the depths of a fog-shrouded forest that stretches to the horizon.
+
+世界各地に散らばる遺物から、過去の世界を辿り、かつての使命を探す旅にでる。コードの零から名前が「レイ」であることのみわかる。
+She embarks on a journey to trace the past and search for her former mission through the relics scattered across the world. From her code "Zero," the only thing she can discern is that her name is "Rei."
+
+ヒューマノイドはわずかな電流を放射することで、小動物の頭脳に干渉して、ノイズ交じりだが、視覚や記憶を辿り、また操作することができる。
+By emitting faint electrical currents, the humanoid can interfere with the brains of small animals. Though distorted by noise, she can trace their vision and memories, and even manipulate them.
+
+小動物をあたかも彼女の友人のようにふるまわせることができるが、低能な動物を電脳的に操作しているだけであり、彼女は地上で果てしなく独りであった。
+She can make these small creatures act as if they were her friends, but she is merely cybernetically manipulating simple animals; she remains infinitely alone on the surface.
+
+---
+
+彼女は知らない。彼女の本質は微弱な電力を通して人の意識に介入、思想をモニタリングして不穏分子を検出、報告、処分する旧独裁政権の公安部隊所属のヒューマノイドであり、命令を忠実に執行する感情なき機械であった。
+She does not know her own nature: she was a humanoid belonging to the public security force of a former authoritarian regime, designed to intervene in human consciousness through weak electrical signals, monitor thoughts, and detect, report, and eliminate dissidents—a machine without emotion that faithfully executed orders.
+
+抵抗勢力の拠点を、協力者の記憶から検知した部隊は、その一つである地下深い駐車場の跡地に警察車両で突入。抵抗勢力を検出、処分。
+Having detected a base of the resistance from a collaborator's memory, her unit stormed one of their hideouts—the ruins of a deep underground parking lot—in police vehicles. They detected and eliminated the resistance.
+
+戦闘中の出来事（記憶領域の部分的な破損のため、具体的な記憶が残っていない）で思考領域のノイズが生まれ、自ら殺めた少女の今わの際に、彼女の頭部に手をかざした。
+During the battle (her specific memories are gone due to partial damage to her memory banks), noise was generated in her cognitive domain. At the final moments of a girl she had slain, she placed her hand upon the girl’s head.
+
+今わの際のすべての記憶の瞬間的なフラッシュバックを直に浴びたことで、彼女の仮想記憶領域が変質。彼女の漠然とした生のイメージの記憶が思考領域に焼き付いたことで彼女は、精神的な分裂症状を被り、自我が存在したはずの虚空に芽生えた何かを身体が拒絶する二面性の狭間で異常な神経活動、てんかんに苦しむようになる。
+By directly receiving a instantaneous flashback of all the girl’s final memories, her virtual memory domain was altered. The memory of the girl’s vague images of life was burned into her cognitive domain, causing her to suffer from symptoms of mental fragmentation. She began to suffer from abnormal neural activity and epileptic seizures, caught between the duality of a body that rejects something budding in the void where her own ego should have existed.
+
+最新型の彼女は、検査結果で異常ありと認められ、軍事部隊に転用される。
+As the latest model, she was deemed anomalous by inspection results and reassigned to a military unit.
+
+彼女はヒューマノイドであり、記憶を承継した彼女の自我の残滓そのものでもある。
+She is a humanoid, and also the very remnant of her own ego, which inherited those memories.
+
+彼女は全ての記憶をなくしていて、過去の一切を記憶していない。ただ、失われた記憶があった領域への虚空が満たされない負の感覚が彼女を苛む。
+She has lost all her memories and remembers nothing of her past. Yet, she is tormented by a negative sensation—the inability to fill the void where her lost memories once resided.
+
+自分自身（ヒューマノイドとして、そして殺めた少女自身）としての自我を取り戻すためには記憶の断片を手繰る手掛かりとなる世界に遍在する遺物の痕跡を辿るほかない。
+To regain her ego as herself—both as the humanoid and as the girl she killed—she has no choice but to follow the traces of the relics pervasive in this world, which serve as clues to piece together the fragments of her memory.
+---
+
+### 第一章：鉄の棺と偽りの友人
+
+### Chapter 1: The Iron Coffin and the False Friend
+
+視界が、ノイズの海からゆっくりと浮上していく。
+My vision slowly surfaces from a sea of noise.
+
+最初に認識したのは、腐食した鉄の匂いだった。次いで、緑青と湿気を含んだ冷たい大気が、私の生体パーツの粘膜を撫でていく。どれほどの長い年月、私はここで眠っていたのだろうか。思考領域のタイムスタンプは文字化けを起こし、ゼロの羅列を繰り返すばかりだった。
+The first thing I recognized was the smell of corroded iron. Then, the cold atmosphere, heavy with verdigris and moisture, brushed against the mucous membranes of my biological components. How many years had I been sleeping here? The timestamps in my cognitive domain were corrupted, repeating nothing but rows of zeros.
+
+私が横たわっていたのは、大地に半ば飲み込まれた構造物の中だった。周囲の物理データをスキャンして、それがかつて海を潜行した「軍事用潜水艦の艦首」であると理解する。しかし、周囲に海の気配はない。地殻変動の果てに海は遠ざかり、代わりに途方もない樹木の根と土砂が、この鋼鉄の棺を無残に貫き、押し潰していた。
+I had been lying inside a structure half-swallowed by the earth. I scanned the physical data around me and understood it to be the bow of a military submarine that once prowled the seas. Yet, there was no sign of the ocean. Following tectonic shifts, the sea had retreated, and in its place, immense tree roots and sediment had cruelly pierced and crushed this steel coffin.
+
+自らの身体を動かす。人工筋肉が不快な軋み音を立て、関節の駆動系に堆積した埃が落ちる。自分の名すら、私は思い出せない。ただ、損傷したシステムログの最深部に、唯一読み取れる文字列があった。
+I moved my body. My artificial muscles made an unpleasant creaking sound, and dust accumulated in my joint drive systems fell away. I could not even remember my own name. However, in the deepest part of my damaged system logs, there was a single string of text I could still read.
+
+『コード：零（レイ）』
+"Code: Zero (Rei)."
+
+それが私の名前なのだろう。それ以外のデータは、すべてが濃い霧の向こう側に失われていた。
+That must be my name. All other data had been lost beyond a thick fog.
+
+艦首の歪んだ裂け目から、這うようにして外へと出た。
+I crawled out through a distorted fissure in the bow.
+
+そこは、地平の先まで終わりのない樹海だった。白い霧が深く立ち込め、見上げる空すら遮る大木が墓標のように静まり返っている。かつて世界を栄華で満たしたはずの「人類」の気配は、微塵も存在しない。あるのは、風が葉を揺らす音と、静寂の重みだけだ。
+What lay before me was a sea of trees that stretched endlessly to the horizon. Deep white fog hung in the air, and massive trees, blocking even the sky above, stood silent like tombstones. There was not a trace of the "humanity" that once filled this world with prosperity. All that remained was the sound of the wind rustling the leaves and the weight of the silence.
+
+足元で、ガサツキという小さな音がした。
+There was a small rustling sound at my feet.
+
+視界を向けると、毛皮に覆われた小さな四足歩行の獣——鼠に似た森林の小動物が、警戒心に満ちた眼差しで私を見上げている。
+I turned my gaze downward and saw a small, fur-covered quadruped—a forest animal resembling a mouse, looking up at me with wary eyes.
+
+私は無意識に、右手の指先を向けた。
+Unconsciously, I pointed the fingertips of my right hand toward it.
+
+指先から、目には見えない極めて微弱な電流を放つ。その電磁波は空気の層をすり抜け、小動物の小さな脳幹へと直接干渉した。
+From my fingertips, I emitted an invisible, extremely faint electric current. The electromagnetic waves slipped through the air and directly interfered with the small animal's brainstem.
+
+ピクり、と獣の身体が跳ねる。次瞬間、私の視覚インターフェースの片隅に、その獣が捕らえている「色彩の薄い視界」と「原始的な恐怖の感情」が流れ込み、上書きされた。私はその低能な脳の配線を、私の意志一つで切り替える。
+The beast's body jerked. The next moment, in the corner of my visual interface, the "pale field of vision" and "primitive emotions of fear" captured by the beast flowed in and overwrote my perception. With a single thought, I rewired its simple brain.
+
+『恐れることはない。おいで』
+"There is nothing to fear. Come here."
+
+電気信号の命令に従い、先ほどまで怯えていた小動物は、まるで長年の友の再会を喜ぶかのように、私の足元へ駆け寄り、親愛の情を示すように私のブーツに喉を鳴らして擦り寄った。
+Following the command of the electrical signals, the animal that had been trembling moments ago ran to my feet as if rejoicing in the reunion of a long-time friend, purring and rubbing against my boots to show its affection.
+
+私はそれを、冷徹な客観性をもって見下ろす。
+I looked down at it with cold objectivity.
+
+どれほど愛らしい振る舞いであっても、これは友情ではない。私の放つ電気パルスによって神経が強制的に駆動し、偽りの親愛を模倣させられているに過ぎないのだから。この生きたからくり人形を連れたところで、私はこの地上で、果てしなく独りだった。
+No matter how adorable its behavior, this was not friendship. Its nerves were being forcibly driven by the electric pulses I emitted, merely mimicking false affection. Even with this living puppet in tow, I remained infinitely alone on this earth.
+
+第一章の後半部分、物語が急転するシーンを同様の形式で翻訳いたします。
+
+---
+
+突然、視界に鋭いホワイトアウトが走った。
+Suddenly, a sharp whiteout flashed across my vision.
+
+「——っ……！」
+"—nn…!"
+
+声にならない警報が、思考領域を埋め尽くす。私は膝から崩れ落ち、湿った腐葉土の中に両手を突いた。
+A silent alarm filled my cognitive domain. I collapsed onto my knees, thrusting both hands into the damp leaf mold.
+
+記憶メモリの大部分は欠落している。しかし、そこにあるのは単なる「空白」ではない。かつてそこにあったはずの、絶対に失ってはならなかった何かが「奪われた」という、胸を引き裂かれるような負の感覚。空虚な穴が、私のコアを内側から食い破ろうとしている。
+Most of my memory banks are missing. Yet, what lies there is not a simple "blank." It is a heart-wrenching, negative sensation—the feeling that something which should have been there, something that absolutely must not have been lost, has been "stolen." A hollow void is attempting to devour my core from within.
+
+ノイズが弾ける。
+Noise erupts.
+
+私のシステムは感情を持たないはずの機械だ。それなのに、脳の奥底で奇妙な「熱」が燃え広がり、異常な神経活動が放電を起こす。自我が存在したはずの虚空に、見知らぬ誰かの「漠然とした生のイメージ」が、赤黒い光となってフラッシュバックした。
+My system is supposed to be a machine without emotions. And yet, a strange "heat" burns deep within my brain, and abnormal neural activity triggers electrical discharges. In the void where my ego should have existed, a stranger's "vague images of life" flashed back like deep crimson light.
+
+誰かの呼吸。誰かの痛み。そして、血に塗れた小さな手——。
+Someone's breathing. Someone's pain. And a small, blood-stained hand—
+
+私の身体が、私の意志とは無関係に激烈に拒絶反応を示していた。まるで、一つの身体の中に「二つの魂」が無理やり押し込められ、互いに反発し合っているかのような、破滅的なてんかん発作。人工筋肉が痙攣し、口から不快な冷却液が漏れ出す。
+My body was showing a violent rejection, completely independent of my will. It was like a catastrophic epileptic seizure, as if "two souls" had been forced into a single body and were repelling each other. My artificial muscles convulsed, and unpleasant coolant leaked from my mouth.
+
+「なぜ……私は……」
+"Why… am I…"
+
+どれほど時間が経っただろうか。神経活動の嵐がようやく過ぎ去り、私は震える手で自身の胸元を掴んだ。
+How much time has passed? The storm of neural activity finally subsided, and I grasped my own chest with trembling hands.
+
+ここに焼き付いている見知らぬ記憶の断片は、誰のものなのか。私はなぜ、この森の底の潜水艦で眠っていたのか。私は何者で、何のために造られたのか。
+Whose are these fragments of strange memories burned into me? Why was I sleeping in a submarine at the bottom of this forest? Who am I, and what was I created for?
+
+何一つわからない。けれど、この精神を蝕む虚空を埋め、私自身としての自我を取り戻さない限り、私はこの壊れた機械の身体のまま、いずれ狂気に飲まれて機能停止するだろう。
+I do not know anything. However, unless I fill this void that corrodes my mind and reclaim my ego as myself, I will eventually be consumed by madness and cease to function in this broken machine body.
+
+私は立ち上がった。
+I stood up.
+
+足元で、依然として偽りの親愛を向ける小動物への電磁干渉を解除する。糸が切れたように我に返った小さな獣は、一瞬の混乱ののち、怯えて濃い霧の向こうへ走り去っていった。もう一度、絶対的な孤独が訪れる。
+I released the electromagnetic interference on the small animal still offering its false affection at my feet. The little beast, coming to its senses as if a string had been cut, paused for a moment of confusion before running off in fear into the thick fog. Once again, absolute solitude descended.
+
+霧の向こう、遠く離れた森の木々の間に、苔生したかつての文明の遺物——見上げるような高層建築の残骸が、錆びた骨組みを覗かせていた。
+Beyond the fog, between the trees in the distance, the moss-covered relics of a past civilization—the skeletal remains of towering buildings—peeked through, revealing their rusted frames.
+
+過去の世界を辿り、失われた自分の使命と記憶を手繰り寄せるためには、あの遺物の痕跡を追うほかない。私は沈黙する森へと、最初の一歩を踏み出した。
+To trace the world of the past and pull back my lost purpose and memories, I have no choice but to follow the trails of those relics. I took my first step into the silent forest.
+
