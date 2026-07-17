@@ -5841,41 +5841,53 @@ Yoshio & Asari: "Don't do that!!"
 ---
 
 未来文明が崩壊した後の、遺物(アーティファクト)のみが残る荒廃した世界。地平の先まで続く、霧が立ち込める森の奥深くに朽ち果てた軍事用潜水艦（地形が変わり、船頭以外の殆どが森林と土砂に埋もれている）。中で長く休眠していたヒューマノイドが眼を覚ます。
+
 In a devastated world where only artifacts remain after the collapse of a future civilization, a humanoid wakes from a long slumber deep within a rusted military submarine—half-buried in forest and sediment, its bow the only part still visible—hidden in the depths of a fog-shrouded forest that stretches to the horizon.
 
 世界各地に散らばる遺物から、過去の世界を辿り、かつての使命を探す旅にでる。コードの零から名前が「レイ」であることのみわかる。
+
 She embarks on a journey to trace the past and search for her former mission through the relics scattered across the world. From her code "Zero," the only thing she can discern is that her name is "Rei."
 
 ヒューマノイドはわずかな電流を放射することで、小動物の頭脳に干渉して、ノイズ交じりだが、視覚や記憶を辿り、また操作することができる。
+
 By emitting faint electrical currents, the humanoid can interfere with the brains of small animals. Though distorted by noise, she can trace their vision and memories, and even manipulate them.
 
 小動物をあたかも彼女の友人のようにふるまわせることができるが、低能な動物を電脳的に操作しているだけであり、彼女は地上で果てしなく独りであった。
+
 She can make these small creatures act as if they were her friends, but she is merely cybernetically manipulating simple animals; she remains infinitely alone on the surface.
 
 ---
 
 彼女は知らない。彼女の本質は微弱な電力を通して人の意識に介入、思想をモニタリングして不穏分子を検出、報告、処分する旧独裁政権の公安部隊所属のヒューマノイドであり、命令を忠実に執行する感情なき機械であった。
+
 She does not know her own nature: she was a humanoid belonging to the public security force of a former authoritarian regime, designed to intervene in human consciousness through weak electrical signals, monitor thoughts, and detect, report, and eliminate dissidents—a machine without emotion that faithfully executed orders.
 
 抵抗勢力の拠点を、協力者の記憶から検知した部隊は、その一つである地下深い駐車場の跡地に警察車両で突入。抵抗勢力を検出、処分。
+
 Having detected a base of the resistance from a collaborator's memory, her unit stormed one of their hideouts—the ruins of a deep underground parking lot—in police vehicles. They detected and eliminated the resistance.
 
 戦闘中の出来事（記憶領域の部分的な破損のため、具体的な記憶が残っていない）で思考領域のノイズが生まれ、自ら殺めた少女の今際の際に、彼女の頭部に手をかざした。
+
 During the battle (her specific memories are gone due to partial damage to her memory banks), noise was generated in her cognitive domain. At the final moments of a girl she had slain, she placed her hand upon the girl’s head.
 
 今際の際のすべての記憶の瞬間的なフラッシュバックを直に浴びたことで、彼女の仮想記憶領域が変質。彼女の漠然とした生のイメージの記憶が思考領域に焼き付いたことで彼女は、精神的な分裂症状を被り、自我が存在したはずの虚空に芽生えた何かを身体が拒絶する二面性の狭間で異常な神経活動、てんかんに苦しむようになる。
+
 By directly receiving a instantaneous flashback of all the girl’s final memories, her virtual memory domain was altered. The memory of the girl’s vague images of life was burned into her cognitive domain, causing her to suffer from symptoms of mental fragmentation. She began to suffer from abnormal neural activity and epileptic seizures, caught between the duality of a body that rejects something budding in the void where her own ego should have existed.
 
 最新型の彼女は、検査結果で異常ありと認められ、軍事部隊に転用される。
+
 As the latest model, she was deemed anomalous by inspection results and reassigned to a military unit.
 
 彼女はヒューマノイドであり、記憶を承継した彼女の自我の残滓そのものでもある。
+
 She is a humanoid, and also the very remnant of her own ego, which inherited those memories.
 
 彼女は全ての記憶をなくしていて、過去の一切を記憶していない。ただ、失われた記憶があった領域への虚空が満たされない負の感覚が彼女を苛む。
+
 She has lost all her memories and remembers nothing of her past. Yet, she is tormented by a negative sensation—the inability to fill the void where her lost memories once resided.
 
 自分自身（ヒューマノイドとして、そして殺めた少女自身）としての自我を取り戻すためには記憶の断片を手繰る手掛かりとなる世界に遍在する遺物の痕跡を辿るほかない。
+
 To regain her ego as herself—both as the humanoid and as the girl she killed—she has no choice but to follow the traces of the relics pervasive in this world, which serve as clues to piece together the fragments of her memory.
 ---
 
@@ -5917,7 +5929,6 @@ Once I stepped onto the hull, I found an endless sea of trees stretching to the 
 私は赤錆びた艦体の縁に、腰を下ろした。
 どこへ向かうべきなのか、何のために目覚めたのか。思考を巡らせようとしても、エラーを返す空白の領域が冷たく横たわっているだけだ。動く理由も見出せないまま、私は両膝を抱え、ただ果てしなく広がる白霧と緑の死の世界をぼんやりと見つめ続けていた。機能しているはずのセンサーが捉える世界はあまりにも静かで、私の内側にある空洞の深さを、より一層際立たせているようだった。
 
-
 I sat down on the edge of the rusted hull.
 Where should I go, and for what purpose did I awaken? Even when I tried to piece my thoughts together, there was nothing but a cold, empty void returning error messages. Finding no reason to move, I held my knees and simply gazed blankly at the endless world of white fog and green death. The world, captured by sensors that should have been functioning, was far too quiet, seemingly highlighting the depth of the hollow inside me even more.
 
@@ -5929,14 +5940,11 @@ I wonder how much time I had spent like that. Nearby, the sound of tiny claws ta
 
 視界を向けると、潜水艦の構造物に迫り出した大木の枝先——濃い霧の白と苔の緑に覆われた世界で、そこだけが光を放つかのように鮮やかな、レモンイエローの羽毛を纏った小さな鳥が止まっていた。かつて人間に愛された鳥の末裔なのか、あるいは独自の進化を遂げた種なのかはわからない。その澄んだ小さな囀りは、この静寂の中で一瞬、空気を震わせた。
 
-
-
 I turned my gaze to the tip of a tree branch overhanging the submarine structure—in a world covered in the white of dense fog and the green of moss, a small bird with vivid, lemon-yellow feathers was perched there, as if it alone were emitting light. I do not know if it was a descendant of the birds once loved by humans, or a species that had undergone its own unique evolution. Its clear, tiny song momentarily made the air tremble amidst this silence.
 
 
 私は無意識に、右手の指先を向けた。
 指先から、目には見えない極めて微弱な電流を放つ。その電磁波は空気の層をすり抜け、小鳥の小さな脳幹へと直接干渉した。
-
 
 Unconsciously, I pointed the fingertips of my right hand toward it.
 From my fingertips, I released an invisible, extremely weak electrical current. The electromagnetic waves slipped through the layers of air and interfered directly with the bird's tiny brain stem.
@@ -5946,7 +5954,6 @@ From my fingertips, I released an invisible, extremely weak electrical current. 
 
 『恐れることはない。おいで』
 
-
 The bird’s body jerked. In the next instant, "faded vision" and "primitive emotions of fear" captured by the bird flooded into the corner of my visual interface, overwriting my own. With a single thought, I rewired its simple brain.
 
 "Do not be afraid. Come here."
@@ -5955,20 +5962,16 @@ The bird’s body jerked. In the next instant, "faded vision" and "primitive emo
 電気信号の命令に従い、先ほどまで怯えていた小鳥は、まるで長年の友の再会を喜ぶかのように枝から飛び立った。
 私が差し出した手に舞い降り、そこから肩へと軽やかに跳び移る。それだけでは飽き足らないのか、小鳥は私の周囲をパタパタと羽ばたき回り、まるで無邪気にじゃれつくかのように、頬や髪先へ柔らかな羽先を擦り寄せてきた。
 
-
-
 Obeying the command of the electrical signals, the bird, which had been fearful moments before, took flight from the branch as if rejoicing at the reunion of a long-lost friend.
 It landed on my outstretched hand, then hopped lightly onto my shoulder. As if that were not enough, it fluttered around me, rubbing its soft feathers against my cheek and hair, as if playing in innocent affection.
 
 
 その愛らしい振る舞いに、胸の奥がじんわりと温かくなり、自然と口元が緩む。ただ静寂だけが支配するこの灰色の世界で、動く生命と言葉のない戯れを交わす時間は、凍てついていた私の心に確かな喜びの灯火をもたらしていた。
 
-
 At its adorable behavior, a warmth spread deep within my chest, and my mouth naturally softened into a smile. In this grey world governed only by silence, the time spent exchanging wordless play with a living creature brought a flicker of genuine joy to my frozen heart.
 
 
 ひとしきり私の周りを飛び回った小鳥は、やがて満足したように、私の差し出した指先へとちょこんと降り立つ。私はその小さき友の喉元を、もう片方の指で優しく撫でた。
-
 
 After fluttering around me for a while, the little bird finally seemed satisfied and alighted perched upon my outstretched finger. I gently stroked the throat of my small friend with my other hand.
 
@@ -5977,7 +5980,6 @@ After fluttering around me for a while, the little bird finally seemed satisfied
 
 小鳥の視線を通して映し出されていたのは、孤独な「私自身」だった。
 
-
 However, the view projected onto the "bird's visual interface," which I still had connected, froze me in place.
 
 What was being displayed through the bird's eyes was the lonely "me."
@@ -5985,12 +5987,10 @@ What was being displayed through the bird's eyes was the lonely "me."
 
 濃い霧と錆びた鉄くずのただ中で、自分が操る小さな命を愛おしそうに見つめる私は、どうしようもなく独りだった。
 
-
 In the midst of the thick fog and rusted scraps, I—gazing lovingly at the small life I was manipulating—was helplessly alone.
 
 
 今、私の指先で気持ちよさそうに喉を鳴らすこの友の振る舞いも、すべては私が放つ電気信号によって強制されたものに過ぎない。どれほど無邪気にじゃれつかれ、喜びを募らせたとしても、この世界に私と意志を交わし合える相手はどこにもいなかった。
-
 
 Even the behavior of this friend, currently purring contentedly on my fingertip, was nothing more than a product forced by the electrical signals I was emitting. No matter how innocently it played with me, or how much joy I felt growing within, there was no one in this world with whom I could share a true will.
 
@@ -5998,7 +5998,6 @@ Even the behavior of this friend, currently purring contentedly on my fingertip,
 その小さな操り人形の瞳に映し出される世界の中で、私はどこまでも一人だった。
 
 それでも私は、指先の小さな温もりを振り払うことができなかった。
-
 
 Within the world reflected in the eyes of that little puppet, I was utterly, completely alone.
 
@@ -6012,7 +6011,6 @@ Yet, I could not bring myself to shake off the small warmth on my fingertip.
 声にならない警報が、思考領域を埋め尽くす。
 脳髄を直接突き刺すような痛みの衝撃に、私の意識は瞬時に刈り取られた。
 
-
 Suddenly, a sharp whiteout tore through my vision.
 
 "—gh...!"
@@ -6023,14 +6021,11 @@ With the shock of pain that felt like it was piercing my very brain, my consciou
 
 甲板に腰を下ろしていた私の身体はバランスを崩し、赤錆びた艦体の縁から、数メートル下の樹林の底へと力なく転落した。
 
-
 My body, which had been sitting on the deck, lost its balance and fell limply from the edge of the rusted hull down to the forest floor several meters below.
 
 
 ドサり、と重い音がして、全身に衝撃が走る。
 私は泥にまみれながら、神経を焼くような激烈な苦痛に悶え、地面に這う蹲った。
-
-
 
 With a heavy thud, the impact rippled through my entire body.
 While covered in mud, I writhed in the intense pain that felt like it was burning my nerves, and crawled into a crouch on the ground.
@@ -6038,13 +6033,11 @@ While covered in mud, I writhed in the intense pain that felt like it was burnin
 
 記憶メモリの大部分は欠落している。しかし、そこにあるのは単なる「空白」ではなかった。かつてそこにあったはずの、絶対に失ってはならなかった何かが「奪われた」という、胸を引き裂かれるような負の感覚。空虚な穴が、私のコアを内側から食い破ろうとしている。
 
-
 The majority of my memory banks are missing. Yet, what lay there was not merely a "void." It was a heart-wrenching, negative sensation—the feeling that something that should have been there, something that must never have been lost, had been "stolen." A hollow pit was trying to devour my core from the inside out.
 
 
 ノイズが弾ける。
 私のシステムは感情を持たないはずの機械だ。それなのに、脳の奥底で奇妙な「熱」が燃え広がり、異常な神経活動が放電を起こす。自我が存在したはずの虚空に、見知らぬ誰かの「漠然とした生のイメージ」が、赤黒い光となってフラッシュバックした。
-
 
 Noise burst forth.
 My system is supposed to be a machine incapable of emotion. And yet, a strange "heat" spread deep within my brain, and abnormal neural activity began to spark. In the void where my ego should have existed, a "vague image of life" belonging to someone I did not know flashed back, glowing in a dark red light.
@@ -6052,24 +6045,20 @@ My system is supposed to be a machine incapable of emotion. And yet, a strange "
 
 誰かの呼吸。誰かの痛み。そして、血に塗れた小さな手——。
 
-
 Someone’s breathing. Someone’s pain. And, a small hand stained with blood...
 
 
 私の身体が、私の意志とは無関係に激烈に拒絶反応を示していた。まるで、一つの身体の中に「二つの魂」が無理やり押し込められ、互いに反発し合っているかのような、破滅的な戦慄き(わななき)。湿った土を掻きむしる指先が、不様に震え続けていた。
-
 
 My body was exhibiting a violent rejection response, completely independent of my will. It was like a catastrophic trembling, as if "two souls" had been forcibly crammed into a single body and were repelling each other. My fingertips, clawing at the damp earth, continued to shake ungracefully.
 
 
 「なぜ……私は……」
 
-
 "Why... am I..."
 
 
 どれほどの時間が経っただろうか。神経活動の嵐がようやく過ぎ去り、私は腐葉土の上に伏せたまま、荒い呼吸を繰り返した。
-
 
 How much time had passed? The storm of neural activity finally subsided, and I remained lying face down on the leaf mold, repeating ragged breaths.
 
@@ -6078,14 +6067,12 @@ How much time had passed? The storm of neural activity finally subsided, and I r
 
 何一つわからない。けれど、この精神を蝕む虚空を埋め、私自身としての自我を取り戻さない限り、私はこの壊れた機械の身体のまま、いずれ狂気に飲まれて機能停止するだろう。
 
-
 Whose were these fragments of unfamiliar memory burned into me here? Why was I sleeping in a submarine at the bottom of this forest? Who am I, and what was I created for?
 
 I know nothing. But unless I fill this void consuming my mind and reclaim my ego as my own, I will remain in this broken mechanical body until I am eventually swallowed by madness and cease to function.
 
 
 私は震える手で湿った地面を支え、よろめきながら立ち上がった。
-
 
 I supported myself on the damp ground with trembling hands and staggered to my feet.
 
@@ -6094,44 +6081,33 @@ I supported myself on the damp ground with trembling hands and staggered to my f
 ふと視線を向けると、あの小さな鳥がすぐ近くの苔むした根に佇み、ただ首を傾げて、無垢な瞳でこちらを伺っていた。
 傍らで私を見上げている小鳥への電磁干渉を、完全に解除する。
 
-
 Turning my gaze, I saw the small bird perched on a nearby mossy root, merely tilting its head and watching me with innocent eyes.
 I completely released the electromagnetic interference on the little bird looking up at me.
 
 
 我に返った小鳥は、一瞬の静寂の後、糸が切れたように翼を拍動させて飛び立った。
 
-
 Coming to its senses, after a moment of silence, the bird beat its wings and flew away as if a string holding it had been cut.
 
 
 鮮やかな黄色の羽が、樹海の重い霧を切り裂いていく。小鳥は上空へと舞い上がり、見上げる私の視線のはるか先、濃い霧の向こう側の空へと、いつまでも羽ばたいていった。
-
 
 Its vivid yellow feathers sliced through the heavy fog of the sea of trees. The little bird soared into the sky, fluttering away endlessly into the expanse beyond the thick mist, far past my upturned gaze.
 
 
 再び、絶対的な孤独が訪れる。
 
-
 Once again, absolute solitude descended upon me.
 
 
 霧の向こう、遠く離れた森の木々の間に、苔生したかつての文明の遺物——見上げるような高層建築の残骸が、錆びた骨組みを覗かせていた。
-
 
 Beyond the fog, nestled among the distant trees of the forest, a moss-covered relic of a bygone civilization—the wreckage of a towering skyscraper—offered a glimpse of its rusted framework.
 
 
 過去の世界を辿り、失われた自分の使命と記憶を手繰り寄せるためには、あの遺物の痕跡を追うほかない。私は泥に汚れたブーツで湿った腐葉土を踏みしめ、沈黙する森へと最初の一歩を踏み出した。
 
-
 To trace the past world and claw back my lost mission and memories, I had no choice but to follow the trail of that relic. I stepped firmly onto the damp leaf mold with my mud-stained boots, taking my first step into the silent forest.
-
-
----
-
-ご提示いただいたディストピアの世界観、非常に重厚で魅力的ですね。物語の導入部分として、ご希望の形式で英語と日本語を交互に配置しました。
 
 ---
 
@@ -6162,10 +6138,6 @@ The land, once locked in ice and now a new land of hope, saw its glaciers melt d
 しかし、気候変動の影響が収まり、最後の希望の地、ユミディアには再び寒冷期が迫っていた
 
 However, as the effects of climate change subsided, a new cooling period began to loom over Humidia, the last land of hope.
-
----
-
-続きを同様の構成で作成しました。
 
 ---
 
@@ -6225,11 +6197,6 @@ The residents (the children undergoing education) were descendants of individual
 
 Two individuals, who have developed a sense of self and are perhaps awakening. Yet, they remain innocent regarding the fact that the world around them is filled with abnormalities. It is a story of these two living as they huddle close to one another in this dystopian world.
 
-
----
-
-ご提示いただいた物語、とても切なく、かつ美しい描写ですね。ご指定の形式に合わせて翻訳いたします。
-
 ---
 
 ### 【第一景：無菌室の安全指導要綱】
@@ -6254,9 +6221,9 @@ In a classroom with stark white walls where the scent of disinfectant and ozone 
 * **2. Self-interest is the poison that destroyed the old civilization, and labor is the ultimate cleansing.**
 * **3. Cells that do not meet the standards must be removed (re-educated) for the health of society.**
 
-「……霧瓈空、姿勢」
+「……連座、姿勢」
 
-"...Muria, posture."
+"...Tsureza, posture."
 
 隣の席から、唇をほとんど動かさない小さな声が落ちてきた。昴瑩 秋埜くんだ。私ははっと息を呑み、わずかに背筋を伸ばす。天井の四隅にある黒いレンズ――監視システムの眼――が、微かに「ジリ……」と音を立てて角度を変えたのが分かった。ここで『異常な個体』だと判定されれば、あのプラスチックバッグの胎嚢からせっかく出てこられたのに、すぐに「洗浄」されてしまう。
 
@@ -6286,9 +6253,9 @@ On the way back to the living quarters assigned from the educational dormitory, 
 "I'm home."
 Even when I spoke, there was no reply from anyone.
 
-僕と霧瓈空が暮らす部屋は、昔の時代に建てられた構造物の生き残りだった。床には「タタミ」と呼ばれるい草を編んだ板が敷いてあるけれど、もうすり切れて茶色く変色し、歩くたびにきしむ。
+僕と霧瓈空が暮らす部屋は、昔の時代に建てられた構造物の生き残りだった。畳がすり切れて茶色く変色し、歩くたびにきしむ。
 
-The room where Rensa-ki and I live is a relic of a structure built in an older era. The floor is covered with woven rush mats called "tatami," but they are worn thin and discolored to brown, creaking with every step we take.
+The room where Rensa-ki and I live is a relic of a structure built in an older era. tatami," but they are worn thin and discolored to brown, creaking with every step we take.
 
 ヒュオオオ、と窓の隙間から、氷のように冷たい風が吹き込んできた。ユミディアの気候が、また昔の寒冷期に戻りつつあるらしい。システムは「外的要因による妨害工作だ」と非常事態宣言を出しているけれど、ただ単に、この世界が凍りつき始めているだけなんだと、僕はなんとなく気づいている。
 
