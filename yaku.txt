@@ -5491,6 +5491,259 @@ They won't be of any use in your bloody battles... but indulging in such nocturn
 
 ---
 
+### アイテム名：『棄てられた王女の手記』
+
+### Item Name: "Journal of the Abandoned Princess"
+
+**場所：** 王都ローデイル、忌み捨ての地下深層。「異形の棺」のそば。
+**Location:** Leyndell, Capital of Ash, Subterranean Shunning-Grounds. Beside the "Grotesque Coffin."
+
+---
+
+#### 黄金樹の暦 ある日
+
+#### The Era of the Erdtree, One Day
+
+おかあさまが、わたしをここに つれてきた。
+くらい。 くさい。 みずが きたない。
+でも、おかあさまは いった。
+「リサ、ここで まっていなさい。 あなたの "つの" が なくなったら、むかえにくるから」
+だから、わたしは いいこで まつ。
+ここには おなじような "つの" のはえた おともだちが たくさんいる。
+でも、みんな ないている。
+
+Mother brought me here.
+It is dark. It smells bad. The water is filthy.
+But Mother said,
+"Lisa, wait here. When your 'horns' are gone, I will come for you."
+So, I am a good girl and I wait.
+There are many friends here with 'horns' like mine.
+But everyone is crying.
+
+---
+
+#### 黄金樹の暦 また別の日
+
+#### The Era of the Erdtree, Another Day
+
+しろいふくをきた おじさんたちが きた。
+「ちょうこうし」と いうらしい。
+おかあさまの いいつけで、わたしの "つの" を なおしてくれるんだって。
+すごくいっぱい、くすりを のんだ。
+からだが あつい。 なかから なにかが わきあがってくる。
+あたまのなかが チリチリする。
+でも がまんする。 おかあさまに あいたいから。
+
+Men in white clothes came.
+They are called "Perfumers."
+They said they are here to fix my "horns," by Mother's orders.
+I drank so much medicine.
+My body is hot. Something is welling up from inside.
+My head feels like it’s crackling.
+But I will endure it. Because I want to see Mother.
+
+---
+
+#### 黄金樹の暦 （判読不能）
+
+#### The Era of the Erdtree, (Illegible)
+
+きょうも ちゅうしゃ。
+"ヒスイのくすり" は、すごくいたい。
+せなかから、あたらしい 手が はえてきた みたい。
+おじさんたちは「けっさくだ」と いって わらった。
+かがみを みた。
+わたしの かお、なんだか ぶくぶくしてる。
+これじゃあ、おかあさまに きらわれちゃう。
+どうしよう。 どうしよう。
+
+Another injection today.
+The "Jade Medicine" hurts so much.
+It feels like new arms have sprouted from my back.
+The men laughed and called me a "masterpiece."
+I looked in the mirror.
+My face feels all puffy.
+If I look like this, Mother will hate me.
+What should I do? What should I do?
+
+---
+
+#### 黄金樹の暦 （文字が震えている）
+
+#### The Era of the Erdtree, (The letters are trembling)
+
+おかあさまが きた！
+ごはんを もってきてくれた。
+でも、おかあさま、かおを みせてくれない。
+きんいろの かめんを つけてる。
+「リサ、あいしているわ」と いった。
+でも、こえが ちがう。 においも ちがう。
+あのにおいは、ちょうこうし の おじさんたちと おなじ。
+
+……ちがう。
+あれは おかあさまじゃ ない。
+ニセモノだ。
+
+Mother came!
+She brought me food.
+But Mother won't show me her face.
+She is wearing a golden mask.
+She said, "Lisa, I love you."
+But her voice is different. And her scent is different.
+That smell is the same as the Perfumers.
+
+...No.
+That is not Mother.
+It is a fake.
+
+---
+
+#### 記述なし
+
+#### No Entry
+
+（ページ一面に、乱暴な筆跡で書きなぐられている）
+**かえせ**
+**かえせ**
+**かえせ**
+**かえせ**
+ニセモノの かお を はいだ。
+わたしの おかあさま どこ？
+この かお の したに かくしたの？
+
+(Written frantically across the entire page in violent handwriting)
+**GIVE IT BACK**
+**GIVE IT BACK**
+**GIVE IT BACK**
+**GIVE IT BACK**
+I tore off the fake face.
+Where is my mother?
+Did you hide her under this face?
+
+---
+
+#### 日付のような殴り書き
+
+#### Scribbles like a date
+
+ちょうこうし ぜんいんの かお を みた。
+どれも おかあさまじゃ ない。
+でも、かれらの かお を つけると、すこしだけ 安心する。
+きれいな、ツノのない かお。
+これを かさねていけば、いつか おかあさまに なれるかな。
+
+あたまの ツノが、また おおきくなった。
+いたい。 かゆい。
+だれか、わたしの 手錠を はずして。
+てが ４ぽんに なったから、てじょうが 足りないの。
+
+I looked at the faces of all the Perfumers.
+None of them are Mother.
+But when I wear their faces, I feel a little at peace.
+A beautiful, hornless face.
+If I layer these, maybe one day I can become Mother.
+
+The horns on my head have grown again.
+It hurts. It itches.
+Someone, please take off my handcuffs.
+I have four hands now, so the handcuffs aren't enough.
+
+---
+
+#### （血と汚物で汚れたページ）
+
+#### (Page stained with blood and filth)
+
+おかあ
+さ
+ま
+
+きょう
+マレニア
+と
+ミケラ
+という
+こが
+うまれ
+た
+と
+きい
+た
+
+わたし
+は
+？
+
+Mo
+ther
+
+I heard that children
+named
+Malenia
+and
+Miquella
+were born
+today.
+
+What about
+me?
+
+---
+
+#### （最後のページ）
+
+#### (The last page)
+
+あハハハははハハ
+みつけた
+みつけたよ
+
+わたしの かお
+おかあさまに にてる
+きれいな きしさま の かお
+
+これを わたしに くっつけたら
+おかあさま
+むかえに きて くれる よ ね
+
+いっしょに
+おうごんじゅ
+やこうね
+
+A-hahahaha-ha-ha-ha!
+I found it.
+I found it.
+
+My face
+looks like Mother's.
+The face of a beautiful knight.
+
+If I attach this to myself,
+Mother,
+You'll come for me, won't you?
+
+Let's go to the Erdtree
+together.
+
+[Flavor Text Interpretation]
+この日記を拾った後、プレイヤーは地下の最奥でボス 「接ぎ木の忌み王女、リサ」 と遭遇します。
+
+After picking up this journal, the player encounters the boss, "Lisa, the Grafted Omen Princess," in the deepest part of the underground.
+
+外見: 背中に複数の腕が生え（ゴドリックの初期形態のような、しかしより生物的で醜悪な変異）、顔には何層にも重なった「他者の顔の皮」を被っています。その隙間から、折れた角（忌み角）が無数に突き出しています。
+
+Appearance: Multiple arms sprout from her back (resembling Godrick's initial form, but more biological and grotesque in mutation), and she wears multiple layers of "other people's facial skin" over her own face. Countless broken horns (Omen horns) protrude from the gaps.
+
+戦闘スタイル: 鈍重ながら即死級の掴み攻撃（顔剥ぎ）と、調香師の技（毒や火の粉）をデタラメに撒き散らす攻撃を行います。
+
+Combat Style: Though sluggish, she uses instant-death grab attacks (face-ripping) and wildly scatters Perfumer techniques (poison and sparks).
+
+最期: 倒すと、彼女は黄金樹の根元に向かって這いずり、「おかあさま……あけて……」と呟きながら消滅します。
+
+The End: When defeated, she crawls toward the roots of the Erdtree and fades away, whispering, "Mother... open it..."
+
+---
+
 ### Day 1: 獅子の海鳴り
 
 **【視点：マーライオン】**
