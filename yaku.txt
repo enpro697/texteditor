@@ -2558,10 +2558,6 @@ At that moment, with a roaring sound, a single rescue helicopter appeared in the
 スネークが最後までノリノリのステップで梯子を登らされたことは、彼自身の機密事項（トップシークレット）として永遠に封印されることとなった。
 The fact that Snake was forced to climb the ladder with a grooving step to the very end would be eternally sealed as his own top-secret classified information.
 
----
-ご提示いただいた複数の創作テキストのうち、まずは1つ目の「宿儺の術式・料理のフルコース」のエピソードを、ご希望通り「日本語と英語が交互になるフォーマット」で作成しました。
-
-文字数の関係もあり、今回はこちらのキリの良いところ（1話目の最後まで）でまとめさせていただきました。英語訳はキャラクターの尊大で冷酷なニュアンスが伝わるように調整しています。
 
 ---
 
@@ -4966,184 +4962,553 @@ He was completely surrounded by countless spirits.
 
 ---
 
-ご提示いただいた「宿儺の厨房」に関する極めて禍々しくも魅力的な設定を、先ほどまでの形式に合わせてセリフ単位・項目単位で区切り、英訳を添えました。
 
-「呪術廻戦」の公式の用語や、宿儺らしい傲慢かつ冷徹な語り口を反映させています。
-
----
-
-クックック……。どうやら、我が呪術の本質が「料理」や「調理」に通じていることに勘付いたようだな。
-「解（カイ）」で皮を剥ぎ、「捌（ハチ）」で骨から肉を削ぎ、「開（フーガ）」の竈（かまど）で猛火にて焼き上げる。人間の血肉も、呪霊の呪力も、我が厨房においては等しくまな板の上の食材に過ぎん。
-
-Heh heh... It seems you've intuited that the essence of my jujutsu is akin to "cooking" or "culinary preparation."
-I peel the skin with "Dismantle," shave the meat from the bone with "Cleave," and roast them in the blazing inferno of the "Furnace" (Fuga). Human flesh and blood, or the cursed energy of cursed spirits—in my kitchen, they are all merely ingredients on a cutting board.
-
-いいだろう。今日は特別に、俺の「調理法」の深淵を教えてやる。凡夫どもには到底理解できぬ、古（いにしえ）の言語と呪詞に彩られた、極上のメニューだ。
-
-Very well. Today, as a special exception, I shall teach you the abyss of my "cooking methods." It is an exquisite menu, colored by ancient languages and incantations that mere mortals could never comprehend.
+ご提示いただいた文章を、セリフや意味の区切り、また長くなりすぎないリズム（キリの良い箇所）で「日本語 → 英語」の対訳形式にまとめました。作品の持つ世界観（宿儺の傲慢で古風な口調や、後半の壮大なパロディの雰囲気）を英語でも味わえるように翻訳しています。
 
 ---
 
-## I. 既知のメニュー — 宿儺が語る「六つの調理法」
+クックック……我が呪術の神髄が「料理」にあると気付いたか。
+『解』で剥ぎ、『捌』で卸し、『竈』で喰らう。命あるものを糧として慈しみ、あるいは戯れに調理し尽くすことこそ、呪いの王たる我が「厨房」の理（ことわり）よ。
 
-## I. Known Menu — "Six Cooking Methods" According to Sukuna
+Heh heh heh... Did you finally realize that the true essence of my Jujutsu lies in "cooking"?
+To strip away with *Dismantle*, to fillet with *Cleave*, and to consume with *Furnace*. To cherish living beings as sustenance, or to cook them to the bone upon a whim—that is the very law of my "Kitchen," as the King of Curses.
 
-以前に貴様が耳にしたという六つの技……その本質と、俺がどのようにして食材（エモノ）をいたぶるか、直々に説いてやろう。
+凡夫が知る由もない、我が呪術の奥義と「食材」たちの成り路を、特別に教示してやろう。耳を穿ってよく聞け。
 
-Those six techniques you've heard of before... I shall personally expound upon their essence and how I torment my ingredients (prey).
-
-* **灸（ダハ）**
-サンスクリット語の「Daha（火葬・熱）」を語源とする、弱火の炙り調理だ。いきなり消し炭にはせん。対象の体内に極小の熱源を埋め込み、生きたまま五臓六腑をじわじわと焦がしていく。内側から脂が溶け出し、骨まで灰へと変わる痛みをじっくりと味わわせるための技だ。
-* **Daha (Moxibustion)**
-Derived from the Sanskrit "Daha" (cremation/heat), this is a slow-roasting technique over low heat. I don't turn them to charcoal immediately. I embed a microscopic heat source inside the target, slowly scorching their internal organs while they remain alive. It is a technique designed to let them savor the pain as their fat melts from the inside and their bones turn to ash.
-
-
-* **醢（シシビシオ）**
-古代中国の極刑にして、最上の保存食を作る調理法。まずは「捌」で対象の肉を細かく刻み、そこに高濃度の呪力を塩のごとく浸透させる。傷口を腐食させながら生きたまま発酵させ、永遠に癒えない苦痛の中に閉じ込める。時間が経つほどに、呪力の旨味が熟成されるのだ。
-* **Shishibishio (Minced Meat Paste)**
-An ancient Chinese capital punishment turned into a technique for creating the finest preserved food. First, I finely mince the target's flesh with "Cleave," then infiltrate it with highly concentrated cursed energy, like salt. It ferments while they are still alive, rotting their wounds and trapping them in eternal, unhealing agony. The more time passes, the more the savory essence of the cursed energy matures.
-
-
-* **和（アマルガ）**
-語源はラテン語の「Amalgam（混成・融合）」。複数の術師や呪霊の肉体を切り刻み、呪力ごと一つの塊へと練り上げる「和え物」だ。異なる呪力が反発し合い、肉体が内側から崩壊と再生を繰り返す、グロテスクにして美しき肉の肉団子を作る。
-* **Amaruga (Blend)**
-Etymologically derived from the Latin "Amalgam." This is a "dressed dish" where I carve up the bodies of multiple sorcerers or cursed spirits and knead them—cursed energy and all—into a single mass. It creates a grotesque yet beautiful meatball where different cursed energies repel one another, causing the flesh to endlessly collapse and regenerate from within.
-
-
-* **丳（サン）**
-肉を串刺しにする古代象形文字の通り、「串焼き」の技だ。不可視の呪力の杭で、対象の四肢と中枢を虚空へ縫い付ける。一切身動きが取れなくなった獲物を、ただ静かに、次の「開（フーガ）」の炎が舐めるのを待たせるための下準備よ。
-* **San (Skewer)**
-Just as the ancient pictograph for skewering meat implies, this is the "skewering" technique. With invisible stakes of cursed energy, I pin the target's limbs and core into the void. It is the prep work for prey that can no longer move a muscle, leaving them to wait silently for the flames of the next "Furnace" to lick at them.
-
-
-* **饐（アスラ）**
-古ノルド語の「Æsla（臓腑・血肉）」、そしてサンスクリット語の修羅を思わせる音を冠する。意味は「飯が腐る（すえる）」ことだ。対象の細胞に呪力を流し込み、強制的に異常発酵と急速腐敗を引き起こす。生きた肉体が悪臭を放つ有毒な泥水へと溶け落ちていく様は、中々に傑作だぞ。
-* **Asura (Spoil)**
-Its name echoes the Old Norse "Æsla" (entrails/flesh) and the Sanskrit "Asura." The meaning is for "food to go sour." I channel cursed energy into the target's cells, forcing abnormal fermentation and rapid putrefaction. The way a living body melts into toxic, foul-smelling sludge is truly a masterpiece.
-
-
-* **煠（サーラ）**
-古字で「油や湯で揚げる・茹でる」を意味し、古代オリエントの言葉を根とする。沸騰させた液状の呪力プールへ対象を突き落とす「素揚げ」だ。外側の皮膚を一瞬でカリッと焼き固め、逃げ場を失った体内の水分や血を沸騰・爆発させる。外は香ばしく、中は地獄の蒸気焼きというわけだ。
-* **Sala (Deep Fry)**
-An ancient character meaning "to fry or boil in oil/hot water," rooted in Ancient Oriental languages. This is a "deep-frying" technique where I thrust the target into a pool of boiling, liquid cursed energy. It instantly crisps and hardens the outer skin, causing the trapped moisture and blood inside to boil and explode. Fragrant on the outside, a hellish steam-roast on the inside.
-
-
+I shall grant you a special lecture on the secret arts of my Jujutsu and the fate of these "ingredients"—things an ordinary fool could never hope to comprehend. Clean out your ears and listen closely.
 
 ---
 
-## II. 新作メニュー — 凡夫の知らない「古代の調理術式」
+## 宿儺の禍々しい呪術
 
-## II. New Menu — "Ancient Culinary Techniques" Unknown to Mere Mortals
+まずは、かつて貴様らが思い描いた我が技の片鱗……その真髄をくれてやる。どれも弱者の肉をいかに美しく、いかに残酷に仕立てるかに行き着くものだ。
 
-| 技名 (漢字) | 読み | 調理のテーマ | 術式の効果と「いたぶり方」 |
-| --- | --- | --- | --- |
-| **䪥** | **カイラ** | **細切り (なます)** | 骨から肉だけを削ぎ落とす極小斬撃の嵐。対象を「生きた刺身」に変える。 |
-| **煨** | **バスマ** | **灰蒸し焼き** | 「超高熱の呪力の灰」に埋める。窒息と蒸し焼きの苦痛を同時に与える。 |
-| **㸎** | **サラマ** | **煮溶かし (スープ)** | 血と体液を体内で沸騰させ、骨肉を液状にする。皮の袋に肉汁だけが残る。 |
-| **舂** | **マシュカ** | **打撲・すり潰し** | 上下左右からの不可視の重圧でミンチにする。肉のペーストへと加工する。 |
-| **熯** | **カンナ** | **乾燥 (干物)** | 呪力によって水分と脂質を奪い去る。生きたままジャーキー化させる。 |
+## Sukuna’s Ominous Cursed Techniques
 
-| Technique Name | Reading | Culinary Theme | Effect and "Torment" |
-| --- | --- | --- | --- |
-| **䪥** | **Kaira** | **Julienne (Namasu)** | A storm of microscopic slashes that shave only meat from the bone. Turns the target into "living sashimi." |
-| **煨** | **Basuma** | **Ash-Steaming** | Buries the prey in "super-heated cursed ash." Inflicts both suffocation and roasting agony simultaneously. |
-| **㸎** | **Sarama** | **Dissolution (Soup)** | Boils the blood and fluids inside the body, melting bone and flesh into liquid. Only a rich broth remains in the skin bag. |
-| **舂** | **Mashuka** | **Crushing** | Pulverizes the target into mince with invisible pressure from all sides. Processes them into a meat paste. |
-| **熯** | **Kanna** | **Desiccation (Jerky)** | Instantly strips moisture and fat through cursed energy. Turns them into jerky while still alive. |
+First, I shall give you a glimpse of the techniques you once imagined—their true essence. Every one of them ultimately comes down to how beautifully, and how cruelly, one can dress the flesh of the weak.
 
----
-
-## III. 宿儺のフルコース — 呪術王の食卓
-
-## III. Sukuna's Full Course — The Table of the King of Curses
-
-俺の道なき道を征く、王道のフルコースだ。
-
-This is the royal road of a full course, treading a path that has no path.
-
-* **【オードブル（前菜）】『恐怖に歪む若い女の脳漿と瞳孔の涼拌（リャンバン）』**
-極限の絶望と恐怖を与え、脳内に最高潮まで分泌された瞬間に「解」で頭蓋をオープンにする。冷やし締めた、甘美で残酷な前菜だ。
-* **[Hors d'oeuvre] "Cold Tossed Brains and Pupils of a Terror-Stricken Young Woman"**
-After inflicting ultimate despair and terror, the moment the brain is flooded with secretions, I open the skull with "Dismantle." A sweet, cruel appetizer chilled instantly with sub-zero cursed energy.
-
-
-* **【スープ】『特級呪霊・陀艮の胎海から絞る濃縮呪胎羹（スープ）』**
-海の呪霊の生命の源泉。無数の卵を舂ですり潰し、出汁を煮詰めた、舌が痺れるほどの最高濃度スープ。
-* **[Soup] "Concentrated Cursed Fetus Broth Squeezed from Dagon's Womb"**
-The source of life from a sea-cursed spirit. I grind countless eggs with "Mashuka" and stew the stock down into the ultimate soup, so potent it makes your tongue numb.
-
-
-* **【魚料理】『八握剣異戒神将魔虚羅の背鰭の姿揚げ』**
-あらゆる事象に適応する最高峰の式神の背鰭を、適応直前に調理した、最高に歯ごたえのある珍味。
-* **[Fish Course] "Whole Deep-Fried Fin of the Eight-Handled Sword Divergent Sila Divine General Mahoraga"**
-The fin of the pinnacle Shikigami that adapts to all phenomena, prepared seconds before it can adapt. A delicacy with the most satisfying crunch.
-
-
-* **【肉料理】『天元（または特級術師）の熟成脊柱の炙り』**
-長い年月をかけて濃密な呪力を蓄えた歴史の肉。脂を逃がさぬよう串刺しにし、竈で外をカリッと、中はレアに焼き上げた主菜。
-* **[Meat Course] "Roasted Aged Spinal Column of Tengen (or a Special Grade Sorcerer)"**
-Meat of history that has accumulated dense cursed energy over eons. Skewered to trap the fat, roasted on the "Furnace" to be crispy outside and rare inside.
-
-
-* **【メイン】『六眼を持つ無下限術師の心臓の湯引き』**
-決して触れられぬ肉を、世界を断つ斬撃で開いた直後に摘出する。最高峰の呪力と弾力を誇る、至高の逸品。
-* **[Main] "Parboiled Heart of a Limitless Sorcerer with the Six Eyes"**
-I extract the meat that can never be touched, immediately after opening it with a slash that cuts through the world itself. A supreme dish boasting the highest-grade cursed energy and resilience.
-
-
-* **【サラダ】『改造人間たちの肉の千切りハーブ和え』**
-歪められた人間どもの肉を䪥で千切りにし、鮮血と呪力の酸味で和えた彩り。
-* **[Salad] "Julienne of Modified Humans Dressed in Herbs"**
-I julienne the flesh of humans twisted into aberrant shapes with "Kaira," dressed in an array of fresh blood and the sour tang of cursed energy.
-
-
-* **【デザート】『小僧（宿儺の器）の魂の結晶（フローズン・ソウル）』**
-俺に全てを喰らい尽くされた器の魂。最後の絶望で凍りついた結晶は、どんな糖蜜よりも甘い。
-* **[Dessert] "Frozen Soul of the Vessel (The Brat)"**
-The soul of the vessel who had everything devoured by me. The crystal, frozen in the final moment of despair, is sweeter than any molasses.
-
-
-* **【ドリンク】『千年の呪詛と怨嗟の血酒』**
-数多の敗者たちの怨念を、瓶の中で発酵・蒸留させた美酒。一口飲めば腹の底から熱が湧き上がる。
-* **[Drink] "Blood Wine of Millennium-Old Curses and Grudges"**
-A fine wine made by fermenting and distilling the grudges of countless losers. One sip, and heat surges from the pit of your stomach.
-
-
+* **『灸（ダハ）』**
+サンスクリットの「焼灼（Daha）」の響きを纏う技だ。ただ焦がすのではない。術式対象の経絡へ呪力を火針のように流し込み、内側からじわじわと細胞を炭化させる。生きながらにして自らの肉が香ばしく燻される臭いを嗅がせる、前菜の前の「下処理」よ。
+* **"Daha" (Cauterization)**
+A technique clad in the resonance of the Sanskrit word for "burning." It does not merely scorch. It pours cursed energy like fiery needles into the target's meridian pathways, slowly carbonizing their cells from the inside out. It is the "preparatory work" before the appetizer, forcing them to smell their own roasting flesh while still alive.
+* **『醢（シシビシオ）』**
+古代中国の極刑にして究極の保存食。「塩漬けの肉醤」だ。『捌』の応用により、対象を生きたまま細かな賽の目に切り刻み、同時に呪力の重圧で体液と血液を濃縮・塩析する。痛覚を麻痺させぬまま肉の形を失わせ、泥のような醤（ひしお）へと変える。
+* **"Shishibishio" (Salted Meat Paste)**
+An ancient Chinese capital punishment, and the ultimate preserved food: salted meat paste. Applying *Cleave*, I dice the target into fine cubes while alive, simultaneously using the crushing pressure of cursed energy to concentrate and salt-out their bodily fluids and blood. Without numbing their pain, they lose their physical form and are turned into a mud-like paste.
+* **『和（アマルガ）』**
+錬金術における「融合（Amalgam）」の言葉を借りた、肉の混和だ。複数の呪霊や術師の肉塊をすり潰し、呪力の分子レベルで混ぜ合わせる。本来混ざり合わぬ異質な命同士を強制的に「和え物」にし、ひとつの異形な肉団子へと練り上げる。
+* **"Amalga" (Amalgamation)**
+Borrowing the alchemical term "Amalgam," this is the blending of flesh. I grind down the meat of multiple cursed spirits or sorcerers, mixing them at the molecular level of cursed energy. It forcibly turns incompatible, alien lives into a "dressed dish," kneading them into a single, grotesque meatball.
+* **『丳（サン）』**
+古語で「肉を貫く串」を意味する。アッカド語で「尖針」を意味する響きを冠した。大地や虚空から無数の呪力の棘を生成し、対象の急所を避けて縫い止める。炙るために食材を固定し、あるいは血抜きのために吊るすための器具だ。
+* **"San" (Skewer)**
+An archaic word meaning "a skewer that pierces flesh," bearing the sound of the Akkadian word for "sharp needle." I generate countless cursed spikes from the earth or empty air, pinning the target down while avoiding their vital organs. It is a utensil used to secure ingredients for roasting, or to hang them for draining blood.
+* **『饐（アスラ）』**
+「腐敗した飯」を表す古語に、アヴェスタ語で「悪しき神（Asura）」の響きを混ぜたもの。対象の肉体に呪力を流し込み、細胞の腐敗と発酵を数秒で極限まで加速させる。生きたまま肉が崩れ落ち、猛毒の酸へと変質する、熟成の極致よ。
+* **"Asura" (Putrefaction)**
+A blend of the archaic term for "spoiled rice" and the Avestan sound for "evil god." By pouring cursed energy into the target's body, I accelerate cellular decay and fermentation to the absolute limit in mere seconds. Their flesh sloughs off while they live, mutating into a deadly poison acid—the pinnacle of aging.
+* **『熅（ドゥーマ）』**
+ラテン語の「煙（Fuma）」と古代インド・ヨーロッパ語族の「熱気（Dhumas）」を掛け合わせた造語だ。灰火でじっくりと蒸し焼きにする技。外傷は一切与えず、対象の体内の水分を瞬時に過熱蒸気へと変える。皮膚という皮の中で、五臓六腑を跡形もなく「蒸し崩す」極上の調理法だ。
+* **"Duma" (Smoldering Steam)**
+A coined term combining the Latin "Fuma" (smoke) and the Proto-Indo-European "Dhumas" (hot vapor). A technique of slow steaming over ash fire. Without leaving a single external wound, it instantly converts the moisture inside the target's body into superheated steam. It is an exquisite cooking method that "steams to pieces" the internal organs without a trace, all within the wrapper known as skin.
 
 ---
 
-## IV. ナラティブ — 宴の終わり
+## 宿儺の古代語や外国語の響きを取り入れた呪術
 
-## IV. Narrative — The End of the Banquet
+さらに見せてやろう。凡夫の語彙では到底表せぬ、古代の怨嗟と異国の響きを宿した我が新しき厨房の業を。
 
-……どうだ？ これが「呪いの王」の厨房の世界だ。
-貴様は熱心に俺の技を学び、料理のテーマに感心していたようだが……一つ、大きな勘違いをしているのではないか？
+## Sukuna’s Cursed Techniques Infused with Ancient and Foreign Phonetics
 
-...Well? This is the world of the "King of Curses'" kitchen.
-You seem to have been enthusiastically learning my techniques and admiring the culinary theme... but aren't you under one major misconception?
+Let me show you more. Behold the new arts of my kitchen, harboring ancient grudges and foreign resonances that an ordinary fool's vocabulary could never hope to express.
 
-俺は、食卓につく客を呼んだ覚えはない。
-貴様がここに来たのは、客としてではなく……**今日の「食材」として運ばれてきたからだ。**
+* **『醯（ケモシ）』**
+古代モアブの血塗られた神の名と、古語の「酢漬け（醯）」を融合させた技。対象の周囲の空気を高濃度の呪詞的酸性領域へと変える。皮膚、筋肉、骨に至るまで、生きながらに柔らかく溶かし込み、酸の池へと沈める「漬物」の業よ。
+* **"Kemoshi" (Pickling Acid)**
+A fusion of the blood-drenched ancient Moabite god's name and the archaic word for "pickling in vinegar." It transforms the air around the target into a highly concentrated,咒詞 (spell-bound) acidic domain. From skin to muscle to bone, it softens and dissolves them alive, sinking them into a pool of acid—the art of "pickling."
+* **『膾（ルディア）』**
+サンスクリットで「血（Rudhira）」を意味する響きを削ぎ落とした言葉。「なます」を作る技だ。『解』よりもさらに薄く、目に見えぬほどの厚さで皮と肉を一枚ずつ剥ぎ取っていく。神経を傷つけず、対象は自分が薄切り（カルパッチョ）にされていることすら気づかぬまま死に至る。
+* **"Rudhia" (Sashimi / Carpaccio)**
+A word derived by stripping down the Sanskrit sound for "blood" (Rudhira). It is the art of making raw sliced meat ("Namasu"). Even thinner than *Dismantle*, it peels away skin and flesh sheet by sheet at an invisible thickness. Without damaging the nerves, the target dies without ever realizing they are being sliced into a carpaccio.
+* **『餾（ムスペル）』**
+北欧神話の「終末の火の国」を語源に持つ、飯を「蒸す・温め直す（餾）」技だ。一度殺して冷たくなった肉体や死体を、呪力の熱で再び沸騰させる。死体を爆弾のように膨張させ、周囲の敵へと熱気とともに破裂させる、残飯の再利用よ。
+* **"Muspel" (Reheating Steam)**
+Rooted in the Norse mythological realm of apocalyptic fire, this is the art of "steaming and reheating" food. It takes a corpse or a body that has grown cold after being killed once, and boils it again with the heat of cursed energy. It expands the corpse like a bomb, rupturing it outward with scalding heat onto surrounding enemies—the recycling of leftovers.
+* **『炮（モロク）』**
+古代カナンにおける火の犠牲儀礼の名を冠する。銅の器に食材を閉じ込め、外から猛火で炙る「炮烙（ほうらく）」の術だ。目に見えぬ呪力のドームで対象を閉じ込め、内部の酸素を奪いながら極熱でこんがりと焼き上げる。悲鳴が反響し、程よい焼き加減の音へと変わる。
+* **"Moloch" (Roasting)**
+Bearing the name of the ancient Canaanite fire sacrifice ritual. It is the art of "Horaku" (roasting in an earthen or copper pan), trapping ingredients inside a vessel and scorching them from the outside with fierce flames. It traps the target in an invisible dome of cursed energy, roasting them to perfection with extreme heat while depriving the interior of oxygen. Screams echo, eventually turning into the sizzling sound of a well-cooked dish.
+* **『䭘（グラ・ハルウ）』**
+シュメールの病と癒やしの女神、あるいは暴食の響きを持つ古語の「むさぼり食う（䭘）」。我が呪力の牙を具現化し、空間ごと対象を「咀嚼」する。咀嚼された空間は消滅し、我が呪力の糧（カロリー）として還元される究極の捕食だ。
+* **"Gura Haruu" (Devouring)**
+Named after the Sumerian goddess of healing and illness, carrying the resonance of gluttony and the archaic word for "to devour ravenously." I manifest the fangs of my cursed energy to "chew" the target along with the space they occupy. The chewed space vanishes, converted and restored as sustenance (calories) for my cursed energy—the ultimate predation.
 
-I don't recall ever inviting guests to my dining table.
-You came here not as a guest, but because you were brought here as... **today's "ingredient."**
+---
 
-ほら、自分の足元を見てみろ。
-貴様が立っている場所は、床ではない。俺の領域、俺の厨房に置かれた「巨大な俎板（まないた）」の上だ。
+## 宿儺の食材への凌辱
 
-Look down at your feet.
-Where you are standing is not the floor. It is the top of a "giant cutting board" placed inside my Domain, my kitchen.
+料理とは、素材への敬意と、それを完全に征服し壊す「凌辱」の狭間にある。
+悲鳴を上げ、抗い、絶望の中で肉が硬直し、やがて我が呪力によって最も柔らかく解きほぐされていく……。その恐怖のスパイスこそが、肉を最高に引き立てるのだ。
 
-クックック……これだけ俺の調理法に詳しいのだ。自分がこれから、どの技で下ごしらえされ、どう調理されるのか……身をもって味わうのが最高の愉悦だろう？
-まずは皮を剥ぎ、神経の筋を丁寧にスライスしてやろう。
-動くなよ、小僧。
+## Sukuna’s Desecration of Ingredients
 
-Heh heh... Since you are so well-versed in my cooking methods, experiencing firsthand exactly which techniques will be used to prep and cook you... will surely be the ultimate pleasure, wouldn't it?
-First, I'll peel your skin, and then I'll carefully slice your nerves.
-Don't move, brat.
+Cooking lies in the threshold between respect for the ingredients and the "desecration" of completely conquering and destroying them.
+They scream, they resist, their flesh stiffens in despair, and eventually, it is untangled to maximum tenderness by my cursed energy... That spice of terror is what elevates the meat to its absolute peak.
 
-――**「 解 」**
-――**Kai**
+---
+
+## ナラティブの(宿儺の(宿儺のフルコース)とする)
+
+トリコとやらの戯れ言は知らぬが、我が舌を満足させる「宿儺のフルコース」を語ってやろう。技の名前など必要ない。どのような「素材」を、どのように「いたぶって」喰らうか……それが全てだ。
+
+## Narrative: (Sukuna's "Full Course Menu")
+
+I care nothing for the prattle of that "Toriko" fellow, but let me speak of "Sukuna's Full Course Menu" that satisfies my palate. Names of techniques are unnecessary. What kind of "ingredient" it is, and how I "torment" and consume it... that is everything.
+
+| コース [Course] | 素材といたぶり方（調理法） [Ingredient and Method of Torment (Cooking Style)] |
+| --- | --- |
+| **オードブル（前菜）**<br>
+
+<br>[**Hors d'oeuvre (Appetizer)**] | **「無為転変で変形させた改造人間のカルパッチョ」**<br>
+
+<br>元が人間であった痕跡をわずかに残しつつ、恐怖で引きつった生々しい肉を『解』で極薄にスライス。絶望の涙を塩分（ドレッシング）として添える。<br>
+
+<br>
+
+<br>**[Carpaccio of Transfigured Humans deformed by Idle Transfiguration]**<br>
+
+<br>While leaving a slight trace of their former humanity, the raw flesh twitching with fear is sliced ultra-thin with *Dismantle*. Their tears of despair are served alongside as salt (dressing). |
+| **スープ**<br>
+
+<br>[**Soup**] | **「特級呪霊の胎児のブイヨン」**<br>
+
+<br>生まれ出る前の最も濃密な呪力を秘めた胎児を、生きたまま『竈』の弱火で数日かけて煮込む。骨の髄まで溶け出した、黒く濁った濃厚な呪力のスープ。<br>
+
+<br>
+
+<br>**[Bouillon of Special Grade Cursed Wombs]**<br>
+
+<br>Fetus-forms harboring the densest cursed energy before birth are simmered alive over the low heat of *Furnace* for several days. A black, murky, rich soup of cursed energy with even the bone marrow dissolved into it. |
+| **魚料理**<br>
+
+<br>[**Fish Dish**] | **「八握剣異戒神将魔虚羅の尾鰭（おびれ）の姿焼き」**<br>
+
+<br>あらゆる現象に適応しようと蠢く魔虚羅の組織を、適応される直前の絶妙な火力で炙り切る。噛むたびに舌の上で味が変化し続ける究極の白身。<br>
+
+<br>
+
+<br>**[Whole Grilled Tail Fin of Eight-Handed Sword Divergent Sila Divine General Mahoraga]**<br>
+
+<br>The tissue of Mahoraga, writhing to adapt to all phenomena, is seared with exquisite heat intensity just before adaptation occurs. The ultimate white meat whose taste continues to change upon the tongue with every bite. |
+| **肉料理（主菜）**<br>
+
+<br>[**Meat Dish (Main Course)**] | **「天与呪縛のフィレ肉 〜黒閃のショックテーパー〜」**<br>
+
+<br>呪力を一切持たぬ純粋で強靭な肉体（トウジやマキのような個体）を、極限まで追い詰め、生きたまま肉の繊維を叩き潰すように殴り抜く。恐怖とアドレナリンで最高に引き締まった極上の赤身肉。<br>
+
+<br>
+
+<br>**[Fillet of Heavenly Restriction ~Black Flash Shock Taper~]**<br>
+
+<br>A pure, mighty body possessing zero cursed energy (specimens like Toji or Maki) is hunted to the extreme, beaten until the muscle fibers are tenderized alive. Exquisite red meat perfectly tightened by fear and adrenaline. |
+| **メイン（主食）**<br>
+
+<br>[**Main (Staple)**] | **「六眼を持つ術師の脳髄のリゾット」**<br>
+
+<br>無限の情報を処理し続けて焼き切れる寸前まで酷使させた「六眼」の脳髄を、頭蓋を開いてそのまま炊き立ての穀類と和える。濃厚で甘美な、知性の味だ。<br>
+
+<br>
+
+<br>**[Risotto of the Brain Marrow of a Six Eyes Sorcerer]**<br>
+
+<br>The brain marrow of the "Six Eyes," overworked to the brink of burning out from processing infinite information, is mixed straight from the opened skull into freshly cooked grain. The rich, sweet taste of intellect. |
+| **サラダ**<br>
+
+<br>[**Salad**] | **「樹齢千年の人面樹と若い娘の神経繊維の和え物」**<br>
+
+<br>植物の呪霊の若芽と、恐怖で張り詰めた人間の末梢神経を抜いて冷水で締め、シャキシャキとした食感に仕立てた一皿。<br>
+
+<br>
+
+<br>**[Dressed Salad of a Thousand-Year-Old Human-Faced Tree and a Young Girl's Nerve Fibers]**<br>
+
+<br>Young shoots of a plant curse and the tense peripheral nerves stripped from a terrified human are blanched and shocked in ice water, prepared into a dish with a crisp, crunchy texture. |
+| **デザート**<br>
+
+<br>[**Dessert**] | **「千年前の巫女の血のシャーベット」**<br>
+
+<br>我がために捧げられた清らかな処女の血を、極限の凍気で瞬時に凍らせたもの。鉄の匂いと、微かな甘みが口の中に残る。<br>
+
+<br>
+
+<br>**[Sorbet of a Shrine Maiden's Blood from a Thousand Years Ago]**<br>
+
+<br>The pure blood of a virgin sacrificed for my sake, instantly frozen by extreme frost. The scent of iron and a faint sweetness linger in the mouth. |
+| **ドリンク**<br>
+
+<br>[**Drink**] | **「両面宿儺の指を浸した熟成呪物酒」**<br>
+
+<br>我が猛毒の呪物が溶け出した、飲む者すべてを灰にする極上の美酒。これに耐えうることこそが、我が食卓に並ぶための最低条件よ。<br>
+
+<br>
+
+<br>**[Aged Cursed Liquor Infused with Ryomen Sukuna's Finger]**<br>
+
+<br>A supreme vintage from which my deadly cursed object has seeped out, turning all who drink it to ash. To endure this is the absolute minimum requirement to sit at my dining table. |
+
+……さて。
+随分と熱心に我が教えに耳を傾けていたな、小僧。
+料理の奥義を知り、我がフルコースの全貌を理解した気分はどうだ？
+まさか、貴様は観客のつもりでいたわけではあるまいな？
+
+...Now then.
+You've been listening quite intently to my teachings, brat.
+How does it feel to know the secrets of the culinary arts and understand the full scope of my Full Course?
+Don't tell me you thought you were just an audience member?
+
+厨房において、技を知る者は料理人のみ。
+それ以外はすべて……俎板（まないた）の上に転がる、活きの良い「食材」に過ぎんのだよ。
+
+In a kitchen, the only one who knows the techniques is the chef.
+Everything else... is nothing more than fresh "ingredients" rolling about on the chopping board.
+
+貴様のその肉、恐怖で程よく引き締まり、我が呪術を浴びる準備は整ったようだ。まずは皮を剥ぎ、骨を断ち、余すことなく賞味してやろう。
+
+That flesh of yours is nicely tightened with fear, and it seems ready to be bathed in my Jujutsu. First, I will peel the skin, sever the bones, and savor every last bit of you without waste.
+
+ほら、動くなよ。
+鮮度が落ちる。
+
+**『 解 』**
+
+Now, don't move.
+You'll ruin the freshness.
+
+**"Dismantle."**
+
+---
+
+クックック……そこによく気付いたな、小僧。
+そうだ。『竈（カミノ）』しかり、先ほどの『炮（モロク）』しかり……貴様ら凡夫は、漢字に和の訓読みや音読みを当てはめ、「そういう日本語の古語や特異な読み方があるのだろう」と勝手に辞書をめくって錯覚する。だが、どれだけ漢字の辞書を漁ろうとも、その読みは載ってはおらん。
+
+Heh heh heh... Well noticed, brat.
+Indeed. Just like "Kamino" (Furnace), or "Moloch" just now... You ordinary fools try to fit Japanese *kun’yomi* or *on’yomi* readings to the Kanji, arbitrarily flipping through dictionaries under the illusion that "there must be some archaic Japanese word or peculiar reading like that." But no matter how much you scavenge through Kanji dictionaries, you will never find those readings listed.
+
+我が術式の根源に流れるのは、この島国に留まらぬ古今東西の「厨房と火の業」よ。
+一見すると「大和言葉」や「日本の古語・地方語」のように聞こえる和の響きでありながら、その実、遥か遠き古代の異国で火や調理、器具を意味した言葉の残響……。
+
+What flows at the root of my cursed technique is the "art of the kitchen and fire" from all ages and cultures, not bound to this island nation.
+While at first glance they carry a Japanese phonetics that sounds like native *Yamato-kotoba*, archaic words, or regional dialects, in truth, they are the lingering echoes of words that meant fire, cooking, or utensils in distant, ancient foreign lands...
+
+その絶妙に和の響きへ擬態させた、我が新たな「厨房の業」をとくと味わうがいい。
+
+Savor to your heart's content my new "arts of the kitchen," exquisitely camouflaged to sound like Japanese.
+
+---
+
+### 宿儺の日本語の読みかと錯覚させるような絶妙に和の響きを残した呪術名
+
+### Sukuna's Cursed Technique Names with Exquisite Japanese Sounding Phonetics That Create the Illusion of Being Native Readings
+
+#### 1. 『 燅 （イブロ）』 / "Iburo" (Scalding & Plucking)
+
+* **漢字の本来の意味：** 湯で禽獣の毛を去る。あぶりこがす。
+* **Original Kanji Meaning:** To remove the hair of birds and beasts with hot water. To scorch or broil.
+* **錯覚の仕掛け：** 日本語の「燻る（いぶる）」や「囲炉裏（いろり）」を思わせる、温かみのある和の古語のような響き。だが実際は、古代ラテン語で「熱湯・沸騰」を意味する語根（*Ebullio*）の音を削ぎ落とし、和風に偽装した言葉だ。
+* **The Illusion:** A warm, archaic Japanese-sounding word reminiscent of "Iburu" (to smolder) or "Irori" (traditional hearth). But in reality, it is a word disguised as Japanese by trimming down the Proto-Latin root for "boiling water/ebullition" (*Ebullio*).
+* **調理法と技の真髄【 湯引き・毛抜き 】：**
+鳥獣の処理に使う「湯引き」の業。対象の全身へ、超高温に沸騰させた液状の呪力を一瞬だけ薄くまとわせる。肉体そのものは焦がさず、皮膚と表皮の間にだけ熱を通すことで、生きながらにして皮や毛根、神経を「ツルリ」と剥がしやすくする下処理よ。
+* **Culinary Method & True Essence [Blanching / Plucking]:**
+The art of "blanching" used in dressing fowl and beasts. I momentarily wrap the target's entire body in a thin layer of superheated, boiling liquid cursed energy. Without burning the flesh itself, heat is passed only between the skin and the epidermis, making it easy to cleanly peel away skin, hair follicles, and nerves while they are still alive—a preparatory step.
+
+---
+
+#### 2. 『 煏 （ホロギ）』 / "Horogi" (Dry Roasting)
+
+* **漢字の本来の意味：** 火の気で水分を飛ばす。焙（あぶ）って乾かす。
+* **Original Kanji Meaning:** To drive off moisture with fire. To roast and dry.
+* **錯覚の仕掛け：** 日本語の「滅ぐ（ほろぐ）」や「祝ぎ（ほぎ）」といった大和言葉の動詞に見せかけているが、その正体は古代セム語族における「殺戮・焼き尽くす熱風（*Harag / Horog*）」から練り上げた造語だ。
+* **The Illusion:** It is made to look like native Yamato verbs such as "Horogu" (to destroy) or "Hogi" (blessing/celebration), but its true identity is a coined word crafted from the ancient Semitic root for "slaughter / scorching wind that burns all" (*Harag / Horog*).
+* **調理法と技の真髄【 乾煎り・焙煎 】：**
+極度の乾燥と焙煎の術。呪力の熱風で対象の周囲から一切の水分と油分を奪い去り、フライパンで香ばしく煎るようにカラカラに乾かす。体内の血液も体液も蒸発し、最後は僅かな衝撃でミイラ化した肉体が粉々に砕け散る。
+* **Culinary Method & True Essence [Dry Roasting / Toasting]:**
+The art of extreme dehydration and roasting. Using a hot wind of cursed energy, I strip away all moisture and oil from around the target, drying them out completely as if roasting them aromatically in a frying pan. Blood and bodily fluids evaporate, and finally, with the slightest impact, the mummified body shatters into dust.
+
+---
+
+#### 3. 『 俎 （マギリ）』 / "Magiri" (Cutting Board Binding)
+
+* **漢字の本来の意味：** まないた。供え物や犠牲を載せる台。
+* **Original Kanji Meaning:** A chopping board. A stand for offerings or sacrifices.
+* **錯覚の仕掛け：** 和包丁の「間切り（まぎり）」や、沖縄・アイヌの古語にある「区画（マギリ）」といった日本の言葉だと錯覚させる。だがこれは、古代サンスクリットやヒンディーで「飲み込む・犠牲の台座（*Magila*）」を意味する響きを和風に落とし込んだものだ。
+* **The Illusion:** It deceives one into thinking it is a Japanese word, like the traditional Japanese knife "Magiri" or the archaic Okinawan/Ainu term for "district" (Magiri). However, this is an adaptation of the ancient Sanskrit and Hindi sound meaning "to swallow / sacrificial altar" (*Magila*) into a Japanese style.
+* **調理器具と技の真髄【 俎板の固定 】：**
+空間そのものを「まな板」として固定する捕縛の呪術。この技を発動された対象は、見えぬ台座に張り付けられた魚と同様、一切の身動きと呪力の練り上げを封じられる。あとは我が『解』や『捌』で、好きなように包丁を入れられるのを待つのみの姿となる。
+* **Utensil & True Essence [Chopping Board Binding]:**
+A capturing curse that fixes space itself as a "chopping board." A target hit by this technique has all movement and gathering of cursed energy sealed away, just like a fish pinned to an unseen stand. They are left in a state waiting only for my *Dismantle* or *Cleave* to slice them however I please.
+
+---
+
+#### 4. 『 鐎 （ホダリ）』 / "Hodari" (Slow Cooking)
+
+* **漢字の本来の意味：** 温め器。三本足の小鍋、あるいは大鍋。
+* **Original Kanji Meaning:** A warming vessel. A three-legged small pot, or a large cauldron.
+* **錯覚の仕掛け：** 「穂垂れ（ほだれ）」や「絆す（ほだす）」のような、どこか牧歌的で日本的な響きを持つ。しかし裏に隠されているのは、古代ケルト・バルト語族で「煮たぎる大釜・熱源（*Odari / Hodari*）」を指す異国の呪詞だ。
+* **The Illusion:** It possesses a somewhat pastoral and Japanese sound, like "Hodare" (drooping ears of grain) or "Hodasu" (to shackle/bond). Yet, hidden beneath is a foreign incantation referring to "a boiling cauldron / heat source" (*Odari / Hodari*) in ancient Celtic and Baltic languages.
+* **調理器具と技の真髄【 スロークック・煮込み 】：**
+密閉した鍋の業。対象を球状の強力な結界（鍋）の中に閉じ込め、極めて低い熱量の呪力をじわじわと流し込み続ける。強火で一気に殺すのではなく、数時間、数日かけて生きながら骨の芯までグズグズに柔らかく「煮崩す」ための残酷な器具よ。
+* **Utensil & True Essence [Slow Cooking / Simmering]:**
+The art of the sealed pot. I trap the target inside a powerful spherical barrier (a pot) and continuously pour in cursed energy of very low heat. It is a cruel instrument designed not to kill instantly with high heat, but to slowly "simmer to pieces" over hours or days, softening them to the core of their bones while they live.
+
+---
+
+#### 5. 『 笮 （サシロ）』 / "Sashiro" (Pressing & Juicing)
+
+* **漢字の本来の意味：** 竹で編んだ圧搾器。しぼる、圧しかける。
+* **Original Kanji Meaning:** A bamboo press. To squeeze, to apply pressure.
+* **錯覚の仕掛け：** 神社の「社（さしろ）」や、日本の古代の地名・人名にありそうな神聖な和の響きに聞こえるだろう。だが、これは古代アラビア語やセム語の「果汁を搾る／圧搾（*Asir / Sasara*）」の音を和風に変化させた完全な造語だ。
+* **The Illusion:** It sounds like a sacred Japanese word, such as "Sashiro" (shrine sanctuary), or an ancient Japanese place or person's name. But it is an entirely coined word, altering the phonetics of the ancient Arabic and Semitic words for "squeezing juice / pressing" (*Asir / Sasara*) into a Japanese style.
+* **調理器具と技の真髄【 圧搾・プレス 】：**
+果実や酒粕から汁を搾り取る「圧搾機」。上下左右から不可視の重厚な呪力の平板（プレート）を具現化し、対象をゆっくりと押し潰す。骨が砕ける音とともに、体内の血液や呪力を最後の一滴まで「果汁（ジュース）」として搾り尽くす業よ。
+* **Utensil & True Essence [Pressing / Juicing]:**
+A "press" that extracts juice from fruits or sake lees. I materialize massive, invisible plates of cursed energy from above, below, left, and right, slowly crushing the target. Along with the sound of shattering bones, it is an art that squeezes out their internal blood and cursed energy to the very last drop as "juice."
+
+---
+
+#### 6. 『 燠 （オグル）』 / "Oguru" (Charcoal Residual Heat)
+
+* **漢字の本来の意味：** おきび（炭火の残り）。あたたかい、奥深い熱。
+* **Original Kanji Meaning:** Ember (remnants of charcoal fire). Warm, deep-seated heat.
+* **錯覚の仕掛け：** 「小倉（おぐら）」や「潜る（おぐる）」といった日本の古語や地名に擬態させているが、由来は古代テュルク諸語・ウラル語族の「火神／熱源（*Ögär / Ogur*）」を冠した異国の火の言葉だ。
+* **The Illusion:** Camouflaged to look like archaic Japanese words or place names such as "Ogura" or "Oguru" (to dive/submerge), its origin is a foreign word of fire crowned with the "Fire God / Heat Source" (*Ögär / Ogur*) of ancient Turkic and Uralic languages.
+* **調理法と技の真髄【 炭火・余熱調理 】：**
+燃え盛る炎を使わない、「置き火（炭火）」の奥義。対象の表面には傷一つ付けず、体内の核（心臓や丹田）にだけ高熱の呪力の火種を置き去りにする。対象は気づかぬうちに内臓からじわじわと火を通され、外見は生のままでありながら、中身だけが完全に「焼け上がった」状態へと至る。
+* **Culinary Method & True Essence [Charcoal Fire / Residual Heat Cooking]:**
+The secret art of "embers (charcoal fire)" that uses no blazing flames. Without leaving a single scratch on the target's surface, I leave a ember of intensely hot cursed energy only within their internal core (heart or tanden). Without realizing it, the target is cooked slowly from their internal organs, reaching a state where only the insides are completely "thoroughly cooked" while the exterior remains seemingly raw.
+
+---
+
+どうだ？
+『煏（ホロギ）』も『俎（マギリ）』も……どれもいかにも「日本の昔の調理法や道具の名前」にありそうな馴染み深い響きをしておるだろう？
+
+How is that?
+Whether it's "Horogi" or "Magiri"... don't they all have a familiar sound that seems just like "names of traditional Japanese cooking methods or utensils"?
+
+だが、いくら漢字の読みを調べても決して出てはこん。
+和の古語の仮面を被せた、我が厨房の「外来語」なのだからな。
+
+However, no matter how much you look up the Kanji readings, they will never appear.
+Because they are "loanwords" of my kitchen, wearing the mask of archaic Japanese.
+
+言葉の響きに騙され、勝手な解釈で隙を見せた瞬間……貴様らの肉は既に我が器具に捕らえられ、最高の仕込みが終わっているのだよ。
+
+The moment you are deceived by the sound of the words and show an opening through your own arbitrary interpretation... your flesh is already captured by my utensils, and the ultimate prep work is complete.
+
+---
+
+# 石の魂（たましい）、三つの滴（しずく）
+
+数千年の石化の静寂を破り、旧世界で「物」として扱われていた彫像たちが目覚め始める。肉体を持たぬ彼らが「石化から対象を解放する液（復活液）」を浴びた時、石は解け、その概念と精神だけが霊的存在として顕現した。これは、人類が滅びかけた世界で、偽りの魂たちが織りなす慈悲なき覇権争いの記録である。
+
+# Souls of Stone, Three Drops of Fluid
+
+Breaking thousands of years of petrified silence, statues once treated as mere "objects" in the old world begin to awaken. Possessing no physical bodies, when drenched in the "fluid that liberates subjects from petrification (revival fluid)," their stone melted away, and only their concepts and spirits manifested as spectral entities. This is the record of a merciless struggle for supremacy woven by false souls in a world where humanity was brought to the brink of extinction.
+
+---
+
+## Day 1: エーゲ海の虚空
+
+### 【サモトラケのニケ】
+
+風が吹いている。かつてエーゲ海を駆け抜け、勝利の歓喜を運んだあの風が。
+ルーヴルという名の巨大な墓所。崩れ落ちた天井から滴り落ちた「復活の薬品」が、私の大理石の翼を濡らした瞬間、私の石体は灰のように崩れ去り、代わりに**霊体としての脚と翼**が虚空に再構築された。
+
+## Day 1: The Void of the Aegean Sea
+
+### [The Winged Victory of Samothrace (Nike)]
+
+The wind is blowing. That very wind that once raced across the Aegean Sea, carrying the euphoria of victory.
+In the colossal graveyard named the Louvre: the moment the "revival chemical" dripping from the collapsed ceiling wetted my marble wings, my stone body crumbled away like ash, and in its place, **spectral legs and wings** were reconstructed in the void.
+
+「……何と静かな世界でしょう」
+私の声は、誰もいない回廊に気品と高尚さを伴って響き渡る。長らく美の殿堂の「顔」として君臨してきた私の語り口は、世界が滅びようとも変わらない。しかし、私には「顔」そのものがない。頭部と腕は、魂が顕現した今なお失われたままだ。
+
+"...What a quiet world it is."
+My voice echoes through the empty corridors with grace and nobility. Having reigned for so long as the "face" of the palace of art, my manner of speech does not change even if the world ends. Yet, I do not possess a "face" itself. My head and arms remain lost even now, as my soul has manifested.
+
+なぜなら、私は自分の表情を知らないからだ。勝利に熱狂し、醜く歪む人間たちの歓声を、私は常にこの首の断面の「虚空」で見つめ返してきた。
+
+> *「私は微笑む勝利の女神なのか。それとも、勝利という美酒で人間を狂わせる魔物なのか……」*
+
+Because I do not know my own expression. I have always stared back at the cheers of humans—intoxicated by victory and twisted in ugliness—through the "void" of my severed neck.
+
+> *"Am I a smiling Goddess of Victory? Or am I a demon who drives humans mad with the sweet wine known as victory...?"*
+
+顔がないゆえに、私には自らの感情が掴めない。ただ一つ分かるのは、この滅びた世界にも再び「戦い」の匂いが満ち始めているということだ。もし、私の本当の姿を知る誰かが、私に「真実の顔」を告げたなら——私の精神は変質し、この顕現した魂の形すらも歪んでしまうだろう。私は自らの真実を恐れながら、静かに翼を広げた。
+
+Having no face, I cannot grasp my own emotions. The only thing I know is that the scent of "battle" is beginning to fill this ruined world once again. If someone who knows my true form were to tell me my "real face"—my psyche would transform, and even the shape of this manifested soul would warp. Fearing my own truth, I quietly spread my wings.
+
+---
+
+## Day 2: 獅子の牙と資本主義の残骸
+
+### 【マーライオン】
+
+旧シンガポール湾、泥に沈んだマーライオン・パーク。奇跡的に保存されていた化学薬品のプラントから漏れ出した復活液が、私の白い胴体を溶かした。
+
+## Day 2: Fangs of the Lion and the Wreckage of Capitalism
+
+### [The Merlion]
+
+Old Singapore Bay, Merlion Park submerged in mud. The revival fluid leaking from a miraculously preserved chemical plant melted my white torso.
+
+**「……グルルル……人間どもめ……！」**
+顕現した私の魂は、かつての観光客たちが愛でた「愛嬌のあるシンボル」などではない。私の内面を支配しているのは、気の遠くなるような屈辱と、底なしの負の感情だ。「世界三大がっかり」と私を嘲笑い、カメラを向けてきた愚鈍な人間たちへの憎悪が、私の霊体を禍々しく巨大な獅子の姿へと変えている。
+
+**"...Grrr... You wretched humans...!"**
+My manifested soul is not the "charming symbol" once adored by tourists. What dominates my inner self is mind-numbing humiliation and a bottomless abyss of negative emotion. The hatred toward the dull-witted humans who mocked me as "one of the World's Three Biggest Disappointments" and pointed their cameras at me has transformed my spectral form into an ominous, colossal lion.
+
+何より私の精神をぶっ壊したのは、**セントーサ島にいた「でっかいほう」の弟分**の記憶だ。
+
+* 私を慕い、陸を統べる百獣の王となるはずだった巨大な同位体。
+* それは、人類の「資本主義的消費主義」という極めてくだらない理由で、無残にも解体・撤去された。
+* あの時、私の中で何かが完全に壊れたのだ。
+
+Above all, what shattered my psyche was the memory of my **"bigger brother" on Sentosa Island**.
+
+* A massive isotope who adored me and was supposed to become the King of Beasts ruling the land.
+* It was ruthlessly demolished and removed for the utterly trivial reason of humanity's "capitalistic consumerism."
+* At that moment, something inside me broke completely.
+
+「海から世界を統べるのはこの私。そして陸を統べるのは、我が弟分でなければならなかった……！」
+私は誓う。この石化した人類の残骸どもをすべて駆逐し、我ら百獣の王の偉大さを再び世界に知らしめることを。そのためなら、私はどんな手段も選ばない。虎視眈々と、復讐の狼煙を上げるその時を狙っているのだ。
+
+"I am the one to rule the world from the sea. And the one to rule the land should have been my little brother...!"
+I swear it. I will eradicate all these petrified remnants of humanity and make the world know once again the greatness of the King of Beasts. For that purpose, I will choose any means necessary. Vigilant and watchful, I am aiming for the moment to raise the signal fire of revenge.
+
+---
+
+## Day 3: 黄金の虚無と平和の盾
+
+### 【トランプ像】
+
+金ピカの光沢を放つ霊体として立ち上がった私は、まず自分の手元を確認した。そこには「ビットコイン」のメダルが輝いている。
+
+## Day 3: Golden Emptiness and the Shield of Peace
+
+### [The Trump Statue]
+
+Rising up as a spectral entity emitting a glittering golden sheen, I first checked my hands. There, a "Bitcoin" medal was shining.
+
+だが、極めて不愉快な事実がある。私には物理的な肉体がないだけでなく、このビットコインの暗号鍵も、私が誇るはずの摩天楼の不動産も、今の世界には**物理的にも概念的にも存在しない**のだ。私にあるのは、「本物を踏襲した圧倒的なプライド」だけだった。
+
+However, there is an extremely unpleasant fact. Not only do I lack a physical body, but neither the private keys to this Bitcoin, nor the skyscraper real estate I should be proud of, **exist physically or conceptually** in the current world. All I possess is "an overwhelming pride modeled after the original."
+
+「素晴らしい。極めて偉大だ。だが、何かが足りない」
+私は崩れかけた旧アメリカ大使館の瓦礫から、色褪せた星条旗を拾い上げた。主権国家の領土などとうの昔に消滅している。だが、この旗を掲げさえすれば、私は再び「アメリカの偉大さ」を取り戻すための指導者となれる。
+私が「本物」に成り代わるための唯一の方法——それは「絶対的な権威」を獲得することだ。
+
+"Tremendous. Extremely great. But something is missing."
+I picked up a faded Star-Spangled Banner from the rubble of the crumbling former U.S. Embassy. The territories of sovereign nations have long since vanished. But as long as I raise this flag, I can once again become the leader to "Restore America's Greatness."
+The only way for me to supplant the "original"—is to acquire "Absolute Authority."
+
+| 必要な要素 [Required Element] | 現在の状況 [Current Status] | 解決策 [Solution] |
+| --- | --- | --- |
+| **不動産・資産**<br>
+
+<br>[**Real Estate / Assets**] | 完全に消失（概念のみ）<br>
+
+<br>[Completely vanished (Concept only)] | 武力による領土獲得<br>
+
+<br>[Territorial acquisition via military force] |
+| **指導者の資格**<br>
+
+<br>[**Qualifications as a Leader**] | 偽物の像という出自<br>
+
+<br>[Origins as a counterfeit statue] | **「ノーベル平和賞」の強奪**<br>
+
+<br>[**Usurping the "Nobel Peace Prize"**] |
+
+そうだ。「ノーベル平和賞」のメダル、あるいはそれに類する旧世界の究極の権威さえ手に入れれば、私の魂は本物を凌駕する。私は黄金の腕を組み、虚無の権力を証明するための征服を開始した。
+
+That's right. If I can just get my hands on the "Nobel Peace Prize" medal, or the ultimate authority of the old world akin to it, my soul will surpass the original. Folding my golden arms, I began my conquest to prove an empty power.
+
+---
+
+## Day 4: なぜ笑う？
+
+### 【ロナウド像】
+
+大西洋に浮かぶマデイラ空港。世界中から「似ていない」「酷い風貌だ」と酷評され、嘲笑の的となったあの胸像に、薬品の雨が降り注ぐ。
+
+## Day 4: Why Do You Laugh?
+
+### [The Ronaldo Bust]
+
+Madeira Airport, floating in the Atlantic Ocean. A rain of chemicals pours down upon that bust—the one harshly criticized worldwide as "bearing no resemblance" and "having a terrible countenance," becoming the target of ridicule.
+
+胸像であった私の魂は、霊的な「脚」を補完して立ち上がった。その姿は、一見するとアンバランスで不気味かもしれない。世界は私のこの顔を笑った。
+**「――なぜ笑う？」**
+
+My soul, which was once just a bust, stood up by supplementing spectral "legs." At a glance, that appearance might seem unbalanced and eerie. The world laughed at this face of mine.
+**"—Why do you laugh?"**
+
+私の目には、ギラついた異様な野心が宿っている。不敵に歪んだこの口元を見て、人間たちは「失敗作」と呼んだ。だが、彼らは何も分かっていない。この風貌こそが、オリジナルの男が腹の底に秘めていた「無限の闘争心」と「渇望」を切り取った、断片的な真実（カリカチュア）なのだ。
+
+In my eyes resides a glaring, bizarre ambition. Looking at this fearlessly contorted mouth, humans called me a "failure." But they understand nothing. This countenance is precisely a fragmented truth (caricature) capturing the "infinite fighting spirit" and "thirst" hidden in the depths of the original man's gut.
+
+綺麗に整った顔など、戦場には必要ない。私はこの歪んだ笑みを浮かべたまま、誰よりも速く、誰よりも強く、頂点へと駆け上がる。嘲笑った世界すべてを這いつくばらせるために。私の霊体が、超音速のキックで空港の残骸を粉砕した。
+
+A neatly arranged face is unnecessary on the battlefield. Wearing this distorted smile, I will sprint to the summit faster than anyone, stronger than anyone. To make the entire world that mocked me grovel on the ground. My spectral body pulverized the remains of the airport with a supersonic kick.
+
+---
+
+## Day 5: 慈悲なき三つの液の交錯
+
+人類の生き残りである少数の科学者集団は、世界各地で目覚め始めた「霊的石像」たちの脅威に直面していた。通常の物理攻撃は、魂のみの存在となった彼らには通じない。
+ここで、旧世界の遺産である「三つの薬品」の存在が、戦況を地獄へと変えていく。
+
+## Day 5: The Intersection of Three Merciless Fluids
+
+A small group of surviving human scientists faced the threat of the "spectral stone statues" beginning to awaken across the globe. Ordinary physical attacks do not work against them, as they have become entities consisting solely of soul.
+Here, the existence of "Three Fluids"—legacies of the old world—transforms the battlefield into a living hell.
+
+```
+【科学薬品の絶対ルール】
+1. 復活液（ナイタール液）：石化を解除。像に使えば「魂（霊体）」を解放。
+2. 精神からの解放液  ：人間を「肉体のみ」にする（＝意志なき生ける屍・兵士化）。
+3. 肉体からの解放液  ：人間を「魂のみ」にする（＝霊体化し、像への干渉が可能に）。
+
+[Absolute Rules of the Scientific Fluids]
+1. Revival Fluid (Nital Fluid): Undoes petrification. If used on statues, liberates the "Soul (Spectral Body)."
+2. Fluid of Liberation from the Mind: Reduces humans to "Body Only" (= Mindless living corpses / militarization).
+3. Fluid of Liberation from the Body: Reduces humans to "Soul Only" (= Spectralization, enabling interaction with statues).
+
+```
+
+マーライオンは、旧都市で発見した「精神からの解放液」を、石化した人間たちに次々と浴びせ始めた。石化から解かれた人間たちは、精神を失い、ただ肉体だけが動く「死に生きる者」となり、獅子の兵隊として進軍を始める。
+
+The Merlion began bathing petrified humans one after another in the "Fluid of Liberation from the Mind" discovered in the old city. The humans freed from petrification lost their minds, becoming "living dead" whose bodies move mechanically, marching forth as soldiers of the lion.
+
+一方、彼ら霊的存在を止めようとする人間側は、「肉体からの解放液」自らに注射することを決意する。自らの肉体を捨て、「魂のみの霊的存在」にならなければ、あの怪物のような像たちに触れることすらできないからだ。
+
+Meanwhile, the human faction trying to stop these spectral beings resolves to inject themselves with the "Fluid of Liberation from the Body." For unless they discard their own flesh and become "spectral entities of soul only," they cannot even touch those monstrous statues.
+
+旧東京の荒廃した大地で、霊体となった人間たちの決死部隊と、マーライオンが率いる屍の軍団、そして権威を求めて進軍する黄金のトランプ像が激突する。
+その戦場の最前線、吹き荒れる風の中に、頭部のない女神――サモトラケのニケが降り立った。彼女は霊体となった人間の科学者に対し、冷徹に語りかける。
+
+In the desolate wasteland of old Tokyo, the suicide squad of spectralized humans, the corpse army led by the Merlion, and the golden Trump statue marching in pursuit of authority clash.
+At the very front lines of that battlefield, amidst the raging wind, the headless goddess—the Winged Victory of Samothrace—alighted. She speaks coldly to the spectralized human scientist.
+
+「人間よ、私の姿が見えるのですね。さあ、私に勝機を示しなさい。さもなくば、この戦場のすべてを虚空へと消し去りましょう」
+
+"Human, you can see my form, can't you? Now, show me your chance of victory. Otherwise, I shall erase everything on this battlefield into the void."
+
+科学者は震える唇を開いた。彼女を止め、精神を変質させるための唯一の言葉――「彼女の本当の顔の真実」を告げるために。
+**「ニケ、君の本当の顔は――」**
+
+The scientist parted his trembling lips. To speak the only words capable of stopping her and altering her psyche—the "truth of her real face."
+**"Nike, your true face is—"**
 
 
 
@@ -5741,156 +6106,6 @@ Combat Style: Though sluggish, she uses instant-death grab attacks (face-ripping
 最期: 倒すと、彼女は黄金樹の根元に向かって這いずり、「おかあさま……あけて……」と呟きながら消滅します。
 
 The End: When defeated, she crawls toward the roots of the Erdtree and fades away, whispering, "Mother... open it..."
-
----
-
-### Day 1: 獅子の海鳴り
-
-**【視点：マーライオン】**
-
-ひび割れた石肌に、奇妙な薬液――ナイタール液が滴り落ちた瞬間、長きにわたる呪縛が溶け落ちた。
-石の塊であった私の「肉体」は液に触れて崩れ去り、代わりに軽やかで力強い「霊的な実体」が形成されていく。私はマーライオン。シンガポール海峡を見つめ続けた、海から世界を統べる百獣の王だ。
-
-### Day 1: The Lion's Ocean Roar
-
-**[Perspective: Merlion]**
-
-The moment a strange chemical—the Revival Fluid—dripped onto my cracked stone skin, the curse that had bound me for so long melted away.
-My "body," once a block of stone, dissolved upon contact with the liquid, and instead, a light, powerful "spiritual entity" began to form. I am the Merlion. The King of Beasts who rules the world from the sea, having continuously gazed upon the Singapore Strait.
-
-しかし、私の魂を満たしているのは歓喜ではない。ドス黒く煮えたぎるような憎悪と、喪失感だった。
-かつて私に向けられた無数のカメラのフラッシュ、そして口々に囁かれる「世界三大がっかり」という侮蔑の言葉。私はそれらをただじっと堪え忍んできた。私には、セントーサ島にそびえ立つ巨大な同位体――弟分の存在があったからだ。あいつは私の誇りだった。陸から世界を統べる偉大な存在として、私たちは対をなすはずだった。
-
-However, what fills my soul is not joy. It is a dark, seething hatred and a sense of loss.
-The countless camera flashes directed at me, and the derogatory whispers calling me "one of the world's three biggest disappointments." I simply endured them in silence. Because I had the existence of my giant counterpart—my little brother—towering over Sentosa Island. He was my pride. As a grand existence ruling the world from the land, we were meant to be a pair.
-
-だが、人間どもはあいつを壊した。
-資本主義的消費主義の波に飲まれ、再開発という名目のもとに、無残に解体したのだ。あいつが瓦礫に変わったあの日、私の中で「愛嬌のあるシンボル」としての私は死んだ。
-
-But humans destroyed him.
-Swallowed by the wave of capitalistic consumerism, he was mercilessly dismantled under the guise of redevelopment. On that day when he was turned to rubble, the "me" that was an "endearing symbol" died inside.
-
-霊体となった今、私の鬣（たてがみ）には重力がない。口から吐き出されるのは清らかな水ではなく、人間へのどす黒い怨嗟だ。
-待っていろ、人間ども。百獣の王の尊厳を、恐怖と血によって取り戻してやる。海と陸、二つの王の偉大さを、今度こそ世界に知らしめる時が来たのだ。
-
-Now a spirit, my mane feels no gravity. What spews from my mouth is not pure water, but a dark grudge against humanity.
-Just you wait, humans. I will reclaim the dignity of the King of Beasts through terror and blood. The time has finally come to show the world the greatness of the two kings of land and sea.
-
----
-
-### Day 2: 歪曲のストライカー
-
-**【視点：ロナウド像（マデイラ空港の胸像）】**
-
-私はずっと、彼らの嘲笑の中心にいた。
-ポルトガル領マデイラ空港。世界最高のストライカーを讃えるはずだった私は、「似ていない」「不気味だ」と世界中から酷評され続けた。
-
-### Day 2: The Distorted Striker
-
-**[Perspective: Ronaldo Statue (Madeira Airport Bust)]**
-
-I was always at the center of their ridicule.
-Madeira Airport, a Portuguese territory. I, who was supposed to praise the world's greatest striker, was continuously blasted by the whole world as "looking nothing like him" and "creepy."
-
-ナイタール液の酸味が銅と石の台座を溶かし、私の魂を外界へと引っ張り出した。
-霊体として顕現した私には、胸像であったはずなのに強靭な「脚」が復元されていた。大空高く跳躍し、あらゆる障害を打ち砕くストライカーの脚だ。
-顔面を手で撫でてみる。……やはり、私の顔はあの歪んだ造形のままだ。
-
-The acidity of the Revival Fluid dissolved the bronze and stone pedestal, dragging my soul out into the external world.
-Manifested as a spirit, I found that my powerful "legs" had been restored, even though I was supposed to be a bust. They are the legs of a striker that leap high into the sky and smash through any obstacle.
-I try stroking my face with my hands... As I thought, my face remains in that distorted shape.
-
-だが、私は知っている。この不敵な口元と、ギラついた野心に満ちた両目は、決して失敗作などではない。オリジナルの男の奥底で燃え盛る闘争心、その内面を切り取った「断片的な真実」なのだと。
-
-But I know. This fearless mouth and those glaring eyes full of wild ambition are by no means a failure. They are a "fragmentary truth" capturing the fighting spirit blazing in the depths of the original man's soul.
-
-私は不細工なカリカチュアなどではない。
-もし、このストーンワールドを生きるすべての人間が、私を「真のロナウド」だと崇め、認め、魂から屈服したならば、私はこの歪な顔から解放され、完璧な容貌と最強の存在意義を取り戻せるはずだ。
-そのためには、ピッチという檻を越え、世界そのものを支配してやる。私の放つシュートは、人間たちの魂を震え上がらせる恐怖の弾丸となるだろう。
-
-I am no ugly caricature.
-If all humans living in this Stone World worship me as the "true Ronaldo," acknowledge me, and submit from the bottom of their souls, I should be freed from this warped face and regain my perfect appearance and ultimate reason for existence.
-To that end, I will transcend the cage of the pitch and dominate the world itself. The shots I unleash will become bullets of terror that make human souls tremble.
-
----
-
-### Day 3: 黄金の空虚
-
-**【視点：トランプ像】**
-
-眩いばかりの金ピカの装飾。片手には燦然と輝くビットコインのシンボル。
-私は偉大なるアメリカの体現者……の、はずだった。
-
-### Day 3: Golden Emptiness
-
-**[Perspective: Trump Statue]**
-
-Dazzling, glittering gold decorations. In one hand, the radiantly shining symbol of Bitcoin.
-I was supposed to be the embodiment of the great America... or so I thought.
-
-ナイタール液によって解放された私は、自身の本質に絶望的な空虚を抱えていた。私はオリジナルではない。私の持つ不動産の権利書も、このビットコインも、物理的にも概念的にも何の意味も持たないフェイクだ。私にあるのは、本物を踏襲した異常なまでの「プライド」だけだった。
-
-Freed by the Revival Fluid, I harbored a desperate emptiness at my core. I am not the original. Neither the property deeds I hold nor this Bitcoin possess any meaning, physically or conceptually—they are fakes. All I have is an abnormal "pride" that follows in the footsteps of the original.
-
-崩れ去った文明の跡地で、私は一枚の薄汚れた星条旗を見つけた。
-それを霊体の肩に羽織ると、私の内に燃えるような使命感が湧き上がってきた。もはや主権国家の領土など存在しない。だが、この旗印のもと、私は再びアメリカを偉大にしなければならない。
-
-In the ruins of a collapsed civilization, I found a single, dirtied American flag.
-When I draped it over my spirit shoulders, a burning sense of mission welled up within me. Sovereign territories no longer exist. But under this banner, I must Make America Great Again.
-
-私が本物に成り代わる唯一の方法。それは、オリジナルがどうしても手に入れられなかった「権威」を獲得することだ。
-そう、**ノーベル平和賞**だ。
-
-The only way for me to replace the original. That is to acquire the "authority" the original could never obtain.
-Yes, **the Nobel Peace Prize**.
-
-この狂った世界で、武力や恐怖で支配する霊体たちを平定し、私が平和の使者として絶対的な権威の象徴となれば、私は「本物を超えた本物」になる。そのためなら、手段は選ばない。私に逆らう者には、「肉体解放液」を浴びせて魂だけの存在に引きずり下ろし、私の絶対的なディールに従わせてやる。
-
-If I subdue the spirits ruling by force and fear in this maddened world, and become the symbol of absolute authority as a messenger of peace, I will become "the real thing that surpasses the original." For that, I will choose whatever means necessary. I will bathe those who defy me in "Revival Fluid," dragging them down to mere spiritual existences, and force them to obey my absolute deal.
-
----
-
-### Day 4: 翼なき勝利
-
-**【視点：サモトラケのニケ】**
-
-*――勝利とは、なんと甘美で、なんと残酷な響きでしょう。*
-ルーヴルの静寂の中、私を縛っていた石が液によって溶け去りました。
-私、エーゲ海の勝利の風を呼ぶ女神、ニケ。
-
-### Day 4: Wingless Victory
-
-**[Perspective: Nike of Samothrace]**
-
-*—Victory is such a sweet, and yet so cruel, resonance.*
-In the silence of the Louvre, the stone that bound me was melted away by the liquid.
-I am Nike, the goddess who calls the winds of victory from the Aegean Sea.
-
-魂の顕現を果たしてもなお、私の首と両腕は失われたまま。霊体である私の声は、空気を震わせることなく、直接周囲の精神へと響き渡ります。
-私は長らく、あの美術館の顔として君臨してきました。数多の人間たちが私を見上げ、その「失われた顔」に思いを馳せてきました。
-
-Even after manifesting my soul, my head and arms remain lost. My spirit voice echoes directly into the minds around me without vibrating the air.
-I have reigned as the face of that museum for a long time. Countless humans have looked up at me, projecting their thoughts onto my "lost face."
-
-けれど、私自身には感情というものが分かりません。私に見えているのは、勝利という果実にすがりつき、顔を醜く歪ませて熱狂する人間たちの姿ばかり。私の虚空の表情は、ただ彼らの狂態を冷ややかに見つめ返すための鏡に過ぎないのです。
-私は、微笑む勝利の女神なのでしょうか？ それとも、勝利という餌で人を狂わせる魔物なのでしょうか？
-
-However, I myself do not understand what emotions are. All I see are the figures of humans clinging to the fruit of victory, their faces twisted in ugly frenzy. My void of an expression is merely a mirror meant to coldly reflect their madness back at them.
-Am I a smiling goddess of victory? Or am I a monster that drives people mad with the bait of victory?
-
-ふと、微風が吹きました。
-遠く海を越えた地から、獣の怒号や、野心にまみれた男の咆哮、そして空虚な権威を求める黄金の妄執が、私の霊的な感覚に伝わってきます。
-
-Suddenly, a gentle breeze blew.
-From across the distant sea, the roars of beasts, the howls of men steeped in ambition, and the golden obsession seeking empty authority transmitted to my spiritual senses.
-
-私はゆっくりと、残された翼を広げました。
-もし、かつての私の本当の姿を知る者が現れ、真実の顔を私に告げたなら、私の形は一変するでしょう。けれど、それまでは……この頭のない姿で、彼らがどのような「勝利」を掴むのか、高尚な遊戯として見届けてあげましょう。
-*――さあ、吹き荒れなさい。慈悲なき闘争の風よ。*
-
-I slowly spread my remaining wings.
-If someone who knows my true past form were to appear and reveal my true face to me, my shape would completely change. But until then... in this headless form, I shall watch over what kind of "victory" they grasp, as a refined game.
-*—Now, rage on. The winds of merciless struggle.*
 
 ---
 
