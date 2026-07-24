@@ -6817,6 +6817,7 @@ Gian gently took Nobita's right hand and placed "a cold 10-yen coin with 'Heads'
 「これはお前にやるよ。ただし、明日からお前が歩くときは、必ず奇数回目の歩幅だけを5ミリ以上広くしろ。さもないと、お前の母さんの声の周波数が、毎日1ヘルツずつ下がっていくぞ」
 
 "I'll give this to you. But starting tomorrow, whenever you walk, you must make sure that only your odd-numbered strides are wider by 5 millimeters or more. Otherwise, the frequency of your mother's voice will drop by 1 hertz every single day."
+
 ジャイアンの口の動きと、声の再生タイミングが『0.2秒』ズレていた。
 
 The movement of Gian's mouth and the playback timing of his voice were desynchronized by 0.2 seconds.
