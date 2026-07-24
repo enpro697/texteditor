@@ -6463,7 +6463,7 @@ In the midst of the thick fog and rusted scraps, I—gazing lovingly at the smal
 Even the behavior of this friend, currently purring contentedly on my fingertip, was nothing more than a product forced by the electrical signals I was emitting. No matter how innocently it played with me, or how much joy I felt growing within, there was no one in this world with whom I could share a true will.
 
 
-私は、それでも、その小さな温もりを振り払うことができなかった。
+それでも、私はその小さな温もりを振り払うことができなかった。
 
 Within the world reflected in the eyes of that little puppet, I was utterly, completely alone.
 
@@ -6577,9 +6577,9 @@ To trace the past world and claw back my lost mission and memories, I had no cho
 
 ---
 
-2XXX 年、統制社会の中で子供は遺伝子的に選別され、組み換えにより最適化された血統になるようコントロールされ、プラスチックバッグを胎嚢としてこの世に生を得る
+2XXX 年、統制社会の中で子供は遺伝子的に選別され、組み換えにより最適化された血統になるようコントロールされ、人工の胎嚢からこの世に生を得る
 
-In the year 2XXX, within a controlled society, children are genetically selected and their bloodlines optimized through recombination. They are brought into this world with plastic bags serving as their amniotic sacs.
+In the year 2XXX, within a controlled society, children are genetically selected and their bloodlines optimized through recombination. They are brought into this world from artificial amniotic sacs.
 
 その中からさらに教育を通した選別の過程を経て、基準を満たした者のみ教育宿舎からの卒業を許される
 
