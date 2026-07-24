@@ -6444,16 +6444,16 @@ At its adorable behavior, a warmth spread deep within my chest, and my mouth nat
 After fluttering around me for a while, the little bird finally seemed satisfied and alighted perched upon my outstretched finger. I gently stroked the throat of my small friend with my other hand.
 
 
-しかし、その刹那、その小さな瞳が映し出す景色が、私を凍り付かせた。
+しかし、その刹那、小鳥の視界が映し出す景色が、私を凍り付かせた。
 
-そこに映し出されていたのは、孤独な「私自身」だった。
+映し出されていたのは、孤独な「私自身」だった。
 
-However, in that very instant, the scenery reflected in those tiny eyes froze me in place.
+However, in that very instant, the scenery reflected in bird's eyes froze me in place.
 
 What was reflected there was the lonely "myself."
 
 
-濃い霧と錆びた鉄くずのただ中で、自分が操る小さな生命を愛おしそうに見つめる私は、どうしようもなく独りだった。
+濃い霧と錆びた鉄くずのただ中で、自分が操る小さな命を愛おしそうに見つめる私は、どうしようもなく独りだった。
 
 In the midst of the thick fog and rusted scraps, I—gazing lovingly at the small life I was manipulating—was helplessly alone.
 
@@ -6814,10 +6814,9 @@ When he timidly opened his eyes, Gian was standing just three centimeters from N
 
 Gian gently took Nobita's right hand and placed "a cold 10-yen coin with 'Heads' written on both sides" into his palm.
 
-「これはお前にやるよ。ただし、家に帰るまで、歩幅をずっと『33センチ』に固定して歩け。一歩でもずれたら、お前の母親の顔のテクスチャが、全く知らない別人のものにすり替わるぞ」
+「これはお前にやるよ。ただし、明日からお前が歩くときは、必ず奇数回目の歩幅だけを5ミリ以上広くしろ。さもないと、お前の母さんの声の周波数が、毎日1ヘルツずつ下がっていくぞ」
 
-"I'll give this to you. But until you get home, you must walk with your stride fixed exactly at '33 centimeters.' If you deviate by even a single step, the texture of your mother's face will be replaced with that of a complete stranger."
-
+"I'll give this to you. But starting tomorrow, whenever you walk, you must make sure that only your odd-numbered strides are wider by 5 millimeters or more. Otherwise, the frequency of your mother's voice will drop by 1 hertz every single day."
 ジャイアンの口の動きと、声の再生タイミングが『0.2秒』ズレていた。
 
 The movement of Gian's mouth and the playback timing of his voice were desynchronized by 0.2 seconds.
@@ -6899,9 +6898,9 @@ Suneo was showing off his latest RC car in the vacant lot. Normally, this was wh
 
 However, Gian ignored the RC car. He approached Suneo and, in silence, pressed a ruler against Suneo's forehead.
 
-「……昨日より、お前の影の厚みが2ミリ減ってるぞ。地面の裏側に吸い込まれるまで、あと少しだな」
+「……昨日より、お前の両目の間隔が0.04ミリ広がっているな。スネ夫、お前は『はみ出し』始めているぞ」
 
-"...Your shadow is two millimeters thinner than it was yesterday. It won't be long until you're sucked into the underside of the ground."
+"...The distance between your eyes has widened by 0.04 millimeters since yesterday, Suneo. You're starting to 'spill over the boundaries'."
 
 ジャイアンはそれだけを言い残し、去っていった。奪われなかったラジコンカー。しかしスネ夫の「自慢する→奪われる→悔しがる」という存在理由は根底から破壊された。
 
@@ -6930,15 +6929,13 @@ Pressing his forehead against the inner concrete of the pipe, Suneo was endlessl
 
 Suneo turned around. His "characteristically pointed mouth" failed to track the camera angle, maintaining the shape of a profile view even though he was facing forward. With a face that looked like an extreme animation glitch, Suneo chuckled.
 
-「のび太……気づいてないのか？ この世界の背景、全部このコンクリートの線と同じ『グリッド』のコピー＆ペーストでできてるんだよ。空も、お前の家も、俺たちの肌すらもな」
+「のび太……気づいてないのか？ 3日前から、僕らの世界の『背景BGM』が止まってるんだ。今のこの音は、僕らの上にある『冷却ファン』の回転音だよ……」
 
-"Nobita... haven't you noticed? The background of this world is entirely made of a copy-and-paste of the same 'grid' as these lines in the concrete. The sky, your house, even our skin."
+"Nobita... haven't you noticed? The 'background BGM' of our world has stopped playing since three days ago. This sound right now is just the spinning noise of the 'cooling fan' up above us..."
 
-のび太が耳を澄ますと、確かに、いつも世界を包んでいた賑やかな音楽は消え、空の彼方から「ブーン……」という無機質な機械音が響いていた。
+のび太が耳を澄ますと、確かに、いつも世界を包んでいた賑やかな音楽は消え、空の彼方から「ブーン……」という無機質な機械音が響いていた。空の青さは、すでに色コード「#00BFFF」の単色で塗りつぶされていた。
 
-When Nobita strained his ears, sure enough, the lively music that always enveloped their world had vanished, replaced by a cold, mechanical humming sound echoing from beyond the sky—"Bzzzz..."
-
-その機械音に共鳴するように、スネ夫の身体はコンクリートのグリッドへとカクカクと折りたたまれ、奥行きを完全に失った『ただの平面のテクスチャデータ』へと崩壊していった。
+When Nobita strained his ears, sure enough, the lively music that had always enveloped the world was gone, replaced by a cold, mechanical humming sound echoing from beyond the sky—"Bzzzz..." The blue of the sky had already been painted over with a flat, single color code: "#00BFFF."
 
 As if resonating with that mechanical hum, Suneo's body rigidly folded into the concrete grid, collapsing into "mere 2D flat texture data" stripped entirely of depth.
 
