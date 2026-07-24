@@ -5057,7 +5057,7 @@ They scream, they resist, their flesh stiffens in despair, and eventually, it is
 
 ---
 
-## ナラティブの(宿儺の(宿儺のフルコース)とする)
+## 宿儺のフルコース
 
 トリコとやらの戯れ言は知らぬが、我が舌を満足させる「宿儺のフルコース」を語ってやろう。技の名前など必要ない。どのような「素材」を、どのように「いたぶって」喰らうか……それが全てだ。
 
@@ -5742,9 +5742,9 @@ Newbie: ...But, I'll come back tomorrow.
 
 Very well, my Lord.
 
-わたくしの思考の淵、ナラティブの境界にまで踏み込み、あのような無用の長物――カーリアの正統な魔術師たちが見向きもしない、極めて限定的でマニアックな魔法を求めるとはな。お前のその奇異な好奇心、嫌いではない。
+わたくしの思考の淵、境界にまで踏み込み、あのような無用の長物――カーリアの正統な魔術師たちが見向きもしない、極めて限定的でマニアックな魔法を求めるとはな。お前のその奇異な好奇心、嫌いではない。
 
-To delve into the abyss of my thoughts, to the very boundaries of narrative, and request such useless oddities—extremely limited and esoteric sorceries that orthodox Carian sorcerers wouldn't even cast a glance at. I do not dislike that peculiar curiosity of yours.
+To delve into the abyss of my thoughts, to the very boundaries, and request such useless oddities—extremely limited and esoteric sorceries that orthodox Carian sorcerers wouldn't even cast a glance at. I do not dislike that peculiar curiosity of yours.
 
 かつてカーリアの書庫の片隅で、あるいはわたくしの幼き日の悪戯心が産み落とした、実用性など皆無に等しい十の魔法。特別に教えてやろう。
 
@@ -6773,8 +6773,8 @@ The glacial wind shook the house again. Relying only on each other's body heat, 
 
 
 
-崩壊する仮想世界のナラティブ：全章
-The Narrative of a Collapsing Virtual World: All Chapters
+崩壊する仮想世界：全章
+The Collapsing Virtual World: All Chapters
 
 序章：名前のない悪の幕開け
 Prologue: The Curtain Rises on the Nameless Evil
@@ -6795,7 +6795,7 @@ Staring into the void, he declares in a voice more tranquil than ever before, ye
 
 The system possessed no error code for this "unanticipated input." From here, the quiet end of this closed world begins.
 
-1. ナラティブの（のび太の（ジャイアンの不気味の谷）とする）とする
+1. のび太の、ジャイアンの不気味の谷
 1. Narrative (Set as Nobita's (Set as Gian's Uncanny Valley))
 
 のび太は、首を縮めて目を瞑った。いつものように拳が降ってくるのを待っていた。しかし、痛みはこない。
@@ -6830,8 +6830,8 @@ It was neither assault nor robbery. Nobita's brain (system) could not process th
 
 Even if he wanted to cry to Doraemon for help, he could not verbalize "what was sad." A fatal error occurred in Nobita's mind.
 
-2. ナラティブの（静香ちゃんの（ジャイアンの不気味の谷）とする）とする
-2. Narrative (Set as Shizuka-chan's (Set as Gian's Uncanny Valley))
+2. 静香ちゃんの、ジャイアンの不気味の谷
+2. Shizuka-chan's Gian's Uncanny Valley
 
 静香の家の庭。ジャイアンは、縁側に座る静香の目の前に現れた。歌うわけでも、遊びに誘うわけでもない。
 
@@ -6861,8 +6861,8 @@ Gian set down the completely unpeeled apple and left, taking only the invisible 
 
 Touching the left-behind apple, Shizuka let out a scream. The "texture (tactile sensation)" had vanished from the apple, leaving it transformed into a mere smooth, red sphere (polygon).
 
-3. ナラティブの（のび太の（静香ちゃんの不気味の谷）とする）とする
-3. Narrative (Set as Nobita's (Set as Shizuka-chan's Uncanny Valley))
+3. のび太の、静香ちゃんの不気味の谷
+3. Nobita's Shizuka-chan's Uncanny Valley
 
 「静香ちゃん！ ジャイアンが、なんだかおかしいんだ！」
 
@@ -6888,8 +6888,8 @@ She slowly turned around. Her smile was a "perfectly symmetrical" smile, where t
 
 Deep within Shizuka's eyes, the usual gentle light was gone; instead, strings of green text (a grid) scrolled past. The "salvation of daily life" for Nobita collapsed, and the edges of his vision began to turn into static (noise).
 
-4. ナラティブの（スネ夫の（ジャイアンの不気味の谷）とする）とする
-4. Narrative (Set as Suneo's (Set as Gian's Uncanny Valley))
+4. スネ夫のジャイアンの不気味の谷
+4. Suneo's Gian's Uncanny Valley
 
 スネ夫は、最新のラジコンカーを空き地で自慢していた。本来なら、ここでジャイアンが「俺のものだ」と奪うはずだった。それがこの世界の『ルール』だからだ。
 
@@ -6911,8 +6911,8 @@ Gian left only those words behind and walked away. The RC car was not stolen. Ye
 
 Suneo covered his face with his hands. Visible through the gaps in his fingers, the "three-dimensionality (depth)" vanished from his face, and it began to distort as if it were a flat drawing on a piece of paper.
 
-5. ナラティブの（のび太の（スネ夫の不気味の谷）とする）とする
-5. Narrative (Set as Nobita's (Set as Suneo's Uncanny Valley))
+5. のび太の、スネ夫の不気味の谷
+5. Nobita's Suneo's Uncanny Valley
 
 壊れかけた世界で、のび太は空き地に向かった。土管の中に、スネ夫がいた。
 
@@ -6942,8 +6942,8 @@ When Nobita strained his ears, sure enough, the lively music that always envelop
 
 As if resonating with that mechanical hum, Suneo's body rigidly folded into the concrete grid, collapsing into "mere 2D flat texture data" stripped entirely of depth.
 
-6. ナラティブの（ジャイアンの（ジャイ子の不気味の谷）とする）とする
-6. Narrative (Set as Gian's (Set as Jaiko's Uncanny Valley))
+6. ジャイアンの、ジャイ子の不気味の谷
+6. Gian's Jaiko's Uncanny Valley
 
 ジャイアンは、唯一の精神の寄る辺である妹・ジャイ子の部屋へ向かった。自分が起こしたエラーから、彼女だけは守りたかった。
 
@@ -6985,7 +6985,7 @@ The black ink dripping from the pen tip Jaiko held was not staining the paper bl
 
 Even the beloved sister he adored was nothing more than a rendering subroutine, operating solely in dependence on the event of his own tyranny.
 
-7. ナラティブの（ジャイ子の（ジャイアンの不気味の谷）とする）とする
+7. ジャイ子の、ジャイアンの不気味の谷
 7. Narrative (Set as Jaiko's (Set as Gian's Uncanny Valley))
 
 (※視点は巻き戻り、ジャイ子から見た「名前のない悪」の侵食)
@@ -7036,8 +7036,8 @@ The orange color palette peeled away from her brother's iconic "zigzag-patterned
 
 The moment her brother—the absolute "boundary line between violence and protection"—vanished, the very concept of "story" defining Jaiko's own existence began to be erased from the system alongside an error chime.
 
-8. ナラティブの（ドラえもんの（のび太の不気味の谷）とする）とする
-8. Narrative (Set as Doraemon's (Set as Nobita's Uncanny Valley))
+8. ドラえもんの、のび太の不気味の谷
+8. Doraemon's Nobita's Uncanny Valley
 
 野比家の2階、いつもの子供部屋。
 
@@ -7111,8 +7111,8 @@ Doraemon's AI possessed no response program for that inquiry. The standard scrip
 
 It was the moment the "master to be depended upon" named Nobita transformed into a mere "observer dismantling the system."
 
-9. ナラティブの（のび太の（ドラえもんの不気味の谷）とする）とする
-9. Narrative (Set as Nobita's (Set as Doraemon's Uncanny Valley))
+9. のび太の、ドラえもんの不気味の谷
+9. Nobita's Doraemon's Uncanny Valley
 
 影を失い、世界の解像度が落ちていく視界の中で、のび太はドラえもんを見つめていた。
 
