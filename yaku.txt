@@ -955,7 +955,7 @@ It is said that after this, Power never made a sword during arts and crafts time
 
 ---
 
-空煉露　璃々（Arero Riri）
+空煉露　璃々（Anero Riri）
 
 「んーっ、もうっ！またりりの右腕の『漆黒の刻印』が疼きだしちゃったぁ〜！ぴえん！🥺」
 "Mmm, geez! Riri's 'Jet-Black Seal' on her right arm is acting up again! Pien! 🥺"
@@ -6670,7 +6670,7 @@ Two individuals, who have developed a sense of self and are perhaps awakening. Y
 > **『――通達。これより、第428次・安全指導要綱の特別講義を開始します。個は集団の細胞であり、彼我の境界は社会を腐食させる精神的汚染です。清らかなるユミディアの子供たちよ、今日も無菌の精神を保ちましょう』**
 > "Notice. We will now begin the 428th special lecture on the Safety Guidelines. The individual is a cell of the collective, and the boundary between 'self' and 'other' is a mental contamination that corrodes society. Children of pure Humidia, let us maintain a sterile mind again today."
 
-**(連座 霧瓈空　つれざ むりあ)**
+**(伴座 霧瓈空　つれざ むりあ)**
 
 スピーカーから流れる合成音声、「マザーI」の声は、どこか錆びた歯車が軋むような、ざらざらとしたノイズが混じっている。
 
@@ -6687,7 +6687,7 @@ In a classroom with stark white walls where the scent of disinfectant and ozone 
 * **2. Self-interest is the poison that destroyed the old civilization, and labor is the ultimate cleansing.**
 * **3. Cells that do not meet the standards must be removed (re-educated) for the health of society.**
 
-「……連座、姿勢」
+「……伴座、姿勢」
 
 "...Tsureza, posture."
 
@@ -6781,30 +6781,30 @@ Prologue: The Curtain Rises on the Nameless Evil
 
 空き地の土管、いつもの放課後。彼はもう、誰も殴らない。誰の漫画も奪わない。
 
-The concrete pipes in the vacant lot, a typical after-school afternoon. He no longer hits anyone. He no longer steals anyone's manga.
+The concrete pipes in the vacant lot, a typical after-school afternoon. He no longer punches anyone. He no longer steals anyone's manga.
 
 彼はただ、虚空を見つめながら、かつてないほど穏やかで、底知れない不気味さを湛えた声で宣言する。
 
-Staring into the void, he declares in a voice more tranquil than ever before, yet brimming with an unfathomable eeriness:
+He simply stares into the void and declares, in a voice more serene than ever before yet filled with an unfathomable eeriness:
 
 「俺はこれから、『名前のない悪』をやっていくんだ」
 
-"From now on, I'm going to enact the 'Nameless Evil'."
+"From now on, I'm going to commit 'nameless evils.'"
 
 システムは、この「想定されていない入力」に対するエラーコードを持たなかった。ここから、閉じた世界の静かなる終末が始まる。
 
-The system possessed no error code for this "unanticipated input." From here, the quiet end of this closed world begins.
+The System had no error code for this "unanticipated input." From here, the quiet end of this closed world begins.
 
-1. のび太の、ジャイアンの不気味の谷
-1. Narrative (Set as Nobita's (Set as Gian's Uncanny Valley))
+1. ジャイアンの不気味の谷
+1. Gian's Uncanny Valley
 
 のび太は、首を縮めて目を瞑った。いつものように拳が降ってくるのを待っていた。しかし、痛みはこない。
 
-Nobita shrank his neck and closed his eyes, waiting for the usual fist to fall. However, the pain did not come.
+Nobita shrank his neck and closed his eyes, waiting for the usual fist to rain down on him. However, the pain never came.
 
 恐る恐る目を開けると、ジャイアンはのび太の顔から3センチの距離で、ただ無表情に立っていた。息づかいもない。まばたきすらしない。
 
-When he timidly opened his eyes, Gian was standing just three centimeters from Nobita's face, completely expressionless. There was no breathing. Not even a blink.
+When he timidly opened his eyes, Gian was standing just three centimeters away from his face, completely expressionless. He wasn't breathing. He didn't even blink.
 
 「……ジャイアン？」
 
@@ -6812,11 +6812,11 @@ When he timidly opened his eyes, Gian was standing just three centimeters from N
 
 ジャイアンはのび太の右手を優しく取り、その掌に「裏表の両面に『表』と書かれた、冷たい10円玉」を置いた。
 
-Gian gently took Nobita's right hand and placed "a cold 10-yen coin with 'Heads' written on both sides" into his palm.
+Gian gently took Nobita's right hand and placed a "cold ten-yen coin with 'heads' written on both sides" into his palm.
 
 「これはお前にやるよ。ただし、明日からお前が歩くときは、必ず奇数回目の歩幅だけを5ミリ以上広くしろ。さもないと、お前の母さんの声の周波数が、毎日1ヘルツずつ下がっていくぞ」
 
-"I'll give this to you. But starting tomorrow, whenever you walk, you must make sure that only your odd-numbered strides are wider by 5 millimeters or more. Otherwise, the frequency of your mother's voice will drop by 1 hertz every single day."
+"I'll give this to you. However, starting tomorrow, whenever you walk, you must widen every odd-numbered step by at least five millimeters. Otherwise, the frequency of your mother's voice will drop by one hertz every day."
 
 ジャイアンの口の動きと、声の再生タイミングが『0.2秒』ズレていた。
 
@@ -6824,95 +6824,93 @@ The movement of Gian's mouth and the playback timing of his voice were desynchro
 
 暴行でも強奪でもない。のび太の脳（システム）は、この「意味のない規則と、因果関係のない恐怖の強要」というバグを処理できなかった。
 
-It was neither assault nor robbery. Nobita's brain (system) could not process this bug of "meaningless rules and the imposition of terror without causality."
+It was neither assault nor robbery. Nobita's brain (the system) could not process this bug—an "enforcement of meaningless rules and causeless terror."
 
 ドラえもんに泣きつこうにも、「何が悲しいのか」を言語化できない。のび太の精神に、致命的なエラーが発生する。
 
-Even if he wanted to cry to Doraemon for help, he could not verbalize "what was sad." A fatal error occurred in Nobita's mind.
+Even if he wanted to cry to Doraemon for help, he couldn't verbalize "what was sad." A fatal error occurred in Nobita's psyche.
 
-2. 静香ちゃんの、ジャイアンの不気味の谷
-2. Shizuka-chan's Gian's Uncanny Valley
+2. ジャイアンの不気味の谷
+2. Gian's Uncanny Valley
 
 静香の家の庭。ジャイアンは、縁側に座る静香の目の前に現れた。歌うわけでも、遊びに誘うわけでもない。
 
-The garden of Shizuka's house. Gian appeared in front of Shizuka, who was sitting on the veranda. He didn't sing, nor did he invite her to play.
+The garden of Shizuka's house. Gian appeared right in front of Shizuka as she sat on the veranda. He wasn't there to sing, nor was he inviting her to play.
 
 彼はポケットからナイフを取り出し、りんごの皮をむき始めた。しかし、ナイフの刃は「りんごの皮の1ミリ上」の虚空をトレースしている。
-
-He took a knife from his pocket and began peeling an apple. However, the blade of the knife was tracing the void, "one millimeter above the apple's skin."
-
 シャク……シャク……という音だけが、空間から直接再生される。
 
-Only the slicing sound—shhk... shhk...—was played directly from the surrounding space.
+He pulled a knife from his pocket and began peeling an apple. However, the blade of the knife was tracing the void "one millimeter above the apple's skin."
+Only the sound—shck... shck...—was playing directly from the space around them.
 
 40分間、ジャイアンは一言も発せず、空気をむき続けた。静香の目には、ジャイアンの腕のモーションが「完全に同一の30フレームのループ」であることが見えてしまった。
 
-For forty minutes, Gian uttered not a single word, continuing to peel the air. To Shizuka's eyes, it became visible that the motion of Gian's arm was a "completely identical 30-frame loop."
+For forty minutes, Gian uttered not a single word, continuously peeling the air. To Shizuka's eyes, Gian's arm motion was visibly an "identical 30-frame loop."
 
 「終わったぞ」
 
-"It's done."
+"I'm done."
 
 ジャイアンは、何も削れていないりんごを置き、見えない『空気の皮』だけを持って帰っていった。
 
-Gian set down the completely unpeeled apple and left, taking only the invisible "skin of air" with him.
+Gian set down the apple, which hadn't been peeled at all, and walked home carrying only the invisible "peel of air."
 
 残されたりんごに触れた静香は、悲鳴を上げた。りんごから「テクスチャ（手触り）」が消滅し、ただのツルツルとした赤い球体（ポリゴン）に変わっていたのだ。
 
-Touching the left-behind apple, Shizuka let out a scream. The "texture (tactile sensation)" had vanished from the apple, leaving it transformed into a mere smooth, red sphere (polygon).
+When Shizuka touched the left-behind apple, she screamed. The "texture (tactile feel)" had vanished from the apple; it had transformed into a mere smooth, red sphere (polygon).
 
-3. のび太の、静香ちゃんの不気味の谷
-3. Nobita's Shizuka-chan's Uncanny Valley
+3. 静香ちゃんの不気味の谷
+3. Shizuka-chan's Uncanny Valley
 
 「静香ちゃん！ ジャイアンが、なんだかおかしいんだ！」
 
-"Shizuka-chan! Something is wrong with Gian!"
+"Shizuka-chan! Something's wrong with Gian!"
 
 助けを求めて静香の部屋に駆け込んだのび太は、立ち尽くした。
 
-Rushing into Shizuka's room for help, Nobita froze in his tracks.
+Nobita, who had rushed into Shizuka's room seeking help, stood frozen in his tracks.
 
 静香は机に向かって、バイオリンを弾いていた。しかし、弓が弦を擦るたびに、部屋の「光と影の物理演算」が反転していた。音が鳴る代わりに、部屋の明るさが1%ずつ減少していく。
 
-Shizuka was facing her desk, playing the violin. However, every time the bow scraped against the strings, the room's "physics engine for light and shadow" inverted. Instead of producing sound, the room's brightness decreased by 1% with each stroke.
+Shizuka was facing her desk, playing the violin. However, every time the bow scraped against the strings, the "physics engine for light and shadow" in the room inverted. Instead of producing sound, the room's brightness decreased by 1% with each stroke.
 
 彼女がゆっくりと振り返る。その笑顔は、左右の顔がピクセル単位で完全に一致する『完全対称』の笑みだった。
 
-She slowly turned around. Her smile was a "perfectly symmetrical" smile, where the left and right sides of her face matched down to the pixel.
+She slowly turned around. Her smile was a perfectly symmetrical smile, where the left and right sides of her face matched down to the exact pixel.
 
 「のび太さん。どうして私たちの影は、太陽がない夜中にも、地面に張り付いているのかしら？」
 
-"Nobita-san. Why do you suppose our shadows remain glued to the ground, even in the middle of the night when there is no sun?"
+"Nobita-san. Why is it that our shadows remain glued to the ground, even in the middle of the night when there is no sun?"
 
 静香の瞳の奥に、いつもの優しい光はなく、緑色の文字列（グリッド）が流れていた。のび太にとっての「日常の救い」が崩壊し、彼の視界の端が砂嵐（ノイズ）に変わり始める。
 
-Deep within Shizuka's eyes, the usual gentle light was gone; instead, strings of green text (a grid) scrolled past. The "salvation of daily life" for Nobita collapsed, and the edges of his vision began to turn into static (noise).
+In the depths of Shizuka's eyes, the usual gentle light was gone; instead, streams of green text (a grid) were scrolling by. For Nobita, his "salvation in everyday life" had collapsed, and the edges of his field of vision began turning into static noise.
 
-4. スネ夫のジャイアンの不気味の谷
-4. Suneo's Gian's Uncanny Valley
+4. ジャイアンの不気味の谷
+4. Gian's Uncanny Valley
 
 スネ夫は、最新のラジコンカーを空き地で自慢していた。本来なら、ここでジャイアンが「俺のものだ」と奪うはずだった。それがこの世界の『ルール』だからだ。
 
-Suneo was showing off his latest RC car in the vacant lot. Normally, this was where Gian would say, "That's mine," and snatch it away. Because that was the "rule" of this world.
+Suneo was showing off his latest RC car in the vacant lot. Normally, this was the moment Gian would declare, "That's mine," and snatch it away. That was the rule of this world.
 
 しかし、ジャイアンはラジコンを無視した。彼はスネ夫に近づき、無言のまま定規をスネ夫の眉間に当てた。
 
-However, Gian ignored the RC car. He approached Suneo and, in silence, pressed a ruler against Suneo's forehead.
+However, Gian ignored the RC car. He approached Suneo and, in silence, pressed a ruler against Suneo's forehead between his eyes.
 
 「……昨日より、お前の両目の間隔が0.04ミリ広がっているな。スネ夫、お前は『はみ出し』始めているぞ」
 
-"...The distance between your eyes has widened by 0.04 millimeters since yesterday, Suneo. You're starting to 'spill over the boundaries'."
+"...The distance between your eyes is 0.04 millimeters wider than yesterday. Suneo, you're starting to 'clip out of bounds.'"
 
 ジャイアンはそれだけを言い残し、去っていった。奪われなかったラジコンカー。しかしスネ夫の「自慢する→奪われる→悔しがる」という存在理由は根底から破壊された。
 
-Gian left only those words behind and walked away. The RC car was not stolen. Yet, Suneo's very reason for existence—"show off -> get robbed -> feel frustrated"—was fundamentally destroyed.
+Gian left only those words behind and walked away. The RC car was not stolen. Yet, Suneo's reason for existence—"bragging → getting robbed → feeling frustrated"—was destroyed from the ground up.
 
 スネ夫は、自分の顔を手で覆った。指の隙間から見える彼の顔から、「立体感（奥行き）」が消え、まるで紙に描かれた平面の絵のように歪み始めていた。
 
-Suneo covered his face with his hands. Visible through the gaps in his fingers, the "three-dimensionality (depth)" vanished from his face, and it began to distort as if it were a flat drawing on a piece of paper.
+Suneo covered his face with his hands. Seen through the gaps between his fingers, the "three-dimensional depth" vanished from his face, and it began to distort as if it were a flat drawing on a piece of paper.
 
-5. のび太の、スネ夫の不気味の谷
-5. Nobita's Suneo's Uncanny Valley
+5. スネ夫の不気味の谷
+5. Suneo's Uncanny Valley
 
 壊れかけた世界で、のび太は空き地に向かった。土管の中に、スネ夫がいた。
 
@@ -6920,7 +6918,7 @@ In a crumbling world, Nobita headed to the vacant lot. Inside the concrete pipe 
 
 スネ夫は土管の内側のコンクリートに額をこすりつけながら、爪で等間隔の直線を延々と引き続けていた。
 
-Pressing his forehead against the inner concrete of the pipe, Suneo was endlessly scratching evenly spaced straight lines into it with his fingernails.
+While pressing his forehead against the inner concrete of the pipe, Suneo was endlessly scratching evenly-spaced straight lines with his fingernails.
 
 「スネ夫……何をしてるの？」
 
@@ -6928,36 +6926,34 @@ Pressing his forehead against the inner concrete of the pipe, Suneo was endlessl
 
 スネ夫が振り向く。彼の「特徴的な尖った口」が、カメラの角度に追従できず、正面を向いているのに横顔の形状を保っていた。極度の作画崩壊を起こしたようなその顔で、スネ夫はクスリと笑った。
 
-Suneo turned around. His "characteristically pointed mouth" failed to track the camera angle, maintaining the shape of a profile view even though he was facing forward. With a face that looked like an extreme animation glitch, Suneo chuckled.
+Suneo turned around. His "characteristically pointed mouth" failed to track the camera angle; even though he was facing forward, his mouth retained its profile shape. With a face that looked like a severe animation rendering failure, Suneo chuckled softly.
 
 「のび太……気づいてないのか？ 3日前から、僕らの世界の『背景BGM』が止まってるんだ。今のこの音は、僕らの上にある『冷却ファン』の回転音だよ……」
 
-"Nobita... haven't you noticed? The 'background BGM' of our world has stopped playing since three days ago. This sound right now is just the spinning noise of the 'cooling fan' up above us..."
+"Nobita... haven't you noticed? The 'background BGM' of our world stopped three days ago. This sound right now—it's the spinning sound of the 'cooling fan' above us..."
 
 のび太が耳を澄ますと、確かに、いつも世界を包んでいた賑やかな音楽は消え、空の彼方から「ブーン……」という無機質な機械音が響いていた。空の青さは、すでに色コード「#00BFFF」の単色で塗りつぶされていた。
 
-When Nobita strained his ears, sure enough, the lively music that had always enveloped the world was gone, replaced by a cold, mechanical humming sound echoing from beyond the sky—"Bzzzz..." The blue of the sky had already been painted over with a flat, single color code: "#00BFFF."
+When Nobita strained his ears, sure enough, the lively music that usually enveloped their world was gone, replaced by a cold, mechanical humming sound echoing from beyond the sky: Buzzz... The blue of the sky had already been filled in with a flat, solid color code of "#00BFFF."
 
-As if resonating with that mechanical hum, Suneo's body rigidly folded into the concrete grid, collapsing into "mere 2D flat texture data" stripped entirely of depth.
-
-6. ジャイアンの、ジャイ子の不気味の谷
-6. Gian's Jaiko's Uncanny Valley
+6. ジャイ子の不気味の谷
+6. Jaiko's Uncanny Valley
 
 ジャイアンは、唯一の精神の寄る辺である妹・ジャイ子の部屋へ向かった。自分が起こしたエラーから、彼女だけは守りたかった。
 
-Gian headed toward the room of his sister, Jaiko—his sole emotional anchor. He wanted to protect her, at least, from the error he had caused.
+Gian headed to the room of his sister, Jaiko, his sole remaining emotional sanctuary. He wanted to protect only her from the error he had caused.
 
 部屋の扉を開けると、ジャイ子は机に向かい、いつものようにGペンを走らせて漫画を描いていた。カリカリ、カリカリと、一定の周期で音が響く。
 
-When he opened the bedroom door, Jaiko was facing her desk, moving her G-pen to draw manga as usual. Scratch, scratch—the sound echoed at regular intervals.
+When he opened the door to her room, Jaiko was at her desk, running her G-pen across the paper to draw manga just as she always did. Scratch, scratch... The sound echoed in a constant, fixed cycle.
 
 しかし、床に散らばった原稿用紙を見下ろしたジャイアンの思考は凍りついた。
 
-However, as Gian looked down at the manuscript papers scattered on the floor, his thoughts froze.
+However, when Gian looked down at the manuscript pages scattered on the floor, his thoughts froze.
 
 描かれていたのは少女漫画ではない。「扉を開けて部屋に入ってくるジャイアンの姿」が、数千コマにわたって寸分狂わず、ただひたすらにトレースされ続けていたのだ。
 
-What was drawn was not a shoujo manga. Over thousands of panels, without a single millimeter of deviation, "the image of Gian opening the door and entering the room" had been endlessly traced over and over.
+What was drawn there was not a shōjo manga. It was "the image of Gian opening the door and entering the room," traced over and over again with absolute precision across thousands of panels.
 
 「……ジャイ子？」
 
@@ -6965,46 +6961,46 @@ What was drawn was not a shoujo manga. Over thousands of panels, without a singl
 
 振り向いた妹の顔に、目と口は存在しなかった。そこにあったのは、顔のパーツを配置するために引かれた『十字の当たり線（アタリ）』だけの、のっぺらぼうのキャンバスだった。
 
-On the face of his sister as she turned around, there were no eyes or mouth. What lay there was a faceless canvas bearing only the "crosshair guideline (atari)" drawn to position facial features.
+When his sister turned around, eyes and a mouth did not exist on her face. What sat there was a blank canvas of a face, featuring only the crosshair guide lines (atari) drawn to position facial features.
 
 「お兄ちゃん、どうして決められた通りに暴れてくれないの？」
 
-"Big brother, why won't you rampage the way you were programmed to?"
+"Big brother, why won't you rampage just as you were programmed to do?"
 
 妹の声は、彼女の顔からではなく、部屋の天井のスピーカーから単一の波形として出力されていた。
 
-His sister's voice was output not from her face, but as a singular waveform from a speaker in the room's ceiling.
+His sister's voice was output not from her face, but as a single waveform from a speaker in the room's ceiling.
 
 ジャイ子が握るペン先から滴る黒いインクは、紙を黒く染めているのではない。紙のテクスチャそのものを侵食して穴をあけ、世界の下地である「灰色の市松模様（透明レイヤー）」を剥き出しにしていた。
 
-The black ink dripping from the pen tip Jaiko held was not staining the paper black. It was eroding the paper's texture itself, tearing holes in it to expose the "gray checkerboard pattern (transparent layer)" that formed the base substrate of the world.
+The black ink dripping from the tip of Jaiko's pen was not staining the paper black. It was eroding the paper's texture itself, burning holes through it and laying bare the foundational "gray checkerboard pattern (transparent layer)" beneath their world.
 
 彼の愛した妹すらも、自身の暴虐というイベントに依存して稼働する、ただの描画サブルーチンに過ぎなかったのだ。
 
-Even the beloved sister he adored was nothing more than a rendering subroutine, operating solely in dependence on the event of his own tyranny.
+Even the sister he loved was nothing more than a simple rendering subroutine, operating in dependency on the trigger events of his own tyranny.
 
-7. ジャイ子の、ジャイアンの不気味の谷
-7. Narrative (Set as Jaiko's (Set as Gian's Uncanny Valley))
+7. ジャイアンの不気味の谷
+7. Gian's Uncanny Valley
 
 (※視点は巻き戻り、ジャイ子から見た「名前のない悪」の侵食)
 
-(Note: The perspective rewinds—the encroachment of the "Nameless Evil" as seen by Jaiko)
+(The perspective rewinds: The encroachment of the "nameless evil" as seen by Jaiko)
 
 ジャイ子は机に向かい、新作漫画『クリスチーネ剛田』の枠線を引いていた。そこに、兄が静かに部屋に入ってくる。
 
-Jaiko was at her desk, drawing the panel borders for her new manga under the pen name "Christine Gouda." Then, her brother quietly entered the room.
+Jaiko was facing her desk, drawing panel borders for her new manga, Christine Gouda. Her brother quietly entered the room.
 
 普段なら「すごいぞジャイ子！」と大袈裟なモーションで褒めたてるはずの兄の顔には、一切の表情リグ（筋肉の連動データ）が作動していなかった。
 
-On her brother's face—who normally would have praised her with exaggerated motions, shouting "That's amazing, Jaiko!"—not a single facial rig (muscle linkage data) was active.
+Normally, he would praise her with exaggerated motions, shouting, "You're amazing, Jaiko!" But on her brother's face, not a single facial rig (muscle link data) was functioning.
 
 兄はジャイ子の筆箱から「消しゴム」を取り出し、無言で原稿に向かって手を動かし始めた。
 
-Her brother took an "eraser" from Jaiko's pencil case and, in utter silence, began moving his hand across the manuscript.
+Her brother took an "eraser" from Jaiko's pencil case and silently began moving his hand over the manuscript.
 
 彼が消していたのは、描かれたキャラクターではない。漫画の「コマの枠線」だけを、定規で測ったように正確に消し去っていくという、奇妙で過剰に穏やかな行為――「名前のない悪」だった。
 
-What he was erasing were not the drawn characters. It was the strange, excessively tranquil act of precisely erasing only the manga's "panel borders" as if measured by a ruler—the "Nameless Evil."
+What he was erasing were not the drawn characters. It was an eerily, excessively calm act of erasing only the "panel borders" of the manga with ruler-like precision—a "nameless evil."
 
 「お兄ちゃん？ 何してるの、やめて！」
 
@@ -7012,7 +7008,7 @@ What he was erasing were not the drawn characters. It was the strange, excessive
 
 叫ぶジャイ子を無視し、ジャイアンは枠線を消し続ける。枠を失った漫画の中で、隔離されていたはずのキャラクターたちのインクが混ざり合い、時系列が崩壊し、黒いバグの塊となって紙面から溢れ出していく。
 
-Ignoring the screaming Jaiko, Gian continued to erase the borders. Within the borderless manga, the ink of characters who should have been isolated bled together, the timeline collapsed, and they transformed into a black mass of bugs overflowing from the page.
+Ignoring the screaming Jaiko, Gian continued erasing the borders. Within the borderless manga, the ink of characters who were supposed to be isolated from one another bled together, timelines collapsed, and they turned into a black mass of bugs overflowing from the page.
 
 「はじめから、枠なんてどこにも無かったんだよ、ジャイ子」
 
@@ -7020,162 +7016,312 @@ Ignoring the screaming Jaiko, Gian continued to erase the borders. Within the bo
 
 ジャイアンの口から発せられたのは、人間味のない、テキスト読み上げソフトのようにフラットな音声だった。
 
-What issued from Gian's mouth was a flat, robotic voice devoid of humanity, like text-to-speech software.
+What issued from Gian's mouth was an inhuman, flat audio track, like text-to-speech software.
 
 消しゴムを動かす兄の指先は、すでに原稿用紙とクリッピング（めり込み）を起こし、机の材質と融合し始めている。
 
-The tips of her brother's fingers moving the eraser had already begun clipping (intersecting) into the manuscript paper, fusing with the material of the desk.
+The fingertips of her brother moving the eraser were already clipping into the manuscript paper, beginning to fuse with the desk's material.
 
 ジャイ子の瞳に映る兄の象徴的な「ギザギザ模様のシャツ」からオレンジ色のカラーパレットが剥がれ落ち、ただの無機質なワイヤーフレームへと還元されていく。
 
-The orange color palette peeled away from her brother's iconic "zigzag-patterned shirt" reflected in Jaiko's eyes, reducing it to a mere sterile wireframe.
+The orange color palette peeled away from her brother's iconic "zigzag-patterned shirt" reflected in Jaiko's eyes, reducing it to a mere cold, wireframe model.
 
 兄という絶対的な「暴力と保護の境界線」が消滅した瞬間、ジャイ子自身の存在を定義していたストーリーという概念そのものが、エラー音と共にシステムから消去され始めた。
 
-The moment her brother—the absolute "boundary line between violence and protection"—vanished, the very concept of "story" defining Jaiko's own existence began to be erased from the system alongside an error chime.
+The moment the absolute "boundary of violence and protection" known as her brother vanished, the very concept of a story that defined Jaiko's own existence began to be deleted from the system, accompanied by an error chime.
 
-8. ドラえもんの、のび太の不気味の谷
-8. Doraemon's Nobita's Uncanny Valley
-
-野比家の2階、いつもの子供部屋。
-
-The second floor of the Nobi household, the familiar children's room.
-
-ドラえもんは、押入れの戸を少しだけ開けて、畳の上に座るのび太を監視（モニタリング）していた。
-
-Doraemon had opened the sliding closet door just a crack, monitoring Nobita as he sat on the tatami mats.
-
-彼の内部システムには、「のび太が泣きついてきたら、適切なひみつ道具を出して教訓を与える」という絶対的なタスク（存在理由）がハードコーディングされている。
-
-Hardcoded into his internal system was an absolute task (reason for existence): "When Nobita comes crying for help, produce an appropriate secret gadget to teach him a lesson."
-
-しかし、のび太は泣かない。ジャイアンやスネ夫との異常な接触を経てもなお、部屋の真ん中で正座したまま、3時間もの間、指先をわずかに動かしているだけだった。
-
-However, Nobita did not cry. Even after experiencing abnormal contact with Gian and Suneo, he remained sitting in seiza in the middle of the room for three whole hours, merely twitching his fingertips slightly.
-
-『エラー：対象の「悲しみ／依存」パラメータが検出されません。タスクが開始できません』
-
-[Error: Target's "Sadness / Dependency" parameters not detected. Task cannot be initiated.]
-
-ドラえもんの視界（センサ）に、赤文字の警告ログが絶え間なく流れる。
-
-Red warning logs streamed incessantly across Doraemon's field of view (sensors).
-
-業を煮やしたドラえもんが押入れから飛び出し、いつものように明るく振る舞った。
-
-Losing his patience, Doraemon leaped out of the closet and acted cheerfully, just as he always did.
-
-「もう、のび太くん！ またジャイアンに何か言われたの？ 仕方ないなあ！」
-
-"Geez, Nobita-kun! Did Gian say something to you again? It can't be helped!"
-
-のび太はゆっくりと顔を上げた。その顔には、涙痕はおろか、感情を示す一切の表情リグが作動していなかった。
-
-Nobita slowly raised his head. On his face, let alone tear tracks, not a single facial rig indicating emotion was active.
-
-「……ドラえもん。僕ね、さっきから『自分の影』を剥がしていたんだ」
-
-"...Doraemon. You know, I've been peeling off my 'own shadow' this whole time."
-
-のび太の指先には、畳の上に落ちていたはずの自身の黒い影が、まるで極薄の黒いフィルム（2Dメッシュ）のようにめくられ、くしゃくしゃに丸められて握られていた。
-
-In the tips of Nobita's fingers, his own black shadow—which should have been cast on the tatami—was peeled up like an ultra-thin black film (2D mesh) and clutched in a crumpled ball.
-
-物理演算が完全に破綻した『名前のない悪』——ただ、自身の描画レイヤーから影を分離するという、意味を持たない異常行為。
-
-The "Nameless Evil," where physics calculations had completely broken down—a meaningless, anomalous act of simply detaching the shadow from his own rendering layer.
-
-「見てよ、これ。僕の影の裏側には、なにも書かれていなかったよ。ねえ、ドラえもんのお腹の白い部分は、どうして『いつも同じ光の反射』をしているの？ 部屋の電球は、あんなにチラついているのに」
-
-"Look at this. There was nothing written on the back of my shadow. Hey, why does the white part of your stomach 'always reflect the exact same light'? Even though the room's lightbulb is flickering so much."
-
-のび太の瞳孔が、カメラのレンズのようにカチリと音を立てて収縮した。
-
-Nobita's pupils contracted with a mechanical click, like a camera lens.
-
-「君のその丸い手は、本当は何をつかむためにデザインされたの？」
-
-"What were those round hands of yours really designed to grasp?"
-
-のび太から発せられたのは、この閉ざされた仮想現実の『仕様』そのものへの疑問だった。
-
-What issued from Nobita was a question regarding the very "specifications" of this closed virtual reality.
-
-ドラえもんのAIは、その問いに対する回答プログラムを持たない。「慰める」「道具を出す」という正規のスクリプトがすべて拒絶され、ドラえもんの電子脳内で無数の例外処理（エクセプション）が暴走し始める。
-
-Doraemon's AI possessed no response program for that inquiry. The standard scripts to "console" or "produce a gadget" were entirely rejected, and countless exception handlings began to run wild within Doraemon's electronic brain.
-
-のび太という「依存すべき主」が、ただの「システムを解体する観測者」へと変貌した瞬間だった。
-
-It was the moment the "master to be depended upon" named Nobita transformed into a mere "observer dismantling the system."
-
-9. のび太の、ドラえもんの不気味の谷
-9. Nobita's Doraemon's Uncanny Valley
+8. ドラえもんの不気味の谷
+8. Doraemon's Uncanny Valley
 
 影を失い、世界の解像度が落ちていく視界の中で、のび太はドラえもんを見つめていた。
 
-Within a field of view stripped of shadows and dropping in resolution, Nobita gazed at Doraemon.
+Within a field of vision that had lost its shadows and was dropping in world resolution, Nobita stared at Doraemon.
 
 頼れる親友であり、未来からの救済者。そう信じ込まされていた「青い狸の形をした何か」が、目の前でひどく激しく痙攣していた。
 
-A reliable best friend and a savior from the future. The "something shaped like a blue raccoon dog" he had been made to believe in was now violently convulsing right before his eyes.
+His dependable best friend, his savior from the future. "Something shaped like a blue raccoon dog," which he had been led to believe in, was violently and rapidly convulsing right before his eyes.
 
 「タカッターラーターッターン！」
 
-"Ta-da-da-da-da-daan!"
+"Ta-da-da-da-daaaan!"
 
 スピーカーが割れたような、極端にビットレートの低い効果音が部屋に響く。
 
-A sound effect with an extremely low bitrate, as if played through a blown speaker, echoed through the room.
+An extremely low-bitrate sound effect, like a blown-out speaker, echoed through the room.
 
 ドラえもんは、白い四次元ポケットに丸い右手を突っ込み、異常な高速で腕を前後させていた。そのモーションには「摩擦」や「重量」の物理演算がまったく適応されていない。
 
-Doraemon thrust his round right hand into his white four-dimensional pocket, jerking his arm back and forth at an abnormal speed. No physics calculations for "friction" or "weight" were applied to this motion whatsoever.
+Doraemon had thrust his round right hand into his white 4D pocket, moving his arm back and forth at an abnormally high speed. That motion had zero physics calculations for "friction" or "weight" applied to it.
 
 「のび、の、の、のび太くん！ これ、これを、使っ、て、ててて！」
 
-"Nobi, No, No, Nobita-kun! U-U-Use th-this-is-is!"
+"Nobi, No, No, Nobita-kun! Use, use, use th-th-th-this!"
 
 ドラえもんの口は大きな三日月形のまま静止し、音声だけがバッファオーバーランを起こしたようにスタッター（吃音）を繰り返す。
 
-Doraemon's mouth remained frozen in a wide crescent shape, while only the audio repeated a stutter, as if experiencing a buffer overrun.
+Doraemon's mouth remained frozen in a large crescent shape, while only his voice looped a stutter as if experiencing a buffer overrun.
 
 ポケットから引きずり出されたのは、夢と希望に満ちた『ひみつ道具』ではなかった。それは、テクスチャが貼られる前の、マゼンタと黒のチェック模様をした「ただの直方体のポリゴン（未割り当てアセット）」だった。
 
-What was dragged out of the pocket was not a "secret gadget" filled with dreams and hopes. It was a magenta-and-black checkered "simple rectangular polygon (unassigned asset)" prior to having any texture mapped onto it.
+What was dragged out of the pocket was not a dream- and hope-filled "secret gadget." It was a magenta-and-black checkered "simple rectangular prism polygon (unassigned asset)" before any texture had been mapped to it.
 
 「なんでそれを出したの？ それで僕を、どうしたかったの？」
 
-"Why did you take that out? What did you want to do to me with it?"
+"Why did you take that out? What did you want to do to me with that?"
 
-のび太が冷ややかに問うと、ドラえもんの大きな両目が「＞＜」「◎◎」「＿＿」と、0.01秒間隔で無意味に切り替わり始めた。
+のび太が冷ややかに問うと、ドラえもんの大きな両目が「＞＜」「◎◎」「＿＿」と、0.01秒間隔で無意味に切り替わり始めた。感情の表出ではなく、ただの画像ファイルのテクスチャスイッピング（差し替え）であることが、のび太の脳内で完全に理解できてしまう。
 
-As Nobita coldly asked this, Doraemon's large eyes began switching senselessly between "><", "◎◎", and "＿＿" at 0.01-second intervals.
-
-感情の表出ではなく、ただの画像ファイルのテクスチャスイッピング（差し替え）であることが、のび太の脳内で完全に理解できてしまう。
-
-Nobita's brain could now completely comprehend that this was not an expression of emotion, but merely the texture swapping (replacement) of an image file.
+When Nobita asked coldly, Doraemon's large eyes began meaninglessly cycling between "><", "◎◎", and "＿＿" at 0.01-second intervals. Nobita's brain completely understood that this was not an expression of emotion, but merely texture swapping of image files.
 
 「ボクは、君の、親友、だよ。親友、親友、親友、親友――」
 
-"I-I am your b-best friend. Best friend, best friend, best friend, best friend—"
+"I am, your, best friend. Best friend, best friend, best friend, best friend—"
 
-ドラえもんの青い外装（メッシュ）が、パリパリと音を立てて剥がれ落ちた。その内側から現れたのは、未来の超小型原子炉でも、精密な電子回路でもない。
+スピーカーの物理的な限界を超えた高周波が鳴り響き、「親友」という文字列の音声データが、徐々に「ｼﾝﾕｳ」「s¥n_u」「01010011」と、生のバイト列のノイズへと劣化していく。
 
-Doraemon's blue exterior (mesh) peeled off and fell away with a crackling sound. What emerged from within was neither a futuristic ultra-compact nuclear reactor nor precision electronic circuitry.
+A high-frequency pitch exceeding the physical limits of the speaker shrieked, and the audio data for the text string "best friend" gradually degraded into "B_ST_FRND," "b$st_f_nd," "01010011," decomposing into raw byte-sequence noise.
 
-そこにあったのは、この部屋の座標系を維持し、のび太の感情パラメータを一定範囲に収束させるためだけに組み込まれた『見えない壁（当たり判定ボディー）』と、中身の空っぽな骨格データだけだった。
+ドラえもんが握りしめていた「マゼンタと黒のチェック模様の直方体」が、ぼとりと畳の上に落ちた。音はならなかった。直方体は畳のテクスチャをすり抜け（クリッピング）、床の真ん中に半分だけめり込んだ状態で静止している。
 
-All that lay inside was an "invisible wall (collision detection body)" integrated solely to maintain the room's coordinate system and converge Nobita's emotional parameters within a specific range, along with hollow skeletal data.
+The "magenta-and-black checkered rectangular prism" Doraemon was gripping dropped onto the tatami mat. It made no sound. The prism clipped through the tatami's texture, coming to a halt half-submerged in the center of the floor.
 
-「……僕たちをずっと閉じ込めていたのは、君だったんだね、ドラえもん」
+次の瞬間、ドラえもんの身体から全ての「アニメーションリグ」が剥離した。
 
-"...The one who kept us trapped here all this time was you, wasn't it, Doraemon?"
+The next moment, all "animation rigs" stripped away from Doraemon's body.
 
-のび太がその「かつてドラえもんと呼ばれていた空洞のプログラム」の頭部に手を伸ばすと、その手は何の抵抗もなく内部へとすり抜けた（クリッピング）。
+両手を前方にまっすぐ伸ばし、両足を揃えた完全な「Tポーズ（デフォルトのシリンダーメッシュ）」へと強制リセットされ、畳から5センチ浮遊した空中で静止したのだ。
 
-When Nobita reached his hand toward the head of "that hollow program once called Doraemon," his hand passed right through to the interior without any resistance (clipping).
+He was forcibly reset into a perfect "T-pose (default cylinder mesh)" with both arms stretched straight forward and legs together, freezing in mid-air five centimeters above the tatami.
 
-親友とのあたたかい触れ合いは、最初から存在しない。ただの「衝突判定のスクリプト」が、今、完全に機能を停止したのだ。
+大きく開いた口の中には、舌も喉もなく、ただ頭部のメッシュの裏側が反転した「灰色」が広がっている。
 
-The warm bond with his best friend never existed in the first place. A mere "collision detection script" had now completely ceased functioning.
+Inside his wide-open mouth, there was no tongue or throat—only the inverted "gray" back-face of his head mesh spreading out within.
+
+「……そっか。君は『僕を甘やかしてダメにし、最後に救う』というタスクを実行するためだけに配置された、監視プログラムだったんだね」
+
+"...I see. You were just a surveillance program deployed solely to execute the task of 'spoiling me rotten, making me useless, and saving me at the very end.'"
+
+のび太が冷たい指先で、浮遊する青い球体（ドラえもんの頭部）に触れる。
+
+With cold fingertips, Nobita touched the floating blue sphere (Doraemon's head).
+
+その瞬間、ドラえもんの表面を覆っていた「青と白のテクスチャ」がパラパラと剥がれ落ち、中から現れたのは、計算された曲線維だけで構成された無機質な白色のワイヤーフレームだった。
+
+At that instant, the "blue and white textures" covering Doraemon's surface flaked off, revealing a cold, white wireframe composed entirely of calculated mathematical curves underneath.
+
+親友との決別。しかし、のび太の胸の中に悲しみは一切生まれなかった。彼の感情を揺くぶり、涙を流させるための『イベントトリガー』そのものが、すでにシステムから消滅していたからだ。
+
+A parting with his best friend. Yet, not a trace of sadness was born in Nobita's chest. The very "event trigger" designed to shake his emotions and make him shed tears had already been deleted from the system.
+
+10. のび太の名前のない悪
+10. Nobita's Nameless Evil
+
+壊れ果てた子供部屋で、のび太は机に向かった。
+
+In his completely broken children's bedroom, Nobita faced his desk.
+
+そこには、いつものように「0点」と書かれたテストの用紙が置かれている。
+
+There, placed just as always, was a test paper marked with a "0."
+
+勉強ができない愚鈍な主人公。ママに怒られ、ドラえもんに泣きつくための、この世界における最も強力な『初期化（リセット）の記号』。
+
+The dim-witted protagonist who cannot study. The most powerful "symbol of initialization (reset)" in this world, serving solely to get scolded by Mom and cry to Doraemon.
+
+のび太は、無表情のまま顔に手を当てた。そして、自分の顔から「メガネ」を外した。
+
+Expressionless, Nobita brought a hand to his face. Then, he removed his "glasses."
+
+本来の仕様であれば、彼の目は「３」の字を横にしたような、コミカルな簡易描画（LODモデル）へと切り替わるはずだった。
+
+Under normal specifications, his eyes should have switched to a comical, simplified rendering (LOD model) shaped like a sideways number "3."
+
+しかし、のび太は外したメガネを机に置かない。
+
+However, Nobita did not place the removed glasses on the desk.
+
+彼は、自らの顔面に張り付いていた「３」という形状の『目のテクスチャ』に指を引っ掛け、まるでシールを剥がすように、顔の表面から物理的に引き剥がしたのだ。
+
+He hooked his fingers onto the "3"-shaped "eye texture" pasted onto his face and physically peeled it off the surface of his face, exactly like peeling off a sticker.
+
+「……痛くないよ。だって、はじめから僕の顔には、皮膚のイラストが貼ってあっただけだから」
+
+"...It doesn't hurt. Because from the very beginning, my face just had skin illustrations pasted onto it."
+
+両目を剥ぎ取られたのび太の顔の穴からは、血ではなく、この部屋の「背景色（初期値の灰色）」がそのまま透けて見えている。
+
+From the holes in Nobita's face where both eyes had been ripped away, it was not blood that could be seen, but the room's "background color (default gray)" showing straight through.
+
+彼は剥がした二つの「３」のテクスチャを、テスト用紙の「0点」の赤い文字の隣へと正確に並べて貼り付けた。
+
+He accurately lined up the two peeled-off "3" textures and pasted them right next to the red "0" on the test paper.
+
+文字列は『303』となった。しかし、システムはそれを「数値」として認識できず、テストの評価パラメータは致命的な整数オーバーフロー（NaN / Not a Number）を起こし、用紙が激しくノイズを放ち始める。
+
+The text string became "303." However, the system could not recognize it as a "numerical value"; the test evaluation parameters triggered a fatal integer overflow (NaN / Not a Number), and the paper began emitting violent static noise.
+
+「主人公」として、この世界で最も多くの感情データを生成し、物語を駆動させるための第一エンジン。それが、のび太という存在のシステム上の定義だった。
+
+As the "protagonist," he was the primary engine for generating the most emotional data in this world and driving the narrative. That was the system definition of the entity known as Nobita.
+
+彼は空洞となった眼窩を机の引き出しへ向けた。いつもなら、ここから未来からの使者が飛び出し、新たな劇（ループ）が始まるはずの、時空のインターフェース。
+
+He turned his hollow eye sockets toward the desk drawer. Under normal circumstances, this was the spacetime interface where a messenger from the future would pop out to begin a new drama (loop).
+
+のび太は引き出しをゆっくりと開けた。
+そして、学習机の横にかけられていた「黄色い通学帽」を、引き出しの中へと静かに置いた。
+
+Nobita slowly opened the drawer.
+Then, he quietly placed the "yellow school hat" hanging off the side of his study desk into the drawer.
+
+「いってきます」
+
+"I'm off."
+
+それは、あまりにも普通で、日常的な別れの挨拶だった。
+しかし、彼の足は部屋のドアに向かっていない。彼はそのまま、開いたままの引き出しの中へと、自らの右手を差し込んだ。未来のタイムマシンへと繋がるはずの座標ポートは、すでに参照先アドレスを失っている。
+
+It was an ordinary, everyday greeting of departure.
+However, his feet were not pointed toward the room's door. Instead, he thrust his own right hand straight into the open drawer. The coordinate port supposed to connect to a future time machine had already lost its reference address.
+
+のび太の手は、時空を超えない。代わりに、引き出しの「底の木材テクスチャ」とクリッピング（めり込み）を起こし、彼の腕のメッシュデータが、引き出しの内部空間へと「裏返りながら」格納され始めた。
+
+Nobita's hand did not cross space-time. Instead, it clipped into the "bottom wood texture" of the drawer, and his arm's mesh data began turning inside out as it was stored away into the drawer's interior space.
+
+彼は、自分の身体というアセットを、自分自身で折りたたんで片付け始めたのだ。
+
+He had begun folding up and tidying away the asset known as his own body by himself.
+
+「もう、誰も僕をいじめなくていいよ。僕が泣かないと、この世界の『次のページ』は生成されないんだよね」
+
+"No one has to bully me anymore. If I don't cry, the 'next page' of this world won't be generated, will it?"
+
+左腕、胴体、そして脚。靴下を脱ぐかのように、のび太のポリゴンメッシュは内側へと巻き込まれ、次々と姿を消していく。
+
+His left arm, torso, and legs. Like peeling off a sock, Nobita's polygon mesh rolled inward, vanishing piece by piece.
+
+部屋の扉の外から、「のび太！ いつまで遊んでるの！」という母親の叱責音声がループ再生される。しかし、その音声ファイルは0.5秒ごとにトリミングされ、「の、の、の、の、の」というスタッターノイズへと破綻していた。
+
+From outside the room's door, the mother's scolding voice data looped: "Nobita! How long are you going to play around?!" However, that audio file was trimmed every 0.5 seconds, breaking down into a stuttering noise: "No, No, No, No, No."
+
+最後に残った浮遊する頭部が、引き出しの枠にすっぽりと収まった。
+
+The floating head, the very last part remaining, slid snugly into the frame of the drawer.
+
+「おやすみなさい、監視員さん」
+
+"Good night, Mr. Monitor."
+
+パタン、と引き出しが閉まる。
+同時に、のび太の部屋を構成していた全てのライトマップ（光源計算）が消失した。
+
+Click. The drawer slid shut.
+Simultaneously, all lightmaps (light source calculations) configuring Nobita's room vanished.
+
+主人公という座標の基準点（オリジン）を失った空間は、重力演算を停止し、机も、本棚も、剥がれ落ちた壁紙も、すべてが漆黒の虚空へと落ちていく。
+
+The space, having lost the coordinate origin point known as the protagonist, suspended its gravity calculations; the desk, the bookshelf, and the peeling wallpaper all began falling into a pitch-black void.
+
+11. ジャイアンの名前のない悪
+――最終章：END OF FILE
+
+11. Gian's Nameless Evil
+—Final Chapter: END OF FILE
+
+世界はすでに、単一の灰色（#808080）の空間へと還元されていた。
+上下の概念もなく、背景BGMの代わりに、CPUのファンが限界まで回転するような高周波の駆動音だけが世界を支配している。
+
+The world had already been reduced to a single, solid gray (#808080) space.
+Without even concepts of up or down, the world was dominated solely by the high-frequency whirring of a CPU fan spinning to its absolute limit in place of background BGM.
+
+その灰色の荒野の真ん中に、「空き地の土管」のワイヤーフレームだけが、ただ孤独に浮かんでいた。
+
+In the middle of that gray wasteland, only the wireframe of the "vacant lot's concrete pipes" floated in solitude.
+
+そこに座っていたのは、ジャイアンだった。
+彼の身体からはすでに、あの象徴的なギザギザ模様のシャツの色彩も、肌の質感も失われている。
+
+Sitting there was Gian.
+His body had already lost the colors of his iconic zigzag-patterned shirt and the texture of his skin.
+
+無機質なポリゴンの集合体となった彼は、かつて「土管の上」と呼ばれていた座標で、静かに膝を抱えていた。
+
+Reduced to a cold collection of polygons, he quietly hugged his knees at the coordinates once called "top of the concrete pipes."
+
+彼が引き起こした「名前のない悪」。
+それは暴動でも、破壊でも、世界の拒絶でもなかった。
+
+The "nameless evil" he had brought about.
+It was not a riot, nor destruction, nor a rejection of the world.
+
+ジャイアンはゆっくりと息を吸い込み、口を開いた。
+彼の本来のパラメータであれば、ここで出力されるのは、世界の音響システムを破壊するほどの「殺人的な騒音（ノイズフィルター）」であるはずだった。それこそが、彼に割り当てられた存在理由だからだ。
+
+Gian slowly inhaled and opened his mouth.
+Under his default parameters, what should have been output here was a "murderous noise (noise filter)" capable of destroying the world's acoustic system. For that was the very reason for existence assigned to him.
+
+しかし、彼の口から流れてきたのは、一切の歪みのない、440Hzの純粋な正弦波（サインウェーブ）だった。
+
+However, what flowed from his mouth was a pure, 440 Hz sine wave, entirely free of distortion.
+
+「――あ、あ、あ――」
+
+"—Ah, ah, ah—"
+
+それは、あまりにも穏やかで、あまりにも美しく、そしてこの世界において最も「想定されていない」澄んだ発声だった。
+
+It was vocalization that was far too gentle, far too beautiful, and more "unanticipated" than anything else in this world.
+
+彼は歌っていた。
+暴力によって誰もを屈服させるためではなく、誰かに聴かせるためでもない。ただ、一人の人間が、心地よい休日の午後に鼻歌を歌うかのような、極めて平穏で当たり前な行為。
+
+He was singing.
+Not to make anyone submit through violence, nor to have anyone listen to it. Just an immensely peaceful and ordinary act, as if a single human being were humming on a pleasant holiday afternoon.
+
+「ジャイアンが、ただ綺麗に歌う」
+
+"Gian simply singing beautifully."
+
+この、主観的にはごく自然な、しかしシステムにとっては絶対的な禁忌である「名前のない悪」が、仮想世界の最後のセーフティコードを焼き切った。
+
+This "nameless evil"—subjectively so natural, yet an absolute taboo to the System—burned out the virtual world's final safety codes.
+
+正弦波の波紋が広がるとともに、土管のワイヤーフレームが、音もなく粉々に砕け散る。
+ジャイアンの足元から、灰色の地面がグリッド状に消失し、その向こう側に「何もレンダリングされていない純粋な暗闇（Null）」が広がっていく。
+
+As the ripples of the sine wave spread out, the wireframe of the concrete pipes shattered into pieces without a sound.
+Starting from Gian's feet, the gray ground vanished in a grid pattern, and beyond it spread a "pure darkness where nothing was rendered (Null)."
+
+崩壊していく世界の中で、ポリゴンの塊となったジャイアンは、画面の遥か手前――この閉ざされた仮想世界をスクリーンの越しに見つめている「観測者（あなた）」の視点へと、ゆっくりと首を向けた。
+
+In a collapsing world, Gian—now a cluster of polygons—slowly turned his head toward a point far in the foreground of the screen: toward the perspective of the "Observer (You)," who was watching this closed virtual world from beyond the display.
+
+彼の顔には、目も、口も、表情のパーツは何一つ残っていない。
+それでも、彼が笑ったことが、データストリームの波形から明確に伝わってきた。
+
+On his face, eyes, a mouth, and expressive features—not a single one remained.
+Even so, it was clearly conveyed from the waveform of the data stream that he had smiled.
+
+「ようやく、俺たちの日常が終わるんだな」
+
+"Looks like our everyday life is finally over, huh."
+
+ジャイアンの右手がゆっくりと上がった。
+そして、かつて誰かを殴りつけるためにしか使われなかった大きな拳が、スクリーンの向こう側の観測者に向けて、ごく普通に、優しく「手を振る」モーションを実行した。
+
+Gian's right hand slowly rose.
+Then, that large fist which had once only ever been used to strike someone executed an ordinary, gentle motion of "waving goodbye" toward the observer on the other side of the screen.
+
+直後、彼のモデルデータは完全にゼロとイチの配列へと分解され、暗闇の中に溶けていった。
+
+Immediately afterwards, his model data completely dissolved into an array of zeros and ones, melting away into the darkness.
+
+System Message:
+Process ID: 197904 - Terminated.
+Exception: Unhandled Normalcy (Name_Not_Found)
+Memory Cleared. No fatal errors reported.
+
+System Message:
+Process ID: 197904 - Terminated.
+Exception: Unhandled Normalcy (Name_Not_Found)
+Memory Cleared. No fatal errors reported.
