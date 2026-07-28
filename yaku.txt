@@ -7321,7 +7321,3 @@ Process ID: 197904 - Terminated.
 Exception: Unhandled Normalcy (Name_Not_Found)
 Memory Cleared. No fatal errors reported.
 
-System Message:
-Process ID: 197904 - Terminated.
-Exception: Unhandled Normalcy (Name_Not_Found)
-Memory Cleared. No fatal errors reported.
