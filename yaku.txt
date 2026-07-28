@@ -7307,9 +7307,9 @@ Then, that large fist which had once only ever been used to strike someone execu
 
 Immediately afterwards, his model data completely dissolved into an array of zeros and ones, melting away into the darkness.
 
-[System Message] Process ID: 197904 - Terminated.
-[Exception] Unhandled Normalcy (Name_Not_Found)
-[Memory] State cleared. No fatal errors reported.
-[Storage] Purging world data... Done.
-[Session] Disconnecting session... Good night.
+[System Message: Process ID: 197904 - Terminated.]
+[Exception: Unhandled Normalcy (Name_Not_Found)]
+[Memory: State cleared. No fatal errors reported.]
+[Storage: Purging world data... Done.]
+[Session: Disconnecting... Good night.]
 
