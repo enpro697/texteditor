@@ -6596,7 +6596,7 @@ In a world once devastated by nuclear war, the remaining humanity established an
 
 The land, once locked in ice and now a new land of hope, saw its glaciers melt due to climate change, revealing fertile soil. It became a vital stronghold for human survival, free from radioactive contamination.
 
-だが、気候変動の影響が収まり、最後の希望の地、ユミディアには再び寒冷期が迫っていた。
+だが、気候変動の影響が収まり、最後の希望の地、ユミディアに再び寒冷期が迫っていた。
 
 However, as the effects of climate change subsided, a new cooling period began to loom over Humidia, the last land of hope.
 
