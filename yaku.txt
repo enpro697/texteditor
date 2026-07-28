@@ -7312,6 +7312,5 @@ System Message:
 Process ID: 197904 - Terminated.
 Exception: Unhandled Normalcy (Name_Not_Found)
 Memory: State cleared. No fatal errors reported.
-Storage: Purging world data... Done.
 Session: Disconnecting... Good night.
 
