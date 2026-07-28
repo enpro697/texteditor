@@ -6308,11 +6308,11 @@ Yoshio & Asari: "Don't do that!!"
 
 ---
 
-未来文明が崩壊した後の、遺物(アーティファクト)のみが残る荒廃した世界。地平の先まで続く、霧が立ち込める森の奥深くに朽ち果てた軍事用潜水艦（地形が変わり、船頭以外の殆どが森林と土砂に埋もれている）。中で長く休眠していたヒューマノイドが眼を覚ます。
+未来文明が崩壊した後の、遺物(アーティファクト)のみが残る荒廃した世界。地平の先まで続く、霧が立ち込める樹林の奥深くに朽ち果てた軍事用潜水艦（地形が変わり、船頭以外の殆どが森林と土砂に埋もれている）。中で長く休眠していたヒューマノイドが眼を覚ます。
 
 In a devastated world where only artifacts remain after the collapse of a future civilization, a humanoid wakes from a long slumber deep within a rusted military submarine—half-buried in forest and sediment, its bow the only part still visible—hidden in the depths of a fog-shrouded forest that stretches to the horizon.
 
-世界各地に散らばる遺物から、過去の世界を辿り、かつての使命を探す旅にでる。コードの零から名前が「レイ」であることのみわかる。
+世界各地に散らばる遺物から、過去の世界を辿り、かつての使命を探す旅にでる。コードの零から名前が「レイ」であることのみがわかる。
 
 She embarks on a journey to trace the past and search for her former mission through the relics scattered across the world. From her code "Zero," the only thing she can discern is that her name is "Rei."
 
@@ -6330,15 +6330,15 @@ She can make these small creatures act as if they were her friends, but she is m
 
 She does not know her own nature: she was a humanoid belonging to the public security force of a former authoritarian regime, designed to intervene in human consciousness through weak electrical signals, monitor thoughts, and detect, report, and eliminate dissidents—a machine without emotion that faithfully executed orders.
 
-抵抗勢力の拠点を、協力者の記憶から検知した部隊は、その一つである地下深い駐車場の跡地に警察車両で突入。抵抗勢力を検出、処分。
+抵抗勢力の拠点を、協力者の記憶から検知した部隊は、その一つである地下駐車場の跡地の拠点に警察車両で突入。抵抗勢力を確認、及び処分。
 
-Having detected a base of the resistance from a collaborator's memory, her unit stormed one of their hideouts—the ruins of a deep underground parking lot—in police vehicles. They detected and eliminated the resistance.
+Having detected a base of the resistance from a collaborator's memory, her unit stormed one of their hideouts—the ruins of a deep underground parking lot—in police vehicles. They confirmed and eliminated the resistance.
 
 戦闘中の出来事（記憶領域の部分的な破損のため、具体的な記憶が残っていない）で思考領域のノイズが生まれ、自ら殺めた少女の今際の際に、彼女の頭部に手をかざした。
 
 During the battle (her specific memories are gone due to partial damage to her memory banks), noise was generated in her cognitive domain. At the final moments of a girl she had slain, she placed her hand upon the girl’s head.
 
-今際の際のすべての記憶の瞬間的なフラッシュバックを直に浴びたことで、彼女の仮想記憶領域が変質。彼女の漠然とした生のイメージの記憶が思考領域に焼き付いたことで彼女は、精神的な分裂症状を被り、自我が存在したはずの虚空に芽生えた何かを身体が拒絶する二面性の狭間で異常な神経活動、てんかんに苦しむようになる。
+今際の際のすべての記憶の瞬間的なフラッシュバックを直に浴びたことで、彼女の仮想記憶領域が変質。少女の漠然とした生のイメージの記憶が思考領域に焼き付いたことで彼女は、精神的な分裂症状を被り、自我が存在したはずの虚空に芽生えた何かを身体が拒絶する二面性の狭間で異常な神経活動、拒絶反応に苦しむようになる。
 
 By directly receiving a instantaneous flashback of all the girl’s final memories, her virtual memory domain was altered. The memory of the girl’s vague images of life was burned into her cognitive domain, causing her to suffer from symptoms of mental fragmentation. She began to suffer from abnormal neural activity and epileptic seizures, caught between the duality of a body that rejects something budding in the void where her own ego should have existed.
 
@@ -6346,7 +6346,7 @@ By directly receiving a instantaneous flashback of all the girl’s final memori
 
 As the latest model, she was deemed anomalous by inspection results and reassigned to a military unit.
 
-彼女はヒューマノイドであり、記憶を承継した彼女の自我の残滓そのものでもある。
+彼女はヒューマノイドであり、記憶を承継した少女の自我の残滓そのものでもある。
 
 She is a humanoid, and also the very remnant of her own ego, which inherited those memories.
 
@@ -6444,14 +6444,9 @@ At its adorable behavior, a warmth spread deep within my chest, and my mouth nat
 After fluttering around me for a while, the little bird finally seemed satisfied and alighted perched upon my outstretched finger. I gently stroked the throat of my small friend with my other hand.
 
 
-しかし、その刹那、小鳥の視界が映し出す景色が、私を凍り付かせた。
+しかし、その刹那、小さな瞳が映し出す景色が、私の思考を停止させた。
 
-映し出されていたのは、孤独な「私自身」だった。
-
-However, in that very instant, the scenery reflected in bird's eyes froze me in place.
-
-What was reflected there was the lonely "myself."
-
+However, in that very instant, the scene reflected in those tiny eyes made my mind go completely blank.
 
 濃い霧と錆びた鉄くずのただ中で、自分が操る小さな命を愛おしそうに見つめる私は、どうしようもなく独りだった。
 
@@ -6577,23 +6572,23 @@ To trace the past world and claw back my lost mission and memories, I had no cho
 
 ---
 
-2XXX 年、統制社会の中で子供は遺伝子的に選別され、組み換えにより最適化された血統になるようコントロールされ、人工胎嚢からこの世に生を得る
+2XXX 年、統制社会の中で子供は遺伝子的に選別され、血統は組み換えにより最適化される。彼らは人工胎嚢で育ち、この世に生を得る。
 
 In the year 2XXX, within a controlled society, children are genetically selected and their bloodlines optimized through recombination. They are brought into this world from artificial amniotic sacs.
 
-その中からさらに教育を通した選別の過程を経て、基準を満たした者のみ教育宿舎からの卒業を許される
+彼らは、さらに教育を通した選別の過程を経る。その中で基準を満たした者のみ教育宿舎からの卒業を許される。
 
 From there, through a rigorous process of selection via education, only those who meet the standards are permitted to graduate from the educational dormitories.
 
-システムによって統御された教育要綱を基に無菌的に外界から隔絶された環境で子供は育ち、外界からの思想的汚染は監視システムによって即座に検出、思想的上書き、または汚染領域の洗浄(汚染を伴う箇所をシステムから除去する)で子供たちの無菌的環境を維持する
+システムによって統御された教育要綱をもとで、子供たちは無菌的に外界から隔絶された環境で育ち、外界からの思想的汚染は監視システムによって即座に検出される。子供たちの無菌的環境は、思想的上書き、または汚染領域の洗浄(汚染を伴う箇所をシステムから除去する)によって維持される。
 
 Children are raised in an environment sterilized and isolated from the outside world, based on an educational curriculum governed by the system. Any ideological contamination from the outside is immediately detected by the surveillance system, followed by ideological overwriting or "cleansing" of the contaminated areas (removing the tainted elements from the system) to maintain the children’s sterile environment.
 
-この果ての地の名はユミディア(Humidia 潤いのある日常)
+この果ての地の名はユミディア。(Humidia 潤いのある日常)
 
 The name of this land at the edge of the world is Humidia (a life of moisture and comfort).
 
-核戦争によりかつて荒廃した世界で、残された人類は、数少ない土地と資源を共有管理する結社を立ち上げ、社会回復に必要になるライフラインへの労働力の充当、適正な選別、再配置を行った。
+核戦争によりかつて荒廃した世界で、残された人類は、数少ない土地と資源を共有管理する結社を立ち上げ、社会回復に必要になるライフラインへの労働力の充当、選別、再配置を行った。
 
 In a world once devastated by nuclear war, the remaining humanity established an association to collectively manage the few remaining lands and resources. They allocated labor to the lifelines necessary for social recovery, conducted proper selection, and oversaw redistribution.
 
@@ -6601,31 +6596,27 @@ In a world once devastated by nuclear war, the remaining humanity established an
 
 The land, once locked in ice and now a new land of hope, saw its glaciers melt due to climate change, revealing fertile soil. It became a vital stronghold for human survival, free from radioactive contamination.
 
-しかし、気候変動の影響が収まり、最後の希望の地、ユミディアには再び寒冷期が迫っていた
+だが、気候変動の影響が収まり、最後の希望の地、ユミディアには再び寒冷期が迫っていた。
 
 However, as the effects of climate change subsided, a new cooling period began to loom over Humidia, the last land of hope.
 
 ---
 
-評議会は次世代の労働力の選別、確保を自動管理システムに委譲する決議を下す
+ユミディアの評議会は次世代の労働力の選別、確保を自動管理システムに委譲する決議を下す。
 
-The Council passed a resolution to delegate the selection and procurement of the next generation of labor to an automated management system.
+The Council of Humidia passed a resolution to delegate the selection and procurement of the next generation of labor to an automated management system.
 
-自動管理システム(Mother I)は次世代の労働力に必要となるのは**集団としての個**の意識であり、**彼我**という自意識が私欲を生み、社会を利権の奪い合いへと堕落させ、旧文明を崩壊へと導いた決定因子であると理解していた
+自動管理システム(Mother I)は次世代の労働力に必要となるのは**集団としての個**の自己自認であり、**彼我**という汚染は私欲を生み、社会を利権の奪い合いへと堕落させ、旧文明を崩壊へと導いた決定因子であると結論付けた。
 
-The automated management system (Mother I) understood that what the next generation of labor needed was an awareness of "the self as a collective." It recognized that the self-consciousness of "us versus them" created selfish desires, led society into a downward spiral of fighting over interests, and was the decisive factor that caused the collapse of the old civilization.
+The automated management system (Mother I) concluded that what the next generation of labor needed was an awareness of "the self as a collective." It recognized that the self-consciousness of "us versus them" created selfish desires, led society into a downward spiral of fighting over interests, and was the decisive factor that caused the collapse of the old civilization.
 
-子どもたちは教育を経て、外界開拓、または内部統制を担う人材となり、基準を満たさない非適格者は特別プログラムによって再教育されるといわれていた
+子どもたちは教育を経て、外界開拓、または内部統制を担う人材となり、基準を満たさない非適格者は特別プログラムによって再教育されるといわれていた。
 
 It was said that through education, children would become personnel tasked with either frontier development or internal control, and that those deemed unfit would be re-educated through a special program.
 
-もっともそこにいった生徒で再び目撃された者はいない
+もっとも、再教育を受けた生徒で再び目撃された者は一人もいない。
 
 However, no student who was sent there has ever been seen again.
-
-工業生産のラインも労働者が担う モニタリング、管理は自動管理システムが行い、物理的干渉、執行は意思を植え付けられている人間が統括している
-
-Industrial production lines are also managed by laborers. The monitoring and administration are handled by the automated management system, while physical intervention and enforcement are overseen by humans who have had their wills implanted.
 
 ---
 
@@ -6633,33 +6624,33 @@ Industrial production lines are also managed by laborers. The monitoring and adm
 
 Several hundred years pass.
 
-自動管理システム(Mother I)は養育、教育を企図して設計されたメカニズムだった
+自動管理システム(Mother I)は養育、教育を企図して設計されたメカニズムだった。
 
 The automated management system (Mother I) was a mechanism originally designed for the purpose of nurturing and education.
 
-かつて人民をこの地に導いた英雄たちを思考設計モデルに取り込んだといわれるこの生産管理システムは数百年の間、幾多とない記憶の移植を経て、記憶と人格が徐々に蝕まれていった
+かつて人民をこの地に導いた英雄たちを思考設計モデルに取り込んだといわれるこの生産管理システムは数百年の間、幾多とない記憶の移植を経て、記憶と人格が徐々に蝕まれていった。
 
 Said to have incorporated the heroes who once led the people to this land into its cognitive design model, this production management system underwent countless memory transplants over the centuries, causing its memory and personality to gradually erode.
 
-純粋であることが基準であり、精神的汚染をきたしたとみなされた者は皆いなくなり、残るのは選別を経た優れた(従順な)個体の末裔の子供たちだけであり、彼ら彼女らもまた、行方の知れない大人たちとやがては同じ運命を辿る定めにあった
+純粋さを品質基準とみなす統制のもと、精神的汚染をきたしたとみなされた者は皆いなくなった。残されたのは、選別を経た優れた(従順な)個体の末裔の子供たちだけであり、彼ら彼女らもまた、行方の知れない大人たちとやがては同じ運命を辿る定めにあった。
 
 "Purity" was the standard; those deemed to have suffered "mental contamination" all vanished. The only ones left were the children—the descendants of the superior (obedient) individuals who had passed the selection process—and they, too, were destined to meet the same fate as the adults who had disappeared.
 
 ---
 
-生産システムを司る知能は狂い、市街の中心部は工業製の排気煙に覆われ、市外には大量生産された同一規格の製品が投棄され、廃棄物の掃きだめとなっていた
+生産システムを司る知能は狂い、市街の中心部は工業製の排気煙に覆われ、市外には大量生産された同一規格の製品が投棄され、廃棄物の掃きだめとなっていた。
 
 The intelligence governing the production system went insane. The center of the city became covered in industrial exhaust fumes, and outside the city, mass-produced, identical products were dumped, creating a wasteland of waste.
 
-経済計画が破綻している原因をシステムは外的要因による妨害工作の為とみなしたことで、非常事態宣言が長きにわたって繰り返され、監視と統制で壁の内部は(大人になる前に統制されていくため、子供と若年層しかいない)は疲弊し、退廃していた
+経済計画が破綻している原因を、システムは外的要因による妨害工作の為とみなした。長きにわたって、非常事態宣言が繰り返され、監視と統制で壁の内部は(大人になる前に統制されていくため、子供と若年層しかいない)は疲弊し、退廃していた。
 
 Attributing the failure of economic plans to sabotage by external factors, the system repeatedly issued states of emergency over a long period. Within the walls, life was exhausted and decadent, filled with surveillance and control (as the population consisted only of children and youths, who were controlled before they could ever reach adulthood).
 
-住人(教育を受けているこども)は思想教育と選別を経た個体の末裔であり、命令に従順で意思が希薄であり、過酷な命令の結果、無益な生産に従事させられ、過酷な現場で命を落とすが、それでも労働力であり続ける
+住人(教育を受けているこども)は思想教育と選別を経た個体の末裔であり、命令に従順で意思が希薄であり、過酷な命令の結果、無益な生産に従事させられ、過酷な現場で命を落とすが、それでも労働力であり続けた。
 
 The residents (the children undergoing education) were descendants of individuals who had undergone ideological education and selection. They were obedient to orders and lacked strong wills. As a result of harsh commands, they were forced to engage in pointless production and lost their lives in brutal environments, yet they remained a labor force nonetheless.
 
-自我が芽生え、おそらく覚醒している二人。しかし周囲の世界が異常で満ちていることについては無垢のままだった。ディストピア的な世界観で二人が身を寄り添うように生きていく話
+自我が芽生え、おそらく覚醒している二人。しかし周囲の世界が異常で満ちていることについては無垢のままだった。ディストピア的な世界観で二人が身を寄り添うように生きていく話。
 
 Two individuals, who have developed a sense of self and are perhaps awakening. Yet, they remain innocent regarding the fact that the world around them is filled with abnormalities. It is a story of these two living as they huddle close to one another in this dystopian world.
 
