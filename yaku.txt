@@ -5694,9 +5694,9 @@ Yoshio & Asari: "Don't do that!!"
 
 ---
 
-未来文明が崩壊した後の、遺物(アーティファクト)のみが残る荒廃した世界。地平の先まで続く、霧が立ち込める樹林の奥深くに朽ち果てた軍事用潜水艦（地形が変わり、船頭以外の殆どが森林と土砂に埋もれている）。中で長く休眠していたヒューマノイドが眼を覚ます。
+未来文明が崩壊した後の、遺物(アーティファクト)のみが残る荒廃した世界。地平の先まで続く、霧が立ち込める樹林の奥深くに埋もれた軍事用潜水艦が艦首のみを木々と土砂からのぞかせて、朽ち果てていた。中で長く休眠していたヒューマノイドが眼を覚ます。
 
-In a devastated world where only artifacts remain after the collapse of a future civilization, a humanoid wakes from a long slumber deep within a rusted military submarine—half-buried in forest and sediment, its bow the only part still visible—hidden in the depths of a fog-shrouded forest that stretches to the horizon.
+A desolate world where only artifacts remain after the collapse of a future civilization. Deep within a fog-shrouded forest extending to the horizon, a decaying military submarine lies buried, its bow alone peeking out from the trees and earth. Inside, a humanoid, dormant for a long time, opens its eyes.
 
 世界各地に散らばる遺物から、過去の世界を辿り、かつての使命を探す旅にでる。コードの零から名前が「レイ」であることのみがわかる。
 
