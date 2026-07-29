@@ -5694,7 +5694,7 @@ Yoshio & Asari: "Don't do that!!"
 
 ---
 
-未来文明が崩壊した後の、遺物(アーティファクト)のみが残る荒廃した世界。地平の先まで続く、霧が立ち込める樹林の奥深くに埋もれた軍事用潜水艦が艦首のみを木々と土砂からのぞかせて、朽ち果てていた。中で長く休眠していたヒューマノイドが眼を覚ます。
+未来文明が崩壊した後の、遺物(アーティファクト)のみが残る荒廃した世界。地平の先まで続く、霧が立ち込める樹林の奥深く、朽ち果てた軍事用潜水艦が、艦首のみを土砂と木々の隙間から覗かせ、埋もれている。中で長く休眠していたヒューマノイドが眼を覚ます。
 
 A desolate world where only artifacts remain after the collapse of a future civilization. Deep within a fog-shrouded forest extending to the horizon, a decaying military submarine lies buried, its bow alone peeking out from the trees and earth. Inside, a humanoid, dormant for a long time, opens its eyes.
 
