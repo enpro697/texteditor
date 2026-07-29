@@ -5694,15 +5694,15 @@ Yoshio & Asari: "Don't do that!!"
 
 ---
 
-未来文明が崩壊した後の、遺物(アーティファクト)のみが残る荒廃した世界。地平の先まで続く、霧が立ち込める樹林の奥深く、朽ち果てた軍事用潜水艦が、艦首のみを土砂と木々の隙間から覗かせ、埋もれている。中で長く休眠していたヒューマノイドが眼を覚ます。
+未来文明が崩壊した後の、遺物(アーティファクト)のみが残る荒廃した世界。地平の先まで続く、霧が立ち込める樹林の奥深く、かつての軍事用潜水艦を思わせる鋼鉄の塊が、朽ち果てた樹木と土砂に埋もれている。艦内で、途方もない長い時間、休眠状態にあったヒューマノイドが、永い眠りから目を覚ます。
 
-A desolate world where only artifacts remain after the collapse of a future civilization. Deep within a fog-shrouded forest extending to the horizon, a decaying military submarine lies buried, its bow alone peeking out from the trees and earth. Inside, a humanoid, dormant for a long time, opens its eyes.
+A desolate world where civilization has collapsed, leaving behind only artifacts. Deep within a fog-shrouded forest that stretches beyond the horizon, a mass of steel reminiscent of a former military submarine lies half-buried in decaying trees and earth. Inside the vessel, a humanoid—dormant for an unfathomably long time—awakens from its eternal slumber.
 
 世界各地に散らばる遺物から、過去の世界を辿り、かつての使命を探す旅にでる。コードの零から名前が「レイ」であることのみがわかる。
 
 She embarks on a journey to trace the past and search for her former mission through the relics scattered across the world. From her code "Zero," the only thing she can discern is that her name is "Rei."
 
-ヒューマノイドはわずかな電流を放射することで、小動物の頭脳に干渉して、ノイズ交じりだが、視覚や記憶を辿り、また操作することができる。
+ヒューマノイドはわずかな電流を放射することで、小動物の頭脳に干渉、ノイズ交じりの視覚や記憶を辿り、またターゲットを操作することができる。
 
 By emitting faint electrical currents, the humanoid can interfere with the brains of small animals. Though distorted by noise, she can trace their vision and memories, and even manipulate them.
 
@@ -5712,23 +5712,23 @@ She can make these small creatures act as if they were her friends, but she is m
 
 ---
 
-彼女は知らない。彼女の本質は微弱な電力を通して人の意識に介入、思想をモニタリングして不穏分子を検出、報告、処分する旧独裁政権の公安部隊所属のヒューマノイドであり、命令を忠実に執行する感情なき機械であった。
+彼女は知らない。彼女の本質は微弱な電力を通して人の深層意識に干渉、思想のモニタリングで不穏分子の検出、報告、処分を担当する旧独裁政権の公安部隊所属のヒューマノイドであり、命令を忠実に執行する感情なき機械であった。
 
 She does not know her own nature: she was a humanoid belonging to the public security force of a former authoritarian regime, designed to intervene in human consciousness through weak electrical signals, monitor thoughts, and detect, report, and eliminate dissidents—a machine without emotion that faithfully executed orders.
 
-抵抗勢力の拠点を、協力者の記憶から検知した部隊は、その一つである地下駐車場の跡地に隠された拠点に警察車両で突入。抵抗勢力を確認、処分。
+抵抗勢力の拠点を、協力者の記憶から検出した部隊は、その一つである地下駐車場の跡地の拠点に突入、抵抗勢力を確認、処分する。
 
-Having detected a base of the resistance from a collaborator's memory, her unit stormed one of their hideouts—the ruins of a deep underground parking lot—in police vehicles. They confirmed and eliminated the resistance.
+Detecting the location of the resistance base from a collaborator's memories, the unit storms their hideout—situated in the ruins of an underground parking garage—confirms the presence of the resistance fighters, and neutralizes them.
 
-戦闘中の出来事（記憶領域の部分的な破損のため、具体的な記憶が残っていない）で思考領域のノイズが生まれ、自ら殺めた少女の今際の際に、彼女の頭部に手をかざした。
+戦闘中の出来事（記憶領域の部分的な破損のため、具体的な記憶が残っていない）で思考領域のノイズが生まれ、自ら殺めた少女の今際の際に、彼女の額に手をかざした。
 
-During the battle (her specific memories are gone due to partial damage to her memory banks), noise was generated in her cognitive domain. At the final moments of a girl she had slain, she placed her hand upon the girl’s head.
+During the battle (her specific memories are gone due to partial damage to her memory banks), noise was generated in her cognitive domain. At the final moments of a girl she had slain, she placed her hand upon the girl’s forehead.
 
 今際の際のすべての記憶の瞬間的なフラッシュバックを直に浴びたことで、彼女の仮想記憶領域が変質。少女の漠然とした生のイメージの記憶が思考領域に焼き付いたことで彼女は、精神的な分裂症状を被り、自我が存在したはずの虚空に芽生えた何かを身体が拒絶する二面性の狭間で異常な神経活動、拒絶反応に苦しむようになる。
 
 By directly receiving a instantaneous flashback of all the girl’s final memories, her virtual memory domain was altered. The memory of the girl’s vague images of life was burned into her cognitive domain, causing her to suffer from symptoms of mental fragmentation. She began to suffer from abnormal neural activity and epileptic seizures, caught between the duality of a body that rejects something budding in the void where her own ego should have existed.
 
-最新型のヒューマノイドであった彼女は、検査結果で異常ありと認められ、軍事部隊に転用される。
+最新型のヒューマノイドであった彼女は、検査結果で異常を認められ、軍事部隊に転用される。
 
 As the latest model, she was deemed anomalous by inspection results and reassigned to a military unit.
 
