@@ -6684,7 +6684,7 @@ Even so, it was clearly conveyed from the waveform of the data stream that he ha
 "Looks like our everyday life is finally over, huh."
 
 ジャイアンの右手がゆっくりと上がった。
-そして、かつて誰かを殴りつけるためにしか使われなかった大きな拳が、スクリーンの向こう側に向けて、ごく普通な、優しい「手を振る」モーションを実行した。
+そして、かつて誰かを殴りつけるためにしか使われなかった大きな拳が、スクリーンの向こう側へ、ごく普通な、優しい「手を振る」モーションを実行した。
 
 Gian's right hand slowly rose.
 Then, that large fist which had once only ever been used to strike someone executed an ordinary, gentle motion of "waving goodbye" toward the other side of the screen.
@@ -7069,11 +7069,16 @@ Her pure "love for magic" had been completely warped by a grueling, performance-
 "Listen to the voices of the spirits? Touch the providence of the universe? ...Such poetry (qualitative data) is completely useless! To convince the reviewers, I need reproducible quantitative data!"
 With bloodshot eyes, Schierke gripped her quill and frantically scribbled mathematical and magical formulas onto the parchment. What she was currently trying to prove was the following equation, which denoted the total magical energy extracted from the spirits:
 
-$$E_{total} = \int_{0}^{t} \left( \alpha \cdot \nabla \times \mathbf{M} - \beta \frac{\partial \mathbf{S}}{\partial t} \right) dt$$
+U = ∫_0^t (α · ∇ × M - β (∂S/∂t)) dt
 
 
-（※ $\mathbf{M}$ は魔力場、$\mathbf{S}$ は精霊の霊的疲労度、$\alpha, \beta$ は触媒による係数）
-(* $\mathbf{M}$ is the magical field, $\mathbf{S}$ is the spiritual fatigue of the spirit, and $\alpha, \beta$ are catalyst coefficients.)
+(※ Mは魔力場、Sは精霊の霊的疲労度、α, βは触媒による係数)
+
+
+U = ∫_0^t (α · ∇ × M - β (∂S/∂t)) dt
+
+(Where M is the magic field, S is the spiritual fatigue, and alpha, beta are catalytic coefficients)
+
 
 ---
 
