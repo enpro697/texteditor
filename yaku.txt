@@ -6889,9 +6889,7 @@ My Melody: "Did everyone understand? 'Yurufuwa' isn't a magic word for running a
 ---
 
 
-ご指定の通り、文章のキリが良い単位（セリフや段落ごと）で日本語と英語が交互に読めるように翻訳・調整しました。
 
----
 
 【妖精島・研究の森の怪談】〜魔道と搾取のネスト〜
 暗く湿った大樹の根元。青白く光る妖精の鱗粉だけが、僅かな光源だった。
@@ -7138,16 +7136,15 @@ Morda forced Schierke onto her own broom—which was covered in patches of duct 
 
 ### モルダの「モルダの研究の森の天蓋を抜けた先にある空」
 
-「しっかり掴まってな、新入り！ 舌噛んでも知らないよ！」
+「しっかり柄握ってな、新入り！ 舌噛んでも知らないよ！」
 モルダの操縦は、破天荒そのものだった。
 安全基準（コンプライアンス）も、飛行許可証（倫理審査）も完全無視。鬱蒼と生い茂る「研究の森」の巨大な樹々――積み上げられた過去の文献や、大導師たちの古臭い権威主義の象徴――の枝葉をすり抜け、乱暴な軌道で上へ上へと急上昇していく。
 
 ### Morda's "The Sky Beyond the Canopy of Morda's Forest of Research"
 
-"Hold on tight, newbie! I'm not responsible if you bite your tongue!"
+"Hold onto the handle tight, newbie! I'm not responsible if you bite your tongue!"
 Morda's steering was wild and reckless.
 Completely ignoring safety standards (compliance) and flight permits (ethical reviews), she weaved through the branches and leaves of the overgrown, giant trees of the "Forest of Research"—symbols of piled-up past literature and the outdated authoritarianism of the Grand Mages—shooting upward on a violent trajectory.
-
 ---
 
 「あっはははは！ 見なよシールケ、あのお偉いさんたちの間抜けな顔！」
@@ -7182,14 +7179,14 @@ But she didn't give a damn about any of that. Under this vast sky, she could liv
 
 ### シールケの「シールケの研究の森の天蓋を抜けた先にある空」
 
+Schierke's "The Sky Beyond the Canopy of Schierke's Forest of Research"
+
 「ひぃぃぃっ！ モ、モルダさん、落下時の衝撃係数と生存確率が……ッ！ ああっ、眩し……っ！？」
-乱気流に振り落とされまいと、モルダの腰に必死にしがみついていたシールケ。しかし、天蓋を抜けた瞬間、彼女を包み込んだのは、網膜を焼くような陽光と、頬を撫でる優しくも力強い風だった。
+後ろに乗るモルダに両脇をガッチリとホールドされ、箒の先端で風圧の盾にされていたシールケは、あまりの高度とスピードに目を固く閉じた。しかし、天蓋を抜けた瞬間、彼女を包み込んだのは、網膜を焼くような陽光と、頬を撫でる優しくも力強い風だった。
 
-### Schierke's "The Sky Beyond the Canopy of Schierke's Forest of Research"
 
-"Hieeeek! M-Morda, the impact coefficient upon falling and our survival probability are...! Ahh, it's so bright...!?"
-Desperately clinging to Morda's waist to avoid being thrown off by the turbulence, Schierke was suddenly enveloped by retina-burning sunlight and a gentle yet powerful wind brushing her cheeks the moment they broke through the canopy.
-
+"Eeeeek! M-Morda, the impact coefficient and survival probability upon falling are...! Aah, it's too bright...!?"
+Firmly held under both arms by Morda from behind and acting as a wind shield at the front of the broom, Schierke squeezed her eyes shut at the sheer altitude and speed. However, the moment they pierced the canopy, what enveloped her was sunlight that seemed to burn her retinas, and a gentle yet powerful wind brushing her cheeks.
 ---
 
 「これは……風の精霊（シルフ）たちの息吹……？ 太陽の、圧倒的な魔力（マナ）の奔流……！」
@@ -7216,21 +7213,21 @@ Large teardrops spilled out of Schierke's big eyes. They weren't tears of despai
 
 ---
 
-モルダは肩越しに振り返り、鼻で笑った。だが、その顔はどこか優しかった。
+後ろから身を乗り出し、肩越しにシールケの泣き顔を覗き込んだモルダは、呆れたように鼻で笑う。だが、その顔はどこか優しかった。
 「なんだよ、計算式（ポエム）の次は感動の涙か？ ほんっと、世話の焼ける新入りだね。……でも、ま、そういう顔のほうがマシだよ。徹夜明けのゾンビ顔よりはな」
 モルダは箒の柄をトントンと叩き、少しだけスピードを落とした。
 
-Morda glanced back over her shoulder and snorted. However, her expression was somewhat gentle.
+Leaning forward from behind and peering at Schierke's tearful face over her shoulder, Morda snorted in exasperation. But her expression was somehow gentle.
 "What's this, tears of emotion after your math equations (poetry)? You're a seriously high-maintenance newbie. ...But well, that face is better. Better than your post-all-nighter zombie face, anyway."
-Morda tapped the broom handle and slowed down just a little.
+Morda tapped the broom handle reaching past Schierke, and slowed down just a little.
 
 ---
 
-「ほら、ガチガチにしがみついてないで、少し力を抜いてみな。風の精霊（シルフ）は計算で縛り付けるもんじゃない。同調して、身を委ねるんだよ。重心を少し前に倒して……そう、魔力の流れを『頭』じゃなくて『肌』で感じるんだ」
-シールケは恐る恐るモルダの腰から手を離し、両手でしっかりと箒の柄を握り直した。
+「ほら、いつまでもしがみついてないで、少し力を抜いてみな。風の精霊（シルフ）は計算で縛り付けるもんじゃない。同調して、身を委ねるんだよ。重心を少し前に倒して……そう、魔力の流れを『頭』じゃなくて『肌』で感じるんだ」
+シールケは恐る恐るモルダの腕から手を離し、両手でしっかりと箒の柄を握り直した。
 
-"Here, stop clinging so stiffly and try to relax a bit. Wind spirits (Sylphs) aren't something you bind with calculations. You synchronize with them and surrender yourself. Lean your center of gravity slightly forward... Right, feel the flow of mana with your 'skin', not your 'head'."
-Timidly, Schierke let go of Morda's waist and firmly gripped the broom handle with both hands.
+"Here, stop clinging to me and try to relax a little. Wind spirits (Sylphs) aren't something you bind with calculations. You synchronize with them and surrender yourself. Lean your center of gravity forward a bit... yeah, feel the flow of mana with your 'skin', not your 'head'."
+Schierke timidly let go of Morda's arms, and gripped the broom handle firmly with both hands.
 
 ---
 
@@ -7304,9 +7301,10 @@ The small comet carrying the two witches completely left behind the thick canopy
 
 ---
 
-限界研究員たちの明日はどっちだ。
+業績（クレジット）もポジションも手放した限界研究員たち。だが、彼女たちの目の前に広がる空は、どこまでも青く澄み切っていた。
 社会の風は冷たいかもしれないが、きっと魔法が――いや、彼女たち自身が取り戻した「純粋に魔法を楽しむ心」が、どうにかしてくれるだろう。🪄✨
 
-Which way does tomorrow lie for these pushed-to-the-limit researchers?
-The winds of society might be cold, but surely magic—no, the "pure heart that enjoys magic" which they reclaimed for themselves—will work things out somehow. 🪄✨
+[English Translation]
 
+Pushed-to-the-limit reserchers who let go of their achievements (credits) and positions. But the sky spreading before them was boundlessly blue and clear.
+The winds of society might be cold, but surely magic—no, the "pure heart that enjoys magic" which they reclaimed for themselves—will work things out somehow. 🪄✨
