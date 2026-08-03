@@ -476,7 +476,7 @@
       .math-modal-body {
         padding: 30px;
         overflow-y: auto;
-        font-size: 1.5rem; /* 数式を大きく表示 */
+        font-size: 1.5rem;
         text-align: center;
         line-height: 1.8;
       }
@@ -523,7 +523,7 @@
         <!-- 下部パネルの数式プレビュー -->
         <button id="btn-math-preview" class="btn-theme">🧮 数式</button>
 
-        <!-- ★追加：選択範囲だけをポップアップで数式化するボタン -->
+        <!-- 選択範囲だけをポップアップで数式化するボタン -->
         <button id="btn-math-popup" class="btn-theme" style="color: var(--wrap-color); border-color: var(--wrap-color);">🪟 選択数式化</button>
 
         <button id="btn-wheel-mode" class="btn-theme">🖲️ ホイール設定</button>
@@ -585,7 +585,7 @@
       <div class="popup-footer-text">ホイール操作：範囲選択モード切替</div>
     </div>
 
-    <!-- ★追加：選択数式プレビュー用のポップアップモーダル -->
+    <!-- 選択数式プレビュー用のポップアップモーダル -->
     <div id="math-modal-overlay" class="math-modal-overlay">
       <div class="math-modal-content">
         <div class="math-modal-header">
@@ -635,7 +635,7 @@
       const btnMathPreview = document.getElementById("btn-math-preview");
       const mathPreview = document.getElementById("math-preview");
 
-      // ★追加：選択範囲ポップアップ用の要素取得
+      // 選択範囲ポップアップ用の要素取得
       const btnMathPopup = document.getElementById("btn-math-popup");
       const fsBtnMathPopup = document.getElementById("fs-btn-math-popup");
       const mathModalOverlay = document.getElementById("math-modal-overlay");
@@ -650,7 +650,7 @@
       let historyStack = [];
       let historyIndex = -1;
 
-      // --- ★追加：選択範囲の数式ポップアップ表示処理 ---
+      // --- 選択範囲の数式ポップアップ表示処理 ---
       function showMathPopup() {
         const start = textarea.selectionStart;
         const end = textarea.selectionEnd;
@@ -662,18 +662,17 @@
 
         let selectedText = textarea.value.substring(start, end);
 
-        // もし選択範囲に KaTeX の区切り文字 ($$, \(, \[) が含まれていない場合は、
-        // ユーザーが記号を囲み忘れたとみなして自動的に $$ で挟んであげる（親切設計）
+        // プレビュー表示を作る直前だけ `( $$ ... $$ )` のような「数式を囲む括弧」を消去する
+        selectedText = selectedText.replace(/\(\s*(\$\$[\s\S]*?\$\$)\s*\)/g, '$1');
+
         if (!selectedText.includes("$") && !selectedText.includes("\\[") && !selectedText.includes("\\(")) {
           selectedText = "$$\n" + selectedText + "\n$$";
         }
 
-        // 改行を処理しつつHTMLへ挿入
         const tempDiv = document.createElement("div");
         tempDiv.textContent = selectedText;
         mathModalBody.innerHTML = tempDiv.innerHTML.replace(/\n/g, '<br>');
 
-        // KaTeXでレンダリング
         if (typeof renderMathInElement !== "undefined") {
           renderMathInElement(mathModalBody, {
             delimiters: [
@@ -686,25 +685,20 @@
           });
         }
 
-        // モーダルを表示
         mathModalOverlay.style.display = "flex";
       }
 
       btnMathPopup.addEventListener("click", showMathPopup);
       fsBtnMathPopup.addEventListener("click", showMathPopup);
 
-      // ポップアップを閉じる処理
       btnCloseMathModal.addEventListener("click", () => {
         mathModalOverlay.style.display = "none";
       });
       mathModalOverlay.addEventListener("click", (e) => {
-        // 背景の暗い部分をクリックした時も閉じる
         if (e.target === mathModalOverlay) {
           mathModalOverlay.style.display = "none";
         }
       });
-      // ---------------------------------------------
-
 
       // --- 下部パネルの数式プレビュー機能 ---
       btnMathPreview.addEventListener("click", () => {
@@ -721,8 +715,13 @@
       function updateMathPreview() {
         if (mathPreview.style.display === "none") return;
         
+        let previewText = textarea.value;
+        
+        // ★ プレビュー表示時のみ、( $$ ... $$ ) を囲む不要な括弧を除去する
+        previewText = previewText.replace(/\(\s*(\$\$[\s\S]*?\$\$)\s*\)/g, '$1');
+
         const tempDiv = document.createElement("div");
-        tempDiv.textContent = textarea.value;
+        tempDiv.textContent = previewText;
         const safeHtml = tempDiv.innerHTML.replace(/\n/g, '<br>');
         
         mathPreview.innerHTML = safeHtml;
@@ -737,6 +736,16 @@
             ],
             throwOnError: false
           });
+        }
+        
+        // ★ カーソル位置に合わせてプレビューパネルを自動スクロールさせる
+        if (textarea.value.length > 0) {
+          // カーソルが全体の何%の位置にあるかを計算
+          const ratio = textarea.selectionStart / textarea.value.length;
+          // スクロール可能な最大量を取得
+          const maxScroll = mathPreview.scrollHeight - mathPreview.clientHeight;
+          // 計算した割合分だけスクロールさせる
+          mathPreview.scrollTop = maxScroll * ratio;
         }
       }
 
