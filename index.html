@@ -436,36 +436,28 @@
         background-color: var(--panel-bg);
       }
 
-      /* --- 選択数式プレビュー用ポップアップ（モーダル） --- */
-      .math-modal-overlay {
+      /* --- 選択数式プレビュー用のフローティングウィンドウ --- */
+      .math-popup-window {
         display: none;
         position: fixed;
-        top: 0; left: 0;
-        width: 100vw; height: 100dvh;
-        background-color: rgba(0, 0, 0, 0.6);
-        z-index: 30000;
-        justify-content: center;
-        align-items: center;
-        backdrop-filter: blur(2px);
-      }
-      .math-modal-content {
+        top: 15vh;
+        left: 5vw;
         background-color: var(--panel-bg);
         color: var(--text-color);
         border: 1px solid var(--border-color);
         border-radius: 12px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         width: 90vw;
         max-width: 800px;
         max-height: 80vh;
-        display: flex;
         flex-direction: column;
         overflow: hidden;
+        z-index: 30000;
       }
       .math-modal-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 12px 20px;
         background-color: rgba(0, 0, 0, 0.05);
         border-bottom: 1px solid var(--border-color);
         font-weight: bold;
@@ -585,16 +577,15 @@
       <div class="popup-footer-text">ホイール操作：範囲選択モード切替</div>
     </div>
 
-    <!-- 選択数式プレビュー用のポップアップモーダル -->
-    <div id="math-modal-overlay" class="math-modal-overlay">
-      <div class="math-modal-content">
-        <div class="math-modal-header">
-          <span>🪟 選択範囲の数式プレビュー</span>
-          <button id="btn-close-math-modal" class="btn-danger" style="padding: 4px 10px;">✖</button>
-        </div>
-        <div id="math-modal-body" class="math-modal-body">
-          <!-- ここに選択した数式が表示されます -->
-        </div>
+    <!-- 選択数式プレビュー用のフローティングウィンドウ -->
+    <div id="math-popup-window" class="math-popup-window">
+      <div class="math-modal-header">
+        <div class="popup-drag-handle" id="math-drag-handle" title="ドラッグして移動">⠿</div>
+        <span style="flex-grow: 1; text-align: center; margin-right: 16px;">🪟 選択範囲の数式プレビュー</span>
+        <button id="btn-close-math-modal" class="btn-danger" style="padding: 4px 10px; margin-right: 12px;">✖</button>
+      </div>
+      <div id="math-modal-body" class="math-modal-body">
+        <!-- ここに選択した数式が表示されます -->
       </div>
     </div>
 
@@ -638,9 +629,10 @@
       // 選択範囲ポップアップ用の要素取得
       const btnMathPopup = document.getElementById("btn-math-popup");
       const fsBtnMathPopup = document.getElementById("fs-btn-math-popup");
-      const mathModalOverlay = document.getElementById("math-modal-overlay");
+      const mathPopupWindow = document.getElementById("math-popup-window");
       const btnCloseMathModal = document.getElementById("btn-close-math-modal");
       const mathModalBody = document.getElementById("math-modal-body");
+      const mathDragHandle = document.getElementById("math-drag-handle");
 
       let isScrollLocked = false;
       let isEditLocked = true;
@@ -685,19 +677,14 @@
           });
         }
 
-        mathModalOverlay.style.display = "flex";
+        mathPopupWindow.style.display = "flex";
       }
 
       btnMathPopup.addEventListener("click", showMathPopup);
       fsBtnMathPopup.addEventListener("click", showMathPopup);
 
       btnCloseMathModal.addEventListener("click", () => {
-        mathModalOverlay.style.display = "none";
-      });
-      mathModalOverlay.addEventListener("click", (e) => {
-        if (e.target === mathModalOverlay) {
-          mathModalOverlay.style.display = "none";
-        }
+        mathPopupWindow.style.display = "none";
       });
 
       // --- 下部パネルの数式プレビュー機能 ---
@@ -717,7 +704,7 @@
         
         let previewText = textarea.value;
         
-        // ★ プレビュー表示時のみ、( $$ ... $$ ) を囲む不要な括弧を除去する
+        // プレビュー表示時のみ、( $$ ... $$ ) を囲む不要な括弧を除去する
         previewText = previewText.replace(/\(\s*(\$\$[\s\S]*?\$\$)\s*\)/g, '$1');
 
         const tempDiv = document.createElement("div");
@@ -738,13 +725,10 @@
           });
         }
         
-        // ★ カーソル位置に合わせてプレビューパネルを自動スクロールさせる
+        // カーソル位置に合わせてプレビューパネルを自動スクロールさせる
         if (textarea.value.length > 0) {
-          // カーソルが全体の何%の位置にあるかを計算
           const ratio = textarea.selectionStart / textarea.value.length;
-          // スクロール可能な最大量を取得
           const maxScroll = mathPreview.scrollHeight - mathPreview.clientHeight;
-          // 計算した割合分だけスクロールさせる
           mathPreview.scrollTop = maxScroll * ratio;
         }
       }
@@ -885,11 +869,13 @@
         dragHandleElem.addEventListener("pointercancel", stopDrag);
       }
 
+      // 既存のドラッグ設定に加えて、数式ポップアップもドラッグ可能にする
       makeDraggable(
         document.getElementById("fs-drag-handle"),
         document.getElementById("fs-floating-bar")
       );
       makeDraggable(document.getElementById("popup-drag-handle"), wheelPopup);
+      makeDraggable(mathDragHandle, mathPopupWindow);
 
       function scrollToSelection(alignTopThird = false) {
         const start = textarea.selectionStart;
