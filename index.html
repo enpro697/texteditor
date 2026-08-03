@@ -417,7 +417,6 @@
         margin-bottom: 8px;
       }
 
-      /* --- 新しいグリッドレイアウト用 --- */
       .popup-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -435,6 +434,51 @@
         text-align: center;
         white-space: nowrap;
         background-color: var(--panel-bg);
+      }
+
+      /* --- 選択数式プレビュー用ポップアップ（モーダル） --- */
+      .math-modal-overlay {
+        display: none;
+        position: fixed;
+        top: 0; left: 0;
+        width: 100vw; height: 100dvh;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 30000;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(2px);
+      }
+      .math-modal-content {
+        background-color: var(--panel-bg);
+        color: var(--text-color);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        width: 90vw;
+        max-width: 800px;
+        max-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      }
+      .math-modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 20px;
+        background-color: rgba(0, 0, 0, 0.05);
+        border-bottom: 1px solid var(--border-color);
+        font-weight: bold;
+      }
+      body.dark-mode .math-modal-header {
+        background-color: rgba(255, 255, 255, 0.05);
+      }
+      .math-modal-body {
+        padding: 30px;
+        overflow-y: auto;
+        font-size: 1.5rem; /* 数式を大きく表示 */
+        text-align: center;
+        line-height: 1.8;
       }
     </style>
   </head>
@@ -476,8 +520,11 @@
         <button id="btn-clear" class="btn-danger">🗑️</button>
         <button id="btn-fullscreen" class="btn-theme">🔲 全画面</button>
         
-        <!-- 数式プレビューボタンを追加 -->
+        <!-- 下部パネルの数式プレビュー -->
         <button id="btn-math-preview" class="btn-theme">🧮 数式</button>
+
+        <!-- ★追加：選択範囲だけをポップアップで数式化するボタン -->
+        <button id="btn-math-popup" class="btn-theme" style="color: var(--wrap-color); border-color: var(--wrap-color);">🪟 選択数式化</button>
 
         <button id="btn-wheel-mode" class="btn-theme">🖲️ ホイール設定</button>
       </div>
@@ -494,6 +541,9 @@
         </div>
         <button id="fs-btn-wrap-paren" class="btn-theme" title="選択範囲を括弧で囲む">( )</button>
         <button id="fs-btn-wrap-asterisk" class="btn-theme" title="選択範囲をアスタリスクで囲む">* *</button>
+        <!-- フルスクリーン時用にもポップアップボタンを配置 -->
+        <button id="fs-btn-math-popup" class="btn-theme" title="選択範囲をポップアップで数式化" style="color: var(--wrap-color); border-color: var(--wrap-color);">🪟 数式</button>
+
         <button id="btn-close-fullscreen" class="btn-danger btn-fs-close">
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
             <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -508,7 +558,7 @@
         readonly
       ></textarea>
       
-      <!-- 数式プレビュー用パネル -->
+      <!-- 数式プレビュー用パネル（下部） -->
       <div id="math-preview" style="display: none; position: absolute; bottom: 0; left: 0; width: 100%; height: 40%; background-color: var(--panel-bg); border-top: 2px solid var(--primary-color); padding: 20px; overflow-y: auto; z-index: 10; box-shadow: 0 -4px 10px rgba(0,0,0,0.1); color: var(--text-color); font-size: 16px; line-height: 1.6;">
         <!-- ここに数式がレンダリングされます -->
       </div>
@@ -533,6 +583,19 @@
       </div>
       
       <div class="popup-footer-text">ホイール操作：範囲選択モード切替</div>
+    </div>
+
+    <!-- ★追加：選択数式プレビュー用のポップアップモーダル -->
+    <div id="math-modal-overlay" class="math-modal-overlay">
+      <div class="math-modal-content">
+        <div class="math-modal-header">
+          <span>🪟 選択範囲の数式プレビュー</span>
+          <button id="btn-close-math-modal" class="btn-danger" style="padding: 4px 10px;">✖</button>
+        </div>
+        <div id="math-modal-body" class="math-modal-body">
+          <!-- ここに選択した数式が表示されます -->
+        </div>
+      </div>
     </div>
 
     <script>
@@ -572,6 +635,13 @@
       const btnMathPreview = document.getElementById("btn-math-preview");
       const mathPreview = document.getElementById("math-preview");
 
+      // ★追加：選択範囲ポップアップ用の要素取得
+      const btnMathPopup = document.getElementById("btn-math-popup");
+      const fsBtnMathPopup = document.getElementById("fs-btn-math-popup");
+      const mathModalOverlay = document.getElementById("math-modal-overlay");
+      const btnCloseMathModal = document.getElementById("btn-close-math-modal");
+      const mathModalBody = document.getElementById("math-modal-body");
+
       let isScrollLocked = false;
       let isEditLocked = true;
       let lastWheelFormatTime = 0;
@@ -580,7 +650,63 @@
       let historyStack = [];
       let historyIndex = -1;
 
-      // --- 数式プレビュー機能 ---
+      // --- ★追加：選択範囲の数式ポップアップ表示処理 ---
+      function showMathPopup() {
+        const start = textarea.selectionStart;
+        const end = textarea.selectionEnd;
+        
+        if (start === end) {
+          showToast("⚠️ 数式として表示したい範囲を選択してから押してください");
+          return;
+        }
+
+        let selectedText = textarea.value.substring(start, end);
+
+        // もし選択範囲に KaTeX の区切り文字 ($$, \(, \[) が含まれていない場合は、
+        // ユーザーが記号を囲み忘れたとみなして自動的に $$ で挟んであげる（親切設計）
+        if (!selectedText.includes("$") && !selectedText.includes("\\[") && !selectedText.includes("\\(")) {
+          selectedText = "$$\n" + selectedText + "\n$$";
+        }
+
+        // 改行を処理しつつHTMLへ挿入
+        const tempDiv = document.createElement("div");
+        tempDiv.textContent = selectedText;
+        mathModalBody.innerHTML = tempDiv.innerHTML.replace(/\n/g, '<br>');
+
+        // KaTeXでレンダリング
+        if (typeof renderMathInElement !== "undefined") {
+          renderMathInElement(mathModalBody, {
+            delimiters: [
+              {left: "$$", right: "$$", display: true},
+              {left: "$", right: "$", display: false},
+              {left: "\\(", right: "\\)", display: false},
+              {left: "\\[", right: "\\]", display: true}
+            ],
+            throwOnError: false
+          });
+        }
+
+        // モーダルを表示
+        mathModalOverlay.style.display = "flex";
+      }
+
+      btnMathPopup.addEventListener("click", showMathPopup);
+      fsBtnMathPopup.addEventListener("click", showMathPopup);
+
+      // ポップアップを閉じる処理
+      btnCloseMathModal.addEventListener("click", () => {
+        mathModalOverlay.style.display = "none";
+      });
+      mathModalOverlay.addEventListener("click", (e) => {
+        // 背景の暗い部分をクリックした時も閉じる
+        if (e.target === mathModalOverlay) {
+          mathModalOverlay.style.display = "none";
+        }
+      });
+      // ---------------------------------------------
+
+
+      // --- 下部パネルの数式プレビュー機能 ---
       btnMathPreview.addEventListener("click", () => {
         if (mathPreview.style.display === "none") {
           mathPreview.style.display = "block";
@@ -595,14 +721,12 @@
       function updateMathPreview() {
         if (mathPreview.style.display === "none") return;
         
-        // HTMLタグとして解釈されないようテキストをエスケープしてから、改行を <br> に変換
         const tempDiv = document.createElement("div");
         tempDiv.textContent = textarea.value;
         const safeHtml = tempDiv.innerHTML.replace(/\n/g, '<br>');
         
         mathPreview.innerHTML = safeHtml;
         
-        // KaTeXの自動レンダリング
         if (typeof renderMathInElement !== "undefined") {
           renderMathInElement(mathPreview, {
             delimiters: [
@@ -655,7 +779,7 @@
           textarea.setSelectionRange(state.start, state.end);
           updateUndoRedoButtons();
           scrollToSelection(false);
-          updateMathPreview(); // 履歴を戻した際もプレビュー更新
+          updateMathPreview(); 
           if (!isEditLocked) textarea.focus();
         }
       }
@@ -680,7 +804,7 @@
       textarea.addEventListener("input", () => {
         clearTimeout(inputTimeout);
         inputTimeout = setTimeout(saveHistory, 500);
-        updateMathPreview(); // テキスト入力時にプレビュー更新
+        updateMathPreview(); 
       });
 
       saveHistory();
@@ -860,17 +984,15 @@
         let targetWord = null;
 
         if (step > 0) {
-          // 前へ進む処理
           let nextIdx = words.findIndex((w) => w.start > currentStart);
           if (nextIdx === -1) {
-            targetWord = words[0]; // 末尾を超えたら先頭へループ
+            targetWord = words[0]; 
           } else {
             let targetIdx = nextIdx + (step - 1);
-            if (targetIdx >= words.length) targetIdx = words.length - 1; // 飛び越えた場合は最後の単語でストップ
+            if (targetIdx >= words.length) targetIdx = words.length - 1; 
             targetWord = words[targetIdx];
           }
         } else {
-          // 後ろへ戻る処理（stepはマイナスの値）
           let prevIdx = -1;
           for (let i = words.length - 1; i >= 0; i--) {
             if (words[i].start < currentStart) {
@@ -880,10 +1002,10 @@
           }
 
           if (prevIdx === -1) {
-            targetWord = words[words.length - 1]; // 先頭を超えたら末尾へループ
+            targetWord = words[words.length - 1]; 
           } else {
-            let targetIdx = prevIdx + (step + 1); // 例: step=-2 なら prevIdx - 1
-            if (targetIdx < 0) targetIdx = 0; // 飛び越えた場合は最初の単語でストップ
+            let targetIdx = prevIdx + (step + 1); 
+            if (targetIdx < 0) targetIdx = 0; 
             targetWord = words[targetIdx];
           }
         }
@@ -918,13 +1040,10 @@
         let match = null;
 
         while (targetLineIdx >= 0 && targetLineIdx < lines.length) {
-          // 行内のすべての単語マッチを取得
           const regex = /[a-zA-Z0-9_]+/g;
           const matches = [...lines[targetLineIdx].matchAll(regex)];
 
           if (matches.length > 0) {
-            // 下スクロール (direction === 1) なら最初の単語
-            // 上スクロール (direction === -1) なら最後の単語
             match = direction === 1 ? matches[0] : matches[matches.length - 1];
             break;
           }
@@ -963,7 +1082,7 @@
 
         textarea.scrollTop = currentScroll;
         saveHistory();
-        updateMathPreview(); // 置換操作後もプレビューを更新
+        updateMathPreview(); 
 
         if (isEditLocked) {
           selectNextWord(1);
@@ -1023,7 +1142,7 @@
             const text = await response.text();
             textarea.value = text;
             saveHistory();
-            updateMathPreview(); // ロード後もプレビューを更新
+            updateMathPreview(); 
             showToast(`📄 ${fileName} を読み込みました`);
           } else {
             showToast(`❌ ファイルが見つかりません (${response.status})`);
@@ -1115,24 +1234,22 @@
       wheelPopup.addEventListener("wheel", (e) => {
         e.preventDefault();
 
-        // 🔜 エリア（前へ進む）
         const forwardArea = e.target.closest("#area-forward");
         if (forwardArea) {
           if (e.deltaY > 0) {
-            selectNextWord(3); // 下ホイール：2単語飛ばし（3つ先へ）
+            selectNextWord(3); 
           } else if (e.deltaY < 0) {
-            selectNextWord(1); // 上ホイール：通常の一単語移動（1つ先へ）
+            selectNextWord(1); 
           }
           return;
         }
 
-        // 🔙 エリア（後ろへ戻る）
         const backwardArea = e.target.closest("#area-backward");
         if (backwardArea) {
           if (e.deltaY > 0) {
-            selectNextWord(-3); // 下ホイール：2単語飛ばしで逆向き（3つ前へ）
+            selectNextWord(-3); 
           } else if (e.deltaY < 0) {
-            selectNextWord(-1); // 上ホイール：通常の一単語移動で逆向き（1つ前へ）
+            selectNextWord(-1); 
           }
           return;
         }
@@ -1276,7 +1393,7 @@
           if (!isEditLocked) textarea.focus();
           scrollToSelection(false);
           saveHistory();
-          updateMathPreview(); // 置換後もプレビューを更新
+          updateMathPreview(); 
           showToast("✨ 選択範囲内のみ置換しました");
         } else {
           const newText = originalText.replaceAll(searchValue, replaceValue);
@@ -1285,7 +1402,7 @@
           } else {
             textarea.value = newText;
             saveHistory();
-            updateMathPreview(); // 置換後もプレビューを更新
+            updateMathPreview(); 
             showToast("✨ 全体の一括置換が完了しました");
           }
         }
@@ -1339,7 +1456,7 @@
           replaceInput.value = "";
           if (!isEditLocked) textarea.focus();
           saveHistory();
-          updateMathPreview(); // クリア後もプレビューを更新
+          updateMathPreview(); 
           showToast("🗑️ テキストをクリアしました");
         }
       });
