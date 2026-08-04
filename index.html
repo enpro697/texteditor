@@ -566,10 +566,10 @@
       <div id="wheel-status">通常モード</div>
 
       <div class="popup-grid popup-controls">
-        <button id="area-backward" class="btn-theme popup-btn-grid" title="下ホイール: 2単語飛ばし(前へ) / 上ホイール: 1単語(前へ)">範囲選択←</button>
+        <button id="area-forward-top" class="btn-theme popup-btn-grid" title="下ホイール: 3単語飛ばし(次へ) / 上ホイール: 1単語(次へ)">範囲選択→→</button>
         <button id="btn-popup-wrap-asterisk" class="btn-theme popup-btn-grid" title="下ホイールでも可">追加**</button>
         <button id="btn-shrink" class="btn-theme popup-btn-grid" title="下ホイールでも可">縮小</button>
-        <button id="area-forward" class="btn-theme popup-btn-grid" title="下ホイール: 2単語飛ばし(次へ) / 上ホイール: 1単語(次へ)">範囲選択→</button>
+        <button id="area-mixed" class="btn-theme popup-btn-grid" title="下ホイール: 3単語飛ばし(次へ) / 上ホイール: 1単語(前へ)">範囲選択←→</button>
         <button id="btn-popup-wrap-both-paren" class="btn-theme popup-btn-grid" title="下ホイールでも可">追加()</button>
         <button id="btn-expand" class="btn-theme popup-btn-grid" title="下ホイールでも可">拡大</button>
       </div>
@@ -1229,8 +1229,9 @@
       wheelPopup.addEventListener("wheel", (e) => {
         e.preventDefault();
 
-        const forwardArea = e.target.closest("#area-forward");
-        if (forwardArea) {
+        // 範囲選択→→（下ホイールで3飛ばし進む、上ホイールで1飛ばし進む）
+        const forwardTopArea = e.target.closest("#area-forward-top");
+        if (forwardTopArea) {
           if (e.deltaY > 0) {
             selectNextWord(3); 
           } else if (e.deltaY < 0) {
@@ -1239,10 +1240,11 @@
           return;
         }
 
-        const backwardArea = e.target.closest("#area-backward");
-        if (backwardArea) {
+        // 範囲選択←→（下ホイールで3飛ばし進む、上ホイールで1飛ばし戻る）
+        const mixedArea = e.target.closest("#area-mixed");
+        if (mixedArea) {
           if (e.deltaY > 0) {
-            selectNextWord(-3); 
+            selectNextWord(3); 
           } else if (e.deltaY < 0) {
             selectNextWord(-1); 
           }
