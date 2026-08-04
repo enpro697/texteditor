@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>テキスト一括置換ツール</title>
+    
+    <!-- KaTeX ライブラリの読み込み -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+
     <style>
       :root {
         /* --- 変わらない色（ボタン類） --- */
@@ -343,7 +349,7 @@
         position: fixed;
         right: 20px;
         bottom: 20px;
-        width: 280px; /* 横幅を広げて3列表が収まるように */
+        width: 280px;
         background-color: var(--panel-bg);
         border: 2px solid var(--border-color);
         border-radius: 8px;
@@ -411,7 +417,6 @@
         margin-bottom: 8px;
       }
 
-      /* --- 新しいグリッドレイアウト用 --- */
       .popup-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -429,6 +434,43 @@
         text-align: center;
         white-space: nowrap;
         background-color: var(--panel-bg);
+      }
+
+      /* --- 選択数式プレビュー用のフローティングウィンドウ --- */
+      .math-popup-window {
+        display: none;
+        position: fixed;
+        top: 15vh;
+        left: 5vw;
+        background-color: var(--panel-bg);
+        color: var(--text-color);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        width: 90vw;
+        max-width: 800px;
+        max-height: 80vh;
+        flex-direction: column;
+        overflow: hidden;
+        z-index: 30000;
+      }
+      .math-modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.05);
+        border-bottom: 1px solid var(--border-color);
+        font-weight: bold;
+      }
+      body.dark-mode .math-modal-header {
+        background-color: rgba(255, 255, 255, 0.05);
+      }
+      .math-modal-body {
+        padding: 30px;
+        overflow-y: auto;
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 1.8;
       }
     </style>
   </head>
@@ -469,6 +511,12 @@
         <button id="btn-copy" class="btn-success">📋 コピー</button>
         <button id="btn-clear" class="btn-danger">🗑️</button>
         <button id="btn-fullscreen" class="btn-theme">🔲 全画面</button>
+        
+        <!-- 下部パネルの数式プレビュー -->
+        <button id="btn-math-preview" class="btn-theme">🧮 数式</button>
+
+        <!-- 選択範囲だけをポップアップで数式化するボタン -->
+        <button id="btn-math-popup" class="btn-theme" style="color: var(--wrap-color); border-color: var(--wrap-color);">🪟 選択数式化</button>
 
         <button id="btn-wheel-mode" class="btn-theme">🖲️ ホイール設定</button>
       </div>
@@ -485,6 +533,9 @@
         </div>
         <button id="fs-btn-wrap-paren" class="btn-theme" title="選択範囲を括弧で囲む">( )</button>
         <button id="fs-btn-wrap-asterisk" class="btn-theme" title="選択範囲をアスタリスクで囲む">* *</button>
+        <!-- フルスクリーン時用にもポップアップボタンを配置 -->
+        <button id="fs-btn-math-popup" class="btn-theme" title="選択範囲をポップアップで数式化" style="color: var(--wrap-color); border-color: var(--wrap-color);">🪟 数式</button>
+
         <button id="btn-close-fullscreen" class="btn-danger btn-fs-close">
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
             <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -498,6 +549,11 @@
         placeholder="ここにテキストを入力、またはファイルを読み込んでください...（手打ちやペーストをする場合は上部の「🔓 ロック解除」を押してください）"
         readonly
       ></textarea>
+      
+      <!-- 数式プレビュー用パネル（下部） -->
+      <div id="math-preview" style="display: none; position: absolute; bottom: 0; left: 0; width: 100%; height: 40%; background-color: var(--panel-bg); border-top: 2px solid var(--primary-color); padding: 20px; overflow-y: auto; z-index: 10; box-shadow: 0 -4px 10px rgba(0,0,0,0.1); color: var(--text-color); font-size: 16px; line-height: 1.6;">
+        <!-- ここに数式がレンダリングされます -->
+      </div>
     </div>
 
     <div id="toast">通知メッセージ</div>
@@ -516,11 +572,21 @@
         <button id="area-forward" class="btn-theme popup-btn-grid" title="下ホイール: 2単語飛ばし(次へ) / 上ホイール: 1単語(次へ)">範囲選択→</button>
         <button id="btn-popup-wrap-both-paren" class="btn-theme popup-btn-grid" title="下ホイールでも可">追加()</button>
         <button id="btn-expand" class="btn-theme popup-btn-grid" title="下ホイールでも可">拡大</button>
-
-
       </div>
       
       <div class="popup-footer-text">ホイール操作：範囲選択モード切替</div>
+    </div>
+
+    <!-- 選択数式プレビュー用のフローティングウィンドウ -->
+    <div id="math-popup-window" class="math-popup-window">
+      <div class="math-modal-header">
+        <div class="popup-drag-handle" id="math-drag-handle" title="ドラッグして移動">⠿</div>
+        <span style="flex-grow: 1; text-align: center; margin-right: 16px;">🪟 選択範囲の数式プレビュー</span>
+        <button id="btn-close-math-modal" class="btn-danger" style="padding: 4px 10px; margin-right: 12px;">✖</button>
+      </div>
+      <div id="math-modal-body" class="math-modal-body">
+        <!-- ここに選択した数式が表示されます -->
+      </div>
     </div>
 
     <script>
@@ -555,6 +621,18 @@
       const btnToggleEdit = document.getElementById("btn-toggle-edit");
       const btnUndo = document.getElementById("btn-undo");
       const btnRedo = document.getElementById("btn-redo");
+      
+      // 数式プレビュー用要素の取得
+      const btnMathPreview = document.getElementById("btn-math-preview");
+      const mathPreview = document.getElementById("math-preview");
+
+      // 選択範囲ポップアップ用の要素取得
+      const btnMathPopup = document.getElementById("btn-math-popup");
+      const fsBtnMathPopup = document.getElementById("fs-btn-math-popup");
+      const mathPopupWindow = document.getElementById("math-popup-window");
+      const btnCloseMathModal = document.getElementById("btn-close-math-modal");
+      const mathModalBody = document.getElementById("math-modal-body");
+      const mathDragHandle = document.getElementById("math-drag-handle");
 
       let isScrollLocked = false;
       let isEditLocked = true;
@@ -563,6 +641,97 @@
       const MAX_HISTORY = 20;
       let historyStack = [];
       let historyIndex = -1;
+
+      // --- 選択範囲の数式ポップアップ表示処理 ---
+      function showMathPopup() {
+        const start = textarea.selectionStart;
+        const end = textarea.selectionEnd;
+        
+        if (start === end) {
+          showToast("⚠️ 数式として表示したい範囲を選択してから押してください");
+          return;
+        }
+
+        let selectedText = textarea.value.substring(start, end);
+
+        // プレビュー表示を作る直前だけ `( $$ ... $$ )` のような「数式を囲む括弧」を消去する
+        selectedText = selectedText.replace(/\(\s*(\$\$[\s\S]*?\$\$)\s*\)/g, '$1');
+
+        if (!selectedText.includes("$") && !selectedText.includes("\\[") && !selectedText.includes("\\(")) {
+          selectedText = "$$\n" + selectedText + "\n$$";
+        }
+
+        const tempDiv = document.createElement("div");
+        tempDiv.textContent = selectedText;
+        mathModalBody.innerHTML = tempDiv.innerHTML.replace(/\n/g, '<br>');
+
+        if (typeof renderMathInElement !== "undefined") {
+          renderMathInElement(mathModalBody, {
+            delimiters: [
+              {left: "$$", right: "$$", display: true},
+              {left: "$", right: "$", display: false},
+              {left: "\\(", right: "\\)", display: false},
+              {left: "\\[", right: "\\]", display: true}
+            ],
+            throwOnError: false
+          });
+        }
+
+        mathPopupWindow.style.display = "flex";
+      }
+
+      btnMathPopup.addEventListener("click", showMathPopup);
+      fsBtnMathPopup.addEventListener("click", showMathPopup);
+
+      btnCloseMathModal.addEventListener("click", () => {
+        mathPopupWindow.style.display = "none";
+      });
+
+      // --- 下部パネルの数式プレビュー機能 ---
+      btnMathPreview.addEventListener("click", () => {
+        if (mathPreview.style.display === "none") {
+          mathPreview.style.display = "block";
+          btnMathPreview.style.backgroundColor = "rgba(128, 128, 128, 0.2)";
+          updateMathPreview();
+        } else {
+          mathPreview.style.display = "none";
+          btnMathPreview.style.backgroundColor = "transparent";
+        }
+      });
+
+      function updateMathPreview() {
+        if (mathPreview.style.display === "none") return;
+        
+        let previewText = textarea.value;
+        
+        // プレビュー表示時のみ、( $$ ... $$ ) を囲む不要な括弧を除去する
+        previewText = previewText.replace(/\(\s*(\$\$[\s\S]*?\$\$)\s*\)/g, '$1');
+
+        const tempDiv = document.createElement("div");
+        tempDiv.textContent = previewText;
+        const safeHtml = tempDiv.innerHTML.replace(/\n/g, '<br>');
+        
+        mathPreview.innerHTML = safeHtml;
+        
+        if (typeof renderMathInElement !== "undefined") {
+          renderMathInElement(mathPreview, {
+            delimiters: [
+              {left: "$$", right: "$$", display: true},
+              {left: "$", right: "$", display: false},
+              {left: "\\(", right: "\\)", display: false},
+              {left: "\\[", right: "\\]", display: true}
+            ],
+            throwOnError: false
+          });
+        }
+        
+        // カーソル位置に合わせてプレビューパネルを自動スクロールさせる
+        if (textarea.value.length > 0) {
+          const ratio = textarea.selectionStart / textarea.value.length;
+          const maxScroll = mathPreview.scrollHeight - mathPreview.clientHeight;
+          mathPreview.scrollTop = maxScroll * ratio;
+        }
+      }
 
       function updateUndoRedoButtons() {
         btnUndo.disabled = historyIndex <= 0;
@@ -603,6 +772,7 @@
           textarea.setSelectionRange(state.start, state.end);
           updateUndoRedoButtons();
           scrollToSelection(false);
+          updateMathPreview(); 
           if (!isEditLocked) textarea.focus();
         }
       }
@@ -627,6 +797,7 @@
       textarea.addEventListener("input", () => {
         clearTimeout(inputTimeout);
         inputTimeout = setTimeout(saveHistory, 500);
+        updateMathPreview(); 
       });
 
       saveHistory();
@@ -698,11 +869,13 @@
         dragHandleElem.addEventListener("pointercancel", stopDrag);
       }
 
+      // 既存のドラッグ設定に加えて、数式ポップアップもドラッグ可能にする
       makeDraggable(
         document.getElementById("fs-drag-handle"),
         document.getElementById("fs-floating-bar")
       );
       makeDraggable(document.getElementById("popup-drag-handle"), wheelPopup);
+      makeDraggable(mathDragHandle, mathPopupWindow);
 
       function scrollToSelection(alignTopThird = false) {
         const start = textarea.selectionStart;
@@ -798,7 +971,7 @@
         }
       }
 
-    function selectNextWord(step) {
+      function selectNextWord(step) {
         const words = getAllWords();
         if (words.length === 0) return;
 
@@ -806,17 +979,15 @@
         let targetWord = null;
 
         if (step > 0) {
-          // 前へ進む処理
           let nextIdx = words.findIndex((w) => w.start > currentStart);
           if (nextIdx === -1) {
-            targetWord = words[0]; // 末尾を超えたら先頭へループ
+            targetWord = words[0]; 
           } else {
             let targetIdx = nextIdx + (step - 1);
-            if (targetIdx >= words.length) targetIdx = words.length - 1; // 飛び越えた場合は最後の単語でストップ
+            if (targetIdx >= words.length) targetIdx = words.length - 1; 
             targetWord = words[targetIdx];
           }
         } else {
-          // 後ろへ戻る処理（stepはマイナスの値）
           let prevIdx = -1;
           for (let i = words.length - 1; i >= 0; i--) {
             if (words[i].start < currentStart) {
@@ -826,10 +997,10 @@
           }
 
           if (prevIdx === -1) {
-            targetWord = words[words.length - 1]; // 先頭を超えたら末尾へループ
+            targetWord = words[words.length - 1]; 
           } else {
-            let targetIdx = prevIdx + (step + 1); // 例: step=-2 なら prevIdx - 1
-            if (targetIdx < 0) targetIdx = 0; // 飛び越えた場合は最初の単語でストップ
+            let targetIdx = prevIdx + (step + 1); 
+            if (targetIdx < 0) targetIdx = 0; 
             targetWord = words[targetIdx];
           }
         }
@@ -840,7 +1011,8 @@
           textarea.focus();
         }
       }
-     function moveLine(direction) {
+      
+      function moveLine(direction) {
         const text = textarea.value;
         const cursorPos = textarea.selectionStart;
 
@@ -863,13 +1035,10 @@
         let match = null;
 
         while (targetLineIdx >= 0 && targetLineIdx < lines.length) {
-          // 行内のすべての単語マッチを取得
           const regex = /[a-zA-Z0-9_]+/g;
           const matches = [...lines[targetLineIdx].matchAll(regex)];
 
           if (matches.length > 0) {
-            // 下スクロール (direction === 1) なら最初の単語
-            // 上スクロール (direction === -1) なら最後の単語
             match = direction === 1 ? matches[0] : matches[matches.length - 1];
             break;
           }
@@ -908,6 +1077,7 @@
 
         textarea.scrollTop = currentScroll;
         saveHistory();
+        updateMathPreview(); 
 
         if (isEditLocked) {
           selectNextWord(1);
@@ -967,6 +1137,7 @@
             const text = await response.text();
             textarea.value = text;
             saveHistory();
+            updateMathPreview(); 
             showToast(`📄 ${fileName} を読み込みました`);
           } else {
             showToast(`❌ ファイルが見つかりません (${response.status})`);
@@ -1058,24 +1229,22 @@
       wheelPopup.addEventListener("wheel", (e) => {
         e.preventDefault();
 
-        // 🔜 エリア（前へ進む）
         const forwardArea = e.target.closest("#area-forward");
         if (forwardArea) {
           if (e.deltaY > 0) {
-            selectNextWord(3); // 下ホイール：2単語飛ばし（3つ先へ）
+            selectNextWord(3); 
           } else if (e.deltaY < 0) {
-            selectNextWord(1); // 上ホイール：通常の一単語移動（1つ先へ）
+            selectNextWord(1); 
           }
           return;
         }
 
-        // 🔙 エリア（後ろへ戻る）
         const backwardArea = e.target.closest("#area-backward");
         if (backwardArea) {
           if (e.deltaY > 0) {
-            selectNextWord(-3); // 下ホイール：2単語飛ばしで逆向き（3つ前へ）
+            selectNextWord(-3); 
           } else if (e.deltaY < 0) {
-            selectNextWord(-1); // 上ホイール：通常の一単語移動で逆向き（1つ前へ）
+            selectNextWord(-1); 
           }
           return;
         }
@@ -1219,6 +1388,7 @@
           if (!isEditLocked) textarea.focus();
           scrollToSelection(false);
           saveHistory();
+          updateMathPreview(); 
           showToast("✨ 選択範囲内のみ置換しました");
         } else {
           const newText = originalText.replaceAll(searchValue, replaceValue);
@@ -1227,6 +1397,7 @@
           } else {
             textarea.value = newText;
             saveHistory();
+            updateMathPreview(); 
             showToast("✨ 全体の一括置換が完了しました");
           }
         }
@@ -1280,6 +1451,7 @@
           replaceInput.value = "";
           if (!isEditLocked) textarea.focus();
           saveHistory();
+          updateMathPreview(); 
           showToast("🗑️ テキストをクリアしました");
         }
       });
