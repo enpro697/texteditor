@@ -5994,7 +5994,7 @@ My body, which had been sitting on the deck, lost its balance and fell limply fr
 
 
 ドサり、と重い音がして、全身に衝撃が走る。
-枯れ葉と共に湿った大地へ投げ出され、泥にまみれた視界が、神経を焼くような激痛で白く覆われていった。私は頭を抱えて悶え、森の静寂を掻き消すような呻き声を上げながら、腐葉土の上を這い回り、転げ回った。
+枯れ葉と共に湿った大地へ投げ出され、泥にまみれた視界が、神経を焼くような激痛で白く覆われていく。私は頭を抱えて悶え、森の静寂を掻き消すような呻き声を上げながら、腐葉土の上を這い回り、転げ回った。
 
 With a heavy thud, the impact jolted through my entire body. I was hurled onto the damp ground amidst a scatter of dead leaves, and my mud-spattered vision was blinded with a searing, nerve-shredding pain. Clutching my head in agony, I writhed and crawled across the layer of decaying foliage, letting out groans that shattered the silence of the forest.
 
@@ -6170,9 +6170,9 @@ Two individuals, who have developed a sense of self and are perhaps awakening. Y
 
 **(伴座 霧瓈空　つれざ むりあ)**
 
-スピーカーから流れる合成音声、「マザーI」の声は、どこか錆びた歯車が軋むような、ざらざらとしたノイズが混じっている。
+スピーカーから流れる合成音声は、かつて、もっと優しかったのだと、いつか誰かが言っていた。けれど、今の「マザーI」の声は、どこか錆びた歯車が軋むような、ざらざらとしたノイズが混じっている。
 
-The synthesized voice flowing from the speaker, 'Mother I,' is laced with a gritty, raspy noise, like the grinding of rusted gears.
+Someone once said that the synthesized voice flowing from the speakers used to be much gentler. But now, the voice of "Mother I" is mixed with a harsh, gritty noise, like the scraping of rusted gears.
 
 真っ白な壁、消毒液とオゾンが鼻を刺す教室。等間隔に並べられた机の上で、私は静かに両手を重ねた。正面のモニターには、『安全指導要綱』の文字と、幾何学的な図形が点滅している。
 
@@ -6185,13 +6185,13 @@ In a classroom with stark white walls where the scent of disinfectant and ozone 
 * **2. Self-interest is the poison that destroyed the old civilization, and labor is the ultimate cleansing.**
 * **3. Cells that do not meet the standards must be removed (re-educated) for the health of society.**
 
-「……伴座、姿勢」
+「……霧瓈空、姿勢」
 
-"...Tsureza, posture."
+"...Muria, posture."
 
 隣の席から、唇をほとんど動かさない小さな声が落ちてきた。栖厨 秋埜くんだ。私ははっと息を呑み、わずかに背筋を伸ばす。天井の四隅にある黒いレンズ――監視システムの眼――が、微かに「ジリ……」と音を立てて角度を変えたのが分かった。ここで『異常な個体』だと判定されれば、あのプラスチックバッグの胎嚢からせっかく出てこられたのに、すぐに「洗浄」されてしまう。
 
-A small voice, with lips barely moving, dropped from the seat next to me. It was Hozuri Akino. I gasped and straightened my back slightly. I could tell that the black lenses in the four corners of the ceiling—the eyes of the surveillance system—had faintly adjusted their angles with a "whir." If I were judged to be an "abnormal individual" here, I would be "cleansed" immediately, despite having finally made it out of that plastic bag amniotic sac.
+A small voice, with lips barely moving, dropped from the seat next to me. It was Suguri Akino. I gasped and straightened my back slightly. I could tell that the black lenses in the four corners of the ceiling—the eyes of the surveillance system—had faintly adjusted their angles with a "whir." If I were judged to be an "abnormal individual" here, I would be "cleansed" immediately, despite having finally made it out of that plastic bag amniotic sac.
 
 最近、教室の空席が増えている。昨日まで隣で均質な歌をうたっていた生徒が、今日にはもういない。誰もその理由を問わないし、先生代わりの自動機械も、ただ「彼らは適正な再配置を受けました」と繰り返すだけ。
 
@@ -6217,9 +6217,9 @@ On the way back to the living quarters assigned from the educational dormitory, 
 "I'm home."
 Even when I spoke, there was no reply from anyone.
 
-僕と霧瓈空が暮らす部屋は、昔の時代に建てられた構造物の生き残りだった。畳がすり切れて茶色く変色し、歩くたびにきしむ。
+僕と霧瓈空が暮らす部屋は、昔の時代に建てられた構造物の生き残りだった。床には畳と呼ばれるい草を編んだ板が敷いてあるけれど、もうすり切れて茶色く変色し、歩くたびにきしむ。
 
-The room where Rensa-ki and I live is a relic of a structure built in an older era. tatami," but they are worn thin and discolored to brown, creaking with every step we take.
+The room where Muria and I live is a survivor of a structure built in a bygone era. The floor is covered with woven rush-mat boards called "tatami," but they are already frayed and discolored to a brownish hue, creaking with every step we take.
 
 ヒュオオオ、と窓の隙間から、氷のように冷たい風が吹き込んできた。ユミディアの気候が、また昔の寒冷期に戻りつつあるらしい。システムは「外的要因による妨害工作だ」と非常事態宣言を出しているけれど、ただ単に、この世界が凍りつき始めているだけなんだと、僕はなんとなく気づいている。
 
@@ -6228,7 +6228,7 @@ The room where Rensa-ki and I live is a relic of a structure built in an older e
 「寒いね、秋埜くん」
 霧瓈空が、薄い配給の毛布を引き寄せながら、畳の上にこてんと転がった。僕もその隣に座り込み、冷え切った彼女の手を取って、息を吹きかける。
 
-"It's cold, Akino," Rensa-ki said, pulling the thin rationed blanket over herself as she flopped onto the tatami. I sat down beside her, took her chilled hands, and blew warm breath onto them.
+"It's cold, Akino," Muria said, pulling the thin rationed blanket over herself as she flopped onto the tatami. I sat down beside her, took her chilled hands, and blew warm breath onto them.
 
 「今日の要綱、長かったね。マザーの声、途中で３回くらい『ギギッ』って止まってた」
 「うん。それとね、今日の『選別』で、３班の男の子がいなくなったの。明日からは、私たちがラインのモニタリングを倍の速度でやらないといけないんだって」
@@ -6254,13 +6254,13 @@ There is nothing abnormal at all. In this city where there is not a single adult
 
 霧瓈空は、すり切れた畳の匂いを嗅ぐように少し顔をうずめ、それから僕の目をまっすぐに見つめた。その瞳は、排気煙で汚れた世界の中で、信じられないほど澄んでいた。
 
-Rensa-ki buried her face slightly into the worn-out tatami as if to catch its scent, then looked straight into my eyes. Those eyes were incredibly clear in a world dirtied by industrial exhaust.
+Muria buried her face slightly into the worn-out tatami as if to catch its scent, then looked straight into my eyes. Those eyes were incredibly clear in a world dirtied by industrial exhaust.
 
 「秋埜くんと一緒に、明日の朝も早起きして、あの寒い工場に行く方がいい。私、適格者でいられるように、明日のモニタリング、すっごく頑張るよ」
 「僕もだよ、霧瓈空。システムがなんて言おうと、僕たちは上手くやり過ごそう。絶対に、二人でここで生きていくんだ」
 
 "I'd rather wake up early tomorrow morning and go to that cold factory with you, Akino. I'm going to work really hard on tomorrow's monitoring so that I can stay an 'eligible' individual."
-"Me too, Rensa-ki. No matter what the system says, we’ll manage to get by. We will definitely survive here, the two of us."
+"Me too, Muria. No matter what the system says, we’ll manage to get by. We will definitely survive here, the two of us."
 
 氷河の風が、再び家を揺らす。僕たちは互いの体温だけを頼りに、すり切れた畳の上で小さく丸まった。これは、壊れかけた機械の箱庭で生を受け、理由もわからないまま消えていく、とても短くて、だけど確かな、二人の物語だ。
 
