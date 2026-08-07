@@ -8255,12 +8255,12 @@ Fuse laughed it off, a cigar clamped in his mouth. However, Klee remained expres
 この狂宴のルールは至ってシンプル。互いの車体を破壊するか、特殊燃料をすべて奪うこと。
 それぞれに支給される特殊燃料は、1日につき3つ（最大1ダースまでストック可能）。
 ヒューズの車体には、最高級の『LVMH Belvedere Vodka』が3本。
-クレーの車体には、『RedBull 翼を授ける』が3缶、マリオカートの風船バトルのようにマウントされている。
+クレーの車体には、『Red Bull Energy Drink』が3缶、マリオカートの風船バトルのようにマウントされている。
 
 The rules of this mad banquet were incredibly simple: destroy the opponent's vehicle or deprive them of all their special fuel.
 The special fuel supplied to each racer is 3 units per day (with a maximum stock of up to a dozen).
 Mounted on Fuse's vehicle were 3 bottles of top-tier "LVMH Belvedere Vodka."
-On Klee's vehicle, 3 cans of "Red Bull Gives You Wings" were mounted like balloons Battle in Mario Kart.
+On Klee's vehicle, 3 cans of "Red Bull Energy Drink" were mounted like balloons Battle in Mario Kart.
 
 通常爆弾を相手にぶつければ、この特殊燃料を1つ破壊できる（3つ全て失えば燃料切れで敗北）。
 しかし、相手の車体そのものを粉砕する「TKO勝利」を狙うには、自らの特殊燃料を飲み干して能力を最大化（ブースト）し、最大出力の爆弾をクリーンヒットさせなければならない。使えば燃料を消費する諸刃の剣だ。
@@ -8317,21 +8317,21 @@ Klee's dangerous eyes locked onto Fuse through the dust. She wasn't just throwin
 Bursting through the smokescreen, Fuse intuitively sensed the traps after noticing the unnaturally quiet trajectory of the jump ramp. He intentionally chose a route that took him off-course, avoiding the traps by running across the steel walls like a wall-run. At the same time, he tossed a bouncing frag grenade from Klee's blind spot.
 
 「……っ！」
-クレーは急ブレーキでグレネードの直撃を避けたが、至近距離での爆発の衝撃波がトライクを襲う。爆風がクレーの車体を揺さぶり、後部にマウントされていた『RedBull 翼を授ける』の1缶に破片が直撃した。
+クレーは急ブレーキでグレネードの直撃を避けたが、至近距離での爆発の衝撃波がトライクを襲う。爆風がクレーの車体を揺さぶり、後部にマウントされていた『Red Bull Energy Drink』の1缶に破片が直撃した。
 プシュゥゥゥッ！とエナジードリンクが砂漠に噴き出し、泡と消える。
 （クレー：残り燃料2 / ヒューズ：残り燃料3）
 
 "...!"
-Klee slammed on the brakes to avoid a direct hit from the grenade, but the shockwave of the point-blank explosion struck her trike. The blast shook Klee's vehicle, and shrapnel scored a direct hit on one of the "Red Bull Gives You Wings" cans mounted on the back.
+Klee slammed on the brakes to avoid a direct hit from the grenade, but the shockwave of the point-blank explosion struck her trike. The blast shook Klee's vehicle, and shrapnel scored a direct hit on one of the "Red Bull Energy Drink" cans mounted on the back.
 *Pshhhhh!* The energy drink sprayed out over the desert, disappearing into froth.
 (Klee: 2 fuel remaining / Fuse: 3 fuel remaining)
 
 「まずは一つ、だ。手加減はしねぇぞ！」
-ヒューズがニヤリと笑う。しかし次の瞬間、クレーが真顔のまま、手元の『RedBull』に手を伸ばしかけた。
-彼女の指がタブにかかった瞬間、尋常ではないプレップレッシャーが砂漠を包み込む。もしここで彼女がRedBullを飲み、能力を最大化させれば、その爆弾は直撃＝即死のTKO兵器と化す。
+ヒューズがニヤリと笑う。しかし次の瞬間、クレーが真顔のまま、手元の『Red Bull Energy Drink』に手を伸ばしかけた。
+彼女の指がタブにかかった瞬間、尋常ではないプレップレッシャーが砂漠を包み込む。もしここで彼女がレッドブルを飲み、能力を最大化させれば、その爆弾は直撃＝即死のTKO兵器と化す。
 
 "That's one down. I ain't holding back!"
-Fuse grinned. But the next moment, Klee, with a deadpan face, reached for the Red Bull near her hand.
+Fuse grinned. But the next moment, Klee, with a deadpan face, reached for the Red Bull Energy Drink near her hand.
 The instant her finger touched the tab, an unnatural pressure enveloped the desert. If she drank the Red Bull here and maximized her abilities, her bombs would transform into TKO weapons where a direct hit equals instant death.
 
 ヒューズの背筋に冷たい汗が流れた。
@@ -8354,7 +8354,7 @@ However, in the arena where Klee's merciless bloodlust and Fuse's veteran techni
 
 ラスベガスの容赦ない太陽が再び中天に差し掛かる。DAY 1の激闘で焦げ付いた鉄骨と抉れた砂の轍が、ここがもはや単なる訓練場ではなく、狂気の処刑場であることを無言で物語っていた。
 朝のサプライドロップにより、両者に新たな特殊燃料が3つずつ支給される。
-これにより、現在のストックはヒューズが6本（ウォッカ）、クレーが5缶（RedBull）となった。
+これにより、現在のストックはヒューズが6本（ウォッカ）、クレーが5缶（レッドブル）となった。
 シグナルが点灯する。DAY 2の開戦だ。
 
 Las Vegas's unforgiving sun reached its zenith once again. The scorched steel frames and gouged sandy ruts from DAY 1's fierce clash silently testified that this was no longer a mere training ground, but an execution ground of madness.
@@ -8406,11 +8406,11 @@ However, Klee had completely read the timing of Fuse's counterattack. The bombs 
 "Tch!"
 Noticing the detonation sound from beneath the sand, Fuse instantly rolled back the throttle, sacrificing his front tire to parry the blast. A veteran's damage control to minimize the hit. But Klee didn't overlook the momentary opening created when he lost his balance.
 
-クレーの手が、ストックされた『RedBull 翼を授ける』のタブに掛かる。
+クレーの手が、ストックされた『Red Bull Energy Drink』のタブに掛かる。
 プシュッ、という小気味よい音が響いた直後、クレーはそれを一気に煽った。
 ゴゴゴゴゴ……！と、クレーの周囲の空間が陽炎を超えて歪む。エナジードリンクによって能力を「最大化」した彼女が掲げたのは、車体を消し飛ばす威力を秘めた特大の火花。
 
-Klee's hand grasped the tab of a stocked "Red Bull Gives You Wings."
+Klee's hand grasped the tab of a stocked "Red Bull Energy Drink."
 Right after the crisp *psssht* sound echoed, Klee chugged it down in one go.
 *Rumble...!* The space around Klee warped, surpassing a mere heat haze. Having "maximized" her abilities with the energy drink, what she held aloft was an oversized spark harboring the power to obliterate a vehicle.
 
@@ -8481,7 +8481,7 @@ The Las Vegas sky was illuminated by a sun stained black with gunpowder smoke.
 Following the fierce battles of DAY 2, what was once a training ground had mutated into a wasteland riddled with crumpled steel frames and craters. The scent of scorched gunpowder hung so densely that simply breathing felt like burning the lungs.
 
 夜明けと共にドローンが投下したサプライボックスにより、両者に3つずつの特殊燃料が補充された。
-これにより、現在のストックは**ヒューズが7本（ウォッカ）、クレーが7缶（RedBull）**。
+これにより、現在のストックは**ヒューズが7本（ウォッカ）、クレーが7缶（レッドブル）**。
 明日、DAY 4がこの狂宴の「Final Day」となることがアナウンスされ、アリーナの空気は限界まで張り詰めていた。
 シグナルが鳴り響く。DAY 3、決死のサバイバルが幕を開ける。
 
@@ -8524,11 +8524,11 @@ Klee dashed up the ruins of a collapsing giant steel tower, using it as a ramp t
 "Don't mess with me!"
 Fuse abandoned evasion. Leveraging the chopper's weight and massive torque, he charged head-on right into the dead center of the wall of explosions. Physically swatting bombs away with his front tire, he forced his way through the pillars of fire while popping a wheelie—an action truly befitting a heavy tank.
 
-火柱を抜けたヒューズの眼前に、着地したクレーの姿があった。彼女の手が、マウントされた『RedBull』のタブに掛かる。
+火柱を抜けたヒューズの眼前に、着地したクレーの姿があった。彼女の手が、マウントされた『Red Bull Energy Drink』のタブに掛かる。
 （最大出力のTKO狙いか！？）
-ヒューズが身構えた瞬間、それはクレーのフェイントだった。彼女はRedBullを飲むフリをしてヒューズの防御行動（ブースト消費）を誘い、その実、トライクの後部から無数のバウンド式地雷をヒューズの足元へばら撒いていた。
+ヒューズが身構えた瞬間、それはクレーのフェイントだった。彼女はレッドブルを飲むフリをしてヒューズの防御行動（ブースト消費）を誘い、その実、トライクの後部から無数のバウンド式地雷をヒューズの足元へばら撒いていた。
 
-Right before Fuse's eyes as he broke through the flames stood Klee, freshly landed. Her hand grasped the tab of a mounted "Red Bull."
+Right before Fuse's eyes as he broke through the flames stood Klee, freshly landed. Her hand grasped the tab of a mounted "Red Bull Energy Drink."
 *(Aiming for a max-output TKO!?)*
 The moment Fuse braced himself, he realized it was Klee's feint. She faked drinking the Red Bull to bait Fuse into a defensive action (consuming a boost), while in reality, she scattered countless bouncing landmines from the back of her trike right at Fuse's feet.
 
@@ -8540,15 +8540,15 @@ Fuse saw through the feint by a hair's breadth. He stopped his hand from reachin
 
 ドガァァン！！
 「ああっ……！」
-ヒューズのグレネードがトライクの側面にクリーンヒット。積載されていた『RedBull』が1缶、激しく破裂して中身をぶちまけた。
+ヒューズのグレネードがトライクの側面にクリーンヒット。積載されていた『Red Bull Energy Drink』が1缶、激しく破裂して中身をぶちまけた。
 （クレー残り燃料：6）
 
 *KABOOM!!*
 "Ah...!"
-Fuse's grenade scored a clean hit on the side of the trike. One of the loaded "Red Bulls" violently ruptured, spewing its contents.
+Fuse's grenade scored a clean hit on the side of the trike. One of the loaded "Red Bull Energy Drinks" violently ruptured, spewing its contents.
 (Klee remaining fuel: 6)
 
-その瞬間、クレーの瞳の奥で何かが完全に切れた。彼女は躊躇うことなく別のRedBullのタブを引き抜き、一気に飲み干す。
+その瞬間、クレーの瞳の奥で何かが完全に切れた。彼女は躊躇うことなく別のレッドブルのタブを引き抜き、一気に飲み干す。
 空間が真っ赤に歪み、限界までブーストされた彼女の手から、周囲の酸素をすべて焼き尽くすほどの超特大メガフレア爆弾が放たれた。直撃すれば車体ごと蒸発する必殺の一撃。
 
 At that moment, something inside Klee's eyes completely snapped. Without hesitation, she yanked the tab off another Red Bull and chugged it down.
@@ -8611,7 +8611,7 @@ A blood-red sun rose from the Las Vegas horizon.
 This was no longer a training ground. Three days of fierce battles had melted all the steel frames and turned the dunes into glistening black glass, transforming it into a true "death zone."
 
 Final Day。もはやこれ以上のサプライドロップはない。
-最終決戦に持ち込まれた命綱は、**ヒューズのウォッカが残り3本、クレーのRedBullが残り5缶**。
+最終決戦に持ち込まれた命綱は、**ヒューズのウォッカが残り3本、クレーのレッドブルが残り5缶**。
 互いの魂とマシンの限界を賭けた、仁義なき爆弾疾走バトルのフィナーレが幕を開ける。
 
 Final Day. There would be no more supply drops.
@@ -8660,13 +8660,13 @@ But Klee had calmly calculated Fuse's charge. She intentionally placed timed bom
 *(I ain't got the luxury to sit around whittling away little by little anymore...)*
 Fuse realized this instantly. If they continued exchanging standard bombs, the fuel gap would guarantee his slow demise. He deliberately abandoned his defense and plunged his machine right into the thickest part of Klee's "cage of explosions," fully prepared to take hits. He shifted to a point-blank TKO strategy: giving up flesh to sever bone.
 
-ヒューズの決死の特攻を見たクレーの手が、ついに複数の『RedBull』へと伸びる。
+ヒューズの決死の特攻を見たクレーの手が、ついに複数の『Red Bull Energy Drink』へと伸びる。
 カシュッ、カシュッ、プシュゥゥゥッ！！
-三本もの『RedBull』を一気に飲み干した瞬間、クレーの背中とトライクから、目にも止まらぬ獄炎の「翼」が展開した。「翼を授ける」のキャッチコピーそのままに、燃え滾る翼を得たクレーのトライクが重力を完全に振り切り、空高く舞い上がる。彼女の手には、ラスベガス全土を吹き飛ばすほどの超絶極大の太陽、TKO爆弾が生成されていた。
+三本もの『Red Bull Energy Drink』を一気に飲み干した瞬間、クレーの背中とトライクから、目にも止まらぬ獄炎の「翼」が展開した。「翼を授ける」のキャッチコピーそのままに、燃え滾る翼を得たクレーのトライクが重力を完全に振り切り、空高く舞い上がる。彼女の手には、ラスベガス全土を吹き飛ばすほどの超絶極大の太陽、TKO爆弾が生成されていた。
 
-Seeing Fuse's desperate suicide charge, Klee's hands finally reached for multiple "Red Bulls."
+Seeing Fuse's desperate suicide charge, Klee's hands finally reached for multiple "Red Bull Energy Drinks."
 *Kachak, kachak, pshhhhhhh!!*
-The moment she downed three "Red Bulls" at once, blindingly fast "wings" of hellfire unfurled from Klee's back and her trike. True to the catchphrase "Gives You Wings," Klee's trike gained blazing wings, completely shaking off gravity and soaring high into the sky. In her hands, a transcendent, hyper-massive sun—a TKO bomb capable of blowing away all of Las Vegas—was generated.
+The moment she downed three "Red Bull Energy Drinks" at once, blindingly fast "wings" of hellfire unfurled from Klee's back and her trike. True to the catchphrase "Gives You Wings," Klee's trike gained blazing wings, completely shaking off gravity and soaring high into the sky. In her hands, a transcendent, hyper-massive sun—a TKO bomb capable of blowing away all of Las Vegas—was generated.
 
 「上等だァァァッ！！」
 ヒューズもまた、残り全ての『LVMH Belvedere Vodka』のボトルを引き抜き、義手の指で三本まとめてボトルの首をへし折る！ 滝のような勢いで強烈なアルコールを喉へ流し込み、全細胞を沸騰させると同時――口の端から溢れ出た最高級の酒を、赤熱したマザーロードの砲身へと勢いよく吹き付けた！
@@ -8680,9 +8680,9 @@ Fuse, too, yanked out all his remaining bottles of "LVMH Belvedere Vodka" and sn
 A massive conflagration of ultra-high purity alcohol—a Vodka Flambé!
 The Motherlode, carrying all the energy of his boosted state, engulfed the flambé's flames and was unleashed upward at Klee as a scorching carpet bombardment that covered the entire sky.
 
-迫り来る地獄の炎に対し、クレーは表情一つ変えず、自らの残りすべてのRedBullを空中に放り投げ、起爆剤として誘爆させた。空を埋め尽くすほどの凄まじい衝撃波を盾にしながら、獄炎の翼を翻し、極大のTKO爆弾を抱えたままヒューズへ向かって一直線にメテオストライクを仕掛ける。
+迫り来る地獄の炎に対し、クレーは表情一つ変えず、自らの残りすべてのレッドブルを空中に放り投げ、起爆剤として誘爆させた。空を埋め尽くすほどの凄まじい衝撃波を盾にしながら、獄炎の翼を翻し、極大のTKO爆弾を抱えたままヒューズへ向かって一直線にメテオストライクを仕掛ける。
 
-Facing the incoming hellfire, Klee, without changing her expression, threw all her remaining Red Bulls into the air and detonated them as a primer. Using the sky-filling, terrifying shockwave as a shield, she flapped her hellfire wings and initiated a straight-line meteor strike toward Fuse while still clutching the massive TKO bomb.
+Facing the incoming hellfire, Klee, without changing her expression, threw all her remaining Red Bull into the air and detonated them as a primer. Using the sky-filling, terrifying shockwave as a shield, she flapped her hellfire wings and initiated a straight-line meteor strike toward Fuse while still clutching the massive TKO bomb.
 
 「ウォォォォォォォォッ！！！」
 ヒューズのチョッパーのエンジンが限界を超えて火を噴き、爆散する。彼は燃え盛る車体の上で仁王立ちになり、己のすべてを懸けた最後の一撃で、空から堕ちてくるクレーの太陽を真正面から迎え撃った。
