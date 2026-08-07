@@ -6874,9 +6874,9 @@ To trace the past world and claw back my lost mission and memories, I had no cho
 
 ---
 
-2XXX 年、統制社会の中で子供は遺伝子的に選別され、組み換えにより血統は最適化される。彼らは人工胎嚢で育ち、この世に生を得る。
+2XXX 年、統制社会の中で子供は遺伝子的に選別され、組み換えにより血統は最適化される。彼らは高分子フィルムの人工胎嚢で育ち、この世に生を得る。
 
-In the year 2XXX, within a controlled society, children are genetically selected and their bloodlines optimized through recombination. They are brought into this world from artificial amniotic sacs.
+IIn the year 2XXX, within a controlled society, children are genetically selected and their bloodlines optimized through recombination. They are brought into this world from artificial amniotic sacs made of polymer film.
 
 彼らは、教育を通した、更なる選別の過程を経る。その中の基準を満たした者のみが教育宿舎からの卒業を許された。
 
@@ -6992,9 +6992,9 @@ A small voice, with lips barely moving, dropped from the seat next to me. It was
 
 Recently, the number of empty seats in the classroom has been increasing. Students who were singing the same uniform songs next to me yesterday are gone today. No one asks why, and the automated machine acting as our teacher just repeats, "They have undergone proper relocation."
 
-怖くはない。だって、世界とは最初からそういうものだから。ただ、机の下で、秋埜くんの小指が私の小指にほんの少しだけ触れた時、金属にはない温かさがあって、それだけが私の世界のすべてみたいに思えた。
+怖くはない。だって、世界とは最初からそういうものだから。ただ、机の下で、秋埜くんの小指が私の小指にほんの少しだけ触れた時、フィルムにはなかった温かさがあって、それだけが私の世界のすべてみたいに思えた。
 
-I am not afraid. After all, that is just how the world has been from the beginning. But when Akino’s little finger touched mine ever so slightly under the desk, there was a warmth there that metal could never provide, and it felt like that was everything in my world.
+I am not afraid. After all, that is just how the world has been from the beginning. But when Akino’s little finger touched mine ever so slightly under the desk, there was a warmth there that film could never provide, and it felt like that was everything in my world.
 
 ---
 
@@ -8223,3 +8223,493 @@ The small comet carrying the two witches completely left behind the thick canopy
 
 Pushed-to-the-limit reserchers who let go of their achievements (credits) and positions. But the sky spreading before them was boundlessly blue and clear.
 The winds of society might be cold, but surely magic—no, the "pure heart that enjoys magic" which they reclaimed for themselves—will work things out somehow. 🪄✨
+
+
+---
+
+
+ラスベガスの広大な砂漠。うだるような熱波が陽炎を作り出す中、無骨な鉄骨と廃材で急造された巨大なバイクアクション訓練場がそびえ立っていた。辺り一面には、すでにむせ返るような濃密な火薬の匂いが立ち込めている。ここは、砂と鉄、そして爆炎だけが支配する狂気のコロシアム。
+
+The vast desert of Las Vegas. Amidst a sweltering heatwave conjuring mirages, a massive motorcycle action training ground, hastily constructed from rugged steel frames and scrap wood, towered over the landscape. The choking, dense stench of gunpowder already hung heavy in the air. This was a colosseum of madness, ruled only by sand, iron, and explosive flames.
+
+スタートラインには、二台の異形のモンスターマシンがエンジンを唸らせていた。
+一人は、百戦錬磨の爆弾魔、ヒューズ。
+もう一人は、純真無垢にして最凶の火花、クレー。
+クレーの瞳には、普段の無邪気さとは裏腹に、背筋が凍るような剣呑な光が宿っている。
+
+At the starting line, two grotesque monster machines roared their engines.
+On one was Fuse, a battle-hardened bomber with a hundred victories under his belt.
+On the other was Klee, an innocent yet utterly terrifying spark of destruction.
+Contrary to her usual innocence, a chilling, dangerous light harbored in Klee's eyes.
+
+「ハッ、冗談だろ？ 俺はおめーがオムツ履いてた赤ん坊の時から戦場を駆け回ってるんだぜ。火遊びなら他所でやんな、お嬢ちゃん」
+ヒューズが葉巻を咥えながら笑い飛ばす。しかし、クレーは無表情のまま、スロットルをふかした。
+
+"Hah, you're kidding, right? I've been running around battlefields since you were a baby in diapers. Go play with fire somewhere else, little lady."
+Fuse laughed it off, a cigar clamped in his mouth. However, Klee remained expressionless and revved her throttle.
+
+「……クレーの爆弾、全部ドカーンってしてあげる。おじさんの車も、全部」
+
+"...Klee is going to make all her bombs go boom. Your car too, mister, all of it."
+
+この狂宴のルールは至ってシンプル。互いの車体を破壊するか、特殊燃料をすべて奪うこと。
+それぞれに支給される特殊燃料は、1日につき3つ（最大1ダースまでストック可能）。
+ヒューズの車体には、最高級の『LVMH Belvedere Vodka』が3本。
+クレーの車体には、『RedBull 翼を授ける』が3缶、マリオカートの風船のようにマウントされている。
+
+The rules of this mad banquet were incredibly simple: destroy the opponent's vehicle or deprive them of all their special fuel.
+The special fuel supplied to each racer is 3 units per day (with a maximum stock of up to a dozen).
+Mounted on Fuse's vehicle were 3 bottles of top-tier "LVMH Belvedere Vodka."
+On Klee's vehicle, 3 cans of "Red Bull Gives You Wings" were mounted like balloons in Mario Kart.
+
+通常爆弾を相手にぶつければ、この特殊燃料を1つ破壊できる（3つ全て失えば燃料切れで敗北）。
+しかし、相手の車体そのものを粉砕する「TKO勝利」を狙うには、自らの特殊燃料を飲み干して能力を最大化（ブースト）し、最大出力の爆弾をクリーンヒットさせなければならない。使えば燃料を消費する諸刃の剣だ。
+
+Landing a hit with a standard bomb destroys one unit of this special fuel (losing all 3 means defeat by running out of fuel).
+However, to aim for a "TKO victory" that shatters the opponent's vehicle itself, one must chug their own special fuel to maximize (boost) their abilities and land a clean hit with a maximum-output bomb. It's a double-edged sword that consumes fuel upon use.
+
+シグナルが赤から青へ変わった。
+仁義なき爆弾疾走バトル、DAY 1の幕が開く。
+
+The signal turned from red to green.
+The curtain rises on DAY 1 of the ruthless bomb-sprinting battle.
+
+---
+
+### 【DAY 1】
+
+「ヒア・ウィー・ゴー！ 派手に行くぜ！」
+ヒューズの雄叫びと共に、排気音が爆発するように響き渡る。歴戦の傭兵である彼の周囲には、絶えず硝煙のオーラが漂っていた。
+彼が駆るのは、重装甲の世紀末風チョッパーバイク。フロントフォークにはグレネードランチャーが溶接され、巨大なリアタイヤがラスベガスの砂を激しく巻き上げる。
+
+"Here we go! Let's make this flashy!"
+Along with Fuse's battle cry, the exhaust roared like an explosion. An aura of gunpowder smoke constantly drifted around the veteran mercenary.
+The ride he piloted was a heavily armored, post-apocalyptic chopper. Grenade launchers were welded to the front forks, and the massive rear tire violently kicked up the Las Vegas sand.
+
+対するクレー。彼女の周囲には火花が蝶のように舞い、可愛らしい外見からは想像もつかない圧倒的な破壊のエネルギーが渦巻いている。
+クレーのマシンは、真っ赤な塗装が施された高機動型のオフロード・トライク。小さな車体にはドドコ型の特製爆弾が山のように積載され、俊敏な加速力でヒューズの重戦車バイクに喰らいつく。
+
+On the other side was Klee. Sparks danced around her like butterflies, and an overwhelming energy of destruction—unimaginable from her adorable appearance—swirled about.
+Klee's machine was a highly mobile off-road trike painted bright red. Her special Dodoco-shaped bombs were piled high on the small chassis, and with its agile acceleration, it snapped right at the heels of Fuse's heavy tank-like bike.
+
+「ドドコ、いっくよー！」
+クレーが車体を極限まで倒し込み、鉄骨のカーブを猛烈なドリフトで駆け抜ける。その遠心力を利用し、ポンポンと軽快なリズムで放たれた通常爆弾が、ヒューズの進路に雨あられと降り注いだ。
+
+"Dodoco, here we go!"
+Klee leaned her trike to the absolute limit, tearing through the steel curve with a fierce drift. Using that centrifugal force, standard bombs were tossed in a light, popping rhythm, raining down relentlessly on Fuse's path.
+
+「おっと、危ねぇ！」
+ヒューズは義手の右腕でハンドルを強引に引き起こし、フロントタイヤで爆弾を弾き飛ばしながらウィリー走行で爆風の波を乗り越える。着地と同時にクラスター爆弾をばら撒き、クレーの逃げ道を塞ぐ。
+互いの通常爆弾が空中で激突し、砂漠の空に無数の花火が打ち上がった。
+
+"Whoa, that was close!"
+Fuse forcefully pulled up the handlebars with his prosthetic right arm, deflecting bombs with his front tire as he rode over the wave of explosions in a wheelie. The moment he landed, he scattered cluster bombs, cutting off Klee's escape route.
+Their standard bombs collided in mid-air, launching countless fireworks into the desert sky.
+
+クレーの剣呑な瞳が、砂埃の向こうのヒューズを捉える。彼女はただ無差別に爆弾を投げているわけではなかった。わざと手前に爆弾を落として煙幕を張り、ヒューズの視界を奪う。そして、コースに点在する鉄のジャンプ台の裏側に、時限式のブービートラップを巧妙に配置した。
+
+Klee's dangerous eyes locked onto Fuse through the dust. She wasn't just throwing bombs randomly. She deliberately dropped bombs just ahead of her to create a smokescreen, robbing Fuse of his vision. Then, she cleverly planted timed booby traps on the back of the steel jump ramps scattered across the course.
+
+「ガキの遊びにしちゃあ、随分と小賢しいじゃねぇか」
+煙幕を突き破ったヒューズは、不自然に静かなジャンプ台の軌道を見て直感的にトラップの存在を察知。彼はあえてコースアウトするルートを選び、壁面の鉄骨をウォールランのように走り抜けてトラップを回避。同時に、クレーの死角からバウンド式のフラググレネードを放り込んだ。
+
+"Pretty crafty for child's play, ain't ya."
+Bursting through the smokescreen, Fuse intuitively sensed the traps after noticing the unnaturally quiet trajectory of the jump ramp. He intentionally chose a route that took him off-course, avoiding the traps by running across the steel walls like a wall-run. At the same time, he tossed a bouncing frag grenade from Klee's blind spot.
+
+「……っ！」
+クレーは急ブレーキでグレネードの直撃を避けたが、至近距離での爆発の衝撃波がトライクを襲う。爆風がクレーの車体を揺さぶり、後部にマウントされていた『RedBull 翼を授ける』の1缶に破片が直撃した。
+プシュゥゥゥッ！とエナジードリンクが砂漠に噴き出し、泡と消える。
+（クレー：残り燃料2 / ヒューズ：残り燃料3）
+
+"...!"
+Klee slammed on the brakes to avoid a direct hit from the grenade, but the shockwave of the point-blank explosion struck her trike. The blast shook Klee's vehicle, and shrapnel scored a direct hit on one of the "Red Bull Gives You Wings" cans mounted on the back.
+*Pshhhhh!* The energy drink sprayed out over the desert, disappearing into froth.
+(Klee: 2 fuel remaining / Fuse: 3 fuel remaining)
+
+「まずは一つ、だ。手加減はしねぇぞ！」
+ヒューズがニヤリと笑う。しかし次の瞬間、クレーが真顔のまま、手元の『RedBull』に手を伸ばしかけた。
+彼女の指がタブにかかった瞬間、尋常ではないプレップレッシャーが砂漠を包み込む。もしここで彼女がRedBullを飲み、能力を最大化させれば、その爆弾は直撃＝即死のTKO兵器と化す。
+
+"That's one down. I ain't holding back!"
+Fuse grinned. But the next moment, Klee, with a deadpan face, reached for the Red Bull near her hand.
+The instant her finger touched the tab, an unnatural pressure enveloped the desert. If she drank the Red Bull here and maximized her abilities, her bombs would transform into TKO weapons where a direct hit equals instant death.
+
+ヒューズの背筋に冷たい汗が流れた。
+（ここで撃ち合うか……？ いや、まだ初日だ。俺もウォッカを開けるには早すぎる）
+
+Cold sweat ran down Fuse's spine.
+*(Are we doing a shootout here...? No, it's still the first day. It's too early for me to crack open the vodka, too.)*
+
+クレーはタブから指を離し、再びアクセルを全開にして砂煙の彼方へ距離を取った。チッ、とヒューズも舌打ちをして速度を落とす。
+初日。両者とも自らの車体を破壊する「最大出力」のカードを切ることなく、探り合いのまま日没を迎えた。
+
+Klee took her finger off the tab and slammed the accelerator wide open again, distancing herself beyond the dust cloud. *Tch*, Fuse clicked his tongue and slowed down.
+Day 1. Both racers saw the sunset while still feeling each other out, neither playing their "maximum output" card that could destroy their own vehicles.
+
+しかし、クレーの容赦のない殺気と、ヒューズの老獪なテクニックが激突したアリーナには、明日以降の凄惨な死闘を予感させる焦げた匂いだけが色濃く残っていた。
+――DAY 2へ続く。
+
+However, in the arena where Klee's merciless bloodlust and Fuse's veteran techniques clashed, only a burnt smell remained thick in the air, foreboding a gruesome battle to the death from tomorrow onwards.
+-- To be continued in DAY 2.
+
+ラスベガスの容赦ない太陽が再び中天に差し掛かる。DAY 1の激闘で焦げ付いた鉄骨と抉れた砂の轍が、ここがもはや単なる訓練場ではなく、狂気の処刑場であることを無言で物語っていた。
+朝のサプライドロップにより、両者に新たな特殊燃料が3つずつ支給される。
+これにより、現在のストックはヒューズが6本（ウォッカ）、クレーが5缶（RedBull）となった。
+シグナルが点灯する。DAY 2の開戦だ。
+
+Las Vegas's unforgiving sun reached its zenith once again. The scorched steel frames and gouged sandy ruts from DAY 1's fierce clash silently testified that this was no longer a mere training ground, but an execution ground of madness.
+Through the morning supply drop, three new special fuels were distributed to each of them.
+With this, their current stocks were 6 bottles for Fuse (Vodka) and 5 cans for Klee (Red Bull).
+The signal lit up. The outbreak of DAY 2.
+
+---
+
+### 【DAY 2】
+
+「ハッ、昨日はご挨拶だったな。だが、今日はお遊びの時間は終わりだぜ」
+ヒューズは笑みを浮かべていたが、その目は完全にハンターのそれだった。目の前の少女が、ただの子供などではない純粋な「破壊の権化」であることを、彼はもう疑っていなかった。
+
+"Hah, yesterday was just a greeting. But today, playtime is over."
+Fuse wore a smile, but his eyes were entirely those of a hunter. He no longer harbored any doubts that the young girl before him was no mere child, but a pure "incarnation of destruction."
+
+対するクレーは、異常なほど静かだった。普段の「ドカーン！」と笑う彼女の姿はない。氷のように冷たい瞳でヒューズのマウントされたウォッカをじっと見つめ、ただ指先で小さな火花を弄んでいる。
+
+Klee, on the other hand, was abnormally quiet. Her usual laughing self, shouting "Boom!", was nowhere to be seen. With eyes as cold as ice, she stared intently at Fuse's mounted vodka, simply playing with a small spark at her fingertips.
+
+爆音と共に、ヒューズの重装甲チョッパーが猛然とダッシュを決める。V8エンジンを無理やり積んだかのようなその鉄の獣は、DAY 1で負った装甲の焦げ跡すらも勲章のように輝かせ、圧倒的なトルクで砂を蹴り上げた。
+
+With an explosive roar, Fuse's heavily armored chopper launched into a fierce dash. That iron beast, seemingly crammed with a V8 engine by force, made even the scorch marks on its armor from DAY 1 shine like medals, kicking up the sand with overwhelming torque.
+
+クレーの真紅のオフロード・トライクもまた、弾かれたように飛び出す。ヒューズの重戦車とは対極の、恐ろしいほどの軽量化とサスペンション調整が施されたその車体は、砂漠の起伏をまるで平地のように舐めていく。
+
+Klee's crimson off-road trike also shot forward as if flicked away. In stark contrast to Fuse's heavy tank, the chassis—subjected to terrifying weight reduction and suspension tuning—skimmed over the desert's undulations as if it were flat ground.
+
+「そこっ……！」
+クレーは急勾配の砂丘を利用し、トライクごと空高く舞い上がった。空中からヒューズの頭上を取ると、車体をスピンさせながら全方位に向けて通常爆弾を乱れ撃つ。アクロバティックな死の雨だ。
+
+"Right there...!"
+Utilizing a steep dune, Klee soared high into the sky, trike and all. Taking the high ground above Fuse in mid-air, she spun her vehicle while wildly firing standard bombs in all directions. An acrobatic rain of death.
+
+「甘ぇよッ！」
+ヒューズはブレーキを踏むことなく、車体を真横にスライドさせる超絶的なパワースライドで爆撃の網目をすり抜ける。車体を地面すれすれまで倒し込みながら、片手でマザーロード（巨大迫撃砲）の照準を空中のクレーに合わせた。
+
+"Too naive!"
+Without touching the brakes, Fuse slipped through the bombardment grid with a transcendent powerslide that kicked his vehicle completely sideways. Leaning the chassis until it nearly scraped the ground, he aimed his Motherlode (a giant mortar) at Klee in the air with one hand.
+
+だが、クレーはヒューズが反撃に出るタイミングを完全に読んでいた。空中にばら撒いたのは目くらましであり、本命は着地地点の砂の中に事前に滑り込ませていた地雷型のドドコ爆弾。ヒューズの進路上で、絶妙なタイミングで起爆させる。
+
+However, Klee had completely read the timing of Fuse's counterattack. The bombs she scattered in the air were a blind; the real payload was a landmine-type Dodoco bomb she had slipped into the sand at her landing spot beforehand. Right in Fuse's path, she detonated it with exquisite timing.
+
+「チィッ！」
+砂の下からの起爆音に気づいたヒューズは、瞬時にスロットルを戻し、フロントタイヤを犠牲にして爆風を受け流す。ダメージを最小限に抑える老獪なダメージコントロール。しかし、体勢を崩したその一瞬の隙を、クレーは見逃さなかった。
+
+"Tch!"
+Noticing the detonation sound from beneath the sand, Fuse instantly rolled back the throttle, sacrificing his front tire to parry the blast. A veteran's damage control to minimize the hit. But Klee didn't overlook the momentary opening created when he lost his balance.
+
+クレーの手が、ストックされた『RedBull 翼を授ける』のタブに掛かる。
+プシュッ、という小気味よい音が響いた直後、クレーはそれを一気に煽った。
+ゴゴゴゴゴ……！と、クレーの周囲の空間が陽炎を超えて歪む。エナジードリンクによって能力を「最大化」した彼女が掲げたのは、車体を消し飛ばす威力を秘めた特大の火花。
+
+Klee's hand grasped the tab of a stocked "Red Bull Gives You Wings."
+Right after the crisp *psssht* sound echoed, Klee chugged it down in one go.
+*Rumble...!* The space around Klee warped, surpassing a mere heat haze. Having "maximized" her abilities with the energy drink, what she held aloft was an oversized spark harboring the power to obliterate a vehicle.
+
+「おじさん、バイバイ」
+クレーの腕から、太陽そのもののような極大の爆弾がヒューズへ向かって放たれた。直撃すればTKO負けの絶体絶命の危機。
+
+"Bye-bye, mister."
+From Klee's arm, a massive bomb resembling the sun itself was unleashed toward Fuse. A desperate crisis where a direct hit meant a TKO loss.
+
+「クソッ、やりやがる！」
+ヒューズは即座に『LVMH Belvedere Vodka』のボトルを引き抜き、コルクを吹き飛ばして一気に喉へ流し込んだ。強烈なアルコールが血流を沸騰させ、彼の爆発物制御能力を極限まで引き上げる（ブースト状態）。
+彼はブースト状態の全霊を込めたクラスター爆弾を、迫り来るクレーの極大爆弾へ向けて発射した。
+
+"Damn it, you asked for it!"
+Fuse immediately yanked out a bottle of "LVMH Belvedere Vodka," blew off the cork, and poured it down his throat in one gulp. The fierce alcohol boiled his bloodstream, elevating his explosive control capabilities to their absolute limit (boost state).
+He fired a cluster bomb infused with all his boosted might toward Klee's incoming massive bomb.
+
+**ズドォォォォォォォン！！！**
+
+最大出力の爆弾同士が空中で激突し、ラスベガスの砂漠にミニチュアのキノコ雲が巻き起こる。
+恐ろしい衝撃波がアリーナを舐め回し、鉄骨のタワーが飴細工のようにへし折れた。
+
+**KABOOOOOOOOOM!!!**
+
+The maximum-output bombs clashed mid-air, kicking up a miniature mushroom cloud in the Las Vegas desert.
+A terrifying shockwave licked across the arena, snapping steel towers like pulled sugar.
+
+猛烈な爆風が両者の車体を吹き飛ばす。
+能力を最大化して放たれた互いの「TKO攻撃」は相殺された。
+しかし、激しい衝撃波と乱気流の中、クレーが執念で放っていた一つの通常爆弾が、姿勢制御に手一杯だったヒューズのマシンの側面に直撃する。
+
+The ferocious blast blew both their vehicles away.
+Their "TKO attacks," unleashed at maximized ability, canceled each other out.
+However, amidst the violent shockwave and turbulence, a single standard bomb Klee had tenaciously thrown scored a direct hit on the side of Fuse's machine, right when he was overwhelmed trying to correct his posture.
+
+ガシャン！と鈍い音が響き、ヒューズの車体にマウントされていた未開封のウォッカが1本、無残に砕け散った。
+
+A dull *crash!* echoed, and one unopened bottle of vodka mounted on Fuse's chassis shattered mercilessly into pieces.
+
+「……ッ、上等じゃねぇか、クソガキ！」
+砂煙を突き破り、ヒューズのチョッパーが再び咆哮を上げる。クレーもまた、赤く輝く瞳で彼を睨み返した。
+
+"...Tch, bring it on, you little brat!"
+Bursting through the dust cloud, Fuse's chopper roared to life once more. Klee, too, glared back at him with crimson, glowing eyes.
+
+DAY 2 終了。
+最大出力の応酬により、両者は命綱である特殊燃料を削り合う死闘の領域へと完全に足を踏み入れた。
+
+Day 2 ended.
+With an exchange of maximum outputs, both racers had completely stepped into the realm of a death match, whittling away at their lifelines—the special fuel.
+
+* **ヒューズ残り燃料：4**（DAY2支給分含め6 - ブースト消費1 - クレーの通常攻撃による破壊1）
+* **クレー残り燃料：4**（DAY2支給分含め5 - ブースト消費1）
+
+戦況は完全に互角。
+ヒューズの額には冷や汗が、クレーの口角には狂気の笑みが微かに浮かんでいた。
+
+* **Fuse remaining fuel: 4** (6 including DAY 2 supply - 1 boost consumption - 1 destroyed by Klee's normal attack)
+* **Klee remaining fuel: 4** (5 including DAY 2 supply - 1 boost consumption)
+
+The battle was completely even.
+A cold sweat beaded on Fuse's forehead, while a subtle, mad grin crept onto the corners of Klee's mouth.
+
+ラスベガスの空を、硝煙で黒く染まった太陽が照らし出している。
+DAY 2の激戦を経て、かつて訓練場だった場所は、ひしゃげた鉄骨とクレーターだらけの荒野へと変貌していた。焼け焦げた火薬の匂いが、呼吸をするだけで肺を焼くように濃密に立ち込めている。
+
+The Las Vegas sky was illuminated by a sun stained black with gunpowder smoke.
+Following the fierce battles of DAY 2, what was once a training ground had mutated into a wasteland riddled with crumpled steel frames and craters. The scent of scorched gunpowder hung so densely that simply breathing felt like burning the lungs.
+
+夜明けと共にドローンが投下したサプライボックスにより、両者に3つずつの特殊燃料が補充された。
+これにより、現在のストックは**ヒューズが7本（ウォッカ）、クレーが7缶（RedBull）**。
+明日、DAY 4がこの狂宴の「Final Day」となることがアナウンスされ、アリーナの空気は限界まで張り詰めていた。
+シグナルが鳴り響く。DAY 3、決死のサバイバルが幕を開ける。
+
+From supply boxes dropped by drones at dawn, three special fuels each were replenished for both of them.
+With this, their current stocks were **7 bottles for Fuse (Vodka) and 7 cans for Klee (Red Bull)**.
+It was announced that tomorrow, DAY 4, would be the "Final Day" of this mad banquet, stretching the tension in the arena to its absolute breaking point.
+The signal blared. DAY 3, a desperate survival game, raises its curtain.
+
+---
+
+### 【DAY 3】
+
+「ハッ……まさか、ここまで追い詰められるとはな。だが、血が沸騰するようなこのヒリつき……悪くねぇ！」
+ヒューズの顔には煤と血がこびりついていたが、その口元には狂気じみた笑みが張り付いていた。歴戦の爆弾魔としての本能が、目の前の少女を「絶対に仕留めねばならない同格の化け物」として完全に認識していた。
+
+"Hah... Never thought I'd be pushed this far. But this tingling sensation that makes my blood boil... it ain't bad!"
+Soot and blood caked Fuse's face, yet a crazed smile was plastered on his lips. His instincts as a veteran bomber fully recognized the young girl before him as an "equal monster that must absolutely be eliminated."
+
+彼が駆る世紀末風チョッパーは、すでに装甲の半分が吹き飛び、剥き出しのV8エンジンが悲鳴のような排気音を上げている。だが、その無骨な鉄の塊は、傷つくほどに凶悪な獣のような凄みを増し、黒煙を吹き出しながら大地を抉り進む。
+
+The post-apocalyptic chopper he rode had already lost half its armor, and the exposed V8 engine let out a scream-like exhaust note. However, the more bruised that rugged hunk of iron became, the more it took on the terrifying presence of a ferocious beast, gouging the earth as it spewed black smoke.
+
+対するクレー。彼女の口から言葉は消えていた。ただ、赤く発光する瞳だけが砂埃の向こうで不気味に揺らめいている。無垢なる狂気は完全に臨界点を突破し、息を吐くように手の中で起爆前の火花を明滅させていた。
+
+Against him stood Klee. Words had vanished from her lips. Only her crimson, glowing eyes flickered eerily through the dust. Her innocent madness had completely breached its critical point, and like drawing breath, pre-detonation sparks flickered in her hands.
+
+クレーの真紅のトライクもまた、度重なる爆風で塗装は剥げ落ち、黒焦げのフレームが露出している。しかし、異常なまでの軽量化とサスペンションの調整は健在であり、ジェット機のような甲高い駆動音を響かせて戦場を滑空する。
+
+Klee's crimson trike had also been stripped of its paint by repeated blasts, exposing a charred black frame. However, its insane weight reduction and suspension tuning remained intact, gliding across the battlefield with a high-pitched whine like a jet plane.
+
+「……ッ！」
+クレーは崩れかけた巨大な鉄塔の残骸をスロープ代わりに駆け上がり、空高く跳躍。トライクを空中でキリモミ回転させながら、遠心力を利用して全方位にドドコ爆弾の雨を降らせる。回避不能とも思える、狂気の絨毯爆撃だ。
+
+"...!"
+Klee dashed up the ruins of a collapsing giant steel tower, using it as a ramp to leap high into the sky. Spinning the trike into a barrel roll mid-air, she used centrifugal force to rain Dodoco bombs in all directions. It was a mad carpet bombing that seemed impossible to evade.
+
+「舐めんじゃねぇッ！」
+ヒューズは回避を放棄した。チョッパーの重量と大トルクを活かし、爆風の壁のど真ん中へ正面から突撃。フロントタイヤで爆弾を物理的に弾き飛ばし、火柱の中をウィリー走行のまま強行突破する、まさに重戦車のアクション。
+
+"Don't mess with me!"
+Fuse abandoned evasion. Leveraging the chopper's weight and massive torque, he charged head-on right into the dead center of the wall of explosions. Physically swatting bombs away with his front tire, he forced his way through the pillars of fire while popping a wheelie—an action truly befitting a heavy tank.
+
+火柱を抜けたヒューズの眼前に、着地したクレーの姿があった。彼女の手が、マウントされた『RedBull』のタブに掛かる。
+（最大出力のTKO狙いか！？）
+ヒューズが身構えた瞬間、それはクレーのフェイントだった。彼女はRedBullを飲むフリをしてヒューズの防御行動（ブースト消費）を誘い、その実、トライクの後部から無数のバウンド式地雷をヒューズの足元へばら撒いていた。
+
+Right before Fuse's eyes as he broke through the flames stood Klee, freshly landed. Her hand grasped the tab of a mounted "Red Bull."
+*(Aiming for a max-output TKO!?)*
+The moment Fuse braced himself, he realized it was Klee's feint. She faked drinking the Red Bull to bait Fuse into a defensive action (consuming a boost), while in reality, she scattered countless bouncing landmines from the back of her trike right at Fuse's feet.
+
+「小賢しい罠だぜ！」
+ヒューズは間一髪でフェイントを見破った。ウォッカへ伸ばした手を止め、代わりに右腕の義手からナックルクラスターを自らのマシンの側面に発射。自身の爆風の反発力を利用して重いチョッパーを真横にスライドさせ、地雷原をすり抜けながら、クレーの死角へ通常グレネードを正確に投げ込んだ。
+
+"A cunning little trap!"
+Fuse saw through the feint by a hair's breadth. He stopped his hand from reaching for the vodka, and instead fired a knuckle cluster from his right prosthetic arm into the side of his own machine. Using the repulsive force of his own blast to slide the heavy chopper completely sideways, he slipped through the minefield and accurately tossed a standard grenade into Klee's blind spot.
+
+ドガァァン！！
+「ああっ……！」
+ヒューズのグレネードがトライクの側面にクリーンヒット。積載されていた『RedBull』が1缶、激しく破裂して中身をぶちまけた。
+（クレー残り燃料：6）
+
+*KABOOM!!*
+"Ah...!"
+Fuse's grenade scored a clean hit on the side of the trike. One of the loaded "Red Bulls" violently ruptured, spewing its contents.
+(Klee remaining fuel: 6)
+
+その瞬間、クレーの瞳の奥で何かが完全に切れた。彼女は躊躇うことなく別のRedBullのタブを引き抜き、一気に飲み干す。
+空間が真っ赤に歪み、限界までブーストされた彼女の手から、周囲の酸素をすべて焼き尽くすほどの超特大メガフレア爆弾が放たれた。直撃すれば車体ごと蒸発する必殺の一撃。
+
+At that moment, something inside Klee's eyes completely snapped. Without hesitation, she yanked the tab off another Red Bull and chugged it down.
+Space warped a deep crimson red, and from her hand—boosted to its absolute limits—an ultra-massive mega-flare bomb that threatened to burn away all surrounding oxygen was unleashed. A lethal strike that would vaporize the vehicle upon direct impact.
+
+「クソッタレがぁぁっ！！」
+ヒューズもまた、コルクを噛み砕いて『LVMH Belvedere Vodka』をあおり、アルコールで全細胞を極限までブーストさせる。彼は背中のマザーロードを構え、迫り来る太陽のような爆発に対し、全弾の炎のリングを撃ち放った。
+
+"Son of a bitch!!"
+Fuse, too, bit off the cork, chugged the "LVMH Belvedere Vodka," and boosted all his cells to the maximum with the alcohol. He readied the Motherlode on his back and fired a full barrage ring of fire against the incoming sun-like explosion.
+
+**ゴゴゴゴゴゴォォォォォン！！！**
+
+最大出力同士の衝突。ラスベガスの砂漠に、昨日とは比べ物にならない巨大なクレーターが穿たれる。
+発生した凄まじい竜巻のような爆風が、両者のマシンを空の彼方へ吹き飛ばした。
+
+**ROOOOOOOOAAAAAAARRRRR!!!**
+
+The collision of maximum outputs. A massive crater, incomparable to yesterday's, was gouged into the Las Vegas desert.
+The ensuing blast, like a terrifying tornado, blew both machines away into the distant sky.
+
+TKO攻撃自体は相殺された。しかし、荒れ狂う爆風の乱気流の中でコントロールを失ったヒューズの車体に、上空から降り注いだクレーの残存爆弾が2発、連続で直撃する。
+
+The TKO attacks themselves canceled out. However, as Fuse lost control of his vehicle in the raging turbulence of the blast, two of Klee's lingering bombs rained down from above, scoring consecutive direct hits.
+
+ガシャン！パリーン！！
+「ガッ……！ 嘘だろ……ッ！」
+ヒューズのチョッパーにマウントされていたウォッカが、立て続けに2本粉砕された。
+砂塵が晴れた後、這々の体で体勢を立て直した二台のマシンが、互いに満身創痍のまま睨み合う。
+
+*Crash! Shatter!!*
+"Gah...! You gotta be kidding me...!"
+Two bottles of vodka mounted on Fuse's chopper were smashed one after another.
+After the dust cleared, the two machines, having barely managed to right themselves, glared at each other, both battered and bruised.
+
+DAY 3 終了。
+フェイントと最大出力が交差する死闘の末、明日の「Final Day」へ持ち越された燃料は以下の通りとなった。
+
+DAY 3 ended.
+After a desperate struggle where feints and maximum outputs crossed paths, the fuel carried over to tomorrow's "Final Day" was as follows:
+
+* **ヒューズ残り燃料：3**（DAY3開始時7 - ブースト消費1 - クレーの通常攻撃による破壊2）
+* **クレー残り燃料：5**（DAY3開始時7 - ブースト消費1 - ヒューズの通常攻撃による破壊1）
+
+ヒューズは後がなくなった。一方のクレーも、理性を完全に焼き切った修羅と化している。
+すべてが決着するDAY 4、Final Day。
+砂と鉄の墓場で、仁義なき爆弾疾走バトルは最終局面を迎える。
+
+* **Fuse remaining fuel: 3** (7 at start of DAY 3 - 1 boost consumption - 2 destroyed by Klee's normal attack)
+* **Klee remaining fuel: 5** (7 at start of DAY 3 - 1 boost consumption - 1 destroyed by Fuse's normal attack)
+
+Fuse had his back against the wall. Meanwhile, Klee had turned into an Asura, her reason completely burned away.
+DAY 4, Final Day, where everything will be settled.
+In a graveyard of sand and iron, the ruthless bomb-sprint battle enters its final phase.
+
+ラスベガスの地平線から、血のように赤い太陽が昇る。
+ここはすでに訓練場ではない。三日間の激戦によってすべての鉄骨は融解し、砂丘はガラス化して黒く輝く、真の「死地」と化していた。
+
+A blood-red sun rose from the Las Vegas horizon.
+This was no longer a training ground. Three days of fierce battles had melted all the steel frames and turned the dunes into glistening black glass, transforming it into a true "death zone."
+
+Final Day。もはやこれ以上のサプライドロップはない。
+最終決戦に持ち込まれた命綱は、**ヒューズのウォッカが残り3本、クレーのRedBullが残り5缶**。
+互いの魂とマシンの限界を賭けた、仁義なき爆弾疾走バトルのフィナーレが幕を開ける。
+
+Final Day. There would be no more supply drops.
+The lifelines brought into this final showdown were **3 remaining bottles of vodka for Fuse, and 5 remaining cans of Red Bull for Klee**.
+Wagering their souls and the absolute limits of their machines, the finale of this ruthless bomb-sprint battle begins.
+
+---
+
+### 【FINAL DAY】
+
+ヒューズのチョッパーは、もはや元の原型を留めていなかった。装甲は完全に吹き飛び、剥き出しになったV8エンジンが、まるで断末魔のような重低音を響かせている。しかし、その満身創痍の鉄の骨格は、限界を超えてなお走り続けようとする獣の意志を宿していた。
+
+Fuse's chopper no longer retained its original form. The armor was completely blown off, and the exposed V8 engine echoed with a deep bass that sounded like a death agony. However, that battered iron skeleton harbored the will of a beast determined to keep running beyond its limits.
+
+「ハハハッ！ 最高の朝じゃねぇか！」
+ヒューズは血と煤にまみれた顔で、心底楽しそうに笑い声を上げた。もはや燃料の差など関係ない。彼の爆弾魔としての本能は、目の前の小さな死神と完全に殺し合うこの瞬間に、これ以上ないほどの悦びを見出していた。
+
+"Hahaha! Isn't this the best morning ever!"
+With a face covered in blood and soot, Fuse laughed aloud, seemingly enjoying himself from the bottom of his heart. The difference in fuel didn't matter anymore. His instincts as a bomber found the utmost joy in this very moment, locked in a mutual killing match with the tiny reaper before him.
+
+対するクレーのオフロード・トライクもまた、真紅の塗装は全て焦げ落ち、黒い骸骨の馬車のような異形と化していた。サスペンションはひしゃげ、タイヤはひび割れているが、エンジンフレームの奥底からは不気味な赤い光が漏れ出している。
+
+Klee's off-road trike, too, had all its crimson paint charred away, morphing into a grotesque form like a black skeleton's carriage. The suspension was crushed and the tires cracked, yet an eerie red light leaked from the depths of the engine frame.
+
+クレーの顔に、もはや一切の感情はなかった。ただ、世界のすべてを灰燼に帰すことだけを目的に作られたかのような、純粋で底知れぬ破壊の権化。彼女の周囲の砂漠が、その圧倒的な熱量に耐えきれず自然発火を始めていた。
+
+Klee's face no longer held a shred of emotion. She was purely a bottomless avatar of destruction, as if created solely for the purpose of turning the entire world to ash. Unable to withstand her overwhelming heat, the desert around her began to spontaneously combust.
+
+グリーンランプの点灯を待たずして、クレーが爆発的なスタートを切る。ガラス化したクレーターの壁面を、重力を無視したかのような垂直ドリフトで駆け上がり、ヒューズの頭上から雨霰とドドコ爆弾の弾幕を浴びせかける。
+
+Without waiting for the green light, Klee took off with an explosive start. She dashed up the walls of a glassified crater with a vertical drift that seemed to defy gravity, raining down a barrage of Dodoco bombs from above Fuse's head.
+
+「来やがったな、お嬢ちゃん！」
+ヒューズはチョッパーのアクセルを全開にし、迫り来る爆弾の雨に向かって一直線に突進。爆発の衝撃波をフロントフォークで受け止め、その反発力を利用して数十メートルもの大ジャンプを敢行し、空中からクレーのトライクへと肉薄する。
+
+"Here you come, little lady!"
+Fuse pinned the throttle of his chopper wide open, charging in a straight line toward the incoming rain of bombs. Catching the explosive shockwaves on his front forks, he used the repulsive force to execute a massive jump of dozens of meters, closing in on Klee's trike from mid-air.
+
+しかし、クレーはヒューズの突撃を冷静に計算していた。彼女はわざと空中に足場となる時限爆弾を配置し、それを蹴るようにして空中でトライクの軌道を急激に変化させる。ヒューズの残り少ないウォッカを確実に削り取るため、全方位から逃げ場のない「爆風の檻」を構築し始めた。
+
+But Klee had calmly calculated Fuse's charge. She intentionally placed timed bombs in mid-air to act as footholds, kicking off them to drastically alter her trike's trajectory mid-flight. To ensure she scraped away Fuse's dwindling remaining vodka, she began constructing an inescapable "cage of explosions" from all directions.
+
+（チマチマ削り合いをしてる余裕は、もう俺にはねぇ……！）
+ヒューズは瞬時に悟った。このまま通常爆弾の撃ち合いを続ければ、燃料差で確実にジリ貧になる。彼はあえて防御を捨て、クレーが構築した「爆風の檻」の最も分厚い部分へ、自ら被弾覚悟でマシンを突っ込ませた。肉を切らせて骨を断つ、ゼロ距離のTKO狙いへシフトする。
+
+*(I ain't got the luxury to sit around whittling away little by little anymore...)*
+Fuse realized this instantly. If they continued exchanging standard bombs, the fuel gap would guarantee his slow demise. He deliberately abandoned his defense and plunged his machine right into the thickest part of Klee's "cage of explosions," fully prepared to take hits. He shifted to a point-blank TKO strategy: giving up flesh to sever bone.
+
+ヒューズの決死の特攻を見たクレーの手が、ついに複数の『RedBull』へと伸びる。
+カシュッ、カシュッ、プシュゥゥゥッ！！
+三本もの『RedBull』を一気に飲み干した瞬間、クレーの背中とトライクから、目にも止まらぬ獄炎の「翼」が展開した。「翼を授ける」のキャッチコピーそのままに、燃え滾る翼を得たクレーのトライクが重力を完全に振り切り、空高く舞い上がる。彼女の手には、ラスベガス全土を吹き飛ばすほどの超絶極大の太陽、TKO爆弾が生成されていた。
+
+Seeing Fuse's desperate suicide charge, Klee's hands finally reached for multiple "Red Bulls."
+*Kachak, kachak, pshhhhhhh!!*
+The moment she downed three "Red Bulls" at once, blindingly fast "wings" of hellfire unfurled from Klee's back and her trike. True to the catchphrase "Gives You Wings," Klee's trike gained blazing wings, completely shaking off gravity and soaring high into the sky. In her hands, a transcendent, hyper-massive sun—a TKO bomb capable of blowing away all of Las Vegas—was generated.
+
+「上等だァァァッ！！」
+ヒューズもまた、残り全ての『LVMH Belvedere Vodka』のボトルを引き抜き、義手の指で三本まとめてボトルの首をへし折る！ 滝のような勢いで強烈なアルコールを喉へ流し込み、全細胞を沸騰させると同時――口の端から溢れ出た最高級の酒を、赤熱したマザーロードの砲身へと勢いよく吹き付けた！
+
+"Bring it ooooooon!!"
+Fuse, too, yanked out all his remaining bottles of "LVMH Belvedere Vodka" and snapped the necks of all three at once with the fingers of his prosthetic arm! He poured the potent alcohol down his throat like a waterfall, boiling every cell in his body, while simultaneously spitting the top-tier liquor that overflowed from his mouth forcefully onto the red-hot barrel of his Motherlode!
+
+超高純度アルコールの大炎上――ウォッカのフランベ！
+ブースト状態の全エネルギーを乗せたマザーロードが、フランベの炎を巻き込みながら、空を覆い尽くすほどの灼熱の絨毯爆撃となって上空のクレーへと放たれた。
+
+A massive conflagration of ultra-high purity alcohol—a Vodka Flambé!
+The Motherlode, carrying all the energy of his boosted state, engulfed the flambé's flames and was unleashed upward at Klee as a scorching carpet bombardment that covered the entire sky.
+
+迫り来る地獄の炎に対し、クレーは表情一つ変えず、自らの残りすべてのRedBullを空中に放り投げ、起爆剤として誘爆させた。空を埋め尽くすほどの凄まじい衝撃波を盾にしながら、獄炎の翼を翻し、極大のTKO爆弾を抱えたままヒューズへ向かって一直線にメテオストライクを仕掛ける。
+
+Facing the incoming hellfire, Klee, without changing her expression, threw all her remaining Red Bulls into the air and detonated them as a primer. Using the sky-filling, terrifying shockwave as a shield, she flapped her hellfire wings and initiated a straight-line meteor strike toward Fuse while still clutching the massive TKO bomb.
+
+「ウォォォォォォォォッ！！！」
+ヒューズのチョッパーのエンジンが限界を超えて火を噴き、爆散する。彼は燃え盛る車体の上で仁王立ちになり、己のすべてを懸けた最後の一撃で、空から堕ちてくるクレーの太陽を真正面から迎え撃った。
+
+"WOOOOOOOOOOOOO!!!"
+The engine of Fuse's chopper breached its limits, spewing fire and blowing apart. He stood tall and unyielding atop the burning vehicle, and with a final strike wagering everything he had, he met Klee's falling sun head-on.
+
+**閃光。**
+音すらかき消すほどの、究極の爆発。
+白に染まったラスベガスの空から、ガラスの破片と化した砂が雪のように降り注ぐ。
+
+**A flash.**
+An ultimate explosion that drowned out even sound itself.
+From the white-dyed Las Vegas sky, sand turned into glass shards rained down like snow.
+
+やがて煙が晴れたアリーナの中心には、跡形もなく消し飛んだ重装甲チョッパーと、完全に融解した真紅のトライクの残骸だけが転がっていた。両者のマシンは完全に無効化され、手持ちの特殊燃料もすべて蒸発。
+完全なる相打ち。
+
+Eventually, as the smoke cleared, all that remained in the center of the arena were the remnants of a heavily armored chopper that had been blown away without a trace, and a completely melted crimson trike. Both machines were completely neutralized, and all the special fuel on hand had evaporated.
+A perfect mutual knockout.
+
+すべてが燃え尽きた砂漠のど真ん中で、煤だらけになったヒューズとクレーは、互いの顔を見て――やがて、どちらからともなく大笑いし始めた。
+
+Right in the middle of a desert where everything had burned away, the soot-covered Fuse and Klee looked at each other's faces—and soon, without either prompting the other, they burst into roaring laughter.
+
+爆弾魔たちによる、狂気と熱狂のサバイバル。
+勝者なき砂と鉄のステージには、いつまでも清々しい火薬の匂いだけが立ち込めていた。
+
+A survival of madness and frenzy by the bombers.
+On this stage of sand and iron with no victor, only the refreshing scent of gunpowder lingered on forever.
