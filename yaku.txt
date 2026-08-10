@@ -8227,7 +8227,6 @@ The winds of society might be cold, but surely magic—no, the "pure heart that 
 
 ---
 
-
 ラスベガスの広大な砂漠。うだるような熱波が陽炎を作り出す中、無骨な鉄骨と廃材で急造された巨大なバイクアクション訓練場がそびえ立っていた。辺り一面には、すでにむせ返るような濃密な火薬の匂いが立ち込めている。ここは、砂と鉄、そして爆炎だけが支配する狂気のコロシアム。
 
 The vast desert of Las Vegas. Amidst a sweltering heatwave conjuring mirages, a massive motorcycle action training ground, hastily constructed from rugged steel frames and scrap wood, towered over the landscape. The choking, dense stench of gunpowder already hung heavy in the air. This was a colosseum of madness, ruled only by sand, iron, and explosive flames.
@@ -8254,12 +8253,12 @@ Fuse laughed it off, a cigar clamped in his mouth. However, Klee remained expres
 
 この狂宴のルールは至ってシンプル。互いの車体を破壊するか、特殊燃料をすべて奪うこと。
 それぞれに支給される特殊燃料は、1日につき3つ（最大1ダースまでストック可能）。
-ヒューズの車体には、最高級の『LVMH Belvedere Vodka』が3本。
+ヒューズの車体には、最高級の『MHD Belvedere Vodka』が3本。
 クレーの車体には、『Red Bull Energy Drink』が3缶、マリオカートの風船バトルのようにマウントされている。
 
 The rules of this mad banquet were incredibly simple: destroy the opponent's vehicle or deprive them of all their special fuel.
 The special fuel supplied to each racer is 3 units per day (with a maximum stock of up to a dozen).
-Mounted on Fuse's vehicle were 3 bottles of top-tier "LVMH Belvedere Vodka."
+Mounted on Fuse's vehicle were 3 bottles of top-tier "MHD Belvedere Vodka."
 On Klee's vehicle, 3 cans of "Red Bull Energy Drink" were mounted like balloons Battle in Mario Kart.
 
 通常爆弾を相手にぶつければ、この特殊燃料を1つ破壊できる（3つ全て失えば燃料切れで敗北）。
@@ -8421,11 +8420,11 @@ Right after the crisp *psssht* sound echoed, Klee chugged it down in one go.
 From Klee's arm, a massive bomb resembling the sun itself was unleashed toward Fuse. A desperate crisis where a direct hit meant a TKO loss.
 
 「クソッ、やりやがる！」
-ヒューズは即座に『LVMH Belvedere Vodka』のボトルを引き抜き、コルクを吹き飛ばして一気に喉へ流し込んだ。強烈なアルコールが血流を沸騰させ、彼の爆発物制御能力を極限まで引き上げる（ブースト状態）。
+ヒューズは即座に『MHD Belvedere Vodka』のボトルを引き抜き、コルクを吹き飛ばして一気に喉へ流し込んだ。強烈なアルコールが血流を沸騰させ、彼の爆発物制御能力を極限まで引き上げる（ブースト状態）。
 彼はブースト状態の全霊を込めたクラスター爆弾を、迫り来るクレーの極大爆弾へ向けて発射した。
 
 "Damn it, you asked for it!"
-Fuse immediately yanked out a bottle of "LVMH Belvedere Vodka," blew off the cork, and poured it down his throat in one gulp. The fierce alcohol boiled his bloodstream, elevating his explosive control capabilities to their absolute limit (boost state).
+Fuse immediately yanked out a bottle of "MHD Belvedere Vodka," blew off the cork, and poured it down his throat in one gulp. The fierce alcohol boiled his bloodstream, elevating his explosive control capabilities to their absolute limit (boost state).
 He fired a cluster bomb infused with all his boosted might toward Klee's incoming massive bomb.
 
 **ズドォォォォォォォン！！！**
@@ -8555,10 +8554,10 @@ At that moment, something inside Klee's eyes completely snapped. Without hesitat
 Space warped a deep crimson red, and from her hand—boosted to its absolute limits—an ultra-massive mega-flare bomb that threatened to burn away all surrounding oxygen was unleashed. A lethal strike that would vaporize the vehicle upon direct impact.
 
 「クソッタレがぁぁっ！！」
-ヒューズもまた、コルクを噛み砕いて『LVMH Belvedere Vodka』をあおり、アルコールで全細胞を極限までブーストさせる。彼は背中のマザーロードを構え、迫り来る太陽のような爆発に対し、全弾の炎のリングを撃ち放った。
+ヒューズもまた、コルクを噛み砕いて『MHD Belvedere Vodka』をあおり、アルコールで全細胞を極限までブーストさせる。彼は背中のマザーロードを構え、迫り来る太陽のような爆発に対し、全弾の炎のリングを撃ち放った。
 
 "Son of a bitch!!"
-Fuse, too, bit off the cork, chugged the "LVMH Belvedere Vodka," and boosted all his cells to the maximum with the alcohol. He readied the Motherlode on his back and fired a full barrage ring of fire against the incoming sun-like explosion.
+Fuse, too, bit off the cork, chugged the "MHD Belvedere Vodka," and boosted all his cells to the maximum with the alcohol. He readied the Motherlode on his back and fired a full barrage ring of fire against the incoming sun-like explosion.
 
 **ゴゴゴゴゴゴォォォォォン！！！**
 
@@ -8671,10 +8670,10 @@ Seeing Fuse's desperate suicide charge, Klee's hands finally reached for multipl
 The moment she downed three "Red Bull Energy Drinks" at once, blindingly fast "wings" of hellfire unfurled from Klee's back and her trike. True to the catchphrase "Gives You Wings," Klee's trike gained blazing wings, completely shaking off gravity and soaring high into the sky. In her hands, a transcendent, hyper-massive sun—a TKO bomb capable of blowing away all of Las Vegas—was generated.
 
 「上等だァァァッ！！」
-ヒューズもまた、残り全ての『LVMH Belvedere Vodka』のボトルを引き抜き、義手の指で三本まとめてボトルの首をへし折る！ 滝のような勢いで強烈なアルコールを喉へ流し込み、全細胞を沸騰させると同時――口の端から溢れ出た最高級の酒を、赤熱したマザーロードの砲身へと勢いよく吹き付けた！
+ヒューズもまた、残り全ての『MHD Belvedere Vodka』のボトルを引き抜き、義手の指で三本まとめてボトルの首をへし折る！ 滝のような勢いで強烈なアルコールを喉へ流し込み、全細胞を沸騰させると同時――口の端から溢れ出た最高級の酒を、赤熱したマザーロードの砲身へと勢いよく吹き付けた！
 
 "Bring it ooooooon!!"
-Fuse, too, yanked out all his remaining bottles of "LVMH Belvedere Vodka" and snapped the necks of all three at once with the fingers of his prosthetic arm! He poured the potent alcohol down his throat like a waterfall, boiling every cell in his body, while simultaneously spitting the top-tier liquor that overflowed from his mouth forcefully onto the red-hot barrel of his Motherlode!
+Fuse, too, yanked out all his remaining bottles of "MHD Belvedere Vodka" and snapped the necks of all three at once with the fingers of his prosthetic arm! He poured the potent alcohol down his throat like a waterfall, boiling every cell in his body, while simultaneously spitting the top-tier liquor that overflowed from his mouth forcefully onto the red-hot barrel of his Motherlode!
 
 超高純度アルコールの大炎上――ウォッカのフランベ！
 ブースト状態の全エネルギーを乗せたマザーロードが、フランベの炎を巻き込みながら、空を覆い尽くすほどの灼熱の絨毯爆撃となって上空のクレーへと放たれた。
@@ -8715,3 +8714,4 @@ Right in the middle of a desert where everything had burned away, the soot-cover
 
 A survival of madness and frenzy by the bombers.
 On this stage of sand and iron with no victor, only the refreshing scent of gunpowder lingered on forever.
+
