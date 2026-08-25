@@ -192,7 +192,9 @@
 
       /* Undo/Redoボタンの無効状態 */
       #btn-undo:disabled,
-      #btn-redo:disabled {
+      #btn-redo:disabled,
+      #fs-btn-undo:disabled,
+      #fs-btn-redo:disabled {
         opacity: 0.4;
         cursor: not-allowed;
       }
@@ -536,6 +538,11 @@
         <!-- フルスクリーン時用にもポップアップボタンを配置 -->
         <button id="fs-btn-math-popup" class="btn-theme" title="選択範囲をポップアップで数式化" style="color: var(--wrap-color); border-color: var(--wrap-color);">🪟 数式</button>
 
+        <!-- ▼▼ 追加: 全画面用のUndo/Redoボタン ▼▼ -->
+        <button id="fs-btn-undo" class="btn-theme" title="元に戻す (Ctrl+Z)" disabled>🔙</button>
+        <button id="fs-btn-redo" class="btn-theme" title="やり直す (Ctrl+Y)" disabled>🔜</button>
+        <!-- ▲▲ 追加ここまで ▲▲ -->
+
         <button id="btn-close-fullscreen" class="btn-danger btn-fs-close">
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
             <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -621,6 +628,10 @@
       const btnToggleEdit = document.getElementById("btn-toggle-edit");
       const btnUndo = document.getElementById("btn-undo");
       const btnRedo = document.getElementById("btn-redo");
+      
+      // ▼ 全画面用Undo/Redoボタンの取得 ▼
+      const fsBtnUndo = document.getElementById("fs-btn-undo");
+      const fsBtnRedo = document.getElementById("fs-btn-redo");
       
       // 数式プレビュー用要素の取得
       const btnMathPreview = document.getElementById("btn-math-preview");
@@ -733,9 +744,16 @@
         }
       }
 
+      // ▼ Undo/Redoボタンの有効/無効の同期 ▼
       function updateUndoRedoButtons() {
-        btnUndo.disabled = historyIndex <= 0;
-        btnRedo.disabled = historyIndex >= historyStack.length - 1;
+        const canUndo = historyIndex <= 0;
+        const canRedo = historyIndex >= historyStack.length - 1;
+        
+        btnUndo.disabled = canUndo;
+        fsBtnUndo.disabled = canUndo;
+        
+        btnRedo.disabled = canRedo;
+        fsBtnRedo.disabled = canRedo;
       }
 
       function saveHistory() {
@@ -791,6 +809,15 @@
           restoreHistory();
           showToast("🔜 やり直しました");
         }
+      });
+
+      // ▼ 全画面用Undo/Redoボタンのクリック処理 ▼
+      fsBtnUndo.addEventListener("click", () => {
+        btnUndo.click();
+      });
+
+      fsBtnRedo.addEventListener("click", () => {
+        btnRedo.click();
       });
 
       let inputTimeout;
