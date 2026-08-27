@@ -8025,11 +8025,11 @@ Large teardrops spilled out of Schierke's big eyes. They weren't tears of despai
 
 ---
 
-後ろから身を乗り出し、肩越しにシールケの泣き顔を覗き込んだモルダは、呆れたように鼻で笑う。だが、その顔はどこか優しかった。
+シールケの泣き顔を覗き込んだモルダは、呆れたように鼻で笑う。だが、その顔はどこか優しかった。
 「なんだよ、計算式（ポエム）の次は感動の涙か？ ほんっと、世話の焼ける新入りだね。……でも、ま、そういう顔のほうがマシだよ。徹夜明けのゾンビ顔よりはな」
 モルダは箒の柄をトントンと叩き、少しだけスピードを落とした。
 
-Leaning forward from behind and peering at Schierke's tearful face over her shoulder, Morda snorted in exasperation. But her expression was somehow gentle.
+Peering at Schierke's tearful face, Morda snorted in exasperation. But her expression was somehow gentle.
 "What's this, tears of emotion after your math equations (poetry)? You're a seriously high-maintenance newbie. ...But well, that face is better. Better than your post-all-nighter zombie face, anyway."
 Morda tapped the broom handle reaching past Schierke, and slowed down just a little.
 
