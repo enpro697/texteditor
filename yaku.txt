@@ -6706,7 +6706,7 @@ At its adorable behavior, a warmth spread deep within my chest, and my mouth nat
 ひとしきり私の周りを飛び回った小鳥は、やがて満足したように、私の差し出した指先へとちょこんと降り立つ。私はその小さき友の喉元を、もう片方の指で優しく撫でた。
 After fluttering around me for a while, the little bird finally seemed satisfied and alighted upon my outstretched finger. I gently stroked the throat of my small friend with my other hand.
 
-だが、小さな瞳が映し出した平穏な景色は、私の思考を刹那的に停止させた。
+だが、小さき瞳が映し出した平穏な景色は、私の思考を刹那的に停止させた。
 However, in that very instant, the scene reflected in those tiny eyes momentarily halted my thoughts.
 
 濃い霧と錆びた鉄くずのただ中で、自分が操る小さな命を愛おしそうに見つめる私は、どうしようもなく独りだった。
@@ -6748,7 +6748,7 @@ My system is supposed to be a machine incapable of emotion. And yet, a strange "
 誰かの呼吸。誰かの痛み。そして、血に塗れた小さな手——。
 Someone’s breathing. Someone’s pain. And, a small hand stained with blood...
 
-私の身体が、私の意志とは無関係に激烈に拒絶反応を示していた。まるで、一つの身体の中に「二つの魂」が無理やり押し込められ、互いに反発し合っているかのような、破滅的な戦慄き(わななき)。湿った土を掻きむしる指先が、不様に震え続けていた。
+私の身体が、私の意志とは無関係に激烈に拒絶反応を示していた。まるで、一つの身体の中に「二つの魂」が無理やり押し込められ、互いに反発し合っているかのような、破滅的な戦慄き。湿った土を掻きむしる指先が、不様に震え続けていた。
 My body was exhibiting a violent rejection response, completely independent of my will. It was like a catastrophic trembling, as if "two souls" had been forcibly crammed into a single body and were repelling each other. My fingertips, clawing at the damp earth, continued to shake ungracefully.
 
 「なぜ……私は……」
@@ -6774,7 +6774,7 @@ I completely released the electromagnetic interference on the little bird lookin
 一瞬の静寂の後、糸が切れたように我に返った小鳥は、翼を拍動させ、飛び立った。
 After a moment of silence, snapped back to reality as if a string had been cut, the little bird beat its wings and flew away.
 
-眩く光を反射する羽が、樹海の重い霧を切り裂いていく。小鳥は上空へと舞い上がり、見上げる私の視線のはるか先、濃い霧の向こう側の空へと、いつまでも羽ばたいていった。
+眩い光を反射する羽が、樹海の重い霧を切り裂いていく。小鳥は上空へと舞い上がり、見上げる私の視線のはるか先、濃い霧の向こう側の空へと、いつまでも羽ばたいていった。
 Wings reflecting a dazzling light sliced through the heavy fog of the sea of trees. The small bird soared into the sky, flapping endlessly into the atmosphere beyond the dense mist—far past my gaze as I looked up.
 
 再び、絶対的な孤独が訪れる。
@@ -6785,6 +6785,8 @@ Beyond the fog, nestled among the distant trees of the forest, a moss-covered re
 
 過去の世界を辿り、失われた自分の使命と記憶を手繰り寄せるためには、あの遺物の痕跡を追うほかない。私は泥に汚れたブーツで湿った腐葉土を踏みしめ、沈黙する森へと最初の一歩を踏み出した。
 To trace the past world and claw back my lost mission and memories, I had no choice but to follow the trail of that relic. I stepped firmly onto the damp leaf mold with my mud-stained boots, taking my first step into the silent forest.
+
+------
 
 2XXX 年、統制社会の元、遺伝子的に選別された子どもたちは、血統の組み換えによる最適化のプロセスの最中にあった。彼らは高分子フィルムで製造された人工胎嚢の中で生を受け、培養された。
 In the year 2XXX, under a controlled society, genetically selected children were in the midst of optimization through bloodline recombination. They were brought into life and cultivated in artificial amniotic sacs made of polymer film.
@@ -6810,8 +6812,8 @@ However, as the effects of climate change gradually subsided, a cold period was 
 ヒューミディアの評議会は次世代の労働力生産と品質管理を自動管理システムに委譲する決議を下した。
 The Council of Humidia passed a resolution to delegate the production and quality control of the next generation's workforce to an automated management system.
 
-自動管理システム(Mother I)は、次世代の労働力に集団としての個の自意識を植え付けることが社会の自律的な再生産に要求され、彼我の差を生じさせる、社会的な分断は、私欲を生じさせる、無菌的環境への汚染であり、人類を利権の奪い合いへと凋落させ、旧文明を崩壊へと導いた決定因子であると結論付けた。
-The automated management system (Mother I) concluded that instilling a self-consciousness of "the individual as a collective" in the next generation's workforce was required for the autonomous reproduction of society. It determined that social division, which creates a "difference between self and others," is a contamination of the sterile environment that breeds selfish desires, causes humanity to devolve into a struggle for interests, and was the decisive factor that led to the collapse of the old civilization.
+自動管理システム(Mother I)は、次世代の労働力に**集団としての個**の自意識を植え付けることが社会の自律的な再生産に要求され、**彼我**の差を生じさせる、社会的な分断は、私欲を生む無菌的環境への汚染であり、人類を利権の奪い合いへと凋落させ、旧文明を崩壊へと導いた決定因子であると結論付けた。
+The automated management system (Mother I) concluded that instilling a self-consciousness of "the individual as a collective" in the next generation's workforce was required for the autonomous reproduction of society. It determined that social division, which creates a difference between "self and others", is a contamination of the sterile environment that breeds selfish desires, causes humanity to devolve into a struggle for interests, and was the decisive factor that led to the collapse of the old civilization.
 
 子どもたちは選別的な教育を経て、外界の開拓、または内部の統制を担う人材へと育ち、一方で、基準に満たない非適格者とみなされた者は、矯正プログラムで再教育を受けるとされていた。
 Through selective education, children were raised to become personnel tasked with the development of the outside world or internal control; meanwhile, those who failed to meet the standards and were deemed unfit were supposed to undergo re-education in a corrective program.
@@ -6851,7 +6853,7 @@ Two individuals whose egos have sprouted, and who are likely awakening. Yet, the
 (伴座 霧瓈空 つれざ むりあ)
 (Tsureza Muria)
 
-スピーカーから流れる合成音声は、遥か昔、もっと優しかったのだと、いつか誰かが言っていた。けれど、私の知る「マザーI」の声は、いつもどこか錆びた歯車が軋むような、ざらざらとしたノイズが混じっている。
+スピーカーから流れる合成音声は、遥か昔、もっと優しかったのだと、いつか誰かが言っていた。けれど、私の知る「マザーI」の声は、いつも、どこか錆びた歯車が軋むような、ざらざらとしたノイズが混じっている。
 Someone once said that the synthesized voice flowing from the speakers used to be much gentler. But the voice of "Mother I" that I know is always mixed with a harsh, gritty noise, like the scraping of rusted gears.
 
 真っ白な壁、消毒液とオゾンが鼻を刺す教室。等間隔に並べられた机の上で、私は静かに両手を重ねた。正面のモニターには、『安全指導要綱』の文字と、幾何学的な図形が点滅している。
