@@ -6614,13 +6614,13 @@ Yoshio & Asari: "Don't do that!!"
 
 ---
 
-未来文明が崩壊した後の、遺物(アーティファクト)のみが残る荒廃した世界。地平の先まで続く、霧が立ち込める樹林の奥深く、かつての軍事用潜水艦を思わせる鋼鉄の塊が、朽ち果てた樹木と土砂の間に埋もれている。艦内で、途方もなく長い時間、休眠状態にあったヒューマノイドが、永き眠りから目を覚ます。
+未来文明が崩壊した後の、遺物(アーティファクト)のみが残る荒廃した世界。地平の先まで続く、霧が立ち込める樹林の奥深く、かつての軍事用潜水艦を思わせる鋼鉄の塊が、朽ち果てた樹木と土砂に埋もれている。艦内で、途方もなく長い時間、休眠状態にあったヒューマノイドが、永き眠りから目を覚ます。
 A desolate world where civilization has collapsed, leaving behind only artifacts. Deep within a fog-shrouded forest that stretches beyond the horizon, a mass of steel reminiscent of a former military submarine lies half-buried in decaying trees and earth. Inside the vessel, a humanoid—dormant for an unfathomably long time—awakens from its eternal slumber.
 
 世界各地に散らばる遺物から、過去の世界を辿り、かつての記憶と使命を探す旅にでる。コードの零から名前が「レイ」であることのみがわかる。
 She embarks on a journey to trace the past and search for her former mission through the relics scattered across the world. From her code "Zero," the only thing she can discern is that her name is "Rei."
 
-ヒューマノイドは微細な電流を放射することで、対象の神経回路に接続、視覚と記憶を共有することができ、意思を手繰ることで対象の操作が可能。
+ヒューマノイドは微細な電流を放射することで、対象の神経回路に接続、視覚と記憶を共有することができ、対象の意思を手繰ることで操作することが可能。
 By emitting faint electrical currents, the humanoid can connect to a target's neural circuitry, sharing its vision and memories, and manipulate the target by controlling its will.
 
 小動物をあたかも彼女の友人のようにふるまわせることができるが、電脳的な制御による結果の発露にすぎず、彼女は地上で果てしなく独りだった。
