@@ -474,6 +474,14 @@
         text-align: center;
         line-height: 1.8;
       }
+
+      /* --- フローティングツールバーの開閉用スタイル --- */
+      .collapsible-tool {
+        display: none !important;
+      }
+      .fullscreen-floating-bar.expanded .collapsible-tool {
+        display: inline-flex !important;
+      }
     </style>
   </head>
   <body>
@@ -534,16 +542,18 @@
           </svg>
         </div>
   
-               <!-- ▼▼ 追加: 全画面用のUndo/Redoボタン ▼▼ -->
-        <button id="fs-btn-undo" class="btn-theme" title="元に戻す (Ctrl+Z)" disabled>🔙</button>
-        <button id="fs-btn-redo" class="btn-theme" title="やり直す (Ctrl+Y)" disabled>🔜</button>
-        <!-- ▲▲ 追加ここまで ▲▲ -->
-        <!-- フルスクリーン時用にもポップアップボタンを配置 -->
-        <button id="fs-btn-math-popup" class="btn-theme" title="選択範囲をポップアップで数式化" style="color: var(--wrap-color); border-color: var(--wrap-color);">🪟 数式</button>
-      <button id="fs-btn-wrap-paren" class="btn-theme" title="選択範囲を括弧で囲む">( )</button>
+        <!-- ▼▼ 追加: 開閉トグルボタン ▼▼ -->
+        <button id="fs-btn-toggle-tools" class="btn-theme">開く</button>
+
+        <!-- ▼▼ クラス "collapsible-tool" を追加してデフォルト非表示にする ▼▼ -->
+        <button id="fs-btn-undo" class="btn-theme collapsible-tool" title="元に戻す (Ctrl+Z)" disabled>🔙</button>
+        <button id="fs-btn-redo" class="btn-theme collapsible-tool" title="やり直す (Ctrl+Y)" disabled>🔜</button>
+        <button id="fs-btn-math-popup" class="btn-theme collapsible-tool" title="選択範囲をポップアップで数式化" style="color: var(--wrap-color); border-color: var(--wrap-color);">🪟 数式</button>
+        
+        <!-- ▼▼ デフォルトで表示しておくボタン群 ▼▼ -->
+        <button id="fs-btn-wrap-paren" class="btn-theme" title="選択範囲を括弧で囲む">( )</button>
         <button id="fs-btn-wrap-asterisk" class="btn-theme" title="選択範囲をアスタリスクで囲む">* *</button>
  
-
         <button id="btn-close-fullscreen" class="btn-danger btn-fs-close">
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
             <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -634,6 +644,9 @@
       const fsBtnUndo = document.getElementById("fs-btn-undo");
       const fsBtnRedo = document.getElementById("fs-btn-redo");
       
+      // ▼ 全画面用ツールバーの開閉ボタン ▼
+      const fsBtnToggleTools = document.getElementById("fs-btn-toggle-tools");
+
       // 数式プレビュー用要素の取得
       const btnMathPreview = document.getElementById("btn-math-preview");
       const mathPreview = document.getElementById("math-preview");
@@ -653,6 +666,18 @@
       const MAX_HISTORY = 20;
       let historyStack = [];
       let historyIndex = -1;
+
+      // --- 全画面用ツールバーの開閉処理 ---
+      fsBtnToggleTools.addEventListener("click", () => {
+        const fsFloatingBar = document.getElementById("fs-floating-bar");
+        fsFloatingBar.classList.toggle("expanded");
+        
+        if (fsFloatingBar.classList.contains("expanded")) {
+          fsBtnToggleTools.textContent = "閉じる";
+        } else {
+          fsBtnToggleTools.textContent = "開く";
+        }
+      });
 
       // --- 選択範囲の数式ポップアップ表示処理 ---
       function showMathPopup() {
