@@ -1125,19 +1125,14 @@
         textarea.value =
           text.substring(0, start) + newText + text.substring(end);
 
-        const newCursorPos = start + newText.length;
-        textarea.setSelectionRange(newCursorPos, newCursorPos);
+        // 装飾後の文字列全体を選択状態にしてキープする
+        textarea.setSelectionRange(start, start + newText.length);
 
         textarea.scrollTop = currentScroll;
         saveHistory();
         updateMathPreview(); 
 
-        if (isEditLocked) {
-          selectNextWord(1);
-        } else {
-          scrollToSelection(false);
-        }
-
+        scrollToSelection(false);
         textarea.focus();
       }
 
@@ -1539,6 +1534,7 @@
         }
       }
 
+      // 単語選択用の遅延クリック判定
       textarea.addEventListener("click", (e) => {
         setTimeout(() => {
           selectWordAtCursor();
@@ -1604,49 +1600,56 @@
         }
       });
 
-// ▼▼ 右クリック時の処理（範囲選択モード時のみ、選択範囲上で右クリックすると () ） ▼▼
-      textarea.addEventListener("contextmenu", (e) => {
-        // 選択範囲外を右クリックした場合はすでに選択解除されているため、この中には入らない
-        if (textarea.selectionStart !== textarea.selectionEnd) {
-          e.preventDefault();
-          if (isScrollLocked) {
-            insertTextAround("(", ")");
-          }
-        }
-      });
+      // ▼▼ ドラッグ選択誤爆防止用の変数 ▼▼
+      let isSelectingByDrag = false;
+      let mouseDownPos = { x: 0, y: 0 };
+      let hadSelectionOnMouseDown = false;
+      let selectionRangeOnDown = { start: 0, end: 0 };
 
-// ▼▼ 右クリック時の処理（範囲選択モード時、選択範囲上で右クリックすると ** ） ▼▼
+      // ▼▼ 右クリック時の処理（範囲選択モード時のみ、選択範囲上で右クリックすると ** ） ▼▼
       textarea.addEventListener("contextmenu", (e) => {
-        // 範囲選択モード時かつテキストが選択されている場合のみ
         if (isScrollLocked && textarea.selectionStart !== textarea.selectionEnd) {
           e.preventDefault();
           insertTextAround("*", "*");
         }
       });
 
-      // ▼▼ 左クリック時の処理（範囲選択モード時、選択範囲上で左クリックして離した時に () ） ▼▼
-      let isLeftClickOnSelection = false;
-
+      // ▼▼ 左クリック押下時：ドラッグ開始かクリックかを追跡 ▼▼
       textarea.addEventListener("mousedown", (e) => {
-        // スクロールバー除外
-        if (e.offsetX > textarea.clientWidth || e.offsetY > textarea.clientHeight) return;
+        if (e.button !== 0) return;
+        
+        mouseDownPos = { x: e.clientX, y: e.clientY };
+        selectionRangeOnDown = {
+          start: textarea.selectionStart,
+          end: textarea.selectionEnd
+        };
+        // 押した時点で文字が選択されていたかを記録
+        hadSelectionOnMouseDown = selectionRangeOnDown.start !== selectionRangeOnDown.end;
+        isSelectingByDrag = false;
+      });
 
-        // 左クリック(0)かつ範囲選択モードで、選択範囲があるか確認
-        if (e.button === 0 && isScrollLocked && textarea.selectionStart !== textarea.selectionEnd) {
-          isLeftClickOnSelection = true;
-        } else {
-          isLeftClickOnSelection = false;
+      // ▼▼ マウス移動時：数ピクセル以上動いたら「ドラッグ選択中」とみなす ▼▼
+      textarea.addEventListener("mousemove", (e) => {
+        if (e.buttons === 1) {
+          const moveDist = Math.hypot(e.clientX - mouseDownPos.x, e.clientY - mouseDownPos.y);
+          if (moveDist > 4) {
+            isSelectingByDrag = true;
+          }
         }
       });
 
+      // ▼▼ 左クリックを離した時：ドラッグではなく純粋なクリックなら () を付与 ▼▼
       textarea.addEventListener("mouseup", (e) => {
-        // 左クリックかつ、mousedown時点で選択されていた場合のみ実行
-        if (e.button === 0 && isScrollLocked && isLeftClickOnSelection) {
-          if (textarea.selectionStart !== textarea.selectionEnd) {
-            e.preventDefault();
-            insertTextAround("(", ")");
-          }
-          isLeftClickOnSelection = false;
+        if (e.button !== 0 || !isScrollLocked) return;
+
+        // ドラッグして範囲選択した直後なら、装飾は発動させない
+        if (isSelectingByDrag) return;
+
+        // もともと選択状態があり、かつクリック後も選択が維持されている（＝選択範囲内をクリックした）場合
+        if (hadSelectionOnMouseDown && textarea.selectionStart !== textarea.selectionEnd) {
+          // 意図しない選択ズレを防ぐため、mousedown時の選択範囲を確定させて適用
+          textarea.setSelectionRange(selectionRangeOnDown.start, selectionRangeOnDown.end);
+          insertTextAround("(", ")");
         }
       });
     </script>
