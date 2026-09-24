@@ -1615,26 +1615,29 @@
         }
       });
 
-      // ▼▼ 左クリック時の処理（範囲選択モード時のみ、選択範囲上で左クリックすると ** ） ▼▼
+// ▼▼ 右クリック時の処理（範囲選択モード時のみ、選択範囲上で右クリックすると ** ） ▼▼
+      textarea.addEventListener("contextmenu", (e) => {
+        if (textarea.selectionStart !== textarea.selectionEnd) {
+          e.preventDefault();
+          if (isScrollLocked) {
+            insertTextAround("*", "*");
+          }
+        }
+      });
+
+      // ▼▼ 左クリック時の処理（範囲選択モード時のみ、選択範囲上で左クリックすると () ） ▼▼
       textarea.addEventListener("mousedown", (e) => {
-        // 左クリック(0) かつ 範囲選択モードの時のみ
         if (e.button === 0 && isScrollLocked) {
-          // スクロールバーのクリックは除外する
           if (e.offsetX > textarea.clientWidth || e.offsetY > textarea.clientHeight) return;
 
           if (textarea.selectionStart !== textarea.selectionEnd) {
-            // 現在の選択範囲を一時保存
             const originalStart = textarea.selectionStart;
             const originalEnd = textarea.selectionEnd;
 
-            // setTimeout を使い、ブラウザの標準クリック処理をほんの一瞬（0ミリ秒）待つ
             setTimeout(() => {
-              // 選択範囲外をクリックしていた場合、ここで選択が解除されて start === end になる。
-              // 選択範囲が維持されている場合のみ、選択範囲「内」をクリックしたと判定して処理を実行。
               if (textarea.selectionStart !== textarea.selectionEnd) {
-                // 念のため元の範囲をセットし直して ** を追加
                 textarea.setSelectionRange(originalStart, originalEnd);
-                insertTextAround("*", "*");
+                insertTextAround("(", ")");
               }
             }, 0);
           }
