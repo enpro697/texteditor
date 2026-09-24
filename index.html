@@ -1615,32 +1615,38 @@
         }
       });
 
-// ▼▼ 右クリック時の処理（範囲選択モード時のみ、選択範囲上で右クリックすると ** ） ▼▼
+// ▼▼ 右クリック時の処理（範囲選択モード時、選択範囲上で右クリックすると ** ） ▼▼
       textarea.addEventListener("contextmenu", (e) => {
-        if (textarea.selectionStart !== textarea.selectionEnd) {
+        // 範囲選択モード時かつテキストが選択されている場合のみ
+        if (isScrollLocked && textarea.selectionStart !== textarea.selectionEnd) {
           e.preventDefault();
-          if (isScrollLocked) {
-            insertTextAround("*", "*");
-          }
+          insertTextAround("*", "*");
         }
       });
 
-      // ▼▼ 左クリック時の処理（範囲選択モード時のみ、選択範囲上で左クリックすると () ） ▼▼
+      // ▼▼ 左クリック時の処理（範囲選択モード時、選択範囲上で左クリックして離した時に () ） ▼▼
+      let isLeftClickOnSelection = false;
+
       textarea.addEventListener("mousedown", (e) => {
-        if (e.button === 0 && isScrollLocked) {
-          if (e.offsetX > textarea.clientWidth || e.offsetY > textarea.clientHeight) return;
+        // スクロールバー除外
+        if (e.offsetX > textarea.clientWidth || e.offsetY > textarea.clientHeight) return;
 
+        // 左クリック(0)かつ範囲選択モードで、選択範囲があるか確認
+        if (e.button === 0 && isScrollLocked && textarea.selectionStart !== textarea.selectionEnd) {
+          isLeftClickOnSelection = true;
+        } else {
+          isLeftClickOnSelection = false;
+        }
+      });
+
+      textarea.addEventListener("mouseup", (e) => {
+        // 左クリックかつ、mousedown時点で選択されていた場合のみ実行
+        if (e.button === 0 && isScrollLocked && isLeftClickOnSelection) {
           if (textarea.selectionStart !== textarea.selectionEnd) {
-            const originalStart = textarea.selectionStart;
-            const originalEnd = textarea.selectionEnd;
-
-            setTimeout(() => {
-              if (textarea.selectionStart !== textarea.selectionEnd) {
-                textarea.setSelectionRange(originalStart, originalEnd);
-                insertTextAround("(", ")");
-              }
-            }, 0);
+            e.preventDefault();
+            insertTextAround("(", ")");
           }
+          isLeftClickOnSelection = false;
         }
       });
     </script>
