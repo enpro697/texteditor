@@ -1604,18 +1604,25 @@
         }
       });
 
-     textarea.addEventListener("contextmenu", (e) => {
-  if (textarea.selectionStart !== textarea.selectionEnd) {
-    e.preventDefault();
-    // 範囲選択モード（isScrollLocked が true）かどうかで分岐
-    if (isScrollLocked) {
-      insertTextAround("(", ")");
-    } else {
-      // 通常モード時は従来の ** で囲む（不要であればここも変更してください）
-      insertTextAround("*", "*");
-    }
-  }
-});
+// 既存の contextmenu イベントを以下に置き換えます
+      textarea.addEventListener("contextmenu", (e) => {
+        if (textarea.selectionStart !== textarea.selectionEnd) {
+          e.preventDefault();
+          // 範囲選択モードの時のみ右クリックで () を付与
+          if (isScrollLocked) {
+            insertTextAround("(", ")");
+          }
+        }
+      });
+
+      // ▼▼ 新規追加：範囲選択モード時に左クリックで ** を付与 ▼▼
+      textarea.addEventListener("mousedown", (e) => {
+        // e.button === 0 は左クリックを表します
+        if (e.button === 0 && isScrollLocked && textarea.selectionStart !== textarea.selectionEnd) {
+          e.preventDefault(); // クリックによる選択範囲の解除を防ぐ
+          insertTextAround("*", "*");
+        }
+      });
     </script>
   </body>
 </html>
