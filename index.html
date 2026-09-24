@@ -1604,12 +1604,18 @@
         }
       });
 
-      textarea.addEventListener("contextmenu", (e) => {
-        if (textarea.selectionStart !== textarea.selectionEnd) {
-          e.preventDefault();
-          insertTextAround("*", "*");
-        }
-      });
+     textarea.addEventListener("contextmenu", (e) => {
+  if (textarea.selectionStart !== textarea.selectionEnd) {
+    e.preventDefault();
+    // 範囲選択モード（isScrollLocked が true）かどうかで分岐
+    if (isScrollLocked) {
+      insertTextAround("(", ")");
+    } else {
+      // 通常モード時は従来の ** で囲む（不要であればここも変更してください）
+      insertTextAround("*", "*");
+    }
+  }
+});
     </script>
   </body>
 </html>
