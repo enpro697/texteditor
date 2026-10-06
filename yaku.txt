@@ -6586,7 +6586,7 @@ An anomaly that occurred mid-combat (now obscured as a black box due to corrupte
 今際の際に、少女の脳を巡った記憶の全てのフラッシュバックをレイは瞬間的に浴び、ノイズが生じていた思考領域が彼女の記憶によって焼き切られた。少女の思考的輪郭がレイの制御系に焼き付き、精神をノックダウンさせた。レイの制御プログラムに、虚空に生じた彼女ではない何者かの輪郭が入り交じり、異常な神経活動を誘発させた。レイの制御系はこれを外的因子の侵襲とみなし免疫系を作動させた。レイは当任務で制御系に致命的な損傷を負い、統治機構の任務に就くことが困難と判断された。
 At the precipice of the girl’s death, Rei was engulfed in an instantaneous torrent of the child's entire life flashing before her, permanently altering her virtual memory banks. As the girl's indistinct impressions of living seared themselves into her processing sectors, Rei suffered acute psychological fragmentation. Her chassis exhibited violent rejection toward this foreign essence sprouting in the void where her own ego should have been, and the rift tearing through this dual psyche sparked abnormal neural bursts that continuously tortured her mind. Following diagnostic evaluations that flagged this structural anomaly, she was deemed unfit for further policing duties.
 
-部隊の精密検査、制御回路への不可逆的な侵襲を伴う損傷が確認され、最新型ヒューマノイドであったレイは、任務から外れ、使い捨ての軍事部隊へ転用された。
+部隊の精密検査で、制御回路への不可逆的な侵襲を伴う損傷が確認され、最新型ヒューマノイドであったレイは、任務から外れ、使い捨ての軍事部隊へ転用された。
 Following diagnostic evaluations that confirmed irreversible damage to her control circuits, Rei—a state-of-the-art model—was decommissioned from her mission and reassigned to a disposable frontline military unit.
 
 レイは感情をプログラムされていないヒューマノイドであり、自ら殺めた少女の自我の残滓を受け継いだ存在でもあった。
@@ -6622,8 +6622,8 @@ I pulled myself out through a jagged tear in the buckled hatch.
 艦体の上へと降り立つと、そこは地平の先まで終わりのない樹海だった。白い霧が深く立ち込め、見上げる空すら遮る大木が墓標のように静まり返っている。かつて世界を栄華で満たしたはずの「人類」の気配は、微塵も存在しない。あるのは、風が葉を揺らす音と、静寂の重みだけだ。
 Stepping onto the hull, I saw a sea of trees unfurling endlessly toward the horizon. Dense white mist hovered thick, while ancient canopies that choked out the sky stood motionless like weathered cenotaphs. Not a trace lingered of the humanity that once filled this world with glory. There was only the rustle of leaves in the wind, and the suffocating weight of silence.
 
-私は赤錆びた艦体の縁に、糸が切れたように腰を下ろした。
-I sank down upon the rust-bitten edge of the hull like a puppet with cut strings.
+私は赤錆びた艦体の縁に、腰を下ろした。
+I sank down upon the rust-bitten edge of the hull.
 
 どこへ向かうべきなのか、何のために目覚めたのか。思考を巡らせようとしても、エラーを返す空白の領域が冷たく横たわっているだけだ。動く理由も見出せないまま、私は両膝を抱え、ただ果てしなく広がる白霧と緑の死の世界をぼんやりと見つめ続けていた。機能しているはずのセンサーが捉える世界はあまりにも静かで、私の内側にある空洞の深さを、より一層際立たせているようだった。
 Where was I to go? For what purpose had I been awakened? Whenever I attempted to trace a thought, only cold, unresponsive memory sectors returned errors. Finding no reason to move, I drew my knees to my chest, gazing blankly into that boundless expanse of pale mist and verdant decay. The sensory data painting my optic relays was far too tranquil, serving only to magnify the hollow emptiness yawning inside me.
@@ -6748,7 +6748,7 @@ Under a mechanically guaranteed quality-control order designed by the system and
 この果ての地を初めて訪れた始祖は、この地をヒューミディアと名付けた。(Humidia 潤いのある日常)
 The progenitor who first set foot on this land at the edge of the world named it Humidia (Humidia: a moistened, enriched everyday life).
 
-核の相互確証破壊による勢力均衡は、一時の権力にしがみつく小国の為政者によってあっけなく崩れ去り、核の傘の庇護にあずかれなかった大部分の地球人口は消滅の一途を辿った。直接的被害を被ることのなかった辺境に居住する人々は、僅かな居住できる区域と資源を巡り、相打ちによる完全な人類滅亡を回避するため、合議と合有によって残された資源、土地の管理を試みた。彼らは残された土地の資源の再分配を行い、人類社会の再興のため、果てへ果てへと転住を繰り返した。
+相互確証破壊による勢力均衡は、一時の権力にしがみつく小国の為政者によってあっけなく崩れ去り、核の傘の庇護にあずかれなかった大部分の地球人口は消滅の一途を辿った。直接的被害を被ることのなかった辺境に居住する人々は、僅かな居住できる区域と資源を巡り、相打ちによる完全な人類滅亡を回避するため、合議と合有によって残された資源、土地の管理を試みた。彼らは残された土地の資源の再分配を行い、人類社会の再興のため、果てへ果てへと転住を繰り返した。
 The balance of power maintained by mutually assured destruction easily collapsed at the hands of leaders of small nations clinging to fleeting power. The majority of the Earth's population, failing to benefit from the nuclear umbrella, steadily perished. The inhabitants of the frontiers, who escaped direct devastation, attempted to manage the remaining resources and land through consensus and shared ownership to avoid mutual annihilation over the scarce habitable areas. They redistributed the resources of the remaining land and repeatedly migrated further to the edges of the world in hopes of rebuilding human society.
 
 かつて、氷河が一帯を覆う、閉ざされた土地だったヒューミディアは、産業革命以降の継続的な温暖化と戦術核が持ち込まれた度重なる戦役に起因する気候変動によって、氷河が融解して、肥沃な土壌を育んだ。ヒューミディアは、人類の再興をかけた、最後の要衝となった。
