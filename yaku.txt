@@ -1592,30 +1592,77 @@ Hehe, what do you think? To the people of the Erdtree, they are all likely nothi
 
 ---
 
-献血の啓蒙と喧伝Enlightenment and Propaganda of Blood Donation(血の君主モーグ) (Mohg, Lord of Blood)
-ようこそ、褪せ人よ。いや、我が同胞たるべき者よ。
-Welcome, Tarnished. No, you who should be my brethren.
-ここは血の歓喜に満ちた聖なる儀式場……俗物どもは「献血ルーム」などと呼ぶようだがな。ふふっ、よくぞ足を踏み入れた。お前のその血管を力強く巡る赤きうねり、実に素晴らしい。
-This is a sacred ritual ground filled with the jubilation of blood... though the vulgar seem to call it a "blood donation room." Hehe, I am glad you have stepped inside. The red undulation surging powerfully through your veins is truly magnificent.
-【啓蒙】血の真理を知れ
-[Enlightenment] Know the Truth of Blood
-聞くがいい。お前の内に秘められたその血は、ただ命を長らえさせるための澱みではない。大いなる『姿なき母』へ捧ぐべき、至高の供物なのだ！
-Listen well. That blood concealed within you is not mere stagnation just to prolong your life. It is the supreme offering to be dedicated to the great 'Formless Mother'!俗世では「見知らぬ誰かの命を救うため」などと美辞麗句を並べ立てるが、本質はそこではない。血を分け与えること……それは真なる愛の体現！ 己の身を裂き（※注：穿刺です）、赤き祝福を分かち合うことで、我らは真に繋がり合う。これはモーグウィン王朝の礎となり、共に新たな時代を創るための尊き交わりなのだ！
-In the mundane world, they spout flowery words like "to save the life of a stranger," but that is not the essence. To share blood... is the embodiment of true love! By tearing your flesh (*Note: It's a puncture) and sharing the red blessing, we truly connect with one another. This shall become the foundation of the Mohgwyn Dynasty, a noble communion to forge a new era together!【喧伝】歓喜を広めよ
-[Propaganda] Spread the Jubilation
-恐れることはない。あの冷たく鋭き針が肌を貫く瞬間、お前は母の愛に直接触れることになる。その僅かな痛みが、どれほどの深い歓喜をもたらすか！
-Fear not. The moment that cold, sharp needle pierces your skin, you will touch the Mother's love directly. Oh, how much deep jubilation that slight pain will bring!400ミリリットル？ 200ミリリットル？ 否、捧げられるだけ捧げるが良い！ さらに言えば、血漿や血小板のみを捧げる「成分献血」という優雅なる儀式も母は深く愛しておられる。
-400 milliliters? 200 milliliters? No, offer as much as you can! Furthermore, the Mother deeply loves the elegant ritual known as "apheresis," where only plasma or platelets are offered.お前が味わうこの甘美なる悦びと、血を抜かれた後の謎の爽快感（と、無料で頂けるジュースや菓子の味）を、外で震える無知なる者たちに大いに喧伝するのだ！You must greatly propagandize this sweet delight you experience, and the mysterious sense of refreshment after having your blood drawn (along with the taste of the free juice and snacks you receive), to the ignorant masses trembling outside!【強制】さあ、腕を出せ
-[Compulsion] Now, Offer Your Arm
-もはや迷う余地などないはずだ。これは懇願ではない、血の君主たる我が命だ！
-お前の中に眠る豊かな朱を、今ここに注ぎ出せ！ 拒絶は許さん。お前もいずれ知るのだ、血に塗れた愛の深さを……！
-There should no longer be any room for hesitation. This is not a plea; it is an order from me, the Lord of Blood! Pour out the rich vermilion slumbering within you right here, right now! Refusal is unforgivable. You too will eventually know the depth of love smeared in blood...!さあ、共に分かち合おうではないか！
-採血のカウントダウンの始まりだ……！
-Now, let us share it together! The countdown for the blood draw begins...!トレス！（Tres!）ドゥオ！（Duo!）ウヌス！（Unus!）血を！ 更なる愛を！
-Blood! More love!ニーヒル！ ニーヒル！ ニーヒィィル！！！
-Nihil! Nihil! Niiihiiil!!!……ふふっ、見事な献血であった。母も大層お喜びだ。
-次は全血献血ならば12〜16週間後、成分献血ならば2週間後……お前の新たな供物を、首を長くして待っているぞ。
-...Hehe, that was a splendid blood donation. The Mother is also greatly pleased. Next time, if it's a whole blood donation, it will be in 12 to 16 weeks; if it's apheresis, in 2 weeks... I will be eagerly waiting for your new offering.
+ようこそ、我が愛しき同胞よ。
+Welcome, my beloved kin.
+
+……聞こえるか？ そなたの内に脈打つ、熱く、甘美なる朱き奔流の音が。
+...Dost thou hear it? The heated, luscious rush of the vermilion torrent coursing within thee.
+
+狭間の地を這いずる褪せ人どもは、己が血をただ浪費し、黄金樹なる枯れ木に捧げて恥じぬ。だが、真に尊き血の使い道は、そのような欺瞞の中にはない。
+The Tarnished who grovel across the Lands Between squander their blood without shame, offering it up to that withered husk they call the Erdtree. Yet, the truly exalted purpose of blood lies in no such deception.
+
+今こそ真実を知るがよい。「献血」とは、弱き者への哀れみなどという矮小な施しではない。我らが王朝「モーグウィン」を拓くための、至高にして絶対の儀式なのだ。
+Behold now the truth! "Blood donation" is no mere petty alms born of pity for the frail. It is the supreme and inviolable sacrament meant to inaugurate our Mohgwyn Dynasty!
+
+一、血を秘匿する罪を知れ（強制の布告）
+I. Know the Transgression of Hoarding Blood (Edict of Compulsion)
+
+そなたの肉体を巡るその赤い雫、ただ己を生かすためだけに留め置くなど、何たる傲慢、何たる怠惰か。
+Those crimson drops coursing through thy flesh—to hoard them solely to sustain thine own idle breath, what sheer arrogance! What utter indolence!
+
+血は循環してこそ力を宿し、捧げられてこそ不朽の炎となる。
+Blood harbors power only when it flows; it becomes an immortal flame only when freely surrendered.
+
+拒むことは許されぬ。我が三叉槍「モーグウィンの聖槍」の前に立ち、己が血管を差し出すのだ。その一刺しの痛みこそが、無知なる眠りから覚醒するための産声である。
+Refusal shall not be brook'd. Stand before my trident, the Sacred Spear of Mohgwyn, and bare thy veins. That singular sting of agony is none other than the birth cry that rouses thee from ignorant slumber!
+
+「NIHIL！ NIHIL！ NIHIL！」
+"NIHIL! NIHIL! NIHIL!"
+
+抜き取られし赤き雫の数だけ、そなたの罪は清められ、王朝の礎となる。血を分かち合わぬ者に、新たな夜明けを見る資格などない。
+For every crimson drop drawn, thy sins shall be washed clean, becoming cornerstones of our dynasty. Those who share not their blood possess no right to witness the dawning of the new night.
+
+二、赤き祝福を謳い上げよ（喧伝の祝祭）
+II. Proclaim the Crimson Blessing (Festival of Propagation)
+
+見よ、この美しき採血針の切っ先を。管を満たし、静かに満ちていく生きた真紅の輝きを。
+Behold the exquisite tip of this phlebotomy needle! Behold the living, scarlet radiance that quietly wells up, suffusing the cannula!
+
+街へ出よ。路地裏に潜む者、道端に倒れ伏す者、日々の糧に飢える者たちに叫ぶのだ。
+Go forth into the streets! Cry aloud to those lurking in shadowed alleys, to those sprawling along roadsides, and to those starving for daily bread!
+
+「献血車（赤き神輿）はすでに来たれり！」と。
+Proclaim unto them: "The bloodmobile—the sacred crimson palanquin—hath already arrived!"
+
+針を刺される一瞬の疼きを恐れるな。それは無為に生きる肉体に走る、唯一無二の生の実感だ。血を抜かれた後のあの微かな浮遊感こそ、俗世の重荷を脱ぎ捨て、我が寵愛に浴した証。血を捧げた者には、王朝の栄光ある徽章（と、微かな冷たい水分補給）が約束されている。
+Fear not the fleeting pang of the needle's kiss. It is the peerless touch of true life piercing a body lived in vain. That gentle faintness following the harvest is proof absolute that thou hast cast off mortal burdens to bask in my favor. Unto those who surrender their blood, the glorious insignia of the dynasty—and modest, chilled hydration—are duly promised.
+
+三、真の目覚めへ至る道（啓蒙の極地）
+III. The Path to True Awakening (Culmination of Enlightenment)
+
+知るがよい、哀れな同胞よ。
+Mark well, my pitiful brethren.
+
+そなたがただ生きている間、その血は単なる体液に過ぎぬ。だが、外へと導かれ、他者の乾きを癒やすために捧げられた瞬間、それは「力」へと昇華する。
+While thou merely drawest breath, thy blood is nothing more than bodily fluid. Yet the instant it is channeled forth and offered to slake the thirst of another, it sublimates into pure "power."
+
+姿なき母は、傷口と流れる血を求めておられる。
+The Formless Mother desireth wounds, and the blood that poureth from them.
+
+己の血を分け与える行為とは、すなわち自らの境界を溶かし、他者と、そして世界と血脈を一つにすることなのだ。肉の檻に閉じ込められた狭い自我を破り捨て、大いなる朱の連なりへと至る唯一の道——それが、この献血という啓蒙に他ならない。
+To impart one's own blood is to dissolve the boundaries of the self, entwining thy lineage as one with others, and indeed, with the world. To shatter the narrow ego imprisoned within this cage of flesh and join the grand, vermilion continuum—this is the sole path, and it is none other than the enlightenment of blood donation.
+
+さあ、袖をまくり上げるがよい。
+Now, roll up thy sleeve.
+
+我が腕の中に飛び込み、その脈打つ腕を差し出すのだ。
+Leap into my embrace, and yield thy pulsing arm.
+
+恐れることはない。
+Have no fear.
+
+痛みは一瞬、そして訪れるのは……我らがモーグウィン王朝の、永遠の栄光なのだから。
+The pain is but a fleeting moment, and what follows... is the everlasting glory of our Mohgwyn Dynasty!
 
 ---
 
