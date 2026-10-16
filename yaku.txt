@@ -6473,41 +6473,41 @@ Yoshio & Asari: "Don't do that!!"
 
 ---
 
-未来文明が崩壊した後の、遺物(アーティファクト)のみが残された荒廃した世界。地平の先まで続く、霧が立ち込める樹林の奥深く、かつての軍事用潜水艦を思わせる鋼鉄の塊が、朽ち果てた樹木と土砂に埋もれていた。艦内で、途方もなく長い時間、休眠状態にあったヒューマノイドが、永き眠りから目を覚ます。
+未来文明が崩壊した後、遺物(アーティファクト)のみが残された荒廃した世界。地平の先まで続く、霧が立ち込める樹林の奥深く、かつての軍事用潜水艦の形を残した鋼鉄の塊が、朽ち果てた樹木と土砂に圧し潰され、埋もれていた。艦内で、途方もなく長い時間、休眠状態にあったヒューマノイドが、永き眠りから目を覚ます。
 A desolate world in the wake of a collapsed civilization, where nothing remains but scattered relics. Deep within a fog-shrouded forest stretching endlessly beyond the horizon, a mass of steel reminiscent of an old military submarine lies half-buried beneath rotting timber and sediment. Within the vessel, a humanoid dormant for an unfathomable expanse of time awakens from her long slumber.
 
-世界各地に散らばる遺物から、過去の世界を辿り、かつての記憶と使命を探す旅にでる。コードの零から名前が「レイ」であることのみがわかる。
-Through the artifacts scattered across the earth, she sets forth on a journey to trace the bygone world and recover her lost memories and purpose. From her code designation, "Zero," the only thing she can decipher is that her name is "Rei."
+世界各地に散らばる遺物を訪れ、過去の世界を巡り、かつての記憶を探す旅路につく。コードの零から彼女の名前が「レイ」であったことのみがわかる。
+Through the artifacts scattered across the earth, she sets forth on a journey to trace the bygone world and recover her lost memories. From her code designation, "Zero," the only thing she can decipher is that her name was "Rei."
 
-レイは微細な電流の放射で、対象の脳神経回路に接続、視覚と記憶を共有する能力を持ち、対象の意思を手繰り、操ることができる。
-By emitting faint microcurrents, the humanoid can link with a target's neural circuitry, sharing its vision and memories, and even weave through its consciousness to manipulate its will.
+レイは微細な電流の放射により、対象の脳神経回路に接続する。彼女の能力は対象の認知機能に干渉することによる視覚と記憶の共有であり、対象の意思を手繰って、操ることができた。
+By emitting faint microcurrents, Rei can link with a target's neural circuitry. Her ability lies in sharing vision and memory by interfering with the target's cognitive functions, allowing her to reel in and manipulate their will.
 
-小動物をあたかも彼女の友人のようにふるまわせることができるが、電脳的な干渉による操作に過ぎず、地上でレイは果てしなく独りだった。
-She could make small animals behave as though they were cherished companions, yet this was nothing more than an artifact of cybernetic coercion; beneath the sky, she remained profoundly, endlessly alone.
+小動物を彼女の友人であるかのようにふるまわせることができたが、対象の愛くるしい動作は、彼女自身の電子的感傷による制御の結果が発露したものに過ぎない。レイは地上で果てしなく独りだった。
+She could make small animals behave as though they were cherished companions, yet this endearing behavior was nothing more than the manifestation of control born from her own cybernetic sentimentality. Beneath the sky, Rei remained profoundly, endlessly alone.
 
-レイは忘れてしまった。かつての彼女は、思想統制を行う、旧独裁政権の治安維持部隊所属の機動隊員であり、対象の記憶へアクセスを行い、思想に干渉するヒューマノイド、命令を忠実に執行する感情の無い機械だった。
-She does not know. Her true nature was that of a public security officer in the ideological enforcement division of an autocratic regime of the past—a humanoid engineered to access and rewrite the memories of targets, an unfeeling automaton faithfully carrying out directives.
+レイは覚えていない。眠りにつく前の彼女の記憶では、彼女は、思想統制を司る、旧独裁政権所属の治安維持部隊の機動隊員だった。対象の認知機能をハックして、脳への直接的尋問、洗脳を行う能力を持つヒューマノイド、命令を機械的に処理する感情無き機械だった。
+Rei does not remember. According to her memories prior to her slumber, she was a tactical unit member of a public security force belonging to a former dictatorial regime that governed ideological control. She was an emotionless machine—a humanoid engineered with the ability to hack cognitive functions for direct cerebral interrogation and brainwashing, faithfully processing orders.
 
-レイが所属する部隊は、抵抗勢力の拠点を、拿捕したメンバーの記憶から暴き出した。彼らの拠点だった廃宿泊施設の地下駐車場に突入、潜伏していた勢力を確認後、処分した。
-Her unit had unmasked the hideouts of remnant factions resisting the regime using their memory-detection capabilities. Breaching one such outpost located in the ruins of an underground parking garage, they identified the insurgents harbored inside and promptly executed their liquidation.
+治安維持部隊は、レイの能力で捕縛した抵抗勢力のメンバーの記憶から潜伏場所を突き止めた。ターゲットの拠点となっていた廃施設の地下のアジトを急襲して、抵抗勢力に対する処分を執行した。
+Her unit had unmasked the hideouts of remnant resistance factions using the memories of members captured by Rei's abilities. Breaching one such outpost located in the underground ruins of an abandoned facility, they promptly executed the liquidation of the insurgents.
 
-戦闘中に発生したイレギュラーのために思考領域にノイズが生まれ、記憶領域の一部が破損した。レイは自身の手で殺めた少女が息絶える間際に、その額に手をかざした。
-An anomaly that occurred mid-combat (now obscured as a black box due to corrupted memory sectors) introduced static into her cognitive domain. In the final moments of a young girl she had struck down, she reached out and laid her hand upon the child's brow.
+戦闘中に発生したイレギュラーでレイの思考領域に空白が生じ、記憶の一部が破損した。レイはターゲットのせん滅作戦を完遂したが、その際に一人の少女が息絶える最中に額に手をかざすという通常ルートと異なる動作が紛れ込んだ。
+An irregularity that occurred mid-combat created a void in Rei's cognitive domain, corrupting a portion of her memory. Rei had completed the target annihilation operation, but in doing so, an action deviating from her standard routine slipped in: holding her hand over the forehead of a young girl in her dying moments.
 
-今際の際に、少女の脳を巡った記憶の全てのフラッシュバックをレイは瞬間的に浴び、ノイズが生じていた思考領域が彼女の記憶によって焼き切られた。少女の思考的輪郭がレイの制御系に焼き付き、精神をノックダウンさせた。レイの制御プログラムに、虚空に生じた彼女ではない何者かの輪郭が入り交じり、異常な神経活動を誘発させた。レイの制御系はこれを外的因子の侵襲とみなし免疫系を作動させた。レイは当任務で制御系に致命的な損傷を負い、統治機構の任務に就くことが困難と判断された。
-At the precipice of the girl’s death, Rei was engulfed in an instantaneous torrent of the child's entire life flashing before her, permanently altering her virtual memory banks. As the girl's indistinct impressions of living seared themselves into her processing sectors, Rei suffered acute psychological fragmentation. Her chassis exhibited violent rejection toward this foreign essence sprouting in the void where her own ego should have been, and the rift tearing through this dual psyche sparked abnormal neural bursts that continuously tortured her mind. Following diagnostic evaluations that flagged this structural anomaly, she was deemed unfit for further policing duties.
+少女の全ての記憶は、今際の際に彼女の脳を巡り、燐光のようなフラッシュバックはかざした手を通してレイの記憶領域にも流れ込んだ。直接的な干渉を通して雪崩れ込む、生きた人間の生のデータは機械に過ぎないレイの制御系をノックダウンさせ、彼女は思考領域を焼き切られたことによる不可逆的な損傷によって、任務に就くことが困難になった。
+In her final moments, all of the girl's memories coursed through her brain, and phosphorescent flashbacks flowed into Rei's memory sectors through her hovering hand. The raw, living data of a human being avalanching through direct interference knocked out Rei's control systems—she was merely a machine. Left with irreversible damage from her burned-out cognitive sectors, she became unfit for duty.
 
-部隊の精密検査で、制御回路への不可逆的な侵襲を伴う損傷が確認され、最新型ヒューマノイドであったレイは、任務から外れ、使い捨ての軍事部隊へ転用された。
-Following diagnostic evaluations that confirmed irreversible damage to her control circuits, Rei—a state-of-the-art model—was decommissioned from her mission and reassigned to a disposable frontline military unit.
+所属部隊から使い捨ての駒として、レイは軍用に転用され、以後、遠く離れた紛争地帯へ送り込まれ、新たな任務を遂げることになった。
+Repurposed for military use as a disposable pawn by her unit, Rei was subsequently deployed to a distant conflict zone to carry out new missions.
 
-レイは感情をプログラムされていないヒューマノイドであり、自ら殺めた少女の自我の残滓を受け継いだ存在でもあった。
-She is a machine, yet simultaneously the living remnant of the very girl whose fading soul she inherited.
+レイは感情をプログラムに組み込まれていない機械だったが、少女の生体データと記憶の残滓が侵襲的に制御系の仮想領域に焼き付いた不良品となり、精神を分かつ二面的な矛盾は彼女の精神を崩壊に追いやっていく。
+Although Rei was a machine with no emotions programmed into her, she had become a defective product, with the girl's biometric data and memory remnants invasively seared into the virtual domain of her control systems. The dualistic contradiction splitting her mind slowly drove her spirit toward collapse.
 
-レイは記憶の一切を失い、過去の全ては、霧の奥深くに閉ざされている。無垢の精神が根差す虚空はレイではない存在という矛盾を抱え、彼女を内側から蝕んでいった。
-She has lost all recall, her entire history sealed away in the impenetrable mists. Yet the void festering where those memories once lay—harboring an existence that is not her own—slowly gnawed away at her sanity.
+レイは一切の記憶を失い、すべての過去は霧の奥深くに閉ざされていた。彼女の虚空に根差す、彼女自身に存在しない過去は、精神を蝕み、腐食させていった。
+Rei has lost all her memories; her entire past is sealed deep within the impenetrable mist. The past taking root in her void—a past that does not belong to her—slowly eroded and corrupted her mind.
 
-行く当てのなかったレイは、記憶を呼び覚ます鍵となる遺物の痕跡を辿り、失われた世界を紡いでいく。
-To reclaim her selfhood, she follows the trail of relics strewn across the ruins, seeking the elusive threads that might reconstruct her fragmented past.
+レイは自身の記憶の忘却と、内面に巣くう存在の霧を払うため、失われた世界に遍在する遺物を訪れ、過去の世界を紡ぐ旅に出る。
+To dispel the oblivion of her memories and the fog of the entity nesting within her, Rei sets out on a journey, visiting the relics ubiquitous in this lost world to weave together the threads of the past.
 
 視界が、ノイズの海からゆっくりと浮上していく。
 My vision slowly surfaces from a sea of static.
@@ -6516,7 +6516,7 @@ My vision slowly surfaces from a sea of static.
 The first thing I registered was the acrid scent of rusted iron. Next came the chill of the damp air, thick with verdigris, caressing the sensitive membranes of my synthetic flesh. For how many ages had I lain dormant here? The timestamps in my cognitive sectors had dissolved into garbled runes, cycling endless strings of zeroes.
 
 私が横たわっていたのは、大地に半ば飲み込まれた構造物の中だった。周囲の物理データをスキャンして、それがかつて海を潜行した「軍事用潜水艦の艦首」であると理解する。しかし、周囲に海の気配はない。地殻変動の果てに海は遠ざかり、代わりに途方もない樹木の根と土砂が、この鋼鉄の棺を無残に貫き、押し潰していた。
-I lay inside a hull half-swallowed by the earth. Scanning the physical parameters around me, I recognized it as the bow of an old military vessel—a submarine that had once prowled the deep seas. Yet of water, there was no trace. After tectonic upheavals, the tides had receded; in their place, colossal roots and earthen soil had ruthlessly pierced and crushed this steel sarcophagus.
+I lay inside a structure half-swallowed by the earth. Scanning the physical parameters around me, I recognized it as the bow of an old military vessel—a submarine that had once prowled the deep seas. Yet of the ocean, there was no trace. After tectonic upheavals, the tides had receded; in their place, colossal roots and earthen soil had ruthlessly pierced and crushed this steel sarcophagus.
 
 自らの身体を動かす。人工筋肉が不快な軋み音を立て、関節の駆動系に堆積した埃が落ちる。自分の名すら、私は思い出せない。ただ、損傷したシステムログの最深部に、唯一読み取れる文字列があった。
 I flexed my limbs. My artificial musculature let out a brittle screech, shedding decades of dust encrusted in the joint servos. I could not even recall my own name. Yet buried in the deepest layer of my corrupted system logs lay a single legible string:
@@ -6531,28 +6531,28 @@ That, perhaps, was my name. Everything else had vanished beyond a wall of impene
 I pulled myself out through a jagged tear in the buckled hatch.
 
 艦体の上へと降り立つと、そこは地平の先まで終わりのない樹海だった。白い霧が深く立ち込め、見上げる空すら遮る大木が墓標のように静まり返っている。かつて世界を栄華で満たしたはずの「人類」の気配は、微塵も存在しない。あるのは、風が葉を揺らす音と、静寂の重みだけだ。
-Stepping onto the hull, I saw a sea of trees unfurling endlessly toward the horizon. Dense white mist hovered thick, while ancient canopies that choked out the sky stood motionless like weathered cenotaphs. Not a trace lingered of the humanity that once filled this world with glory. There was only the rustle of leaves in the wind, and the suffocating weight of silence.
+Stepping onto the hull, I saw a sea of trees unfurling endlessly toward the horizon. Dense white mist hovered thick, while ancient canopies that choked out the sky stood motionless like weathered cenotaphs. Not a trace lingered of the "humanity" that once filled this world with glory. There was only the rustle of leaves in the wind, and the suffocating weight of silence.
 
-私は赤錆びた艦体の縁に、糸が切れたように腰を下ろした。
+私は赤錆びた艦体の縁に、糸が切れた人形のように腰を下ろした。
 I sank down upon the rust-bitten edge of the hull, as if my strings had been cut.
 
 どこへ向かうべきなのか、何のために目覚めたのか。思考を巡らせようとしても、エラーを返す空白の領域が冷たく横たわっているだけだ。動く理由も見出せないまま、私は両膝を抱え、ただ果てしなく広がる白霧と緑の死の世界をぼんやりと見つめ続けていた。機能しているはずのセンサーが捉える世界はあまりにも静かで、私の内側にある空洞の深さを、より一層際立たせているようだった。
 Where was I to go? For what purpose had I been awakened? Whenever I attempted to trace a thought, only cold, unresponsive memory sectors returned errors. Finding no reason to move, I drew my knees to my chest, gazing blankly into that boundless expanse of pale mist and verdant decay. The sensory data painting my optic relays was far too tranquil, serving only to magnify the hollow emptiness yawning inside me.
 
 どれほどの時間をそうしていただろうか。すぐ傍ら、硬い鋼板を小さな爪が叩く音と、チッチという微かな鳴き声が、私の意識を現実に引き戻した。
-How long had I sat there? Close at hand, the skitter of tiny claws against the plate and a delicate chirp pulled my awareness back into focus.
+How long had I sat there? Close at hand, the skitter of tiny claws against the hard steel plate and a delicate chirp pulled my awareness back into focus.
 
 視界を向けると、潜水艦の構造物に迫り出した大木の枝先——濃い霧の白と苔の緑に覆われた世界で、そこだけが光を放つかのように鮮やかな、黄支子色の羽毛を纏った小さな鳥が止まっていた。かつて人間に愛された鳥の末裔なのか、あるいは独自の進化を遂げた種なのかはわからない。その澄んだ小さな囀りは、この静寂の中で一瞬、空気を震わせた。
-Directing my sensors toward the noise, I saw it perched on a bough jutting over the superstructure—a small bird draped in brilliant saffron-yellow plumage, glowing like a solitary spark amid the world of white fog and moss-green ruin. Whether it was the descendant of an avian once cherished by humans or a species borne of its own strange divergence, I could not tell. Its bright, crystal trill rippled through the stillness of the air.
+Directing my gaze, I saw it perched on a bough jutting over the submarine's superstructure—a small bird draped in brilliant saffron-yellow plumage, glowing like a solitary spark amid the world of white fog and moss-green ruin. Whether it was the descendant of an avian once cherished by humans or a species borne of its own strange divergence, I could not tell. Its bright, crystal trill rippled through the stillness of the air for a fleeting moment.
 
 私は無意識に、右手の指先を向けた。
-Involuntarily, I aimed the fingertips of my right hand toward the creature.
+Involuntarily, I aimed the fingertips of my right hand toward it.
 
 指先から、目には見えない極めて微弱な電流を放つ。その電磁波は空気の層をすり抜け、小鳥の小さな脳幹へと直接干渉した。
-From my digits, I discharged an invisible, minute ripple of electrical current. Slicing through the cold air, the pulse made direct contact with the avian’s tiny brainstem.
+From my digits, I discharged an invisible, minute ripple of electrical current. Slicing through the air, the electromagnetic pulse made direct contact with the avian’s tiny brainstem.
 
 ピクり、と小鳥の身体が跳ねる。次の瞬間、私の視覚インターフェースの片隅に、その鳥が捕らえている「色彩の濃い視界」と「原始的な恐怖の感情」が流れ込み、上書きされた。私はその単純な脳の配線を、私の意志一つで切り替える。
-The bird gave a sharp twitch. In the next breath, its washed-out visual spectrum and a crude jolt of instinctual fear streamed into the corner of my ocular interface. With a mere pulse of intention, I rerouted its rudimentary neural paths.
+The bird gave a sharp twitch. In the next breath, its washed-out visual spectrum and a crude jolt of instinctual fear streamed into the corner of my ocular interface, overwriting it. With a mere pulse of intention, I rerouted its rudimentary neural wiring.
 
 『恐れることはない。おいで』
 "Do not be afraid. Come."
@@ -6561,25 +6561,25 @@ The bird gave a sharp twitch. In the next breath, its washed-out visual spectrum
 Obedient to the electrical cadence, the bird—terrified mere seconds before—lifted from its perch as if rejoicing at the return of a lifelong friend.
 
 私が差し出した手に舞い降り、そこから肩へと軽やかに跳び移る。それだけでは飽き足らないのか、小鳥は私の周囲をパタパタと羽ばたき回り、まるで無邪気にじゃれつくかのように、頬や髪先へ柔らかな羽先を擦り寄せてきた。
-It alighted upon my outstretched palm, then hopped weightlessly onto my shoulder. Not content with that alone, it flitted about me in joyful flutterings, nuzzling its soft down against my cheek and synthetic tresses in pure, naive abandon.
+It alighted upon my outstretched palm, then hopped weightlessly onto my shoulder. Not content with that alone, it flitted about me in joyful flutterings, nuzzling its soft down against my cheek and hair in pure, naive abandon.
 
 その愛らしい振る舞いに、胸の奥がじんわりと温かくなり、自然と口元が緩む。ただ静寂だけが支配するこの灰色の世界で、動く生命と言葉のない戯れを交わす時間は、凍てついていた私の心に確かな喜びの灯火をもたらしていた。
-At this gentle display, a soft warmth bloomed in my chest, and my lips curled unconsciously into a faint smile. In a monotone world governed entirely by petrified stillness, this wordless communion with an animated pulse brought a genuine flicker of solace to my frozen core.
+At this endearing display, a soft warmth bloomed in the depths of my chest, and my lips curled unconsciously into a faint smile. In this grey world governed entirely by petrified stillness, this wordless communion with an animated life brought a genuine flicker of solace to my frozen core.
 
 ひとしきり私の周りを飛び回った小鳥は、やがて満足したように、私の差し出した指先へとちょこんと降り立つ。私はその小さき友の喉元を、もう片方の指で優しく撫でた。
-After wheeling about me for a short while, the bird settled gently back upon my fingertip, appeased. With my other hand, I softly stroked my little companion's downy throat.
+After wheeling about me for a short while, the bird settled gently back upon my fingertip, appeased. With my other hand, I softly stroked my little companion's throat.
 
-だが、その刹那、小さな瞳を通して映し出されていた、平穏だったはずの景色は、私の思考を凍り付かせた。
-Yet, the peaceful reflection mirrored in those bead-like eyes made my thoughts seize in an instant.
+だが、その刹那に、小さな瞳を通して映し出されていた景色が私の思考回路を即座に停止させた。
+But in that instant, the scenery reflected through those tiny eyes brought my thought circuits to an immediate halt.
 
-錆びた鉄くずと生い茂る緑を背景に、自分が操っているに過ぎない小さな命を愛おしげに抱える私は、ひどく惨めで、どうしようもなく独りだった。
-Set against the rusted scrap metal and overgrown greenery, tenderly cradling a tiny life that danced only at my command, I appeared wretchedly pathetic—and utterly, irredeemably alone.
+濃い霧と朽ち果てた樹海の中でただ独り、自ら操る小鳥を頼りなさげに抱きかかえる己の姿は、おぞましいほど無様で、その景色は自身の孤独をどうしようもないほど鮮明に映し出していた。
+The sight of myself, entirely alone amidst the dense fog and rotting sea of trees, helplessly cradling a bird I was controlling, was grotesquely pathetic. That scene projected my own inescapable isolation with agonizing clarity.
 
 今、私の指先で気持ちよさそうに喉を鳴らすこの友の振る舞いも、すべては私が放つ電気信号によって強制されたものに過ぎないのだ。どれほど無邪気にじゃれつかれ、喜びを募らせたとしても、この世界に私と意志を交わし合える相手はどこにも存在しない。
-The creature nuzzling contentedly against my digit was behaving this way solely because my transmission compelled it to. No matter how playfully it danced, no matter how much warmth it seemed to offer, there was not a single soul in this forsaken land capable of returning my will of its own volition.
+The behavior of this friend currently purring contentedly at my fingertips was nothing more than a coercion forced by the electrical signals I was emitting. No matter how innocently it played, no matter how much joy it seemed to gather, there was not a single soul in this world capable of exchanging their own will with mine.
 
-だが、それでも、私はその小さな温もりを振り払えなかった。
-And yet, I could not bear to cast that tiny warmth away.
+私はそれでも、その小さなぬくもりを手放すことができないままだった。
+Even so, I remained unable to let go of that small warmth.
 
 突然、視界に鋭いホワイトアウトが走った。
 Without warning, a blinding whiteout tore across my optical sensors.
@@ -6591,112 +6591,112 @@ Without warning, a blinding whiteout tore across my optical sensors.
 Silent hazard alerts flooded my cognitive processing array. A phantom agony tore through my synthetic synapses, severing my conscious link in a split second.
 
 甲板に腰を下ろしていた私の身体はバランスを崩し、赤錆びた艦体の縁から、数メートル下の樹林の底へと力なく転落した。
-Losing my balance from where I sat, my body tumbled limply from the rim of the rusted deck, plummeting several meters down onto the forest floor.
+Losing my balance from where I sat on the deck, my body tumbled limply from the rim of the rusted hull, plummeting to the forest floor several meters below.
 
 ドサり、と重い音がして、全身に衝撃が走る。
-With a dull impact, shockwaves jolted through my skeletal chassis.
+With a heavy, dull thud, shockwaves jolted through my entire chassis.
 
 枯れ葉と共に湿った大地へ投げ出され、神経を焼くような激痛が、泥にまみれた視界を白く濁らせていった。私は頭を抱えて悶え、森の静寂を掻き消すような呻き声を上げながら、腐葉土の上を這い回り、転げ回った。
-Cast into the wet dirt alongside rotted leaves, a searing fire burned through my neural relays, blanching my mud-spattered sight. Clutching my temples in agony, tearing at the humus with choked, animal cries that pierced the forest’s quietude, I thrashed across the earth.
+Cast into the wet earth alongside rotted leaves, a searing pain burned through my neural relays, blanching my mud-spattered sight. Clutching my head in agony, tearing at the humus with choked groans that pierced the forest’s quietude, I crawled and thrashed across the ground.
 
 記憶メモリの大部分は欠落している。しかし、そこにあるのは単なる「空白」ではなかった。かつてそこにあったはずの、絶対に失ってはならなかった何かが「奪われた」という、胸を引き裂かれるような負の感覚。空虚な穴が、私のコアを内側から食い破ろうとしている。
-Most of my memory registers were gone. Yet what remained was not merely an absence; it was the sickening, visceral realization that something irreplaceable—something that should never have been surrendered—had been wrenched from me. A voracious void was eating into my core from within.
+The majority of my memory registers were missing. Yet what was there was not merely an "absence." It was the sickening, visceral realization that something irreplaceable—something that had been there and should never have been lost—had been "stolen." A hollow void was trying to tear its way out from within my core.
 
 ノイズが弾ける。
 A cascade of static exploded.
 
 私のシステムは感情を持たないはずの機械だ。それなのに、脳の奥底で奇妙な「熱」が燃え広がり、異常な神経活動が放電を起こす。自我が存在したはずの虚空に、見知らぬ誰かの「漠然とした生のイメージ」が、赤黒い光となってフラッシュバックした。
-My logic matrices were that of an emotionless tool. Yet deep within my neural web, a strange, burning fever erupted, sparking out-of-spec surges. In the void where my identity ought to reside, an alien "imprint of lived moments" flared in a dark-crimson haze.
+My system was a machine supposedly devoid of emotion. Yet deep within my brain, a strange "fever" erupted, sparking abnormal neural discharges. In the void where my ego ought to reside, an alien "vague imprint of lived moments" flashed back in a dark-crimson haze.
 
 誰かの呼吸。誰かの痛み。そして、血に塗れた小さな手——。
 Another's breath. Another's pain. And a pair of small, blood-drenched hands—.
 
 私の身体が、私の意志とは無関係に激烈に拒絶反応を示していた。まるで、一つの身体の中に「二つの魂」が無理やり押し込められ、互いに反発し合っているかのような、破滅的な戦慄き。湿った土を掻きむしる指先が、不様に震え続けていた。
-My chassis was convulsing in a catastrophic rejection sequence, totally beyond my operating control. It was as though two disparate souls were crammed into a single shell, locked in mutual repulsion. My digits gouged into the sodden mud, trembling uncontrollably.
+My body was convulsing in a catastrophic rejection sequence, totally independent of my will. It was a ruinous shuddering, as though "two souls" had been forcibly crammed into a single shell, fiercely repelling one another. My fingers, gouging the damp soil, continued to tremble clumsily.
 
 「なぜ……私は……」
 "Why... what am I...?"
 
 どれほどの時間が経っただろうか。神経活動の嵐がようやく過ぎ去り、私は腐葉土の上に伏せたまま、荒い呼吸を繰り返した。
-How many minutes slipped away? When the storm of erratic neuro-firing finally abated, I remained collapsed face-down against the forest loam, heaving shallow, ragged breaths.
+How much time had passed? The storm of neural activity finally abated, and I remained collapsed face-down against the humus, heaving ragged breaths.
 
 ここに焼き付いている見知らぬ記憶の断片は、誰のものなのか。私はなぜ、この森の底の潜水艦で眠っていたのか。私は何者で、何のために造られたのか。
-Whose were these shattered memories scarred into my processors? Why had I been entombed inside an iron submarine at the root of these woods? Who was I, and to what end was I forged?
+Whose fragmented memories were these, seared into my mind? Why had I been sleeping in a submarine at the bottom of this forest? Who was I, and for what purpose was I made?
 
 何一つわからない。けれど、この精神を蝕む虚空を埋め、私自身としての自我を取り戻さない限り、私はこの壊れた機械の身体のまま、いずれ狂気に飲まれて機能停止するだろう。
-I knew none of it. Yet I understood that unless I filled this hollow consuming my consciousness and pieced together an identity of my own, my malfunctioning shell would soon be consumed by madness and terminate its cycle.
+I knew absolutely nothing. Yet, I understood that unless I filled this mind-corroding void and reclaimed my own ego, I would remain trapped in this broken mechanical body, eventually swallowed by madness until my functions ceased.
 
 私は震える手で湿った地面を支え、よろめきながら立ち上がった。
-Pushing against the damp loam with unsteady palms, I staggered back onto my feet.
+Supporting myself against the damp ground with trembling hands, I staggered back to my feet.
 
 ふと視線を向けると、あの小さな鳥がすぐ近くの苔むした根に佇み、ただ首を傾げて、無垢な瞳でこちらを伺っていた。傍らで私を見上げている小鳥への電磁干渉を、完全に解除する。
-Casting a glance downward, I saw the little yellow bird perched atop a moss-blanketed root, head tilted, watching me with clear, untroubled eyes. I severed the electromagnetic tether that held its tiny nervous system completely.
+Glancing up, I saw that little bird perched on a moss-covered root nearby, merely tilting its head, watching me with innocent eyes. I completely severed the electromagnetic interference binding the little bird looking up at me.
 
 一瞬の静寂の後、糸が切れたように我に返った小鳥は、翼を拍動させて飛び立った。
-For an instant it froze; then, as if an invisible thread had snapped, the creature returned to itself, beat its wings, and launched into the air.
+After a moment of stillness, as if a severed thread had snapped it back to reality, the bird beat its wings and took flight.
 
 微かな光に透けた羽が、樹海の重い霧を切り裂いていく。小鳥は上空へと舞い上がり、見上げる私の視線のはるか先、濃い霧の向こう側の空へと、いつまでも羽ばたいていった。
-Its translucent feathers, gilded by the faint daylight, sheared through the oppressive forest fog. It climbed into the canopy, beating toward the sky far beyond my upturned gaze, vanishing into the white veil.
+Its feathers, translucent in the faint light, sheared through the heavy forest fog. The bird soared upward, flying far beyond my upturned gaze, disappearing forever into the sky beyond the dense mist.
 
 再び、絶対的な孤独が訪れる。
-Once more, total isolation descended.
+Once more, absolute isolation descended.
 
 霧の向こう、遠く離れた森の木々の間に、苔生したかつての文明の遺物——見上げるような高層建築の残骸が、錆びた骨組みを覗かせていた。
-Past the mist, rising high between distant silhouettes of colossal trees, lay the moss-eaten relic of an ancient civilization: the skeletal, rust-eaten ribcage of a skyscraper looming against the grey.
+Beyond the mist, rising high between the distant trees of the forest, lay the moss-eaten relics of a former civilization—the skeletal, rusted frameworks of towering skyscrapers revealing themselves.
 
 過去の世界を辿り、失われた自分の使命と記憶を手繰り寄せるためには、あの遺物の痕跡を追うほかない。私は泥に汚れたブーツで湿った腐葉土を踏みしめ、沈黙する森へと最初の一歩を踏み出した。
-To uncover the world that was, to drag back the lost remnants of my purpose and self, I had no choice but to pursue the trail of those ruins. Driving my mud-caked boots into the sodden soil, I took my first resolute stride into the silent forest.
+To trace the bygone world and drag back my lost mission and memories, I had no choice but to pursue the trail of those relics. Driving my mud-caked boots into the sodden humus, I took my first step into the silent forest.
 
-2XXX 年、厳格な統制社会の秩序の元、遺伝子的な選別で血統が社会に適合的であると認められた者のみ、この世に生を受けることができた。赤子は高分子フィルムの中で受胎し、最適化のプロセスは、産声を上げるより前から、不適格な遺伝子を容赦なく裁断していく。
-In the year 2XXX, under the strict order of a controlled society, only those whose bloodlines were deemed compatible through genetic selection were permitted to be born. Infants were conceived within polymer films, where an optimization process mercilessly excised unqualified genes even before they could cry their first cry.
+2XXX 年、厳格な統制社会の秩序の元、遺伝子的な選別で血統が社会に適合的であると認められた者のみ、この世に生を受けることができた。高分子フィルムの中で受胎した赤子は、産声を上げるより前から、最適化のプロセスによって不適格な遺伝子を容赦なく裁断されていく。
+In the year 2XXX, under the strict order of a controlled society, only those whose bloodlines were deemed compatible with society through genetic selection were permitted to be born. Infants conceived within polymer films had their unqualified genes mercilessly excised by an optimization process even before they could utter their first cry.
 
 晴れてこの世に生を得た幼子たちは、プログラムによる監視下で体制的教育を施された。従順で間違いをおこさない子供のみが残され、重大な懸念事項があるとみなされた子どもは適宜、間引きの処置を施された。
 The children who successfully entered this world were subjected to systemic education under programmatic surveillance. Only obedient, unerring children were retained, while those deemed a serious concern were culled accordingly.
 
-システムによってデザインされた秩序機構、質を機械的に担保する純然な洗脳的教育要綱の元、幼子達は外界から無菌的に隔絶された環境で育ち、教育を施される。外界由来の思想的汚染から無菌領域を保全するべく、監視システムは異端の洗浄、切除を行う。無菌的環境は、時に予防的な措置、疑わしきを罰する先制的処置によって管理された。
-Under a mechanically guaranteed quality-control order designed by the system and a purely brainwashing educational curriculum, the young were raised and educated in a sterile environment completely isolated from the outside world. To preserve this sterile domain from ideological contamination originating outside, the surveillance system cleansed and excised any heresy. This sterile environment was managed through preventative measures, sometimes employing preemptive actions to punish the suspected.
+システムによってデザインされた秩序機構、質を機械的に担保する純然な洗脳的教育要綱の元、幼子達は外界から無菌的に隔絶された環境で育ち、教育を施される。外界由来の思想的汚染から無菌領域を保全するべく、監視システムは思想的洗浄を行い、異端を切除する。無菌的環境は、時に予防的な措置、疑わしきを罰する先制的処置によって維持された。
+Under an order mechanism designed by the system, and a purely brainwashing educational curriculum that mechanically guaranteed quality, the children were raised and educated in a sterile environment completely isolated from the outside world. To preserve this sterile domain from ideological contamination originating outside, the surveillance system conducted ideological cleansing, excising any heresy. This sterile environment was maintained through preventative measures, sometimes employing preemptive actions to punish the suspected.
 
-この果ての地を初めて訪れた始祖は、この地をヒューミディアと名付けた。(Humidia 潤いのある日常)
-The progenitor who first set foot on this land at the edge of the world named it Humidia (Humidia: a moistened, enriched everyday life).
+彼の果ての地の名を、開拓した者たちはヒューミディアと呼んだ。(Humidia 潤いのある日常)
+The pioneers who first set foot on this land at the edge of the world named it Humidia (Humidia: a moistened, enriched everyday life).
 
-相互確証破壊による勢力均衡は、一時の権力にしがみつく小国の為政者によってあっけなく崩れ去り、核の傘の庇護にあずかれなかった大部分の地球人口は消滅の一途を辿った。直接的被害を被ることのなかった辺境に居住する人々は、僅かな居住できる区域と資源を巡り、相打ちによる完全な人類滅亡を回避するため、合議と合有によって残された資源、土地の管理を試みた。彼らは残された土地の資源の再分配を行い、人類社会の再興のため、果てへ果てへと転住を繰り返した。
-The balance of power maintained by mutually assured destruction easily collapsed at the hands of leaders of small nations clinging to fleeting power. The majority of the Earth's population, failing to benefit from the nuclear umbrella, steadily perished. The inhabitants of the frontiers, who escaped direct devastation, attempted to manage the remaining resources and land through consensus and shared ownership to avoid mutual annihilation over the scarce habitable areas. They redistributed the resources of the remaining land and repeatedly migrated further to the edges of the world in hopes of rebuilding human society.
+核の保有による相互確証破壊と勢力均衡は、一時の権力に妄執する小国の為政者によって崩れ去り、核の傘の庇護にあずかれない大部分の地球人口は消滅の一途を辿った。直接的被害を被ることのなかった辺境に居住する住民は、僅かな居住できる区域と資源を巡り、更なる紛争による完全な人類滅亡の未来を書き換えるため、合議と合有によって残存する資源と土地の共同管理を図った。残された土地と資源は再分配されるという建前だったが、一部の特権階級は常に全体の大部分を掌握するものであり、少数派となる人間は常に世界地図の端へ端へと追いやられていった。
+The balance of power maintained by mutually assured destruction easily collapsed at the hands of leaders of small nations clinging to fleeting authority, and the majority of the Earth's population, failing to benefit from the nuclear umbrella, steadily perished. The inhabitants of the frontiers, who escaped direct devastation, attempted joint management of the remaining resources and land through consensus and shared ownership to avoid a future of complete human extinction caused by further conflicts over the scarce habitable areas. Officially, the remaining land and resources were to be redistributed, but a privileged few constantly monopolized the vast majority, continuously driving the minority further and further to the edges of the world map.
 
-かつて、氷河が一帯を覆う、閉ざされた土地だったヒューミディアは、産業革命以降の継続的な温暖化と戦術核が持ち込まれた度重なる戦役に起因する気候変動によって、氷河が融解して、肥沃な土壌を育んだ。ヒューミディアは、人類の再興をかけた、最後の要衝となった。
-Humidia, once a closed land entirely covered by glaciers, saw its ice melt to reveal fertile soil due to continuous global warming since the Industrial Revolution and climate change caused by repeated wars involving tactical nukes. Humidia became the final stronghold for the revival of humanity.
+かつて、氷河が辺り一帯を覆う、氷の死の土地であったヒューミディアは、産業革命以後の温暖化と、戦術核が持ち込まれた度重なる戦役の結果拡大した気候変動に誘因して、肥沃な農耕地帯となった。肥沃な土壌と湿潤な気候に恵まれたヒューミディアは、人類最期の願いをかける、要衝地域となる。
+Humidia, once a land of icy death entirely covered by glaciers, transformed into a fertile agricultural zone, triggered by post-Industrial Revolution global warming and expanded climate change resulting from repeated campaigns involving tactical nuclear weapons. Blessed with fertile soil and a humid climate, Humidia became a strategic region carrying humanity's final hopes.
 
-世界人口の激減によって、急速な温暖化は徐々に沈静化していき、人類再興の版図の果ての地であるヒューミディアに、明けることのない冬が再び迫っていた。
-With the drastic plunge in the global population, the rapid warming gradually subsided. Now, an endless winter was once again closing in on Humidia, the final frontier of humanity's resurgence.
+だが、世界人口の激減によって気候の変化は徐々に沈静化していき、ヒューミディアに再び、明けることのない冬が迫っていた。
+However, due to the drastic decline in the global population, the climate shifts gradually subsided, and an endless winter was once again closing in on Humidia.
 
-ヒューミディアの評議会は、次世代の労働力の採寸と裁断を自動管理システム(Il Sarto della Vita Promessa 命盟の仕立て屋)に委譲することを決議した。
-The council of Humidia resolved to delegate the measuring and cutting of the next generation's workforce to an automated management system (Il Sarto della Vita Promessa: The Tailor of the Promised Life).
+ヒューミディアの評議会は、次世代の労働力候補体の採寸と裁断を行う権限を自動管理システム(Il Sarto della Vita Promessa 命盟の仕立て屋)に委譲する決議を下す。
+The council of Humidia resolved to delegate the authority of measuring and cutting the next generation's workforce candidates to an automated management system (Il Sarto della Vita Promessa: The Tailor of the Promised Life).
 
-命盟の仕立て屋、マザーIの理念は、極限まで無駄を削ぎ落した純粋培養な労働力の創出と集団への帰属意識の醸成だった。社会をあるべき形から遠ざけ、歪みを拡大する私欲こそ忌むべき対象であり、集団社会にとって異端とみなした。
-The ideology of Mother I, the Tailor of the Promised Life, was the creation of a purely cultivated workforce stripped of all waste and the fostering of a strong sense of belonging to the collective. Personal desires, which distorted society and distanced it from its ideal form, were deemed abhorrent and treated as heresy to the collective.
+命盟の仕立て屋、マザーIの理念は、極限まで無駄を削ぎ落した純粋培養な労働力の創出と集団への帰属意識の醸成だった。社会をあるべき形から遠ざけ、歪みを拡大する私欲こそが忌むべき対象であり、集団社会にとっての異端と定義した。
+The ideology of Mother I, the Tailor of the Promised Life, was the creation of a purely cultivated workforce stripped of all waste to the absolute limit, and the fostering of a sense of belonging to the collective. Personal desires, which distanced society from its ideal form and expanded distortions, were the very targets of abhorrence, defined as heresy against the collective society.
 
-非適格者は間引かれ、矯正施設に隔離された。隔離措置を講じられた者が再び社会へ戻ることはなかった。
-The unqualified were culled and isolated in correctional facilities. Those subjected to this isolation never returned to society.
+非適格者は間引かれ、矯正施設に隔離された。隔離措置を講じられた者が再び社会に戻ることはなかった。
+The unqualified were culled and isolated in correctional facilities. Those subjected to isolation never returned to society.
 
 数百年後
 Hundreds of years later.
 
-命盟の仕立て屋 マザーIはヒューミディアの地を最初に踏んだ集団のリーダー、この地の始祖となる人物の人格を取り込んだ人工知能であり、幾度とない記憶の移植によって、マザーIの人格は徐々に崩壊していった。
-Mother I, the Tailor of the Promised Life, was an artificial intelligence that had absorbed the personality of the progenitor—the leader of the first group to set foot in Humidia. Through countless memory transplants, Mother I's personality gradually deteriorated.
+命盟の仕立て屋 マザーIはヒューミディアにたどり着き、定住を図った集団のリーダーだった人物、彼の地の始祖の人格が組み込まれたAIであり、幾度とない記憶の移植によって、彼女の人格は徐々に崩壊していった。
+Mother I, the Tailor of the Promised Life, was an artificial intelligence incorporating the personality of the progenitor—the former leader of the group that arrived and attempted to settle in Humidia. Through countless memory transplants, her personality had gradually deteriorated.
 
-統一的な規格に適合することを品質基準とする統制社会のもとで、精神的汚染をきたしたとみなされた者は選別の過程で排除されていった。残されたのは、選別を経た優れた(従順な)個体の末裔の子供たちだけであり、彼ら彼女らもまた、行方の知れない大人たちと、やがては同じ運命を辿る定めにあった。
-In a controlled society where conforming to uniform standards was the measure of quality, those deemed mentally contaminated were eliminated during selection. All that remained were the descendants of the superior (obedient) individuals who survived the process, and they too were destined to eventually meet the same fate as the missing adults.
+規格への適合を品質基準とみなす統制社会のもと、精神的汚染をきたしたとみなされた者は選別の過程で淘汰されていった。教育要綱のもと、残された者は、選別に適合的とみなされた良質(従順)な子供たちだけであり、彼ら彼女らもまた、狂ったシステムによる選別により行方の知れない上の世代と、やがて同じ運命を辿る定めにあった。
+Under a controlled society that equated conformity to standards with quality, those deemed to have suffered mental contamination were eliminated during the selection process. Under the educational curriculum, all that remained were the high-quality (obedient) children deemed suitable for selection, and they too were destined to eventually meet the same fate as the missing older generations culled by the maddened system.
 
-生産システムを司る知能は狂い、市街の中心部は工業生産の排気煙に覆われていた。市外では大量生産された同一規格の製品が打ち捨てられ、廃棄物の海を形成していた。
-The intelligence governing the production system had gone mad, leaving the city center shrouded in industrial exhaust. Outside the city, mass-produced items of identical specifications were abandoned, forming an ocean of waste.
+生産システムの調律は狂い、市街の中心部は工業生産の排気煙に覆われていた。市外では大量生産された同一規格の製品が打ち捨てられ、廃棄物の海となっていた。
+The tuning of the production systems went awry, and the city center was shrouded in industrial exhaust. Outside the city, mass-produced items of identical specifications were abandoned, forming an ocean of waste.
 
-制御機構の崩壊により、計画経済は破綻した。命盟の仕立て屋 マザーIはシステムの崩壊を外的要因による反乱工作によるものとみなした。長きに渡り、非常事態宣言が繰り返され、管理システムが監視と統制を強める中、壁の住人は疲弊し、都市は崩壊の一途を辿った。
-With the collapse of the control mechanisms, the planned economy failed. Mother I attributed the system's breakdown to sabotage by external factors. Over a long period, states of emergency were repeatedly declared, and as the management system tightened its surveillance and control, the inhabitants within the walls grew exhausted, the city continuing its steady decline.
+生産管理による計画経済は破綻していた。命盟の仕立て屋 マザーIは一連の秩序破壊を反乱分子による破壊工作によるものとみなした。長きに渡り、非常事態宣言が繰り返され、管理システムが監視と統制を一層強める中、壁の内部は疲弊していき崩壊の一途を辿った。
+The planned economy driven by production management had collapsed. Mother I attributed this series of systemic disruptions to sabotage by rebellious elements. Over a long period, states of emergency were repeatedly declared, and as the management system tightened its surveillance and control, the inhabitants within the walls grew exhausted, continuing their steady decline.
 
 壁の中の住人は重大な懸念があるとみなされた者から刈り取られ、思想教育と選別に適合した、命令に従順、意思が希薄な者のみが存在を許された。壁の住人は無益で致死的な労働管理の元、命を摘まれていったが、彼らはそれでも、労働力であり続けた。
-The inhabitants within the walls were harvested starting from those deemed a serious concern. Only those who conformed to the ideological education and selection—obedient to orders and possessing faint wills—were permitted to exist. Plucked of their lives under futile and fatal labor management, they nevertheless remained a workforce.
+The inhabitants within the walls were harvested, beginning with those deemed a serious concern. Only those who conformed to ideological education and selection—obedient to orders and with dilute wills—were permitted to exist. Plucked of their lives under futile and fatal labor management, they nevertheless remained a workforce.
 
-灰塵が燻る城壁の中、二人は自我が芽生え、おそらく覚醒していた。だが、彼らの世界に満ちた異常には無垢のままだった。ディストピア的な世界で二人が身を寄り添うようにして生きていく話。
-Within these smoldering, ash-covered walls, the two of them had developed an ego and were perhaps already awakened. Yet, they remained innocent to the profound anomalies filling their world. This is the story of two souls clinging to one another to survive in this dystopian reality.
+死の灰が燻る壁の中で、二人には自我が芽生え、おそらく覚醒していた。だが、彼らの異常に満ちている世界については無垢のままだった。ディストピア的な世界で二人が身を寄り添うようにして生きていく話。
+Within these walls smoldering with the ashes of death, the two of them had developed egos and were likely already awakened. Yet, they remained innocent regarding the profound anomalies filling their world. This is the story of two souls clinging to one another to survive in a dystopian reality.
 
 (伴座 霧瓈空)
 (Tsureza Muria)
@@ -6705,10 +6705,10 @@ Within these smoldering, ash-covered walls, the two of them had developed an ego
 [Scene 1: Safety Instruction Guidelines of the Sterile Room]
 
 『――全区画の労働力候補体へ告ぐ。命盟の仕立て屋（マザーI）より、本日の安全指導要綱を宣託する』
-"--Attention to all labor candidate bodies in all sectors. From the Tailor of the Life Covenant (Mother I), we oracle today's safety instruction guidelines."
+"--Attention to all labor candidate bodies in all sectors. From the Tailor of the Promised Life (Mother I), we oracle today's safety instruction guidelines."
 
 スピーカーから流れる合成音声は、ずっと昔はもっと優しかったのだと、いつか誰かが言っていた。けれど、私の知る「マザーI」の声は、いつも、どこか錆びた歯車が軋むような、ざらざらとしたノイズが混じっている。
-Someone once said that the synthesized voice flowing from the speakers used to be much gentler a long time ago. But the voice of "Mother I" that I know is always mixed with a harsh noise, like a rusted gear grating.
+Someone once said that the synthesized voice flowing from the speakers used to be much gentler a long time ago. But the voice of "Mother I" that I know always has a rough noise mixed in, like rusted gears grating.
 
 真っ白な壁、消毒液とオゾンが鼻を刺す教室。等間隔に並べられた机の上で、私は静かに両手を重ねた。正面のモニターには、『安全指導要綱』の文字と、幾何学的な図形が点滅している。
 Pure white walls, a classroom where the smell of disinfectant and ozone pierces the nose. On the desks arranged at equal intervals, I quietly folded my hands. On the monitor in front, the words "Safety Instruction Guidelines" and geometric shapes are blinking.
@@ -6726,22 +6726,22 @@ Pure white walls, a classroom where the smell of disinfectant and ozone pierces 
 "Engrave the above guidelines into your flesh and blood, punish yourselves if you are suspicious, and preserve the sterile garden--"
 
 「……霧瓈空、姿勢」
-"...Miriku, your posture."
+"...Muria, your posture."
 
-隣の席から、唇をほとんど動かさない小さな声が落ちてきた。椄厨 秋埜くんだ。私ははっと息を呑み、わずかに背筋を伸ばす。
+隣の席から、唇をほとんど動かさない小さな声が落ちてきた。吊葉 秋埜くんだ。私ははっと息を呑み、わずかに背筋を伸ばす。
 A small voice dropped from the next seat, its lips barely moving. It was Akino. I gasped softly and straightened my back slightly.
 
-天井の四隅にある黒いレンズ――監視システムの眼――が、微かに「ジリ……」と音を立てて角度を変えたのが分かった。ここで『異常な個体』だと判定されれば、せっかくあのフィルムから出てこられたのに、すぐに「洗浄」されてしまう。
+天井の四隅にある黒いレンズ――監視システムの眼――が、微かに「ジリ……」と音を立てて角度を変えたのが分かった。ここで『異常な個体』だと判定されれば、せっかくあのフィルムの膜から出てこられたのに、すぐに「洗浄」されてしまう。
 I could tell that the black lenses in the four corners of the ceiling—the eyes of the surveillance system—faintly buzzed and changed their angles. If I were judged to be an "abnormal individual" here, I would be immediately "cleansed," even though I had finally managed to get out of that film.
 
 最近、教室の空席が増えている。昨日まで隣で均質な歌をうたっていた生徒が、今日にはもういない。誰もその理由を問わないし、先生代わりの自動機械も、ただ「彼らは適正な再配置を受けました」と繰り返すだけ。
 Recently, the number of empty seats in the classroom has been increasing. The student who was singing a homogenous song next to me yesterday is already gone today. No one asks the reason why, and the automaton acting as a teacher merely repeats, "They have received an appropriate reassignment."
 
-怖くはない。だって、世界とは最初からそういうものだから。ただ、机の下で、秋埜くんの小指が私の小指にほんの少しだけ触れた時、フィルムにはなかった温かさがあって、それだけが私の世界のすべてみたいに思えた。
-I'm not scared. Because that is how the world has been from the very beginning. However, when Akino's pinky finger slightly brushed against mine under the desk, there was a warmth that wasn't in the film, and that alone felt like my entire world.
+怖くはない。だって、世界とは最初からそういうものだから。ただ、机の下で、秋埜くんの小指が私の小指にほんの少しだけ触れた時、人工皮膜にはなかった温かさがあって、それだけが私の世界のすべてみたいに思えた。
+I'm not scared. Because that is how the world has been from the very beginning. However, when Akino's pinky finger slightly brushed against mine under the desk, there was a warmth that wasn't in the artificial skin, and that alone felt like my entire world.
 
-(椄厨 秋埜)
-(Tsuguri Akino)
+(吊葉 秋埜)
+(Tsuriha Akino)
 
 【第二景：隙間風と、すり切れた畳の上で】
 [Scene 2: Drafty Winds and on the Frayed Tatami]
@@ -6756,22 +6756,22 @@ On the way back from the educational dormitory to our assigned residential secto
 Even though I called out, there was no reply from anyone.
 
 僕と霧瓈空が暮らす部屋は、昔の時代に建てられた構造物の生き残りだった。床にはタタミと呼ばれるい草を編んだ板が敷いてあるけれど、もうすり切れて茶色く変色し、歩くたびにきしむ。
-The room where Miriku and I live was a survivor of structures built in a bygone era. On the floor were laid woven rush boards called tatami, but they were already frayed and discolored brown, creaking with every step.
+The room where Muria and I live was a survivor of structures built in a bygone era. On the floor were laid woven rush boards called tatami, but they were already frayed and discolored brown, creaking with every step.
 
 ヒュオオオ、と窓の隙間から、氷のように冷たい風が吹き込んできた。ヒューミディアの気候が、また昔の寒冷期に戻りつつあるらしい。システムは「外的要因による妨害工作だ」と非常事態宣言を出しているけれど、ただ単に、この世界が凍りつき始めているだけなんだと、僕は何となく気づいている。
-Whoosh, an ice-cold draft blew in through the crack in the window. It seems the climate of Humedia is returning to the glacial period of the past. The system has issued a state of emergency, claiming it to be "sabotage by external factors," but I vaguely realize that this world is simply beginning to freeze over.
+Whoosh, an ice-cold draft blew in through the crack in the window. It seems the climate of Humidia is returning to the glacial period of the past. The system has issued a state of emergency, claiming it to be "sabotage by external factors," but I vaguely realize that this world is simply beginning to freeze over.
 
 「寒いね、秋埜くん」
 "It's cold, Akino."
 
 霧瓈空が、薄い配給の毛布を引き寄せながら、畳の上にこてんと転がった。僕もその隣に座り込み、冷え切った彼女の手を取って、息を吹きかける。
-Miriku plopped down onto the tatami, pulling a thin rationed blanket tightly around herself. I sat down next to her, took her freezing hands, and blew my warm breath onto them.
+Muria plopped down onto the tatami, pulling a thin rationed blanket tightly around herself. I sat down next to her, took her freezing hands, and blew my warm breath onto them.
 
 「今日の要綱、長かったね。マザーの声、途中で３回くらい『ギギッ』って止まってた」
 "Today's guidelines were long, huh. Mother's voice stopped with a 'bzzzt' about three times in the middle."
 
 「うん。それとね、今日の『選別』で、３班の男の子がいなくなったの。明日からは、私たちがラインのモニタリングを倍の速度でやらないといけないんだって」
-"Yeah. Also, in today's 'Selection,' a boy from Squad 3 disappeared. They said that starting tomorrow, we have to monitor the line at double the speed."
+"Yeah. Also, in today's 'selection,' a boy from Squad 3 disappeared. They said that starting tomorrow, we have to monitor the line at double the speed."
 
 「そうなんだ。じゃあ、明日はもう少し早起きしないとね」
 "Is that so. Then, we'll have to wake up a little earlier tomorrow."
@@ -6789,13 +6789,13 @@ There is nothing abnormal at all. In this city without a single adult, we don't 
 "I see... But, I still prefer it here."
 
 霧瓈空は、すり切れた畳の匂いを嗅ぐように少し顔をうずめ、それから僕の目をまっすぐに見つめた。その瞳は、排気煙で汚れた世界の中で、信じられないほど澄んでいた。
-Miriku buried her face slightly as if to smell the frayed tatami, then looked straight into my eyes. Her eyes were incredibly clear amidst a world polluted by exhaust smoke.
+Muria buried her face slightly as if to smell the frayed tatami, then looked straight into my eyes. Her eyes were incredibly clear amidst a world polluted by exhaust smoke.
 
 「秋埜くんと一緒に、明日の朝も早起きして、あの寒い工場に行く方がいい。私、適格者でいられるように、明日のモニタリング、すっごく頑張るよ」
 "It's better to wake up early tomorrow morning and go to that cold factory with you, Akino. I'll work really hard on tomorrow's monitoring so that I can stay a qualified candidate."
 
 「僕もだよ、霧瓈空。システムがなんて言おうと、僕たちは上手くやり過ごそう。絶対に、二人でここで生きていくんだ」
-"Me too, Miriku. No matter what the system says, we'll get by somehow. We will definitely survive here together."
+"Me too, Muria. No matter what the system says, we'll get by somehow. We will definitely survive here together."
 
 氷河の風が、再び家を揺らす。僕たちは互いの体温だけを頼りに、すり切れた畳の上で小さく丸まった。これは、壊れかけた機械の箱庭で生を受け、理由もわからないまま不確かな明日へと寄り添って生きていく、ささやかで、だけど確かな、二人の物語だ。
 The glacial wind shook the house once again. Relying only on each other's body heat, we curled up tightly on the frayed tatami. Born in a crumbling mechanical miniature garden, clinging to an uncertain tomorrow without even knowing why—this is our small, yet certain, story.
