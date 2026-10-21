@@ -208,7 +208,7 @@ As a consequence, once the (deadline expires), CodeDeploy gives up without touch
 A (poignant) tragedy of dropping letters into an empty void where no postman can ever (tread).
 If you were to log into the EC2 instance and inspect /var/log/aws/codedeploy-agent/, you would see endless screams of connection timeouts and socket errors. (Yet to a*n *)operator staring blankly at the AWS Management Console, the dashboard offers only that one icy, (indifferent) (verdict): "Skipped."
 
-<月凪惟緒> 切ない……エージェントくんの孤独な叫び……。 じゃあもう1つの正解、選択肢【デプロイグループのタグフィルターまたは Auto Scaling グループの指定が実際のインスタンスと一致せず、対象インスタンスとして認識されていない】はどういうこと？
+<月凪惟緒> 切ない……エージェントくんの孤独な叫び……。 じゃあもう(1)つの正解、選択肢【デプロイグループのタグフィルターまたは Auto Scaling グループの指定が実際のインスタンスと一致せず、対象インスタンスとして認識されていない】はどういうこと？
 
 <月凪惟緒>
 How tragic... the lonely screams of an abandoned agent...
@@ -391,12 +391,12 @@ Despite this, orchestrating a custom Lambda via EventBridge to trigger snapshots
 自作のからくり人形にバケツを持たせて延々と井戸水を運ばせるようなものだ。車輪と水道管が敷設されている文明社会で、なぜわざわざ木製のからくり人形の歯車が噛み合わなくなる恐怖に怯えねばならんのだ。保守運用の悪夢、コードの陳腐化、API仕様変更の度に襲い来るエラーの群れ……現場に無間地獄を顕現させる呪詛そのものだな。
 
 <Rea Rize>
-It is akin to carving a mechanical wooden doll to fetch (well water )bucket by bucket. Why live in terror of wooden gears jamming when civilized (aqueducts) and indoor plumbing are already installed? The maintenance nightmare, code rot, and endless (cascade of) errors every time an API updates... it is (nothing short of) a curse (conjuring) (perpetual) torment upon ops teams.
+It is akin to carving a mechanical wooden doll to fetch (well water )bucket by bucket. Why live in terror of wooden gears jamming when civilized (aqueducts) and indoor plumbing are already installed? The maintenance nightmare, code rot, and endless (cascade of) errors every time an API updates... it is (nothing short of) a curse (conjuring) (perpetual) (torment) upon ops teams.
 
 <日乃竜胆> まさにそうだ。運用負荷の増大、Lambda実行費用の無駄、そしてタイムアウト破綻のリスク。AWSのベストプラクティスは「マネージドサービスで代替可能な処理を自前スクリプトで組まないこと」だ。したがって不正解となる。
 
 <Rindo Hino>
-Precisely. Escalating operational overhead, wasteful Lambda invocation charges, and persistent timeout risks doom this design. The core AWS best practice dictates never replacing fully managed features with brittle custom scripts. Hence, it is decisively incorrect.
+Precisely. Escalating operational overhead, wasteful Lambda invocation charges, and (persistent) timeout risks (doom) this design. The core AWS best practice dictates never replacing fully managed features with brittle custom scripts. Hence, it is (decisively) incorrect.
 
 <日乃竜胆> 続いて【不正解選択肢4】の解剖に移るぞ。
 
@@ -417,7 +417,7 @@ Wait a second... doesn't this sound insanely powerful? Aurora Global Database re
 <日乃竜胆> 技術的スペックという一面だけを切り取れば、確かに豪壮華麗なアーキテクチャだ。Aurora Global Databaseのレプリケーションレイテンシーは通常1秒未満であり、RPOは実質ゼロ、RTOもクラスタ昇格とDNS伝播のみで数分レベルを叩き出せる。だが、問題文の要件をもう一度読み直してみろ。「RPOは8時間以内、RTOは2時間以内とし、コストを最小限に抑える必要がある」と明記されている。
 
 <Rindo Hino>
-Judging solely by technical prowess, it is undeniably a magnificent architecture. Aurora Global Database offers sub-second replication latency, delivering an RPO near zero and an RTO of mere minutes via cluster promotion and DNS switching. However, revisit the problem requirements: 'RPO within 8 hours, RTO within 2 hours, and minimal cost.'
+Judging solely by technical (prowess), it is undeniably a magnificent architecture. Aurora Global Database offers sub-second replication latency, delivering an RPO near zero and an RTO of mere minutes via cluster promotion and DNS switching. However, (revisit) the problem requirements: 'RPO within 8 hours, RTO within 2 hours, and minimal cost.'
 
 <日乃竜胆> この構成は、いわゆる「ウォームスタンバイ」ないし「マルチサイト・アクティブ/パッシブ」に該当する極めて過剰な設計だ。セカンダリリージョンで常にAuroraのDBインスタンスを走らせ、Fargateのコンテナ群も24時間365日常時稼働させている。利用もされていない待機環境に対して、本番とほぼ同額のインフラ費用を二重に支払い続けることになるのだ。
 
