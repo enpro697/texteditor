@@ -428,17 +428,17 @@ This design constitutes a 'Warm Standby' or 'Multi-Site Active/Passive' strategy
 コンビニに牛乳を買いに行くだけの用途に、維持費数千万円の原子力潜水艦をチャーターして東京湾に常時待機させているようなものだな。速く確実に買えるかもしれんが、請求書を見た財務部長が泡を吹いて即死する。技術的自己満足の果てに会社を財政破綻へ追い込む、もっとも救いようのないエンジニアの悪癖といえよう。
 
 <Rea Rize>
-It is like chartering a multi-million-dollar nuclear submarine to idle continuously in Tokyo Bay solely to run down the street and buy milk. You might procure the milk reliably, but the CFO will instantly foam at the mouth upon viewing the invoice. It is the most irredeemable habit of engineers: driving a company into insolvency for the sake of technological vanity.
+It is like chartering a multi-million-dollar nuclear submarine to idle continuously in Tokyo Bay solely to run down the street and buy milk. You might procure the milk reliably, but the CFO will instantly foam at the mouth upon viewing the invoice. It is the most (irredeemable) habit of engineers: driving a company into (insolvency) for the sake of technological (vanity).
 
 <日乃竜胆> まさに痛烈な指摘だ。設問が求めているのは「要件を満たした上での最小コスト」だ。緩やかなRTO（2時間）とRPO（8時間）が許容されているにもかかわらず、巨額の常時稼働コストを垂れ流す構成は、クラウドアーキテクチャの試験において最も厳しく排斥される。
 
 <Rindo Hino>
-A piercing indictment indeed. The scenario explicitly demands fulfilling requirements with minimum cost. When generous allowances such as a 2-hour RTO and an 8-hour RPO are granted, bleeding exorbitant continuous operational costs is penalized most severely in cloud architecture design exams.
+A piercing (indictment) indeed. The scenario explicitly demands fulfilling requirements with minimum cost. When generous allowances such as a 2-hour RTO and an 8-hour RPO are granted, bleeding exorbitant continuous operational costs is penalized most severely in cloud architecture design exams.
 
 <日乃竜胆> 誤答の屍を乗り越えたところで、いよいよ【正解選択肢1】を精緻に検証するぞ。
 
 <Rindo Hino>
-Having cleared away the carcasses of incorrect options, we shall now rigorously verify Correct Option 1.
+Having cleared away the carcasses of incorrect options, we shall now (rigorously) verify Correct Option 1.
 
 <日乃竜胆> 【正解選択肢1】： 「CloudFormation テンプレートをセカンダリリージョンの S3 バケットに保管する。AWS Backup のバックアッププランで Aurora スナップショットのクロスリージョンコピーを有効化し、ECR のレプリケーション設定でセカンダリリージョンへイメージを自動同期する。障害発生時にはセカンダリリージョンで Aurora スナップショットの復元とローカル ECR イメージの参照を含む CloudFormation スタックを起動し、Route 53 のレコードを新しい ALB に切り替える」
 
@@ -449,7 +449,7 @@ Correct Option 1:
 <月凪惟緒> あっ……！ ECRのイメージは「自動同期」で前もって向こうのリージョンに置いてあるんだ！ だからあの重たい3時間のビルドを本番障害の最中にやる必要が一切ないんだね！
 
 <Io Tsukina>
-Ah...! The container images are already synchronized to the secondary region ahead of time! That means there's zero need to perform that dreaded 3-hour image build in the middle of a disaster!
+Ah...! The container images are already synchronized to the secondary region (ahead of time)! That means there's zero need to perform that dreaded 3-hour image build in the middle of a disaster!
 
 <日乃竜胆> その通りだ、イオち。ECRのクロスリージョンレプリケーションを設定しておけば、プライマリ側でイメージがプッシュされた瞬間に、AWSのバックボーンネットワークを通じてセカンダリ側のECRリポジトリへ非同期で自動転送される。保管コストはS3ベースのわずかなストレージ料金のみで済み、有事の際のビルド所要時間はゼロになる。
 
@@ -469,7 +469,7 @@ An excellent question. First, regarding RPO: configuring scheduled cross-region 
 <日乃竜胆> そして復旧時間（RTO）についてだ。通常のRDS（MySQLやPostgreSQL単体）の場合、スナップショットからのリストアにはストレージボリュームの物理コピーや初期化が伴うため、大容量になれば数時間以上を要することがある。しかし、Amazon Auroraはアーキテクチャが根本的に異なるのだ。
 
 <Rindo Hino>
-As for recovery time <RTO>: traditional RDS engines running monolithic MySQL or PostgreSQL must allocate storage volumes and hydrate data from blocks, often taking hours for large databases. Amazon Aurora, however, is built on a fundamentally different distributed storage architecture.
+As for recovery time <RTO>: traditional RDS engines running monolithic MySQL or PostgreSQL must allocate storage volumes and (hydrate) data from blocks, often taking hours for large databases. Amazon Aurora, however, is built on a fundamentally different distributed storage architecture.
 
 <日乃竜胆> Auroraはコンピュート層とストレージ層が完全に分離されており、データは6重に複製された分散ストレージフリートに格納されている。スナップショットからのリストア処理とは、巨大なディスクイメージを丸ごとコピーすることではない。新しいクラスタメタデータを生成し、既存の分散ストレージボリュームへのポインタを再構築するだけで完了するのだ。ゆえにデータ容量が数百ギガバイトからテラバイト級であろうとも、通常数分から十数分程度で高速復元される。
 
@@ -484,7 +484,7 @@ Whoa! So instead of physically hauling the entire heavy vault over, it just re-l
 <日乃竜胆> そうだ。そして平常時におけるセカンダリリージョンのコストはどうなると思う？ FargateもALBも常時稼働はしていない。CloudFormationのテンプレートとバックアップデータ、ECRのイメージという「静的なストレージデータ」しか存在しないのだ。仮想サーバーもDBインスタンスも稼働していないため、コンピュートコストは完全なゼロ。発生するのはわずかな保管・転送コストのみだ。
 
 <Rindo Hino>
-Indeed. And consider the baseline costs incurred in the secondary region during normal operations: neither Fargate nor ALB is running. The region holds only static data—CloudFormation templates, backup snapshots, and ECR container images. With zero virtual instances running, compute expenditure remains zero, incurring only trivial storage and data transfer fees.
+Indeed. And consider the baseline costs incurred in the secondary region during normal operations: neither Fargate nor ALB is running. The region holds only static data—CloudFormation templates, backup snapshots, and ECR container images. With zero virtual instances running, compute (expenditure) remains zero, incurring only trivial storage and data transfer fees.
 
 <日乃竜胆> 障害が発生したその時だけ、セカンダリのS3からCloudFormationスタックを実行する。スタックはセカンダリECRの完成済みイメージを参照してFargateタスクを立ち上げ、ALBを構成し、リストアされたAuroraクラスタへ接続させる。インフラ展開に10〜15分、Auroraの復元に10〜20分、Route 53のフェイルオーバー切り替えに数分。全体のプロセスは余裕をもって2時間（RTO）の枠内に美しく収まるのだ。
 
@@ -494,17 +494,17 @@ Only when a disaster actually strikes do we trigger the CloudFormation stack fro
 <蒞星怜空> これぞ「バックアップ＆リストア」戦略の至高の具現化だな。平時は死んだように眠らせて維持費を極限まで削ぎ落とし、いざ主星が爆発した瞬間、あらかじめ撒いておいた種子から最小限の儀式で新世界を急速展開する。まさに冷徹で無駄のない、美しい工学設計といえよう。
 
 <Rea Rize>
-The sublime realization of the Backup & Restore paradigm. Dormant in peacetime to cut maintenance costs to the bone, yet the instant the home world explodes, a new civilization sprouts rapidly from pre-seeded pods through a minimal invocation ceremony. Truly a cold, lean, and exquisite piece of systems engineering.
+The (sublime) (realization) of the Backup & Restore paradigm. (Dormant) (in peacetime) to (cut *maintenance costs* to the bone), yet the instant the home world explodes, a new civilization sprouts rapidly from pre-seeded pods through a minimal invocation ceremony. Truly a cold, (lean), and exquisite piece of systems engineering.
 
 <月凪惟緒> ふえぇ……普段は省エネで冬眠しておいて、有事のときだけ設計図からシュバババッて一瞬で基地を召喚するんだね……。お財布にも優しくて、制限時間にも余裕で間に合う……完璧な答えのパズルが解けた気分だよ……。
 
 <Io Tsukina>
-Whoa... sleeping like a marmot during peacetime to save every penny, and then summoning the entire fortress in a flash using the blueprints only when crisis hits. Gentle on the budget, easily beating the deadline clock... it feels like solving a flawless engineering puzzle.
+Whoa... sleeping like a marmot during peacetime to save every penny, and then(* summon*ing *the entire fortress* in a flash) using the blueprints only when crisis hits. Gentle on the budget, easily beating the deadline clock... it feels like solving a flawless engineering puzzle.
 
 <日乃竜胆> 理解できたようで何よりだ。要件のRTO（2時間）、RPO（8時間）、コスト制約、そして3時間のビルド遅延という全てのピースを照合すれば、正解は自ずとこの選択肢1へと収束する。クラウドアーキテクチャの真髄とは、単に高価なツールを並べることではなく、制約の境界線を見極め、最も過不足のない解を研ぎ澄ますことにあるのだ。
 
 <Rindo Hino>
-I am pleased to see you grasp the essence. When aligning all the constraints—the 2-hour RTO, 8-hour RPO, cost minimization, and the 3-hour image build trap—the solution inevitably converges upon Option 1. The true essence of cloud architecture is not flaunting expensive tools, but mapping the boundaries of constraints to forge the most elegant, cost-effective solution.
+I am pleased to see you grasp the essence. When aligning all the constraints—the 2-hour RTO, 8-hour RPO, cost minimization, and the 3-hour image build trap—the solution inevitably (converges) upon Option 1. The true essence of cloud architecture is not (flaunting) expensive tools, but mapping the boundaries of constraints to forge the most elegant, cost-effective solution.
 
 
 <竜胆> 始めるぞ。本日の演題はAWS DevOps Engineer - Professional、DOP試験の典型問題「DOP-1015」だ。画面を見ろ。製造業におけるハイブリッドかつマルチ環境――すなわちEC2、IoT Greengrass、オンプレミスサーバーという異種環境に対する一元的パッチ管理のアーキテクチャだ。妥協のない精緻な講義を行う。覚悟して臨め。
@@ -1754,4 +1754,4 @@ CfCT...? Another new acronym steps onto the stage. Is this the mythical silver b
 
 <月凪惟緒> うん、完璧にわかった！ 自分で全部作ろうとしないで、AWSが用意してくれた公式の便利セット（CfCT）に設定ファイルだけ投げておくのが最強、ってことね。私の脳内永久凍土も、ちょっとだけ春を迎えた気分だよ。
 
-<Tsukinagi Io> Yeah, crystal clear! Don't try to build everything by hand from scratch; just hand a single configuration file over to AWS's official Swiss Army knife <CfCT> and let it do the heavy lifting. Feels like spring has finally arrived in the permafrost of my brain.
+<Tsukinagi Io> Yeah, crystal clear! Don't try to build everything by hand from scratch; just hand a single configuration file over to AWS's official Swiss Army knife <CfCT> and let it do the heavy lifting. Feels like spring has finally arrived in the permafrost of my (brain).
