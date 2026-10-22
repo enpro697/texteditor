@@ -422,23 +422,23 @@ Judging solely by technical (prowess), it is undeniably a magnificent architectu
 <日乃竜胆> この構成は、いわゆる「ウォームスタンバイ」ないし「マルチサイト・アクティブ/パッシブ」に該当する極めて過剰な設計だ。セカンダリリージョンで常にAuroraのDBインスタンスを走らせ、Fargateのコンテナ群も24時間365日常時稼働させている。利用もされていない待機環境に対して、本番とほぼ同額のインフラ費用を二重に支払い続けることになるのだ。
 
 <Rindo Hino>
-This design constitutes a 'Warm Standby' or 'Multi-Site Active/Passive' strategy, which is vastly excessive for these criteria. Running secondary Aurora database instances and Fargate containers 24/7/365 in an idle region means paying double compute bills for resources that process zero daily traffic.
+This design (constitutes) a 'Warm Standby' or 'Multi-Site Active/Passive' strategy, which is (vastly) excessive for these criteria. Running secondary Aurora database instances and Fargate containers 24/7/365 in an idle region means paying double compute bills for resources that process zero daily traffic.
 
 <蒞星怜空>
 コンビニに牛乳を買いに行くだけの用途に、維持費数千万円の原子力潜水艦をチャーターして東京湾に常時待機させているようなものだな。速く確実に買えるかもしれんが、請求書を見た財務部長が泡を吹いて即死する。技術的自己満足の果てに会社を財政破綻へ追い込む、もっとも救いようのないエンジニアの悪癖といえよう。
 
 <Rea Rize>
-It is like chartering a multi-million-dollar nuclear submarine to idle continuously in Tokyo Bay solely to run down the street and buy milk. You might procure the milk reliably, but the CFO will instantly foam at the mouth upon viewing the invoice. It is the most (irredeemable) habit of engineers: driving a company into (insolvency) for the sake of technological (vanity).
+It is like chartering a multi-million-dollar nuclear submarine to idle continuously in Tokyo Bay (solely to )(run down the street) and buy milk. You might (procure) the milk reliably, but the CFO will instantly (foam at the mouth) (upon *view*ing )the invoice. It is the most (irredeemable) habit of engineers: driving a company into (insolvency) for the sake of technological (vanity).
 
 <日乃竜胆> まさに痛烈な指摘だ。設問が求めているのは「要件を満たした上での最小コスト」だ。緩やかなRTO（2時間）とRPO（8時間）が許容されているにもかかわらず、巨額の常時稼働コストを垂れ流す構成は、クラウドアーキテクチャの試験において最も厳しく排斥される。
 
 <Rindo Hino>
-A piercing (indictment) indeed. The scenario explicitly demands fulfilling requirements with minimum cost. When generous allowances such as a 2-hour RTO and an 8-hour RPO are granted, bleeding exorbitant continuous operational costs is penalized most severely in cloud architecture design exams.
+A (piercing) (indictment) indeed. The scenario explicitly demands fulfilling requirements with minimum cost. When generous allowances such as a 2-hour RTO and an 8-hour RPO are granted, bleeding exorbitant continuous operational costs is (penalized) (most severely) in cloud architecture design exams.
 
 <日乃竜胆> 誤答の屍を乗り越えたところで、いよいよ【正解選択肢1】を精緻に検証するぞ。
 
 <Rindo Hino>
-Having cleared away the carcasses of incorrect options, we shall now (rigorously) verify Correct Option 1.
+Having (cleared away )the (carcasses) of incorrect options, we shall now (rigorously) verify Correct Option 1.
 
 <日乃竜胆> 【正解選択肢1】： 「CloudFormation テンプレートをセカンダリリージョンの S3 バケットに保管する。AWS Backup のバックアッププランで Aurora スナップショットのクロスリージョンコピーを有効化し、ECR のレプリケーション設定でセカンダリリージョンへイメージを自動同期する。障害発生時にはセカンダリリージョンで Aurora スナップショットの復元とローカル ECR イメージの参照を含む CloudFormation スタックを起動し、Route 53 のレコードを新しい ALB に切り替える」
 
@@ -449,7 +449,7 @@ Correct Option 1:
 <月凪惟緒> あっ……！ ECRのイメージは「自動同期」で前もって向こうのリージョンに置いてあるんだ！ だからあの重たい3時間のビルドを本番障害の最中にやる必要が一切ないんだね！
 
 <Io Tsukina>
-Ah...! The container images are already synchronized to the secondary region (ahead of time)! That means there's zero need to perform that dreaded 3-hour image build in the middle of a disaster!
+Ah...! The container images are already synchronized to the secondary region (ahead of time)! That means (there's zero need to) perform that (dreaded) 3-hour image build in the middle of a disaster!
 
 <日乃竜胆> その通りだ、イオち。ECRのクロスリージョンレプリケーションを設定しておけば、プライマリ側でイメージがプッシュされた瞬間に、AWSのバックボーンネットワークを通じてセカンダリ側のECRリポジトリへ非同期で自動転送される。保管コストはS3ベースのわずかなストレージ料金のみで済み、有事の際のビルド所要時間はゼロになる。
 
@@ -459,7 +459,7 @@ Precisely, Io-chi. By configuring ECR cross-region replication, the moment an im
 <月凪惟緒> でもヒノりん、Auroraのデータベースはどうなってるの？ スナップショットから復元するって書いてあるけど、それって時間がかかったりデータが消えたりしないの……？
 
 <Io Tsukina>
-But Hino-rin, what about the Aurora database? It says it restores from a snapshot, but doesn't restoring take ages or cause massive data loss...?
+But Hino-rin, what about the Aurora database? It says it restores from a snapshot, but doesn't restoring( take ages )or cause massive data loss...?
 
 <日乃竜胆> 良い疑問だ。まずRPOに関してだが、AWS Backupのバックアッププランを用いて定期的にスナップショットをセカンダリへ転送することで、要件である「8時間以内」を確実に遵守できる。
 
@@ -479,7 +479,7 @@ Aurora decouples the compute tier from the storage tier entirely, holding data a
 <月凪惟緒> へぇー！ ストレージの本体をよいしょよいしょって運ぶんじゃなくて、目次と住所録だけパパッと繋ぎ直してるんだ……！ めっちゃ賢いじゃん……！
 
 <Io Tsukina>
-Whoa! So instead of physically hauling the entire heavy vault over, it just re-links the catalog index and address tags...! That is ridiculously smart...!
+Whoa! So instead of physically (hauling *the entire heavy vault* over), it just re-links the catalog index and address tags...! That is ridiculously smart...!
 
 <日乃竜胆> そうだ。そして平常時におけるセカンダリリージョンのコストはどうなると思う？ FargateもALBも常時稼働はしていない。CloudFormationのテンプレートとバックアップデータ、ECRのイメージという「静的なストレージデータ」しか存在しないのだ。仮想サーバーもDBインスタンスも稼働していないため、コンピュートコストは完全なゼロ。発生するのはわずかな保管・転送コストのみだ。
 
@@ -494,22 +494,22 @@ Only when a disaster actually strikes do we trigger the CloudFormation stack fro
 <蒞星怜空> これぞ「バックアップ＆リストア」戦略の至高の具現化だな。平時は死んだように眠らせて維持費を極限まで削ぎ落とし、いざ主星が爆発した瞬間、あらかじめ撒いておいた種子から最小限の儀式で新世界を急速展開する。まさに冷徹で無駄のない、美しい工学設計といえよう。
 
 <Rea Rize>
-The (sublime) (realization) of the Backup & Restore paradigm. (Dormant) (in peacetime) to (cut *maintenance costs* to the bone), yet the instant the home world explodes, a new civilization sprouts rapidly from pre-seeded pods through a minimal invocation ceremony. Truly a cold, (lean), and exquisite piece of systems engineering.
+The (sublime) (realization) of the Backup & Restore paradigm. (Dormant) in peacetime to (cut *maintenance costs* to the bone), yet the instant the home world explodes, a new civilization sprouts rapidly from pre-seeded pods through a minimal invocation ceremony. (Truly *a cold, *lean), and exquisite piece of systems engineering.
 
 <月凪惟緒> ふえぇ……普段は省エネで冬眠しておいて、有事のときだけ設計図からシュバババッて一瞬で基地を召喚するんだね……。お財布にも優しくて、制限時間にも余裕で間に合う……完璧な答えのパズルが解けた気分だよ……。
 
 <Io Tsukina>
-Whoa... sleeping like a marmot during peacetime to save every penny, and then(* summon*ing *the entire fortress* in a flash) using the blueprints only when crisis hits. Gentle on the budget, easily beating the deadline clock... it feels like solving a flawless engineering puzzle.
+Whoa... sleeping like a (marmot) during (peacetime) to (save every penny), and then summon(ing* the entire fortress *in a flash )using the blueprints only when (crisis hits). Gentle on the budget, easily beating the (deadline clock)... it feels like solving a flawless engineering puzzle.
 
 <日乃竜胆> 理解できたようで何よりだ。要件のRTO（2時間）、RPO（8時間）、コスト制約、そして3時間のビルド遅延という全てのピースを照合すれば、正解は自ずとこの選択肢1へと収束する。クラウドアーキテクチャの真髄とは、単に高価なツールを並べることではなく、制約の境界線を見極め、最も過不足のない解を研ぎ澄ますことにあるのだ。
 
 <Rindo Hino>
-I am pleased to see you grasp the essence. When aligning all the constraints—the 2-hour RTO, 8-hour RPO, cost minimization, and the 3-hour image build trap—the solution inevitably (converges) upon Option 1. The true essence of cloud architecture is not (flaunting) expensive tools, but mapping the boundaries of constraints to forge the most elegant, cost-effective solution.
+I am (pleased to see )you (grasp the essence). When aligning all the constraints—the 2-hour RTO, 8-hour RPO, cost minimization, and the 3-hour image build trap—the solution inevitably (converges upon) Option 1. The true essence of cloud architecture is not (flaunting) expensive tools, but mapping the boundaries of constraints to forge the most elegant, cost-effective solution.
 
 
 <竜胆> 始めるぞ。本日の演題はAWS DevOps Engineer - Professional、DOP試験の典型問題「DOP-1015」だ。画面を見ろ。製造業におけるハイブリッドかつマルチ環境――すなわちEC2、IoT Greengrass、オンプレミスサーバーという異種環境に対する一元的パッチ管理のアーキテクチャだ。妥協のない精緻な講義を行う。覚悟して臨め。
 
-<竜胆> Let us begin. Today's subject is a quintessential question from the AWS DevOps Engineer - Professional exam, DOP-1015. Direct your gaze to the screen. It presents an architecture for unified patch management across heterogeneous environments—specifically EC2 instances, IoT Greengrass, and on-premises servers within a manufacturing context. I will conduct this lecture with surgical precision. Prepare yourselves.
+<竜胆> Let us begin. Today's subject is a quintessential question from the AWS DevOps Engineer - Professional exam, DOP-1015. (Direct *your* gaze to) the screen. It presents an architecture for unified patch management across (heterogeneous) environments—specifically EC2 instances, IoT Greengrass, and on-premises servers within a manufacturing context. I will conduct this lecture with surgical precision. Prepare yourselves.
 
 <惟緒> ひえ……ヒノりんの目つき、相変わらず冷えた鋼みたいで怖いねぇ。画面の文字が全部同じ四角い記号に見えてくるチルな世界線……。そもそも「パッチ」って何？ 洋服の穴を塞ぐアップリケみたいなやつ？ それをクラウドで配るって、何が起きてるわけ〜？
 
@@ -517,11 +517,11 @@ I am pleased to see you grasp the essence. When aligning all the constraints—t
 
 <怜空> ふっ……相変わらず脳のシナプスが凍結しているな、イオち。パッチとは、開発者が夜な夜なエナジードリンクの空き缶をピラミッドのように積み上げ、血反吐を吐きながら生み出した「脆弱性と不具合の絆創膏」にすぎない。それをサーバーという名の電子の臓器に定期的に貼り付けねば、悪意ある侵入者にシステムという壮麗な城を内側から爆破される。ただそれだけのことだ。
 
-<怜空> Heh... your synapses remain blissfully frozen as always, Io-chi. A patch is nothing more than an adhesive bandage for vulnerabilities and bugs, spawned by engineers puking blood late at night amidst precarious pyramids of empty energy drink cans. If you fail to slap them onto those electronic organs known as servers, malicious intruders will detonate your magnificent castle of a system straight from the inside. That is all there is to it.
+<怜空> Heh... your synapses remain blissfully frozen as always, Io-chi. A patch is nothing more than an adhesive bandage for vulnerabilities and bugs, spawned by engineers puking blood late at night amidst precarious pyramids of empty energy drink cans. If you fail to slap them onto those electronic organs known as servers, malicious intruders will (detonate) your magnificent castle of a system straight from the inside. (That is all there is to it).
 
 <竜胆> 怜空さんの表現は毎度のことながら暗澹たる情景を想起させるが、本質は捉えている。問題文を精読するぞ。「ある製造業の企業は、複数リージョンで稼働するAmazon EC2フリート、工場に設置されたAWS IoT Greengrass コアデバイス群、本社データセンターのオンプレミスサーバーを運用している。DevOpsチームはAWS Systems Managerを活用し、これらすべてのリソースに対してパッチ適用と構成管理を一元的に自動化したい。必要な3つの組み合わせを選べ」という問いだ。
 
-<竜胆> While Rea-san’s analogy evokes her signature grim scenery, it accurately captures the essence. Let us scrutinize the problem statement. "A manufacturing enterprise operates an Amazon EC2 fleet across multiple regions, AWS IoT Greengrass core devices in factories, and on-premises servers in its headquarters data center. The DevOps team wants to use AWS Systems Manager to automate patch application and configuration management centrally across all these resources. Which combination of THREE steps is required?"
+<竜胆> While Rea-san’s analogy evokes her signature grim scenery, it accurately captures the essence. Let us (scrutinize) the problem statement. "A manufacturing enterprise operates an Amazon EC2 fleet across multiple regions, AWS IoT Greengrass core devices in factories, and on-premises servers in its headquarters data center. The DevOps team wants to use AWS Systems Manager to automate patch application and configuration management centrally across all these resources. Which combination of THREE steps is required?"
 
 <惟緒> 3つ選ぶのね……。登場人物が多すぎない？ 雲の上のEC2と、工場のちっちゃい機械のGreengrassと、本社の地下室に鎮座してそうなオンプレミスサーバー。住む世界が違いすぎる三銃士を一元管理するなんて、無理やり同じ部活に入部させるようなものじゃない？
 
@@ -1754,4 +1754,4 @@ CfCT...? Another new acronym steps onto the stage. Is this the mythical silver b
 
 <月凪惟緒> うん、完璧にわかった！ 自分で全部作ろうとしないで、AWSが用意してくれた公式の便利セット（CfCT）に設定ファイルだけ投げておくのが最強、ってことね。私の脳内永久凍土も、ちょっとだけ春を迎えた気分だよ。
 
-<Tsukinagi Io> Yeah, crystal clear! Don't try to build everything by hand from scratch; just hand a single configuration file over to AWS's official Swiss Army knife <CfCT> and let it do the heavy lifting. Feels like spring has finally arrived in the permafrost of my (brain).
+<Tsukinagi Io> Yeah, crystal clear! Don't try to build everything by hand from scratch; just hand a single configuration file over to AWS's official Swiss Army knife <CfCT> and let it do the heavy lifting. Feels like spring has finally arrived in the permafrost of my brain.
