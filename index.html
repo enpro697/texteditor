@@ -252,6 +252,25 @@
         color: #fff;
       }
 
+      /* 全画面ツールバー内の検索窓用スタイル */
+      .fs-search-input {
+        width: 120px !important;
+        padding: 6px 10px !important;
+        font-size: 13px !important;
+        background-color: rgba(255, 255, 255, 0.1) !important;
+        color: #fff !important;
+        border: 1px solid rgba(255, 255, 255, 0.2) !important;
+        border-radius: 6px;
+        outline: none;
+      }
+      .fs-search-input:focus {
+        border-color: var(--primary-color) !important;
+        background-color: rgba(255, 255, 255, 0.2) !important;
+      }
+      .fs-search-input::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+      }
+
       .drag-handle {
         cursor: grab;
         padding: 8px 12px;
@@ -545,6 +564,10 @@
         <!-- ▼▼ 追加: 開閉トグルボタン ▼▼ -->
         <button id="fs-btn-toggle-tools" class="btn-theme">開く</button>
 
+        <!-- ▼▼ 追加: 最後尾検索用の検索窓とボタン ▼▼ -->
+        <input type="text" id="fs-search-text" class="fs-search-input collapsible-tool" placeholder="検索ワード..." />
+        <button id="fs-btn-search-last" class="btn-theme collapsible-tool" title="一番下にある検索結果へ移動">🔍 最後尾検索</button>
+
         <!-- ▼▼ クラス "collapsible-tool" を追加してデフォルト非表示にする ▼▼ -->
         <button id="fs-btn-undo" class="btn-theme collapsible-tool" title="元に戻す (Ctrl+Z)" disabled>🔙</button>
         <button id="fs-btn-redo" class="btn-theme collapsible-tool" title="やり直す (Ctrl+Y)" disabled>🔜</button>
@@ -647,6 +670,10 @@
       // ▼ 全画面用ツールバーの開閉ボタン ▼
       const fsBtnToggleTools = document.getElementById("fs-btn-toggle-tools");
 
+      // ▼ 全画面用最後尾検索ボタン ▼
+      const fsSearchText = document.getElementById("fs-search-text");
+      const fsBtnSearchLast = document.getElementById("fs-btn-search-last");
+
       // 数式プレビュー用要素の取得
       const btnMathPreview = document.getElementById("btn-math-preview");
       const mathPreview = document.getElementById("math-preview");
@@ -679,6 +706,54 @@
         }
       });
 
+      // --- 全画面での最後尾検索処理 ---
+      fsBtnSearchLast.addEventListener("click", () => {
+        const searchValue = fsSearchText.value;
+        if (!searchValue) {
+          showToast("⚠️ 検索する文字列を入力してください");
+          return;
+        }
+
+        const text = textarea.value;
+        if (!text) return;
+
+        // lastIndexOf を使ってテキスト全体から一番最後の該当箇所を探す
+        const foundIndex = text.lastIndexOf(searchValue);
+
+        if (foundIndex === -1) {
+          showToast("❌ 対象の文字列は見つかりませんでした");
+          return;
+        }
+
+        if (!isEditLocked) textarea.focus();
+        textarea.setSelectionRange(foundIndex, foundIndex + searchValue.length);
+        scrollToSelection(false);
+        
+        // 検索箇所を目立たせるために位置調整
+        const marker = document.createElement("span");
+        marker.textContent = searchValue;
+        // マーカーを利用したスクロール位置調整 (performSearch内の処理と同等)
+        const mirrorDiv = document.createElement("div");
+        const style = window.getComputedStyle(textarea);
+        [
+          "fontFamily", "fontSize", "lineHeight", "padding", 
+          "width", "boxSizing", "whiteSpace", "wordWrap"
+        ].forEach((prop) => (mirrorDiv.style[prop] = style[prop]));
+
+        mirrorDiv.style.position = "absolute";
+        mirrorDiv.style.visibility = "hidden";
+        mirrorDiv.style.left = "-9999px";
+        mirrorDiv.textContent = text.substring(0, foundIndex);
+        mirrorDiv.appendChild(marker);
+        document.body.appendChild(mirrorDiv);
+
+        const targetY = marker.offsetTop - textarea.clientHeight / 2;
+        textarea.scrollTop = targetY > 0 ? targetY : 0;
+        document.body.removeChild(mirrorDiv);
+
+        showToast("🔍 一番下の検索結果に移動しました");
+      });
+
       // --- 選択範囲の数式ポップアップ表示処理 ---
       function showMathPopup() {
         const start = textarea.selectionStart;
@@ -708,7 +783,7 @@
               {left: "$$", right: "$$", display: true},
               {left: "$", right: "$", display: false},
               {left: "\\(", right: "\\)", display: false},
-              {left: "\\[", right: "\\]", display: true}
+              {left: "[", right: "]", display: true}
             ],
             throwOnError: false
           });
@@ -741,7 +816,7 @@
         
         let previewText = textarea.value;
         
-        // プレビュー表示時のみ、( $$ ... $$ ) を囲む不要な括弧を除去する
+        // プレビュー表示時のみ、( $$...$$ ) を囲む不要な括弧を除去する
         previewText = previewText.replace(/\(\s*(\$\$[\s\S]*?\$\$)\s*\)/g, '$1');
 
         const tempDiv = document.createElement("div");
@@ -756,7 +831,7 @@
               {left: "$$", right: "$$", display: true},
               {left: "$", right: "$", display: false},
               {left: "\\(", right: "\\)", display: false},
-              {left: "\\[", right: "\\]", display: true}
+              {left: "[", right: "]", display: true}
             ],
             throwOnError: false
           });
