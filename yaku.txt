@@ -6867,6 +6867,9 @@ Once more, absolute loneliness descended.
 霧の向こう、遠く離れた森の木々の間に、苔生したかつての文明の遺物——見上げるような高層建築の残骸が、錆びた骨組みを覗かせていた。
 Beyond the mist, towering between the trees of the distant forest, lay the moss-grown relics of a fallen civilization—the skeletal, rusted frameworks of once-imposing skyscrapers peering through the canopy.
 過去の世界を辿り、失われた自分の使命と記憶を手繰り寄せるためには、あの遺物の痕跡を追うほかない。私は泥に汚れたブーツで湿った腐葉土を踏みしめ、沈黙する森へと最初の一歩を踏み出した。
+
+---
+
 To trace the bygone world and reel in my lost mission and memories, I had no choice but to follow the trail of those relics. Sinking my mud-caked boots into the damp humus, I took my first step into the silent forest.
 2XXX 年、厳格な統制社会の秩序の元、遺伝子的な選別で血統が社会に適合的であると認められた者のみ、この世に生を受けることができた。赤子は高分子フィルムの中で胚胎し、最適化のプロセスは、産声を上げるより前から、不適格な遺伝子を容赦なく裁断していく。
 In the year 2XXX, under the order of a strictly controlled society, only those whose genetic lineages were deemed compliant through rigorous screening were permitted to be born. Infants gestated inside polymer films, where optimization processes ruthlessly excised unsuitable genes before a newborn could even draw its first breath.
