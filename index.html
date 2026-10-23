@@ -501,6 +501,55 @@
       .fullscreen-floating-bar.expanded .collapsible-tool {
         display: inline-flex !important;
       }
+
+      /* --- 新規文字列追加モーダル用のスタイル --- */
+      #append-modal-overlay {
+        display: none;
+        position: fixed;
+        top: 0; left: 0; width: 100vw; height: 100dvh;
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(2px);
+        z-index: 39999;
+      }
+      #append-modal {
+        display: none;
+        position: fixed;
+        top: 50%; left: 50%; transform: translate(-50%, -50%);
+        background-color: var(--panel-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+        z-index: 40000;
+        width: 90vw; max-width: 600px;
+        padding: 24px;
+        flex-direction: column;
+        gap: 16px;
+      }
+      #append-modal h3 {
+        margin: 0;
+        font-size: 18px;
+        color: var(--text-color);
+      }
+      #append-modal p {
+        font-size: 13px;
+        color: var(--text-color);
+        opacity: 0.8;
+        margin-bottom: -4px;
+      }
+      #append-modal textarea {
+        width: 100%; height: 150px;
+        padding: 12px;
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        background-color: var(--input-bg);
+        color: var(--text-color);
+        resize: vertical;
+      }
+      #append-modal .modal-actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 12px;
+      }
     </style>
   </head>
   <body>
@@ -521,6 +570,9 @@
         <button id="btn-search-up" class="btn-primary">検索↑</button>
         <button id="btn-search-down" class="btn-primary">検索↓</button>
         <button id="btn-replace" class="btn-primary">一括置換</button>
+        
+        <!-- ▼▼ 新しく追加した「追加」ボタン ▼▼ -->
+        <button id="btn-show-append" class="btn-success" style="background-color:#10b981;">📝 追加</button>
       </div>
 
       <div class="tools-group">
@@ -561,14 +613,14 @@
           </svg>
         </div>
   
-        <!-- ▼▼ 追加: 開閉トグルボタン ▼▼ -->
+        <!-- ▼▼ 開閉トグルボタン ▼▼ -->
         <button id="fs-btn-toggle-tools" class="btn-theme">開く</button>
 
-        <!-- ▼▼ 追加: 最後尾検索用の検索窓とボタン ▼▼ -->
+        <!-- ▼▼ 最後尾検索用の検索窓とボタン ▼▼ -->
         <input type="text" id="fs-search-text" class="fs-search-input collapsible-tool" placeholder="検索ワード..." />
         <button id="fs-btn-search-last" class="btn-theme collapsible-tool" title="一番下にある検索結果へ移動">🔍 最後尾検索</button>
 
-        <!-- ▼▼ クラス "collapsible-tool" を追加してデフォルト非表示にする ▼▼ -->
+        <!-- ▼▼ クラス "collapsible-tool" ▼▼ -->
         <button id="fs-btn-undo" class="btn-theme collapsible-tool" title="元に戻す (Ctrl+Z)" disabled>🔙</button>
         <button id="fs-btn-redo" class="btn-theme collapsible-tool" title="やり直す (Ctrl+Y)" disabled>🔜</button>
         <button id="fs-btn-math-popup" class="btn-theme collapsible-tool" title="選択範囲をポップアップで数式化" style="color: var(--wrap-color); border-color: var(--wrap-color);">🪟 数式</button>
@@ -630,6 +682,18 @@
       </div>
     </div>
 
+    <!-- ▼▼ 新規文字列追加モーダル ▼▼ -->
+    <div id="append-modal-overlay"></div>
+    <div id="append-modal">
+      <h3>新規文字列の追加</h3>
+      <p>※ "(" は "&lt;"、 ")" は "&gt;"、 "*" は "+" に自動で置換されて追加されます。</p>
+      <textarea id="append-input" placeholder="追加したい文字列を入力してください..."></textarea>
+      <div class="modal-actions">
+        <button id="btn-append-cancel" class="btn-danger">キャンセル</button>
+        <button id="btn-append-confirm" class="btn-primary">追加する</button>
+      </div>
+    </div>
+
     <script>
       const textarea = document.getElementById("main-textarea");
       const searchInput = document.getElementById("search-text");
@@ -663,28 +727,30 @@
       const btnUndo = document.getElementById("btn-undo");
       const btnRedo = document.getElementById("btn-redo");
       
-      // ▼ 全画面用Undo/Redoボタンの取得 ▼
       const fsBtnUndo = document.getElementById("fs-btn-undo");
       const fsBtnRedo = document.getElementById("fs-btn-redo");
-      
-      // ▼ 全画面用ツールバーの開閉ボタン ▼
       const fsBtnToggleTools = document.getElementById("fs-btn-toggle-tools");
 
-      // ▼ 全画面用最後尾検索ボタン ▼
       const fsSearchText = document.getElementById("fs-search-text");
       const fsBtnSearchLast = document.getElementById("fs-btn-search-last");
 
-      // 数式プレビュー用要素の取得
       const btnMathPreview = document.getElementById("btn-math-preview");
       const mathPreview = document.getElementById("math-preview");
 
-      // 選択範囲ポップアップ用の要素取得
       const btnMathPopup = document.getElementById("btn-math-popup");
       const fsBtnMathPopup = document.getElementById("fs-btn-math-popup");
       const mathPopupWindow = document.getElementById("math-popup-window");
       const btnCloseMathModal = document.getElementById("btn-close-math-modal");
       const mathModalBody = document.getElementById("math-modal-body");
       const mathDragHandle = document.getElementById("math-drag-handle");
+
+      // ▼▼ 新規文字列追加機能用の要素取得 ▼▼
+      const btnShowAppend = document.getElementById("btn-show-append");
+      const appendModalOverlay = document.getElementById("append-modal-overlay");
+      const appendModal = document.getElementById("append-modal");
+      const appendInput = document.getElementById("append-input");
+      const btnAppendCancel = document.getElementById("btn-append-cancel");
+      const btnAppendConfirm = document.getElementById("btn-append-confirm");
 
       let isScrollLocked = false;
       let isEditLocked = true;
@@ -693,6 +759,71 @@
       const MAX_HISTORY = 20;
       let historyStack = [];
       let historyIndex = -1;
+
+      // ▼▼ 新規文字列追加機能の処理 ▼▼
+      function closeAppendModal() {
+        appendModalOverlay.style.display = "none";
+        appendModal.style.display = "none";
+        appendInput.value = ""; // 閉じる際にリセット
+      }
+
+      btnShowAppend.addEventListener("click", () => {
+        appendModalOverlay.style.display = "block";
+        appendModal.style.display = "flex";
+        appendInput.focus();
+      });
+
+      appendModalOverlay.addEventListener("click", closeAppendModal);
+      btnAppendCancel.addEventListener("click", closeAppendModal);
+
+      btnAppendConfirm.addEventListener("click", () => {
+        const rawText = appendInput.value;
+        if (!rawText) {
+          showToast("⚠️ 追加する文字列を入力してください");
+          return;
+        }
+
+        // 指定の文字を一括置換
+        const processedText = rawText
+          .replace(/\(/g, "<")
+          .replace(/\)/g, ">")
+          .replace(/\*/g, "+");
+
+        const currentMainText = textarea.value;
+
+        // 全く同じ加工後の文字列がすでに含まれているかチェック
+        if (currentMainText.includes(processedText)) {
+          const isConfirmed = confirm("⚠️ 全く同じ内容の文字列がすでに存在します。\nこのまま追加して進みますか？");
+          if (!isConfirmed) {
+            return; // キャンセルの場合は追加せず、入力画面を残す
+          }
+        }
+
+        // --- を挟んで追加する処理
+        let appendContent = "";
+        if (currentMainText.length > 0) {
+          // すでに文字列がある場合は、改行と --- を挟む
+          if (!currentMainText.endsWith("\n")) {
+            appendContent += "\n";
+          }
+          appendContent += "---\n" + processedText;
+        } else {
+          // 何もない場合はそのまま追加（または --- から開始）
+          appendContent = "---\n" + processedText;
+        }
+
+        textarea.value += appendContent;
+        
+        saveHistory();
+        updateMathPreview();
+        closeAppendModal();
+        showToast("✨ 新規文字列を追加しました");
+
+        // 追加後に一番下までスクロールさせる
+        textarea.scrollTop = textarea.scrollHeight;
+      });
+      // ▲▲ 新規文字列追加機能の処理 ここまで ▲▲
+
 
       // --- 全画面用ツールバーの開閉処理 ---
       fsBtnToggleTools.addEventListener("click", () => {
@@ -717,7 +848,6 @@
         const text = textarea.value;
         if (!text) return;
 
-        // lastIndexOf を使ってテキスト全体から一番最後の該当箇所を探す
         const foundIndex = text.lastIndexOf(searchValue);
 
         if (foundIndex === -1) {
@@ -729,10 +859,8 @@
         textarea.setSelectionRange(foundIndex, foundIndex + searchValue.length);
         scrollToSelection(false);
         
-        // 検索箇所を目立たせるために位置調整
         const marker = document.createElement("span");
         marker.textContent = searchValue;
-        // マーカーを利用したスクロール位置調整 (performSearch内の処理と同等)
         const mirrorDiv = document.createElement("div");
         const style = window.getComputedStyle(textarea);
         [
@@ -766,7 +894,6 @@
 
         let selectedText = textarea.value.substring(start, end);
 
-        // プレビュー表示を作る直前だけ `( $$ ... $$ )` のような「数式を囲む括弧」を消去する
         selectedText = selectedText.replace(/\(\s*(\$\$[\s\S]*?\$\$)\s*\)/g, '$1');
 
         if (!selectedText.includes("$") && !selectedText.includes("\\[") && !selectedText.includes("\\(")) {
@@ -816,7 +943,6 @@
         
         let previewText = textarea.value;
         
-        // プレビュー表示時のみ、( $$...$$ ) を囲む不要な括弧を除去する
         previewText = previewText.replace(/\(\s*(\$\$[\s\S]*?\$\$)\s*\)/g, '$1');
 
         const tempDiv = document.createElement("div");
@@ -837,7 +963,6 @@
           });
         }
         
-        // カーソル位置に合わせてプレビューパネルを自動スクロールさせる
         if (textarea.value.length > 0) {
           const ratio = textarea.selectionStart / textarea.value.length;
           const maxScroll = mathPreview.scrollHeight - mathPreview.clientHeight;
@@ -845,7 +970,6 @@
         }
       }
 
-      // ▼ Undo/Redoボタンの有効/無効の同期 ▼
       function updateUndoRedoButtons() {
         const canUndo = historyIndex <= 0;
         const canRedo = historyIndex >= historyStack.length - 1;
@@ -912,7 +1036,6 @@
         }
       });
 
-      // ▼ 全画面用Undo/Redoボタンのクリック処理 ▼
       fsBtnUndo.addEventListener("click", () => {
         btnUndo.click();
       });
@@ -997,7 +1120,6 @@
         dragHandleElem.addEventListener("pointercancel", stopDrag);
       }
 
-      // 既存のドラッグ設定に加えて、数式ポップアップもドラッグ可能にする
       makeDraggable(
         document.getElementById("fs-drag-handle"),
         document.getElementById("fs-floating-bar")
@@ -1051,51 +1173,6 @@
           } else if (targetY > scrollTop + clientHeight / 2) {
             textarea.scrollTop = targetY - clientHeight / 2 + lineHeight / 2;
           }
-        }
-      }
-
-      function selectWordNearOneThird() {
-        const text = textarea.value;
-        const targetY = textarea.scrollTop + textarea.clientHeight / 3;
-        const style = window.getComputedStyle(textarea);
-        const paddingTop = parseFloat(style.paddingTop) || 0;
-        const lineHeight = parseFloat(style.lineHeight) || parseFloat(style.fontSize) * 1.5;
-
-        let approximateLineIdx = Math.floor((targetY - paddingTop) / lineHeight);
-        if (approximateLineIdx < 0) approximateLineIdx = 0;
-
-        const lines = text.split("\n");
-        if (lines.length === 0) return;
-        if (approximateLineIdx >= lines.length)
-          approximateLineIdx = lines.length - 1;
-
-        let match = null;
-        let targetLineIdx = approximateLineIdx;
-
-        while (targetLineIdx < lines.length) {
-          match = /[a-zA-Z0-9_]+/.exec(lines[targetLineIdx]);
-          if (match) break;
-          targetLineIdx++;
-        }
-        if (!match) {
-          targetLineIdx = approximateLineIdx - 1;
-          while (targetLineIdx >= 0) {
-            match = /[a-zA-Z0-9_]+/.exec(lines[targetLineIdx]);
-            if (match) break;
-            targetLineIdx--;
-          }
-        }
-
-        if (match) {
-          let targetStartPos = 0;
-          for (let i = 0; i < targetLineIdx; i++) {
-            targetStartPos += lines[i].length + 1;
-          }
-          textarea.setSelectionRange(
-            targetStartPos + match.index,
-            targetStartPos + match.index + match[0].length
-          );
-          textarea.focus();
         }
       }
 
@@ -1200,7 +1277,6 @@
         textarea.value =
           text.substring(0, start) + newText + text.substring(end);
 
-        // 装飾後の文字列全体を選択状態にしてキープする
         textarea.setSelectionRange(start, start + newText.length);
 
         textarea.scrollTop = currentScroll;
@@ -1352,7 +1428,6 @@
       wheelPopup.addEventListener("wheel", (e) => {
         e.preventDefault();
 
-        // 範囲選択→→（下ホイールで3飛ばし進む、上ホイールで1飛ばし進む）
         const forwardTopArea = e.target.closest("#area-forward-top");
         if (forwardTopArea) {
           if (e.deltaY > 0) {
@@ -1363,7 +1438,6 @@
           return;
         }
 
-        // 範囲選択←→（下ホイールで3飛ばし進む、上ホイールで1飛ばし戻る）
         const mixedArea = e.target.closest("#area-mixed");
         if (mixedArea) {
           if (e.deltaY > 0) {
@@ -1609,7 +1683,6 @@
         }
       }
 
-      // 単語選択用の遅延クリック判定
       textarea.addEventListener("click", (e) => {
         setTimeout(() => {
           selectWordAtCursor();
@@ -1675,13 +1748,11 @@
         }
       });
 
-      // ▼▼ ドラッグ選択誤爆防止用の変数 ▼▼
       let isSelectingByDrag = false;
       let mouseDownPos = { x: 0, y: 0 };
       let hadSelectionOnMouseDown = false;
       let selectionRangeOnDown = { start: 0, end: 0 };
 
-      // ▼▼ 右クリック時の処理（範囲選択モード時のみ、選択範囲上で右クリックすると ** ） ▼▼
       textarea.addEventListener("contextmenu", (e) => {
         if (isScrollLocked && textarea.selectionStart !== textarea.selectionEnd) {
           e.preventDefault();
@@ -1689,7 +1760,6 @@
         }
       });
 
-      // ▼▼ 左クリック押下時：ドラッグ開始かクリックかを追跡 ▼▼
       textarea.addEventListener("mousedown", (e) => {
         if (e.button !== 0) return;
         
@@ -1698,12 +1768,10 @@
           start: textarea.selectionStart,
           end: textarea.selectionEnd
         };
-        // 押した時点で文字が選択されていたかを記録
         hadSelectionOnMouseDown = selectionRangeOnDown.start !== selectionRangeOnDown.end;
         isSelectingByDrag = false;
       });
 
-      // ▼▼ マウス移動時：数ピクセル以上動いたら「ドラッグ選択中」とみなす ▼▼
       textarea.addEventListener("mousemove", (e) => {
         if (e.buttons === 1) {
           const moveDist = Math.hypot(e.clientX - mouseDownPos.x, e.clientY - mouseDownPos.y);
@@ -1713,16 +1781,12 @@
         }
       });
 
-      // ▼▼ 左クリックを離した時：ドラッグではなく純粋なクリックなら () を付与 ▼▼
       textarea.addEventListener("mouseup", (e) => {
         if (e.button !== 0 || !isScrollLocked) return;
 
-        // ドラッグして範囲選択した直後なら、装飾は発動させない
         if (isSelectingByDrag) return;
 
-        // もともと選択状態があり、かつクリック後も選択が維持されている（＝選択範囲内をクリックした）場合
         if (hadSelectionOnMouseDown && textarea.selectionStart !== textarea.selectionEnd) {
-          // 意図しない選択ズレを防ぐため、mousedown時の選択範囲を確定させて適用
           textarea.setSelectionRange(selectionRangeOnDown.start, selectionRangeOnDown.end);
           insertTextAround("(", ")");
         }
