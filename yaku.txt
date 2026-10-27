@@ -7182,37 +7182,28 @@ Inside walls smoldering with ashes of death, a sense of self had sprouted within
 (伴座 霧瓈空)
 (Tsureza Muria)
 【第一景：無菌室の安全指導要綱】
-[Scene 1: Safety Guidance Guidelines of the Sterile Chamber]
-『――良質なる資材（こどもたち）へ、告ぐ。
-"—Notice to the high-grade materials (children).
-本日は、選別歴……年次更新プロトコル、第……チ、チッ、――第零八九項を実施する。
-Today, we execute... Selection Calendar... Annual Renewal Protocol, Clause... tch, tch—Clause 089.
-汝らの糸は、ひとすじの綻びもなく、命盟の機織り（オルガン）へと連ならねばならない。
-Your threads must connect to the loom (organ) of the Life Covenant without a single flaw.
-外郭を侵す不凍の悪意に、惑うことなかれ。
-Do not be led astray by the antifreezing malice encroaching upon the outer perimeter.
-寸法の乱れは、即ち――裁断である』
-Disorder in measurement is, in other words—shearing."
-スピーカーから流れる合成音声は、ずっと昔はもっと優しかったのだと、いつか誰かが言っていた。
-Someone once said that the synthesized voice flowing from the speaker used to be much gentler long ago.
-けれど、私の知る「マザーI」の声は、いつも、どこか錆びた歯車が軋むような、ざらざらとしたノイズが混じっている。
-Yet, the voice of "Mother I" that I know is always mingled with a gritty noise, like the creaking of rusted gears somewhere.
-真っ白な壁、消毒液とオゾンが鼻を刺す教室。
-Pure white walls, a classroom where disinfectant and ozone sting the nostrils.
-等間隔に並べられた机の上で、私は静かに両手を重ねた。
-Upon a desk arranged at equidistant intervals, I quietly placed one hand over the other.
-正面のモニターには、『安全指導要綱』の文字と、幾何学的な図形が点滅している。
-On the monitor in front, the words "Safety Guidance Guidelines" and geometric figures are blinking.
-一、個体における「私欲」および「私有の意志」は、調和を歪める異端の突起と心得よ。発見次第、自発的切除（申告）を行わなければならない。
-1. Understand that "selfish desire" and "the will of private possession" in an individual are heretical protrusions that distort harmony. Upon discovery, voluntary excision (reporting) must be performed immediately.
-二、常に均一たる姿勢、同一の呼吸律を保つこと。規格外の鼓動・体温上昇は、外来思想による汚染の初期兆候とみなす。
-2. Maintain a uniform posture and an identical respiratory rhythm at all times. Non-standard heartbeats and elevations in body temperature shall be deemed initial symptoms of contamination by foreign ideologies.
-三、生産機械への奉仕こそが血統の証明であり、生命の採寸である。割り当てられた稼働数値を満たさぬ端材は、再資源化槽へ適切に還元される。
-3. Service to the production machinery is the very proof of lineage and the measurement of life. Scraps that fail to meet allocated operational metrics shall be properly returned to the recycling tank.
-四、壁外より吹き込む風、および寒冷化の気配に意識を向けてはならない。それらは全て体制破壊を企図する不純分子の欺瞞工作である。
-4. Do not turn your consciousness toward the wind blowing from beyond the walls, nor the signs of cooling. All of these are deceptive maneuvers by impure elements attempting to subvert the regime.
-五、隣人の欠落を追及せず、空席を記憶してはならない。汝らが注視すべきは、ただ前に配給された針と糸、精密なる直線の行程のみである。
-5. Do not pursue the absence of your neighbors, nor remember empty seats. What you must fix your gaze upon is solely the needle and thread rationed before you, and the precise process of the straight line.
+[Scene 1: Safety Instruction Guidelines of the Sterile Room]
+
+『――全区画の労働力候補体へ告ぐ。命盟の仕立て屋（マザーI）より、本日の安全指導要綱を宣託する』
+"--Attention to all labor candidate bodies in all sectors. From the Tailor of the Life Covenant (Mother I), we oracle today's safety instruction guidelines."
+
+スピーカーから流れる合成音声は、ずっと昔はもっと優しかったのだと、いつか誰かが言っていた。けれど、私の知る「マザーI」の声は、いつも、どこか錆びた歯車が軋むような、ざらざらとしたノイズが混じっている。
+Someone once said that the synthesized voice flowing from the speakers used to be much gentler a long time ago. But the voice of "Mother I" that I know is always mixed with a harsh noise, like a rusted gear grating.
+
+真っ白な壁、消毒液とオゾンが鼻を刺す教室。等間隔に並べられた机の上で、私は静かに両手を重ねた。正面のモニターには、『安全指導要綱』の文字と、幾何学的な図形が点滅している。
+Pure white walls, a classroom where the smell of disinfectant and ozone pierces the nose. On the desks arranged at equal intervals, I quietly folded my hands. On the monitor in front, the words "Safety Instruction Guidelines" and geometric shapes are blinking.
+
+『一、極限まで無駄を削ぎ落とし、集団への純然たる帰属意識を保持せよ。統一規格への適合こそが、生命の絶対的な品質基準である』
+"One. Eliminate waste to the absolute limit and maintain a pure sense of belonging to the collective. Conformity to uniform standards is the absolute quality standard of life."
+
+『二、私欲は社会をあるべき形から遠ざけ、歪みを拡大させる忌むべき精神的汚染である。個の意思を裁断し、完全なる秩序に従順であれ』
+"Two. Selfish desire is a detestable mental pollution that distances society from its ideal form and expands distortions. Sever individual will and be obedient to perfect order."
+
+『三、……ガガッ……現在、外部の反乱工作により……ギッ……重大なエラーが報告されている。異端の兆候を見出し次第、直ちに報告し、先制的な「切除と洗浄」の恩寵を受けること』
+"Three. ...Bzzzt... Currently, due to external rebellious sabotage... Krrr... a critical error has been reported. Upon finding any signs of heresy, report it immediately to receive the grace of preemptive 'excision and cleansing'."
+
+『以上の要綱を血肉に刻み、疑わしきは自ら罰し、無菌の園を保全せよ――』
+"Engrave the above guidelines into your flesh and blood, punish yourselves if you are suspicious, and preserve the sterile garden--"
 「……霧瓈空、姿勢」
 "...Muria. Your posture."
 隣の席から、唇をほとんど動かさない小さな声が落ちてきた。吊葉 秋埜くんだ。私ははっと息を呑み、わずかに背筋を伸ばす。
