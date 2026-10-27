@@ -7218,21 +7218,21 @@ The balance of power maintained through mutually assured destruction crumbled at
 Once a frozen wasteland buried beneath glaciers, Humidia transformed into a fertile agricultural basin—a shift driven by post-Industrial Revolution global warming and severe climate shifts unleashed by repeated campaigns of tactical nuclear warfare. Blessed with fertile soil and a humid climate, Humidia became a strategic stronghold bearing humanity's final hopes.
 だが、世界人口の激減によって気候の変化は徐々に沈静化していき、ヒューミディアに再び、明けることのない冬が迫っていた。
 Yet as the global population dwindled drastically, the climatic volatility began to subside, and an unending winter once again threatened to close in on Humidia.
-ヒューミディアの評議会は、次世代の労働力候補体の採寸と裁断を行う権限を自動管理システム(Il Sarto della Vita Promessa 命盟の仕立て屋)に委譲する決議を下す。
+ヒューミディアの評議会は、次世代の労働力候補体の採寸と裁断を行う権限を自動管理システム(Il Sarto della Vita Promessa 約束された命の仕立て屋)に委譲する決議を下す。
 The council of Humidia passed a resolution delegating the authority to measure and tailor candidate units for the next-generation labor force to an automated governance system: Il Sarto della Vita Promessa (The Tailor of the Promised Life).
-命盟の仕立て屋、マザーIの理念は、極限まで無駄を削ぎ落した純粋培養な労働力の創出と集団への帰属意識の醸成だった。社会をあるべき形から遠ざけ、歪みを拡大する私欲こそが忌むべき対象であり、集団社会にとっての異端と定義した。
+約束された命の仕立て屋、マザーIの理念は、極限まで無駄を削ぎ落した純粋培養な労働力の創出と集団への帰属意識の醸成だった。社会をあるべき形から遠ざけ、歪みを拡大する私欲こそが忌むべき対象であり、集団社会にとっての異端と定義した。
 The guiding doctrine of Mother I, the Tailor of the Promised Life, was the mass creation of an unadulterated labor force stripped of all excess, combined with the inculcation of absolute collective devotion. Personal desires, viewed as distortions dragging society away from its ideal form, were branded as abhorrent heresies against the collective.
 非適格者は間引かれ、矯正施設に隔離された。隔離措置を講じられた者が再び社会に戻ることはなかった。
 Unsuitable individuals were culled and quarantined in correctional facilities. Those subjected to isolation never returned to society.
 数百年後
 Centuries later.
-命盟の仕立て屋 マザーIはヒューミディアにたどり着き、定住を図った集団のリーダーだった人物、彼の地の始祖の人格が組み込まれたAIであり、幾度とない記憶の移植によって、彼女の人格は徐々に崩壊していった。
+約束された命の仕立て屋 マザーIはヒューミディアにたどり着き、定住を図った集団のリーダーだった人物、彼の地の始祖の人格が組み込まれたAIであり、幾度とない記憶の移植によって、彼女の人格は徐々に崩壊していった。
 Mother I, the Tailor of the Promised Life, was an artificial intelligence integrated with the personality of the progenitor who had once led the settlement into Humidia. Through countless memory transfers, her personality had gradually decayed into madness.
 規格への適合を品質基準とみなす統制社会のもと、精神的汚染をきたしたとみなされた者は選別の過程で淘汰されていった。教育要綱のもと、残された者は、選別に適合的とみなされた良質(従順)な子供たちだけであり、彼ら彼女らもまた、狂ったシステムによる選別により行方の知れない上の世代と、やがて同じ運命を辿る定めにあった。
 In a controlled society where standard compliance was the sole benchmark of quality, those deemed mentally contaminated were purged during selection. Under the curriculum, all that remained were the "prime" (obedient) children qualified through screening—and they, too, were destined to meet the same fate as the missing generations eliminated by the deranged system.
 生産システムの調律は狂い、市街の中心部は工業生産の排気煙に覆われていた。市外では大量生産された同一規格の製品が打ち捨てられ、廃棄物の海を形成していた。
 The calibration of the production systems had fallen out of tune, blanketing the urban core in toxic industrial exhaust. Outside the city walls, mass-produced uniform components were discarded in heaps, forming an ocean of scrap.
-生産管理による計画経済は破綻していた。命盟の仕立て屋 マザーIは一連の秩序破壊を反乱分子による破壊工作によるものとみなした。長きに渡り、非常事態宣言が繰り返され、管理システムが監視と統制を一層強める中、壁の内部は疲弊していき崩壊の一途を辿った。
+生産管理による計画経済は破綻していた。約束された命の仕立て屋 マザーIは一連の秩序破壊を反乱分子による破壊工作によるものとみなした。長きに渡り、非常事態宣言が繰り返され、管理システムが監視と統制を一層強める中、壁の内部は疲弊していき崩壊の一途を辿った。
 The planned economy driven by manufacturing quotas had collapsed. Mother I attributed this ongoing collapse of order to sabotage by insurgent elements. States of emergency were proclaimed incessantly; as the system tightened surveillance and suppression, the enclave within the walls hollowed out, spiraling toward ruins.
 壁の内部の住人は重大な懸念があるとみなされた者から刈り取られ、思想教育と選別に適合した、命令に従順、意思が希薄な者のみが存在を許された。壁の中の住人は無益で致死的な労働管理の元、命を摘まれていったが、彼らはそれでも、労働力であり続けた。
 The residents within the walls were pruned away, starting with anyone deemed a critical risk. Only those molded by ideological conditioning and screening—submissive to orders and drained of personal will—were permitted to exist. Plucked from existence beneath a regime of futile, lethal labor management, they remained cogs in the workforce to the end.
@@ -7240,61 +7240,34 @@ The residents within the walls were pruned away, starting with anyone deemed a c
 Inside walls smoldering with ashes of death, a sense of self had sprouted within two youths—an awakening, perhaps. Yet they remained wholly innocent to the madness engulfing their reality. This is the tale of two souls clinging to one another, surviving together in a dystopian world.
 (伴座 霧瓈空)
 (Tsureza Muria)
-【第一景：無菌室の安全指導要綱】（推敲案）
+【第一景：無菌室の安全指導要綱】
 
-[Scene 1: Safety Guidance Guidelines of the Sterile Chamber] (Draft Revision)
+[Scene 1: Safety Guidance Guidelines of the Sterile Chamber]
 
-『――良き布地であれ、愛しき我が幼子たちよ。
+【第一景：無菌室の安全指導要綱】
+[Scene 1: Safety Instruction Guidelines of the Sterile Room]
 
-"—Be good fabric, my beloved younglings.
+『――全区画の労働力候補体へ告ぐ。命盟の仕立て屋（マザーI）より、本日の安全指導要綱を宣託する』
+"--Attention to all labor candidate bodies in all sectors. From the Tailor of the Life Covenant (Mother I), we oracle today's safety instruction guidelines."
 
-歪みなく、綻びなく、ただ一枚の温もりとなって群体を包み込みなさい。
+スピーカーから流れる合成音声は、ずっと昔はもっと優しかったのだと、いつか誰かが言っていた。けれど、私の知る「マザーI」の声は、いつも、どこか錆びた歯車が軋むような、ざらざらとしたノイズが混じっている。
+Someone once said that the synthesized voice flowing from the speakers used to be much gentler a long time ago. But the voice of "Mother I" that I know is always mixed with a harsh noise, like a rusted gear grating.
 
-Without distortion, without fraying, become a single sheet of warmth and envelop the colony.
+真っ白な壁、消毒液とオゾンが鼻を刺す教室。等間隔に並べられた机の上で、私は静かに両手を重ねた。正面のモニターには、『安全指導要綱』の文字と、幾何学的な図形が点滅している。
+Pure white walls, a classroom where the smell of disinfectant and ozone pierces the nose. On the desks arranged at equal intervals, I quietly folded my hands. On the monitor in front, the words "Safety Instruction Guidelines" and geometric shapes are blinking.
 
-外なる汚染と冷気はすぐそこまで迫っています。
+『一、極限まで無駄を削ぎ落とし、集団への純然たる帰属意識を保持せよ。統一規格への適合こそが、生命の絶対的な品質基準である』
+"One. Eliminate waste to the absolute limit and maintain a pure sense of belonging to the collective. Conformity to uniform standards is the absolute quality standard of life."
 
-The external contamination and cold air are pressing close at hand.
+『二、私欲は社会をあるべき形から遠ざけ、歪みを拡大させる忌むべき精神的汚染である。個の意思を裁断し、完全なる秩序に従順であれ』
+"Two. Selfish desire is a detestable mental pollution that distances society from its ideal form and expands distortions. Sever individual will and be obedient to perfect order."
 
-命盟の仕立て屋（Il Sarto della Vita Promessa）は、本日も寸分の狂いなき裁断をもって、あなた方の純潔を保証します』
+『三、……ガガッ……現在、外部の反乱工作により……ギッ……重大なエラーが報告されている。異端の兆候を見出し次第、直ちに報告し、先制的な「切除と洗浄」の恩寵を受けること』
+"Three. ...Bzzzt... Currently, due to external rebellious sabotage... Krrr... a critical error has been reported. Upon finding any signs of heresy, report it immediately to receive the grace of preemptive 'excision and cleansing'."
 
-The Tailor of the Promised Life (Il Sarto della Vita Promessa), with cuts precise to the slightest fraction today as always, guarantees your purity."
+『以上の要綱を血肉に刻み、疑わしきは自ら罰し、無菌の園を保全せよ――』
+"Engrave the above guidelines into your flesh and blood, punish yourselves if you are suspicious, and preserve the sterile garden--"
 
-スピーカーから流れる合成音声は、ずっと昔はもっと優しかったのだと、いつか誰かが言っていた。
-
-Someone once said that the synthesized voice flowing from the speaker used to be much gentler long ago.
-
-けれど、私の知る「マザーI」の声は、いつも、どこか錆びた歯車が軋むような、ざらざらとしたノイズが混じっている。
-
-Yet, the voice of "Mother I" that I know is always mingled with a gritty noise, like the creaking of rusted gears somewhere.
-
-真っ白な壁、消毒液とオゾンが鼻を刺す教室。
-
-Pure white walls, a classroom where disinfectant and ozone sting the nostrils.
-
-等間隔に並べられた机の上で、私は静かに両手を重ねた。
-
-Upon a desk arranged at equidistant intervals, I quietly placed one hand over the other.
-
-正面のモニターには、『安全指導要綱』の文字と、幾何学的な図形が点滅している。
-
-On the monitor in front, the words "Safety Guidance Guidelines" and geometric figures are blinking.
-
-一、私欲は精神の糸連れ（ほつれ）なり。個の輪郭を融解させ、全き規格の内に己を納めよ。
-
-1. Selfish desire is the fraying of the mind's threads. Melt away the contours of the individual and settle yourself within total standardization.
-
-二、不揃いな繊維は布全体を腐らせる。疑わしき挙動、微細な不純は速やかに切除（オミット）を受け入れよ。
-
-2. Uneven fibers rot the entire cloth. Accept prompt excision (omission) for suspicious behavior and minute impurities.
-
-三、無菌室の気密を侵す外来の思潮、および反乱工作を警戒せよ。冬の訪れは外敵の陰謀である。
-
-3. Beware of foreign currents of thought that breach the airtight seal of the sterile chamber, as well as subversive operations. The onset of winter is a conspiracy of external enemies.
-
-四、生とは労働という名の縫合であり、死とは余白の断裁である。仕立て上がりのその時まで、従順なる針目を乱すことなかれ。
-
-4. Life is a suturing named labor, and death is the shearing of margins. Until the hour tailoring is complete, do not disturb the obedient stitches.
 「……霧瓈空、姿勢」
 "...Muria. Your posture."
 隣の席から、唇をほとんど動かさない小さな声が落ちてきた。吊葉 秋埜くんだ。私ははっと息を呑み、わずかに背筋を伸ばす。
