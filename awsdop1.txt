@@ -119,7 +119,7 @@ Mmm... Hino-rin, the sheer wall of text on this screen is utterly overwhelming (
 ふっ、相変わらず生ける絶対零度のような脱力ぶりだな、イオちは。だがその値札という直感、あながち腐ってはいない。変更履歴という名の血塗られたカルテの束から、特定の生贄……失礼、完璧に息をしているビルド成果物だけを一瞥で見分けるための焼印のようなものだ。無垢な初学者にとっては、現代のバベルの塔が崩壊していく様をただ呆然と眺める心地だろうがね。
 
 Rea Rize
-Heh, your low-energy (demeanor) remains as frozen as ever, Io-chi. Yet your intuition of a "price tag" is not entirely (decomposed). It is essentially a branding iron designed to instantly identify a (viable) offering—pardon me, a pristine, functioning build artifact—out of that blood-soaked medical chart known as a commit history. For an uninitiated novice, I imagine this looks like watching the majestic Tower of Babel (collapse into fine dust) in slow motion.
+Heh, your low-energy (demeanor) remains as frozen as ever, Io-chi. Yet your intuition of a "price tag" is not entirely (decomposed). It is (essentially) a branding iron designed to instantly identify a (viable) offering—pardon me, a pristine, functioning build artifact—out of that blood-soaked medical chart known as a commit history. For an uninitiated novice, I imagine this looks like watching the majestic Tower of Babel (collapse into fine dust) in slow motion.
 
 日乃竜胆
 怜空さん、初手から不穏な比喩で場を氷結させるのは控えていただきたい。……だがイオち、怯む必要はない。一つずつ解剖していけば、雲を掴むような構造も一本の鋼の如く明快になる。まず基盤となる三つの用語を脳裏に刻め。
@@ -141,61 +141,61 @@ Third is "AWS CodeBuild." A fully managed build service that compiles source cod
 へぇ〜、CodeCommitが原稿の保管庫で、CodeBuildが原稿に誤字脱字がないか校正テストしてくれる自動印刷所みたいな感じかぁ。……で、その印刷所が「この原稿、完璧じゃん！」ってなったときに、保管庫にある原稿に「合格済」って目印の付箋を貼りたい、ってのが今回の問題の趣旨なんだ？
 
 Io Tsukina
-I see, so CodeCommit is the manuscript vault, and CodeBuild is the automated printing press running proofreading and spell-check tests. And when that automated press decides "Hey, this draft is flawless!", it wants to stick a post-it note labeled "Passed" onto the original manuscript inside the vault—that's the entire gist of this problem, right?
+I see, so CodeCommit is the manuscript vault, and CodeBuild is the automated printing press running proofreading and spell-check tests. And when that automated press decides "Hey, this draft is flawless!", it wants to stick a (post-it note) labeled "Passed" onto the original( manuscript) inside the vault—that's the entire (gist) of this problem, right?
 
 日乃竜胆 素晴らしい洞察だ、イオち。まさにその「合格済の付箋」こそが、Gitにおける『タグ（git tag）』に他ならない。だが、ここには初学者が必ず足を取られる巨大な泥沼が存在する。それは「Gitの世界におけるタグ」と「AWSインフラにおけるリソースタグ」の決定的な乖離だ。
 
 Rindo Hino
-An exquisite insight, Io-chi. That very "post-it note of approval" is precisely what we call a "Git tag" in version control. However, there lies a treacherous quagmire where novices inevitably stumble: the profound, irreconcilable divergence between a "Git Tag" in the source code realm and an "AWS Resource Tag" in cloud infrastructure management.
+An exquisite insight, Io-chi. That very "post-it note of approval" is precisely what we call a "Git tag" in version control. However, there lies a (treacherous) (quagmire) where novices inevitably (stumble): the profound, (irreconcilable) (divergence) between a "Git Tag" in the source code realm and an "AWS Resource Tag" in cloud infrastructure management.
 
 蒞星怜空
 くくっ……そう、愚かな迷い人たちが群がって討ち死にする奈落の底だな。どちらも世間では無邪気に「タグ」などと呼ばれているせいで、新参の設計士たちはリポジトリという巨大な金庫の鉄扉に『重要』と付箋を貼る行為と、金庫の中に収められた羊皮紙の特定行に印を刻む行為を完全に混同する。まさに悲喜劇の温床だ。
 
 Rea Rize
-Heh heh... precisely, the bottomless pit where foolish wandering souls march to their doom. Because both concepts innocently masquerade under the moniker of "tag," novice architects hopelessly conflate slapping an "Important" label onto the steel outer door of a vault with engraving a sacred seal onto a specific line of parchment sealed deep inside. A magnificent breeding ground for pure tragedy.
+Heh heh... precisely, the bottomless pit where foolish wandering souls (march to *their* doom). Because both concepts innocently (masquerade under) the( moniker )of "tag," novice architects hopelessly conflate slapping an "Important" label onto the steel outer door of a vault with engraving a sacred seal onto a specific line of (parchment) (sealed deep inside). A magnificent( breeding ground) for pure tragedy.
 
 月凪惟緒
 うわぁ、出たよ……同じ名前なのに中身が別人な同姓同名の罠……。ネットのなりすましアカウント並みにややこしいじゃん。
 
 Io Tsukina
-Ugh, classic trap... two completely different entities masquerading under the exact same name. That's as confusing and toxic as a fraudulent impersonator account on social media.
+Ugh, classic trap... two completely different entities masquerading under the exact same name. That's as confusing and toxic as a (fraudulent) (impersonator) account on social media.
 
 日乃竜胆 感情を交えず、論理で峻別せよ。 指示通り、まずは不正解の選択肢から徹底的にその欺瞞を暴く。 まずは【不正解２】からだ。
 
 Rindo Hino
-Do not be swayed by emotion; dissect it with sheer logic. As instructed, we shall mercilessly dismantle and expose the fallacies within the incorrect choices first. Let us begin with "Incorrect Option 2."
+Do not (be swayed by )emotion; dissect it with sheer logic. As instructed, we shall mercilessly dismantle and expose the fallacies within the incorrect choices first. Let us begin with "Incorrect Option 2."
 
 日乃竜胆 【不正解２】の記述を見よ。 『CodeBuild の buildspec で aws codecommit get-file コマンドを用いてソースファイルを取得しテストを実行する。テスト成功時には aws codecommit create-unreferenced-merge-commit コマンドでコミットにメタデータを付与する。』 ……開いた口が塞がらぬとはこのことだな。
 
 Rindo Hino
-Observe the statement in "Incorrect Option 2": "In CodeBuild's buildspec, use the aws codecommit get-file command to retrieve source files and run tests. Upon test success, use the aws codecommit create-unreferenced-merge-commit command to add metadata to the commit." ...A proposition so absurd it borders on parody.
+Observe the statement in "Incorrect Option 2": "In CodeBuild's buildspec, use the aws codecommit get-file command to retrieve source files and run tests. (Upon *test *success), use the aws codecommit create-unreferenced-merge-commit command to add metadata to the commit." ...A proposition so absurd it( borders on parody).
 
 月凪惟緒
 えっと……呪文が長すぎて早速目が滑るんだけど……「get-file」でファイルを取ってきて、「create-unreferenced-merge-commit」……？長っ！何これ、寿限無？
 
 Io Tsukina
-Uh... that spell is so ridiculously long my eyes are already sliding right off the screen. Grabbing files with "get-file," and then "create-unreferenced-merge-commit"...? Seriously, why is that command as endlessly protracted as a classical rakugo monologue?
+Uh... that spell is so ridiculously long my eyes are already( sliding right off )the screen. Grabbing files with "get-file," and then "create-unreferenced-merge-commit"...? Seriously, why is that command as endlessly protracted as a classical rakugo (monologue)?
 
 日乃竜胆 この選択肢には、致命的な欠陥が二重に仕組まれている。 まず前段の aws codecommit get-file だ。これは文字通り、CodeCommitのリポジトリから「指定した単一のファイルを1個だけ引っこ抜く」ためのAWS CLIコマンドにすぎない。
 
 Rindo Hino
-This option is poisoned with a dual layer of fatal flaws. First, let us scrutinize the preceding command: aws codecommit get-file. This is an AWS CLI command strictly designed to pluck a single, isolated file out of a CodeCommit repository one by one.
+This option is poisoned with a dual layer of fatal flaws. First, let us scrutinize the preceding command: aws codecommit get-file. This is an AWS CLI command strictly designed to (pluck) a single, isolated file out of a CodeCommit repository one by one.
 
 月凪惟緒
 ……えっ、1個だけ！？ソフトウェアの開発プロジェクトって、何十個も何百個もプログラムのファイルがあるんだよね？それを1個ずつちまちまダウンロードするの……？
 
 Io Tsukina
-Wait... just one single file at a time?! A software project consists of dozens, if not hundreds, of source code files, right? Are you telling me it fetches them one by agonizing one...?
+Wait... just one single file at a time?! A software project consists of dozens, if not hundreds, of source code files, right? Are you telling me it fetches them( one by agonizing one)...?
 
 日乃竜胆 その通りだ。図書館の全集を読みたい人間が、ピンセットで1ページずつ千切って手元に運ぶような途方もない愚行だ。ディレクトリ構造の再現すら手動となり、構築の手間と実行オーバーヘッドは天文学的な数値に達する。
 
 Rindo Hino
-Precisely. It is an act of sheer madness akin to a scholar wishing to read an entire encyclopedia by tearing out individual pages with tweezers and carrying them over one at a time. Reconstructing the directory hierarchy manually introduces an astronomical amount of configuration toil and operational overhead.
+Precisely. It is an act of sheer madness akin to a scholar wishing to read an entire encyclopedia by tearing out individual pages with (tweezers) and carrying them over one at a time. Reconstructing the directory hierarchy manually introduces an astronomical amount of configuration (toil) and operational overhead.
 
 蒞星怜空 さらに陰惨な現実を教えてあげようか。そのピンセットで拾い集めたファイルの山には、Gitという生命の源泉たる『.git ディレクトリ』が一切存在しない。つまり、履歴もなければ、どのブランチから来たのかという出自の記憶も失われた、ただの抜け殻……魂を抜かれた肉体の残骸にすぎんのだよ。
 
 Rea Rize
-Allow me to illuminate an even grimmer reality. Within that haphazard pile of files retrieved with tweezers, the .git directory—the very fountain of life for Git—is utterly nonexistent. In short, devoid of commit history or ancestral branch provenance, it is nothing more than a hollow husk... a soulless carcass stripped of its identity.
+Allow me to illuminate an even grimmer reality. Within that (haphazard) pile of files retrieved with tweezers, the .git directory—the very fountain of life for Git—is utterly (nonexistent). In short, devoid of commit history or (ancestral) branch( provenance), it is nothing more than a( hollow husk)... a soulless carcass stripped of its identity.
 
 月凪惟緒 うわぁ、記憶喪失のファイルたち……救いがない……。
 
