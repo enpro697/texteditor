@@ -200,38 +200,38 @@ Allow me to illuminate an even grimmer reality. Within that (haphazard) pile of 
 月凪惟緒 うわぁ、記憶喪失のファイルたち……救いがない……。
 
 Io Tsukina
-Yikes, amnesiac files wandering in the dark... how utterly bleak.
+Yikes, (amnesiac) files wandering in the dark... how utterly (bleak).
 
 日乃竜胆 そして極め付けが後段の aws codecommit create-unreferenced-merge-commit だ。 これは2つのコミット間のマージ（統合）結果を、既存のどのブランチにも紐づかない孤立したコミットとして生成し、競合（コンフリクト）の発生有無を事前にプレビュー検証するための特殊なAPIだ。
 
 Rindo Hino
-And the final nail in the coffin is the subsequent command: aws codecommit create-unreferenced-merge-commit. This specialized API generates a merge evaluation between two commits as a detached, unreferenced commit, primarily intended to preview potential merge conflicts without touching existing branch pointers.
+And the (final nail in the coffin) is the subsequent command: aws codecommit create-unreferenced-merge-commit. This specialized API generates a merge evaluation between two commits as a detached, unreferenced commit, primarily intended to preview potential merge conflicts without touching existing branch pointers.
 
 月凪惟緒
 ……え？じゃあ、タグをつけるのとは……？
 
 Io Tsukina
-...Wait, so what does that have to do with attaching a tag...?
+...Wait, so( what does that have to do with *attach*ing) a tag...?
 
 日乃竜胆 何一つ関係がない。 「合格の付箋を貼れ」と言われている現場で、唐突に「別の机の上で見知らぬ書類同士を糊付けして放置する」ような暴挙だ。要件である『特定のコミットへのタグ付け』など微塵も達成できぬ。故に【不正解２】は完全に論外、問答無用で切り捨てるべき選択肢だ。
 
 Rindo Hino
-Absolutely nothing whatsoever. In a workplace where you are explicitly instructed to "attach a label of approval," it is equivalent to arbitrarily gluing two unrelated sheets of paper together in the corner of another desk and abandoning them. It completely fails to fulfill the core requirement of tagging a specific commit. Therefore, "Incorrect Option 2" is an utter absurdity and must be dismissed without hesitation.
+(Absolutely nothing whatsoever). In a workplace where you are explicitly instructed to "attach a label of approval," it is equivalent to arbitrarily gluing two unrelated sheets of paper together in the corner of another desk and abandoning them. It completely fails to fulfill the core requirement of tagging a specific commit. Therefore, "Incorrect Option 2" is an utter absurdity and must be (dismissed )without hesitation.
 
 日乃竜胆 次に【不正解３】を断罪する。 『CodeBuild の buildspec で aws codecommit get-file コマンドを用いてソースファイルを取得しテストを実行する。テスト成功時には git tag コマンドでタグを生成し、git push origin でリモートリポジトリへ反映する。』 ……イオち、この選択肢の欺瞞に気付けるか？
 
 Rindo Hino
-Next, let us convict "Incorrect Option 3": "In CodeBuild's buildspec, use the aws codecommit get-file command to retrieve source files and run tests. Upon test success, generate a tag with the git tag command and push it to the remote repository using git push origin." ...Io-chi, can you detect the fatal deception buried within this choice?
+Next, let us (convict) "Incorrect Option 3": "In CodeBuild's buildspec, use the aws codecommit get-file command to retrieve source files and run tests. Upon test success, generate a tag with the git tag command and push it to the remote repository using git push origin." ...Io-chi, can you detect the fatal deception buried within this choice?
 
 月凪惟緒 え〜っと……後半は「git tag」で作って「git push」で送るんだよね？ なんか本物のGitっぽいコマンド使ってるし、一見するとそれっぽく見えちゃうんだけど……あ！さっき怜空さんが言ってたやつ！前半がまた「get-file」になってる……！
 
 Io Tsukina
-Ummm... the latter half uses git tag to create the tag and git push to upload it, right? It sounds like genuine native Git commands, so superficially it looks almost plausible... Wait! That thing Rea-san pointed out earlier! The first half is using get-file all over again...!
+Ummm... the latter half uses git tag to create the tag and git push to upload it, right? It sounds like genuine native Git commands, so superficially it( looks almost plausible)... Wait! That thing Rea-san pointed out earlier! The first half is using get-file all over again...!
 
 日乃竜胆 鋭いぞ、イオち！その通りだ。 前半で get-file などという代物でファイル単体だけを掻き集めた場合、ビルド環境には何が存在しないと言ったか？
 
 Rindo Hino
-Sharp deduction, Io-chi! Spot on. When you scrape single files together using an abomination like get-file in the initial phase, what did we establish is missing from the build environment?
+Sharp deduction, Io-chi! Spot on. When you (scrape) single files together using an (abomination )like get-file in the initial phase, what did we establish is missing from the build environment?
 
 月凪惟緒 『.git ディレクトリ』！魂の記憶が入ったフォルダがない！
 
@@ -241,13 +241,13 @@ The .git directory! The sacred directory holding the soul and memory of the repo
 日乃竜胆 然り。.git というメタデータ格納庫が存在しないディレクトリ上で、いくらネイティブの git tag や git push を叫んだところで、返ってくるのは冷徹な宣告のみだ。 すなわち――『fatal: not a git repository <or any of the parent directories>: .git』という致命的エラーだな。
 
 Rindo Hino
-Precisely. Within a directory lacking the .git metadata store, no matter how desperately you bark native git tagor git push commands, the terminal will answer with nothing but a cold, merciless decree: namely, fatal: not a git repository <or any of the parent directories>: .git.
+Precisely. (Within *a directory* lacking) the .git metadata store, no matter how desperately you bark native git tagor git push commands, the terminal will answer with nothing but a cold, merciless (decree): namely, fatal: not a git repository <or any of the parent directories>: .git.
 
 蒞星怜空
 ふふ……心臓を抜き取られた泥人形に向かって「走れ、そして愛を叫べ」と命じているようなものだな。狂気の沙汰としか言いようがない。動くはずのない機構を組み上げ、本番環境のパイプラインを真っ赤なエラーログの血の海で染め上げる……実に哀れで、救いようのない喜劇だ。
 
 Rea Rize
-Heh heh... it is akin to commanding a lifeless mud golem whose heart has been gouged out to "Run, and confess your undying love." Sheer madness. Wiring together mechanisms that cannot possibly function, painting the production pipeline crimson with catastrophic error logs... a truly pathetic, irredeemable tragicomedy.
+Heh heh... it is akin to commanding a lifeless mud golem whose heart has been (gouged out) to "Run, and (confess *your* undying love)." Sheer madness. Wiring together mechanisms that cannot possibly function, painting the production pipeline crimson with catastrophic error logs... a truly pathetic, (irredeemable) tragicomedy.
 
 月凪惟緒 泥人形に愛を叫ばせるのは絵面的に怖すぎるよ怜空さん……。つまり、Gitのコマンドを使いたいなら、そもそも最初からちゃんとGitのやり方でリポジトリを持ってこなきゃ破綻するってことだね。
 
@@ -262,7 +262,7 @@ Indeed. A chain of commands whose foundational premise has collapsed is nothing 
 日乃竜胆 続いて【不正解４】の解剖に移る。試験において最も多くの受験生を甘言で惑わし、不合格の谷底へ突き落とす罠がこれだ。 『CodeBuild の buildspec で Git クレデンシャルヘルパーを構成し、リポジトリをクローンしてテストを実行する。テスト成功時には aws codecommit tag-resource コマンドでリポジトリの ARN に対してタグを関連付ける。』
 
 Rindo Hino
-Now, let us proceed to the autopsy of "Incorrect Option 4." This is the venomous trap that entices and deceives the vast majority of candidates, casting them down into the chasm of failure. "In CodeBuild's buildspec, configure the Git credential helper, clone the repository, and run tests. Upon test success, associate a tag with the repository's ARN using the aws codecommit tag-resource command."
+Now, let us proceed to the autopsy of "Incorrect Option 4." This is the venomous trap that( entices )and deceives the vast majority of candidates, casting them down into the (chasm) of failure. "In CodeBuild's buildspec, configure the Git credential helper, clone the repository, and run tests. Upon test success, associate a tag with the repository's ARN using the aws codecommit tag-resource command."
 
 月凪惟緒 あ〜っ！前半は「リポジトリをクローン」って書いてある！ クローンって、あのGitの有名な git clone のことだよね？ ちゃんと .git も連れてくるやつ！ なのに、なんでこれが間違いなの……？
 
@@ -272,7 +272,7 @@ Ah! The first half says "clone the repository"! Cloning refers to that legendary
 日乃竜胆 罠は後半に潜んでいる。 『aws codecommit tag-resource コマンドでリポジトリの ARN に対してタグを関連付ける』という記述だ。冒頭で私が忠告した「Gitタグ」と「AWSリソースタグ」の決定的な違いを想起せよ。
 
 Rindo Hino
-The viper lurks in the second half: the clause stating "associate a tag with the repository's ARN using the aws codecommit tag-resource command." Recall the decisive distinction I warned you about at the beginning: the difference between a "Git tag" and an "AWS resource tag."
+The (viper )lurks in the second half: the (clause) stating "associate a tag with the repository's ARN using the aws codecommit tag-resource command." Recall the decisive distinction I warned you about at the beginning: the difference between a "Git tag" and an "AWS resource tag."
 
 月凪惟緒 あっ……！「リポジトリのARNに対して」……！？ ARNって、AWSの中の識別番号みたいなやつだよね？
 
@@ -282,32 +282,32 @@ Ah...! "With the repository's ARN"...?! An ARN is like that unique global identi
 日乃竜胆 理解が早いな、イオち。 tag-resource APIが付与するのは『AWSリソースタグ』だ。これはCodeCommitリポジトリという「AWS上の箱」そのものに対し、「Environment=Production」や「CostCenter=DevOps」といったメタデータを付与し、コスト配分やIAMアクセス制御を行うための標識にすぎない。
 
 Rindo Hino
-You catch on quickly, Io-chi. What the tag-resource API applies is strictly an "AWS Resource Tag." This merely attaches administrative metadata—such as "Environment=Production" or "CostCenter=DevOps"—to the CodeCommit repository resource itself on AWS, serving purposes like cost allocation or IAM access management.
+You (catch on) quickly, Io-chi. What the tag-resource API applies is strictly an "AWS Resource Tag." This merely attaches administrative metadata—such as "Environment=Production" or "CostCenter=DevOps"—to the CodeCommit repository resource itself on AWS, (serving purposes like) cost allocation or IAM access management.
 
 蒞星怜空 そう……。そして問題文が渇望しているのは何か？ 「特定のコミットに対してGitタグを付与し、リリース候補として識別する」ことだ。金庫の鉄扉に「合格品保管所」とテプラを貼ったところで、金庫の奥底に沈む無数の羊皮紙のうち、どれが合格した原稿なのか外からは判別できん。AWSリソースタグは、Gitのコミットグラフの内側には1ミリたりとも干渉できないのだよ。
 
 Rea Rize
-Precisely... And what does the prompt thirst for? To "apply a Git tag to the specific commit to identify it as a release candidate." Slapping a label maker sticker reading "Quality Assured Vault" onto the outside of the steel vault door does not help you determine which of the countless scrolls buried inside actually passed inspection. An AWS resource tag cannot penetrate even a single millimeter into Git's internal commit graph.
+Precisely... And what does the prompt( thirst for)? To "apply a Git tag to the specific commit to (identify *it *as )a release candidate." Slapping a label maker sticker reading "(Quality Assured )Vault" onto the outside of the steel vault door does not help you determine which of the countless scrolls buried inside actually passed inspection. An AWS resource tag cannot penetrate even a single millimeter into Git's internal commit graph.
 
 日乃竜胆 怜空さんの言う通りだ。 開発者がローカル環境で git log を打とうが git checkout v1.0-rc を試みようが、リソースタグなどGitの世界からは影も形も見えぬ。開発チームが欲している「リリース候補（v1.0など）のGitタグ」としては完全に無価値、木に寄りて魚を求むるが如しだ。したがって【不正解４】も脱落となる。
 
 Rindo Hino
-Rea-san is entirely correct. Whether a developer runs git log or executes git checkout v1.0-rc in their local terminal, AWS resource tags are utterly invisible within the realm of Git. As the "release candidate Git tag" sought by the development team, it is completely worthless—akin to climbing a tree in search of fish. Therefore, "Incorrect Option 4" is eliminated.
+Rea-san is entirely correct. Whether a developer runs git log or executes git checkout v1.0-rc in their local terminal, AWS resource tags are utterly invisible within the realm of Git. As the "release candidate Git tag" (sought by )the development team, it is completely (worthless)—akin to climbing a tree( in search of )fish. Therefore, "Incorrect Option 4" is eliminated.
 
 日乃竜胆 そして満を持して、真理の到達点たる【正解１】を紐解くぞ。 刮目して見よ。 『CodeBuild の buildspec で Git クレデンシャルヘルパーを構成し、リポジトリをクローンしてテストを実行する。テスト成功時には git tag コマンドでタグを生成し、git push origin でリモートリポジトリへ反映する。』 一切の隙なく、要件を完膚なきまでに満たす完璧な解答だ。
 
 Rindo Hino
-And now, with absolute certainty, we unravel the pinnacle of truth: "Correct Option 1." Direct your gaze: "In CodeBuild's buildspec, configure the Git credential helper, clone the repository, and run tests. Upon test success, generate a tag using the git tag command and push it to the remote repository using git push origin." A flawless architecture meeting every requirement without the slightest vulnerability.
+And now, with absolute (certainty), we unravel the pinnacle of truth: "Correct Option 1." Direct your gaze: "In CodeBuild's buildspec, configure the Git credential helper, clone the repository, and run tests. Upon test success, generate a tag using the git tag command and push it to the remote repository using git push origin." A flawless architecture meeting every requirement without the slightest vulnerability.
 
 月凪惟緒 おお……！ついに正解の真打登場！ でもヒノりん、ここで初心者の私から純度100%の疑問なんだけど……「Git クレデンシャルヘルパー」って何なの？ クレデンシャル……ヘルパー……？なんか、秘密の鍵を預かってくれる執事さんみたいな感じ？
 
 Io Tsukina
-Ooh...! The true star of the show has finally arrived! But Hino-rin, here comes a 100% pure novice question from yours truly... What on earth is a "Git credential helper"? Credential... helper...? Does it act like some polite butler who holds onto your secret keys?
+Ooh...! The true star of the show has finally arrived! But Hino-rin, here comes a 100% pure novice question (from yours truly)... What on earth is a "Git credential helper"? Credential... helper...? Does it act like some polite butler who( holds onto) your secret keys?
 
 日乃竜胆 その直感、極めて精妙だ。 「クレデンシャル（Credential）」とは認証情報、すなわちユーザー名やパスワード、SSH秘密鍵といった通行手形のことだ。CodeCommitという厳重な城門をくぐってコードをクローンしたりプッシュしたりするには、当然ながら認証が必要になる。
 
 Rindo Hino
-Your intuition is remarkably acute. "Credentials" refer to authentication artifacts—hall passes such as usernames, passwords, or private SSH keys. Traversing the heavily guarded gates of CodeCommit to clone or push code naturally demands rigorous authentication.
+Your intuition is remarkably (acute). "Credentials" refer to authentication artifacts—hall passes such as usernames, passwords, or private SSH keys. Traversing the heavily guarded gates of CodeCommit to clone or push code naturally demands rigorous authentication.
 
 日乃竜胆 だが、CodeBuildという自動化環境の中で、人間が手動でパスワードを入力することなど不可能だな。さりとて、設定ファイルの中に平文でパスワードを直書きするなど、セキュリティ上万死に値する愚行だ。そこで登場するのが aws codecommit credential-helper なのだ。
 
