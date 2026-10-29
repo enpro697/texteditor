@@ -322,7 +322,7 @@ Heh heh, hardcoded static credentials... I can almost hear the agonizing (shriek
 月凪惟緒 へぇ〜！CodeBuild自身が持ってる「私、怪しい者じゃありません」っていう身分証（IAMロール）を使って、Gitの門番を顔パスで通してくれるシステムなんだ！ だからパスワードをいちいち管理しなくてよくて、運用オーバーヘッドも最小限なんだね！
 
 Io Tsukina
-Woah! So it uses CodeBuild's own legitimate identity card <IAM role> to breeze past the Git bouncer like a verified VIP! That's why nobody has to juggle passwords manually, which keeps operational overhead down to the absolute minimum!
+Woah! So it uses CodeBuild's own legitimate identity card <IAM role> to (breeze past) the Git bouncer like a verified VIP! That's why nobody has to (juggle) passwords manually, which (keeps* operational overhead* down to the absolute minimum)!
 
 日乃竜胆 完璧な理解だ。 そして、この構成が辿る完全なる勝者のフローを順を追って整理するぞ。
 
@@ -330,15 +330,15 @@ Woah! So it uses CodeBuild's own legitimate identity card <IAM role> to breeze p
 2. buildフェーズ: ネイティブの git clone により、.git ディレクトリを完全に包含した生きたリポジトリを展開する。その後、定義されたテスト群を厳格に執行する。 
 3. post_buildフェーズ: 全テストが合格した場合にのみ、git tag <タグ名> を発行し、git push origin <タグ名> を叩き込む。 
 Rindo Hino
-A flawless comprehension. Let us now formalize the sequential flow of this victorious architecture:
+A flawless comprehension. Let us now (formalize) the (sequential flow of )this victorious architecture:
 
-1. Install Phase: Register the aws codecommit credential-helper into the Git configuration, establishing an automated authentication conduit underpinned by CodeBuild's IAM role. 
-2. Build Phase: Execute a native git clone to instantiate a living repository fully containing its .git directory, followed by the rigorous execution of the test suite. 
-3. Post-Build Phase: Provided all tests pass without blemish, issue git tag <tag-name> and dispatch it to the upstream repository via git push origin <tag-name>. 
+1. Install Phase: Register the aws codecommit credential-helper into the Git configuration, establishing an automated authentication conduit (underpinned) by CodeBuild's IAM role. 
+2. Build Phase: Execute a native git clone to instantiate a living repository fully containing its .git directory, followed by the rigorous execution of the test (suite). 
+3. Post-Build Phase: Provided all tests pass without (blemish), issue git tag <tag-name> and dispatch it to the upstream repository via git push origin <tag-name>. 
 日乃竜胆 特筆すべきは、CodeBuildのサービスロールに対して codecommit:GitPull および codecommit:GitPush のIAM権限を過不足なく付与しておく点だな。これにより、ビルドコンテナは正真正銘のGitコミットツリーに対して正統なリリース候補タグを刻み込み、リモートのCodeCommitへと永続化させることができるのだ。
 
 Rindo Hino
-It is paramount to note that the CodeBuild service role must be provisioned with both codecommit:GitPull and codecommit:GitPush IAM permissions. Empowered by these explicit rights, the build container permanently inscribes the legitimate release candidate tag into the true Git commit tree and synchronizes it seamlessly back to the remote CodeCommit repository.
+It is (paramount to note) that the CodeBuild service role must be provisioned with both codecommit:GitPull and codecommit:GitPush IAM permissions. Empowered by these explicit rights, the build container permanently (inscribes) the legitimate release candidate tag into the true Git commit tree and synchronizes it seamlessly back to the remote CodeCommit repository.
 
 月凪惟緒 なるほど〜……！全部繋がったよ。 「ちゃんとしたGit環境を用意して（clone）」、「安全な顔パスを使って（credential-helper）」、「本物のGitタグを押し込む（git tag & git push）」。 これ以外に正解へのルートはあり得ないってわけだね！
 
