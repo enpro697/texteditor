@@ -312,12 +312,12 @@ Your intuition is remarkably (acute). "Credentials" refer to authentication arti
 日乃竜胆 だが、CodeBuildという自動化環境の中で、人間が手動でパスワードを入力することなど不可能だな。さりとて、設定ファイルの中に平文でパスワードを直書きするなど、セキュリティ上万死に値する愚行だ。そこで登場するのが aws codecommit credential-helper なのだ。
 
 Rindo Hino
-However, within an automated container environment like CodeBuild, interactive human password prompts are fundamentally impossible. Furthermore, hardcoding static passwords in plaintext inside configuration files is an architectural sin deserving of immediate execution. That is precisely where the aws codecommit credential-helper enters the stage.
+However, within an automated container environment like CodeBuild, interactive human password prompts are fundamentally impossible. Furthermore, hardcoding static passwords in plaintext inside configuration files is an architectural sin deserving of immediate execution. That is precisely where the aws codecommit credential-helper (enters the stage).
 
 蒞星怜空 くくっ、静的パスワードのハードコードか……セキュリティ監査の刃に喉元を掻き切られた亡霊たちの叫びが聞こえてくるようだね。このクレデンシャルヘルパーという仕組みは、CodeBuildに割り当てられた「IAMロール」という神聖な身分証明書を利用する。その一時的な認証トークンをCodeBuildの裏側で自動調達し、Gitクライアントへ透過的に受け渡すのだよ。パスワードのローテーション管理や漏洩の恐怖という名の現世の煩悩から、人類を解脱させてくれる優れものというわけだ。
 
 Rea Rize
-Heh heh, hardcoded static credentials... I can almost hear the agonizing shrieks of fallen specters whose throats were slit by the cold blade of security compliance audits. This credential helper mechanism leverages the sacred IAM role assigned to the CodeBuild project. It automatically negotiates temporary authentication tokens under the hood and seamlessly slips them to the native Git client. A marvelous construct that liberates humanity from the worldly anxieties of key rotations and catastrophic credential leaks.
+Heh heh, hardcoded static credentials... I can almost hear the agonizing (shrieks )of fallen( specters) whose throats were (slit) by the cold blade of security compliance audits. This credential helper mechanism leverages the sacred IAM role assigned to the CodeBuild project. It automatically negotiates temporary authentication tokens( under the hood) and seamlessly slips them to the native Git client. A marvelous construct that (liberates) humanity from the worldly anxieties of key rotations and catastrophic credential leaks.
 
 月凪惟緒 へぇ〜！CodeBuild自身が持ってる「私、怪しい者じゃありません」っていう身分証（IAMロール）を使って、Gitの門番を顔パスで通してくれるシステムなんだ！ だからパスワードをいちいち管理しなくてよくて、運用オーバーヘッドも最小限なんだね！
 
