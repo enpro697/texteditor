@@ -574,9 +574,9 @@ Eeeh?! It's fancier, but you can't even (plug *it* in)?! It just gets rejected a
 「順番を保証しながら」という耳障りの良い誘惑の言葉に釣られた瞬間、試験会場の奈落へと真っ逆さまに叩き落とされる仕組みだ。美しい死に様だな。
 
 <Lea Rize>
-Indeed. The foolish developer who struts into the management console to paste a FIFO queue ARN gets smacked across the face by an icy red validation error, snapping them back to harsh reality.
-Fundamentally, the essence of a DLQ is an emergency bin to scoop up and preserve wreckage from an accident, no matter how mangled. Imposing strict sequencing <FIFO> on an emergency spillover buffer is an ideological contradiction in architectural philosophy.
-The moment you fall for that seductive siren song of "guaranteeing delivery order," you plummet straight down the trapdoor of the exam hall. A poetic demise.
+Indeed. The foolish developer who (struts) into the management console to paste a FIFO queue ARN (gets smacked across the face) by an icy red validation error, (snapping them back to )(harsh )reality.
+Fundamentally, the essence of a DLQ is an emergency bin to scoop up and preserve wreckage from an accident, no matter how( mangled). Imposing strict sequencing <FIFO> on an emergency (spillover) buffer is an (ideological )contradiction in architectural philosophy.
+The moment you (fall for )that seductive siren song of "guaranteeing delivery order," you( plummet straight down) the trapdoor of the exam hall. A poetic (demise).
 
 <日乃竜胆>
 これで誤答の群れはすべて薙ぎ払った。残された道は、3つの要件を完璧に満たす3つの正解の組み合わせのみだ。
@@ -622,7 +622,7 @@ That way, without touching a single stitch of code on the sender or receiver sid
 その通り。通信の途中に鑑識官を立たせ、通過する荷物を無言で全数X線スキャンして写真台帳に収めるようなものだ。プライバシーもへったくれもないが、デバッグという名の冷徹な尋問においては、この無慈悲な全件記録こそが最も確実な証拠となる。
 
 <Lea Rize>
-Spot on. It is equivalent to posting a forensic inspector along the transit line to silently X-ray every passing carton and archive it in a photo ledger. Privacy be damned, but in the cold interrogation known as debugging, this merciless, total recording serves as irrefutable evidence.
+Spot on. It is equivalent to (posting *a forensic inspector* along) the transit line to silently X-ray every passing carton and archive it in a photo ledger. Privacy (be damned), but in the cold interrogation known as debugging, this merciless, total recording serves as (irrefutable) evidence.
 
 <日乃竜胆>
 次に、要件2「配信失敗の原因を調査できるようにする」を解決する正解だ。
@@ -636,7 +636,7 @@ Next, the answer that addresses Requirement 2: "Enable investigating the cause o
 また新しい「Cloud」が出てきたよ……今度は「CloudTrail（クラウドトレイル）」？ トレイルって山道とか足跡って意味だよね？
 
 <Io Tskunagi>
-Another "Cloud" variant emerges... this time it's "CloudTrail"? "Trail" means a footpath or tracks left behind, right?
+(Another* "Cloud"* variant emerges)... this time it's "CloudTrail"? "Trail" means a footpath or tracks left behind, right?
 
 <日乃竜胆>
 見事な語学力だな、イオち。その名の通り、「誰が、いつ、どこから、どんな操作（APIコール）を行ったか」というAWSアカウント全体の操作履歴・足跡を記録する監視カメラが CloudTrail だ。
@@ -644,28 +644,28 @@ Another "Cloud" variant emerges... this time it's "CloudTrail"? "Trail" means a 
 
 <Rindo Hino>
 Splendid vocabulary deduction, Iochi. Exactly as the name implies, CloudTrail is the surveillance camera recording the footprints of every administrative action <API call>—who did what, when, and from where—across the entire AWS account.
-For instance, if a developer mistakenly altered an EventBridge rule definition, revoked target invocation permissions, or failed to invoke event emission <PutEvents> in the first place, those management and data event histories are permanently archived into an S3 bucket.
+For instance, if a developer mistakenly altered an EventBridge rule definition,( revoked) target invocation permissions, or failed to invoke event emission <PutEvents> in the first place, those management and data event histories are permanently archived into an S3 bucket.
 
 <蒞星怜空>
 そう、現場でインシデントが起きた時、全エンジニアが「私じゃありません」「触ってません」と口を揃えて合唱する定番の悲喜劇があるだろう？ その見苦しい嘘を、タイムスタンプと発信元IPアドレス、IAMユーザー名を突きつけて一瞬で叩き潰す絶対的防犯カメラだ。
 「午後3時14分、お前の手でルールが削除されているぞ」と宣告された瞬間の容疑者の表情……あれこそクラウド運用における最高のカタルシスだな。
 
 <Lea Rize>
-Indeed. Whenever an incident strikes in production, you inevitably witness that tragicomic chorus of engineers chanting, "It wasn't me!" and "I didn't touch anything!" CloudTrail is the definitive surveillance feed that shatters those pathetic alibis in a heartbeat by brandishing timestamps, source IPs, and IAM identities.
-"At 3:14 PM, your very hands deleted this rule." The look on a suspect's face when that verdict drops... that is the absolute pinnacle of catharsis in cloud operations.
+Indeed. Whenever an incident strikes in production, you inevitably witness that tragicomic chorus of engineers (chanting), "It wasn't me!" and "I didn't touch anything!" CloudTrail is the definitive surveillance feed that shatters those pathetic (alibis) in a heartbeat by brandishing timestamps, source IPs, and IAM identities.
+"At 3:14 PM, your very hands deleted this rule." The look on a suspect's face when that( verdict drops)... that is the absolute pinnacle of catharsis in cloud operations.
 
 <月凪惟緒>
 怜空さん、犯人探しの快楽に目覚めないで……。でも分かったよ、EventBridge自体の周りで誰かが余計な設定変更をして配信がコケてないかを、足跡から暴き出すってことね。これもAWS側の設定だけで完結するから、コード変更ゼロだ！
 
 <Io Tskunagi>
-Lea-san, please don't awaken to the sadistic thrills of witch-hunting... But I get it now: we expose whether someone fiddled with rule configurations and broke delivery by retracing their footsteps. And since this is purely configured on the AWS side, zero code changes required!
+Lea-san, please don't awaken to the sadistic thrills of witch-hunting... But I get it now: we expose whether someone (fiddled with) rule configurations and broke delivery by (retracing) their footsteps. And since this is purely configured on the AWS side, zero code changes required!
 
 <日乃竜胆>
 そして最後、要件3「配信に失敗したイベントが失われないようにする」を完遂する決定打だ。
 【正解：選択肢3】配信失敗時にイベントデータを保持するため、EventBridge ルールに Amazon SQS スタンダードキューをデッドレターキュー（DLQ）として関連付ける。
 
 <Rindo Hino>
-And finally, the decisive strike to seal Requirement 3: "Ensure failed delivery events are not lost":
+And finally, the( decisive strike) to( seal Requirement) 3: "Ensure failed delivery events are not lost":
 [Correct: Option 3] To preserve event data upon delivery failure, associate an Amazon SQS standard queue as a dead-letter queue <DLQ> with the EventBridge rule.
 
 <月凪惟緒>
@@ -673,7 +673,7 @@ And finally, the decisive strike to seal Requirement 3: "Ensure failed delivery 
 「スタンダードキュー」なら、EventBridgeのDLQとして正式にサポートされてるんだよね？
 
 <Io Tskunagi>
-Aah! This is the legitimate, untainted version of Option 5 that died on the FIFO hill earlier!
+Aah! This is the legitimate, (untainted )version of Option 5 that died on the FIFO hill earlier!
 If it's a "Standard Queue," it is officially supported as an EventBridge DLQ, right?
 
 <日乃竜胆>
@@ -690,7 +690,7 @@ However, by designating an "SQS Standard Queue" as the DLQ, exhausted events are
 荒れ狂う嵐の海で遭難した小舟たちを、底引き網で一網打尽にすくい上げて安全なドックに収容するようなものだな。沈没しかけたメッセージたちは、後からエンジニアが原因を取り除いた後、安全に再送（リドライブ）されて本来の役目を果たすことができる。これぞエンジニアが設計すべき、死者をも蘇らせるセーフティネットの真髄というわけだ。
 
 <Lea Rize>
-Like dragging a wide trawler net across a tempestuous sea to scoop up shipwrecked dinghies and deposit them into a safe dry dock. Once engineers rectify the root cause, those salvaged messages can be reinjected and safely reprocessed <redriven> to fulfill their destiny. This is the very essence of a safety net that resurrects the dead, exactly as an architect should design it.
+Like dragging a wide( trawler) net across a (tempestuous) sea to scoop up shipwrecked dinghies and deposit them into a safe dry dock. Once engineers rectify the root cause, those salvaged messages can be reinjected and safely reprocessed <redriven> to fulfill their destiny. This is the very essence of a safety net that resurrects the dead, exactly as an architect should design it.
 
 <月凪惟緒>
 なるほどねぇ……！
