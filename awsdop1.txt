@@ -343,18 +343,18 @@ It is (paramount to note) that the CodeBuild service role must be provisioned wi
 月凪惟緒 なるほど〜……！全部繋がったよ。 「ちゃんとしたGit環境を用意して（clone）」、「安全な顔パスを使って（credential-helper）」、「本物のGitタグを押し込む（git tag & git push）」。 これ以外に正解へのルートはあり得ないってわけだね！
 
 Io Tsukina
-I get it completely now...! All the scattered dots have connected. "Spin up an authentic Git repository via clone," "use an automated IAM VIP badge via credential-helper," and "inscribe genuine Git tags via git tag & git push." There couldn't possibly be any other path to salvation!
+I get it completely now...! All the scattered dots have connected. "Spin up an authentic Git repository via clone," "use an automated IAM VIP badge via credential-helper," and "inscribe genuine Git tags via git tag & git push." (There couldn't possibly be any )other path to salvation!
 
 蒞星怜空 ふふ、見事な帰結だ。迷信と欺瞞に満ちた不正解の屍を乗り越え、唯一の解に辿り着いたな。まあ、実務の過酷な開発現場では、この完璧なパイプラインを組んだ直後に開発者がコミットメッセージを打ち間違えて阿鼻叫喚の嵐が吹き荒れたりするわけだが……それもまた、クラウドアーキテクチャの織り成す芳醇な喜劇のスパイスといえよう。
 
 Rea Rize
-Heh heh, a magnificent conclusion. Traversing the corpses of superstitious, deceptive distractors to claim the singular absolute truth. Though out in the brutal trenches of enterprise production, one often watches developers trigger shrieking chaos right after deploying this pristine pipeline simply by mistyping a single commit message... but that too is merely exquisite seasoning in the dark comedy of cloud architecture.
+Heh heh, a magnificent conclusion. (Traversing) the corpses of (superstitious), deceptive distractors to claim the singular absolute truth. Though (out in) the (brutal trenches of) enterprise production, one often watches developers trigger shrieking chaos right after deploying this pristine pipeline simply by mistyping a single commit message... but (that too is) merely exquisite seasoning in the dark comedy of cloud architecture.
 
 日乃竜胆
 怜空さん、講義の結びに余計な呪詛を撒き散らさないでいただきたい。……だがイオち、今日の思考の切れ味は見事であったぞ。この調子でDevOpsの深淵を征服し、真のプロフェッショナルへと邁進するのだ。
 
 Rindo Hino
-Rea-san, I must ask you not to scatter superfluous curses at the close of our lecture. Nevertheless, Io-chi, the sharpness of your deductive faculties today was truly commendable. Maintain this momentum to conquer the deepest abysses of DevOps, and forge ahead toward becoming a genuine professional.
+Rea-san, I (must ask you not to) scatter (superfluous) curses at the close of our lecture. Nevertheless, Io-chi, the sharpness of your deductive faculties today was truly (commendable). Maintain this momentum to conquer the deepest abysses of DevOps, and (forge ahead toward becoming) a genuine professional.
 
 <日乃竜胆>
 これより、AWS Certified DevOps Engineer - Professional <DOP-C02> 想定の設問【DOP-1007】の徹底解剖を執り行う。基礎概念の解体から始め、誤答を一つずつ論破した上で、唯一無二の正解の組み合わせへと辿り着く段取りだ。イオち、怜空さん、準備はよかろうな。
