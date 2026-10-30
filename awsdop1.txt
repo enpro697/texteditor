@@ -360,19 +360,19 @@ Rea-san, I (must ask you not to) scatter (superfluous) curses at the close of ou
 これより、AWS Certified DevOps Engineer - Professional <DOP-C02> 想定の設問【DOP-1007】の徹底解剖を執り行う。基礎概念の解体から始め、誤答を一つずつ論破した上で、唯一無二の正解の組み合わせへと辿り着く段取りだ。イオち、怜空さん、準備はよかろうな。
 
 <Rindo Hino>
-We shall now proceed with an exhaustive breakdown of question DOP-1007, tailored for the AWS Certified DevOps Engineer - Professional certification. Starting from deconstructing fundamental concepts, we will systematically disprove each incorrect option before arriving at the sole correct combination. I trust both of you, Iochi and Lea-san, are ready.
+We shall now proceed with an exhaustive breakdown of question DOP-1007, tailored for the AWS Certified DevOps Engineer - Professional certification. Starting from (deconstructing) fundamental concepts, we will systematically (disprove) each incorrect option before arriving at the sole correct combination. I trust both of you, Iochi and Lea-san, are ready.
 
 <月凪惟緒>
 ん……おはよ……って言っても、もう夕方かぁ。ヒノりん、初手から画面に四角い箱と矢印が散らかりすぎてて、私の脳内メモリが完全にページアウトしてるよ。クラウドって空にあるんじゃないの？ なんでこんな幾何学模様の地獄を見なきゃいけないわけ？
 
 <Io Tskunagi>
-Mmh... morning... or well, it's already evening, isn't it? Hinorin, there are way too many rectangular boxes and stray arrows scattered across the screen right from the jump; my brain memory has completely paged out. Isn't the cloud supposed to be up in the sky? Why do I have to gaze into this geometric inferno?
+Mmh... morning... or well, it's already evening, isn't it? Hinorin, there are way too many rectangular boxes and stray arrows scattered across the screen (right from the jump); my brain memory has completely paged out. Isn't the cloud supposed to be up in the sky? Why do I have to gaze into this geometric inferno?
 
 <蒞星怜空>
 ふふ、空に浮かぶ綿飴のような幻想を抱いて迷い込んできた子羊が、いきなりエンタープライズの血生臭い泥沼に頭から突っ込まされる光景は、いつ見ても極上の喜劇だな。安心しろイオち、クラウドの実態など、他人の所有する見知らぬデータセンターの片隅で、冷房に凍えながら唸りを上げる無数の鉄の塊にすぎない。そして今から我々が解剖するのは、その鉄塊たちの間で音もなく握り潰された、悲哀に満ちたメッセージの遭難事故だ。
 
 <Lea Rize>
-Heh. Watching a stray lamb wander in dreaming of fluffy cotton candy in the sky, only to be shoved headfirst into the bloody quagmire of enterprise architecture, is an exquisite comedy that never gets old. Rest easy, Iochi; the reality of the cloud is nothing more than countless lumps of iron humming and shivering under air conditioning in the corner of someone else's data center. And what we are about to dissect is a mournful distress incident of messages silently crushed between those very iron slabs.
+Heh. Watching a stray lamb wander in dreaming of fluffy cotton candy in the sky, only to be shoved headfirst into the bloody quagmire of enterprise architecture, is an exquisite comedy that never gets old. (Rest easy), Iochi; the reality of the cloud is nothing more than countless (lumps) of iron humming and shivering under air conditioning in the corner of someone else's data center. And what we are about to dissect is a (mournful) (distress) incident of messages silently crushed between those very iron (slabs).
 
 <日乃竜胆>
 怜空さん、初学者を詩的な絶望で威嚇するのはやめていただきたい。イオち、まずは問題文の骨格を掴むぞ。
@@ -383,8 +383,8 @@ Heh. Watching a stray lamb wander in dreaming of fluffy cotton candy in the sky,
 2. 配信失敗の原因を調査できるようにする 
 3. 配信に失敗したイベントが失われないようにする そして絶対的な制約が「アプリケーションコードを変更しない」という点だ。 
 <Rindo Hino>
-Lea-san, please refrain from intimidating our beginner with poetic despair. Iochi, let us first grasp the skeletal framework of the problem statement.
-"A startup company is building a serverless architecture centered around Amazon EventBridge. The QA team reported that in the test environment, some events are not reaching the rule targets. The development team needs to achieve the following three requirements without modifying the application code."
+Lea-san, please refrain from intimidating our beginner with poetic despair. Iochi, let us first grasp the (skeletal framework of) the problem statement.
+"A startup company is building a serverless architecture (centered around )Amazon EventBridge. The QA team reported that in the test environment, some events are not reaching the rule targets. The development team needs to achieve the following three requirements without modifying the application code."
 The three requirements are as follows:
 
 1. Allow checking the contents of the events. 
@@ -394,7 +394,7 @@ The three requirements are as follows:
 ねぇヒノりん、そもそもさ、その「EventBridge（イベントブリッジ）」って誰？ 橋？ イベント会場の誘導係のお兄さん的なやつ？ あと「イベント」って何？ 週末のフェスか何かの話をしてるわけ？
 
 <Io Tskunagi>
-Hey Hinorin, first off, who even is this "EventBridge"? A literal bridge? Like one of those guys directing traffic at an outdoor event venue? And what is an "event" anyway? Are we talking about some weekend music festival?
+Hey Hinorin, (first off), who even is this "EventBridge"? A literal bridge? Like one of those guys directing traffic at an outdoor event( venue)? And what is an "event" anyway? Are we talking about some weekend music festival?
 
 <日乃竜胆>
 いい着眼点だ。ITの世界における「イベント」とは、「システム内で発生した何らかの出来事の通知」を指す。例えば「ユーザーが商品を注文した」「画像が保存された」「支払いが完了した」という事実そのものだ。
@@ -402,13 +402,13 @@ Hey Hinorin, first off, who even is this "EventBridge"? A literal bridge? Like o
 
 <Rindo Hino>
 A sharp intuition to start with. In the realm of IT, an "event" refers to a "notification that something specific has occurred within the system." For instance, facts such as "a user ordered a product," "an image was uploaded," or "a payment succeeded."
-And "Amazon EventBridge" serves as a central hub that receives these occurrences <events> and routes them to the appropriate processing destination <targets>. Picture a central sorting facility at a post office. It inspects the destination criteria <rules> on the letters <events> gathered from mailboxes across town, and forwards them to their respective delivery targets <such as Lambda or SQS>.
+And "Amazon EventBridge" serves as a central hub that receives these occurrences <events> and routes them to the appropriate processing destination <targets>. Picture a central sorting facility at a post office. It inspects the destination criteria <rules> on the letters <events> gathered from mailboxes across town, and forwards them to their (respective) delivery targets <such as Lambda or SQS>.
 
 <蒞星怜空>
 そう、巨大な交差点の中央で、狂ったように行き交う何百万通もの手紙を機械的に捌く交通整理員だな。だが、手紙の宛名が雨で滲んでいたり、送り先の家が全焼していたりすると、配達員は手紙をポストに突っ込めず途方に暮れる。今回はその手紙が路地裏の側溝に虚しく吸い込まれて消滅しかけているわけだ。QAチームという名の住民たちが「荷物が届かないぞ！」と怒鳴り込んできた現場の阿鼻叫喚が目に浮かぶだろう？
 
 <Lea Rize>
-Indeed, a traffic conductor mechanically sorting millions of letters fluttering through a massive intersection. However, if the address on an envelope is blurred by torrential rain, or the recipient's house has burned to ashes, the mail carrier cannot deposit it into the slot and is left utterly paralyzed. In this scenario, those precious envelopes are on the verge of vanishing down an alleyway storm drain. You can practically hear the residents—the QA team—banging on the counter, screaming, "Where is my package?!" Can you picture the chaos?
+Indeed, a traffic conductor mechanically sorting millions of letters( fluttering )through a massive intersection. However, if the address on an envelope is blurred by (torrential) rain, or the recipient's house has burned to ashes, the mail carrier cannot (deposit *it* into) the slot and is (left *utterly *paralyzed). In this scenario, those precious envelopes are( on the verge of) (vanishing down )an (alleyway )(storm drain). You can practically hear the residents—the QA team—banging on the counter, screaming, "Where is my package?!" Can you picture the chaos?
 
 <月凪惟緒>
 うわ……リアルで胃が痛くなる例えやめてよ怜空さん。つまり、せっかく届いたメッセージがどっかで行方不明になってて、中身も分からないし、なんで届かないかも不明だし、しかも荷物自体が虚無に消えてるからなんとかしろってことね。で、コードは一行も弄るなって……どんな縛りプレイ？
@@ -421,7 +421,7 @@ Ugh... please spare me the painfully vivid stomach aches, Lea-san. So basically,
 では、いよいよ選択肢の検証に入るとしよう。我が講義の掟通り、まずは誤った選択肢を徹底的に粉砕し、なぜそれが破綻しているのかを暴いていくぞ。
 
 <Rindo Hino>
-Modifying the codebase of a running production system or a stable build undergoing QA tests invites fresh bugs and deployment risks. Securing observability and fault tolerance purely through infrastructure-level configuration is precisely where a DevOps engineer proves their mettle.
+Modifying the codebase of a running production system or a stable build undergoing QA tests invites fresh bugs and deployment risks. Securing observability and fault tolerance (purely through) infrastructure-level configuration is precisely where a DevOps engineer proves their (mettle).
 Now, let us enter the verification phase of the options. Per the ironclad rule of my lectures, we shall first obliterate the erroneous options, exposing why they collapse under scrutiny.
 
 <日乃竜胆>
@@ -436,14 +436,14 @@ First among the incorrect choices is this one:
 でばいす……ふぁーむ？ 農場？ クラウドの中に牧場があるの？ 羊の代わりにスマホでも放牧してるわけ？
 
 <Io Tskunagi>
-Device... Farm? A farm? There's a ranch inside the cloud? Are they grazing smartphones out on the pasture instead of sheep?
+Device... Farm? A farm? There's a (ranch) inside the cloud? Are they (grazing) smartphones out on the (pasture) instead of sheep?
 
 <日乃竜胆>
 驚くべきことに、イオちのその直感はあながち外れておらず、ほぼ正解だ。
 AWS Device Farm とは、AWSのデータセンター内にズラリと並べられた無数の実機スマートフォン（iPhoneやAndroid端末）やデスクトップブラウザ環境に対して、モバイルアプリやウェブアプリの動作・表示テストを自動実行させるためのフロントエンド検証サービスだ。
 
 <Rindo Hino>
-Astonishingly, Iochi, your bizarre intuition is practically right on the money.
+Astonishingly, Iochi, your bizarre intuition is practically (right on the money).
 AWS Device Farm is a frontend verification service that automatically executes operational and display tests for mobile or web apps across rows upon rows of real physical smartphones <iPhones, Android devices> and desktop browser environments hosted in AWS data centers.
 
 <蒞星怜空>
@@ -456,7 +456,7 @@ Picture thousands of smartphones skewered neatly into server racks, their touchs
 ひぇ……絵面がホラーすぎる……。でもさ、今回困ってるのって「EventBridgeの裏側でイベントが届かない」って話でしょ？ スマホの画面崩れを調べてる場合じゃなくない？
 
 <Io Tskunagi>
-Yikes... that mental image is pure nightmare fuel... But wait, our issue is that events aren't arriving behind the scenes in EventBridge, right? This is hardly the time to be checking if buttons align on a phone screen.
+Yikes... that mental image is pure (nightmare fuel)... But wait, our issue is that events aren't arriving behind the scenes in EventBridge, right? This is( hardly the time to be) checking if buttons align on a phone screen.
 
 <日乃竜胆>
 その通りだ、至極真っ当な判断だな。
@@ -464,29 +464,29 @@ EventBridge はバックエンドのイベントルーティングを司る神�
 
 <Rindo Hino>
 Precisely; an impeccable deduction.
-EventBridge acts as the neural network governing backend event routing. In stark contrast, Device Farm is merely a tool for testing UI on end-user physical devices. No matter how many test suites you unleash upon those phones, it will neither capture EventBridge delivery failure logs nor preserve vanishing events. The layers are entirely divorced from one another. Hence, Option 6 is utterly out of the question and dismissed outright.
+EventBridge acts as the neural network (governing) backend event routing. (In stark contrast), Device Farm is merely a tool for testing UI on end-user physical devices. No matter how many test suites you unleash upon those phones, it will neither capture EventBridge delivery failure logs nor preserve vanishing events. The layers are entirely( divorced from one another). Hence, Option 6 is utterly out of the question and (dismissed outright).
 
 <日乃竜胆>
 続いて2つ目の誤答だ。ここからが受験者を惑わす罠の核心となる。
 【不正解：選択肢4】AWS X-Ray SDK をアプリケーションに組み込み、トレースヘッダーを伝播させることでイベントフローを可視化する。
 
 <Rindo Hino>
-Moving on to the second incorrect choice. This is where the core traps designed to bewilder examinees begin.
+Moving on to the second incorrect choice. This is where the core traps designed to (bewilder) (examinees) begin.
 [Incorrect: Option 4] Integrate the AWS X-Ray SDK into the application and propagate trace headers to visualize the event flow.
 
 <月凪惟緒>
 レントゲンみたいな名前が出てきた……エックスレイ？ これって、システムの中を透視して「どこで詰まってるか」を暴いてくれる名探偵的なツールなんじゃないの？ 「イベントフローを可視化する」って、めちゃくちゃ問題の解決っぽく聞こえるんだけど……。
 
 <Io Tskunagi>
-Now we get something that sounds like an X-ray machine... AWS X-Ray? Isn't this like some master detective tool that peers through the system's bones to uncover where things are clogged? "Visualize the event flow" sounds suspiciously like what we want to solve our problem...
+Now we get something that sounds like an X-ray machine... AWS X-Ray? Isn't this like some master detective tool that (peers through )the system's bones to uncover where things are clogged? "Visualize the event flow" (sounds suspiciously like) what we want to solve our problem...
 
 <日乃竜胆>
 うむ、X-Ray 自体の機能説明としては決して間違ってはいない。X-Ray は分散システムにおいて、リクエストがマイクロサービス間をどう巡ったか、どこで遅延やエラーが生じたかを追跡（トレース）する強力な可視化サービスだ。
 ……だが、イオち、問題文をもう一度声に出して読んでみるがいい。
 
 <Rindo Hino>
-Indeed, as far as describing the raw function of X-Ray itself, it is not mistaken. In distributed architectures, X-Ray is a potent visualization service that traces requests across microservices, pinpointing exactly where latencies and exceptions crop up.
-...However, Iochi, read the premise in the question aloud once more.
+Indeed, as far as describing the raw function of X-Ray itself, it is not mistaken. In distributed architectures, X-Ray is a potent visualization service that traces requests across microservices, pinpointing exactly where latencies and exceptions (crop up).
+...However, Iochi, read the premise in the question( aloud )once more.
 
 <月凪惟緒>
 え……あ。「アプリケーションコードを変更することなく」……！
@@ -501,21 +501,21 @@ Ah...! The choice says, "Integrate the SDK into the application"...?!
 SDK（ソフトウェア開発キット）を組み込むということは、ソースコードを開き、インポート文を書き足し、トレース用のラッパー関数で処理を包み、テストを回してビルドし、コンテナイメージを焼き直して再デプロイするということだ。それは「コードを変更しない」という絶対の神託に対する明らかな反逆行為にほかならない。
 
 <Lea Rize>
-Heh heh, caught it, did you? The tragic expression of an engineer reaching for the forbidden fruit.
-To integrate an SDK <Software Development Kit> means opening the source code, adding import statements, wrapping functions with trace handlers, running tests, rebuilding artifacts, baking new container images, and redeploying. That is nothing less than blatant treason against the divine decree: "Do not modify application code".
+Heh heh, (caught it, did you)? The tragic expression of an engineer (reaching for) the forbidden fruit.
+To integrate an SDK <Software Development Kit> means opening the source code, adding import statements, wrapping functions with trace handlers, running tests, rebuilding artifacts, baking new container images, and redeploying. That is nothing less than (blatant) (treason) against the divine decree: "Do not modify application code".
 
 <日乃竜胆>
 怜空さんの言う通りだ。さらに言えば、仮にX-Rayで呼び出し状況を追跡できたとしても、それ単体では要件3の「配信に失敗したイベントを消失させずに保持する」ことは叶わない。制約違反かつ要件不足。故に選択肢4は討ち死にだ。
 
 <Rindo Hino>
-Precisely as Lea-san describes. Furthermore, even if X-Ray could trace call paths, it alone could never fulfill Requirement 3: "Ensure failed delivery events are not lost". Both a constraint violation and a functional deficiency. Thus, Option 4 falls upon its own blade.
+Precisely as Lea-san describes. Furthermore, even if X-Ray could trace call paths, (it alone could never) fulfill Requirement 3: "Ensure failed delivery events are not lost". Both a constraint violation and a functional (deficiency). Thus, Option 4 (falls upon its own blade).
 
 <日乃竜胆>
 そして3つ目の誤答、これが本問における最大の地雷であり、多くの実務経験者すら深淵に引きずり込む魔境の選択肢だ。
 【不正解：選択肢5】配信順序を保証しながら失敗イベントを保持するため、EventBridge ルールに Amazon SQS FIFO キューをデッドレターキューとして関連付ける。
 
 <Rindo Hino>
-And now the third incorrect option—the deadliest landmine in this entire problem, a treacherous trap capable of dragging even seasoned veterans into the abyss.
+And now the third incorrect option—the (deadliest) landmine in this entire problem, a treacherous trap (capable of )dragging even seasoned veterans into the abyss.
 [Incorrect: Option 5] To preserve failed events while guaranteeing delivery order, attach an Amazon SQS FIFO queue as a dead-letter queue to the EventBridge rule.
 
 <月凪惟緒>
@@ -534,19 +534,19 @@ W-Wait a second! The jargon density just went through the ceiling!
 <Rindo Hino>
 Hah, do not flinch. Once we untangle these terms one by one, there is nothing to fear.
 First, "Amazon SQS <Simple Queue Service>" is a service that provides a "buffer line <queue>" to temporarily store messages.
-And a "Dead-Letter Queue <DLQ>" is a specialized quarantine mailbox designated to isolate and preserve messages that could not be processed due to errors or missing targets, preventing them from being unceremoniously discarded. Think of it as the post office's holding depot for undeliverable mail.
+And a "Dead-Letter Queue <DLQ>" is a specialized quarantine mailbox designated to isolate and preserve messages that could not be processed due to errors or missing targets, preventing them from being (unceremoniously )discarded. Think of it as the post office's holding( depot) for undeliverable mail.
 
 <月凪惟緒>
 なるほど……失敗した荷物をゴミ箱に捨てずに、専用の保管庫（DLQ）に退避させるわけね。それって要件3の「失敗したイベントを失われないようにする」にドンピシャじゃない？ なんでこれが間違いなの？
 
 <Io Tskunagi>
-I get it... instead of tossing failed parcels into the incinerator, you shunt them off into a dedicated holding locker <DLQ>. Doesn't that hit Requirement 3—"ensure failed delivery events are not lost"—dead center? Why in the world is this wrong?
+I get it... instead of tossing failed parcels into the incinerator, you shunt them off into a dedicated (holding locker) <DLQ>. Doesn't that hit Requirement 3—"ensure failed delivery events are not lost"—dead center? Why in the world is this wrong?
 
 <蒞星怜空>
 甘いな、イオち。その甘さは真夏の陽光に放置されてドロドロに溶け崩れたソフトクリームのようだ。罠はその後ろに潜んでいる。「FIFO（ファーストイン・ファーストアウト）」という4文字の毒針にな。
 
 <Lea Rize>
-Naive, Iochi. That sweet optimism melts like soft-serve ice cream left out under the blistering midday sun. The trap lurks just behind it: four venomous letters—"FIFO" <First-In, First-Out>.
+Naive, Iochi. That sweet optimism melts like (soft-serve ice cream) left out under the (blistering) (midday) sun. The trap( lurks just behind )it: four venomous letters—"FIFO" <First-In, First-Out>.
 
 <月凪惟緒>
 ふぁいふぉ……？ 先に入ったものが先に出る、ところてん方式のやつ？ 順番を守ってくれるなら、むしろ偉い子なんじゃないの？
@@ -559,14 +559,14 @@ Fi-fo...? First-In, First-Out, like a noodle press pushing things through in ord
 だが、AWSのプラットフォーム仕様として、EventBridge ルールのデッドレターキュー（DLQ）に指定できるのは「SQS スタンダードキュー」のみであり、SQS FIFO キューは一切サポートされていないのだ！
 
 <Rindo Hino>
-To ordinary common sense, it would seem so. SQS offers two variants: "Standard Queues" and "FIFO Queues," with FIFO appearing to be the superior choice by guaranteeing strict ordering and exactly-once delivery.
+(To ordinary common sense), it (would seem so). SQS offers two (variants): "Standard Queues" and "FIFO Queues," with FIFO( appearing to be) the superior choice by guaranteeing strict ordering and exactly-once delivery.
 However, as an architectural constraint of the AWS platform, an EventBridge rule's Dead-Letter Queue <DLQ> strictly supports only "SQS Standard Queues"—SQS FIFO Queues are completely unsupported!
 
 <月凪惟緒>
 えええええっ！？ 高機能なのに使えないの！？ 門前払い食らうの！？
 
 <Io Tskunagi>
-Eeeh?! It's fancier, but you can't even plug it in?! It just gets rejected at the door?!
+Eeeh?! It's fancier, but you can't even (plug *it* in)?! It just gets rejected at the door?!
 
 <蒞星怜空>
 そう、設定画面でドヤ顔でFIFOキューのARNを打ち込もうとした愚かな開発者は、赤文字のエラーメッセージという名の冷酷な平手打ちを食らって現実を知るのだ。
