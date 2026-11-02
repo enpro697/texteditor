@@ -1005,19 +1005,19 @@ Now I won't have to become one of those tragic engineers getting dragged out of 
 日乃竜胆 これより、AWS Certified DevOps Engineer - Professional（DOP）水準の高度なアーキテクチャ設問【DOP-1022】の徹底講義を執り行う。前提知識を持たぬ者であっても、設計思想の深淵に至るまで一分の妥協もなく叩き込む。覚悟して耳を傾けよ。
 
 Rindo Hino
-We shall now commence an in-depth lecture on question DOP-1022, an advanced architecture problem at the AWS Certified DevOps Engineer - Professional level. Even for complete novices, I will instill the fundamental architectural design principles without the slightest compromise. Brace yourselves and listen closely.
+We shall now commence an in-depth lecture on question DOP-1022, an advanced architecture problem at the AWS Certified DevOps Engineer - Professional level. Even for complete novices, I will (instill) the fundamental architectural design principles without the slightest compromise. Brace yourselves and listen closely.
 
 月凪惟緒
 はーい……。なんかヒノりん、今日も今日とて日本刀みたいにギラついてるね〜。空気がすでに氷点下なんですけど……。私、タグとかクラウドとか、名前だけで意識が遠のきそうだよ。
 
 Io Tsukina
-Okaay... Hinorin, as always, you're radiating that razor-sharp katana energy today. The room already feels sub-zero... Just hearing words like "tags" and "cloud" makes me feel like zoning out completely.
+Okaay... Hinorin, as always, you're (radiating) that razor-sharp katana energy today. The room already feels (sub-zero)... Just hearing words like "tags" and "cloud" makes me feel like (zoning out )completely.
 
 蒞星怜空
 良いではないか。無知という名の純白なキャンバスほど、過酷な現実を塗りたくるのに適した素材はない。無秩序に増殖したリソースが会社の経費を食い破り、誰が作ったかも分からぬゾンビボリュームが亡霊のように請求書を膨張させていく現場の地獄……実に美しい破滅の光景だ。
 
 Rea Rize
-Splendid. There is no better canvas for splattering harsh reality upon than the pure, spotless blank slate known as ignorance. An underworld where chaotically multiplying resources devour corporate budgets, and zombie volumes of unknown origin bloat the billing statement like wailing specters... What a truly magnificent spectacle of ruin.
+Splendid. There is no better canvas for splattering harsh reality upon than the pure, spotless blank( slate )known as ignorance. An underworld where chaotically multiplying resources devour corporate budgets, and zombie volumes of unknown origin bloat the billing statement like( wailing) specters... What a truly magnificent spectacle of( ruin).
 
 日乃竜胆 怜空さん、講義の冒頭から受講者を怪談で圧倒するのはお控えいただきたい。ではまず、眼前の画面に提示された問題文の要件を精査する。
 
@@ -1034,13 +1034,13 @@ In an organization, all Amazon EBS volumes are mandated to possess an "Environme
 ねえヒノりん、そもそもさ……「EBS」とか「タグ」って何なの？ 付いてないと死んじゃう病気か何かなの？
 
 Io Tsukina
-Hey Hinorin, first of all... what even are "EBS" and "tags"? Is it some kind of fatal disease if you don't have them attached?
+Hey Hinorin, (first of all)... what even are "EBS" and "tags"? Is it some kind of fatal disease if you don't have them attached?
 
 日乃竜胆
 良い質問だ、イオち。基礎を侮る者にアーキテクチャを語る資格はない。まず「Amazon EBS（Elastic Block Store）」とは、クラウド上の仮想サーバであるEC2インスタンスに取り付ける「仮想外付けハードディスク」だ。データを保存するための独立した記憶領域だな。
 
 Rindo Hino
-A fair question, Iochi. One who disdains fundamentals has no right to discuss architecture. First, "Amazon EBS <Elastic Block Store>" is a virtual external hard drive attached to EC2 instances, which are virtual servers in the cloud. It is an independent storage volume designed to persist data.
+A fair question, Iochi. One who (disdains) fundamentals has no right to discuss architecture. First, "Amazon EBS <Elastic Block Store>" is a virtual external hard drive attached to EC2 instances, which are virtual servers in the cloud. It is an independent storage volume designed to persist data.
 
 日乃竜胆
 そして「タグ」とは、AWS上のリソースに付与する「付箋」や「名札」のようなメタデータだ。「Key（キー）」と「Value（値）」の組み合わせで成り立っている。今回は「キーがEnvironment」で「値がproduction（本番）、staging（検証）、development（開発）」というわけだ。
@@ -1052,7 +1052,7 @@ Next, a "tag" is metadata acting as a sticky note or label attached to AWS resou
 タグのないリソースなど、名前も国籍も刻まれずにコンテナ船に詰め込まれた密航者のようなものだ。どの部署が使い、誰が費用を払い、いつ消してよいのか誰も触れられなくなる。結果、誰も止められない課金メーターだけが静かに回り続け、月末の請求書で経理部長が泡を吹いて卒倒することになる。
 
 Rea Rize
-A resource devoid of tags is essentially a stowaway crammed into a cargo container without a name or nationality. Nobody knows which department owns it, who pays for it, or when it can be deleted. Consequently, nothing stops the meter from ticking, quietly inflating the bill until the head of finance collapses foaming at the mouth at month's end.
+A resource devoid of tags is essentially a (stowaway) crammed into a cargo container without a name or nationality. Nobody knows which department owns it, who pays for it, or when it can be deleted. Consequently, nothing stops the meter from ticking, quietly inflating the bill until the head of finance collapses foaming at the mouth at month's end.
 
 月凪惟緒
 うわぁ、生々しい……。名札がないと誰の持ち物か分からなくて捨てられない、部活の部室の奥底にある謎のタッパーみたいなやつだ。
@@ -1086,12 +1086,12 @@ CloudFormation <CFn> is an Infrastructure as Code <IaC> service that defines AWS
 日乃竜胆 だが、この選択肢は二重の致命的欠陥を孕んでいる。第一に、「スタックポリシー」の用途だ。スタックポリシーとは、CFnで作成されたリソースが「更新時に誤って削除・置換されるのを防ぐ」ための保護機能であって、タグの必須化やバリデーションを強制する機能ではない。完全にサービスの用途を履き違えている。
 
 Rindo Hino
-However, this option suffers from a dual fatal flaw. First is the misuse of "Stack Policies." A stack policy is a protection mechanism designed to prevent resources managed by CFn from being inadvertently deleted or replaced during stack updates; it cannot enforce mandatory tag validation. It completely misconstrues the service's intended function.
+However, this option suffers from a dual fatal flaw. First is the misuse of "Stack Policies." A stack policy is a protection mechanism designed to prevent resources managed by CFn from being inadvertently deleted or replaced during stack updates; it cannot enforce mandatory tag validation. It completely (misconstrues) the service's intended function.
 
 蒞星怜空 さらに言えば、チーム全員が真面目にそのテンプレートを使ってくれるという前提自体が、人間という愚かな生き物への過信にすぎない。マネジメントコンソールから手動でポチポチ作ったり、手元のスクリプトやCLIから直接叩いてボリュームを生み出す反逆者が必ず現れる。CFnの管轄外で作られた私生児リソースに対して、CFnは何の影響力も持たないのだよ。
 
 Rea Rize
-Furthermore, assuming every developer on every team will faithfully use that designated template is nothing short of naive faith in flawed human nature. Rogue engineers will inevitably spin up volumes directly via the AWS Management Console or quick-and-dirty CLI scripts. Against such wildcat resources created outside CFn, CloudFormation possesses zero jurisdiction.
+Furthermore, assuming every developer on every team will (faithfully) use that designated template is nothing short of naive faith in flawed human nature. Rogue engineers will inevitably spin up volumes directly via the AWS Management Console or quick-and-dirty CLI scripts. Against such wildcat resources created outside CFn, CloudFormation possesses zero (jurisdiction).
 
 日乃竜胆 その通りだ。図にも明確に示されている通り、CFnを経由しない直接作成（ConsoleやCLI）に対してテンプレートのルールは無力だ。そして何より、「過去に手動で作られて放置されている既存ボリューム」を検知して修正する術がCFnにはない。よって選択肢4は明白に不正解だ。
 
@@ -1109,7 +1109,7 @@ Next, let us dissect Option 3:
 タグポリシー！ 名前からして「タグの警察」っぽくて強そうじゃん！ あとインスペクターって探偵？ 欠落を見つけてくれるなら良さそうなのに、ダメなの？
 
 Io Tsukina
-Tag Policy! That sounds like actual "Tag Police"—super authoritative! And Inspector, like a detective? If it catches missing tags, that sounds pretty solid. Why is that bad?
+Tag Policy! That sounds like actual "Tag Police"—super authoritative! And Inspector, like a detective? If it catches missing tags, that (sounds pretty solid). Why is that bad?
 
 日乃竜胆 甘いな、イオち。用語の響きに惑わされるな。AWS Organizationsの「タグポリシー」は、タグの「大文字・小文字の表記揺れ」や「許容する文字列」を統一・標準化するための機能だ。「タグの付与自体を強制・ブロックする機能」ではないし、欠落時にタグを自動修復する機能など微塵も備わっていない。
 
@@ -1130,39 +1130,39 @@ It's akin to calling a mobile chest X-ray unit to a health checkup and screaming
 レントゲンで名札チェックは草……。お医者さんもブチギレるやつだね。しかも手動でポチポチ直すとか、絶対夜中に呼び出されて泣くパターンのやつじゃん……。
 
 Io Tsukina
-Checking nametags with an X-ray, lol... The doctor would be furious. And fixing tags manually? That's a surefire recipe for getting paged at 3 AM and crying at your desk...
+Checking nametags with an X-ray, lol... The doctor would be furious. And fixing tags manually? That's a (surefire recipe for) (getting paged )at 3 AM and crying at your desk...
 
 日乃竜胆 その通りだ。設問の「自動修復」という命題に真っ向から反している。したがって、選択肢3も粉砕される。
 
 Rindo Hino
-Indeed. It directly contradicts the requirement for automated remediation. Consequently, Option 3 is thoroughly pulverized.
+Indeed. It directly contradicts the requirement for automated remediation. Consequently, Option 3 is (thoroughly pulverized).
 
 不正解の解剖：選択肢2（EventBridge と Lambda）の落とし穴
 日乃竜胆 続いて、初学者が最も陥りやすい罠、選択肢2を論破する。 「Amazon EventBridgeでEC2関連のAPIコールを監視するルールを作成する。ルールのターゲットにAWS Lambda関数を指定し、タグが欠落しているEBSボリュームにEnvironmentタグをdevelopmentの値で追加する処理を実装する」。
 
 Rindo Hino
-Next, let us dismantle Option 2, the most enticing trap for novices:
+Next, let us dismantle Option 2, the most( enticing )trap for novices:
 "Create an Amazon EventBridge rule that monitors EC2-related API calls. Target an AWS Lambda function to add the Environment tag with the value development to EBS volumes lacking the tag."
 
 月凪惟緒 えっ！？ EventBridgeってイベントが起きたら動くやつでしょ？ で、Lambdaって何でもプログラム動かせる最強の召喚獣じゃん。APIを監視してタグを付け足すプログラムを走らせるなら、完璧に自動化できてる気がするんだけど……どこがダメなの？
 
 Io Tsukina
-Wait, what?! EventBridge triggers when something happens, right? And Lambda is that almighty summon that can run arbitrary code! If it catches the API event and runs code to slap the tag on, that sounds completely automated... What's wrong with that?
+Wait, what?! EventBridge triggers when something happens, right? And Lambda is that (almighty) summon that can run (arbitrary )code! If it catches the API event and runs code to slap the tag on, that sounds completely automated... What's wrong with that?
 
 日乃竜胆 一見すると現代的なイベント駆動型（Event-Driven）の模範的解答に見えるな。現に、新規に作成されたボリュームに対しては、AWS CloudTrailとEventBridgeが「CreateVolume」APIコールを捉え、Lambdaをキックして即座にタグを付与できる。
 
 Rindo Hino
-Superficially, it resembles an exemplary modern event-driven architecture. Indeed, for newly created volumes, AWS CloudTrail and EventBridge can intercept the "CreateVolume" API call and trigger Lambda to assign the tag in near-real-time.
+Superficially, it resembles an (exemplary) modern event-driven architecture. Indeed, for newly created volumes, AWS CloudTrail and EventBridge can intercept the "CreateVolume" API call and trigger Lambda to assign the tag in near-real-time.
 
 日乃竜胆 だが、問題文の文言を思い出せ。「既存のボリュームも含めて継続的にコンプライアンスを維持する」とある。EventBridgeは「何かが起きた瞬間（APIコール等）」にのみ発火する。すでにタグなしで存在している過去のEBSボリュームたちに対して、今この瞬間にイベントが発生しているか？ 否、何も起きてはいない。
 
 Rindo Hino
-However, recall the explicit phrasing of the prompt: "continuously maintain compliance, including for existing volumes." EventBridge fires solely at the exact instant something occurs, such as an API call. For pre-existing, untagged EBS volumes sitting dormant, is any event occurring right now? No. Absolutely nothing is happening.
+However, recall the explicit phrasing of the prompt: "continuously maintain compliance, including for existing volumes." EventBridge fires solely at the exact instant something occurs, such as an API call. For pre-existing, untagged EBS volumes (sitting dormant), is any event occurring right now? No. Absolutely nothing is happening.
 
 蒞星怜空 そう。イベント駆動の盲点だ。過去の亡霊たちは静まり返った墓場のように鎮座している。誰かが触らない限りAPIイベントなど一滴も垂れてはこない。過去の遺産を検知できない仕組みなど、過去の負債を直視できない人間の逃避と同じだ。さらに言えば、後から誰かが手動でタグを消した際、「DeleteTags」イベントを綿密に拾うルールも書かねばすり抜ける。
 
 Rea Rize
-Exactly. The blind spot of event-driven architectures. The ghosts of the past sit in silence like a graveyard. Unless someone touches them, not a single drop of API activity will ever fire. A mechanism incapable of inspecting past legacy is no different from human denial refusing to confront past debts. Furthermore, if someone manually deletes a tag later, it will slip right through unless you meticulously monitor "DeleteTags" events as well.
+Exactly. The blind spot of event-driven architectures. The ghosts of the past sit in silence like a graveyard. Unless someone touches them, not a single drop of API activity will ever fire. A mechanism incapable of inspecting past legacy is no different from human denial refusing to (confront) past debts. Furthermore, if someone manually deletes a tag later, it will (slip right through) unless you meticulously monitor "DeleteTags" events as well.
 
 月凪惟緒
 あーっ！ イベントが起きないと動かないから、昔からそこに転がってる「タグなしボリューム」はスルーされちゃうんだ！ 過去を置き去りにしちゃうんだね……。
@@ -1173,7 +1173,7 @@ Ah! Because it only wakes up when an event occurs, all those untagged volumes th
 日乃竜胆 その通りだ。イベント駆動（動態監視）と状態ベース評価（静態監視）の決定的差異だな。既存リソースの遡及評価ができない以上、この選択肢は要件を満たせない。したがって不正解だ。
 
 Rindo Hino
-Precisely. That is the fundamental distinction between event-driven inspection <monitoring state transitions> and state-based evaluation <evaluating static state>. Because it cannot retroactively assess existing inventory, this architecture fails the requirements. Thus, it is eliminated.
+Precisely. That is the fundamental distinction between event-driven inspection <monitoring state transitions> and state-based evaluation <evaluating static state>. Because it cannot (retroactively) assess existing inventory, this architecture fails the requirements. Thus, it is eliminated.
 
 正解の証明：選択肢1（AWS Config と SSM Automation）の優位性
 日乃竜胆 そして、最後に残った唯一無二の正解、選択肢1を詳解する。 「AWS Configのrequired-tagsマネージドルールをEC2::Volumeリソースタイプに対して有効化し、Environmentタグの有無を評価する。非準拠リソースに対してAWS Systems Manager AutomationランブックでEnvironmentタグにdevelopmentを設定する自動修復を関連付ける」。
@@ -1191,7 +1191,7 @@ Config... and Systems Manager? More magic spells popping up, Hinorin...
 日乃竜胆 臆するな、構造を解剖すれば極めて論理的だ。まず「AWS Config」とは、AWS上のリソースの設定履歴と現在の構成状態を継続的に記録・監査・評価するサービスだ。リソースの「台帳兼監査役」と捉えよ。
 
 Rindo Hino
-Do not cower; dissecting its anatomy reveals impeccable logic. First, "AWS Config" is a service that continuously records, audits, and evaluates the configuration history and current state of AWS resources. Think of it as the cloud's master ledger and compliance auditor.
+Do not (cower); dissecting its anatomy reveals impeccable logic. First, "AWS Config" is a service that continuously records, audits, and evaluates the configuration history and current state of AWS resources. Think of it as the cloud's master ledger and compliance auditor.
 
 日乃竜胆 AWS Configには、AWSが予め用意してくれているベストプラクティス評価プログラムである「マネージドルール」が存在する。「required-tags」はその筆頭であり、指定したリソースタイプ（今回はEC2::Volume）に特定のタグキーが存在するかを自動判定する。
 
@@ -1226,12 +1226,12 @@ Your understanding is spot on, Iochi. It seamlessly covers existing and newly cr
 蒞星怜空 さらに高度な実務試験の観点を補足しておこう。このSSM Automationが実行される際、裏側でタグを付与するためのIAMロール（ec2:CreateTags 権限などを持つAssume Role）をConfigの修復アクション設定に適切に紐付けておく必要がある。権限なき自動化は、弾丸の装填されていない銃口を突きつけるようなものだからな。
 
 Rea Rize
-Allow me to add an advanced real-world exam insight. When this SSM Automation runs behind the scenes, an appropriate IAM role with permissions like ec2:CreateTags must be designated as the Assume Role in Config's remediation configuration. Automation without proper permissions is nothing more than pointing an unloaded gun.
+Allow me to add an advanced real-world exam insight. When this SSM Automation runs behind the scenes, an appropriate IAM role with permissions like ec2:CreateTags must be (designated) as the Assume Role in Config's remediation configuration. Automation without proper permissions is nothing more than pointing an unloaded gun.
 
 日乃竜胆 至極真っ当な指摘だ、怜空さん。試験においても「IAMロールの実行権限」が問われる亜種問題が存在する。
 
 Rindo Hino
-An exceptionally sharp point, Rea-san. On the actual exam, variant questions frequently test your knowledge regarding the requisite IAM execution role permissions.
+An exceptionally sharp point, Rea-san. On the actual exam, (variant) questions frequently test your knowledge regarding the (requisite) IAM execution role permissions.
 
 日乃竜胆 これにて論証は完了した。 事後検知・台帳管理・既存資産の遡及評価には「AWS Config」。 非準拠に対する自動治癒・処置には「SSM Automation」。 この黄金律を脳裏に刻み込むのだ。
 
@@ -1245,7 +1245,7 @@ Carve this golden rule deep into your minds.
 ふぇ〜……最初はどうなることかと思ったけど、点と点が繋がってすっきりしたかも。今日の講義は、永久凍土の底から引き揚げられた気分だよ。ヒノりん、怜空さん、ありがと〜。
 
 Io Tsukina
-Phew... I was terrified at first, but connecting all the dots actually made it super clear. Feels like my brain got excavated from deep permafrost. Thanks, Hinorin and Rea-san!
+Phew... I was terrified at first, but connecting all the dots actually made it super clear. Feels like my brain got (excavated) from deep permafrost. Thanks, Hinorin and Rea-san!
 
 <日乃竜胆>日本語 姿勢を正せ、イオち。画面を見つめたまま意識を虚空へ逃がすのは許さん。本日はAWS Certified DevOps Engineer - Professional、すなわちDOPレベルの設問【DOP-1023】を講義する。この問題は一見複雑に見えるが、クラウド設計の根幹である「車輪の再発明を避ける」哲学が凝縮された名題だ。怜空さんも同席している、無様な居眠りは許されないぞ。
 
