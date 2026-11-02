@@ -704,7 +704,7 @@ I get it all now...!
 
 * Split-stream into "CloudWatch Logs" to inspect the payloads. 
 * Monitor footprints via "CloudTrail" to investigate what went wrong. 
-* Catch shipwrecked messages in an "SQS Standard" DLQ to prevent loss. All three requirements are completely conquered, and every single step is accomplished through AWS infrastructure configuration without touching application code. Watching those puzzle pieces snap perfectly into place actually feels pretty satisfying. 
+* Catch shipwrecked messages in an "SQS Standard" DLQ to prevent loss. All three (requirements are *completely* conquered), and every single step is accomplished through AWS infrastructure configuration without touching application code. Watching those puzzle pieces (snap *perfectly* into) place actually feels pretty satisfying. 
 <日乃竜胆>
 見事な整理だ、イオち。
 DevOpsの真髄とは、いたずらにコードを弄り回すことではなく、プラットフォームが提供する堅牢なマネージド機能を正しく組み合わせ、最小限の手間で最大限の信頼性を勝ち取ることにある。
@@ -723,18 +723,18 @@ Now, let us examine the question displayed on the screen. The domain is Security
 月凪惟緒 え〜、なんか画面の文字数が既に暴力的すぎて、私の網膜が勝手にログアウトしかけてるんだけど……。ヒノりん、そもそも問題文が何を言ってるのかすら、一文字も頭に入ってこないよ〜。
 
 Io Tsukinagi
-Uh, the pure wall of text on this screen is already assaulting my eyes, and my retinas are basically trying to log out on their own... Hino-rin, I can't even get past the first sentence of the prompt.
+Uh, the pure wall of text on this screen is already assaulting my eyes, and my retinas are basically (trying to *log out *on their own)... Hino-rin, I can't even (get past the first *sentence* )of the prompt.
 
 蒞星怜空
 ふっ、初学者にとっては、真冬のツンドラ地帯で地図も持たずに放り出されたような絶望感であろうな。だが恐れるな。散らかった玩具箱を前に途方に暮れる赤子を見るような目で、貴様の迷走を見届けてやろう。
 
 Rea Rize
-Heh, for a novice, this must feel like being abandoned in the frozen tundra without a map. But fear not. I shall watch your delightful confusion with the gaze of someone observing an infant utterly baffled by an overturned toy chest.
+Heh, for a novice, this must feel like being abandoned in the frozen tundra without a map. But fear not. I shall watch your delightful confusion with the gaze of someone observing an infant utterly (baffled) by an (overturned) toy chest.
 
 日乃竜胆 怜空さん、茶化すのはそこまでにしていただきたい。イオち、まず問題文の状況を極限まで単純化して叩き込む。 「複数アカウントにまたがるCodeCommit（AWS上のGitリポジトリ）がある。現状、どの開発チームでも無差別に他チームのリポジトリのmainブランチへコードをプッシュできてしまっている。これを『自チーム所有のリポジトリのmainブランチのみ変更可能』に縛りたい。しかも最小限の運用負荷で、だ」。
 
 Rindo Hino
-Rea-san, kindly hold your teasing. Io-chi, let us reduce the question down to its bare essence.
+Rea-san,( kindly hold your teasing). Io-chi, let us (reduce *the question* down) to its bare essence.
 "There are CodeCommit repositories spread across multiple accounts. Right now, any team can push to the main branch of any other team's repository. We need to restrict them so they can only modify the main branch of their own team's repository—with minimal operational overhead."
 
 月凪惟緒 えっと……つまりさ、マンションの全住人の合鍵を全員が持ってて、誰でも他人の部屋の金庫を勝手に開けられる状態ってこと？ それで「自分の部屋だけしか開けられないように鍵を取り替えたい」みたいな？
@@ -745,14 +745,14 @@ So... basically, it's like every tenant in an apartment complex has a master key
 日乃竜胆 至極真っ当な比喩だ。その通りだ。 そして、この問題を解くための最重要キーワードが二つある。「ABAC（属性ベースのアクセス制御）」と「SCP（サービスコントロールポリシー）」だ。 解説の手順として、まずは選んではいけない不正解の3つの選択肢を完膚なきまでに論破し、その後に正解の3つの選択肢を組み上げる構成をとる。
 
 Rindo Hino
-An impeccably spot-on analogy. That is precisely right.
+An (impeccably spot-on) analogy. That is (precisely right).
 To conquer this scenario, two primary concepts are paramount: "ABAC <Attribute-Based Access Control>" and "SCP <Service Control Policies>."
-As for our syllabus, we will first dismantle each of the three incorrect options beyond all doubt, followed by assembling the three correct pieces into an airtight architecture.
+As for our syllabus, we will first dismantle each of the three incorrect options (beyond all doubt), (followed by *assembl*ing) the three correct pieces into an (airtight) architecture.
 
 月凪惟緒 間違いから片付けるスタイルね、了解〜。で、真っ先に脱落するダメな鍵はどれなの？
 
 Io Tsukinagi
-Clearing out the trash first—got it. So, which broken locks are getting thrown out right away?
+(Clearing out) the trash first—got it. So, which broken locks are getting thrown out right away?
 
 日乃竜胆 まず1つ目の不正解選択肢、「各アカウントのIAMロールにインラインポリシーを追加し、codecommit:GitPushアクションに対してcodecommit:References条件キーでmainブランチを指定したAllowステートメントを記述する」だ。
 
@@ -762,20 +762,20 @@ The first incorrect option to dissect: "Add an inline policy to the IAM role in 
 月凪惟緒 ふぇ？ 「Allow」って「許可する」って意味でしょ？ 「mainブランチへのプッシュを許可するよ」って書いてあげてるんだから、正しそうに見えちゃうんだけど……なんでこれが大ハズレなの？
 
 Io Tsukinagi
-Huh? Doesn't "Allow" just mean granting permission? If it says "You are allowed to push to the main branch," that sounds pretty legit... Why is that completely wrong?
+Huh? Doesn't "Allow" just mean (granting permission)? If it says "You are allowed to push to the main branch," that sounds pretty legit... Why is that completely wrong?
 
 日乃竜胆 IAMの評価論理における鉄則を思い出せ。 問題文には「どのチームでも全リポジトリのmainブランチにプッシュできる状態」とある。すなわち、開発者が使っているロールには、既に広い権限（全リポジトリへのアクセス権）が付与されているのだ。 AWSのIAMでは、明示的な拒否（Deny）がない限り、既存のAllowが存在すれば操作は通ってしまう。そこに「この条件でAllowする」というポリシーを追加したところで、既存の権限を縛ることは絶対に不可能なのだ。
 
 Rindo Hino
 Recall the ironclad rules of IAM evaluation logic.
 The prompt clearly states that developers can currently push to the main branch across all repositories. In other words, their existing roles already possess broad Allow permissions.
-In AWS IAM, unless an explicit Deny is present, an existing Allow will always permit the action. Simply adding another Allow policy with constraints does absolutely nothing to restrict existing broad permissions.
+In AWS IAM, (unless *an explicit Deny *is present), an existing Allow will always permit the action. Simply adding another Allow policy with constraints does absolutely nothing to restrict existing broad permissions.
 
 蒞星怜空 例えるなら、すでに全世界フリーパスのブラックカードを握りしめて豪遊している成金野郎に対して、「お前には特別にこの駄菓子屋の入店許可証（Allow）もやろう」と紙切れを渡すようなものだ。 当の本人は懐のブラックカードを出せばあらゆる扉を突破できるのだから、そんな紙切れに何の意味もない。滑稽極まる無駄骨だな。
 
 Rea Rize
-To illustrate: it is like handing a pass to a local candy shop to a mogul who already holds an all-access, unlimited black card.
-The individual can simply present their black card to bypass every locked door in existence, rendering your petty coupon utterly pointless. A display of comical futility.
+To illustrate: it is like handing a pass to a local candy shop to a (mogul )who already holds an all-access, unlimited black card.
+The individual can simply present their black card to bypass every locked door (in existence), (rendering *your petty coupon* utterly pointless). A display of comical futility.
 
 日乃竜胆 怜空さんの言う通りだ。さらに言えば、この選択肢には「チームの識別子とリポジトリの所有者を比較する条件（タグ条件）」が一切含まれていない。全アカウントに個別でインラインポリシーを配って回るなど、運用負荷の観点からも論外だ。
 
@@ -796,7 +796,7 @@ Now let us examine the second incorrect option.
 月凪惟緒 また呪文が増えた〜！ EventBridge？ Systems Manager？ なんかハイテクな自動化ロボットが監視して、悪いことしたら巻き戻してくれるんでしょ？ すごく優秀なシステムっぽく聞こえるけど、ダメなの？
 
 Io Tsukinagi
-More magic spells! EventBridge? Systems Manager? But doesn't this sound like a high-tech automated robot monitoring things and undoing mistakes if someone misbehaves? Sounds super sophisticated, so why is it bad?
+More magic spells! EventBridge? Systems Manager? But doesn't this sound like a high-tech automated robot monitoring things and undoing mistakes if someone (misbehaves)? Sounds super sophisticated, so why is it bad?
 
 日乃竜胆 最大の問題は「事後検知（リアクティブ）」である点だ。 EventBridgeがイベントを受け取り、Automationが起動して処理を終えるまでには、必ず「レイテンシー（遅延）」が発生する。 つまり、不正なコードがほんの数秒〜数十秒であっても、mainブランチに実際にマージ・反映されてしまうのだ。
 
@@ -819,13 +819,13 @@ Above all, orchestrating an automated Git rollback runbook becomes an operationa
 蒞星怜空 毒薬入りのスープを客に配膳した後に、「あ、間違えました」と胃洗浄ポンプを持って客の席に全速力で駆けつけるようなものだ。 最初から配膳口にガードマンを立たせて皿を止めれば済む話であろうに。なぜわざわざ地獄の事後処理ピタゴラスイッチを組みたがるのか、愚の骨頂といえよう。
 
 Rea Rize
-It is equivalent to serving a bowl of poison soup to a restaurant guest and then frantically dashing toward their table with a stomach pump yelling, "Oops, wrong order!"
-One could simply station a guard at the kitchen door to prevent the dish from leaving in the first place. Building an intricate, Rube Goldberg-esque disaster cleanup machine is pure madness.
+It is equivalent to serving a bowl of poison soup to a restaurant guest and then frantically( dashing toward) their table with a stomach pump yelling, "Oops, wrong order!"
+One could simply station a guard at the kitchen door to prevent the dish from leaving in the first place. Building an intricate, Rube Goldberg-(esque) disaster cleanup machine is pure madness.
 
 月凪惟緒 胃洗浄ポンプ持参のウェイターは絶対にお断りしたい……。入り口で止めなきゃダメってことね。 じゃあ3つ目の不正解は？
 
 Io Tsukinagi
-A waiter sprinting at me with a stomach pump is definitely not on my bucket list... So prevention at the gates is paramount.
+A waiter sprinting at me with a stomach pump is (definitely not on my bucket list)... So prevention at the gates is paramount.
 Then what's the third wrong answer?
 
 日乃竜胆 3つ目の不正解選択肢、「AWS Organizationsの管理アカウントからAWS Configルールをデプロイし、mainブランチへの変更を検知した際にAWS Lambdaで変更を自動的にリバートする仕組みを構築する」だ。
@@ -835,8 +835,8 @@ The third incorrect option: "Deploy an AWS Config rule from the AWS Organization
 
 月凪惟緒 あれっ、これもさっきの「胃洗浄ポンプ」と同じ匂いがプンプンする……？ ConfigとLambdaになってるけど！
 
-Io Tsukinagi
-Wait, this reeks of that exact same stomach pump scenario, doesn't it...? Just swapped out with Config and Lambda!
+Io (Tsukinagi)
+Wait, this (reeks of) that exact same stomach pump scenario, doesn't it...? Just swapped out with Config and Lambda!
 
 日乃竜胆 その通りだ、イオち。見抜いたな。 AWS Configはリソースの構成履歴を記録・監査するサービスであり、そもそもGitのコミットのようなミリ秒単位のトランザクションをリアルタイムにブロックする用途には作られていない。 検知までのタイムラグはEventBridgeよりもさらに長く、その間にLambdaでGitリバートを試みるなど、運用負荷と障害リスクの塊でしかない。 「予防的制御（Preventive Control）」ができる要件に対して、わざわざ壊れやすい「検知・修復的制御」を多重構築するのはアンチパターンなのだ。
 
@@ -844,7 +844,7 @@ Rindo Hino
 Spot on, Io-chi. You caught it immediately.
 AWS Config is tailored for auditing and evaluating resource configuration histories; it was never designed to intercept millisecond-level Git operations in real time.
 Its detection delay is even larger than EventBridge's. Attempting to programmatically execute Git reverts via Lambda under that delay is an operational and reliability nightmare.
-Implementing brittle detective and corrective controls when preventive control is readily available directly contradicts cloud architecture best practices.
+Implementing brittle detective and corrective controls when preventive control is (readily )available directly contradicts cloud architecture best practices.
 
 蒞星怜空 ダムが決壊してからバケツを持って走る村人を何千人配備するつもりだ、という話だな。 堤防を頑丈にして水門を閉じれば一秒で終わるものを。 これで不正解のゴミ溜めはすべて灰燼に帰した。いよいよ「本物の構築」とやらの種明かしだな、ヒノりん。
 
@@ -873,12 +873,12 @@ The first correct component:
 月凪惟緒 うっ……急にアルファベットの激流が……！ 「IdP」？ 「SAMLアサーション」？ 「セッションタグ」？ 一個ずつ解体してヒノりん！
 
 Io Tsukinagi
-Ugh... a sudden avalanche of alphabet soup! "IdP"? "SAML assertion"? "Session tags"? Break it down for me piece by piece, Hino-rin!
+Ugh... a sudden (avalanche) of alphabet soup! "IdP"? "SAML assertion"? "Session tags"? Break it down for me piece by piece, Hino-rin!
 
 日乃竜胆 怯むな、構造は極めて論理的だ。 まず「外部IdP（アイデンティティプロバイダー）」とは、社内の社員証発行システムのようなものだ（OktaやAzure ADなどだな）。 開発者がAWSにログインする際、IdPは「この人物は認証済みの社員であり、team-alphaに所属している」という証明書を発行する。この証明書データが「SAMLアサーション」だ。
 
 Rindo Hino
-Do not falter; the mechanics are strictly logical.
+Do not (falter); the mechanics are strictly logical.
 First, an "external IdP <Identity Provider>" functions like a corporate employee badge issuance system—such as Okta or Microsoft Entra ID.
 When a developer signs into AWS, the IdP issues a signed digital credential declaring: "This individual is authenticated and belongs to team-alpha." That digitally signed assertion is the SAML assertion.
 
@@ -897,13 +897,13 @@ By granting sts:TagSession in the IAM role's trust policy, the team name passed 
 蒞星怜空 入国審査でパスポートに「観光客」か「外交官」かのスタンプを押され、滞在中は常にその刻印が付きまとうようなものだ。 人間側がいちいちAWSのアカウントごとに設定し直さずとも、ログインした瞬間に「お前はteam-alphaの人間だ」という消せない焼印がセッションに刻まれるわけだな。
 
 Rea Rize
-It is just like getting an indelible stamp in your passport at border control reading "Tourist" or "Diplomat," which governs your permissions for the duration of your stay.
-Without any administrator needing to reconfigure individual AWS accounts, the moment you log in, an indelible imprint marking you as "team-alpha" is branded into your active session.
+It is just like getting an (indelible )stamp in your passport at border control reading "Tourist" or "Diplomat," which governs your permissions for the duration of your stay.
+Without any administrator needing to reconfigure individual AWS accounts, the moment you log in, an indelible (imprint )marking you as "team-alpha" is (branded into )your active session.
 
 月凪惟緒 消せない焼印……言い方は怖いけど、超便利じゃん！ ログインするだけで自動で名札が付くのね。 これで人間の準備はできた。じゃあ2つ目の正解パーツは？
 
 Io Tsukinagi
-An indelible imprint... slightly terrifying imagery, but incredibly convenient! You just log in and your name tag gets pinned on automatically.
+An indelible imprint... slightly terrifying (imagery), but incredibly convenient! You just log in and your name tag gets pinned on automatically.
 So the user identity is ready. What is our second winning puzzle piece?
 
 日乃竜胆 正解の第2ステップ、「組織内の各CodeCommitリポジトリに、所有チームの識別子を値とするaccess-teamタグを付与する」だ。
@@ -922,14 +922,14 @@ Ah! This time it's not the human, but attaching a label to the repository wareho
 Rindo Hino
 Sharp observation, Io-chi.
 We tag Repository A with "access-team = team-alpha" and Repository B with "access-team = team-beta."
-This serves as the "resource attribute <Resource Tag>" in our ABAC paradigm.
+This serves as the "resource attribute <Resource Tag>"( in *our ABAC* paradigm).
 Now the stage is set: we possess both the caller's identity tag <PrincipalTag> and the target object's tag <ResourceTag>.
 
 月凪惟緒 人間側の名札と、部屋側の表札が揃った！ あとは「名札と表札が一致してない奴は入るな！」ってルールを作ればいいんだよね？
 
 Io Tsukinagi
 The person's name tag and the door's nameplate are both set!
-Now all we need is a rule saying, "If your badge doesn't match the door's plate, keep out!" right?
+Now all we need is a rule saying, "If your badge doesn't match the door's plate, (keep out)!" right?
 
 日乃竜胆 その通りだ！ そしてそれを取り仕切るのが、最後の正解である第3ステップだ。 「組織のアカウントにSCPをアタッチし、codecommit:GitPush・PutFile・DeleteBranch・Merge*を対象に、codecommit:Referencesがrefs/heads/mainを参照し、かつaws:ResourceTag/access-teamとaws:PrincipalTag/access-teamが不一致の場合にDenyするステートメントを定義する」！
 
@@ -965,22 +965,22 @@ Wait, why does it use IfExists instead of a plain StringEquals? That feels like 
 Rindo Hino
 An outstanding insight, Io-chi.
 The IfExists condition operator functions as a critical fail-safe: if the specified key <References> is absent from the request context, it evaluates to True.
-Should an unusual Git call or API omit the References key, it prevents the request from bypassing scrutiny, safely triggering the Deny evaluation instead.
+Should an unusual Git call or API (omit) the References key, it prevents the request from bypassing scrutiny, safely triggering the Deny evaluation instead.
 And with StringNotEquals, the hammer of Deny descends exclusively when the team tags fail to match!
 
 月凪惟緒 なるほどぉ〜！ 「alphaチームの名札をつけた人が、betaチームの表札がついたリポジトリのmainブランチをいじろうとした瞬間、SCPの巨大な門がガシャンと閉まって弾き出される」ってわけだ！ しかもこれ、新しいチームが増えても、IdPにチーム名を登録してリポジトリにタグを貼るだけでいいから、ポリシーを毎回書き直さなくていいんだね！ 運用負荷最小限じゃん！
 
 Io Tsukinagi
 Aha!
-"The exact millisecond a user sporting a team-alpha badge tries to touch the main branch of a repo with a team-beta plaque, the massive SCP gate slams shut in their face!"
+"The exact millisecond a user sporting a team-alpha badge tries to touch the main branch of a repo with a team-beta (plaque), the massive SCP gate (slams shut in *their* face)!"
 And whenever a new team joins, you just assign the team name in the IdP and tag the repo—zero IAM policy rewrites needed! Minimal operational overhead achieved!
 
 蒞星怜空 ふふ、理解できたようだな。 愚か者が泥縄式にLambdaやConfigで後始末の自動化スクリプトを書き殴り、夜間オンコールで叩き起こされている間に、我々はこの優雅なABACとSCPの数行で、枕を高くして眠ることができるのだ。 これぞインフラ設計の美学、無駄を削ぎ落とした静寂の境地よ。
 
 Rea Rize
-Heh, it seems the lesson has stuck.
-While lesser engineers frantically script reactive Lambda and Config janitor jobs only to be wrenched awake by midnight on-call pages, we can sleep serenely, shielded by these elegant lines of ABAC and SCP.
-Such is the undeniable beauty of clean infrastructure design—a serene summit stripped of all bloat.
+Heh, it( seems the lesson has stuck).
+While lesser engineers frantically script reactive Lambda and Config (janitor jobs) only to be( wrenched awake) by midnight on-call pages, we can sleep (serenely), shielded by these elegant lines of ABAC and SCP.
+Such is the undeniable beauty of clean infrastructure design—a serene summit (stripped of all bloat).
 
 日乃竜胆
 その通りだ。
@@ -993,7 +993,7 @@ Precisely.
 
 1. Map the IdP SAML assertion into session tags <PrincipalTag>. 
 2. Assign the team identifier tag <ResourceTag> to CodeCommit repositories. 
-3. Enforce an organization-wide SCP explicitly denying main branch modifications whenever the tags do not match. This trifecta constitutes the most robust, minimal-overhead architecture demanded by this question. Io-chi, no lingering doubts remain, correct? 
+3. Enforce an organization-wide SCP explicitly denying main branch modifications whenever the tags do not match. This trifecta constitutes the most robust, minimal-overhead architecture demanded by this question. Io-chi, no (lingering) doubts remain, correct? 
 月凪惟緒
 うん！ 完全に脳内マッピング完了したよ、ヒノりん、怜空さん！
 これで私も、夜中にアラートで叩き起こされる哀しきエンジニアにならずに済みそう〜。二度寝しよっと。
