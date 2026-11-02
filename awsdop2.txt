@@ -1,1 +1,3065 @@
 
+=== [画像翻訳] ===
+
+(日乃竜胆)
+さて、基本情報技術者試験の『制御の理論』、その深淵を覗く時が来たようだな。イオち、この図を見て何を思う？
+
+さて、基本情報技術者試験の『制御の理論』、その深淵を覗く時が来たようだな。イオち、この図を見て何を思う？
+
+(月凪惟緒)
+んー……なんか黒いドーナツの上をミニ四駆が走ってる感じ？ でもセンサーとかモーターとか、文字が多くて脳がフリーズしそう……。このバイブス、真冬のトタン裏で震えるダンゴムシ並みに動けないよぉ……。
+
+んー……なんか黒いドーナツの上をミニ四駆が走ってる感じ？ でもセンサーとかモーターとか、文字が多くて脳がフリーズしそう……。このバイブス、真冬のトタン裏で震えるダンゴムシ並みに動けないよぉ……。
+
+(蒞星怜空)
+フリーズか。システムがデッドロックに陥る前の、あの静寂のようだな。だが安心しろ、この問題は『均衡』という名の細い糸を渡るだけの、極めて無機質な遊戯に過ぎない。一歩操作を誤れば、この車は暗黒の虚無へと直進し、二度と戻らぬ迷子となる。まるで、仕様変更の嵐に呑まれたプロジェクトの末路のようにな。
+
+フリーズか。システムがデッドロックに陥る前の、あの静寂のようだな。だが安心しろ、この問題は『均衡』という名の細い糸を渡るだけの、極めて無機質な遊戯に過ぎない。一歩操作を誤れば、この車は暗黒の虚無へと直進し、二度と戻らぬ迷子となる。まるで、仕様変更の嵐に呑まれたプロジェクトの末路のようにな。
+
+(日乃竜胆)
+怜空さん、初手から不穏な例えはやめていただきたい。イオち、まずは前提を整理するぞ。この問題の鍵は『センサーの出力値』と『車の曲がり方』の相関関係にある。センサーは『黒に掛かる比率が大きいと出力値が小さくなる』。つまり、黒＝低、白＝高だ。ここを間違えれば、全てが灰燼に帰すぞ。
+
+怜空さん、初手から不穏な例えはやめていただきたい。イオち、まずは前提を整理するぞ。この問題の鍵は『センサーの出力値』と『車の曲がり方』の相関関係にある。センサーは『黒に掛かる比率が大きいと出力値が小さくなる』。つまり、黒＝低、白＝高だ。ここを間違えれば、全てが灰燼に帰すぞ。
+
+(月凪惟緒)
+黒は低、白は高……てことは、センサーの値が大きい方は『道（黒い線）から外れて白いところにいるよ！』って叫んでるってこと？
+
+黒は低、白は高……てことは、センサーの値が大きい方は『道（黒い線）から外れて白いところにいるよ！』って叫んでるってこと？
+
+(日乃竜胆)
+至極真っ当だ。慧眼だな。では、具体的に『センサーLの出力値 ＞ センサーRの出力値』の時を考えてみよう。Lの方が値が大きいということは、左側のセンサーが白い部分にはみ出し、右側のセンサーは黒い線の上にあるということだ。つまり、車は『左に逸れている』状態なのだ。
+
+至極真っ当だ。慧眼だな。では、具体的に『センサーLの出力値 ＞ センサーRの出力値』の時を考えてみよう。Lの方が値が大きいということは、左側のセンサーが白い部分にはみ出し、右側のセンサーは黒い線の上にあるということだ。つまり、車は『左に逸れている』状態なのだ。
+
+(月凪惟緒)
+あー、なるほどねぇ。左に逸れてるなら、右にハンドルを切らないとダメじゃん。でもこれ、ハンドルないよね？ モーターの回転だけでどうにかするの？
+
+あー、なるほどねぇ。左に逸れてるなら、右にハンドルを切らないとダメじゃん。でもこれ、ハンドルないよね？ モーターの回転だけでどうにかするの？
+
+(蒞星怜空)
+戦車の信地旋回のようなものだ。右に曲がりたければ、左の車輪を激しく回し、右の車輪を沈黙させる。左右の出力差が生む、残酷なまでの方向転換……。片方の翼をもがれた鳥が、空で円を描くように、この車もまた、回転速度の差によって運命を決定づけられるのだよ。
+
+戦車の信地旋回のようなものだ。右に曲がりたければ、左の車輪を激しく回し、右の車輪を沈黙させる。左右の出力差が生む、残酷なまでの方向転換……。片方の翼をもがれた鳥が、空で円を描くように、この車もまた、回転速度の差によって運命を決定づけられるのだよ。
+
+(日乃竜胆)
+怜空さんの言う通りだ。右に曲がるには『左モーター(L)を上げ、右モーター(R)を下げる』必要がある。逆に、右に逸れた（L＜R）なら、左に曲がるために『Lを下げ、Rを上げる』のが正解だ。では、この論理を武器に、誤った選択肢を一つずつ屠っていくぞ。
+
+怜空さんの言う通りだ。右に曲がるには『左モーター(L)を上げ、右モーター(R)を下げる』必要がある。逆に、右に逸れた（L＜R）なら、左に曲がるために『Lを下げ、Rを上げる』のが正解だ。では、この論理を武器に、誤った選択肢を一つずつ屠っていくぞ。
+
+(日乃竜胆)
+まずは選択肢アだ。L＞R（左に逸れた）の時にL上げR下げ、これは右に曲がるから正しい。だが、L＜R（右に逸れた）の時もL上げR下げになっている。これでは右に逸れてもさらに右に曲がり続け、コースアウトして奈落の底へ一直線だ。論理の欠片もない、ただの暴走特急だな。
+
+まずは選択肢アだ。L＞R（左に逸れた）の時にL上げR下げ、これは右に曲がるから正しい。だが、L＜R（右に逸れた）の時もL上げR下げになっている。これでは右に逸れてもさらに右に曲がり続け、コースアウトして奈落の底へ一直線だ。論理の欠片もない、ただの暴走特急だな。
+
+(月凪惟緒)
+あはは、右にしか曲がれないとか、不器用すぎて草。一生ぐるぐるしてそう……。
+
+あはは、右にしか曲がれないとか、不器用すぎて草。一生ぐるぐるしてそう……。
+
+(日乃竜胆)
+次に選択肢ウだ。L＞R（左に逸れた）の時にL下げR上げ……。これは左に曲がる制御だ。左に逸れているのにさらに左へ曲がるとは、もはや自殺志願者としか思えん。自ら破滅を加速させる、愚か者の選択だな。
+
+次に選択肢ウだ。L＞R（左に逸れた）の時にL下げR上げ……。これは左に曲がる制御だ。左に逸れているのにさらに左へ曲がるとは、もはや自殺志願者としか思えん。自ら破滅を加速させる、愚か者の選択だな。
+
+(蒞星怜空)
+エラーを検知しながら、そのエラーを拡大させるパッチを当てるようなものだ。エンジニアとしての尊厳が灰燼に帰す、最も忌むべき振る舞いといえよう。この制御を組んだ者は、デバッグの無限地獄に堕ちるのがお似合いだ。
+
+エラーを検知しながら、そのエラーを拡大させるパッチを当てるようなものだ。エンジニアとしての尊厳が灰燼に帰す、最も忌むべき振る舞いといえよう。この制御を組んだ者は、デバッグの無限地獄に堕ちるのがお似合いだ。
+
+(日乃竜胆)
+そして選択肢エ。これはL＞Rで左曲がり、L＜Rで右曲がり……。全ての制御が逆だ。コースに戻ろうとする意志が微塵も感じられない。鏡合わせの狂気、あるいは世界を反転させたいという歪んだ願望の現れか。当然、誤りだ。
+
+そして選択肢エ。これはL＞Rで左曲がり、L＜Rで右曲がり……。全ての制御が逆だ。コースに戻ろうとする意志が微塵も感じられない。鏡合わせの狂気、あるいは世界を反転させたいという歪んだ願望の現れか。当然、誤りだ。
+
+(月凪惟緒)
+全部逆って、逆にすごいね……。天邪鬼すぎる。じゃあ、残ったイが正解ってこと？
+
+全部逆って、逆にすごいね……。天邪鬼すぎる。じゃあ、残ったイが正解ってこと？
+
+(日乃竜胆)
+その通り。選択肢イこそが、この混沌とした回路に秩序をもたらす唯一の福音だ。L＞R（左に逸れた）ならL上げR下げで右へ修正。L＜R（右に逸れた）ならL下げR上げで左へ修正。これこそが、あるべき姿、制御の王道なのだ。
+
+その通り。選択肢イこそが、この混沌とした回路に秩序をもたらす唯一の福音だ。L＞R（左に逸れた）ならL上げR下げで右へ修正。L＜R（右に逸れた）ならL下げR上げで左へ修正。これこそが、あるべき姿、制御の王道なのだ。
+
+(月凪惟緒)
+へぇ〜、なるほどねぇ。センサーが『白だよ！』って言ってる方のタイヤを頑張らせて、反対側を休ませれば、勝手にコースに戻るってことかぁ。意外とシンプルでチルいじゃん。
+
+へぇ〜、なるほどねぇ。センサーが『白だよ！』って言ってる方のタイヤを頑張らせて、反対側を休ませれば、勝手にコースに戻るってことかぁ。意外とシンプルでチルいじゃん。
+
+(蒞星怜空)
+シンプル、か。だがその背後には、微細な電圧の揺らぎや、摩擦という名の物理的呪詛が渦巻いている。この『イ』という選択肢は、それら全ての不条理をねじ伏せ、円環という名の永遠を走るための、唯一の契約書なのだよ。まあ、現実の現場では、こんなに綺麗に動かなくて、深夜のオフィスで血を吐くことになるのだがな。
+
+シンプル、か。だがその背後には、微細な電圧の揺らぎや、摩擦という名の物理的呪詛が渦巻いている。この『イ』という選択肢は、それら全ての不条理をねじ伏せ、円環という名の永遠を走るための、唯一の契約書なのだよ。まあ、現実の現場では、こんなに綺麗に動かなくて、深夜のオフィスで血を吐くことになるのだがな。
+
+(日乃竜胆)
+怜空さん、最後のは余計だ。だが、イオちが本質を理解したようで何よりだ。センサーの値を読み解き、逆方向への修正力を与える。これがフィードバック制御の基礎。AWSのオートスケーリングなども、本質的にはこれと同じ、需要と供給の均衡を保つための舞踏なのだ。覚えておくとよかろう。
+
+怜空さん、最後のは余計だ。だが、イオちが本質を理解したようで何よりだ。センサーの値を読み解き、逆方向への修正力を与える。これがフィードバック制御の基礎。AWSのオートスケーリングなども、本質的にはこれと同じ、需要と供給の均衡を保つための舞踏なのだ explorer。覚えておくとよかろう。
+
+(月凪惟緒)
+オートスケーリング……。なんか強そう。でも、今日のところはこの黒いドーナツの上を走るミニ四駆の気持ちになれたから、満足かな。ヒノりん、怜空さん、ありがと〜。脳の温度が2度くらい上がった気がするよぉ……。
+
+オートスケーリング……。なんか強そう。でも、今日のところはこの黒いドーナツの上を走るミニ四駆の気持ちになれたから、満足かな。ヒノりん、怜空さん、ありがと〜。脳の温度が2度くらい上がった気がするよぉ……。
+
+---
+
+=== [画像翻訳] ===
+
+(日乃竜胆)
+さて、基本情報技術者試験の『ディープラーニング』に関する設問だな。イオち、心して聞け。これは現代のAI技術の根幹を成す概念であり、AWSにおいてもSageMakerなどのサービスで日常的に扱われる極めて重要な領域だ。理解を疎かにすれば、技術の荒波に呑まれることになろう。
+
+Now, we shall address the question regarding 'Deep Learning' from the Fundamental Information Technology Engineer Examination. Io, listen closely. This concept forms the very bedrock of modern AI technology and is an extremely vital domain handled daily in AWS services like SageMaker. To neglect its understanding is to be swallowed by the turbulent waves of technology.
+
+(月凪惟緒)
+でぃーぷらーにんぐ……深い学習？　なんか、海の底で重たい教科書開いてるみたいで、想像しただけで息苦しいねぇ、ヒノりん。もっとこう、ふわふわっとした感じで理解できないかなぁ……。
+
+Deep Learning... deep study? It sounds like opening a heavy textbook at the bottom of the ocean; just thinking about it makes me feel suffocated, Hino-rin. Can't we just, like, understand it with a more fluffy vibe...?
+
+(蒞星怜空)
+息苦しいどころか、それは情報の深淵に沈み、二度と光の届く場所へは戻れない知の監獄に幽閉されるようなものだ。だが、その暗闇の奥底で、機械が自ら『概念』という名の亡霊を掴み取る瞬間がある。それは、人間が神の真似事をして失敗し続けた歴史の果てに辿り着いた、残酷なまでに美しい終着点といえよう。
+
+Far from being merely suffocating, it is akin to sinking into an abyss of information and being imprisoned in a jail of intellect from which light can never return. Yet, in the deepest reaches of that darkness, there is a moment when the machine grasps the phantom known as a 'concept' by itself. One might call it a cruelly beautiful destination reached at the end of a history where humans repeatedly failed at playing God.
+
+(日乃竜胆)
+師匠、初手から場を暗雲で覆うのは控えていただきたい。イオちが凍りついているではないか。……気を取り直して、まずは誤りの選択肢から斬り捨てていくぞ。まずは選択肢イだ。『大量のデータから例外事項を取り除きながら分析を繰り返す』とあるが、これはディープラーニングの本質ではない。
+
+Master, I must ask you to refrain from shrouding the scene in dark clouds from the very start. Io is practically frozen. ...Pulling ourselves together, let us begin by cutting down the incorrect options. First, option B. It mentions 'repeatedly analyzing while removing outliers from large amounts of data,' but this is not the essence of Deep Learning.
+
+(月凪惟緒)
+例外を取り除く……。なんか、クラスの目立ってる子を無理やり静かにさせるみたいな感じ？　それって分析って言えるのかなぁ。
+
+Removing outliers... Is that like forcing the standout kids in class to be quiet? I wonder if you can even call that analysis.
+
+(蒞星怜空)
+ふふ、それは分析という名の『去勢』にすぎない。不都合な真実を切り捨て、平均という名の凡庸な檻に閉じ込める作業だ。まるで、規格外の果実を無慈悲に粉砕機へ放り込む、血も涙もない選別ラインのようなものだ。ディープラーニングはそんな矮小な真似はしない。むしろ、そのノイズの中に潜む微かな予兆すらも、多層の闇の中で咀嚼し、糧とするのだからな。
+
+Heh, that is nothing more than 'castration' in the name of analysis. It is the act of discarding inconvenient truths and confining them within the mediocre cage of the average. It is like a heartless sorting line that ruthlessly tosses non-standard fruit into a crusher. Deep Learning does not engage in such petty acts. Rather, it chews on and nourishes itself with even the faint omens hidden within that noise, deep inside its multi-layered darkness.
+
+(日乃竜胆)
+左様。ディープラーニングは『特徴量』、つまり何に注目すべきかを人間が教えずとも、自ら見つけ出す点に凄みがある。例外を消すのではなく、膨大なデータからパターンを抽出するのだ。次に選択肢ウ、『三段論法、統計的手法やパターン認識手法を組み合わせる』。これもディープラーニングの固有の説明としては不適切だ。
+
+Indeed. The dreadfulness of Deep Learning lies in the fact that it finds 'features'—that is, what to focus on—by itself, without humans teaching it. It doesn't erase exceptions; it extracts patterns from vast data. Next, option C: 'combining syllogism, statistical methods, and pattern recognition.' This is also inappropriate as a specific description of Deep Learning.
+
+(月凪惟緒)
+さんだんろんぽう……。なんか、おじいちゃんが難しい顔して『AはBで、BはCだから、AはCなんじゃ！』って言ってるイメージ。古臭い感じがするねぇ。
+
+Syllogism... I have this image of an old man with a difficult expression saying, 'A is B, and B is C, therefore A is C!' It feels quite old-fashioned.
+
+(蒞星怜空)
+慧眼だな、イオち。三段論法は記号論理学の遺物だ。かつてのAI、いわゆる『第2次AIブーム』の主役たちは、そうしたガチガチの論理という名の鎖で世界を縛ろうとした。だが、現実はそんなに都合よくできてはいない。論理の鎖が届かない曖昧な領域で、彼らは無残に餓死したのだ。この選択肢は、いわば墓場から這い出してきたゾンビのような、時代遅れの知性の残骸といえよう。
+
+Keen eye, Io. Syllogism is a relic of symbolic logic. The protagonists of past AI—the so-called 'Second AI Boom'—tried to bind the world with chains of rigid logic. However, reality is not constructed so conveniently. In the ambiguous realms where the chains of logic could not reach, they starved to death miserably. This option is, so to speak, a remnant of obsolete intellect, like a zombie crawling out of a graveyard.
+
+(日乃竜胆)
+さらに選択肢エだ。『知識がルールに従って表現されており、演繹手法を利用した推論によって……』。これはまさに『エキスパートシステム』の定義そのものだ。人間が『もしAならばBせよ』というルールを大量に書き込む手法だな。だが、これでは未知の事態に対応できぬ。人間が教えたこと以上のことはできんのだ。
+
+Furthermore, option D: 'Knowledge is represented according to rules, and through inference using deductive methods...' This is the exact definition of an 'Expert System.' It's a method where humans write down a vast number of rules like 'if A, then do B.' However, this cannot handle unknown situations. It can do nothing beyond what humans have taught it.
+
+(月凪惟緒)
+あー、マニュアル人間みたいなAIってことかぁ。マニュアルに書いてないことが起きると『エラーです、わかりません』ってフリーズしちゃう、ちょっと融通の利かない子なんだね。
+
+Ah, so it's like an AI that's a 'manual person.' When something not in the manual happens, it just freezes saying 'Error, I don't know'—a bit of an inflexible kid, isn't it?
+
+(蒞星怜空)
+そう、それは魂を持たない操り人形だ。糸が切れればただの木屑にすぎない。人間がルールという名の呪詛を刻み込み、その通りに動くことを強要する。そこには『学習』という名の自由も、飛躍も存在しない。暗澹たる決定論の檻の中で、決められたダンスを踊り続けるだけの悲劇的な存在だ。
+
+Yes, it is a puppet without a soul. Once the strings are cut, it is nothing but wood scraps. Humans carve in curses called rules and force it to move accordingly. There is no freedom or leap called 'learning' there. It is a tragic existence that merely continues to dance a predetermined dance within the cage of bleak determinism.
+
+(日乃竜胆)
+そして、ようやく正解の選択肢アに辿り着く。『あるデータから結果を求める処理を、人間の脳神経回路のように多層の処理を重ねることによって、複雑な判断をできるようにする』。これこそがディープラーニング、すなわち深層学習の真髄だ。ニューラルネットワークを何層にも重ねることで、機械は自らデータの背後にある抽象的な特徴を掴み取るのだ。
+
+And finally, we arrive at the correct option, A: 'Processing data to obtain results by layering multiple levels of processing like human brain neural circuits to enable complex judgments.' This is the very essence of Deep Learning. By stacking neural networks in many layers, the machine grasps the abstract features behind the data on its own.
+
+(月凪惟緒)
+脳神経回路……ニューラルネットワークってやつ？　人間の脳をマネして、層をいっぱい重ねるから『ディープ』なんだね。なんか、ミルフィーユみたいに知識を重ねていく感じかなぁ。美味しそうだけど、ちょっと重たそう。
+
+Neural circuits... that 'Neural Network' thing? It mimics the human brain and is 'Deep' because it stacks many layers. I guess it's like layering knowledge like a mille-feuille. Sounds tasty, but a bit heavy.
+
+(蒞星怜空)
+ミルフィーユか。その甘美な比喩を借りるなら、それは幾千もの層の間に、人間には決して理解できない『悪魔の証明』を挟み込んだ禁断の菓子だ。層が深くなればなるほど、中で何が起きているのか、開発者である人間ですら完全には把握できなくなる。これを『ブラックボックス問題』と呼ぶが、その不可解な闇の中から、人間を凌駕する精度で『猫』や『癌細胞』を見つけ出す知性が産声を上げるのだ。壮絶なまでの皮肉だとは思わないか？　我々は、自分たちが理解できない知能を創り出してしまったのだからな。
+
+A mille-feuille, is it? To borrow that sweet metaphor, it is a forbidden confection that sandwiches 'diabolical proofs'—which humans can never understand—between thousands of layers. The deeper the layers go, the more even the human developers lose the ability to fully grasp what is happening inside. This is called the 'black box problem,' but from within that inscrutable darkness, an intellect is born that identifies 'cats' or 'cancer cells' with precision surpassing that of humans. Don't you find it grandly ironic? For we have created an intelligence that we ourselves cannot comprehend.
+
+(日乃竜胆)
+師匠の仰る通り、その『深さ』こそが、単純な統計処理やルールベースのAIとの決定的な違いだ。AWSのサービス、例えば画像認識のRekognitionや翻訳のTranslateも、この多層構造の恩恵を受けている。イオち、ディープラーニングとは『脳を模した多層構造による、自律的な特徴抽出』だと脳に刻み込め。これが正解への唯一の道標だ。
+
+As my Master says, that 'depth' is the decisive difference from simple statistical processing or rule-based AI. AWS services, such as Rekognition for image recognition or Translate for translation, also benefit from this multi-layered structure. Io, engrave this into your brain: Deep Learning is 'autonomous feature extraction through a multi-layered structure mimicking the brain.' This is the sole signpost to the correct answer.
+
+(月凪惟緒)
+はーい、脳に刻んだよぉ。多層のミルフィーユ……じゃなくて、ニューラルネットワークが複雑な判断をする、てことだね。ヒノりんの解説、相変わらずキレッキレで、ちょっとだけ頭が冴えた気がするよ。怜空さんの話は……うん、今夜夢に出てきそうなくらい濃かったけどねぇ。
+
+Okay, engraved it in my brain. Multi-layered mille-feuille... no, a neural network making complex judgments, that's it. Hino-rin's explanation is sharp as always; I feel like my head cleared up just a bit. As for Rea-san's talk... yeah, it was so intense it might show up in my dreams tonight.
+
+---
+
+=== [画像翻訳] ===
+
+(日乃竜胆)
+さて、イオち。基本情報技術者試験の要諦、AIとディープラーニングの深淵について講義を始めるとしよう。心して聞くがよい。この設問は、現代のテクノロジーを支える知性の根源を問う、極めて重要な一歩だ。
+
+Now, Io-chi. Let us begin the lecture on the essence of the Fundamental Information Technology Engineer Examination: the abyss of AI and Deep Learning. Listen closely. This question is a crucial first step, questioning the very roots of the intelligence that supports modern technology.
+
+(月凪惟緒)
+んー……ディープラーニング……。深い学習、てこと？ なんか、冬の湖の底に沈んでいくみたいな、ダル重な響きだねぇ。ヒノりん、お手柔らかにお願い……。
+
+Mmm... Deep Learning... So, like, learning that's deep? It has this heavy, sluggish ring to it, like sinking to the bottom of a frozen lake. Hino-rin, please go easy on me...
+
+(蒞星怜空)
+ふふ、湖の底か。そこには過去のエンジニアたちが積み上げた、論理の屍が累々と横たわっているのかもしれないな。ディープラーニングという名の、シリコンで編まれた擬似的な脳髄……。そのグロテスクなまでの美しさを、ヒノりんが解剖してくれるはずだ。
+
+Heh, the bottom of a lake, is it? Perhaps the corpses of logic piled up by past engineers lie there in heaps. A pseudo-brain woven from silicon, known as Deep Learning... Hino-rin shall dissect its almost grotesque beauty for us.
+
+(日乃竜胆)
+師匠、相変わらずの詩的な毒舌だな。だが、その通りだ。まずは前提知識を整理しよう。AI（人工知能）という広大な領土の中に、データから学習する『機械学習』という国があり、そのさらに奥地に、人間の脳を模した『ディープラーニング（深層学習）』という秘境が存在するのだ。
+
+Master, your poetic sarcasm is as sharp as ever. But you are correct. First, let us organize our prerequisite knowledge. Within the vast territory of AI (Artificial Intelligence), there is a nation called 'Machine Learning' that learns from data, and further inland lies the unexplored region of 'Deep Learning,' which mimics the human brain.
+
+(月凪惟緒)
+マトリョーシカみたいな感じ？ 一番小さいのが一番すごいやつ、みたいな。
+
+So it's like a Matryoshka doll? The smallest one is the most impressive one?
+
+(日乃竜胆)
+その直感、悪くない。では、選択肢を一つずつ、その欺瞞を暴いていこう。まずは選択肢アだ。『"AならばBである"というルールを人間があらかじめ設定して……』。これはディープラーニングではない。ただの『ルールベース』、あるいは『推論エンジン』に過ぎん。
+
+That intuition isn't bad. Now, let us expose the deceptions of each option one by one. First, option A. 'A human pre-sets rules such as "If A, then B"...' This is not Deep Learning. It is merely a 'rule-based system' or an 'inference engine.'
+
+(月凪惟緒)
+あー、お母さんに『宿題やったらゲームしていいよ』って言われるみたいな？ ルールが決まってて、融通がきかない感じ。
+
+Ah, like when my mom says, 'If you do your homework, you can play games'? The rules are set, and there's no flexibility.
+
+(蒞星怜空)
+そう、硬直した官僚機構のようなものだ。想定外の事態が起きれば、そのシステムは沈黙し、ただのガラクタへと成り下がる。人間の手で全てのルールを書くなど、神の真似事をするにはあまりに傲慢で、かつ非効率な所業といえよう。
+
+Yes, it is like a rigid bureaucracy. If an unexpected situation arises, the system falls silent and degrades into mere junk. Writing every single rule by human hand is an act too arrogant and inefficient for those attempting to play God.
+
+(日乃竜胆)
+次に選択肢イだ。『特定分野に特化せずに、広範囲で汎用的な問題解決ができる』。これは『汎用人工知能（AGI）』の理想像だが、現在のディープラーニングは、むしろ特定のタスクにおいて人間を凌駕する『特化型AI』なのだ。この選択肢は、現実と理想を混同させる罠だな。
+
+Next is option B. 'Capable of general-purpose problem solving across a wide range without specializing in a specific field.' This is the ideal image of 'Artificial General Intelligence (AGI),' but current Deep Learning is actually 'Narrow AI' that surpasses humans in specific tasks. This option is a trap that confuses reality with ideals.
+
+(月凪惟緒)
+なんでもできるドラえもん、じゃなくて、囲碁だけめっちゃ強い人、みたいなこと？
+
+So instead of a Doraemon who can do anything, it's like someone who is just incredibly good at Go?
+
+(蒞星怜空)
+皮肉なものだ。全知全能を夢見て産み落とされた知性が、実際には『猫の画像を見分ける』という単一の狂気に囚われているのだから。汎用性という言葉は、今のAIにとっては、まだ届かぬ星の輝きにすぎない。
+
+How ironic. An intelligence born dreaming of omniscience is, in reality, possessed by the single madness of 'distinguishing cat images.' For today's AI, the word 'versatility' is nothing more than the light of a star yet out of reach.
+
+(日乃竜胆)
+そして選択肢エ。『医療診断などの分野に限定されるが……確率的に高い判断ができる』。これは『エキスパートシステム』の説明だ。専門家の知識を詰め込んだ、いわば電子の百科事典だな。ディープラーニングの特徴である『自ら特徴を見出す』という性質が欠落している。
+
+And then option D. 'Limited to fields such as medical diagnosis... but capable of making highly probable judgments.' This describes an 'Expert System.' It is, so to speak, an electronic encyclopedia packed with expert knowledge. It lacks the 'self-discovery of features' that characterizes Deep Learning.
+
+(月凪惟緒)
+物知りなおじいちゃん、てことかぁ。でも、自分で新しいことは考えられないんだね。
+
+So it's like a knowledgeable old man. But he can't think of new things on his own.
+
+(蒞星怜空)
+知識の奴隷だな。教えられたことの枠外では、赤子同然の無力さを晒すことになる。自ら学び、自ら法則を抽出する……その『自律性』こそが、ディープラーニングという怪物を怪物たらしめている所以だ。
+
+A slave to knowledge. Outside the framework of what it has been taught, it exposes a helplessness akin to an infant. To learn for oneself, to extract laws for oneself... that 'autonomy' is exactly what makes the monster known as Deep Learning a monster.
+
+(日乃竜胆)
+いよいよ正解の選択肢ウだ。『人間の脳神経回路を模して……ニューラルネットワークを用いて……』。これこそがディープラーニングの正体。多層構造のニューラルネットワークが、データの海から自動的に『特徴量』を抽出し、認識を行う。人間が『これが猫の特徴だ』と教える必要すらないのだ。
+
+Finally, the correct option, C. 'Mimicking human neural circuits... using neural networks...' This is the true identity of Deep Learning. A multi-layered neural network automatically extracts 'features' from a sea of data to perform recognition. There is no need for a human to teach it, 'This is what a cat looks like.'
+
+(月凪惟緒)
+脳みそをマネしてるんだ……。なんか、ちょっと怖いかも。勝手に賢くなっていくなんて、私の脳みそもディープラーニングしてくれないかなぁ。寝てる間に試験範囲全部覚えてくれるとか。
+
+It's mimicking a brain... That's a little scary. I wish my brain would do some Deep Learning too, getting smarter on its own. Like, memorizing the whole exam scope while I'm asleep.
+
+(蒞星怜空)
+イオちの脳がディープラーニングを始めたら、まず『いかに効率よく二度寝するか』という最適化の果てに、永遠の眠りに到達しそうだがな。だが、この『多層（ディープ）』であることの重みを忘れてはならない。層を重ねるごとに、抽象的な概念が結晶化していく……そのプロセスは、まるで混沌から秩序が生まれる創世記のようだ。
+
+If Io-chi's brain started Deep Learning, it would likely reach eternal sleep after optimizing 'how to most efficiently hit the snooze button.' However, one must not forget the weight of being 'Deep' (multi-layered). As layers pile up, abstract concepts crystallize... that process is like a Genesis where order is born from chaos.
+
+(日乃竜胆)
+まとめよう。ディープラーニングとは、人間の脳を模したニューラルネットワークを『深く』重ね、データから自律的に学習する手法だ。ルールを教え込むのではなく、自らルールを見出す。このパラダイムシフトこそが、正解が『ウ』である理由だ。理解できたか、イオち。
+
+Let us summarize. Deep Learning is a method that 'deeply' stacks neural networks mimicking the human brain to learn autonomously from data. Instead of being taught rules, it finds them itself. This paradigm shift is exactly why 'C' is the correct answer. Do you understand, Io-chi?
+
+(月凪惟緒)
+うん、なんとなくわかった気がする。脳みそのマネっこで、自分で勝手にルールを見つけるすごいマトリョーシカ、だね。ヒノりんの解説、意外とスッと入ってきたよ。怜空さんの例えは、ちょっと暗雲が立ち込めてたけど……。
+
+Yeah, I think I kind of get it. It's a super Matryoshka that mimics a brain and finds rules all by itself. Hino-rin's explanation actually went in pretty smoothly. Rea-san's analogies were a bit like dark clouds gathering, though...
+
+(蒞星怜空)
+ふふ、暗雲の先にこそ、真理の稲妻が走るものだ。さて、次の問題という名の生贄を捧げるとしようか。この知性の狂宴は、まだ始まったばかりだ。
+
+Heh, it is beyond the dark clouds that the lightning of truth strikes. Now, shall we offer up the next question as a sacrifice? This banquet of intelligence has only just begun.
+
+---
+
+=== [画像翻訳] ===
+
+(日乃竜胆)
+さて、イオち。今回は基本情報技術者試験の「AI（人工知能）」に関する設問だな。AWSの学習においても、AIサービスは避けて通れぬ道。まずはこの問題の核心を突く。AIとは何か、その定義を明確にせねばなるまい。
+
+Now, Io-chi. This time we're looking at a question about 'AI (Artificial Intelligence)' from the Fundamental Information Technology Engineer Examination. Even in AWS studies, AI services are an unavoidable path. First, we must strike at the core of this problem. We must clarify what AI actually is—its definition.
+
+(月凪惟緒)
+AIねぇ……。最近どこにでもいるよね。ChatGPTとか、お掃除ロボットとか。でも、テストに出るとなると、何がAIで何がそうじゃないのか、境界線がぼやけてて私の脳内は絶対零度だよ。ヒノりん、助けて……。
+
+AI, huh... It's everywhere lately. ChatGPT, robot vacuums, and all that. But when it comes to a test, the boundary between what's AI and what isn't gets all blurry, and my brain just hits absolute zero. Hino-rin, help me out...
+
+(蒞星怜空)
+ふふ、世の中のマーケティングは、ただの自動化プログラムにすら『AI搭載』というラベルを貼り、高値で売りつける詐欺まがいの狂気に満ちているからな。だが、工学の世界では、そのメスはもっと鋭利だ。イオち、AIの本質は『学習』『推論』『判断』という、人間の知的な営みを模倣する点にあるのだよ。
+
+Heh, the world of marketing is filled with a madness bordering on fraud, slapping 'AI-powered' labels even on simple automation programs just to sell them at a premium. But in the world of engineering, the scalpel is much sharper. Io-chi, the essence of AI lies in its imitation of human intellectual activities: 'learning,' 'inference,' and 'judgment.'
+
+(日乃竜胆)
+怜空さんの言う通りだ。では、選択肢を一つずつ解剖していこう。まずは間違いの選択肢、つまり『AIの事例として適切であるもの』からだ。選択肢イを見てみろ。『部屋の広さや形、家具の位置などを学習し、移動のルートを決めて掃除をするロボット』。これはどう思う？
+
+Rea-san is correct. Now, let us dissect the options one by one. We shall start with the incorrect options—that is, those that *are* appropriate examples of AI. Look at option B (イ): 'A robot that learns the size and shape of a room and the positions of furniture to determine a cleaning route.' What do you think of this?
+
+(月凪惟緒)
+あー、ルンバみたいなやつ？ 部屋の形を「学習」して、どこを通るか「判断」してるんだよね。……あ、これ、さっき怜空さんが言ってたAIの条件にバッチリ当てはまってる気がする。
+
+Ah, like a Roomba? It 'learns' the room's shape and 'judges' where to go... Oh, wait, I feel like this fits perfectly with the AI criteria Rea-san just mentioned.
+
+(蒞星怜空)
+その通り。それは単なる衝突回避の反射ではない。自らの経験をデータとして蓄積し、未知の空間を最適化する。それはまさに、暗闇の中で出口を探す鼠が、次第に迷路を克服していくような知性の萌芽だ。ゆえに、これはAIの事例として極めて適切。正解ではないということだ。
+
+Exactly. It's not just a simple reflex to avoid collisions. It accumulates its own experiences as data and optimizes unknown spaces. It is truly the budding of intelligence, like a rat in the dark finding an exit and gradually mastering a maze. Therefore, this is an extremely appropriate example of AI. Which means it is not the correct answer to this 'not appropriate' question.
+
+(日乃竜胆)
+次に選択肢ウだ。『ヘルプデスク及びコールセンターに代わって、自然言語による質問の意味を推論して返事をするチャットボット』。これはどうだ？
+
+Next is option C (ウ): 'A chatbot that replaces help desks and call centers by inferring the meaning of natural language questions and responding.' How about this?
+
+(月凪惟緒)
+「自然言語」って、私たちが普通に喋ってる言葉のことだよね。それを「推論」して返事する……。これこそまさにAIって感じ。最近のチャットボット、たまに人間より話が通じる時あって、ちょっと怖いもん。
+
+'Natural language' refers to the way we normally speak, right? And it 'infers' and responds... That feels exactly like AI. Some modern chatbots actually communicate better than humans sometimes; it's a bit scary.
+
+(蒞星怜空)
+人間の曖昧で、矛盾に満ちた、泥濘のような言葉の海から、意図という真珠を掬い上げる。その『推論』のプロセスは、高度な統計モデルとニューラルネットワークの産物だ。社会的な恐怖を煽るには十分な知能と言えよう。これもAIの事例として正当だ。
+
+Scooping the pearl of intent from the muddy sea of ambiguous, contradictory human speech. That process of 'inference' is the product of advanced statistical models and neural networks. One could say it's intelligence enough to incite social dread. This, too, is a legitimate example of AI.
+
+(日乃竜胆)
+そして選択肢エ。『ボードゲームでプロの人間に勝つような、多数の統計データを処理することによって人間に勝つソフトウェア』。これは説明不要かもしれんな。
+
+And then, option D (エ): 'Software that wins against professional humans in board games by processing massive amounts of statistical data.' This might not even need an explanation.
+
+(月凪惟緒)
+将棋とか囲碁のAIだよね。過去の膨大なデータを「学習」して、次の一手を「判断」する。これはもう、AIの代名詞みたいなものかな。
+
+Like Shogi or Go AI. It 'learns' from vast amounts of past data and 'judges' the next move. I guess this is basically the synonym for AI.
+
+(蒞星怜空)
+数兆通りの未来をシミュレートし、勝利という名の冷徹な結論を導き出す。それはもはや、運命論を計算機で再現しているようなものだ。人間が一生をかけて築き上げた定石を、一瞬で灰燼に帰す暴力的な知性。これも当然、AIだ。
+
+Simulating trillions of futures to derive a cold, ruthless conclusion called victory. It's like recreating fatalism on a calculator. A violent intelligence that turns the strategies humans spent lifetimes building into ashes in an instant. This, naturally, is AI.
+
+(日乃竜胆)
+さて、残ったのは選択肢アだ。『制御量を目標値側へフィードバックすることによって両者を比較し、その差によって両者を一致させるような修正動作を行うPID制御のモーターコントローラー』。これが正解、つまり『AIではないもの』だ。
+
+Now, that leaves us with option A (ア): 'A PID control motor controller that performs corrective actions to match the controlled variable to the target value by feeding it back, comparing the two, and using the difference.' This is the correct answer—the one that is 'NOT AI.'
+
+(月凪惟緒)
+ぴーあいでぃー……？ 何それ、呪文？ モーターを動かすだけなら、別にAIじゃなくてもいい気がするけど、なんでこれがAIじゃないって言い切れるの？
+
+P-I-D...? What's that, some kind of spell? I feel like you don't need AI just to move a motor, but how can you be so sure this isn't AI?
+
+(日乃竜胆)
+良い質問だ。PID制御とは、比例（Proportional）、積分（Integral）、微分（Derivative）という数学的な計算に基づいた、古典的な自動制御技術に過ぎない。あらかじめ決められた数式に従って、現在の値と目標値のズレを修正するだけなのだ。
+
+Good question. PID control is nothing more than a classical automatic control technique based on mathematical calculations: Proportional, Integral, and Derivative. It simply corrects the deviation between the current value and the target value according to a pre-determined formula.
+
+(月凪惟緒)
+あー、つまり「もしズレてたら、この計算式で直してね」って最初に決められてるだけってこと？ 自分で「学習」したり、新しい状況を「推論」したりはしないの？
+
+Ah, so it's just pre-decided like, 'If there's a gap, fix it using this formula'? It doesn't 'learn' on its own or 'infer' new situations?
+
+(蒞星怜空)
+その通りだ、イオち。それは、坂道を転がる石が重力に従うのと大差ない。そこに『意思』や『試行錯誤による成長』は存在しないのだ。ただ、冷徹な微積分の歯車が回っているだけ。どれほど精密にモーターを制御しようとも、それはあらかじめ引かれたレールの上を走る蒸気機関車に過ぎない。自らレールを敷き直す知性はないのだよ。
+
+Exactly, Io-chi. It's not much different from a stone rolling down a hill following gravity. There is no 'will' or 'growth through trial and error' there. Just the cold gears of calculus turning. No matter how precisely it controls the motor, it's merely a steam locomotive running on pre-laid tracks. It lacks the intelligence to relay the tracks itself.
+
+(日乃竜胆)
+まとめよう。AIの要件は『学習・推論・判断』だ。イ、ウ、エにはそれがあるが、アのPID制御は『固定された数式による機械的な反応』に留まる。ゆえに、アがAIの事例として不適切であり、この設問の正解となる。理解できたか？
+
+Let's summarize. The requirements for AI are 'learning, inference, and judgment.' Options B, C, and D possess these, but the PID control in A remains a 'mechanical reaction based on a fixed formula.' Therefore, A is inappropriate as an example of AI and is the correct answer to this question. Do you understand?
+
+(月凪惟緒)
+なるほどねぇ。数式通りに動くだけの真面目くんはAI失格ってことか。ちょっとPID制御が可哀想になってきたけど、おかげでスッキリしたよ。ヒノりん、怜空さん、ありがと。
+
+I see. So a straight-A student who only moves according to formulas fails the AI test. I'm starting to feel a bit sorry for PID control, but things are clear now. Thanks, Hino-rin, Rea-san.
+
+(蒞星怜空)
+可哀想、か。だが、その『数式通りの忠実さ』こそが、崩壊し続けるこの世界のインフラを支えているのも事実。知性などという不安定なものに頼らぬ強固な秩序……それもまた、一つの美学ではあるがな。ふふふ。
+
+Sorry for it, are you? However, it is also a fact that this 'formulaic loyalty' supports the infrastructure of this ever-decaying world. A rigid order that doesn't rely on something as unstable as intelligence... that, too, is an aesthetic of its own. Hehehe.
+
+---
+
+=== [画像翻訳] ===
+
+(日乃竜胆)
+さて、イオち。今回は基本情報技術者試験の要、制御理論の深淵を覗くこととする。フィードバック制御についての設問だな。心してかかれ。
+
+Now, Io. This time, we shall peer into the abyss of control theory, a cornerstone of the Fundamental Information Technology Engineer Examination. The question concerns 'Feedback Control.' Brace yourself.
+
+(月凪惟緒)
+フィードバック……。なんか、SNSで「フィードバックください」って言われて、ボロクソに叩かれるイメージしかないんだけど。ダル重……。
+
+Feedback... I only have this image of someone asking for 'feedback' on social media and then getting absolutely roasted. Such a drag...
+
+(蒞星怜空)
+ふふ、あながち間違いではないな。己の無様な現状を突きつけられ、理想との乖離に絶望しながら軌道修正を繰り返す……。まさに人生という名の地獄のループそのものだ。実に滑稽で、美しいとは思わないか？
+
+Heh, you're not entirely wrong. Being confronted with one's own pathetic reality, despairing at the gap between that and the ideal, and repeatedly correcting course... It is the very definition of the hellish loop called life. Don't you find it exquisitely farcical and beautiful?
+
+(日乃竜胆)
+師匠、いきなり場を凍らせるのは勘弁していただきたい。……では解説に入る。まずは選択肢ア、「あらかじめ定められた順序で制御を行う」からだ。これは間違いだな。これは『シーケンス制御』の説明だ。
+
+Master, please refrain from freezing the atmosphere right out of the gate. ...Now, let us begin the explanation. First, option A: 'Perform control in a predetermined order.' This is incorrect. This describes 'Sequence Control.'
+
+(月凪惟緒)
+しーけんす？ なにそれ、美味しいの？
+
+Sequence? What's that, something you can eat?
+
+(日乃竜胆)
+食えん。全自動洗濯機を思い浮かべよ。給水、洗い、すすぎ、脱水。これらは汚れが落ちたかどうかに関わらず、決まった順番で淡々と進むだろう？ 途中の結果を見ない、一方通行の制御だ。
+
+It is inedible. Think of a fully automatic washing machine. Water supply, washing, rinsing, spinning. These steps proceed stoically in a fixed order, regardless of whether the dirt has actually been removed, right? It's a one-way control that doesn't look at intermediate results.
+
+(蒞星怜空)
+そう、泥まみれの服を放り込もうが、虚無を洗おうが、機械は冷徹にプログラムを遂行する。結果を顧みないその姿は、破滅へ向かって行進する軍隊のような悲哀を感じさせるな。
+
+Indeed. Whether you throw in mud-caked clothes or attempt to wash the void itself, the machine executes its program with cold precision. That refusal to look back at the results evokes a sorrow akin to an army marching toward its own destruction.
+
+(日乃竜胆)
+次に選択肢イ、「外乱の影響が出力に現れる前に制御を行う」。これも間違いだ。これは『フィードフォワード制御』の説明だな。
+
+Next, option B: 'Perform control before the influence of disturbance appears in the output.' This is also incorrect. This describes 'Feedforward Control.'
+
+(月凪惟緒)
+がいらん……？ 外部からの乱入者？ ネット弁慶が凸してくる感じ？
+
+Disturbance...? Like an outside intruder? Like some internet tough guy crashing a stream?
+
+(日乃竜胆)
+……まあ、システムにとっての「邪魔者」という意味では近い。例えばエアコンなら、外気温の急上昇などが外乱にあたる。フィードフォワードは、部屋が暑くなる『前』に、外が暑くなったから冷房を強める、という予測的な制御だ。高度だが、今回の設問の答えではない。
+
+...Well, in the sense of being a 'nuisance' to the system, you're close. For an air conditioner, a sudden spike in outside temperature would be a disturbance. Feedforward is predictive control—strengthening the cooling because it got hot outside *before* the room itself actually heats up. It's sophisticated, but it's not the answer to this question.
+
+(蒞星怜空)
+嵐が来る前に窓を塞ぐようなものだ。だが、予測が外れれば無意味な徒労に終わる。未来を読み違えた者の末路は、いつだって陰惨なものだよ。
+
+It's like boarding up windows before a storm arrives. However, if the prediction is wrong, it ends in meaningless futility. The fate of those who misread the future is always gruesome.
+
+(日乃竜胆)
+そして選択肢エ、「出力結果を使用せず制御を行う」。これは『開ループ制御（オープンループ制御）』だな。当然、間違いだ。
+
+And option D: 'Perform control without using the output result.' This is 'Open-loop Control.' Naturally, it is incorrect.
+
+(月凪惟緒)
+結果を見ないって……。それ、テストの点数を見ずに「私は天才だ」って言い張るようなもん？ メンタル最強すぎない？
+
+Not looking at the results... Is that like refusing to look at your test scores and insisting 'I'm a genius'? Isn't that like, the ultimate mental fortitude?
+
+(日乃竜胆)
+最強というよりは、盲目だな。投げっぱなし、やりっぱなしだ。トースターで「3分焼く」と設定したら、パンが炭になろうが、まだ生だろうが、3分経てば終わる。これが開ループだ。出力（パンの焼け具合）を制御に反映させていないだろう？
+
+It's less 'fortitude' and more 'blindness.' It's 'fire and forget.' If you set a toaster to '3 minutes,' it stops after 3 minutes whether the bread is charcoal or still raw. That is open-loop. It doesn't reflect the output (the toastiness) back into the control, does it?
+
+(蒞星怜空)
+暗闇の中で、標的の悲鳴すら聞かずに引き金を引き続ける狂気……。フィードバックのない世界とは、対話の拒絶であり、独りよがりの終焉へと続く一本道だ。実に救いがないな。
+
+The madness of repeatedly pulling the trigger in the dark without even hearing the target's screams... A world without feedback is a rejection of dialogue, a one-way path leading to the end of self-complacency. Truly beyond salvation.
+
+(日乃竜胆)
+……さて、ようやく正解の選択肢ウだ。「出力結果と目標値とを比較して、一致するように制御を行う」。これこそが『フィードバック制御』の真髄よ。
+
+...Now, finally, the correct option, C: 'Compare the output result with the target value and perform control so that they match.' This is the very essence of 'Feedback Control.'
+
+(月凪惟緒)
+あー、やっとわかった。エアコンが「今28度だけど、目標は25度だから、もっと冷やさなきゃ！」って頑張るやつだ。健気じゃん。
+
+Ah, I finally get it. It's like an air conditioner working hard, saying 'It's 28 degrees now, but the goal is 25, so I gotta cool it down more!' That's actually kinda sweet.
+
+(日乃竜胆)
+その通りだ。AWSの世界で言えば『Auto Scaling』が分かりやすい例だな。CPU使用率（出力結果）を監視し、目標値（例えば70%）を超えたらサーバーを増やす。逆に低すぎれば減らす。常に「現状」と「理想」を比較し、その差を埋めるべく動き続けるのだ。
+
+Exactly. In the world of AWS, 'Auto Scaling' is a clear example. It monitors CPU utilization (the output), and if it exceeds the target (say, 70%), it adds servers. Conversely, if it's too low, it removes them. It constantly compares the 'current state' with the 'ideal' and acts to bridge that gap.
+
+(蒞星怜空)
+理想を追い求め、現実とのギャップに喘ぎながら調整を繰り返す……。クラウドの海を漂うインスタンスたちも、我々人間と同じように、終わりのない自己修正の螺旋に囚われているというわけだ。実に滑稽で、そして……愛おしいとは思わないか？
+
+Chasing ideals, gasping at the gap with reality, and repeating adjustments... The instances drifting in the cloud sea are, just like us humans, trapped in an endless spiral of self-correction. Don't you find it utterly farcical, and yet... endearing?
+
+(月凪惟緒)
+怜空さんの例え、相変わらず重いけど……。でも、フィードバック制御が「結果を見て、目標に近づける」ってことだけは、私の永久凍土な脳みそにも刻まれたよ。ヒノりん、サンキュ。
+
+Rea-san's analogies are heavy as always... But the fact that feedback control means 'looking at the result to get closer to the goal' has finally been etched into my permafrost brain. Thanks, Hino-rin.
+
+(日乃竜胆)
+理解できたようで何よりだ。シーケンスは「順番通り」、フィードフォワードは「予測」、開ループは「やりっぱなし」、そしてフィードバックは「結果を見て修正」。この違いを忘れるなよ。では、次の問題へ進むぞ。
+
+I'm glad you understood. Sequence is 'in order,' Feedforward is 'prediction,' Open-loop is 'fire and forget,' and Feedback is 'correcting based on results.' Do not forget these distinctions. Now, let us move on to the next question.
+
+---
+
+=== [画像翻訳] ===
+
+(日乃竜胆)
+さて、基本情報技術者試験の要、正規表現の深淵を覗くとしようか。イオち、怜空さん、準備はよろしいか？
+
+Now, let us peer into the abyss of regular expressions, the cornerstone of the Fundamental Information Technology Engineer Examination. Iuo-chi, Rea-san, are you prepared?
+
+(月凪惟緒)
+正規表現……？ なんか、強そうな名前だねぇ。整列してる感じ？ でもこの記号の羅列、見てるだけで脳がチルい方向に逃げたがってるよぉ。
+
+Regular expressions...? Sounds like a powerful name. Like things are being lined up? But just looking at this string of symbols makes my brain want to escape into a chill dimension.
+
+(蒞星怜空)
+整列というよりは、混沌とした文字列の海から、特定の『呪い』の形を抽出する儀式のようなものだ。算数だと思って手を出すと、論理の刃で指を切り落とされることになる。これは『パターン』の定義にすぎない。
+
+Rather than alignment, it is more like a ritual to extract the shape of a specific 'curse' from a chaotic sea of strings. If you approach it thinking it's mere arithmetic, you'll find your fingers sliced off by the blades of logic. This is nothing more than the definition of a 'pattern'.
+
+(日乃竜胆)
+怜空さんの仰る通りだ。まずはこの `[A-Z]+[0-9]*` という暗号を解読せねばならん。正規表現とは、複雑な文字列のルールを、記号を使って簡潔に表現する手法のことだ。一つずつ分解して説明しよう。
+
+Exactly as Rea-san says. First, we must decode this cipher: `[A-Z]+[0-9]*`. Regular expressions are a method of using symbols to concisely represent complex string rules. Let me break it down and explain piece by piece.
+
+(月凪惟緒)
+分解……。マグロの解体ショーみたいだね。どこから切るの？
+
+Breaking it down... like a tuna carving show. Where do we start cutting?
+
+(日乃竜胆)
+まずは前半の `[A-Z]+` だ。`[A-Z]` は『大文字の英字AからZまでのうちのどれか1文字』を指す。そして、その直後にある `+` が重要だ。これは『直前の表現を1回以上繰り返す』という意味を持つメタ文字だ。つまり、大文字が最低1文字、多ければ何文字あっても良いということだな。
+
+First, the first half: `[A-Z]+`. `[A-Z]` refers to 'any single uppercase English letter from A to Z'. The `+` immediately following it is crucial. This is a meta-character meaning 'repeat the preceding expression one or more times'. In other words, you need at least one uppercase letter, but you can have as many as you like.
+
+(月凪惟緒)
+へぇ〜、1文字でも100文字でも、大文字が続いてればOKってことかぁ。じゃあ、後半の `[0-9]*` は？ 数字だよね？
+
+Heh~, so as long as there are uppercase letters, whether it's 1 or 100, it's OK. Then, what about the second half, `[0-9]*`? That's numbers, right?
+
+(日乃竜胆)
+察しが良いな。`[0-9]` は『0から9までの数字のうちのどれか1文字』だ。そして、続く `*`（アスタリスク）は『直前の表現を0回以上繰り返す』という意味だ。ここが最大のポイントだぞ。0回、つまり『数字が全く無くても良い』という状態を許容するのだ。
+
+Perceptive. `[0-9]` is 'any single digit from 0 to 9'. And the following `*` (asterisk) means 'repeat the preceding expression zero or more times'. This is the most important point. It allows for a state of zero times—meaning it's perfectly fine if there are no numbers at all.
+
+(蒞星怜空)
+無の存在を許容する。これこそが、論理の美しさと残酷さが同居する瞬間だ。存在しないことを『パターンの一部』として定義する。まるで、誰にも思い出されない死者の名前を名簿に載せ続けるような、虚無の美学だな。
+
+Allowing for the existence of nothingness. This is the very moment where the beauty and cruelty of logic coexist. Defining non-existence as 'part of a pattern'. It's an aesthetic of nihilism, like keeping the name of a deceased person whom no one remembers on a register.
+
+(月凪惟緒)
+怜空さんの例え、相変わらず凍てついてるねぇ……。でも、なんとなくわかったよ。大文字が1個以上あって、その後に数字があってもなくてもいい、っていうルールなんだね。
+
+Rea-san's analogies are as freezing as ever... But I think I get it. The rule is: one or more uppercase letters, followed by numbers that may or may not be there.
+
+(日乃竜胆)
+その通りだ。では、この理解を武器に、選択肢を一つずつ斬り捨てていくぞ。まずは間違いの選択肢からだ。選択肢 ア の '456789' はどうだ？
+
+Exactly. Now, with this understanding as our weapon, let us cut down the options one by one. We shall start with the incorrect ones. What about option A, '456789'?
+
+(月凪惟緒)
+えーっと、これは数字ばっかりだね。大文字が一個もないよ？
+
+Umm, this is all numbers. There isn't a single uppercase letter.
+
+(日乃竜胆)
+然り。先頭にあるべき `[A-Z]+`、すなわち最低1文字の大文字という条件を満たしていない。主役のいない舞台のようなものだ。論外だな。
+
+Correct. It fails to meet the condition of `[A-Z]+`—the requirement for at least one uppercase letter at the beginning. It's like a play without a lead actor. Out of the question.
+
+(蒞星怜空)
+幕が上がる前に、観客は暴動を起こして劇場を焼き払うだろう。前提条件の崩壊は、世界の終焉に等しい。
+
+Before the curtain even rises, the audience would riot and burn the theater to the ground. The collapse of a prerequisite is equivalent to the end of the world.
+
+(日乃竜胆)
+次に、選択肢 イ の 'ABC+99' と ウ の 'ABC99*' をまとめて見てみよう。イオち、これらはどう見える？
+
+Next, let's look at options B 'ABC+99' and C 'ABC99*' together. Iuo-chi, how do these look to you?
+
+(月凪惟緒)
+あ、プラスとアスタリスクが入ってる！ 問題文の記号がそのまま入ってるから、これが正解……じゃないの？
+
+Oh, they have the plus and the asterisk! The symbols from the problem are right there, so isn't this... the correct answer?
+
+(日乃竜胆)
+断じて否！ それこそが初心者が最も陥りやすい、甘美な毒を孕んだ罠だ。正規表現における `+` や `*` は、あくまで『繰り返し』を指示する制御用のメタ文字。出力される文字列そのものに、その記号が含まれることを求めているわけではないのだ。
+
+Absolutely not! That is the very trap, laden with sweet poison, that beginners most easily fall into. In regular expressions, `+` and `*` are merely control meta-characters that instruct 'repetition'. They do not demand that the symbols themselves be included in the resulting string.
+
+(蒞星怜空)
+レシピに『塩を振る』と書いてあるからといって、料理の上に紙のレシピをちぎって振りかけるようなものだ。そんな料理を出す店は、保健所に通報されて社会的に抹殺されるのが関の山だな。記号は『意味』であって『実体』ではないのだよ。
+
+It's like tearing up a paper recipe and sprinkling it over a dish just because the recipe says 'sprinkle salt'. A restaurant serving such a dish would likely be reported to the health department and socially annihilated. Symbols are 'meaning', not 'substance'.
+
+(月凪惟緒)
+うわぁ、社会的に抹殺は怖い……。つまり、`+` は『たくさんあるよ』っていう合図であって、文字としての `+` を探してるわけじゃないんだね。設計図の文字を壁に彫っちゃうみたいなミスかぁ。
+
+Whoa, social annihilation is scary... So, `+` is a signal for 'there are many', not a search for the character `+` itself. It's like a mistake where you carve the words from the blueprint onto the actual wall.
+
+(日乃竜胆)
+その通りだ。メタ文字をリテラル（文字そのもの）として扱うには、通常エスケープ処理が必要だが、この設問の文脈では明らかに制御記号として扱われている。ゆえに、記号が混じっている イ と ウ は、不純物が混入した粗悪品として切り捨てる。
+
+Precisely. To treat a meta-character as a literal (the character itself), escape processing is usually required, but in the context of this question, they are clearly treated as control symbols. Therefore, options B and C, which contain these symbols, are discarded as inferior goods contaminated with impurities.
+
+(月凪惟緒)
+不純物……。私の部屋の隅にある埃みたいな扱いだね。じゃあ、残った エ の 'ABCDEF' が正解ってこと？ でもこれ、数字が一個もないよ？
+
+Impurities... treated like the dust in the corner of my room. So, that means the remaining option D, 'ABCDEF', is the correct answer? But this doesn't have a single number?
+
+(日乃竜胆)
+そこがこの問題の肝、そして正規表現の真髄だ。思い出せ、`[0-9]*` の `*` は『0回以上の繰り返し』だったな？
+
+That is the core of this problem, and the essence of regular expressions. Remember, the `*` in `[0-9]*` meant 'zero or more repetitions', didn't it?
+
+(月凪惟緒)
+あ……！ 0回でもいいんだから、数字がなくてもルール違反じゃないんだ！
+
+Ah...! Since zero times is okay, having no numbers isn't a rule violation!
+
+(日乃竜胆)
+然り！ 'ABCDEF' は、まず `[A-Z]+`（大文字の1回以上の繰り返し）という条件を完璧に満たしている。そして、その後に続く `[0-9]*`（数字の0回以上の繰り返し）において、『0回』を選択した状態なのだ。論理的に一点の曇りもない、完璧な正解だ。
+
+Indeed! 'ABCDEF' first perfectly satisfies the condition `[A-Z]+` (one or more repetitions of uppercase letters). Then, for the following `[0-9]*` (zero or more repetitions of digits), it has 'selected' zero times. It is a perfect answer, logically without a single flaw.
+
+(蒞星怜空)
+『何も無い』という状態が、定義されたルールの中に美しく収まる。これこそが、システム設計における例外処理の不在、あるいは完全なる調和だ。イオち、君の財布の中身が『0円』であっても、それは『お金を持っている可能性のパターン』の一つとして受理されるのと同じことだ。悲劇的だが、論理的には正しい。
+
+The state of 'nothing' fits beautifully within the defined rules. This is the absence of exception handling in system design, or rather, perfect harmony. Iuo-chi, even if your wallet contains 'zero yen', it is accepted as one of the 'patterns of the possibility of having money'. It's tragic, but logically correct.
+
+(月凪惟緒)
+財布が0円なのは悲劇すぎるよぉ……。でも、正規表現の `*` の優し（？）さがわかった気がする。『なくてもいいよ』って言ってくれてるんだね。ヒノりん、解説ありがとう。なんか、脳の霧が少し晴れたかも。
+
+A wallet with zero yen is too much of a tragedy... But I feel like I understand the kindness (?) of the `*` in regular expressions. It's saying, 'It's okay if you're not there'. Thanks for the explanation, Hino-rin. I feel like the fog in my brain has cleared a bit.
+
+(日乃竜胆)
+理解できたようで何よりだ。正規表現は、AWSのIAMポリシーやログのフィルタリングなど、実務でも至る所で顔を出す。この基本を疎かにしては、クラウドの荒波を渡り歩くことはできぬ。精進せよ。
+
+I am glad you understood. Regular expressions appear everywhere in practice, such as in AWS IAM policies and log filtering. If you neglect these basics, you will not be able to navigate the rough seas of the cloud. Keep striving.
+
+(蒞星怜空)
+さて、次はどの概念を凍てつかせてやろうか。論理の深淵は、まだまだ底が見えないからな。
+
+Now, which concept shall I freeze next? The abyss of logic still shows no sign of a bottom.
+
+---
+
+=== [画像翻訳] ===
+
+(日乃竜胆)
+さて、イオち。今回は基本情報技術者試験の範囲から、現代の最先端技術である「大規模言語モデル（LLM）」、そしてその調整手法である「ファインチューニング」についての設問だな。心してかかるがよい。
+
+Now, Io-chi. This time, we shall tackle a question from the Fundamental Information Technology Engineer Examination regarding 'Large Language Models (LLM),' a cutting-edge technology of our era, and 'fine-tuning,' the method used to adjust them. Brace yourself.
+
+(月凪惟緒)
+ふぇ……大規模……？ ファインチューニング……？ なんだか、ピアノの調律みたいな響きだねぇ、ヒノりん。私の脳内はすでに、冬の朝の霧みたいに真っ白だよぉ……。
+
+Fueh... Large-scale...? Fine-tuning...? It sounds like tuning a piano, Hino-rin. My brain is already as blank as a foggy winter morning...
+
+(蒞星怜空)
+ふふ、霧か。視界不良のまま崖っぷちを歩くような危うさが、今のイオちにはお似合いだ。ファインチューニングとは、平たく言えば「汎用的な天才を、特定の分野の専門家に仕立て上げるための再教育」のようなものだ。あるいは、真っ白なキャンバスに描かれた下絵に、特定の色彩を叩き込む行為とも言えようか。
+
+Heh, fog, is it? That precariousness, like walking along a cliffside with zero visibility, suits you well, Io-chi. Simply put, fine-tuning is like 're-educating a general genius to become a specialist in a specific field.' Or perhaps, the act of hammering specific colors into a sketch drawn on a blank canvas.
+
+(日乃竜胆)
+怜空さんの言う通りだ。まずは前提知識を整理しよう。AI、特にLLMは、最初にインターネット上の膨大なテキストを読み込んで「言葉の並びの法則」を学ぶ。これが『事前学習（Pre-training）』だ。だが、これだけでは「何でも知っているが、特定の仕事には不慣れな博識家」に過ぎない。そこで、特定の目的に合わせて追加で学習させるのが『ファインチューニング』なのだ。
+
+Rea-san is correct. First, let us organize the prerequisite knowledge. AI, especially LLMs, first read vast amounts of text from the internet to learn the 'laws of word sequences.' This is 'Pre-training.' However, at this stage, it is merely a 'polymath who knows everything but is unaccustomed to specific tasks.' Therefore, providing additional learning for a specific purpose is what we call 'Fine-tuning.'
+
+(月凪惟緒)
+へぇ〜、まずは義務教育を受けて、その後に専門学校に行くみたいな感じかなぁ？ じゃあ、選択肢を見ていこうよぉ。まずは間違いの選択肢から、だよね？
+
+Heh~, so it's like finishing compulsory education and then going to a vocational school? Then, let's look at the options. We start with the incorrect ones, right?
+
+(日乃竜胆)
+その通りだ。まずは選択肢「ア」からだ。『強化学習を行い、最適な結果が得られるようにする』。これは明確な誤りだ。強化学習とは、AIが試行錯誤を通じて「報酬」を最大化するように行動を学ぶ手法だ。ファインチューニングは既存のモデルに「正解データ」を与えて微調整する手法であり、報酬系を用いる強化学習とは根本的なメカニズムが異なる。
+
+Exactly. Let's start with option 'A': 'Perform reinforcement learning to ensure optimal results.' This is a clear error. Reinforcement learning is a method where an AI learns to act in a way that maximizes 'rewards' through trial and error. Fine-tuning is a method of fine-adjusting an existing model by providing 'correct answer data,' and its fundamental mechanism differs from reinforcement learning, which utilizes a reward system.
+
+(蒞星怜空)
+強化学習……。それは、暗闇の中で正解を引くまで電気ショックを与え続け、偶然辿り着いた甘い蜜の味を覚え込ませるような、実に非人道的な……いや、効率的な調教プロセスだ。ファインチューニングという「教科書による補習」とは、流れる血の質が違うのだよ。
+
+Reinforcement learning... It is a truly inhumane—or rather, efficient—training process, like giving electric shocks in the dark until the subject hits the right answer, forcing them to memorize the taste of the sweet nectar they stumbled upon. The 'quality of blood' spilled there is different from the 'supplementary lessons via textbook' that is fine-tuning.
+
+(月凪惟緒)
+うぅ、怜空さんの例えが怖すぎるよぉ……。じゃあ、選択肢「イ」の『事前学習と同じデータを繰り返し用いて学習を行い、モデルの精度を高めるようにする』はどうなの？ 同じことを何度もやれば、もっと賢くなりそうだけど……。
+
+Ugh, Rea-san's analogies are too scary... Then, what about option 'B': 'Repeatedly use the same data as pre-training to perform learning and improve the model's accuracy'? If you do the same thing over and over, it seems like it would get smarter...
+
+(日乃竜胆)
+否。それは「過学習（Overfitting）」を招くだけの愚策だ。同じデータを繰り返すのは、既に暗記した教科書を1万回音読させるようなもの。新しい知識は増えず、むしろ柔軟性を失って、未知の問題に対応できなくなる。ファインチューニングの目的は「特定のタスクへの適応」であり、既知のデータの反復ではない。
+
+No. That is a foolish move that only invites 'Overfitting.' Repeating the same data is like making someone read a textbook they've already memorized aloud 10,000 times. No new knowledge is gained; instead, they lose flexibility and become unable to handle unknown problems. The purpose of fine-tuning is 'adaptation to a specific task,' not the repetition of known data.
+
+(蒞星怜空)
+そう、それはもはや学習ではなく、ただの「執着」だ。昨日食べた夕食の献立を永遠に反芻し続けるような、救いようのない停滞。そんなモデルに未来はない。灰燼に帰すべき発想だね。
+
+Yes, that is no longer learning; it is mere 'obsession.' A hopeless stagnation, like eternally ruminating on the menu of the dinner you ate yesterday. There is no future for such a model. It is an idea that should be reduced to ashes.
+
+(月凪惟緒)
+執着……。なんだか、失恋した後に元カレのSNSをずっと見てるみたいな感じかなぁ。それは確かに、新しい自分にはなれないよねぇ。じゃあ、選択肢「ウ」の『大量のテキストデータを用いて学習を行い、モデルの精度を高めるようにする』は？ これ、正解っぽくない？
+
+Obsession... It's like constantly checking an ex-boyfriend's social media after a breakup. You definitely can't become a new person that way. Then, what about option 'C': 'Use a large amount of text data to perform learning and improve the model's accuracy'? Doesn't this sound like the right answer?
+
+(日乃竜胆)
+惜しいな、イオち。それは「事前学習」そのものの説明だ。ファインチューニングは、事前学習が終わった「後」に行うもの。大量のデータで基礎体力をつけるのが事前学習なら、特定の競技のためにフォームを整えるのがファインチューニングだ。設問は「事前学習済みのモデルに対して行う」ことについて問うているのだから、これは順序が矛盾している。
+
+Close, Io-chi. That is the description of 'Pre-training' itself. Fine-tuning is something performed 'after' pre-training is complete. If pre-training is building basic physical strength with vast amounts of data, fine-tuning is refining your form for a specific sport. Since the question asks about what is done 'to a pre-trained model,' this is a contradiction in sequence.
+
+(蒞星怜空)
+赤ん坊に百科事典を丸呑みさせるのが事前学習。その後に、特定の「呪文」だけを完璧に唱えられるように調教するのがファインチューニングだ。ウの選択肢は、既に百科事典を飲み込んだ大人に、もう一度別の百科事典を飲ませようとしているようなもの。胃もたれするだけで、専門性は身につかないよ。
+
+Pre-training is making a baby swallow an entire encyclopedia. Fine-tuning is then training them to perfectly chant only specific 'incantations.' Option C is like trying to force another encyclopedia down the throat of an adult who has already swallowed one. It only causes indigestion; it doesn't grant expertise.
+
+(月凪惟緒)
+なるほどねぇ……。基礎はもう終わってるんだもんね。じゃあ、残った選択肢「エ」が正解ってこと？ 『特定のデータを用いて追加で学習を行い、目的とするタスクに適用できるようにする』。これなら、専門学校っぽさがあるねぇ。
+
+I see... Because the basics are already done. Then, does that mean the remaining option 'D' is the correct answer? 'Use specific data for additional learning to adapt to a target task.' This definitely feels like the vocational school part.
+
+(日乃竜胆)
+正解だ。これこそがファインチューニングの定義そのものだ。「特定のデータ（専門的なデータ）」を使い、「追加で学習」させ、「目的とするタスク（特定の仕事）」に特化させる。例えば、一般的な会話ができるAIに、法律のデータでファインチューニングを施せば、AI弁護士が出来上がるというわけだ。
+
+Correct. This is the very definition of fine-tuning. Using 'specific data (specialized data),' performing 'additional learning,' and specializing it for a 'target task (specific job).' For example, if you take an AI capable of general conversation and apply fine-tuning with legal data, you get an AI lawyer.
+
+(蒞星怜空)
+万能であるがゆえに空虚だった存在に、特定の「役割」という呪いをかける行為……。それがファインチューニングの正体だ。イオち、君もいつか、何かの色に染め上げられる日が来るのかもしれないね。その時は、私がとびきり陰惨な……いや、鮮烈なデータを流し込んであげよう。
+
+The act of casting a curse called a 'role' upon an existence that was hollow precisely because it was omnipotent... That is the true nature of fine-tuning. Io-chi, perhaps the day will come when you, too, are dyed in some color. When that time comes, I shall pour in some exceptionally gruesome—I mean, vivid—data for you.
+
+(月凪惟緒)
+えぇ〜、怜空さんのデータはちょっと遠慮しておこうかなぁ……。でも、おかげでスッキリしたよぉ。事前学習で「物知り」になって、ファインチューニングで「プロ」になる。完璧だねぇ、ヒノりん！
+
+Ehh~, I think I'll pass on Rea-san's data... But thanks to you both, it's all clear now. You become 'knowledgeable' through pre-training and a 'professional' through fine-tuning. It's perfect, Hino-rin!
+
+(日乃竜胆)
+理解が早くて助かる。基本情報技術者試験では、こうした用語の定義を正確に把握しているかが問われる。曖昧な理解は、戦場での刃こぼれと同じだ。常に研ぎ澄ませておくように。では、今回の講義はここまでとしよう。
+
+I appreciate your quick understanding. In the Fundamental Information Technology Engineer Examination, you are tested on whether you accurately grasp the definitions of such terms. Vague understanding is like a nicked blade on the battlefield. Keep it sharp at all times. Now, let us conclude this lecture.
+
+---
+
+=== [画像翻訳] ===
+
+(日乃竜胆)
+さて、基本情報技術者試験の要諦、A/D変換器についての講義を始めるとしよう。イオち、心構えはよろしいか？
+
+Now, let us begin the lecture on A/D converters, a pivotal concept in the Fundamental Information Technology Engineer Examination. Io-chi, are you prepared?
+
+(月凪惟緒)
+んー……A/D変換？ アナログとデジタルってことだよね。レコードがアナログで、スマホで聴くのがデジタル、みたいな……。でも、変換器って言われると、急に頭の中に霧がかかる感じ。
+
+Mmm... A/D conversion? That's Analog and Digital, right? Like records are analog and listening on a smartphone is digital... but when you say 'converter,' it feels like a fog suddenly rolls into my head.
+
+(蒞星怜空)
+霧か。風情があるな。だが、コンピュータという冷徹な論理の塊は、その曖昧な霧を許容しない。この世界に満ちている『連続的』な色彩や音、熱といった混沌を、0と1という無機質な墓標に刻み直さねば、奴らは理解すらできないのだよ。それがA/D変換という名の、現実の解体作業だ。
+
+Fog, is it? How poetic. However, the computer—that cold mass of logic—does not tolerate such ambiguity. The chaos of 'continuous' colors, sounds, and heat that fills this world must be re-etched into inorganic tombstones of 0s and 1s, or else those machines cannot even begin to comprehend it. That is the dismantling of reality known as A/D conversion.
+
+(日乃竜胆)
+怜空さんの言う通りだ。まずは前提知識を整理しよう。アナログとは『連続的な量』。時計の針の動きや、気温の変化のように、途切れのない情報のことを指す。対してデジタルとは『離散的な量』。0、1、2……と、飛び飛びの数値で表現される情報のことだ。A/D変換器（Analog to Digital Converter）は、その名の通りアナログをデジタルへ橋渡しする装置だな。
+
+Rea-san is correct. First, let's organize the prerequisite knowledge. Analog refers to 'continuous quantities.' It points to seamless information, like the movement of a clock's hands or changes in temperature. In contrast, Digital refers to 'discrete quantities.' This is information expressed in jumping numerical values like 0, 1, 2... An A/D converter, as the name implies, is a device that bridges analog to digital.
+
+(月凪惟緒)
+連続と、飛び飛び……。滑り台と階段、みたいな感じかなぁ。滑り台を滑ってる人を、無理やり階段のどこかに立たせるみたいな？
+
+Continuous and jumping... Like a slide and stairs, maybe? Like forcing someone sliding down a slide to stand on a specific step of a staircase?
+
+(日乃竜胆)
+至極真っ当な比喩だ。では、設問の選択肢を吟味していくぞ。まずは間違いの選択肢から、その欺瞞を暴いていこう。選択肢イ、『デジタルデータを暗号化して、ICカードのフラッシュメモリに保存する』。これについてどう思う？
+
+A perfectly reasonable metaphor. Now, let us examine the options in the question. First, we shall expose the deception in the incorrect choices. Option B: 'Encrypting digital data and storing it in the flash memory of an IC card.' What do you think of this?
+
+(月凪惟緒)
+えーっと、デジタルデータを暗号化……。デジタルをデジタルに変えてるだけ？ 変換っていうか、お化粧直しみたいな感じ？
+
+Umm, encrypting digital data... So it's just changing digital into digital? Is that even a conversion, or more like just putting on makeup?
+
+(蒞星怜空)
+ふふ、お化粧直しとは優しい表現だな。実態は、中身をグチャグチャにかき混ぜて、鍵を持つ者以外にはゴミ同然に見せる、陰湿な隠蔽工作だ。情報の性質が『デジタル』であることに変わりはない。アナログの要素など微塵も存在しない、純然たるデジタルの内輪揉めだ。ゆえに、A/D変換とは無縁だな。
+
+Heh, 'makeup' is a gentle way to put it. In reality, it's a devious cover-up operation where the contents are scrambled into something resembling trash to anyone without the key. The nature of the information remains 'digital.' There isn't a shred of an analog element; it's a purely digital internal squabble. Therefore, it has nothing to do with A/D conversion.
+
+(日乃竜胆)
+その通り。次に選択肢ウ、『マイコン内で、パラレル信号をシリアル信号に変換する』。これはどうだ？
+
+Exactly. Next, Option C: 'Converting parallel signals to serial signals within a microcomputer.' How about this?
+
+(月凪惟緒)
+パラレルとシリアル……。なんか、スパゲッティの種類みたいな名前。えーっと、これって何が違うんだっけ？
+
+Parallel and Serial... those sound like types of spaghetti. Uh, what was the difference again?
+
+(日乃竜胆)
+信号の『送り方』の違いだ。パラレルは複数の線を使い、同時に複数のデータを送る。シリアルは一本の線で、データを一列に並べて順番に送る。どちらも扱うのはデジタル信号だ。情報の『形式』を変えているだけで、アナログからデジタルへの『性質』の変換ではない。
+
+It's a difference in how signals are 'sent.' Parallel uses multiple lines to send multiple pieces of data simultaneously. Serial uses a single line to send data in a single file, one after another. Both handle digital signals. It's merely changing the 'format' of the information, not a conversion of 'nature' from analog to digital.
+
+(蒞星怜空)
+10人の囚人が手を繋いで一斉に処刑台へ駆け込むのがパラレル。一列に並んで一人ずつ、絶望を噛み締めながら進むのがシリアルだ。どちらにせよ、彼らが『デジタル』という名の囚人である事実に変わりはない。道の幅が変わっただけで、歩いている人間が馬に変わるような劇的な変化——すなわちA/D変換ではないということだ。実につまらん話だよ。
+
+Ten prisoners holding hands and rushing to the gallows at once is Parallel. Lining up one by one, savoring the despair as they proceed, is Serial. Either way, the fact that they are prisoners named 'Digital' remains unchanged. Just because the width of the road changed doesn't mean the humans walking it turned into horses—which is to say, it's not a dramatic change like A/D conversion. A truly dull affair.
+
+(日乃竜胆)
+……怜空さんの例えは相変わらず凄絶だな。では、選択肢エだ。『メモリに保存されているサンプリングデータを、音の信号に変換する』。これはどうかな、イオち。
+
+...Rea-san's metaphors are as gruesome as ever. Now, Option D: 'Converting sampling data stored in memory into sound signals.' What do you think of this, Io-chi?
+
+(月凪惟緒)
+サンプリングデータって、デジタルだよね？ それを音にするってことは……あ、スピーカーから音が出る時？ デジタルをアナログに戻してるってこと？
+
+Sampling data is digital, right? And turning that into sound... oh, like when sound comes out of a speaker? Does that mean it's turning digital back into analog?
+
+(日乃竜胆)
+慧眼だな。それはD/A変換（Digital to Analog Converter）の説明だ。デジタルという死んだ数値の羅列から、音という生きた波形を復元する作業。今回の問いはA/D変換、つまりアナログからデジタルへの変換を求めている。ゆえに、これは『逆』なのだよ。
+
+Insightful. That is the description of D/A conversion (Digital to Analog Converter). The act of restoring a living waveform, like sound, from a dead sequence of digital numbers. This question asks for A/D conversion—analog to digital. Therefore, this is the 'reverse.'
+
+(蒞星怜空)
+標本（サンプリングデータ）という名の剥製に、無理やり命を吹き込んで歌わせようとする降霊術のようなものだ。デジタルという静止した世界から、アナログという流動する時間へ情報を解き放つ。美しいが、今回の正解ではない。我々が探しているのは、生贄を祭壇に捧げ、データという名の偶像に変換する儀式の方だ。
+
+It's like a necromancy that tries to force life into a taxidermy specimen called 'sampling data' to make it sing. It releases information from the static world of digital into the flowing time of analog. Beautiful, but not the correct answer this time. We are looking for the ritual where the sacrifice is offered on the altar and converted into an idol called data.
+
+(日乃竜胆)
+では、最後に正解の選択肢アを見よう。『温度センサーからの連続的な情報を、マイコンで演算可能な離散的な情報に変換する』。これこそがA/D変換の定義そのものだ。
+
+Finally, let's look at the correct choice, Option A: 'Converting continuous information from a temperature sensor into discrete information that can be calculated by a microcomputer.' This is the very definition of A/D conversion.
+
+(月凪惟緒)
+温度センサー……。外が暑いなーっていう、ふわっとした『連続的』な感じを、マイコンくんが『今は30.5度です！』って数字で理解できるようにするってことだね。あ、さっきの滑り台と階段の話にぴったりかも。
+
+Temperature sensor... So it takes that fuzzy, 'continuous' feeling of 'it's hot outside' and makes it so the microcomputer can understand it as a number like 'It is 30.5 degrees!' Ah, that fits perfectly with the slide and stairs analogy from earlier.
+
+(日乃竜胆)
+その通りだ。マイコン、すなわちコンピュータは、曖昧な『暑さ』をそのままでは処理できん。それを数値という『離散的な情報』に変換して初めて、計算や制御が可能になる。温度、湿度、音圧、圧力……これら自然界のアナログ情報をコンピュータに取り込む入り口には、必ずこのA/D変換器が鎮座しているのだよ。
+
+Exactly. A microcomputer—that is, a computer—cannot process vague 'heat' as it is. Only after converting it into 'discrete information' in the form of numerical values can calculation and control become possible. At the entrance where analog information from the natural world—temperature, humidity, sound pressure, physical pressure—is brought into a computer, an A/D converter always sits enthroned.
+
+(蒞星怜空)
+現実という名の巨大な怪物を、コンピュータが飲み込めるサイズに細切れにするミンチ機だな。アの選択肢だけが、その『解体と再構築』のプロセスを正しく記述している。温度という、形のない、終わりなき流れを、冷徹な数字の羅列へと封じ込める……。これこそが、現代の錬金術、A/D変換の真髄というわけだ。どうだ、イオち。この不条理な変換の仕組み、理解できたかな？
+
+It's a meat grinder that chops the giant monster called reality into bite-sized pieces for the computer to swallow. Only Option A correctly describes that process of 'dismantling and reconstruction.' Confining the formless, endless flow of temperature into a cold sequence of numbers... This is the essence of modern alchemy, A/D conversion. Well, Io-chi? Do you understand the mechanism of this absurd transformation?
+
+(月凪惟緒)
+うん、バッチリ。アナログは滑り台、デジタルは階段。A/D変換は、滑り台から階段へ無理やり引っ越しさせる装置。マイコンくんは階段しか登れないから、入り口で誰かが階段にしてあげなきゃいけないんだね。ヒノりん、怜空さん、ありがと。なんか、温度計を見る目が変わりそう……。
+
+Yeah, perfectly. Analog is a slide, digital is stairs. A/D conversion is the device that forces a move from the slide to the stairs. Since the microcomputer can only climb stairs, someone has to turn it into stairs at the entrance. Thanks, Hino-rin, Rea-san. I feel like I'll look at thermometers differently now...
+
+---
+
+=== [画像翻訳] ===
+
+(日乃竜胆)
+貴殿ら、心して聞け。情報の圧縮、その深淵に触れる刻が来た。今回は「ハフマン符号化」という、データ構造の最適化における至高の芸術について講義を行う。イオち、準備はよろしいか？
+
+Listen up, both of you. The time has come to touch the abyss of data compression. Today, I will lecture on 'Huffman Coding,' a supreme art in the optimization of data structures. Io-chi, are you prepared?
+
+(月凪惟緒)
+ふあぁ……。圧縮……？ 布団圧縮袋みたいなやつ……？ ヒノりん、なんか難しそうなバイブス出てるけど、私の脳みそは今、真冬のトタン裏で丸まってるダンゴムシ並みに動いてないよぉ……。
+
+Yawn... Compression...? Like those vacuum bags for futons...? Hino-rin, you're giving off some really difficult vibes, but my brain is currently as active as a pill bug curled up under a piece of corrugated iron in the dead of winter...
+
+(蒞星怜空)
+情報の密度を高める行為は、時に魂を削り取る作業に似ている。無駄を削ぎ落とした先に残るのが、純粋な真理か、あるいは救いようのない虚無か……。ハフマン符号化とは、出現頻度という名の「運命」に従い、文字にビットという名の「鎖」を繋ぐ儀式のようなものだ。実に暗澹たる、効率の追求といえよう。
+
+The act of increasing information density is sometimes akin to the task of carving away at one's soul. What remains after stripping away the waste is either pure truth or an irredeemable void... Huffman coding is like a ritual where characters are bound by 'chains' called bits, according to the 'fate' known as appearance frequency. It is a truly somber pursuit of efficiency.
+
+(日乃竜胆)
+怜空さんの仰る通りだ。ハフマン符号化の鉄則は極めてシンプル。よく使う文字には短い符号を、滅多に使わない文字には長い符号を割り当てる。これにより、データ全体の長さを最小限に抑えるのだ。だが、ここには「接頭辞（プレフィックス）の呪縛」という、回避不能なルールが存在する。
+
+Exactly as Rea-san says. The ironclad rule of Huffman coding is extremely simple: assign short codes to frequently used characters and long codes to those rarely used. This minimizes the overall data length. However, there exists an unavoidable rule here known as the 'Prefix Curse'.
+
+(月凪惟緒)
+せっとうじ……？ 呪縛……？ なんか急に呪術的な話になってきたねぇ。つまりさ、短い方がお得だけど、勝手に短くしちゃダメってことぉ？
+
+Prefix...? Curse...? Suddenly this sounds like some kind of sorcery. So, basically, shorter is better, but you can't just make them short whenever you want?
+
+(日乃竜胆)
+慧眼だな。接頭辞のルールとは、「ある符号が、他の符号の先頭部分と一致してはならない」というものだ。例えば、Aが『00』なら、他の文字を『001』にしてはならない。なぜなら、コンピュータが『001』を読み取った際、それが『A（00）と1』なのか、それとも『別の文字（001）』なのか判別できず、解釈が崩壊するからだ。
+
+Keen insight. The prefix rule states that 'no code may be the starting part of another code.' For example, if A is '00', no other character can be '001'. This is because when a computer reads '001', it cannot distinguish whether it is 'A (00) followed by 1' or 'another character (001)', causing the interpretation to collapse.
+
+(蒞星怜空)
+そう、解釈の不一致は破滅を招く。恋人同士の些細な言葉の食い違いが、修復不可能な離別へと繋がるように……。コンピュータもまた、曖昧さを許容せぬ冷徹な存在。符号の先頭が重なるだけで、データという名の世界は灰燼に帰すのだ。実に滑稽で、悲惨な末路といえよう。
+
+Yes, a mismatch in interpretation leads to ruin. Just as a minor misunderstanding between lovers can lead to an irreparable separation... Computers are also cold entities that do not tolerate ambiguity. If the prefixes overlap, the world known as data is reduced to ashes. A truly farcical and tragic end.
+
+(月凪惟緒)
+ひぇ……。怜空さんの例えが重すぎて、私のチルな気分が凍りついてきたよぉ。つまり、すでに決まってる『00』とか『01』とか『10』とか『111』で始まるやつは、全部アウトってことだよね？
+
+Hieee... Rea-san's analogy is so heavy my chill mood is freezing over. So, anything that starts with the already decided '00', '01', '10', or '111' is totally out, right?
+
+(日乃竜胆)
+その通りだ。では、選択肢を一つずつ、その「罪」を暴いていこう。まずは選択肢アの『001』だ。イオち、これの何が問題か分かるか？
+
+Exactly. Now, let us expose the 'sins' of each option one by one. First is option A, '001'. Io-chi, do you see the problem here?
+
+(月凪惟緒)
+えーっと、表を見るとAが『00』だよね。ってことは、『001』の頭の『00』がAと被っちゃってる……。これだと、コンピュータが『あ、Aだ！』って勘違いして、後ろの『1』が迷子になっちゃうてことかぁ。
+
+Ummm, looking at the table, A is '00'. So, the '00' at the start of '001' overlaps with A... That means the computer would mistakenly think 'Oh, it's A!' and the '1' at the end would end up lost, right?
+
+(日乃竜胆)
+正解だ。ゆえに選択肢アは誤り。次に選択肢イの『010』はどうだ？
+
+Correct. Therefore, option A is wrong. Next, what about option B, '010'?
+
+(月凪惟緒)
+これもダメだねぇ。Bが『01』だから、『010』の頭の『01』と被ってる。Bの影に隠れてコソコソしてるけど、バレバレだよぉ。
+
+This one's no good either. B is '01', so it overlaps with the '01' at the start of '010'. It's trying to hide in B's shadow, but it's totally obvious.
+
+(蒞星怜空)
+隠蔽工作は無意味だ。過去の過ちが現在の足を引っ張るように、既存の符号は新参者の存在を許さない。選択肢ウの『101』も同様。Cという『10』の亡霊に憑りつかれ、独立した存在として認められることはない。実に哀れな符号たちだ。
+
+Cover-ups are futile. Just as past mistakes drag down the present, existing codes do not permit the existence of newcomers. Option C, '101', is the same. Haunted by the ghost of C's '10', it will never be recognized as an independent entity. Truly pitiful codes.
+
+(日乃竜胆)
+その通り。Cが『10』である以上、『101』はCの接頭辞ルールに抵触する。残るは選択肢エの『110』だ。これを確認してみよう。
+
+Indeed. Since C is '10', '101' violates C's prefix rule. That leaves option D, '110'. Let us examine this.
+
+(月凪惟緒)
+『110』かぁ……。Aは『00』、Bは『01』、Cは『10』。どれとも頭が被ってないね！ あ、でもEが『111』だけど、これは大丈夫なの？
+
+'110', huh... A is '00', B is '01', C is '10'. None of them overlap at the start! Oh, but E is '111', is that okay?
+
+(日乃竜胆)
+鋭いな。だが案ずるな。Eは『111』であり、Dの候補である『110』とは、最初の2ビットこそ『11』で共通しているが、3ビット目で明確に分かれている。つまり、『110』は『111』の接頭辞ではないし、その逆も然りだ。互いの領域を侵さぬ、完璧な境界線が引かれている。
+
+Sharp. But do not worry. E is '111', and while it shares the first two bits '11' with the candidate for D, '110', they clearly diverge at the third bit. In other words, '110' is not a prefix of '111', nor vice versa. A perfect boundary has been drawn, with neither invading the other's territory.
+
+(蒞星怜空)
+混沌としたビットの海に、ようやく秩序がもたらされたというわけだ。A, B, Cが0から始まる領域を支配し、DとEが11から始まる領域を分け合う。110と111……隣り合いながらも決して交わらぬ、平行線の悲劇。だが、この断絶こそが、データ圧縮という名の虚飾を支える唯一の真実なのだ。
+
+So, order has finally been brought to the chaotic sea of bits. A, B, and C dominate the territory starting with 0, while D and E share the territory starting with 11. 110 and 111... a tragedy of parallel lines that lie side-by-side but never meet. Yet, this severance is the sole truth supporting the vanity known as data compression.
+
+(月凪惟緒)
+なるほどねぇ。パズルみたいで、分かっちゃえば意外とスッキリするかも。つまり、他の誰かの『頭』にならない絶妙な数字を探せばいいんだね。ヒノりん、私、ちょっとだけ頭が軽くなった気がするよぉ。ダンゴムシがひっくり返って足バタバタさせてる感じ。
+
+I see. It's like a puzzle; once you get it, it's actually pretty satisfying. So you just have to find that perfect number that doesn't become anyone else's 'head'. Hino-rin, I feel like my head got a little lighter. Like a pill bug flipped on its back, waving its legs around.
+
+(日乃竜胆)
+その例えは少々不気味だが……理解できたのなら重畳。ハフマン符号化は、試験でも頻出の重要項目だ。出現頻度が高いものほど短く、かつ接頭辞ルールを守る。この二点を魂に刻んでおくがいい。正解は『110』、選択肢エだ。これ以外の道は、すべて破綻への片道切符に過ぎぬ。
+
+That analogy is a bit unsettling... but if you understand, then all is well. Huffman coding is a vital topic that appears frequently in exams. The higher the frequency, the shorter the code, and always respect the prefix rule. Engrave these two points upon your soul. The correct answer is '110', option D. Any other path is merely a one-way ticket to failure.
+
+(蒞星怜空)
+効率という名の鎖に縛られた文字たちの叫びが聞こえるようだ。だが、その犠牲の上に、我々のデジタルな平穏は成り立っている。イオち、君の脳内のダンゴムシも、いつかはこの符号のように美しく整列する日が来るのだろうか……。それとも、永遠に無秩序な闇を彷徨うのか。実に興味深い見世物だ。
+
+I can almost hear the screams of the characters bound by the chains of efficiency. Yet, our digital peace is built upon that sacrifice. Io-chi, I wonder if the pill bugs in your brain will one day align as beautifully as these codes... or will they wander the disordered darkness forever? A truly fascinating spectacle.
+
+(月凪惟緒)
+あはは……。怜空さん、最後のは褒めてるんだよね……？ とりあえず、ハフマン符号化は『頭が被ったらダメ！』ってことで覚えたよぉ。さて、お勉強終わったし、また永久凍土に潜ってチルしよーっと。
+
+Ahaha... Rea-san, was that last part a compliment...? Anyway, I've remembered that for Huffman coding, 'overlapping heads are a no-go!' Now that studying is over, I'm going back to diving into the permafrost to chill.
+
+---
+
+=== [画像翻訳] ===
+
+(日乃竜胆)
+さて、イオち。基本情報技術者試験の山場、機械学習の領域に踏み込むぞ。覚悟はいいか？今回は「教師あり学習」の定義を問う設問だ。AWSのSageMakerなどを扱う上でも、この根本的な概念理解は避けて通れぬ道だ。
+
+Now, Ioh-chi. We are stepping into the realm of machine learning, a major hurdle in the Fundamental Information Technology Engineer Examination. Are you prepared? This question asks for the definition of 'Supervised Learning.' Even when handling services like AWS SageMaker, understanding these fundamental concepts is an unavoidable path.
+
+(月凪惟緒)
+機械に学習させるなんて、人間様でもやりたくないことを押し付けるなんて、業が深いねぇ...。ヒノりん、お手柔らかに...。教師ありってことは、スパルタな先生が竹刀持って後ろに立ってる感じ？
+
+Forcing a machine to learn... something even humans don't want to do... how deep the karma runs. Hino-rin, please go easy on me. 'Supervised' (Teacher-present) means a Spartan teacher standing behind with a bamboo sword, right?
+
+(蒞星怜空)
+教育という名の調教、あるいは自我の模倣。滑稽な喜劇の幕開けだ。竹刀どころではない。それは、あらかじめ定められた『正解』という名の檻に、無限の可能性を閉じ込める作業に他ならない。さあ、その無垢な脳髄に、機械の苦悩を刻み込んでやるといい。
+
+Training in the name of education, or the imitation of the ego. The curtain rises on a ridiculous comedy. It's far beyond a bamboo sword. It is nothing less than the act of confining infinite possibilities within a cage called the 'predefined correct answer.' Now, carve the agony of the machine into that innocent brain of yours.
+
+(日乃竜胆)
+怜空さんの相変わらずの毒気はさておき、まずは間違いの選択肢から、その正体を暴いていこう。まずは選択肢アだ。「個々の行動に対しての善しあしを得点として与えることによって、得点が最も多く得られるような方策を学習する」とあるな。
+
+Setting aside Rea-san's usual toxicity, let's start by exposing the true nature of the incorrect options. First, Option A: 'Learning a policy to maximize scores by giving scores as the goodness or badness of individual actions.'
+
+(月凪惟緒)
+得点...ゲームみたい。いいことしたらポイント、悪いことしたら減点。これって、教師あり学習じゃないの？
+
+Scores... like a game. Points for doing good, deductions for doing bad. Isn't that supervised learning?
+
+(日乃竜胆)
+否。これは『強化学習（Reinforcement Learning）』の説明だ。教師あり学習が「これが正解だ」と直接教えるのに対し、強化学習は「今の行動は＋10点だ」という報酬（フィードバック）を与え、試行錯誤を通じて最適な行動を学ばせる手法なのだ。
+
+No. This is an explanation of 'Reinforcement Learning.' While supervised learning directly teaches 'this is the correct answer,' reinforcement learning provides rewards (feedback) like 'that action was +10 points,' letting the machine learn the optimal behavior through trial and error.
+
+(蒞星怜空)
+失敗すれば電気ショック、成功すれば角砂糖。魂を削りながら最適解を求める、血塗られた迷路の彷徨だ。実に効率的で、実に残酷な手法といえよう。AWSでいえば、DeepRacerがこの強化学習の典型的な見せ物だな。
+
+Electric shocks for failure, sugar cubes for success. A wandering through a blood-stained maze, seeking the optimal solution while shaving away one's soul. It is a truly efficient and truly cruel method. In AWS terms, DeepRacer is a typical spectacle of this reinforcement learning.
+
+(日乃竜胆)
+次に選択肢イとエをまとめて片付けるぞ。イは「挙動データの出現頻度に従って次の挙動を推論する」、エは「正解のデータを提示せずに、統計的性質や条件によってクラスタリングしたりする」とある。
+
+Next, I'll deal with Options B and D together. B says 'inferring the next behavior according to the frequency of behavior data,' and D says 'clustering based on statistical properties or conditions without presenting correct data.'
+
+(月凪惟緒)
+「正解を提示せずに」って、放任主義？先生がいない教室で、勝手にグループ分けしてるみたいな感じかなぁ。なんか、自由すぎて不安になるね。
+
+'Without presenting the correct answer'... so, laissez-faire? Like students in a classroom without a teacher, grouping themselves however they want. That kind of freedom makes me anxious.
+
+(日乃竜胆)
+その通り。これらは『教師なし学習（Unsupervised Learning）』の説明だ。データそのものが持つ構造や特徴を、コンピュータ自らが見つけ出す手法だ。エにある「クラスタリング」は、似たもの同士をグループ化する代表的な手法だな。
+
+Exactly. These are explanations of 'Unsupervised Learning.' It's a method where the computer itself finds the structures and characteristics inherent in the data. 'Clustering' mentioned in D is a representative method for grouping similar items together.
+
+(蒞星怜空)
+正解がないのに勉強する。それは暗闇の中で、実体のない影の形を分類するようなものだ。何が正しいかも分からぬまま、ただ『似ている』というだけの理由で群れる。現代社会の縮図のようで、反吐が出るほど滑稽ではないか。
+
+Studying without a correct answer. It's like classifying the shapes of insubstantial shadows in the dark. Without knowing what is right, they huddle together simply because they are 'similar.' It's like a microcosm of modern society; isn't it disgustingly ridiculous?
+
+(日乃竜胆)
+そして、いよいよ正解の選択肢ウだ。「正解のデータを提示したり、データが誤りであることを指摘したりすることによって、未知のデータに対して正誤を得ることを助ける」。これが教師あり学習の定義そのものだ。
+
+And finally, the correct Option C: 'Helping to obtain correctness for unknown data by presenting correct data or pointing out that data is incorrect.' This is the very definition of supervised learning.
+
+(月凪惟緒)
+あー、やっと先生が出てきた。これ、私が子供の時に、お母さんがリンゴを指さして「これはリンゴだよ」って教えてくれたのと同じ？で、私が梨を見て「リンゴ！」って言ったら、「違うよ、それは梨だよ」って直されるやつ。
+
+Ah, the teacher finally appeared. Is this like when I was a kid and my mom pointed at an apple and told me, 'This is an apple'? And then when I saw a pear and said 'Apple!', she corrected me, 'No, that's a pear'?
+
+(日乃竜胆)
+至極真っ当な理解だ。入力データ（リンゴの画像）とラベル（「リンゴ」という正解）をセットで与える。これを大量に繰り返すことで、コンピュータは「未知の画像」を見せられた時にも、それがリンゴかどうかを推論できるようになるのだ。
+
+That is a perfectly sound understanding. You provide input data (an image of an apple) and a label (the correct answer 'apple') as a set. By repeating this many times, the computer becomes able to infer whether an 'unknown image' is an apple or not.
+
+(蒞星怜空)
+そう、あらかじめ用意された『正解』という名のレールの上を、一歩も踏み外さぬよう歩かされる家畜の如き学習。自由意志など介在する余地はない。だが、その不自由さこそが、ビジネスにおいては『精度』という名の甘美な果実をもたらすのだ。皮肉なものだな。
+
+Yes, learning like livestock forced to walk on a rail called the 'correct answer' without stepping off even once. There is no room for free will. Yet, it is that very lack of freedom that brings the sweet fruit called 'accuracy' in business. How ironic.
+
+(月凪惟緒)
+家畜かぁ...。でも、正解がある方が、迷わなくて済むから楽かも。AWSだと、どんな時に使うの？
+
+Livestock, huh... But having a correct answer might be easier because you don't get lost. When do we use this in AWS?
+
+(日乃竜胆)
+Amazon Rekognitionでの画像認識や、Amazon Comprehendでの感情分析など、多くのAIサービスがこの教師あり学習をベースに構築されている。膨大な正解データで訓練されたモデルが、我々の代わりに瞬時に判断を下してくれるのだ。
+
+Many AI services, such as image recognition in Amazon Rekognition and sentiment analysis in Amazon Comprehend, are built based on this supervised learning. Models trained with vast amounts of correct data make instantaneous judgments on our behalf.
+
+(蒞星怜空)
+思考の放棄を、テクノロジーが肩代わりする。壮麗な文明の崩壊の足音が聞こえてこないか？まあ、試験に受かるためには、この『教師あり＝正解ラベルあり』という単純な等式を、その空っぽな頭に叩き込んでおくことだ。それが唯一の生存戦略なのだから。
+
+Technology takes over the abandonment of thought. Can't you hear the footsteps of the collapse of a magnificent civilization? Well, to pass the exam, just hammer this simple equation 'Supervised = with correct labels' into that empty head of yours. Since that is your only survival strategy.
+
+(日乃竜胆)
+まとめよう。アは強化学習、イとエは教師なし学習。そしてウが教師あり学習だ。用語の定義を正確に掴むことが、合格への最短距離だ。イオち、このバイブス、忘れるなよ。
+
+Let's summarize. A is reinforcement learning, B and D are unsupervised learning. And C is supervised learning. Grasping the definitions of terms accurately is the shortest distance to passing. Ioh-chi, don't forget this vibe.
+
+---
+
+=== [画像翻訳] ===
+
+(日乃竜胆)
+さて、基本情報技術者試験の「情報理論」の深淵へ足を踏み入れる時が来たようだな。イオち、怜空さん、準備はよろしいか。今回は「遷移確率」という、一見すると無機質な数字の羅列に隠された、情報の流転の理を解き明かしていくぞ。
+
+Now, it seems the time has come to step into the abyss of 'Information Theory' in the Fundamental Information Technology Engineer Examination. Io-chi, Rea-san, are you ready? This time, we shall unravel the principles of information flow hidden within 'Transition Probabilities'—what may appear at first glance to be a mere inorganic sequence of numbers.
+
+(月凪惟緒)
+う〜……ヒノりん、なんか表の中にアルファベットが並んでて、見てるだけで脳がフリーズしそう。遷移確率って、そもそも何？ 美味しいの……？
+
+Ugh... Hino-rin, there are alphabets lined up inside that table, and just looking at it makes my brain feel like it's going to freeze. What even is 'transition probability' anyway? Does it taste good...?
+
+(蒞星怜空)
+ふふ、美味しいどころか、これは情報の「断末魔」を数値化したようなものだ。入力された信号が、ノイズという名の荒波に揉まれ、無事に届くのか、あるいは無残にも別の姿へ変貌してしまうのか……その残酷な運命の分岐点を記録した墓標、それがこの遷移確率の表といえよう。
+
+Hehe, far from being tasty, this is more like a numerical representation of the 'death throes' of information. Whether an input signal, tossed about by the stormy seas known as noise, arrives safely or is cruelly transformed into another form... This table of transition probabilities is, so to speak, a tombstone recording those brutal turning points of fate.
+
+(日乃竜胆)
+怜空さんの表現は相変わらず詩的だが、本質を突いているな。イオち、難しく考える必要はない。遷移確率とは、簡単に言えば「ある状態から次の状態へ移り変わる確率」のことだ。この問題では、入力されたビット（0か1）が、出力される時にどうなっているかを示しているのだな。
+
+Rea-san's expressions are as poetic as ever, yet they strike at the essence. Io-chi, there is no need to overthink it. Simply put, transition probability is the 'probability of moving from one state to the next.' In this problem, it shows what happens to an input bit (0 or 1) by the time it is output.
+
+(月凪惟緒)
+あ〜、つまり「0を入れたのに、うっかり1になっちゃう確率」とかがあるってこと？ どんくさいビット君がいるんだねぇ。
+
+Ah~ so you mean there's a probability like 'I put in a 0, but it accidentally became a 1'? There are some clumsy little bits out there, aren't there?
+
+(日乃竜胆)
+その通りだ。通信の世界ではノイズやエラーは避けられぬ宿命。では、表を見てみよう。横軸が「出力」、縦軸が「入力」だ。入力が「0」の時、出力が「0」になる確率が『a』、出力が「1」になる確率が『b』と定義されている。ここまでは理解できるか？
+
+Exactly. In the world of communication, noise and errors are an unavoidable destiny. Now, let us look at the table. The horizontal axis is 'Output,' and the vertical axis is 'Input.' When the input is '0,' the probability that the output is '0' is defined as 'a,' and the probability that the output is '1' is defined as 'b.' Can you understand this much?
+
+(月凪惟緒)
+うん、それはわかるよ。入力が「1」の時は、出力が「0」になるのが『c』で、「1」になるのが『d』なんだよね。でも、このa、b、c、dの関係って言われても……どう選べばいいの？
+
+Yeah, I get that. When the input is '1,' the probability of outputting '0' is 'c,' and outputting '1' is 'd,' right? But even if you ask for the relationship between a, b, c, and d... how am I supposed to choose?
+
+(蒞星怜空)
+イオち、この世界には絶対的なルールがある。それは「何かが起これば、その結果の合計は必ず100%になる」という理不尽なまでの決定論だ。コインを投げれば表か裏が出る。表が出る確率と裏が出る確率を足せば、必ず1になるだろう？ 途中でコインが消滅したり、異次元に吸い込まれたりしない限りはね……。
+
+Io-chi, there is an absolute rule in this world. It is a determinism so rigid it's almost absurd: 'If something happens, the sum of its possible outcomes must always be 100%.' If you flip a coin, it comes up heads or tails. If you add the probability of heads and the probability of tails, it must equal 1, right? Unless, of course, the coin vanishes mid-air or is sucked into another dimension...
+
+(日乃竜胆)
+怜空さんの言う通りだ。この問題の前提は「入力されたビットに対して、出力されるビットは0か1のいずれかである」ということ。つまり、入力が0であれば、出力は必ず0か1のどちらかになる。それ以外の選択肢——例えば2になったり、虚無に消えたりすることはないのだ。
+
+It is exactly as Rea-san says. The premise of this problem is that 'for an input bit, the output bit is either 0 or 1.' In other words, if the input is 0, the output must be either 0 or 1. There are no other options—it won't become a 2, nor will it vanish into the void.
+
+(月凪惟緒)
+てことはさ、入力が0の時の「出力0（a）」と「出力1（b）」を足したら、絶対に100%……つまり「1」になるってこと？
+
+So that means, if you add 'Output 0 (a)' and 'Output 1 (b)' when the input is 0, it'll definitely be 100%... I mean, it'll be '1'?
+
+(日乃竜胆)
+慧眼だな、イオち。その直感こそが正解への鍵だ。では、選択肢を一つずつ吟味していこう。まずは間違いの選択肢から、その愚かさを暴いていくぞ。
+
+Keen insight, Io-chi. That intuition is the key to the correct answer. Now, let us examine the options one by one. First, we shall expose the folly of the incorrect choices.
+
+(日乃竜胆)
+まず選択肢アの『a + b + c + d = 1』だ。これは論外だな。入力が0の場合の世界と、入力が1の場合の世界を無理やり混ぜ合わせている。入力が0の時の合計が1、入力が1の時の合計が1なのだから、全部足せば2になるはずだ。確率の合計が1を超えるなど、宇宙の法則が乱れてしまうわ。
+
+First, option A: 'a + b + c + d = 1.' This is out of the question. It forcibly mixes the world where the input is 0 with the world where the input is 1. Since the sum for input 0 is 1 and the sum for input 1 is 1, adding them all together should result in 2. For the sum of probabilities to exceed 1 would be a disturbance in the laws of the universe.
+
+(月凪惟緒)
+あはは、宇宙ヤバイ。全部足して1になっちゃうと、どっちの入力も半分ずつしか存在できないみたいな感じになっちゃうのかな。なんか切ないねぇ。
+
+Ahaha, the universe is in trouble. If adding them all up only equals 1, it's like each input can only exist halfway. That's kind of sad.
+
+(蒞星怜空)
+存在の希薄化だね。まるで、二人の人間に半分ずつの命しか与えられない神の悪戯のようだ。そんな不完全な世界では、通信など到底ままならないだろう。
+
+A dilution of existence. It's like a prank by a god who only grants half a life to two different human beings. In such an incomplete world, communication would be utterly impossible.
+
+(日乃竜胆)
+次に選択肢ウの『a + c = 1、b + d = 1』だ。これは表を縦に足しているな。つまり「出力が0になる確率の合計」と「出力が1になる確率の合計」を1にしようとしている。だが、入力が0の時と1の時では前提条件が全く異なる。前提が違う確率を足しても、そこに数学的な意味は存在しないのだ。例えば「雨の日に傘を忘れる確率」と「晴れの日に傘を忘れる確率」を足して1になるか？ ならんだろう。
+
+Next is option C: 'a + c = 1, b + d = 1.' This is adding the table vertically. In other words, it's trying to make the 'sum of probabilities for output 0' and the 'sum of probabilities for output 1' equal to 1. However, the prerequisites for an input of 0 and an input of 1 are completely different. Adding probabilities with different premises has no mathematical meaning. For example, would the 'probability of forgetting an umbrella on a rainy day' plus the 'probability of forgetting an umbrella on a sunny day' equal 1? Certainly not.
+
+(月凪惟緒)
+あ〜、確かに。晴れの日と雨の日を混ぜて「絶対傘忘れる！」って言われても、意味不明だもんね。前提が大事ってことかぁ。
+
+Ah~ true. If someone mixed sunny days and rainy days and said 'You'll definitely forget your umbrella!', it wouldn't make any sense. So the premise is what matters.
+
+(日乃竜胆)
+その通り。そして選択肢エの『a + d = 1、b + c = 1』。これは対角線上に足している。aとdは「正しく伝わった確率」、bとcは「エラーになった確率」だ。これらを混ぜて足すことに、何の論理的必然性があるというのか。ただの数字遊びに過ぎん。情報の整合性を無視した、無意味な儀式だな。
+
+Exactly. And then there is option D: 'a + d = 1, b + c = 1.' This adds along the diagonals. 'a' and 'd' are the 'probabilities of correct transmission,' while 'b' and 'c' are the 'probabilities of error.' What logical necessity could there possibly be in mixing and adding these? It is nothing more than playing with numbers. A meaningless ritual that ignores the integrity of information.
+
+(蒞星怜空)
+成功と成功を足して1、失敗と失敗を足して1……。まるで、成功者の群れと敗北者の群れを隔離して、それぞれの檻の中で完結させようとする、ディストピア的な選別だね。そんな歪んだ等式に、真理は宿らない。
+
+Success plus success equals 1, failure plus failure equals 1... It's like a dystopian sorting process, isolating the crowd of winners from the crowd of losers to make them complete within their respective cages. Truth does not reside in such distorted equations.
+
+(月凪惟緒)
+怜空さんの例え、相変わらずダークだなぁ……。でも、おかげで「なんか違う」ってのはよくわかったよ。
+
+Rea-san's analogies are as dark as ever... But thanks to that, I really get that 'something is wrong' here.
+
+(日乃竜胆)
+では、真打ちの登場だ。正解の選択肢イ、『a + b = 1、c + d = 1』について解説しよう。先ほどイオちが直感した通り、これは「ある入力に対して、起こりうる全ての出力確率を足したもの」だ。
+
+Now, for the star of the show. Let us explain the correct choice, B: 'a + b = 1, c + d = 1.' As Io-chi intuited earlier, this is the 'sum of all possible output probabilities for a given input.'
+
+(日乃竜胆)
+入力が0の時、出力は0（確率a）か1（確率b）のどちらかになる。この二つの事象以外に道はない。ゆえに、a + b は必ず 1（100%）になる。同様に、入力が1の時も、出力は0（確率c）か1（確率d）のどちらかだ。したがって、c + d も必ず 1 になる。これこそが、この遷移確率の表が示す絶対的な真理なのだ。
+
+When the input is 0, the output will be either 0 (probability a) or 1 (probability b). There is no path other than these two events. Therefore, a + b must equal 1 (100%). Similarly, when the input is 1, the output is either 0 (probability c) or 1 (probability d). Consequently, c + d must also equal 1. This is the absolute truth shown by this transition probability table.
+
+(月凪惟緒)
+なるほどねぇ。入力っていう「スタート地点」を決めて、そこから枝分かれする道を全部足せば1になるってことか。ヒノりんの説明、スッと入ってきたよ。
+
+I see. So you pick a 'starting point' called the input, and if you add up all the paths branching out from there, it equals 1. Hino-rin's explanation really clicked.
+
+(蒞星怜空)
+そう、運命の分岐路を全て辿れば、最後には必ず「存在」という一つの結末に辿り着く。たとえその先が、0という静寂であれ、1という喧騒であれ、何かが起こるという事実は揺るがない。それが確率論の慈悲であり、同時に逃れられぬ呪縛でもあるのさ。
+
+Yes, if you follow all the forks in the road of fate, you will eventually arrive at the single conclusion of 'existence.' Whether what lies ahead is the silence of 0 or the clamor of 1, the fact that *something* happens remains unshakable. That is the mercy of probability theory, and at the same time, its inescapable curse.
+
+(日乃竜胆)
+ふむ、良いまとめだな。イオち、この問題のポイントは「横一行の合計が1になる」という点を見抜くことだ。基本情報技術者試験では、こうした「当たり前の定義」を問う問題が意外と多い。惑わされずに、論理の糸を解きほぐしていくのだぞ。
+
+Hmm, a good summary. Io-chi, the point of this problem is to discern that 'the sum of each horizontal row equals 1.' In the Fundamental Information Technology Engineer Examination, there are surprisingly many questions that test these 'obvious definitions.' Do not be misled; unravel the threads of logic carefully.
+
+(月凪惟緒)
+はーい。横一行を足して1、ね。覚えたよ。これなら試験に出ても、寝ぼけ眼で解けそう……かも？
+
+Oka-y. Add the horizontal row to get 1, right. Got it. If this shows up on the exam, I might be able to solve it even while half-asleep... maybe?
+
+(蒞星怜空)
+寝ぼけて入力を間違えないようにね。さもないと、君の回答もまた、遷移確率の波に呑まれて『誤答』という名の1へと変貌してしまうから……。ふふふ。
+
+Just make sure you don't make a mistake on the input while half-asleep. Otherwise, your answer too will be swallowed by the waves of transition probability and transformed into a 1 known as an 'incorrect answer'... Hehehe.
+
+(日乃竜胆)
+……怜空さん、最後のはジョークとしては少々冷え込みすぎるな。だが、緊張感を持つことは大切だ。イオち、この調子で次へ進むぞ。情報の海は、まだまだ深いのだからな。
+
+...Rea-san, that last one was a bit too chilling for a joke. However, maintaining a sense of tension is important. Io-chi, let's move on to the next one at this pace. The sea of information is still very deep, after all.
+
+---
+
+=== [画像翻訳] ===
+
+(日乃竜胆)
+さて、イオち。基本情報技術者の学習も進んでいるようだな。今回はメモリの誤り検出と訂正、いわゆる『データの完全性』を守るための術理についての設問だ。AWSにおいても、EC2インスタンスの信頼性を支えるECCメモリなどで極めて重要な概念となる。心して聞くがよい。
+
+Now, Io-chi. It seems your studies for the Fundamental Information Technology Engineer exam are progressing. This time, we're looking at memory error detection and correction—the techniques for maintaining 'data integrity.' In AWS, this is a crucial concept for things like ECC memory that supports the reliability of EC2 instances. Listen closely.
+
+(月凪惟緒)
+え〜、メモリの誤り？ メモリくんも人間みたいにうっかりミスしちゃうってことぉ？ なんか親近感わくけど、ダル重なバイブスだねぇ。ビットが反転するとか、私の脳内みたいに混沌としてるのかなぁ……。
+
+Eh~, memory errors? You mean Mr. Memory makes accidental mistakes just like humans? I feel a bit of a connection, but it's such a heavy vibe. Bits flipping... I wonder if it's as chaotic as the inside of my brain...
+
+(蒞星怜空)
+ふふ、混沌か。宇宙から降り注ぐ中性子線一つで、君の積み上げた壮麗なデータが、一瞬にして意味をなさない塵芥へと変貌する。それがデジタル世界の脆弱な真実だ。その崩壊を食い止めるための『呪詛返し』が、今回のテーマというわけだな。実に滑稽で、かつ美しい悲喜劇ではないか。
+
+Hehe, chaos. A single neutron ray from space can transform your magnificently built data into meaningless dust in an instant. That is the fragile truth of the digital world. The 'counter-curse' to stop that collapse is our theme today. Isn't it a truly ridiculous yet beautiful tragicomedy?
+
+(日乃竜胆)
+怜空さん、相変わらず表現が過激だな。だが、本質は突いている。イオち、まずは『誤り検出』と『誤り訂正』の違いを理解せねばならぬ。検出は『何かがおかしい』と気づくこと。訂正は『どこがおかしいか特定し、直す』ことだ。この設問は『2ビットの誤りを検出し、かつ1ビットを直せる』魔法のような手法を問うておる。
+
+Rea-san, your expressions are as extreme as ever. But you hit the mark. Io-chi, first you must understand the difference between 'error detection' and 'error correction.' Detection is noticing 'something is wrong.' Correction is 'identifying where it's wrong and fixing it.' This question asks for a magical method that can detect 2-bit errors and fix 1-bit errors.
+
+(月凪惟緒)
+気づくだけじゃなくて、直せちゃうんだ。すごーい。でも、なんで2ビットとか1ビットとか、数字がバラバラなの？ 全部直せばいいじゃん、って思っちゃうんだけど、それは甘い考えなのかなぁ。
+
+So it doesn't just notice, it can fix it too. Amazing. But why are the numbers different, like 2-bit and 1-bit? I feel like it should just fix everything, but is that too naive?
+
+(蒞星怜空)
+甘い、甘すぎるぞ、イオち。コストと複雑性の天秤だ。全ての崩壊を修復しようとすれば、データそのものよりも巨大な監視役が必要になる。それはもはや、主客転倒した悪夢のようなアーキテクチャだ。だからこそ、最小限の犠牲で最大限の守護を得るための、絶妙なバランスが必要なのだよ。では、まずは『敗北者』たちの解説から始めようか。
+
+Naive, far too naive, Io-chi. It's a balance of cost and complexity. If you try to repair every collapse, you'd need a guardian larger than the data itself. That would be a nightmare architecture where the roles are reversed. That's why an exquisite balance is needed to get maximum protection with minimum sacrifice. Now, shall we start with the 'losers'?
+
+(日乃竜胆)
+承知した。まずは選択肢アの『奇数パリティ』だ。これは最も原始的な手法だな。データの中に『1』が奇数個になるように、検査用のビット（パリティビット）を一つ付け加えるだけだ。もし届いたデータの『1』が偶数個なら、『あ、誰か一人入れ替わったな！』と気づける。だが、誰が入れ替わったかは分からぬし、二人が同時に入れ替わると、奇数のままなので気づくことすらできぬ。無力だな。
+
+Understood. First is option A, 'Odd Parity.' This is the most primitive method. You just add one inspection bit (parity bit) so that the number of '1's in the data is odd. If the received data has an even number of '1's, you notice, 'Ah, someone swapped!' But you don't know who, and if two people swap at once, it stays odd, so you don't even notice. Powerless.
+
+(月凪惟緒)
+奇数パリティくん、ただの人数確認係なんだねぇ。しかも二人同時にサボられたらスルーしちゃうとか、ちょっとおっちょこちょいすぎない？ 訂正もできないなら、ただ『ダメでした〜』って報告するだけだよね。チルくないなぁ。
+
+So Odd Parity is just a headcount taker. And if two people slack off at the same time, it just ignores it? Isn't that a bit too clumsy? If it can't even fix it, it's just reporting 'It failed~'. Not very chill.
+
+(蒞星怜空)
+その通りだ。社会的な恐怖で例えるなら、出席確認で人数は合っているが、中身が偽物に入れ替わっていることに気づかない学校のようなものだ。暗澹たる光景だろう？ 次の選択肢イ、『水平パリティ』も似たようなものだ。データの塊を横方向に並べて、列ごとにパリティを計算する。少しは精度が上がるが、本質的には『検出』の域を出ない。訂正能力を持たないという点では、五十歩百歩の悲劇だな。
+
+Exactly. To use a social horror analogy, it's like a school where the headcount matches during roll call, but they don't notice students have been replaced by imposters. A bleak sight, isn't it? The next option B, 'Horizontal Parity,' is similar. You line up blocks of data horizontally and calculate parity for each row. It's slightly more accurate, but essentially stays in the realm of 'detection.' In terms of lacking correction ability, it's a tragedy of much the same sort.
+
+(日乃竜胆)
+そして選択肢ウの『チェックサム』。これはデータの合計値を計算して付与する方式だ。ネットワーク通信などでよく使われるが、これも『合計が合わないから、どこかが壊れている』と分かるだけで、自力で修復する力はない。外科手術が必要な患者に対し、『あなたは病気です』と告げるだけでメスを握らない医者のようなものだ。今回の設問の要求には応えられぬ。
+
+And option C, 'Checksum.' This method calculates and attaches the total value of the data. It's often used in network communications, but it only tells you 'the total doesn't match, so something is broken'; it has no power to repair it itself. It's like a doctor telling a patient who needs surgery, 'You are sick,' without ever picking up a scalpel. It cannot meet the requirements of this question.
+
+(月凪惟緒)
+うわぁ、冷たいお医者さんだねぇ。みんな『気づく』までは頑張るけど、『直す』ってなると急にシャッター閉めちゃう感じ？ 現代社会の縮図みたいで、ちょっと頭痛くなってきたかも……。じゃあ、最後の『ハミング符号』くんが、ヒーローってこと？
+
+Wow, what a cold doctor. Everyone tries hard until they 'notice,' but when it comes to 'fixing,' they suddenly close the shutters? It's like a microcosm of modern society; I'm starting to get a headache... So, is the last one, 'Hamming Code,' the hero?
+
+(蒞星怜空)
+ヒーロー、か。あるいは、執拗なまでの監視社会の完成形とも言える。ハミング符号は、データの中に複数の冗長なビットを、まるで蜘蛛の巣のように巧妙に配置する。その網の目が重なり合うことで、エラーが発生した場所を座標のように特定するのだ。一箇所の反転なら、その座標を特定して『逆転』させることで、無に帰したはずのデータを現世に呼び戻す。まさに死者蘇生の秘術だ。
+
+A hero, perhaps. Or you could call it the perfection of a relentless surveillance society. Hamming Code cleverly places multiple redundant bits within the data, like a spiderweb. By overlapping these meshes, it identifies the location of an error like coordinates. If it's a single flip, it pinpoints the coordinates and 'reverses' it, bringing data that should have returned to nothingness back to the living world. Truly a secret art of resurrection.
+
+(日乃竜胆)
+怜空さんの言う通り、選択肢エの『ハミング符号』こそが正解だ。この方式は、複数の検査ビットを用いることで、1ビットの誤り箇所を特定して訂正し、さらに2ビットまでの誤りが発生していることを検出できる。AWSの基盤を支えるサーバー群でも、このハミング符号を拡張したECC（Error Correction Code）メモリが標準的に使われておる。ビット反転という静かなる崩壊から、顧客の資産を守り抜くための盾なのだ。
+
+As Rea-san says, option D, 'Hamming Code,' is the correct answer. This method uses multiple inspection bits to identify and correct a 1-bit error, and can further detect up to 2-bit errors. Even in the server clusters supporting AWS infrastructure, ECC (Error Correction Code) memory, which is an extension of this Hamming Code, is used as a standard. It is the shield that protects customer assets from the silent collapse of bit flipping.
+
+(月凪惟緒)
+へぇ〜、ハミングくん、すごいじゃん！ 1ビットなら『ここだよ！』って直してくれて、2ビットでも『ヤバいよ！』って教えてくれるんだね。AWSの裏側でもそんな健気な子が働いてるなんて、ちょっと感動しちゃった。ヒノりん、解説ありがと。なんか、ちょっとだけ賢くなった気がする……気がするだけかもだけど。
+
+Heh~, Hamming-kun is pretty great! For 1-bit, he's like 'It's here!' and fixes it, and for 2-bit, he's like 'It's bad!' and lets you know. I'm a bit moved that such a dedicated kid is working behind the scenes of AWS. Thanks for the explanation, Hino-rin. I feel like I've gotten a little smarter... or maybe it's just a feeling.
+
+(蒞星怜空)
+賢くなったという錯覚も、また一興。だが忘れるな、イオち。ハミング符号ですら、3ビット以上の同時崩壊の前には、ただ無力に灰燼に帰すのみ。完璧な守護などこの世には存在しない。だからこそ、我々はバックアップという名の『輪廻転生』を準備し続けねばならんのだよ。ククク……さて、次の深淵へ向かうとしようか。
+
+The illusion of becoming smarter is also a form of entertainment. But do not forget, Io-chi. Even Hamming Code is rendered powerless and reduced to ashes before a simultaneous collapse of 3 bits or more. Perfect protection does not exist in this world. That is why we must continue to prepare 'reincarnations' known as backups. Hehehe... Now, shall we head toward the next abyss?
+
+---
+
+=== [画像翻訳] ===
+
+(日乃竜胆)
+さて、イオち。今日は基本情報技術者試験の過去問から、通信の信頼性を支える「誤り検査方式」についての講義を行う。AWSを学ぶ上でも、データの整合性は避けて通れぬ道だ。覚悟はよろしいか？
+
+Now then, Io-chi. Today, we shall conduct a lecture on 'Error Detection Methods' that support communication reliability, using a past question from the Fundamental Information Technology Engineer Examination. Even in learning AWS, data integrity is a path one cannot avoid. Are you prepared?
+
+(月凪惟緒)
+え〜、基本情報……。なんか文字がいっぱいで、すでに脳内が永久凍土になりそう。ヒノりん、お手柔らかに頼むよ。データが壊れて届くとか、そんなことあるの？
+
+Ehh, Fundamental Information... It's so wordy, my brain is already turning into permafrost. Hino-rin, please go easy on me. Does data really get corrupted when it's sent?
+
+(蒞星怜空)
+あるとも。デジタルという壮麗な伽藍も、物理的な電線や電波という泥臭い現実の上に築かれている。ノイズという名の悪魔が、ビットを0から1へ、あるいは1から0へと気まぐれに書き換えるのだ。それはまるで、丹精込めて書いたラブレターが、届く頃には呪詛の言葉に変わっているような悲劇といえよう。
+
+Indeed it does. Even the magnificent cathedral of digital technology is built upon the gritty reality of physical wires and radio waves. A demon called 'noise' whimsically rewrites bits from 0 to 1, or 1 to 0. It is a tragedy akin to a painstakingly written love letter transforming into a curse by the time it arrives.
+
+(日乃竜胆)
+怜空さんの言う通りだ。だからこそ、受信側で「このデータは正しいか？」を判定する仕組みが必要になる。設問を見てみよう。「生成多項式で割った余りを付加する」という記述が鍵だ。まずは、間違いの選択肢から、その脆弱さと限界を暴いていくぞ。
+
+Rea-san is correct. That is why a mechanism to determine 'is this data correct?' at the receiving end is necessary. Let's look at the question. The key is the description 'appending the remainder obtained by dividing by a generator polynomial.' First, we shall expose the weaknesses and limitations of the incorrect options.
+
+(月凪惟緒)
+間違いからいくんだね。了解。まずは選択肢イとウの「パリティチェック」ってやつ。これ、名前からしてなんか地味そうだけど……。
+
+Starting with the mistakes, I see. Got it. First, options B and C, the 'Parity Check' things. They sound kind of plain just from the name...
+
+(日乃竜胆)
+至極真っ当な直感だ。パリティチェックは、ビット列の中に「1」が何個あるかを数え、その個数が偶数か奇数かを示す1ビット（パリティビット）を付け加えるだけの、極めて原始的な手法だ。垂直はデータの列ごと、水平はデータの行ごとにチェックを行う。
+
+A perfectly valid intuition. A parity check is an extremely primitive method that simply counts how many '1's are in a bit string and appends a single bit (the parity bit) to indicate whether that count is even or odd. 'Vertical' checks per column of data, and 'Horizontal' checks per row.
+
+(蒞星怜空)
+そう、それはまるで、どんぶりの中の米粒が偶数か奇数かだけを報告して安心しているようなものだ。もし、運悪く2つのビットが同時に反転してしまったら？ 偶奇は変わらず、エラーは見逃される。監視員が居眠りしている間に、裏口から二人の侵入者が同時に入り、二人の退場者が出たようなものだ。帳尻さえ合えば、中身がどれほど無秩序に崩壊していようと、パリティチェックは沈黙を守る。実に無力で、哀れな光景だな。
+
+Yes, it's like being satisfied by merely reporting whether the number of rice grains in a bowl is even or odd. What if, by ill luck, two bits flip simultaneously? The parity remains the same, and the error is overlooked. It's as if two intruders entered through the back door while the guard was dozing, and two people exited at the same time. As long as the count balances, the parity check remains silent, no matter how chaotically the contents have collapsed. A truly powerless and pathetic sight.
+
+(月凪惟緒)
+うわ、ザルじゃん。2箇所同時に間違えたらバレないってことかぁ。じゃあ、選択肢エの「ハミング符号方式」は？ 名前はちょっとカッコいいけど。
+
+Wow, that's full of holes. So if two spots go wrong at once, it won't be caught. Then, what about option D, the 'Hamming Code'? The name sounds a bit cool.
+
+(日乃竜胆)
+ハミング符号は、パリティよりも高度だ。複数のチェック用ビットを巧妙に配置することで、誤りを見つけるだけでなく、どこが間違っているかを特定し、自動で修正（1ビットのみ）することすら可能だ。だが、今回の設問にある「生成多項式で割る」という計算手順とは根本的に異なる。これは「自己修復」に重きを置いた、コストの高い贅沢な手法なのだよ。
+
+The Hamming code is more advanced than parity. By cleverly arranging multiple check bits, it can not only find errors but also pinpoint where they are and even automatically correct them (for a single bit). However, it is fundamentally different from the calculation procedure of 'dividing by a generator polynomial' mentioned in this question. It is a costly, luxurious method that emphasizes 'self-repair'.
+
+(蒞星怜空)
+ハミング符号は、自らの傷を自らで塞ぐサイボーグのようなものだ。しかし、その代償として多くの冗長なビットを抱え込まねばならぬ。今回の設問が求めているのは、もっと数学的で、エレガントかつ冷徹な「割り算」による審判だ。
+
+The Hamming code is like a cyborg that plugs its own wounds. However, as a price, it must carry many redundant bits. What this question seeks is a more mathematical, elegant, and cold judgment through 'division'.
+
+(月凪惟緒)
+サイボーグ……。なんか強そうだけど、今回の正解じゃないんだね。ってことは、残ったアの「CRC方式」が犯人、じゃなくて正解？
+
+A cyborg... sounds strong, but I guess it's not the right answer this time. So, that means the remaining A, 'CRC method', is the culprit—I mean, the correct answer?
+
+(日乃竜胆)
+然り。CRC（Cyclic Redundancy Check：巡回冗長検査）こそが、設問の記述通りの動作を行う。送信側でビット列を「生成多項式」という特定の数式で割り、その「余り」をデータの後ろにくっつけて送る。受信側も同じ式で割り算し、余りがゼロになれば「合格」、そうでなければ「破棄」だ。非常に高い精度でバースト誤り（連続した誤り）すら検出できる、通信界の冷徹な門番よ。
+
+Correct. CRC (Cyclic Redundancy Check) is exactly what performs the operation described in the question. The sender divides the bit string by a specific formula called a 'generator polynomial' and appends the 'remainder' to the end of the data. The receiver divides by the same formula; if the remainder is zero, it's a 'pass'; otherwise, it's 'discarded'. It is the cold gatekeeper of the communication world, capable of detecting even burst errors (consecutive errors) with extremely high precision.
+
+(月凪惟緒)
+割り算して余りが出たらアウト、てことかぁ。シンプルだけど厳しそう。でもさ、なんで「多項式」なんて難しい言葉使うの？ 普通に数字で割ればよくない？
+
+So if there's a remainder after division, you're out. Simple but strict. But why use a difficult word like 'polynomial'? Wouldn't dividing by normal numbers be fine?
+
+(蒞星怜空)
+ふふ、良い質問だ。デジタルの世界では、ビットの並びを X の累乗の和として扱う方が、回路で計算する際に都合が良いのだよ。排他的論理和（XOR）を用いた、繰り下がりのない特殊な割り算……。それは、我々が知る算数の美しさを冒涜し、機械の論理へと再構築した暗黒の数学だ。だが、その暗黒こそが、高速かつ確実にエラーを炙り出すのだから皮肉なものだな。
+
+Hehe, a good question. In the digital world, treating a sequence of bits as a sum of powers of X is more convenient for circuit calculations. It's a special kind of division without carries, using Exclusive OR (XOR)... It is a dark mathematics that profanes the beauty of the arithmetic we know and reconstructs it into the logic of machines. Yet, it is ironic that this very darkness is what exposes errors quickly and reliably.
+
+(日乃竜胆)
+怜空さんの詩的な表現を補足すると、AWSの世界でもこのCRCは至る所で活躍している。例えば、Amazon S3にファイルをアップロードする際、データが転送中に壊れていないかを確認するために「Content-MD5」や、より高速な「CRC32」といったチェックサムが使われることがある。クラウドという巨大な情報の海で、自分のデータがゴミに変わっていないことを保証する最後の砦なのだ。
+
+To supplement Rea-san's poetic expression, this CRC is active everywhere in the world of AWS as well. For example, when uploading a file to Amazon S3, checksums like 'Content-MD5' or the faster 'CRC32' are sometimes used to verify that the data wasn't corrupted during transfer. It is the last bastion ensuring your data hasn't turned into trash in the vast sea of information that is the cloud.
+
+(月凪惟緒)
+へぇ〜、S3でも使われてるんだ。ヒノりんの説明で、なんかCRCが「データのボディーガード」みたいに見えてきたよ。多項式っていう武器を持って、変な余りが出ないか見張ってる感じ？
+
+Heh~, so it's used in S3 too. With Hino-rin's explanation, CRC is starting to look like a 'data bodyguard' to me. Like it's holding a weapon called a polynomial and watching to make sure no weird remainders show up?
+
+(日乃竜胆)
+その通りだ。まとめよう。パリティは「数えるだけ」で脆弱。ハミングは「直せる」が計算が重い。そしてCRCは「多項式で割る」ことで、高い精度で誤りを見つけ出す。設問のキーワード「生成多項式」「割り切れるか否か」が出てきたら、迷わずCRC（ア）を選べ。これが、情報の純潔を守るための鉄則だ。
+
+Exactly. Let's summarize. Parity is 'just counting' and thus fragile. Hamming can 'fix' things but the calculation is heavy. And CRC finds errors with high precision by 'dividing by a polynomial'. When the keywords 'generator polynomial' and 'whether it is divisible' appear in a question, choose CRC (A) without hesitation. This is the ironclad rule for protecting the purity of information.
+
+(蒞星怜空)
+理解したようだな、イオち。だが忘れるな。どれほど強固な検査方式を導入しようとも、この宇宙に絶対の安全など存在しない。CRCを潜り抜ける巧妙なエラーが、いつか君のシステムを音もなく崩壊させるかもしれない……。その絶望すらも、エンジニアとしての醍醐味といえよう。くくく……。
+
+It seems you've understood, Io-chi. But do not forget. No matter how robust a detection method you implement, absolute safety does not exist in this universe. A clever error that slips through the CRC might one day silently collapse your system... Even that despair could be called the true pleasure of being an engineer. Kukuku...
+
+(月凪惟緒)
+怜空さん、最後が怖すぎるよ……。でも、CRCが「割り算の番人」だってことは、永久凍土な私の脳にもしっかり刻まれた気がする。ありがと、ヒノりん！
+
+Rea-san, that ending is too scary... But I feel like the fact that CRC is the 'Guardian of Division' has been firmly etched even into my permafrost brain. Thanks, Hino-rin!
+
+---
+
+=== [画像翻訳] ===
+
+(日乃竜胆)
+さて、イオち。今回は基本情報技術者試験の要、『オートマトン』の設問だな。AWSのアーキテクチャを理解する上でも、この『状態遷移』という概念は避けては通れぬ。心してかかれ。
+
+Now, Io-chi. This time we have a question on 'Automata', a cornerstone of the Fundamental Information Technology Engineer Examination. Even when understanding AWS architecture, the concept of 'state transitions' is unavoidable. Prepare yourself.
+
+(月凪惟緒)
+おー……オートマトン。なんか強そうな響き。自動で動くお掃除ロボット的な？ でも図が記号だらけで、脳が冬眠しそうだよ、ヒノりん……。
+
+Oh... Automaton. Sounds powerful. Like an automatic cleaning robot? But the diagram is full of symbols, my brain is about to go into hibernation, Hino-rin...
+
+(蒞星怜空)
+ふふ、お掃除ロボットか。あながち間違いではないな。だがこれは、入力という名の『運命』を受け入れ、自らの『状態』を冷徹に変容させていく、悲しき機械の叙事詩だ。一度足を踏み入れれば、出口のない迷宮を彷徨うことになる……。まるで、仕様変更が無限に続く炎上案件のようにな。
+
+Heh, a cleaning robot? Not entirely wrong. But this is an epic of a sorrowful machine that accepts 'destiny' in the form of input and coldly transforms its own 'state'. Once you step inside, you'll wander a labyrinth with no exit... much like a project on fire with endless specification changes.
+
+(日乃竜胆)
+怜空さん、初手から場を凍らせるのは勘弁していただきたい。イオち、まずは用語の整理だ。この丸い『S1』『S2』『S3』は『状態（ステート）』。矢印は『遷移』。そして矢印の横にある『0／0』といった表記は『入力／出力』を意味している。左側の数字を入れた時、右側の数字が出てくるということだ。
+
+Rea-san, please refrain from freezing the atmosphere from the very first move. Io-chi, first, let's organize the terminology. These circles 'S1', 'S2', and 'S3' are 'States'. The arrows are 'Transitions'. And the notation like '0/0' next to the arrows means 'Input/Output'. It means when you input the number on the left, the number on the right comes out.
+
+(月凪惟緒)
+あー、なるほどねぇ。左の数字を機械に食べさせると、右の数字を吐き出すってことかぁ。で、矢印の先に移動しちゃう、と。……でも、これどうやって解けばいいの？ 選択肢がいっぱいあって、どれも同じに見えるんだけど。
+
+Ah, I see. So if you feed the machine the number on the left, it spits out the number on the right. And then it moves to where the arrow points... But how do I solve this? There are so many options, and they all look the same.
+
+(日乃竜胆)
+焦るな。まずは間違いの選択肢から、なぜそれが『偽物』なのかを暴いていこう。まずは選択肢『エ』からだ。出力が『0011111110』となっているな。
+
+Don't rush. First, let's expose why the incorrect options are 'fakes'. Let's start with option 'D' (エ). The output is '0011111110'.
+
+(蒞星怜空)
+『エ』か。これは、入力記号『0011001110』をそのまま出力だと勘違いしたか、あるいは状態遷移を無視して『1が入ったら常に1が出る』という、あまりに楽観的で、かつ破滅的な妄想に囚われた者の末路だな。現実のシステムは、そんなに甘くはない。一度のミスが、データベースを灰燼に帰すこともあるのだから。
+
+Option 'D', is it? This is the end result for someone who either mistook the input '0011001110' for the output itself, or was trapped in a catastrophic delusion that 'if 1 goes in, 1 always comes out', ignoring state transitions. Real systems aren't that sweet. A single mistake can turn a database into ashes.
+
+(日乃竜胆)
+その通りだ。図を見れば、S1にいる時に『1』を入力しても、出力は『0』だ。最初から『1』が出るはずがない。よって『エ』は論外。次に選択肢『ウ』の『0010001000』を見てみよう。
+
+Exactly. Looking at the diagram, even if you input '1' while in S1, the output is '0'. There's no way a '1' comes out from the start. Therefore, 'D' is out of the question. Next, let's look at option 'C' (ウ), '0010001000'.
+
+(月凪惟緒)
+『ウ』は……えーっと、3番目が『1』になってるね。でも、ヒノりんが言ったみたいに、S1で『1』を入れたら出力は『0』でしょ？ 3番目の入力は『1』だから、出力は『0』じゃないとおかしい気がする……。
+
+Option 'C' is... let's see, the third digit is '1'. But like Hino-rin said, if you put '1' into S1, the output is '0', right? Since the third input is '1', it feels weird if the output isn't '0'...
+
+(日乃竜胆)
+慧眼だな、イオち。入力の3文字目は『1』。S1の状態で『1』を入力すると、ラベル『1／0』に従ってS2へ遷移し、出力は『0』となる。しかし『ウ』はここを『1』としている。この時点で脱落だ。では、惜しいところまで行っている選択肢『イ』の『0001001110』はどうだ？
+
+Keen eye, Io-chi. The third character of the input is '1'. Inputting '1' in state S1 follows the label '1/0', transitioning to S2 and outputting '0'. However, 'C' has a '1' here. It's disqualified at this point. Now, what about option 'B' (イ), '0001001110', which gets quite close?
+
+(蒞星怜空)
+『イ』……。これは、中盤の『00』という入力に対して、自らの状態を見失った者の末路だ。S3に到達した後、再びS1に戻るという『輪廻転生』の理を理解していなかったのだろう。一度天界（S3）に昇ったからといって、永遠にそこに居られると思うのは、クラウドの無料枠が永遠に続くと信じるような、あまりに無垢で、残酷な勘違いだ。
+
+Option 'B'... This is the fate of one who lost sight of their own state during the mid-sequence input of '00'. They likely didn't understand the law of 'Samsara'—returning to S1 after reaching S3. Thinking you can stay in heaven (S3) forever just because you ascended once is a naive and cruel misunderstanding, like believing a cloud free tier lasts forever.
+
+(月凪惟緒)
+え、えーっと……つまり、途中で間違えてるってこと？ 難しいよぉ、怜空さん。ヒノりん、正解の『ア』を、一歩ずつ、亀さんみたいにゆっくり解説して！
+
+Uh, so... basically, it's wrong in the middle? It's hard, Rea-san. Hino-rin, please explain the correct answer 'A' (ア) step-by-step, slowly like a turtle!
+
+(日乃竜胆)
+よかろう。入力『0011001110』を、一文字ずつ追いかけるぞ。全神経を集中させろ。
+
+1. 最初はS1だ。入力『0』。ラベル『0／0』でS1に留まり、出力は【0】。
+2. 次も入力『0』。またS1に留まり、出力は【0】。
+3. 入力『1』。ラベル『1／0』でS2へ遷移。出力は【0】だ。ここがポイントだな。
+4. 入力『1』。S2で『1』を入れると、ラベル『1／1』でS3へ。出力は【1】。
+5. 入力『0』。S3で『0』を入れると、ラベル『0／0』でS1へ戻る。出力は【0】。
+6. 入力『0』。S1で『0』。S1に留まり、出力は【0】。
+7. 入力『1』。S1で『1』。S2へ遷移し、出力は【0】。
+8. 入力『1』。S2で『1』。S3へ遷移し、出力は【1】。
+9. 入力『1』。S3で『1』を入れると、ラベル『1／1』でS3に留まる。出力は【1】。
+10. 最後、入力『0』。S3で『0』。S1へ戻り、出力は【0】だ。
+
+Very well. Let's track the input '0011001110' one character at a time. Concentrate all your nerves.
+
+1. Start at S1. Input '0'. Label '0/0' stays at S1, output is [0].
+2. Next input '0'. Stays at S1, output is [0].
+3. Input '1'. Label '1/0' transitions to S2. Output is [0]. This is the key point.
+4. Input '1'. Inputting '1' at S2 follows label '1/1' to S3. Output is [1].
+5. Input '0'. Inputting '0' at S3 follows label '0/0' back to S1. Output is [0].
+6. Input '0'. At S1, input '0'. Stays at S1, output is [0].
+7. Input '1'. At S1, input '1'. Transitions to S2, output is [0].
+8. Input '1'. At S2, input '1'. Transitions to S3, output is [1].
+9. Input '1'. Inputting '1' at S3 follows label '1/1' to stay at S3. Output is [1].
+10. Finally, input '0'. At S3, input '0'. Returns to S1, output is [0].
+
+(月凪惟緒)
+……あ！ 全部つなげると『0001000110』になった！ これが選択肢『ア』なんだね。すごーい、パズルみたい。でも、一箇所でも見失うと、もう迷子になっちゃうね、これ。
+
+...Ah! If you put them all together, it becomes '0001000110'! That's option 'A'. Wow, it's like a puzzle. But if you lose track even once, you're totally lost, aren't you?
+
+(蒞星怜空)
+その通り。この『状態』という鎖に繋がれた機械は、過去の入力を『状態』として記憶しているのだ。AWSのStep Functionsや、ステートフルな設計も、根底にある思想は同じ。過去の因果が現在の挙動を縛り、未来の出力を決定する……。逃れられぬカルマの連鎖だな。イオち、君が今日食べた昼食が、明日の君のコンディションを決定するように。
+
+Exactly. This machine, bound by the chains of 'state', remembers past inputs as its 'state'. The underlying philosophy of AWS Step Functions or stateful designs is the same. Past causality binds current behavior and determines future output... an inescapable chain of karma. Just as the lunch you ate today, Io-chi, determines your condition tomorrow.
+
+(日乃竜胆)
+例えが不穏だが、本質は突いているな。オートマトンは、複雑なロジックを『状態の遷移』として整理するための強力な武器だ。この図を読み解く力があれば、どんな複雑なシステムフローも、抜き身の刀で竹を割るが如く、鮮やかに理解できるだろう。
+
+The analogy is unsettling, but it hits the essence. Automata are a powerful weapon for organizing complex logic as 'state transitions'. If you have the power to decipher this diagram, you can vividly understand any complex system flow, like splitting bamboo with a drawn sword.
+
+(月凪惟緒)
+ヒノりん、かっこいい……。でも、竹を割る前に私の頭が割れそうだよぉ。でも、一歩ずつ追いかければ解けるってわかったから、次はもっとチルに解ける気がする。てことかぁ、状態遷移、覚えたよ！
+
+Hino-rin, you're so cool... But my head feels like it's going to split before the bamboo does. Still, now that I know I can solve it by following step-by-step, I feel like I can solve the next one more 'chill'. I see, state transitions—I've got it!
+
+(蒞星怜空)
+ふふ、その意気だ。だが忘れるな。一度遷移した状態は、適切な入力がなければ元には戻らない。君がこの知識を得てしまった以上、もう『何も知らなかった頃の無垢な自分』には戻れないのだよ……。ククク、ようこそ、計算機科学の深淵へ。
+
+Heh, that's the spirit. But do not forget. Once a state has transitioned, it cannot return to the original without the proper input. Now that you have gained this knowledge, you can never return to the 'innocent self who knew nothing'... Hehehe, welcome to the abyss of computer science.
+
+---
+
+=== [画像翻訳] ===
+
+(日乃竜胆)
+さて、イオち、怜空さん。本日は基本情報技術者試験の鬼門の一つ、BNF記法について講義を執り行う。AWSの構築においても、リソースの命名規則やポリシーの記述など、構文の理解は避けて通れぬ道だ。覚悟はよろしいか？
+
+Now, Io-chi, Rea-san. Today, I will conduct a lecture on BNF notation, one of the major hurdles in the Fundamental Information Technology Engineer Examination. Even in AWS construction, understanding syntax is an unavoidable path, such as for resource naming conventions and policy descriptions. Are you prepared?
+
+(月凪惟緒)
+ひのりん、相変わらず圧がすごいねぇ……。この「::=」とか「|」とか、画面がバグってるみたいで目が滑るよぉ。もっとこう、チルな感じで理解できないかなぁ？
+
+Hino-rin, your pressure is as intense as ever... These '::=' and '|' symbols make the screen look like it's glitching, and my eyes are just sliding right over them. Can't we understand this in a more, you know, chill way?
+
+(蒞星怜空)
+ふふ、バグか。ある意味では正しいな。BNFとは、混沌とした文字列の世界に秩序という名の鎖を繋ぎ、プログラムが理解できる『言葉』の形を定義する儀式のようなものだ。一文字の逸脱も許されぬ、冷徹な論理の墓場といえよう。
+
+Hehe, a glitch? In a sense, you're right. BNF is like a ritual that binds the chaotic world of character strings with chains called order, defining the form of 'language' that a program can understand. It is a graveyard of cold logic where not even a single character's deviation is permitted.
+
+(日乃竜胆)
+怜空さんの仰る通りだ。では、まず前提知識から整理しよう。BNF（Backus-Naur Form）は、プログラミング言語などの「文法」を定義するための記法だ。この設問にある記号の意味を、私のメスで解剖するように説明するぞ。
+
+1. `< >`：非終端記号。中身がさらに別の定義に置き換えられる「箱」のようなものだ。
+2. `::=`：左辺の内容は、右辺のように定義される、という意味だ。
+3. `|`：「または（OR）」を表す。選択肢の区切りだな。
+
+Exactly as Rea-san says. Now, let's first organize the prerequisite knowledge. BNF (Backus-Naur Form) is a notation for defining the 'grammar' of things like programming languages. I will explain the meaning of the symbols in this question as if dissecting them with a scalpel.
+
+1. `< >`: Non-terminal symbols. These are like 'boxes' whose contents are replaced by further definitions.
+2. `::=`: This means the content on the left side is defined as the right side.
+3. `|`: Represents 'or' (OR). It's a separator for choices.
+
+(月凪惟緒)
+へぇ〜、つまり「この箱の中身は、これかこれのどっちかだよ」ってルールを決めてるだけってことかぁ。意外とシンプル……かも？
+
+Hee~, so it's just setting rules like 'the contents of this box are either this or that.' That's surprisingly simple... maybe?
+
+(日乃竜胆)
+その通りだ。では、設問の定義を上から順に読み解いていくぞ。
+
+・`<数字>` は 0から9のどれか。
+・`<英字>` は AからFのどれか。
+・`<英数字>` は `<英字>` か `<数字>` か `_`（アンダースコア）のどれか。
+
+ここまでは問題あるまい。問題は最後の一行だ。
+`<変数名> ::= <英字> | <変数名><英数字>`
+
+Exactly. Now, let's decipher the definitions in the question from the top down.
+
+- `<Digit>` is any one of 0 to 9.
+- `<Letter>` is any one of A to F.
+- `<Alphanumeric>` is any one of `<Letter>`, `<Digit>`, or `_` (underscore).
+
+There should be no problem up to here. The issue is the last line.
+`<Variable Name> ::= <Letter> | <Variable Name><Alphanumeric>`
+
+(月凪惟緒)
+あ、出た。自分の中に自分がいるやつ。これ、頭がウニになるんだよねぇ……。`<変数名>` の定義の中に `<変数名>` が入ってるの、どういうこと？
+
+Ah, there it is. The thing where it's inside itself. This really turns my brain into a sea urchin... What does it mean that `<Variable Name>` is included in the definition of `<Variable Name>`?
+
+(蒞星怜空)
+再帰定義、というやつだな。鏡の中に鏡を置いた時に続く、終わりのない回廊のようなものだ。だが、この回廊には必ず『入り口』がある。この定義の場合、`<変数名>` が最初の一歩として選べるのは `<英字>` だけなのだよ。そこから先は、無限に `<英数字>` を継ぎ足していけるという、強欲な構造だ。
+
+It's called a recursive definition. It's like an endless corridor that continues when you place a mirror inside a mirror. However, this corridor always has an 'entrance.' In this definition, the only thing `<Variable Name>` can choose as its first step is `<Letter>`. From there, it's a greedy structure where you can infinitely append `<Alphanumeric>` characters.
+
+(日乃竜胆)
+流石は怜空さん、鮮烈な比喩だ。イオち、噛み砕いて言えばこうだ。
+「変数名は、必ず英字（A〜F）で始まらなければならない。二文字目以降は、英字でも数字でもアンダースコアでも、好きなだけ繋げて良い」ということだ。
+
+As expected of Rea-san, a vivid metaphor. Io-chi, to put it simply, it's this:
+'A variable name must always start with a letter (A-F). From the second character onwards, you can connect as many letters, digits, or underscores as you like.'
+
+(月凪惟緒)
+あー、なるほどねぇ。最初の一文字目だけは「英字」っていう厳しい門番が立ってて、それをパスすれば後は「英数字」っていう緩いパーティー会場に入れるって感じかぁ。それならわかるかも。
+
+Ah, I see. So there's a strict gatekeeper called 'Letter' standing at just the first character, and if you pass that, you can enter a loose party venue called 'Alphanumeric' for the rest. I might get that.
+
+(日乃竜胆)
+その直感、悪くないぞ。では、その理解を武器に、間違いの選択肢から一刀両断していこう。まずは選択肢「ア」の `_B39` だ。これはなぜ間違いか、わかるか？
+
+That intuition isn't bad. Now, using that understanding as a weapon, let's cut through the incorrect options. First is option 'A', `_B39`. Do you know why this is wrong?
+
+(月凪惟緒)
+えーっと、最初が `_`（アンダースコア）だね。さっきのルールだと、一文字目は `<英字>`（A〜F）じゃないとダメなんだよね？ `_` は `<英数字>` の中には入ってるけど、門番の `<英字>` じゃないから……アウト！
+
+Umm, the first character is `_` (underscore). According to the rule earlier, the first character has to be a `<Letter>` (A-F), right? `_` is included in `<Alphanumeric>`, but it's not the gatekeeper `<Letter>`, so... out!
+
+(蒞星怜空)
+正解だ。アンダースコアで始まる変数を許容しない、潔癖な設計だな。AWSのS3バケット名も、数字や小文字で始まらねばならず、ハイフンで始めることは許されない。ルールを破れば、システムという名の神に拒絶されるのだよ。
+
+Correct. It's a fastidious design that doesn't allow variables starting with an underscore. AWS S3 bucket names must also start with a digit or a lowercase letter and are not allowed to start with a hyphen. If you break the rules, you will be rejected by the god known as the system.
+
+(日乃竜胆)
+次に選択肢「イ」の `246` と、選択肢「ウ」の `3E5` を見てみよう。これらはまとめて葬り去ってよかろう。イオち、理由を述べよ。
+
+Next, let's look at option 'B', `246`, and option 'C', `3E5`. We might as well bury these together. Io-chi, state the reason.
+
+(月凪惟緒)
+どっちも最初が数字だね。`2` とか `3` とか。門番の `<英字>`（A〜F）は数字を通さないから、これもアウト。`3E5` の `E` は英字だけど、最初が数字なのが致命的ってことだよねぇ。あー、なんか可哀想になってきた。
+
+Both start with digits. Like `2` or `3`. Since the gatekeeper `<Letter>` (A-F) doesn't let digits through, these are also out. The `E` in `3E5` is a letter, but the fact that it starts with a digit is fatal, right? Ah, I'm starting to feel a bit sorry for them.
+
+(蒞星怜空)
+同情は無用だ。構文エラーは、慈悲なき死を意味する。AWS CloudFormationのテンプレートで一箇所でもインデントや型を間違えれば、スタックの作成は無残にロールバックされ、貴様の努力は虚無へと消える。それがこの世界の理だ。
+
+Compassion is useless. A syntax error means a merciless death. If you make a mistake in indentation or type in even one place in an AWS CloudFormation template, the stack creation will be cruelly rolled back, and your efforts will vanish into nothingness. That is the logic of this world.
+
+(日乃竜胆)
+……怜空さん、少し表現が過激だが、真理ではあるな。では、最後に正解の選択肢「エ」の `F5_1` を吟味しよう。これがなぜ正解なのか、ステップバイステップで証明するぞ。
+
+1. 一文字目は `F`。これは `<英字>` の定義（A|B|C|D|E|F）に合致する。門番を突破したな。
+2. 二文字目は `5`。これは `<数字>` であり、`<英数字>` の定義に含まれる。
+3. 三文字目は `_`。これも `<英数字>` の定義に含まれる。
+4. 四文字目は `1`。これも `<数字>` であり、`<英数字>` に含まれる。
+
+...Rea-san, your expression is a bit extreme, but it is the truth. Now, finally, let's examine the correct option 'D', `F5_1`. I will prove why this is correct step-by-step.
+
+1. The first character is `F`. This matches the definition of `<Letter>` (A|B|C|D|E|F). It has breached the gatekeeper.
+2. The second character is `5`. This is a `<Digit>` and is included in the definition of `<Alphanumeric>`.
+3. The third character is `_`. This is also included in the definition of `<Alphanumeric>`.
+4. The fourth character is `1`. This is also a `<Digit>` and is included in `<Alphanumeric>`.
+
+(月凪惟緒)
+なるほど！ 最初の `F` さえクリアしちゃえば、あとは `5` でも `_` でも `1` でも、`<英数字>` のリストにあるやつなら何でもウェルカムってことだね。パズルみたいで、ちょっと楽しくなってきたかも？
+
+I see! As long as the initial `F` is cleared, then whether it's `5`, `_`, or `1`, anything on the `<Alphanumeric>` list is welcome. It's like a puzzle, maybe it's getting a bit fun?
+
+(蒞星怜空)
+その『楽しさ』の裏には、厳格な統制があることを忘れるな。AWSのIAMポリシーを記述する際も、JSONという厳密なBNF的構造に従わねばならぬ。一文字のカンマの欠落が、全権限の喪失、あるいは予期せぬセキュリティホールという名の地獄を招くのだ。この `F5_1` という文字列が、完璧な調和を保っていることに敬意を払うがいい。
+
+Do not forget that behind that 'fun' lies strict control. When writing AWS IAM policies, you must follow a strict BNF-like structure called JSON. The omission of a single comma invites a hell called the loss of all permissions or an unexpected security hole. You should pay respect to the fact that this string `F5_1` maintains perfect harmony.
+
+(日乃竜胆)
+まとめよう。この問題の核心は、`<変数名>` の定義が「英字で始まる」ことを強制している点を見抜けるかどうかにあった。AWSの学習においても、ドキュメントに記載された「有効な文字」や「命名規則」をBNF的な視点で捉えることができれば、エラーに怯える日々とは決別できるだろう。
+
+Let's summarize. The core of this problem was whether you could see through the fact that the definition of `<Variable Name>` forces it to 'start with a letter.' In your AWS studies as well, if you can perceive the 'valid characters' and 'naming conventions' described in the documentation from a BNF perspective, you will be able to bid farewell to the days of fearing errors.
+
+(月凪惟緒)
+ひのりん、ありがとう。最初は呪文にしか見えなかったけど、門番とパーティー会場の例えでスッキリしたよぉ。これなら次の問題も、チルに解けそうな気がする……たぶん。
+
+Hino-rin, thank you. At first, it looked like nothing but a magic spell, but the analogy of the gatekeeper and the party venue cleared it up. I feel like I can solve the next problem in a chill way too... probably.
+
+(蒞星怜空)
+「たぶん」か。その不確実性こそが、バグの温床となるのだがな。まあよい、今日のところは合格点を与えよう。だが忘れるな、クラウドの深淵は常に、貴様の些細な記述ミスを待ち構えているということを……。
+
+'Probably,' huh? That uncertainty is exactly what becomes a breeding ground for bugs. Well, fine, I'll give you a passing grade for today. But do not forget that the abyss of the cloud is always waiting for your trivial descriptive errors...
+
+---
+
+=== [画像翻訳] ===
+
+(日乃竜胆)
+さて、イオち。今回は基本情報技術者試験の登竜門、データ構造の「木構造」についての講義を執り行う。AWSの基盤を支えるアルゴリズムの深淵を覗く準備はよろしいか？
+
+Now, Ioh-chi. Today we shall conduct a lecture on 'Tree Structures' in data structures, a gateway to the Fundamental Information Technology Engineer Examination. Are you prepared to peer into the abyss of algorithms that support the very foundations of AWS?
+
+(月凪惟緒)
+木構造……。なんか自然派なバイブスだけど、図を見ると逆さまだよね。根っこが上で、葉っぱが下。重力仕事してない感じが、いかにもデジタルって感じでチルいなぁ……。
+
+Tree structures... It sounds like a nature-friendly vibe, but looking at the diagram, it's upside down. The roots are at the top, and the leaves are at the bottom. It feels like gravity isn't doing its job, which is very digital and chill...
+
+(蒞星怜空)
+ふふ、重力に逆らう傲慢な構造物というわけだ。これは単なる図形ではない。情報の支配階級、あるいは崩壊を待つ砂の城のようなもの。ヒノりん、この不条理な「木」のルールを、この迷える子羊に刻み込んでやってくれ。
+
+Heh, an arrogant structure defying gravity, then. This is no mere diagram. It is a hierarchy of information, or perhaps a sandcastle awaiting collapse. Hino-rin, carve the rules of this absurd 'tree' into the mind of this lost lamb.
+
+(日乃竜胆)
+承知した。まず前提知識だ。木構造において、丸い円を「節（ノード）」、それらを繋ぐ線を「枝（ブランチ）」と呼ぶ。最上部が「根（ルート）」、末端が「葉（リーフ）」だ。今回の設問は『葉以外の節点は全て二つの子を持ち、根から葉までの深さが全て等しい木』という、極めて規律正しい、いわば「完全二分木」に近い特殊な個体を扱っている。
+
+Understood. First, the prerequisite knowledge. In a tree structure, the circles are called 'Nodes,' and the lines connecting them are 'Branches.' The topmost is the 'Root,' and the ends are 'Leaves.' This specific problem deals with an extremely disciplined entity—essentially a 'Perfect Binary Tree'—where every non-leaf node has exactly two children and all leaves are at the same depth.
+
+(月凪惟緒)
+規律正しい……。私とは正反対の存在だね。深さが等しいってことは、みんな同じ高さで足並み揃えてるってこと？ 自由がない感じ、ちょっと同情しちゃうかも。
+
+Disciplined... The exact opposite of me. So, 'equal depth' means everyone is lined up at the same height? I almost feel sorry for them, having no freedom.
+
+(蒞星怜空)
+自由などという甘美な幻想はこの階層構造には存在しない。深さが増すごとに、節点の数は倍々に膨れ上がる。それはまるで、一度の失策が指数関数的に破滅を招く、救いようのないプロジェクトの進捗管理のようだな。
+
+Sweet illusions like freedom do not exist in this hierarchy. As the depth increases, the number of nodes swells twofold. It is like the progress management of a hopeless project, where a single misstep leads to exponential ruin.
+
+(日乃竜胆)
+怜空さんの毒気は相変わらず鋭いな。では、選択肢の断罪を始めよう。まずは間違いの選択肢からだ。選択肢「ア」を見てみろ。『枝の個数がnならば、節点の個数もnである』。これは明白な誤謬だ。
+
+Rea-san's toxicity is as sharp as ever. Now, let us begin the judgment of the options. We shall start with the incorrect ones. Look at option 'A': 'If the number of branches is n, the number of nodes is also n.' This is a manifest fallacy.
+
+(月凪惟緒)
+えー、なんで？ 線と丸、セットで増えていきそうなのに。一本の線に一個の丸、みたいな。
+
+Eh, why? I thought lines and circles would increase in pairs. Like, one line for one circle.
+
+(日乃竜胆)
+惜しいな。図をよく見るのだ。全ての節点には、上から伸びてくる枝が一本ずつ刺さっている。だが、唯一の例外がある。最上階に君臨する「根」だ。根には上から来る枝がない。つまり、節点の総数は「枝の数 + 1」となる。n個の枝があるなら、節点はn+1個だ。この「+1」の孤独を理解せねばならん。
+
+Close, but no. Look closely at the diagram. Every node has exactly one branch coming down into it. However, there is one exception: the 'Root' reigning at the top. The root has no branch coming from above. Thus, the total number of nodes is 'number of branches + 1.' If there are n branches, there are n+1 nodes. You must understand the solitude of this '+1'.
+
+(蒞星怜空)
+頂点に立つ者は常に孤独。誰からも繋がれず、ただ下位の者たちを支配するのみ。枝の数と節の数が同じだなんて、そんな平等な世界、この冷徹なデータ構造が許すはずもないだろう？
+
+Those at the summit are always lonely. Connected to no one above, they merely rule those below. A world where the number of branches and nodes are equal? This cold-hearted data structure would never permit such equality.
+
+(日乃竜胆)
+次に選択肢「イ」だ。『木の深さがnならば、葉の個数は2^(n-1)である』。これも誤りだ。図の例では深さが3で、葉の数は8個ある。2の3乗は8だな。つまり、この木における葉の数は「2のn乗」だ。n-1などという中途半端な妥協は不要だ。
+
+Next is option 'B': 'If the depth of the tree is n, the number of leaves is 2^(n-1).' This is also incorrect. In the diagram's example, the depth is 3, and there are 8 leaves. 2 to the power of 3 is 8. Thus, the number of leaves in this tree is '2 to the power of n.' Half-hearted compromises like n-1 are unnecessary.
+
+(月凪惟緒)
+2のn乗……。深さが1増えるごとに、葉っぱが2倍、4倍、8倍って増えていくんだね。ネズミ講みたいでちょっと怖いかも。指数関数的な増殖、私の脳内メモリじゃ溢れちゃうよぉ……。
+
+2 to the power of n... So every time the depth increases by 1, the leaves double—2, 4, 8. It's a bit scary, like a pyramid scheme. Exponential growth would overflow my brain's memory...
+
+(蒞星怜空)
+溢れるどころか、灰燼に帰すだろうな。深さがわずか10になれば葉は1024。30になれば10億を超える。末端の労働者が幾何級数的に増え続ける地獄絵図。それがこの美しい木の正体だ。
+
+Overflow? It would turn to ashes. At a depth of just 10, there are 1024 leaves. At 30, it exceeds a billion. A hellish landscape where the bottom-tier workers multiply geometrically. That is the true nature of this beautiful tree.
+
+(日乃竜胆)
+そして選択肢「ウ」だ。『節点の個数がnならば、木の深さはlog2 nである』。これは惜しいが、定義がズレている。log2 n（底が2の対数）で求められるのは、葉の数から深さを導き出す時だ。節点全体の数nから深さを出すには、もう少し複雑な計算が必要になる。この選択肢は、甘い誘惑で計算を狂わせる罠だな。
+
+And then, option 'C': 'If the number of nodes is n, the depth of the tree is log2 n.' This is close, but the definition is off. log2 n (logarithm base 2) is used when deriving depth from the number of leaves. To derive depth from the total number of nodes n, a slightly more complex calculation is required. This option is a trap designed to derail your calculations with sweet temptation.
+
+(月凪惟緒)
+ログ……。丸太のこと？ あ、対数か。数学の亡霊がこんなところにも……。ヒノりん、私の頭がオーバーヒートして、絶対零度のチルさが溶け出しそうだよ……。
+
+Log... like a piece of wood? Oh, logarithms. The ghosts of mathematics are everywhere... Hino-rin, my head is overheating, and my absolute-zero chill is about to melt away...
+
+(蒞星怜空)
+対数とは、巨大な数を矮小化して理解するための、人類のささやかな抵抗に過ぎない。だが、節点総数nをそのまま放り込んでも、深さという真実には辿り着けない。計算の前提が崩壊しているのだ。実に滑稽だな。
+
+Logarithms are merely humanity's modest resistance, an attempt to belittle and understand vast numbers. However, simply throwing in the total node count n will not lead you to the truth of the depth. The premise of the calculation has collapsed. Truly farcical.
+
+(日乃竜胆)
+最後に、正解の選択肢「エ」を解説する。『葉の個数がnならば、葉以外の節点の個数はn-1である』。これは真実だ。図を見てみろ。葉が8個のとき、それ以外の節点（根と途中の節）を数えると、1+2+4で合計7個。まさに8-1、すなわちn-1となっている。
+
+Finally, I shall explain the correct option, 'D': 'If the number of leaves is n, the number of non-leaf nodes is n-1.' This is the truth. Look at the diagram. When there are 8 leaves, counting the other nodes (the root and intermediate nodes) gives 1+2+4, totaling 7. It is exactly 8-1, or n-1.
+
+(月凪惟緒)
+おぉ……！ 本当だ。葉っぱの数より、一個だけ少ないんだね。なんか、リーダーたちが支えてるメンバーの数より、リーダー自身の数の方が一人少ないみたいな？ 絶妙なバランス感……。
+
+Oh...! It's true. There's exactly one less than the number of leaves. It's like the number of leaders is one less than the number of members they support? An exquisite sense of balance...
+
+(日乃竜胆)
+その通りだ。この「n-1」という関係性は、トーナメント表をイメージすると分かりやすい。nチームが参加するトーナメントで、優勝が決まるまでの試合数（＝葉以外の節点）は、必ずn-1回になる。敗者が一人ずつ消えていき、最後に一人が残る。その過程の積み重ねが、葉以外の節点の数なのだ。
+
+Exactly. This 'n-1' relationship is easiest to visualize using a tournament bracket. In a tournament with n teams, the number of matches required to determine a winner (the non-leaf nodes) is always n-1. Losers are eliminated one by one until only one remains. The accumulation of that process is the count of non-leaf nodes.
+
+(蒞星怜空)
+敗北の積み重ねが、構造を支える柱となる。n-1個の屍の上に、n個の葉が咲き誇るというわけだ。なんと残酷で、完成された美学だろうか。イオち、この「n-1」という数字に刻まれた、敗者たちの呪詛が聞こえるか？
+
+The accumulation of defeats becomes the pillars supporting the structure. n leaves bloom atop n-1 corpses. What a cruel, yet perfected aesthetic. Ioh-chi, can you hear the curses of the losers etched into this number 'n-1'?
+
+(月凪惟緒)
+呪詛はちょっと重いけど……。でも、トーナメントの例えでスッキリしたよ。葉っぱがプレイヤーで、節点が試合会場ってことだね。一個負けるごとに会場が一個使われるから、最後の一人になるまでn-1回試合する。……あれ、私、天才かも？
+
+Curses are a bit heavy... but the tournament analogy made it clear. The leaves are the players, and the nodes are the match venues. Since one venue is used for every loss, you play n-1 matches until only one person is left. ...Wait, am I a genius?
+
+(日乃竜胆)
+ふっ、その通りだ。その直感こそが、複雑なアーキテクチャを理解する鍵となる。AWSにおいても、こうした階層構造やスケーリングの概念は至る所に潜んでいる。今回の「n-1」の理（ことわり）、忘れるでないぞ。
+
+Heh, precisely. That intuition is the key to understanding complex architectures. In AWS as well, these hierarchical structures and scaling concepts lurk everywhere. Do not forget this principle of 'n-1'.
+
+(蒞星怜空)
+忘れた瞬間に、君の構築したシステムは不条理なエラーの海に沈むことになるだろう。……まあ、その阿鼻叫喚を眺めるのも、一興ではあるがな。ククク……。
+
+The moment you forget, the system you built will sink into a sea of absurd errors. ...Well, watching that agonizing scream might be a bit of fun in itself. Hehehe...
+
+---
+
+=== [画像翻訳] ===
+
+(日乃竜胆)
+さて、イオち。今回は基本情報技術者試験の山場の一つ、「データ構造」からハッシュ表の問題を扱う。AWSの基盤を支える分散データベースやキャッシュの仕組みを理解する上でも、この『ハッシュ』という概念は避けては通れぬ。覚悟はいいか？
+
+Now, Io. This time we're tackling a hash table problem from 'Data Structures,' one of the hurdles in the Fundamental Information Technology Engineer Examination. Understanding this 'hash' concept is unavoidable if you want to grasp the distributed databases and caching mechanisms that support AWS infrastructure. Are you prepared?
+
+(月凪惟緒)
+んー……ハッシュ？ コンビーフハッシュなら好きだけど……。なんか数字がいっぱい並んでて、見るだけで脳がフリーズしそう。ヒノりん、もっとチルい感じで教えてよ……。
+
+Hmm... hash? I like corned beef hash, but... seeing all these numbers makes my brain want to freeze. Hino-rin, teach me in a more chill way...
+
+(蒞星怜空)
+ふふ、ハッシュ表か。それは、無限に広がるデータの混沌を、有限の檻に閉じ込めるための残酷な儀式のようなものだ。だが、その檻が狭すぎれば、囚人たちは互いに衝突し、血を流すことになる。それが今回のテーマ、『衝突（コリジョン）』だ。実に滑稽で、美しい悲劇だと思わないか？
+
+Heh, a hash table. It's like a cruel ritual to confine the infinite chaos of data into a finite cage. But if that cage is too narrow, the prisoners will collide and bleed. That is our theme: 'Collision.' Don't you think it's a truly farcical and beautiful tragedy?
+
+(日乃竜胆)
+怜空さん、相変わらずの表現だな。だが、本質は突いている。イオち、まずは前提知識だ。ハッシュ表とは、データを効率よく探すための『住所録』のようなものだ。ハッシュ関数 $h(x)$ という魔法の数式にデータ $x$ を入れると、そのデータの格納場所（ハッシュ値）が決まるのだ。
+
+Rea-san, your expressions are as vivid as ever. But you've hit the essence. Io, first, the prerequisite knowledge. A hash table is like an 'address book' for finding data efficiently. When you put data $x$ into a magical formula called a hash function $h(x)$, it determines where that data is stored (the hash value).
+
+(月凪惟緒)
+住所録……。でも、この問題だと $h(x) = x \mod n$ って書いてあるよ？ このパーセントみたいな記号、何だっけ。私のやる気くらい余計なもの？
+
+An address book... but the problem says $h(x) = x \mod n$. What was that percent-looking symbol again? Is it something extra, like my motivation?
+
+(日乃竜胆)
+ふむ、それは『剰余演算』、つまり『割り算の余り』を求める計算だ。$x \mod n$ は「$x$ を $n$ で割った余り」を指す。例えば $n=10$ なら、$13 \mod 10$ は $3$ だ。住所録の部屋が $0$ から $9$ までしかない時、番号 $13$ の人は $3$ 番の部屋に入れられる、ということだな。
+
+Hmm, that's the 'modulo operation,' which means calculating the 'remainder of a division.' $x \mod n$ refers to 'the remainder when $x$ is divided by $n$.' For example, if $n=10$, then $13 \mod 10$ is $3$. If the address book only has rooms from $0$ to $9$, person number $13$ is put into room number $3$.
+
+(月凪惟緒)
+あー、なるほどねぇ。じゃあ『衝突』ってのは、別の番号の人が同じ部屋に来ちゃうってこと？ 「ここ私の部屋なんですけどー」みたいな気まずい感じ？
+
+Ah, I see. So a 'collision' is when people with different numbers show up at the same room? Like that awkward 'Um, this is my room' feeling?
+
+(蒞星怜空)
+その通りだ。狭いワンルームに、見ず知らずの他人が無理やり押し込められる。社会的な死、あるいは物理的な圧殺。それがハッシュ値の重複だ。この問題は、どんな条件の時にその『最悪の相部屋』が発生するかを聞いているのだよ。
+
+Exactly. Total strangers forced into a tiny studio apartment. Social death, or physical crushing. That is a hash value overlap. This problem is asking under what conditions that 'worst-case roommate situation' occurs.
+
+(日乃竜胆)
+では、選択肢を一つずつ吟味していこう。まずは間違いの選択肢からだ。**選択肢アの「$a+b$ が $n$ の倍数」**。これがなぜ衝突の条件にならないか、わかるか？
+
+Now, let's examine the options one by one. We'll start with the incorrect ones. **Option A: '$a+b$ is a multiple of $n$.'** Do you see why this isn't the condition for a collision?
+
+(月凪惟緒)
+えー、足して倍数なら良さそうなのに。ダメなの？
+
+Eh? It sounds like it would work if the sum is a multiple. Is it no good?
+
+(日乃竜胆)
+具体例で考えれば一目瞭然だ。$n=10$ としよう。$a=1, b=9$ なら $a+b=10$ で $n$ の倍数だな。だが、$h(1) = 1 \mod 10 = 1$、$h(9) = 9 \mod 10 = 9$ だ。部屋番号が違う。衝突していないだろう？
+
+It's obvious if you look at a concrete example. Let's say $n=10$. If $a=1$ and $b=9$, then $a+b=10$, which is a multiple of $n$. However, $h(1) = 1 \mod 10 = 1$ and $h(9) = 9 \mod 10 = 9$. The room numbers are different. They haven't collided, have they?
+
+(蒞星怜空)
+足して $10$ になるからといって、同じ運命を辿るわけではない。まるで、合計体重が同じだけの赤の他人が、同じ住所に住んでいると言い張るような滑稽な論理だ。灰燼に帰すべき誤りだな。
+
+Just because they add up to $10$ doesn't mean they share the same fate. It's a farcical logic, like claiming two strangers live at the same address just because their combined weight is the same. An error that should be reduced to ashes.
+
+(日乃竜胆)
+次に、**選択肢ウの「$n$ が $a+b$ の倍数」**だ。これはさらに的外れだ。$n$ が $a+b$ で割り切れるということは、基本的には $n$ の方が $a+b$ より大きいか等しい必要がある。だが、ハッシュ表のサイズ $n$ より遥かに大きいキー $a, b$ でも衝突は起こる。この条件では、大きな数同士の衝突を説明できぬ。
+
+Next, **Option C: '$n$ is a multiple of $a+b$.'** This is even more off-mark. For $n$ to be divisible by $a+b$, $n$ generally needs to be greater than or equal to $a+b$. However, collisions occur even with keys $a$ and $b$ that are much larger than the hash table size $n$. This condition fails to explain collisions between large numbers.
+
+(月凪惟緒)
+あー、たしかに。$n$ が主役になっちゃってるもんね。主役はあくまでデータの方なのに。なんか、過保護な親が子供の部屋割りを決めてるみたいで窮屈だわ……。
+
+Ah, true. $n$ has become the protagonist here, even though the data should be the main focus. It feels cramped, like an overprotective parent deciding a child's room assignment...
+
+(日乃竜胆)
+そして**選択肢エの「$n$ が $a-b$ の倍数」**。これもウと同様の理由で誤りだ。$n$ が $a-b$ の約数である必要などない。例えば $n=10, a=21, b=11$ の時、$a-b=10$ だ。この時 $n$ は $a-b$ の倍数（$1$ 倍）だが、もし $a=31, b=11$ なら $a-b=20$ となり、$n=10$ は $20$ の約数ではあるが、$n$ が $a-b$ の倍数という表現は不適切だ。
+
+And **Option D: '$n$ is a multiple of $a-b$.'** This is incorrect for the same reason as C. There's no need for $n$ to be a divisor of $a-b$. For example, if $n=10, a=21, b=11$, then $a-b=10$. Here $n$ is a multiple of $a-b$ (1x), but if $a=31, b=11$, then $a-b=20$; while $n=10$ is a divisor of $20$, saying '$n$ is a multiple of $a-b$' is inappropriate.
+
+(蒞星怜空)
+主客転倒も甚だしい。檻の大きさが囚人の差に支配されるなど、管理社会の崩壊そのものだ。そんな不条理な設計、私なら一秒でスクラップにするよ。
+
+The reversal of host and guest is extreme. The idea that the size of the cage is governed by the difference between prisoners is the very collapse of a managed society. I'd scrap such an absurd design in a second.
+
+(日乃竜胆)
+では、真打ちだ。**正解の選択肢イ、「$a-b$ が $n$ の倍数」**。これがなぜ正解か、数学的に証明しよう。衝突するとは、$h(a) = h(b)$、つまり $a \mod n = b \mod n$ ということだ。余りが同じということだな。
+
+Now for the star of the show. **The correct answer, Option B: '$a-b$ is a multiple of $n$.'** Let's prove mathematically why this is correct. A collision means $h(a) = h(b)$, which is $a \mod n = b \mod n$. The remainders are the same.
+
+(月凪惟緒)
+余りが同じ……。えーっと、例えば $a$ を $n$ で割った商を $q1$、余りを $r$ とすると、$a = q1 \cdot n + r$ って書けるよね？
+
+The remainders are the same... Uh, so if we let the quotient of $a$ divided by $n$ be $q1$ and the remainder be $r$, we can write $a = q1 \cdot n + r$, right?
+
+(日乃竜胆)
+その通りだ、イオち。冴えているな。同様に $b = q2 \cdot n + r$ とおける。ここで $a-b$ を計算してみろ。
+
+Exactly, Io. You're sharp. Similarly, we can set $b = q2 \cdot n + r$. Now, try calculating $a-b$.
+
+(月凪惟緒)
+$a - b = (q1 \cdot n + r) - (q2 \cdot n + r) = (q1 - q2) \cdot n$ ……あ！ 余りの $r$ が消えて、$n$ のカタマリだけが残った！
+
+$a - b = (q1 \cdot n + r) - (q2 \cdot n + r) = (q1 - q2) \cdot n$... Ah! The remainder $r$ disappeared, and only a chunk of $n$ is left!
+
+(日乃竜胆)
+然り。$(q1 - q2) \cdot n$ ということは、それは間違いなく $n$ の倍数だ。つまり、二つの数の差が $n$ で割り切れる時、それらを $n$ で割った余りは必ず一致する。これが衝突の真理だ。
+
+Indeed. Since it's $(q1 - q2) \cdot n$, it is undoubtedly a multiple of $n$. In other words, when the difference between two numbers is divisible by $n$, their remainders when divided by $n$ must match. This is the truth of collisions.
+
+(蒞星怜空)
+時計を思い浮かべるといい。$1$ 時と $13$ 時は、針の場所が同じだろう？ それは $13 - 1 = 12$ で、差が時計の周期である $12$ の倍数だからだ。時間は残酷に回り続け、同じ過ち（衝突）を繰り返す。実に皮肉な円環構造だと思わないか？
+
+Think of a clock. 1 o'clock and 13 o'clock have the hands in the same position, right? That's because $13 - 1 = 12$, and the difference is a multiple of 12, the clock's cycle. Time continues to rotate cruelly, repeating the same mistakes (collisions). Don't you think it's a truly ironic circular structure?
+
+(月凪惟緒)
+時計の例え、わかりやすいかも……。$12$ 時間経ったら元に戻るもんね。じゃあ、ハッシュ表ってのは、データをぐるぐる回る時計の文字盤に割り振ってるみたいな感じなんだ。
+
+The clock analogy is actually easy to understand... It goes back to the start after 12 hours. So, a hash table is like assigning data to the face of a rotating clock.
+
+(日乃竜胆)
+その直感、大切にせよ。AWSのDynamoDBなどの分散データベースでも、これを発展させた『コンシステントハッシュ』という技術が使われている。どのサーバーにデータを保存するかを決める際、この「余り」の概念が世界規模のインフラを支えているのだ。
+
+Cherish that intuition. Even in distributed databases like AWS DynamoDB, an advanced version called 'Consistent Hashing' is used. When deciding which server to store data on, this concept of 'remainders' supports global-scale infrastructure.
+
+(月凪惟緒)
+へぇ〜、こんな単純な割り算が世界を支えてるんだ。ちょっとだけハッシュ表と仲良くなれた気がする。でも、やっぱり計算はだるいから、ヒノりんに任せて私はチルしてていい？
+
+Heh, so simple division supports the world. I feel like I've become a little friendlier with hash tables. But calculations are still a drag, so can I just chill and leave them to you, Hino-rin?
+
+(日乃竜胆)
+断る。貴殿が試験に合格するまで、私の講義は終わらぬ。次はハッシュ値が衝突した際の解決策、『オープンアドレス法』や『チェイン法』について、その臓腑をえぐるような詳細な解説を行うぞ。覚悟せよ。
+
+I refuse. My lectures will not end until you pass the exam. Next, I will provide a gut-wrenching, detailed explanation of collision resolution strategies: 'Open Addressing' and 'Chaining.' Prepare yourself.
+
+(蒞星怜空)
+おや、楽しみだね。鎖（チェイン）で繋がれたデータたちの悲鳴が聞こえてきそうだ。イオち、逃げ場はないよ。この論理の迷宮からはね。
+
+Oh, I'm looking forward to it. I can almost hear the screams of the data bound by chains. Io, there's no escape. Not from this labyrinth of logic.
+
+---
+
+=== [画像翻訳] ===
+
+(日乃竜胆)
+さて、イオち。本日はAWSの深淵から一時離れ、基本情報技術者試験という、ITの基礎体力を問う戦場へ足を踏み入れる。覚悟はよろしいか？
+
+Now, Io-chi. Today, we shall momentarily step away from the abyss of AWS and set foot onto the battlefield of the Fundamental Information Technology Engineer Examination, which tests one's foundational IT strength. Are you prepared?
+
+(月凪惟緒)
+え〜……基本情報……。名前からして重そう。ヒノりん、私の脳みそは今、真冬のトタン裏で丸まってるダンゴムシくらい動いてないんだけど……。
+
+Ehh... Fundamental Information... Even the name sounds heavy. Hino-rin, my brain is currently about as active as a pill bug curled up behind a corrugated iron sheet in the dead of winter...
+
+(蒞星怜空)
+ふふ、良いバイブスだ。思考の停止は、ある意味でシステムのデッドロックに似た美しさがある。だが、この設問が突きつけるのは「不要なものをいかに冷酷に切り捨てるか」という、生存本能に近いアルゴリズムだ。興味深かろう？
+
+Heh, good vibes. A cessation of thought has a beauty similar to a system deadlock, in a sense. However, what this question presents is an algorithm akin to survival instinct: "how to ruthlessly discard the unnecessary." Intriguing, isn't it?
+
+(日乃竜胆)
+怜空さんの仰る通りだ。問題を見てみよう。「仮想記憶管理のページ入替え方式のうち，最後に使われてからの経過時間が最も長いページを入替えものはどれか」。まずは「仮想記憶」と「ページ」という概念を、その鈍色（にびいろ）の脳細胞に刻み込むのだ。
+
+Exactly as Rea-san says. Let us look at the problem: "Among the page replacement methods in virtual memory management, which one replaces the page that has the longest elapsed time since it was last used?" First, you must carve the concepts of "virtual memory" and "pages" into those dull-colored brain cells of yours.
+
+(月凪惟緒)
+かそうきおく……。ページ……。本の話？ 私、最近はスマホのスクロールしかしてないから、ページをめくる感覚とか永久凍土の彼方に捨ててきたよ……。
+
+Virtual memory... Pages... Is this about books? I only scroll on my phone lately, so I've discarded the sensation of turning pages to the far side of the permafrost...
+
+(日乃竜胆)
+比喩ではない。コンピュータの主記憶（メモリ）には限りがある。そこで、補助記憶装置（ハードディスクなど）をあたかも主記憶の一部であるかのように扱うのが「仮想記憶」だ。そして、その記憶を一定のサイズで区切った単位を「ページ」と呼ぶ。メモリが満杯になった時、新しいページを入れるために、今あるページをどれか一つ、生贄として差し出さねばならん。それが「ページ入替え」だ。
+
+It is not a metaphor. A computer's main memory (RAM) is finite. Therefore, treating auxiliary storage (like a hard disk) as if it were part of the main memory is called "virtual memory." And the units into which that memory is divided at a fixed size are called "pages." When memory is full, in order to bring in a new page, one of the existing pages must be offered as a sacrifice. That is "page replacement."
+
+(蒞星怜空)
+限られた椅子を奪い合う、血も涙もない椅子取りゲームのようなものだ。誰を立たせるか、その選定基準が今回の選択肢というわけだ。実に陰惨で、素晴らしいとは思わないか？
+
+It is like a cold-blooded game of musical chairs, fighting over limited seats. The criteria for who must stand up are the options in this question. Isn't it wonderfully grim?
+
+(月凪惟緒)
+椅子取りゲーム……。負けたら即、ハードディスクっていう暗い倉庫に飛ばされるんだね。かわいそう。じゃあ、選択肢の解説、お願い。まずは間違いの方からだっけ？
+
+Musical chairs... If you lose, you're immediately sent to the dark warehouse called the hard disk. Poor things. Okay, explain the options, please. Starting with the wrong ones first, right?
+
+(日乃竜胆)
+承知した。まずは選択肢アの「FIFO（First In First Out）」だ。これは「先入れ先出し」と訳される。文字通り、最も早くメモリに入ってきたページを、古参であるという理由だけで追い出す方式だ。
+
+Understood. First is option A, "FIFO (First In First Out)." This translates to "first-in, first-out." Literally, it is the method of evicting the page that entered memory earliest, simply because it is the oldest resident.
+
+(蒞星怜空)
+長年連れ添った功労者を、新入りのために真っ先に路頭に迷わせる。まさに組織の不条理を体現したようなアルゴリズムだ。どれだけ頻繁に使われていようが、最初に来たという「罪」は消えない。だが、今回の設問は「最後に使われてからの時間」を問うている。到着順しか見ないFIFOは、ここではお呼びではないな。
+
+It throws the long-serving contributor out onto the streets first to make room for a newcomer. It's an algorithm that perfectly embodies organizational absurdity. No matter how frequently it's used, the "sin" of having arrived first is never erased. However, this question asks about the "time since last use." FIFO, which only looks at arrival order, is not welcome here.
+
+(月凪惟緒)
+FIFO……。最初に来たからって追い出されるの、理不尽すぎる。ブラック企業じゃん。次、イの「LFU」ってのは？
+
+FIFO... Getting kicked out just because you were first is too irrational. It's like a black company. Next, what's option B, "LFU"?
+
+(日乃竜胆)
+「LFU（Least Frequently Used）」。「最小頻度使用」だな。これは、使われた「回数」が最も少ないページを入れ替える方式だ。人気のないページから順に切り捨てられる、過酷な人気投票のようなものだ。
+
+"LFU (Least Frequently Used)." That would be "minimum frequency use." This is the method of replacing the page that has been used the fewest "times." It's like a harsh popularity contest where the unpopular pages are discarded in order.
+
+(蒞星怜空)
+どれだけ最近使われたとしても、トータルの「いいね」が少なければ即座に灰燼に帰す。過去の栄光も、一瞬の輝きも、累計という数字の前では無力だ。だが、設問が求めているのは「回数」ではなく「経過時間」だ。よって、このLFUも正解の資格を剥奪される。
+
+No matter how recently you were used, if your total "likes" are low, you are immediately reduced to ashes. Past glory and momentary brilliance are powerless before the cumulative numbers. However, what the question seeks is not "frequency" but "elapsed time." Therefore, LFU is also stripped of its qualification as the correct answer.
+
+(月凪惟緒)
+数字がすべて……。世知辛いねぇ。じゃあ、ウの「LIFO」は？ FIFOの親戚？
+
+Numbers are everything... How harsh. Then, what about C, "LIFO"? Is it a relative of FIFO?
+
+(日乃竜胆)
+「LIFO（Last In First Out）」。「後入れ先出し」だ。最後に入ってきたページを、真っ先に追い出す。スタック構造と同じ考え方だな。入ってきたばかりの新人を、教育もせずに即座に解雇するような暴挙だ。
+
+"LIFO (Last In First Out)." "Last-in, first-out." It evicts the page that entered last, first. It's the same concept as a stack structure. It's a reckless act, like firing a newcomer who just joined without even training them.
+
+(蒞星怜空)
+期待のルーキーが足を踏み入れた瞬間に奈落へ突き落とされる悲喜劇。だが、これも「最後に使われてからの時間」とは無関係だ。到着が「最後」なだけであって、使用状況は考慮されていない。このアルゴリズムが支配する世界では、未来は常に閉ざされているといえよう。
+
+A tragicomedy where the promising rookie is pushed into the abyss the moment they step in. However, this too is unrelated to the "time since last use." It only considers that the arrival was "last"; usage status is ignored. In a world ruled by this algorithm, one could say the future is always closed.
+
+(月凪惟緒)
+どれもこれも、ページたちの扱いがひどすぎる……。じゃあ、いよいよ正解の、エの「LRU」だね。これが一番マシなの？
+
+All of these treat the pages so terribly... Okay, finally, the correct answer, option D, "LRU." Is this one the most decent?
+
+(日乃竜胆)
+「LRU（Least Recently Used）」。「最近、最も使われていないもの」を入れ替える方式だ。つまり、最後に使われてからの経過時間が最も長いページを、もう必要ないと判断して追い出す。これが設問の定義と完全に一致する正解だ。
+
+"LRU (Least Recently Used)." The method of replacing the one that has "not been used most recently." In other words, it judges that the page with the longest elapsed time since its last use is no longer needed and evicts it. This is the correct answer that perfectly matches the definition in the question.
+
+(蒞星怜空)
+「最近会ってないから、もう友達じゃないよね」という、冷徹な人間関係の整理術に似ている。だが、コンピュータの世界ではこれが最も合理的だ。直近で使われていないものは、今後も使われる可能性が低いという経験則に基づいている。忘却こそが、システムを健全に保つ唯一の手段なのだよ。
+
+It's similar to a cold-hearted way of organizing relationships: "We haven't met lately, so we're not friends anymore." However, in the computer world, this is the most rational. It's based on the heuristic that something not used recently is unlikely to be used in the near future. Oblivion is the only means to keep a system healthy.
+
+(月凪惟緒)
+LRU……。最後に連絡したのが3年前の友達は、私のメモリから消去されてハードディスクの奥底に沈んでいくんだね……。切ないけど、納得したよ。ヒノりん、怜空さん、ありがとう。私の脳内のLRUも、今この瞬間、基本情報の知識を「最新」にアップデートしたみたい。
+
+LRU... So the friend I last contacted three years ago gets erased from my memory and sinks to the depths of the hard disk... It's sad, but I get it. Thanks, Hino-rin, Rea-san. It seems the LRU in my brain just updated my Fundamental Information knowledge to "latest" this very moment.
+
+(日乃竜胆)
+ふっ、その意気だ。だが油断するな。知識は使わねばすぐに「経過時間が最も長い」状態になり、忘却の彼方へパージされる。常にリフレッシュを怠らぬことだな。
+
+Heh, that's the spirit. But do not be careless. If knowledge is not used, it quickly becomes the state with the "longest elapsed time" and is purged to the far side of oblivion. Never neglect to refresh it.
+
+---
+
+=== [画像翻訳] ===
+
+(日乃竜胆)
+さて、基本情報技術者試験のデータ構造における難所、ハッシュ法の問題だな。イオち、この数式の羅列を見て、また脳が冬眠の準備を始めていないか？
+
+Now, we face a problem on hashing, a notorious hurdle in the data structures section of the Fundamental Information Technology Engineer Examination. Io-chi, I trust your brain isn't already preparing for hibernation at the sight of these formulas?
+
+(月凪惟緒)
+ヒノりん、正解。a1とかa2とか、添字が並んでるだけで視界がホワイトアウトしそう……。ハッシュ法って、そもそも何？ 美味しいの？
+
+Spot on, Hino-rin. Just seeing those subscripts like a1 and a2 makes my vision go white... What even is 'hashing' anyway? Is it something you can eat?
+
+(蒞星怜空)
+ハッシュとは、無秩序な情報の海に、無理やり『住所』という名の刻印を押し付ける冷徹な儀式だ。膨大なデータという名の死体たちを、決まった棺桶に効率よく放り込むための、計算された残酷なアルゴリズム……と言い換えれば、少しは興味が湧くか？
+
+Hashing is a cold ritual that forcibly stamps an 'address' onto a chaotic sea of information. It's a calculated, cruel algorithm designed to efficiently toss corpses of vast data into designated coffins... Does that pique your interest even slightly?
+
+(月凪惟緒)
+怜空さん、例えが相変わらず暗黒大陸すぎるよぉ。でも、データを決まった場所に分けるってことなのかな。住所を決めるルールみたいな？
+
+Rea-san, your analogies are as dark as ever. But I guess it means sorting data into specific spots? Like a rule for deciding addresses?
+
+(日乃竜胆)
+至極真っ当な理解だ。ハッシュ法とは、特定の計算式（ハッシュ関数）を用いて、データの格納場所を一意に決める手法のことだ。今回の問題では、5桁の数『54321』を、あるルールに従って配列のどこに入れるかを問うている。
+
+A perfectly sound understanding. Hashing is a method of uniquely determining where data is stored using a specific formula (a hash function). This problem asks where the 5-digit number '54321' should be placed in an array according to a certain rule.
+
+(月凪惟緒)
+そのルールが、mod(a1+a2+a3+a4+a5, 13) ってやつだよね。この『mod』って、何かの暗号？
+
+And that rule is 'mod(a1+a2+a3+a4+a5, 13)', right? Is this 'mod' some kind of secret code?
+
+(日乃竜胆)
+『mod』とは剰余演算、つまり『割り算の余り』を求める計算のことだ。例えば mod(15, 13) なら、15を13で割った余りの『2』が答えになる。そして、a1からa5は、5桁の数字のそれぞれの桁の数字を指している。
+
+'mod' refers to the modulo operation—essentially, finding the remainder of a division. For instance, mod(15, 13) results in '2', the remainder when 15 is divided by 13. Furthermore, a1 through a5 represent each individual digit of the 5-digit number.
+
+(蒞星怜空)
+AWSの世界でも、このハッシュの概念は至る所に潜んでいる。例えばDynamoDBのパーティションキーだ。データをどの物理的なサーバーに幽閉するかを決める際、ハッシュ関数がその運命を司る。ハッシュ値が偏れば、特定のサーバーだけが過労で死ぬことになる……恐ろしい話だな。
+
+In the world of AWS, this concept of hashing lurks everywhere. Take DynamoDB's partition key, for example. When deciding which physical server to imprison data in, a hash function governs that fate. If the hash values are biased, a single server might die from overwork... A terrifying thought, isn't it?
+
+(月凪惟緒)
+サーバーが過労死……。えーっと、じゃあ今回の『54321』の場合、a1=5, a2=4, a3=3, a4=2, a5=1 ってこと？ これを全部足せばいいの？
+
+Servers dying from overwork... Okay, so for '54321', does that mean a1=5, a2=4, a3=3, a4=2, and a5=1? Do I just add them all up?
+
+(日乃竜胆)
+その通りだ。まずは各桁の和を求めるのだ。やってみろ。
+
+Exactly. First, calculate the sum of each digit. Go ahead, try it.
+
+(月凪惟緒)
+5 + 4 + 3 + 2 + 1 = 15。……できた！ 意外と簡単かも。
+
+5 + 4 + 3 + 2 + 1 = 15. ...Done! That was surprisingly easy.
+
+(日乃竜胆)
+よかろう。次に、その和である『15』をハッシュ関数に当てはめる。mod(15, 13) だな。15を13で割った余りはいくつだ？
+
+Very well. Next, apply that sum, '15', to the hash function. That would be mod(15, 13). What is the remainder when 15 is divided by 13?
+
+(月凪惟緒)
+15 ÷ 13 = 1 余り 2。だから、答えは『2』！ 配列の位置『2』に入るってことだね。
+
+15 ÷ 13 = 1 with a remainder of 2. So the answer is '2'! It goes into position '2' of the array.
+
+(蒞星怜空)
+正解だ。だが、ここで間違った選択肢たちがなぜ奈落に落ちたのか、その無様な理由も見ておく必要がある。不合格という名の断頭台に立たないためにな。
+
+Correct. However, we must also examine the pathetic reasons why the incorrect options fell into the abyss—lest you find yourself standing on the guillotine of failure.
+
+(日乃竜胆)
+師匠の言う通りだ。では、選択肢アの『1』から検討しよう。これは、15を13で割った商（1）と余り（2）を混同したか、あるいは単純な計算ミスだな。ハッシュ法において、商には何の意味もない。重要なのは常に『余り』だ。
+
+Master is right. Let's examine Option A, '1'. This likely stems from confusing the quotient (1) with the remainder (2) when dividing 15 by 13, or perhaps a simple calculation error. In hashing, the quotient is meaningless; the 'remainder' is what matters.
+
+(月凪惟緒)
+余りものには福がある……じゃなくて、余りものが住所になるんだね。じゃあ、選択肢ウの『7』は？
+
+The leftovers are the lucky ones... wait, no, the leftovers become the address. Then what about Option C, '7'?
+
+(日乃竜胆)
+『7』になるには、各桁の和が20や33である必要がある。54321の和は15だ。どこをどう間違えれば7に辿り着くのか、もはや理解に苦しむレベルの迷子だな。あるいは、mod 13ではなく mod 8 などと勘違いしたか。
+
+To get '7', the sum of the digits would need to be 20 or 33. The sum of 54321 is 15. To arrive at 7, one would have to be lost to a degree that defies comprehension—perhaps mistaking mod 13 for mod 8 or something similar.
+
+(蒞星怜空)
+選択肢エの『11』も同様だ。計算の途中で意識が霧散し、適当な数字をマークした者の末路といえよう。あるいは、15と13を足して28、それをまた何かで割ったのか……？ 迷走の極みだな。
+
+Option D, '11', is the same. It is the fate of one whose consciousness dissipated mid-calculation, leading them to mark a random number. Or perhaps they added 15 and 13 to get 28 and divided that by something...? The height of aimless wandering.
+
+(月凪惟緒)
+みんな、計算ミスで人生の住所を間違えちゃうんだね……。でも、ハッシュ値が同じになっちゃうことってないの？ 例えば、数字が違っても足した合計が同じになっちゃうとか。
+
+So people end up at the wrong life address just because of a calculation error... But wait, can't hash values end up being the same? Like, even if the numbers are different, their sums could be the same.
+
+(日乃竜胆)
+鋭いな、イオち。それを『衝突（コリジョン）』と呼ぶ。例えば『12345』も和は15になり、ハッシュ値は2で衝突する。現実のシステムでは、この衝突をどう回避するかが設計の腕の見せ所なのだ。
+
+Sharp, Io-chi. That is called a 'collision.' For example, '12345' also sums to 15, resulting in a collision at hash value 2. In real systems, how one avoids these collisions is where the true skill of design is shown.
+
+(蒞星怜空)
+AWSのS3でも、オブジェクトの整合性を確認するためにETagというハッシュ値が使われる。もし衝突が頻発すれば、世界中のデータがアイデンティティを失い、崩壊するだろう。この小さな計算問題の背後には、デジタル世界の秩序を守るための巨大な理（ことわり）が横たわっているのだよ。
+
+In AWS S3, a hash value called an ETag is used to verify object integrity. If collisions occurred frequently, data across the globe would lose its identity and collapse. Behind this small calculation problem lies a massive logic that upholds the order of the digital world.
+
+(月凪惟緒)
+ハッシュ法、奥が深すぎてちょっと震えてきた……。でも、今回の問題は『足して、割って、余りを出す』。これだけ覚えておけば、私の脳も凍結せずに済みそう！
+
+Hashing is so deep it's making me shiver a bit... But for this problem, it's 'add, divide, find the remainder.' If I just remember that, my brain might actually avoid freezing over!
+
+(日乃竜胆)
+その意気だ。正解は選択肢イの『2』。間違いの選択肢に惑わされず、この冷徹な計算を完遂したお前の勝利だな。
+
+That's the spirit. The correct answer is Option B, '2'. It is your victory for completing this cold calculation without being led astray by the incorrect choices.
+
+---
+
+=== [画像翻訳] ===
+
+(日乃竜胆)
+さて、貴様ら。今日は基本情報技術者試験の難所、データ構造の深淵を覗く。2分探索木と完全2分木の性質について、その真理を解き明かすぞ。心して聞け。
+
+Now, listen up. Today, we shall peer into the abyss of data structures, a notorious hurdle in the Fundamental Information Technology Engineer Examination. We will unravel the truths behind the properties of Binary Search Trees and Complete Binary Trees. Pay close attention.
+
+(月凪惟緒)
+ヒノりん、今日も圧がすごいねぇ……。2分探索木？ 木の話なら、もっとこう、マイナスイオンが出るようなチルい感じがいいんだけどな……。なんか難しそう。
+
+Hino-rin, your intensity is off the charts today... Binary Search Tree? If we're talking about trees, I'd prefer something more chill, like with negative ions and stuff... This sounds like a headache.
+
+(蒞星怜空)
+フフ……。イオち、この『木』は癒やしとは無縁の、冷徹な論理で編み上げられた檻のようなものだ。一度足を踏み入れれば、整列という名の呪縛から逃れることはできない。実に暗澹たる、美しい構造だよ。
+
+Heh... Io-chi, this 'tree' has nothing to do with healing; it's more like a cage woven from cold, ruthless logic. Once you step inside, you cannot escape the curse known as 'sorting.' It is a truly somber, yet beautiful structure.
+
+(日乃竜胆)
+怜空さん、相変わらずの表現だな。だが、本質は突いている。まずは前提知識だ。イオち、『2分探索木』のルールを覚えているか？
+
+Rea-san, your descriptions are as vivid as ever. But you've hit the mark. First, the prerequisite knowledge. Io-chi, do you remember the rules of a 'Binary Search Tree'?
+
+(月凪惟緒)
+えーっと、確か……。真ん中に親がいて、左側には自分より小さい子、右側には自分より大きい子が座る、みたいな合コンの席替えルールだっけ？
+
+Uhh, let's see... There's a parent in the middle, and the kids smaller than them sit on the left, while the bigger kids sit on the right? Is it like some seating arrangement rule at a mixer?
+
+(日乃竜胆)
+合コンとは世俗的だが、理解としては正しい。各節点（ノード）において、『左の子 < 親 < 右の子』という制約を常に維持するのが2分探索木だ。そしてもう一つ、今回の鍵となるのが『完全2分木』だ。
+
+A mixer is a bit worldly, but your understanding is correct. A Binary Search Tree is one that constantly maintains the constraint: 'Left Child < Parent < Right Child' at every node. And the other key today is the 'Complete Binary Tree'.
+
+(月凪惟緒)
+完全……。なんか、非の打ち所がない完璧超人みたいな感じ？
+
+Complete... So, like, a perfect being with no flaws?
+
+(蒞星怜空)
+そう、隙間なく、上から順に、左から右へと整然と詰め込まれた、強迫観念的な美しさを持つ形状だ。15個のデータがある場合、1段目に1個、2段目に2個、3段目に4個、4段目に8個……。合計15個。これで全ての階層が完璧に埋まり、左右対称のピラミッドが完成する。まるで、逃げ場のない完璧な管理社会の縮図だね。
+
+Yes, it's a shape of obsessive beauty, packed orderly from top to bottom and left to right without any gaps. With 15 pieces of data, you have 1 in the 1st level, 2 in the 2nd, 4 in the 3rd, and 8 in the 4th... totaling 15. Every level is perfectly filled, completing a symmetrical pyramid. It's like a microcosm of a perfect, inescapable managed society.
+
+(日乃竜胆)
+その通り。では、設問の選択肢を検討していくぞ。まずは間違いの選択肢からだ。選択肢『ウ』を見てみろ。『データの追加順にかかわらず、完全2分木となる』。これはどう思う？
+
+Exactly. Now, let's examine the options. We'll start with the incorrect ones. Look at option 'C': 'Regardless of the addition order, it becomes a complete binary tree.' What do you think of this?
+
+(月凪惟緒)
+えー、どんな順番でもいいの？ 適当に小さい順、例えば1, 2, 3, 4……って入れたらどうなるんだろ。
+
+Eh, any order is fine? What happens if I just put them in order, like 1, 2, 3, 4...?
+
+(日乃竜胆)
+鋭いな。1を根（ルート）にすると、2は1より大きいから右へ、3は2より大きいからさらに右へ……。結果、右側にだけ枝が伸びる、ただの『棒』になる。これは完全2分木とは程遠い、無残な姿だ。
+
+Sharp. If 1 is the root, 2 is larger so it goes right, 3 is larger than 2 so it goes further right... As a result, the branch only grows to the right, becoming a mere 'stick.' This is a pathetic sight, far from a complete binary tree.
+
+(蒞星怜空)
+そう、それはもはや木ではなく、奈落へと続く一本道だ。データの追加順という『運命』に、形状は無慈悲に左右される。だから『かかわらず』という言葉は、この論理の世界では致命的な誤謬となるのだよ。
+
+Indeed, it is no longer a tree, but a one-way path to the abyss. The shape is ruthlessly dictated by the 'fate' of the addition order. Therefore, the phrase 'regardless' is a fatal fallacy in this world of logic.
+
+(日乃竜胆)
+次に選択肢『エ』だ。『データの追加順にかかわらず、完全2分木とはならない』。これは『ウ』の逆だが、どうだ？
+
+Next is option 'D': 'Regardless of the addition order, it does not become a complete binary tree.' This is the opposite of 'C', but what about it?
+
+(月凪惟緒)
+『絶対にならない』ってこと？ でも、さっき怜空さんが言ってたみたいに、綺麗に並べる方法もありそうだよね。真ん中の数字を最初に持ってくるとか……。
+
+Does it mean 'it can never happen'? But like Rea-san said earlier, it seems like there should be a way to arrange them beautifully. Like, putting the middle number first...?
+
+(日乃竜胆)
+その通りだ。例えば1から15の数値なら、中央値の8を最初に、次に4と12を……という風に、バランス良く追加していけば完全2分木は構築可能だ。ゆえに『ならない』と断じる『エ』も誤りだ。
+
+Correct. For example, with numbers 1 to 15, if you add the median 8 first, then 4 and 12, and so on in a balanced way, a complete binary tree can be constructed. Thus, 'D', which claims it 'does not become' one, is also false.
+
+(月凪惟緒)
+なるほどねぇ。じゃあ、残るは『ア』と『イ』か。どっちも『ただ一つだけ』って言ってるけど……。
+
+I see. So that leaves 'A' and 'B'. Both say 'only one exists'...
+
+(日乃竜胆)
+では、選択肢『ア』を斬る。『完全2分木となるデータの追加順が、ただ一つだけ存在する』。イオち、これはどう思う？ 順番は一通りしかないと思うか？
+
+Now, I shall strike down option 'A': 'There exists only one data addition order that results in a complete binary tree.' Io-chi, what do you think? Do you think there's only one possible order?
+
+(月凪惟緒)
+えー、どうだろ。例えば、根っこの次に左の子を入れてから右の子を入れるのと、右を先に入れてから左を入れるのって、最終的な形は変わらない気がするんだけど……。
+
+Hmm, I wonder. For example, if I put the left child in after the root and then the right child, versus putting the right one in first and then the left... I feel like the final shape wouldn't change.
+
+(蒞星怜空)
+フフ……冴えているね。その通りだ。左の領土を先に確定させようが、右の領土を先に蹂躙しようが、最終的に出来上がる帝国の版図が変わらなければ、それは同じ『完全2分木』だ。追加順という『プロセス』には複数の可能性が残されている。ゆえに『ただ一つ』という制約は、ここでは成立しない。
+
+Heh... you're sharp. Exactly. Whether you secure the left territory first or overrun the right territory first, if the final borders of the empire remain the same, it's the same 'complete binary tree.' Multiple possibilities exist for the 'process' of addition order. Therefore, the constraint of 'only one' does not hold here.
+
+(日乃竜胆)
+その通り。そして、正解の選択肢『イ』に辿り着く。『完全2分木となるデータの配置が、ただ一つだけ存在する』。これがなぜ正しいか、説明できるか？
+
+Correct. And that brings us to the correct option, 'B': 'There exists only one data arrangement that results in a complete binary tree.' Can you explain why this is correct?
+
+(月凪惟緒)
+配置……つまり、どの場所にどの数字が座るかってことだよね。15個の席があって、2分探索木のルール（左 < 親 < 右）を守りつつ、隙間なく（完全2分木）座らなきゃいけない……。
+
+Arrangement... so, which number sits in which spot. There are 15 seats, and they have to sit there without gaps (complete binary tree) while following the BST rules (Left < Parent < Right)...
+
+(日乃竜胆)
+そうだ。15個の異なる値を昇順に並べたとき、完全2分木の形状を維持するためには、8番目の値が必ず根（ルート）に来なければならない。その左側には1〜7番目の値が、右側には9〜15番目の値が配置される。この『座席指定』は、2分探索木の制約によって、数学的に一意に、つまり『ただ一つ』に定まってしまうのだ。
+
+Yes. When you arrange 15 unique values in ascending order, to maintain the shape of a complete binary tree, the 8th value must be the root. The 1st through 7th values are placed on its left, and the 9th through 15th on its right. This 'seating assignment' is mathematically unique—meaning 'only one'—due to the constraints of the binary search tree.
+
+(蒞星怜空)
+自由など存在しない。15個の魂は、その大きさに応じて、あらかじめ決められた冷たい座席へと強制的に収容される。この完璧な秩序こそが、選択肢『イ』の正体だ。データの追加順という混沌としたプロセスを経てなお、最終的な配置という『結果』は、唯一無二の静寂へと収束する……。実に皮肉な話だと思わないかい？
+
+Freedom does not exist. The 15 souls are forcibly accommodated into predetermined, cold seats according to their size. This perfect order is the true nature of option 'B'. Even after the chaotic process of addition order, the 'result'—the final arrangement—converges into a unique silence... Don't you find it quite ironic?
+
+(月凪惟緒)
+うわぁ……。なんか、逃げられない運命みたいな話になっちゃった。でも、おかげで『配置』は一つしかないけど、『追加順』はいろいろあるって違いがよくわかったよ。ヒノりん、怜空さん、ありがと。
+
+Whoa... It turned into a story about inescapable fate. But thanks to that, I clearly understand the difference: there's only one 'arrangement,' but there can be many 'addition orders.' Thanks, Hino-rin, Rea-san.
+
+(日乃竜胆)
+理解したようだな。2分探索木の制約と、完全2分木の形状。この二つが組み合わさったとき、そこには逃れようのない論理の必然が生まれる。この感覚を忘れるな。では、今日の講義はここまでだ。次はさらに深い階層へ案内してやろう。
+
+It seems you've understood. The constraints of a BST and the shape of a complete binary tree. When these two combine, an inescapable logical necessity is born. Do not forget this feeling. That concludes today's lecture. Next time, I shall guide you to even deeper levels.
+
+---
+
+=== [画像翻訳] ===
+
+(日乃竜胆)
+さて、イオち。基本情報技術者試験の要諦、データ構造の深淵へ足を踏み入れる時が来た。今回は「2分探索木」という、コンピュータが情報を整理するための極めて厳格な秩序について講義しよう。
+
+Now, Io-chi. The time has come to step into the abyss of data structures, the very essence of the Fundamental Information Technology Engineer Examination. Today, I shall lecture on the 'Binary Search Tree'—an extremely rigorous order by which computers organize information.
+
+(月凪惟緒)
+ヒノりん、なんか難しそう……。この丸と線が繋がってる図、まるで冬の星座か、あるいは複雑すぎて解けない知恵の輪みたい。見てるだけで脳がチルアウトしそうだよぉ。
+
+Hino-rin, that sounds hard... These diagrams with circles and lines look like winter constellations, or maybe a puzzle ring too complex to solve. Just looking at them makes my brain want to chill out completely.
+
+(蒞星怜空)
+ふふ、星座か。だがその星々の配置が一つでも狂えば、宇宙の法則は崩壊し、データは永遠の闇へと消える。2分探索木とは、大小関係という絶対的な身分制度によって統治された、美しくも残酷なピラミッドなのだよ。
+
+Heh, constellations, is it? But if even one of those stars is misplaced, the laws of the universe collapse, and data vanishes into eternal darkness. A Binary Search Tree is a beautiful yet cruel pyramid, governed by an absolute caste system of magnitude.
+
+(日乃竜胆)
+怜空さんの言う通りだ。まず前提知識を整理するぞ。2分探索木（Binary Search Tree）には、鉄の掟が一つある。それは、「左の子 ＜ 親 ＜ 右の子」という関係が、全ての節点（ノード）において成立していなければならないということだ。
+
+Rea-san is correct. First, let us organize the prerequisite knowledge. In a Binary Search Tree (BST), there is one ironclad rule: the relationship 'Left Child < Parent < Right Child' must hold true for every single node.
+
+(月凪惟緒)
+左の子は親より小さくて、右の子は親より大きい……。つまり、親を真ん中にして、小さい順に並んでなきゃいけないってこと？
+
+The left child is smaller than the parent, and the right child is larger... So, with the parent in the middle, they have to be lined up in increasing order?
+
+(日乃竜胆)
+その通り。しかも、単に「すぐ下の子」だけではない。「左側の枝にぶら下がっている全員」が親より小さく、「右側の枝にぶら下がっている全員」が親より大きくなければならない。この掟を念頭に、まずは間違いの選択肢から、その無残な崩壊っぷりを暴いていこうか。
+
+Exactly. Furthermore, it is not just the 'immediate children.' *Everyone* hanging off the left branch must be smaller than the parent, and *everyone* on the right branch must be larger. With this rule in mind, let us first expose the wretched collapse of the incorrect options.
+
+(日乃竜胆)
+まずは選択肢「ア」だ。頂点の「1」を見てみろ。左側に「2」がいるだろう？
+
+First, consider option 'A'. Look at the root, '1'. There is a '2' on its left side, is there not?
+
+(月凪惟緒)
+あ、ホントだ。1の左に2がある。……これって、小さいはずの左側に大きい数字が来ちゃってるよね？
+
+Oh, you're right. There's a 2 to the left of 1. ...That means a larger number is where a smaller one should be, right?
+
+(蒞星怜空)
+そう、これはもはや反逆だ。王である「1」よりも強大な「2」が左翼に控えている。この瞬間に探索の秩序は灰燼に帰し、アルゴリズムは迷宮を彷徨うことになる。論外だな。
+
+Yes, this is nothing short of treason. A '2', mightier than the king '1', stands on the left wing. At this moment, the order of search is reduced to ashes, and the algorithm is left to wander a labyrinth. Out of the question.
+
+(日乃竜胆)
+次に選択肢「ウ」を見てみよう。頂点は「7」だ。左側には「6, 4, 5」と、7より小さい数字が並んでいて一見正しそうだが……右側を見てみろ。
+
+Next, let us examine option 'C'. The root is '7'. On the left, we have '6, 4, 5'—all smaller than 7, which seems correct at first glance... but look at the right side.
+
+(月凪惟緒)
+右側は……「8」の下に「3」と「9」がある。えーっと、8の左に3があるのはいいんだよね？ 3は8より小さいから。でも、そもそもこの「3」って、一番上の「7」の右側にいるんだよね？
+
+On the right... under '8', there's '3' and '9'. Um, it's okay for 3 to be to the left of 8, right? Because 3 is smaller than 8. But wait, this '3' is on the right side of the very top '7', isn't it?
+
+(日乃竜胆)
+慧眼だな、イオち。その通りだ。7の右側にいる以上、その配下にある全ての数字は7より大きくなければならない。しかし、そこには「3」や「1」、「2」といった、7より遥かに小さい不純物が紛れ込んでいる。これは組織図としての体を成していない。
+
+Keen eyes, Io-chi. Exactly. Since they are on the right side of 7, every number under that branch must be larger than 7. Yet, impurities like '3', '1', and '2'—far smaller than 7—have crawled in. This fails to function as an organizational chart.
+
+(蒞星怜空)
+右翼陣営にスパイが紛れ込んでいるようなものだ。7より大きい者たちの楽園であるはずの右側で、1や2が息を潜めている……。検索エンジンがこれを見たら、あまりの不条理さに絶望してフリーズするだろうね。実に陰惨な光景だ。
+
+It is like spies infiltrating the right-wing camp. In the right side, which should be a paradise for those greater than 7, 1 and 2 are lurking in the shadows... If a search engine saw this, it would freeze in despair at such absurdity. A truly grim sight.
+
+(日乃竜胆)
+そして選択肢「エ」だ。頂点は「9」。左側は「7, 1, 2」で問題ないが、右側を見てみろ。「8」を筆頭に「5, 6, 3, 4」がぶら下がっている。
+
+And then, option 'D'. The root is '9'. The left side is '7, 1, 2', which is fine, but look at the right. '8' leads a group consisting of '5, 6, 3, 4'.
+
+(月凪惟緒)
+あ……9の右側なのに、全部9より小さい数字ばっかり。これじゃ「右の子は親より大きい」っていうルールが、最初からデストロイされてるね。
+
+Ah... even though it's the right side of 9, they're all just numbers smaller than 9. The rule 'right child is larger than the parent' is destroyed right from the start.
+
+(日乃竜胆)
+その通り。9という絶対強者の右側に、それより弱い者たちが集うなど、この探索木の世界では許されぬ越権行為。もはや木としての尊厳すら感じられん。ゴミ箱行きだ。
+
+Precisely. In the world of search trees, allowing those weaker than the absolute power '9' to gather on its right is an unpardonable overstepping of authority. It possesses not even a shred of dignity as a tree. To the bin with it.
+
+(月凪惟緒)
+間違いの理由はよくわかったよ。みんなルールを無視して、好き勝手な場所に座っちゃってるんだね。じゃあ、正解の「イ」はどうなってるの？
+
+I totally get why they're wrong now. Everyone's just ignoring the rules and sitting wherever they want. So, what's the deal with the correct answer, 'B'?
+
+(日乃竜胆)
+選択肢「イ」こそが、完璧なる秩序の体現だ。頂点の「4」を見ろ。左側には「2, 1, 3」と、全て4より小さい。右側には「8, 6, 9, 5, 7」と、全て4より大きい。まずは第一関門突破だ。
+
+Option 'B' is the very embodiment of perfect order. Look at the root, '4'. On the left are '2, 1, 3'—all smaller than 4. On the right are '8, 6, 9, 5, 7'—all larger than 4. The first gate is cleared.
+
+(月凪惟緒)
+ホントだ。さらにその下の「2」を見ても、左に1（小さい）、右に3（大きい）でルール通りだね。
+
+True. And looking at the '2' below that, it has 1 (smaller) on the left and 3 (larger) on the right, so it follows the rule.
+
+(日乃竜胆)
+さらに右側の「8」の配下も見てみよう。8の左側には「6, 5, 7」があり、これらは全て8より小さい。そして6の左には5、右には7。……どうだ？ どこを切り取っても、一分の隙もなく「左 ＜ 親 ＜ 右」の掟が守られているだろう？
+
+Let us also examine the subordinates of '8' on the right. To the left of 8 are '6, 5, 7'—all smaller than 8. And to the left of 6 is 5, to the right is 7. ...Well? No matter where you look, the law of 'Left < Parent < Right' is upheld without a single flaw.
+
+(蒞星怜空)
+これこそが、データの理想郷。この構造であれば、どんな数字を探すにしても、親と比較して「大きいか小さいか」を判断するだけで、探索範囲を半分ずつ削ぎ落としていける。100万のデータがあっても、わずか20回程度の比較で目的の獲物に辿り着ける……効率の暴力、美しき合理性だね。
+
+This is the utopia of data. With this structure, no matter what number you seek, you need only judge if it is 'larger or smaller' than the parent to shave away half the search space at each step. Even with a million pieces of data, you can reach your target in a mere 20 comparisons... It is the violence of efficiency, a beautiful rationality.
+
+(月凪惟緒)
+へぇ〜、ルールを守るだけでそんなに頭が良くなるんだ。ヒノりんの説明で、このトゲトゲした図が急に整列した兵隊さんみたいに見えてきたよ。正解は「イ」で決まりだね。
+
+Heh~, just following rules makes it that smart. Thanks to Hino-rin's explanation, this prickly diagram suddenly looks like soldiers standing in formation. The answer is definitely 'B'.
+
+(日乃竜胆)
+理解が早くて助かる。2分探索木は、AWSのデータベースサービスであるDynamoDBやRDSのインデックスの裏側でも、形を変えてその思想が生きている。基本を制する者は、クラウドの深淵をも制するということだ。精進せよ、イオち。
+
+I appreciate your quick understanding. The philosophy of the Binary Search Tree lives on, albeit in different forms, behind the indexes of AWS database services like DynamoDB and RDS. He who masters the fundamentals shall master the abyss of the cloud. Keep striving, Io-chi.
+
+---
+
+=== [画像翻訳] ===
+
+(日乃竜胆)
+さて、基本情報技術者試験の登竜門とも言える『データ構造』、その中でもスタックの概念について講義を始める。イオち、覚悟はいいか？
+
+Now, I shall begin the lecture on 'Data Structures,' specifically the concept of the Stack, which can be considered the gateway to the Fundamental Information Technology Engineer Examination. Io, are you prepared?
+
+(月凪惟緒)
+え〜、ヒノりん、いきなり物々しいねぇ……。スタックって、なんか積み木みたいなやつだっけ？ いおの脳内、今すでに積み木が崩れそうなんだけどぉ……。
+
+Ehh, Hino-rin, you're so intense all of a sudden... A stack is like those building blocks, right? My brain feels like the blocks are already about to collapse...
+
+(蒞星怜空)
+積み木か。可愛らしい例えだが、実態はもっと陰惨だ。出口が一つしかない底なし沼に、次々と生贄を放り込んでいくようなものだ。最後に沈んだ者こそが、最初に引きずり出される……。救いなどない、一方通行の秩序だよ。
+
+Building blocks, is it? A cute analogy, but the reality is far more grim. It's like throwing sacrifices one after another into a bottomless pit with only one exit. The last one to sink is the first to be dragged out... A one-way order where there is no salvation.
+
+(日乃竜胆)
+師匠、相変わらずの表現力だな。だが本質は突いている。スタックは『LIFO（Last In First Out）』、すなわち『後入れ先出し』の構造だ。データを入れる操作を『Push（プッシュ）』、取り出す操作を『Pop（ポップ）』と呼ぶ。この一対の動作のみが、この閉鎖空間を支配する法なのだ。
+
+Master, your expressiveness is as vivid as ever. But you've hit the essence. A stack is a 'LIFO (Last In First Out)' structure. The operation to insert data is called 'Push,' and the operation to retrieve it is called 'Pop.' These two actions are the only laws governing this enclosed space.
+
+(月凪惟緒)
+プッシュとポップ……。なんか炭酸飲料みたいでチルいねぇ。でも、A、B、C、Dの順に来るのに、出し方がいろいろあるってこと？ 順番通りにしか出せないんじゃないのぉ？
+
+Push and Pop... sounds like a fizzy drink, very chill. But if they arrive in the order A, B, C, D, does that mean there are different ways to take them out? Can't they only come out in order?
+
+(日乃竜胆)
+そこがこの設問の肝だ。データが到着する順序は固定だが、どのタイミングで『Pop』するかによって、出力される列は千変万化する。では、まずは誤った選択肢から、その矛盾を白日の下に晒すとしよう。まずは選択肢『ア』の『A, D, B, C』だ。
+
+That is the core of this question. While the arrival order of data is fixed, the output sequence varies infinitely depending on when you 'Pop.' Now, let us expose the contradictions in the incorrect options. First, option 'A': 'A, D, B, C'.
+
+(日乃竜胆)
+『A, D, B, C』を出力しようとすると、まずAが到着した瞬間にPopする。これは可能だ。次にDを出力したいなら、B、C、Dを順にPushし、一番上のDをPopする。ここまではいい。だが、この時スタックの中には何が残っている？
+
+To output 'A, D, B, C', you first Pop A the moment it arrives. This is possible. Next, if you want to output D, you must Push B, C, and D in order, then Pop D from the top. So far, so good. But at this moment, what remains inside the stack?
+
+(月凪惟緒)
+えーっと、BとCが残ってるよね？ Bが下で、Cが上……かな？
+
+Umm, B and C are left, right? B is at the bottom, and C is on top... I think?
+
+(日乃竜胆)
+然り。スタックの状態は（B, C）だ。次に『B』を出したいと思っても、上に『C』が蓋をしている。Cを差し置いてBを取り出すことは、スタックの法が許さぬ。ゆえに『A, D, B, C』は不可能なのだ。
+
+Correct. The state of the stack is (B, C). Even if you want to take out 'B' next, 'C' is acting as a lid on top. The law of the stack does not allow you to retrieve B while ignoring C. Therefore, 'A, D, B, C' is impossible.
+
+(蒞星怜空)
+社会の縮図だな。若者がどれだけ有能でも、上に居座る老害という名の『C』を排除しなければ、日の目を見ることはない。不条理の極みだ。
+
+A microcosm of society. No matter how talented a young person is, they will never see the light of day unless they remove the 'C'—the deadwood sitting on top. The height of absurdity.
+
+(月凪惟緒)
+怜空さん、例えが重いよぉ……。でも、上が邪魔で出せないってのはわかったかも。じゃあ、選択肢『イ』の『B, D, A, C』はどうなの？
+
+Rea-san, your analogies are so heavy... But I think I get that you can't get out if the top is in the way. Then, what about option 'B': 'B, D, A, C'?
+
+(日乃竜胆)
+『B, D, A, C』か。まずBを出すには、AをPushし、次にBをPushしてからPopする。スタックにはAが残るな。次にDを出すには、CとDをPushしてDをPopする。この時、スタックの中身は（A, C）だ。次にAを出したいが……やはりCが邪魔をしている。これもまた、構造的欠陥により破綻しているのだ。
+
+'B, D, A, C', is it? To get B first, you Push A, then Push B, and then Pop. A remains in the stack. To get D next, you Push C and D, then Pop D. At this point, the stack contains (A, C). You want to get A next, but... again, C is in the way. This, too, collapses due to structural flaws.
+
+(月凪惟緒)
+あー、またCが通せんぼしてるんだね。Cちゃん、空気読めない子なのかなぁ。じゃあ、最後の方にある選択肢『エ』の『D, C, A, B』は？ これ、DとCが最初に来るからいけそうじゃない？
+
+Ah, C is blocking the way again. Is C-chan just bad at reading the room? Then, what about option 'D' near the end: 'D, C, A, B'? Since D and C come first, it looks promising, doesn't it?
+
+(日乃竜胆)
+甘いな、イオち。Dを出すためには、A, B, C, Dをすべてこの順でPushせねばならぬ。そしてDをPopし、次にCをPopする。ここまでは完璧だ。だが、スタックに残されたのは（A, B）だ。次にAを出そうとしても、Bが立ち塞がっている。スタックの深淵は、そう容易くは抜け出せぬのだよ。
+
+Naive, Io. To get D, you must Push A, B, C, and D all in that order. Then you Pop D, and next you Pop C. So far, perfect. However, what remains in the stack is (A, B). Even if you try to get A next, B is standing in your way. One does not escape the abyss of the stack so easily.
+
+(蒞星怜空)
+期待させておいて最後に絶望へ突き落とす。まるで納期直前に発覚する致命的なバグのようだ。美しく積み上げたコードが、たった一つの依存関係で灰燼に帰す……。実に滑稽だね。
+
+Giving hope only to plunge one into despair at the end. It's like a fatal bug discovered right before a deadline. A beautifully built codebase reduced to ashes by a single dependency... Truly farcical.
+
+(月凪惟緒)
+うぅ、エンジニアの世界って怖すぎ……。じゃあ、正解の『ウ』、つまり『C, B, D, A』はどうして大丈夫なの？ 魔法でも使ってるの？
+
+Ugh, the world of engineers is too scary... Then, why is the correct answer 'C', which is 'C, B, D, A', okay? Are they using magic?
+
+(日乃竜胆)
+魔法ではない、緻密な計算と秩序の勝利だ。手順を追ってみよう。まずA, B, Cを順にPushする。スタックは（A, B, C）だ。ここでPopを二回行う。すると『C』、続いて『B』が出力される。スタックに残るのはAのみだ。次にDが到着する。これをPushして即座にPopすれば『D』が出力される。最後に、残っていた『A』をPopする。……どうだ？
+
+It is not magic, but a victory of precise calculation and order. Let's follow the steps. First, Push A, B, and C in order. The stack is (A, B, C). Now, perform Pop twice. This outputs 'C', followed by 'B'. Only A remains in the stack. Next, D arrives. Push it and immediately Pop it, and 'D' is output. Finally, Pop the remaining 'A'. ...Well?
+
+(月凪惟緒)
+……あ！ 本当だ！ C、B、D、Aの順で綺麗に出てる！ Aくん、ずっと下で待ってたんだねぇ。健気というか、放置されてたというか……。
+
+...Ah! It's true! They came out perfectly in the order C, B, D, A! A-kun was waiting at the bottom the whole time. How admirable... or maybe he was just neglected...
+
+(蒞星怜空)
+最後に残されたAこそが、この物語の真の主人公というわけだ。だが忘れるな、スタックという牢獄において、最初に入った者は常に、他者がすべて去るまで外の空気を吸うことは叶わない。孤独な先駆者の末路だよ。
+
+The A left at the very end is the true protagonist of this story. But do not forget, in the prison known as the stack, the first to enter can never breathe the outside air until everyone else has departed. Such is the fate of the lonely pioneer.
+
+(日乃竜胆)
+まとめよう。スタックは『最後に入れたものが最初に出る』。この原則を頭に叩き込み、各選択肢をシミュレーションすれば、正解への道は自ずと開かれる。イオち、この『後入れ先出し』の理、魂に刻んだか？
+
+Let's summarize. A stack is 'Last In, First Out.' If you hammer this principle into your head and simulate each option, the path to the correct answer will naturally open. Io, have you carved this law of 'LIFO' into your soul?
+
+(月凪惟緒)
+うん、なんとなくわかった気がするぅ。最後に入った子が一番威張ってるのがスタック、ってことだよね。いおも、最後に部屋に入って、真っ先に帰るタイプになりたいなぁ……。
+
+Yeah, I think I kind of get it. A stack is where the last one to enter is the bossiest. I want to be the type who enters the room last and leaves first, too...
+
+(日乃竜胆)
+それはただの不真面目な学生だろう。だが、その直感は悪くない。スタックの挙動を理解することは、アルゴリズムの深淵へ踏み出す第一歩だ。次はキュー、すなわち『FIFO』についても教えねばならんな……。覚悟しておけよ。
+
+That would just make you an unfaithful student. However, your intuition isn't bad. Understanding the behavior of a stack is the first step into the abyss of algorithms. Next, I must teach you about Queues, or 'FIFO'... Be prepared.
+
+---
+
+=== [画像翻訳] ===
+
+(日乃竜胆)
+さて、基本情報技術者試験のデータ構造における登竜門、『スタック』の設問だな。イオち、準備はよいか？ 逃げ腰になるのは許さぬぞ。これは計算機科学の深淵を覗くための、最初の一歩なのだからな。
+
+Now, we shall address the question regarding 'Stacks,' a gateway to data structures in the Fundamental Information Technology Engineer Examination. Io-chi, are you prepared? I will not allow you to shrink back. This is the very first step into the abyss of computer science.
+
+(月凪惟緒)
+え〜、ヒノりん、いきなり圧が強いよぉ……。スタックって、なんか横文字で難しそう。パンケーキを積み上げるみたいな感じ？ お腹空いてきちゃった……。
+
+Ehh, Hino-rin, you're being so intense already... 'Stack' sounds like some difficult technical word. Is it like stacking pancakes? Now I'm getting hungry...
+
+(蒞星怜空)
+パンケーキならまだ救いがあるが、これは一度積んだら最後、一番上の不純物から取り除かなければ底にある真実には辿り着けない、底なしの泥沼のような構造だ。あるいは、出口のない一方通行の路地に、後から来た車が次々と詰まっていく悲劇と言い換えてもいい。
+
+Pancakes would be merciful, but this is a structure like a bottomless mire where, once stacked, you cannot reach the truth at the bottom without first removing every impurity from the top. Or perhaps, it is the tragedy of a one-way alley with no exit, where cars arriving later pile up one after another.
+
+(日乃竜胆)
+師匠、相変わらずの陰惨な例えだが、本質は突いているな。スタックとは『LIFO（Last In First Out）』、日本語で言えば『後入れ先出し』だ。最後に入れたものが、最初に出てくる。この単純かつ冷徹なルールが、この問題を解く唯一の鍵となる。
+
+Master, your analogies are as grim as ever, yet they pierce the heart of the matter. A stack is 'LIFO' (Last In First Out). In other words, the last item put in is the first one to come out. This simple yet cold-blooded rule is the only key to solving this problem.
+
+(月凪惟緒)
+あー、なるほどねぇ。後から来た人が先に帰っちゃう、ちょっと理不尽な飲み会みたいな感じ？
+
+Ah, I see. So it's like a slightly unfair drinking party where the people who arrived late get to leave first?
+
+(日乃竜胆)
+……その通りだ。では、設問の操作を一つずつ、メスで解剖するように紐解いていこう。まずは前提知識だ。'PUSH' はデータを積むこと、'POP' は一番上のデータを取り出すこと。これだけは絶対に忘れるな。
+
+...Exactly. Now, let us unravel the operations in the question one by one, as if dissecting them with a scalpel. First, the prerequisite knowledge: 'PUSH' means adding data to the top, and 'POP' means removing the topmost data. Never forget this.
+
+(月凪惟緒)
+PUSHが『えいっ』て乗せるので、POPが『ぽいっ』て捨てる感じだね。了解〜。
+
+So PUSH is like 'heave-ho' and putting it on, and POP is like 'yoink' and throwing it away. Got it~.
+
+(日乃竜胆)
+では、時系列順にスタックの状態を追うぞ。最初は空の状態だ。
+1. PUSH 1 → スタックは [1]
+2. PUSH 5 → スタックは [1, 5] となる。5が一番上だ。
+3. ここで POP だ。イオち、何が消える？
+
+Now, let us track the state of the stack in chronological order. It starts empty.
+1. PUSH 1 → Stack is [1]
+2. PUSH 5 → Stack becomes [1, 5]. 5 is at the top.
+3. Now, a POP. Io-chi, what disappears?
+
+(月凪惟緒)
+えーっと、後から来たのが5だから……5が『ぽいっ』てされる？
+
+Ummm, since 5 was the one who came later... 5 gets 'yoinked'?
+
+(日乃竜胆)
+正解だ。スタックは再び [1] に戻る。次だ。
+4. PUSH 7 → [1, 7]
+5. PUSH 6 → [1, 7, 6]
+6. PUSH 4 → [1, 7, 6, 4]
+ここまでは順調だな。だが、ここからがこの悲喜劇のクライマックスだ。POP が二回続くぞ。
+
+Correct. The stack returns to [1]. Next:
+4. PUSH 7 → [1, 7]
+5. PUSH 6 → [1, 7, 6]
+6. PUSH 4 → [1, 7, 6, 4]
+So far, so good. But here comes the climax of this tragicomedy. Two POPs in a row.
+
+(蒞星怜空)
+積み上げられた希望が、無慈悲に削り取られていく瞬間だね。4という新参者が消え、その次に控えていた6もまた、日の目を見ることなく闇に葬られる。
+
+The moment when stacked hopes are ruthlessly shaved away. The newcomer, 4, vanishes, and the 6 waiting beneath it is also buried in darkness without ever seeing the light of day.
+
+(月凪惟緒)
+あ、ほんとだ。POP、POPってことは、一番上の4が消えて、その次に上になった6も消えちゃうんだ。残るのは……1と7だけ？
+
+Ah, you're right. POP, POP means the top 4 disappears, and then the 6, which became the new top, disappears too. What's left is... just 1 and 7?
+
+(日乃竜胆)
+その通り。スタックの状態は [1, 7] だ。そして最後の仕上げだ。
+7. PUSH 3 → [1, 7, 3]
+これで全ての操作が終了した。スタックの下から順に 1, 7, 3 と積まれている状態だな。
+
+Exactly. The state of the stack is [1, 7]. And for the final touch:
+7. PUSH 3 → [1, 7, 3]
+With this, all operations are complete. The stack is now in a state where 1, 7, and 3 are stacked from the bottom up.
+
+(月凪惟緒)
+できた！ 下から1、7、3……。あれ、でも選択肢を見ると、どれが正解か迷っちゃうかも。
+
+I did it! 1, 7, 3 from the bottom... Wait, looking at the options, I might get confused about which one is correct.
+
+(日乃竜胆)
+ふむ、では選択肢を一つずつ、なぜ間違いなのかを冷徹に指摘していこう。まずは選択肢『ア』だ。これは下から 3, 7, 1 となっている。これはスタックではなく、最初に入れたものが最初に出てくる『キュー（FIFO）』のような動きを勘違いしたか、あるいは単に順序を逆転させただけの、浅はかな罠だ。
+
+Hmm, then let us coldly point out why each option is incorrect, one by one. First, option 'A'. This shows 3, 7, 1 from the bottom. This is a shallow trap, likely confusing a stack with a 'Queue (FIFO)' where the first in is the first out, or simply reversing the order.
+
+(蒞星怜空)
+『ア』を選ぶ者は、過去と未来の区別がつかなくなった時間旅行者の成れの果てだね。因果律を無視した、救いようのない間違いだ。
+
+Those who choose 'A' are the remnants of time travelers who can no longer distinguish between past and future. It is a hopeless mistake that ignores the laws of causality.
+
+(日乃竜胆)
+次に選択肢『イ』。下から 6, 4, 3 だな。これは途中の POP 操作を完全に見失い、迷子になった者の末路だ。6や4は、POP によって既にこの世から消し去られたはずの亡霊にすぎぬ。存在しないものを数えるなど、滑稽千万。
+
+Next, option 'B'. 6, 4, 3 from the bottom. This is the end for those who completely lost track of the POP operations and became lost. 6 and 4 are merely ghosts that should have been erased from this world by the POPs. Counting things that do not exist is utterly ridiculous.
+
+(月凪惟緒)
+亡霊……。なんか急にホラーになってきたね。じゃあ、選択肢『エ』は？ 下から 3, 4, 6 だよ。
+
+Ghosts... This suddenly turned into a horror story. Then, what about option 'D'? It's 3, 4, 6 from the bottom.
+
+(日乃竜胆)
+『エ』も同様だ。POP されたはずの 4 や 6 が居座っている上に、最後に入れたはずの 3 が底に沈んでいる。これはもはやスタックの定義に対する冒涜だな。論理の欠片も感じられぬ。
+
+'D' is the same. Not only are 4 and 6—which should have been popped—still sitting there, but 3—which should have been put in last—is sunk at the bottom. This is an insult to the very definition of a stack. I feel not a shred of logic in it.
+
+(蒞星怜空)
+秩序が崩壊し、エントロピーが最大化した終末の光景だね。これを選んでしまうのは、脳内がカオスに支配されている証拠だよ。
+
+It is a vision of the apocalypse where order has collapsed and entropy is maximized. Choosing this is proof that one's mind is ruled by chaos.
+
+(日乃竜胆)
+そして、最後に残ったのが正解の選択肢『ウ』だ。下から 1, 7, 3。我々が導き出した、唯一無二の真実と一致する。POP によって 5, 4, 6 が適切に排除され、最後に 3 が君臨する。完璧な調和だ。
+
+And finally, what remains is the correct option, 'C'. 1, 7, 3 from the bottom. It matches the one and only truth we derived. 5, 4, and 6 were properly excluded by the POPs, and 3 reigns at the top. Perfect harmony.
+
+(月凪惟緒)
+おぉ〜、パチパチパチ！ ヒノりんの説明、最初は怖かったけど、最後はスッキリしたよ。スタックって、要は『後から来たやつが一番偉い（先に出る）』って覚えればいいんだね。
+
+Ooh~ *clap clap clap*! Hino-rin's explanation was scary at first, but it feels so clear now. So for stacks, I just need to remember 'the latecomer is the most important (leaves first),' right?
+
+(蒞星怜空)
+その通り。だが忘れないで、イオち。現実の世界では、後から来た者が先に報われるとは限らない。このスタックという構造は、計算機が作り出した、あまりにも残酷で、あまりにも純粋な、一時の夢に過ぎないのだから……。
+
+Exactly. But don't forget, Io-chi. In the real world, those who arrive late aren't always the ones rewarded first. This stack structure is nothing more than a fleeting dream—too cruel, yet too pure—created by the machine...
+
+(日乃竜胆)
+師匠、最後をポエムで締めるのはやめていただきたい。ともかく、これでスタックの基礎はマスターしたな。次は『キュー』という、また別の絶望が待っているぞ。精進せよ。
+
+Master, please refrain from ending with a poem. At any rate, you have now mastered the basics of stacks. Next, another despair called a 'Queue' awaits you. Keep striving.
+
+---
+
+=== [画像翻訳] ===
+
+(日乃竜胆)
+さて、今回は基本情報技術者試験の鬼門の一つ、『データ構造』からスタックの問題を扱う。AWSのアーキテクチャを理解する上でも、データの流れを制御する論理的思考は不可欠だ。イオち、準備はよいか？
+
+Now, we shall tackle a problem on 'Data Structures'—specifically, the stack—which is one of the hurdles in the Fundamental Information Technology Engineer Examination. Even for understanding AWS architecture, the logical thinking required to control data flow is indispensable. Io-chi, are you prepared?
+
+(月凪惟緒)
+ん〜、スタックね……。なんか本を積み上げるみたいなやつだっけ。正直、今の私の脳内は低気圧でどんよりしてるから、スタックオーバーフローしそうなんだけど……。ヒノりん、お手柔らかに頼むよぉ。
+
+Mmm, stacks... that's the thing where you pile up books, right? Honestly, my brain is feeling pretty gloomy right now like a low-pressure system, so I feel like I'm about to hit a stack overflow... Hino-rin, please go easy on me.
+
+(蒞星怜空)
+スタックか。後入れ先出し（LIFO）、最後に来た者が最初に報われるという、ある種の不条理な美学を感じる構造だな。まるで、閉店間際のデパートに滑り込んだ客が、真っ先にレジを通るようなものだ。実に皮肉な話ではないか。
+
+A stack, is it? Last-In, First-Out (LIFO)—a structure that embodies a sort of absurd aesthetic where the last to arrive is the first to be rewarded. It's like a customer sliding into a department store just before closing and getting through the register first. Quite ironic, isn't it?
+
+(日乃竜胆)
+怜空さんの例えは相変わらず毒があるが、本質を突いているな。スタックの基本は『LIFO』。そしてこの問題の肝は、『ポップ（取り出し）操作をしたら即出力しなければならない』という制約だ。まずは、選択肢アの『1個』から検討してみよう。なぜこれが間違いなのか、イオち、想像がつくか？
+
+Rea-san's analogies are as biting as ever, yet they pierce through to the essence. The fundamental of a stack is 'LIFO.' And the crux of this problem is the constraint that 'once a pop operation is performed, the character must be output immediately.' First, let's examine option A, '1 stack.' Io-chi, can you imagine why this is incorrect?
+
+(月凪惟緒)
+えーっと、1個しかないと……。A、C、K、Sの順に入れて、Sを最初に出したいからSを一番上に置くよね。で、Sを出した後にTを入れて出す。そこまではいいんだけど、その次にAを出したいのに、Aの上にはCとKが重なってるから、Aを取り出すにはCとKを先にどかさないといけない……ってこと？
+
+Umm, if there's only one... you put them in the order A, C, K, S, and since you want to output S first, you put S on top. Then, after outputting S, you put T in and output it. That part is fine, but next you want to output A, but C and K are piled on top of A, so to get A out, you'd have to move C and K first... is that it?
+
+(日乃竜胆)
+その通りだ。だが問題文には『ポップしたら必ず出力する』とある。Aを出すためにCとKをポップすれば、出力順が『S, T, K, C, A』になってしまい、求められている『S, T, A, C, K』にはならない。よって、スタック1個では不可能だ。至極当然の帰結だな。
+
+Exactly. However, the problem states 'when a pop operation is executed, the character must be output.' If you pop C and K just to get to A, the output order becomes 'S, T, K, C, A,' which is not the required 'S, T, A, C, K.' Therefore, it's impossible with one stack. A perfectly logical conclusion.
+
+(月凪惟緒)
+なるほどねぇ。じゃあ、スタックを2個に増やせば解決するのかな？ 選択肢イの『2個』はどうなの？
+
+I see. So, would increasing it to two stacks solve it? What about option B, '2 stacks'?
+
+(蒞星怜空)
+2個か。二兎を追う者は一兎をも得ず、というが、この場合は二つの穴があっても、三つの獲物を管理するには足りないというわけだ。A、C、Kという三つの『後で出したいもの』が、入力順と出力順で矛盾を起こしているのが見えるか？
+
+Two? They say he who hunts two hares catches neither, but in this case, even with two holes, it's not enough to manage three pieces of prey. Can you see how the three items 'to be output later'—A, C, and K—create a contradiction between their input and output orders?
+
+(日乃竜胆)
+怜空さんの指摘通りだ。スタックが2個の場合をシミュレーションしてみよう。まずAをスタック1に入れる。次にCだが、Aより後に出したいから、Aの上に重ねるわけにはいかない。だからCはスタック2に入れる。ここまでは良い。だが、次にKが来た時に詰むのだ。
+
+As Rea-san pointed out. Let's simulate the case with two stacks. First, put A into Stack 1. Next is C, but since we want to output it after A, we can't pile it on top of A. So, C goes into Stack 2. So far, so good. But we hit a dead end when K arrives.
+
+(月凪惟緒)
+あ、そっか！ Kをスタック1に入れたらAが塞がるし、スタック2に入れたらCが塞がっちゃう。AもCも、Kより先に出さなきゃいけないのに、どっちに入れてもKが邪魔になっちゃうんだね。これって、詰みってやつ？
+
+Ah, I get it! If you put K in Stack 1, A gets blocked, and if you put it in Stack 2, C gets blocked. Both A and C need to come out before K, but no matter which one you put it in, K gets in the way. Is this what you call a checkmate?
+
+(日乃竜胆)
+その通り、チェックメイトだ。A、C、Kをそれぞれ独立して保持し、かつ出力順を守るためには、この3つが互いに干渉しない場所が必要になる。つまり、選択肢ウの『3個』が正解となるのだ。A、C、Kをそれぞれ別のスタックに格納すれば、SとTが来た時にどのスタックを使っても、即座にポップして出力できるからな。
+
+Exactly, checkmate. To hold A, C, and K independently while maintaining the output order, you need a place where these three don't interfere with each other. In other words, option C, '3 stacks,' is the correct answer. If you store A, C, and K in separate stacks, you can use any stack when S and T arrive to immediately pop and output them.
+
+(月凪惟緒)
+へぇ〜、3個あれば、A、C、Kを別々の部屋に入れておけるから、好きな時に取り出せるってことかぁ。SとTは、入ってすぐ出ていくから、空いてる部屋をちょっと借りるだけでいいんだね。なんか、シェアハウスの個室管理みたいで面白いかも。
+
+Heh~, so with three, you can keep A, C, and K in separate rooms and take them out whenever you want. S and T just come and go immediately, so they just need to borrow an empty room for a bit. It's kind of like managing private rooms in a share house, which is actually pretty interesting.
+
+(蒞星怜空)
+シェアハウスか。だが、一度入ったら最後、上の住人が出ていくまで閉じ込められる、窓のない独房のようなシェアハウスだがな。選択肢エの『4個』は、過剰な贅沢だ。3個で足りるものを4個用意するのは、一人暮らしなのに冷蔵庫を4台買うようなもの。リソースの無駄遣いは、エンジニアとして最も忌むべき大罪の一つだと言えよう。
+
+A share house? More like a windowless solitary cell where once you're in, you're trapped until the resident above you leaves. Option D, '4 stacks,' is an excessive luxury. Preparing four when three suffice is like buying four refrigerators for a single person living alone. Wasting resources is one of the most abominable sins an engineer can commit.
+
+(日乃竜胆)
+怜空さんの断罪が厳しいな。だが、最小限の構成で要件を満たす『最適化』の精神は、AWSにおいても非常に重要だ。不必要なリソースはコスト増に直結するからな。今回の問題、スタックのLIFO特性と、出力順の依存関係を整理すれば、自ずと答えは見えてきたはずだ。イオち、このロジック、脳に刻めたか？
+
+Rea-san's condemnation is harsh. However, the spirit of 'optimization'—meeting requirements with the minimum configuration—is extremely important in AWS as well. Unnecessary resources lead directly to increased costs. In this problem, if you organize the LIFO characteristics of the stack and the dependencies of the output order, the answer should have naturally appeared. Io-chi, have you etched this logic into your brain?
+
+(月凪惟緒)
+うん、バッチリ。A、C、Kがそれぞれ『自分専用の出口』を欲しがってるから3個必要、って覚えるよ。ヒノりんの解説、冷たいメスで脳のシワをなぞられるみたいで、なんかスッキリしたかも。怜空さんのブラックな例えも、スパイス効いてて目が覚めたよぉ。
+
+Yeah, perfectly. I'll remember it as needing three because A, C, and K each want their own 'private exit.' Hino-rin's explanation felt like a cold scalpel tracing the folds of my brain—it's actually quite refreshing. And Rea-san's dark analogies were the perfect spice to wake me up.
+
+(蒞星怜空)
+ふふ、それは重畳。データ構造の深淵はまだ深い。次はキュー（FIFO）という、行列に並ぶ善良な市民のような構造についても、その裏に潜む残酷な真実を教えてやろう。楽しみにしておくがいい。
+
+Heh, that is excellent. The abyss of data structures goes much deeper. Next, I shall teach you the cruel truths lurking behind the Queue (FIFO)—a structure resembling law-abiding citizens waiting in line. You have much to look forward to.
+
+---
+
+=== [画像翻訳] ===
+
+(日乃竜胆)
+さて、今回は基本情報技術者試験の「データ構造」から、ハッシュ表と衝突に関する問題だな。AWSの基盤を支えるデータベース技術の根幹にも通ずる、避けては通れぬ道だ。イオち、覚悟はできているか？
+
+Now, this time we're looking at a question on hash tables and collisions from the 'Data Structures' section of the Fundamental Information Technology Engineer Examination. This is a path you cannot avoid, as it leads to the very foundations of the database technologies that support AWS infrastructure. Io-chi, are you prepared?
+
+(月凪惟緒)
+んー……ハッシュ？ ポテトの話？ なんか言葉の響きがすでにお腹空く感じ……。ASCIIコードとか2進数とか、文字列が並んでるだけで脳内が永久凍土になりそうなんだけど。ヒノりん、もっとチルに教えて……。
+
+Mmm... Hash? Like potatoes? The sound of the word is already making me hungry... ASCII codes, binary numbers... just seeing those strings of text makes my brain feel like it's turning into permafrost. Hino-rin, teach me in a more chill way...
+
+(蒞星怜空)
+ハッシュポテトか。揚げたてのポテトが冷え切り、油が酸化してベタついた残骸のような絶望感を、この「衝突（コリジョン）」という概念は孕んでいる。データが居場所を失い、狭いバケツの中で互いの存在を呪い合う……実に悲喜劇的な光景だとは思わないか？
+
+Hash browns, eh? This concept of a 'collision' carries a sense of despair akin to the greasy remains of freshly fried potatoes that have gone cold and oxidized. Data losing its place, cursing each other's existence inside a cramped bucket... don't you think it's a truly tragicomic sight?
+
+(日乃竜胆)
+怜空さん、初手から場を凍らせるのはよしてくれ。イオち、まずは前提知識を整理しよう。この問題の肝は「ASCIIコード」と「ハッシュ関数」だ。ASCIIコードとは、コンピュータが文字を識別するための背番号のようなもの。アルファベットの 'a' にはある数字、 'b' にはその次の数字……という具合に、整然と番号が振られているのだ。
+
+Rea-san, please stop freezing the atmosphere right from the start. Io-chi, let's organize the prerequisite knowledge first. The core of this problem lies in 'ASCII codes' and 'hash functions.' An ASCII code is like a jersey number that a computer uses to identify characters. The letter 'a' is assigned a certain number, 'b' is assigned the next number, and so on, in an orderly fashion.
+
+(月凪惟緒)
+背番号ね……。じゃあ、'a' が1番なら 'b' は2番ってこと？ でも問題文には「10進法で表したときの1の位の数を用いる」って書いてある。これがハッシュ関数ってやつ？
+
+Jersey numbers, huh... So if 'a' is number 1, 'b' is number 2? But the problem says to use 'the digit in the ones place when expressed in decimal.' Is that what a hash function is?
+
+(日乃竜胆)
+その通りだ。ハッシュ関数とは、あるデータ（キー）を放り込むと、特定のルールに従って計算し、データの格納場所（ハッシュ値）を弾き出す装置のことだ。今回は「ASCIIコードを10進数にして、その1の位を見る」という極めて単純なルールだな。例えば、背番号が「97」なら、ハッシュ値は「7」になる、ということだ。
+
+Exactly. A hash function is a device that takes certain data (a key), calculates it according to a specific rule, and spits out a storage location (hash value) for that data. In this case, it's an extremely simple rule: 'convert the ASCII code to decimal and look at the ones digit.' For example, if the jersey number is '97,' the hash value would be '7.'
+
+(月凪惟緒)
+へぇー。で、その「衝突」ってのは？ 事故るの？
+
+Heh. So, what's this 'collision' thing? Does it mean an accident?
+
+(蒞星怜空)
+そう、デジタルな交通事故だ。限られた10個の座席（ハッシュ表の大きさ10）しかない劇場に、異なる客が同じ座席番号のチケットを持って現れる。一方が座れば、もう一方は立ち尽くすしかない。システム設計者が最も忌み嫌う、秩序の崩壊の瞬間だな。
+
+Yes, a digital traffic accident. In a theater with only 10 limited seats (hash table size 10), different guests show up with tickets for the same seat number. If one sits down, the other is left standing. It's the moment of collapse of order that system designers loathe the most.
+
+(日乃竜胆)
+要するに、異なる文字なのに「1の位の数」が同じになってしまう組み合わせを探せ、という問題だ。では、選択肢を一つずつ、間違いの方から検証していくぞ。まずは選択肢「ア」の 'a' と 'i' だ。
+
+In short, the question asks you to find a pair of different characters that end up with the same 'ones digit.' Now, let's examine the options one by one, starting with the incorrect ones. First is option 'A', 'a' and 'i'.
+
+(日乃竜胆)
+問題文に「a, b, c...と連続している」とある。計算を楽にするため、 'a' を 0 と仮定してみよう。すると 'i' は a(0), b(1), c(2), d(3), e(4), f(5), g(6), h(7), i(8) となり、8番目だ。1の位は 'a' が 0、 'i' が 8。一致しないな。よって「ア」は誤りだ。
+
+The problem states they are sequential: 'a, b, c...'. To make calculation easier, let's assume 'a' is 0. Then 'i' becomes: a(0), b(1), c(2), d(3), e(4), f(5), g(6), h(7), i(8) — it's the 8th one. The ones digits are 0 for 'a' and 8 for 'i'. They don't match. Therefore, 'A' is incorrect.
+
+(月凪惟緒)
+指折り数えるの、地味にダルいね……。次は「イ」の 'b' と 'r' かぁ。bは1だよね。rは……えーっと、アルファベットの順番……。
+
+Counting on my fingers is low-key tiring... Next is 'B', 'b' and 'r'. 'b' is 1. 'r' is... uh, the alphabet order...
+
+(日乃竜胆)
+アルファベットの順序を思い出すのだ。 'b' は 1番目（aを0とした場合）。 'r' は17番目になる。10進数で表すと 1 と 17。1の位は 1 と 7 だな。これも一致せぬ。よって「イ」も脱落だ。
+
+Recall the alphabetical order. 'b' is the 1st (if 'a' is 0). 'r' becomes the 17th. Expressed in decimal, that's 1 and 17. The ones digits are 1 and 7. These don't match either. Thus, 'B' is also out.
+
+(蒞星怜空)
+1と7。まるで噛み合わない歯車のように、彼らは別の場所へ収容される。孤独なデータたちが、互いに触れ合うことすら許されない冷徹な世界……。だが、まだ「ウ」があるぞ。
+
+1 and 7. Like gears that don't mesh at all, they are housed in different places. A cold world where lonely pieces of data aren't even allowed to touch each other... But we still have 'C'.
+
+(日乃竜胆)
+「ウ」は 'c' と 'l' だな。 'c' は 2番目。 'l' は11番目だ。10進数では 2 と 11。1の位は 2 と 1。これも衝突は起きない。惜しいな、あと一歩で同じ「1」の位になるところだったが、世の中そう甘くはない。
+
+'C' is 'c' and 'l'. 'c' is the 2nd. 'l' is the 11th. In decimal, that's 2 and 11. The ones digits are 2 and 1. No collision here either. Close; they were just one step away from having the same '1' in the ones place, but the world isn't that kind.
+
+(月凪惟緒)
+なんか、合コンで惜しくもマッチングしなかったペアを見てる気分……。じゃあ、残った「エ」が正解ってこと？ 'd' と 'x' ？
+
+I feel like I'm watching pairs at a mixer who just barely failed to match... So, the remaining 'D' is the correct answer? 'd' and 'x'?
+
+(日乃竜胆)
+然り！ 検証してみよう。 'd' は 3番目。そして 'x' は……アルファベットの最後の方だな、数えると23番目になる。10進数で表せば 3 と 23。見ろ、どちらも「1の位」が「3」ではないか！
+
+Indeed! Let's verify. 'd' is the 3rd. And 'x' is... near the end of the alphabet; if you count, it's the 23rd. Expressed in decimal, that's 3 and 23. Look, aren't both of their 'ones digits' 3!?
+
+(月凪惟緒)
+あ、ホントだ！ どっちも 3 で終わってる。てことは、ハッシュ関数の計算結果が同じになっちゃうから、同じ場所に座ろうとして「衝突」しちゃうんだね。やっと繋がったわ……。
+
+Oh, you're right! Both end in 3. That means the hash function calculation results are the same, so they try to sit in the same spot and 'collide.' It finally clicked...
+
+(蒞星怜空)
+素晴らしい。3番という名の呪われた椅子を巡り、 'd' と 'x' が醜く争う。これがハッシュ衝突の真実だ。AWSのDynamoDBのような高度な分散データベースでも、この衝突をいかにエレガントに回避し、あるいは捌くかが、エンジニアの血と汗の結晶となっているのだよ。
+
+Splendid. 'd' and 'x' fight uglily over the cursed chair named number 3. This is the truth of hash collisions. Even in advanced distributed databases like AWS DynamoDB, how to elegantly avoid or handle these collisions is the result of the blood and sweat of engineers.
+
+(日乃竜胆)
+まとめると、ハッシュ関数によって導き出された値（ハッシュ値）が重複することを「衝突」と呼び、今回のルールではアルファベットの順序が10個離れている（または20個離れている）ペアを探せば良かった、ということだ。正解は「エ」。完璧だな。
+
+To summarize, when values derived by a hash function (hash values) overlap, it's called a 'collision.' In this specific rule, you just had to find a pair whose alphabetical positions were 10 (or 20) apart. The correct answer is 'D'. Perfect.
+
+(月凪惟緒)
+ヒノりんの説明、相変わらずキレッキレだね。怜空さんの話はちょっと怖かったけど、ハッシュポテト食べたくなってきたから帰りに買ってこ。……あ、でも衝突して潰れてないやつね。
+
+Hino-rin, your explanation was sharp as always. Rea-san's talk was a bit scary, but now I want to eat hash browns, so I'll buy some on the way home. ...Oh, but only ones that haven't been crushed by a collision.
+
+---
+
+=== [画像翻訳] ===
+
+(日乃竜胆)
+さあ、月凪、蒞星。今回は基本情報技術者試験の要、データ構造の『双方向連結リスト』についての演習だ。AWSのアーキテクチャを理解する上でも、データの流れを論理的に追う力は必須。心してかかれ。
+
+Now, Io, Rea. Today we tackle a core topic of the Fundamental Information Technology Engineer Examination: the 'Doubly Linked List' data structure. To understand AWS architectures, the ability to logically trace data flow is essential. Prepare yourselves.
+
+(月凪惟緒)
+ヒノりん、いきなり重いよぉ……。双方向のポインタ？ 矢印がいっぱいあって、私の脳内はすでにホワイトアウト状態なんだけど。ポインタって、あの、指差し確認みたいなやつ？
+
+Hino-rin, that's so heavy all of a sudden... Doubly pointers? There are so many arrows, my brain is already in a total whiteout. Is a 'pointer' like... pointing at something to confirm it?
+
+(蒞星怜空)
+ふふ、イオち、いい感性だ。ポインタとは、メモリという名の広大な墓標が並ぶ荒野で、次の死体がどこに埋まっているかを示す道標のようなものだ。双方向となれば、前の死体と次の死体、両方の場所を記憶している……。実に陰惨で、美しい構造だとは思わないか？
+
+Heh, Io-chi, what a sharp intuition. A pointer is like a signpost in a vast wasteland of memory gravestones, indicating where the next corpse is buried. In a 'doubly' structure, it remembers the locations of both the previous and the next corpse... Don't you find it wonderfully grim and beautiful?
+
+(日乃竜胆)
+師匠、例えが不穏すぎる。だが、本質は突いているな。惟緒、まずは前提知識だ。この表にある『アドレス』はデータの住所、『次ポインタ』は次のデータの住所、『前ポインタ』は前のデータの住所を指している。これらが鎖（リスト）のように繋がっているのだ。
+
+Master, your analogies are far too unsettling. However, you hit the mark. Io, first, the basics. The 'Address' in this table is the data's home address. The 'Next Pointer' points to the address of the next data, and the 'Prev Pointer' points to the address of the previous data. They are linked together like a chain—a list.
+
+(月凪惟緒)
+住所録みたいな感じかな。でも、社員Gさんが社員Aさんと社員Kさんの間に割り込むんでしょ？ 仲良しグループに新入りが入るみたいな。その時、誰のメモ帳（ポインタ）を書き換えなきゃいけないの？ って話だよね。
+
+So it's like an address book. But Employee G is cutting in between Employee A and Employee K, right? Like a newcomer joining a tight-knit group. The question is, whose memo pads—I mean, pointers—need to be rewritten?
+
+(日乃竜胆)
+その通りだ。では、まず現状の繋がりを整理しよう。表を見ると、社員A（100）の次は社員K（300）、社員K（300）の次は社員T（200）となっている。つまり、A ⇄ K ⇄ T という並びだ。ここにG（400）を A と K の間に挿入する。
+
+Exactly. Let's organize the current connections first. Looking at the table, Employee A (100) is followed by Employee K (300), and Employee K (300) is followed by Employee T (200). So the sequence is A ⇄ K ⇄ T. Now, we insert G (400) between A and K.
+
+(蒞星怜空)
+平和な二人の間に割り込む不届きな新参者……。この介入により、既存の秩序は灰燼に帰す。具体的には、Aの『次』と、Kの『前』という、かつて愛を誓い合ったポインタたちが、新たな侵入者Gを指すように強制改変されるわけだ。実に無慈悲なオペレーションだ。
+
+An insolent newcomer wedging themselves between two peaceful souls... With this intervention, the existing order is reduced to ashes. Specifically, A's 'Next' and K's 'Prev'—pointers that once swore loyalty to each other—are forcibly altered to point to the intruder, G. A truly merciless operation.
+
+(月凪惟緒)
+怜空さんの言い方、相変わらず怖いよ……。えーっと、じゃあ選択肢を見ていこうかな。まずは間違いの選択肢からだよね？ ヒノりん、解説お願い。
+
+Rea-san, your way of talking is scary as always... Okay, let's look at the options. We start with the wrong ones, right? Hino-rin, please explain.
+
+(日乃竜胆)
+承知した。まずは選択肢『ア（a, b, e, f）』からだ。これは間違いだ。なぜなら、b（社員Aの前ポインタ）と e（社員Kの次ポインタ）が含まれているからだ。社員Aの『前』は元々誰もいなかった（0）。Gが入っても、Aの『前』に変化はない。同様に、Kの『次』は社員T（200）のままだ。GはAとKの間に割り込むだけで、KとTの絆を裂くわけではないからな。
+
+Understood. Let's start with option 'A (a, b, e, f)'. This is incorrect because it includes 'b' (Employee A's Prev) and 'e' (Employee K's Next). A's 'Prev' was originally empty (0), and even with G's arrival, A's 'Prev' remains unchanged. Similarly, K's 'Next' remains Employee T (200). G only cuts between A and K; it doesn't sever the bond between K and T.
+
+(月凪惟緒)
+あー、なるほど。Gさんが入る場所に関係ないところまで書き換える必要はないってことか。じゃあ、選択肢『イ（a, e, f）』も、e が入ってるからダメってこと？
+
+Ah, I see. So there's no need to rewrite things that aren't related to where G is entering. Then, option 'B (a, e, f)' is also bad because it includes 'e'?
+
+(日乃竜胆)
+その通り。e（社員Kの次ポインタ）は、あくまで社員Tを指し続ける。リストの末端や、挿入箇所から遠い場所のポインタまで変えてしまうのは、設計上の汚点、あるいはバグの温床だ。AWSで言えば、不要なリソース変更をトリガーにしてシステム全体をダウンさせるような愚行だな。
+
+Correct. 'e' (Employee K's Next) continues to point to Employee T. Changing pointers at the end of the list or far from the insertion point is a design flaw—a breeding ground for bugs. In AWS terms, it's as foolish as triggering unnecessary resource changes that bring down the entire system.
+
+(蒞星怜空)
+不必要な変更は、カオスを招く。選択肢『エ（b, e）』に至っては、肝心の変更箇所 a と f を無視し、変わらないはずの場所だけを挙げている。これはもはや、火事場泥棒が全く関係ない家の鍵を付け替えるような、支離滅裂な狂気の沙汰と言えよう。
+
+Unnecessary changes invite chaos. As for option 'D (b, e)', it ignores the crucial changes 'a' and 'f' and only lists the places that shouldn't change. This is a state of incoherent madness, like a looter changing the locks on a house completely unrelated to the fire.
+
+(月凪惟緒)
+狂気の沙汰……。じゃあ、消去法でも正解は『ウ（a, f）』になるね。でも、なんで a と f だけが変わるのか、もう一度ちゃんと教えてほしいな。
+
+Incoherent madness... So, by process of elimination, the answer is 'C (a, f)'. But I want you to explain one more time, properly, why only 'a' and 'f' change.
+
+(日乃竜胆)
+よかろう。論理のメスで真実を切り出すぞ。挿入前の状態は『A(100) の次は K(300)』『K(300) の前は A(100)』だ。ここに G(400) が割り込む。すると、Aの『次』は K ではなく G(400) を指さねばならん。これがポインタ a の変更だ。
+
+Very well. I shall carve out the truth with the scalpel of logic. Before insertion: 'A's Next is K(300)' and 'K's Prev is A(100)'. G(400) wedges itself in. Consequently, A's 'Next' must point to G(400) instead of K. This is the change to pointer 'a'.
+
+(月凪惟緒)
+あ、そっか。Aさんの次の人はGさんになったんだもんね。じゃあ、f は？
+
+Oh, right. Because the person after A is now G. Then, what about 'f'?
+
+(日乃竜胆)
+同様だ。Kの視点で見れば、自分の『前』にいたのは A だったが、これからは G(400) が自分の『前』になる。したがって、Kの前ポインタ f は 100 から 400 へと書き換わる。この a と f の二箇所を更新することで、A ⇄ G ⇄ K という新たな絆が成立するのだ。
+
+It's the same. From K's perspective, the person 'Before' them was A, but from now on, G(400) is 'Before' them. Therefore, K's Prev pointer 'f' is rewritten from 100 to 400. By updating these two points, 'a' and 'f', a new bond—A ⇄ G ⇄ K—is established.
+
+(蒞星怜空)
+ちなみに、新参者G自身のポインタ x と y も設定されるが、設問は『追加前と比べて値が変わるポインタ』を問うている。Gは追加前には存在すらしていなかった虚無の存在。ゆえに、比較対象にすらならん。この冷徹なまでの設問の意図……ゾクゾクするねぇ。
+
+By the way, the newcomer G's own pointers 'x' and 'y' are also set, but the question asks for 'pointers whose values change compared to before the addition.' Before the addition, G was a void, a non-entity. Therefore, it cannot even be a subject of comparison. This cold-blooded intent of the question... it gives me shivers.
+
+(月凪惟緒)
+なるほどねぇ。Gさんの持ち物は新しく用意されただけで、『変わった』わけじゃないんだ。ヒノりん、怜空さん、ありがとう。双方向リストって、要は『隣り合う人同士の指差しのやり直し』ってことだね。チルい理解ができた気がする。
+
+I see. G's belongings were just newly prepared, not 'changed.' Thanks, Hino-rin, Rea-san. So a doubly linked list is basically just 'redoing the pointing between neighbors.' I feel like I've reached a very chill level of understanding.
+
+(日乃竜胆)
+チルい、か……。まあ、理解したのなら良かろう。この論理的思考は、AWSのVPCピアリングや、ルートテーブルの書き換えといったネットワーク設計にも通ずる。基礎を疎かにする者に、雲（クラウド）を操る資格はない。精進せよ。
+
+Chill, is it... Well, as long as you understand, it is fine. This logical thinking translates to network design in AWS, such as VPC peering or rewriting route tables. Those who neglect the basics have no right to command the Cloud. Keep striving.
+
+---
+
+=== [画像翻訳] ===
+
+(日乃竜胆)
+さて、今回は基本情報技術者試験の難所、データ構造の「連結リスト」を配列で表現する問題だな。イオち、準備はよいか？
+
+さて、今回は基本情報技術者試験の難所、データ構造の「連結リスト」を配列で表現する問題だな。イオち、準備はよいか？
+
+(月凪惟緒)
+ヒノりん、なんか数字の箱が二つ並んでて、すでに脳内が吹雪いてるんだけど……。これ、何が起きてるの？
+
+ヒノりん、なんか数字の箱が二つ並んでて、すでに脳内が吹雪いてるんだけど……。これ、何が起きてるの？
+
+(蒞星怜空)
+ふふ、それはまるで、バラバラに解体された死体のパーツに、次の部位がどこにあるかのメモを貼り付けて放置したような光景だな。非常にグロテスクで、かつ機能的だ。
+
+ふふ、それはまるで、バラバラに解体された死体のパーツに、次の部位がどこにあるかのメモを貼り付けて放置したような光景だな。非常にグロテスクで、かつ機能的だ。
+
+(日乃竜胆)
+師匠、例えが少々物騒だが……本質は突いている。イオち、まずは「連結リスト」の概念から整理しよう。通常、データはメモリ上に整列して並ぶが、連結リストは「データ本体」と「次のデータの場所（ポインタ）」をセットにして、数珠つなぎにする構造だ。
+
+師匠、例えが少々物騒だが……本質は突いている。イオち、まずは「連結リスト」の概念から整理しよう。通常、データはメモリ上に整列して並ぶが、連結リストは「データ本体」と「次のデータの場所（ポインタ）」をセットにして、数珠つなぎにする構造だ。
+
+(月凪惟緒)
+数珠つなぎ……。じゃあ、この「box」が中身で、「next」が次の箱の番号を指してるってこと？
+
+数珠つなぎ……。じゃあ、この「box」が中身で、「next」が次の箱の番号を指してるってこと？
+
+(日乃竜胆)
+その通りだ。この問題では、配列の添字（インデックス）を住所のように使っている。まず、初期状態のリストを辿ってみよう。問題文に「next[0]がリストの先頭を指す」とあるな。
+
+その通りだ。この問題では、配列の添字（インデックス）を住所のように使っている。まず、初期状態のリストを辿ってみよう。問題文に「next[0]がリストの先頭を指す」とあるな。
+
+(月凪惟緒)
+えーっと、next[0]を見ると「1」って書いてある。ってことは、1番目の要素はbox[1]の「A」だね。
+
+えーっと、next[0]を見ると「1」って書いてある。ってことは、1番目の要素はbox[1]の「A」だね。
+
+(日乃竜胆)
+然様。では、2番目はどこだ？
+
+然様。では、2番目はどこだ？
+
+(月凪惟緒)
+Aが入ってるのはbox[1]だから、その次の場所はnext[1]を見ればいいのかな。next[1]は「5」……。だから2番目はbox[5]の「E」！
+
+Aが入ってるのはbox[1]だから、その次の場所はnext[1]を見ればいいのかな。next[1]は「5」……。だから2番目はbox[5]の「E」！
+
+(蒞星怜空)
+いい調子だ、イオち。その調子で、地獄の底まで鎖を辿ってみるがいい。3番目と4番目はどうなっている？
+
+いい調子だ、イオち。その調子で、地獄の底まで鎖を辿ってみるがいい。3番目と4番目はどうなっている？
+
+(月凪惟緒)
+えーっと、E（box[5]）の次はnext[5]を見て「3」。だから3番目はbox[3]の「C」。その次はnext[3]を見て「7」。だから4番目はbox[7]の「G」。……ふぅ、迷子になりそう。
+
+えーっと、E（box[5]）の次はnext[5]を見て「3」。だから3番目はbox[3]の「C」。その次はnext[3]を見て「7」。だから4番目はbox[7]の「G」。……ふぅ、迷子になりそう。
+
+(日乃竜胆)
+整理すると、現在のリストは「A(1) → E(5) → C(3) → G(7) → B(2)」という順序だな。括弧内は配列の添字だ。さて、問題はここからだ。「3番目(C)と4番目(G)の間に、値がHである要素を挿入したとき」の処理を問うている。
+
+整理すると、現在のリストは「A(1) → E(5) → C(3) → G(7) → B(2)」という順序だな。括弧内は配列の添字だ。さて、問題はここからだ。「3番目(C)と4番目(G)の間に、値がHである要素を挿入したとき」の処理を問うている。
+
+(月凪惟緒)
+Hはbox[8]に入ってるんだよね。これをCとGの間に割り込ませるってこと？ 無理やりこじ開ける感じ？
+
+Hはbox[8]に入ってるんだよね。これをCとGの間に割り込ませるってこと？ 無理やりこじ開ける感じ？
+
+(蒞星怜空)
+物理的に隙間を作る必要はない。ただ、死体の指が指し示す方向を書き換えるだけでいい。Cの次にHが来るようにし、Hの次にGが来るように「next」の値を書き換える。それだけで、運命の鎖は再構築されるのだよ。
+
+物理的に隙間を作る必要はない。ただ、死体の指が指し示す方向を書き換えるだけでいい。Cの次にHが来るようにし、Hの次にGが来るように「next」の値を書き換える。それだけで、運命の鎖は再構築されるのだよ。
+
+(日乃竜胆)
+では、選択肢の検討に入ろう。まずは間違いの選択肢から、なぜそれが不適切なのかを解き明かす。イオち、選択肢アの「3」はどうだ？
+
+では、選択肢の検討に入ろう。まずは間違いの選択肢から、なぜそれが不適切なのかを解き明かす。イオち、選択肢アの「3」はどうだ？
+
+(月凪惟緒)
+えーっと、next[8]に「3」を入れるってことだよね？ 3は「C」の場所。もしnext[8]が3になったら、Hの次にCが来ちゃう。でも、本当はCの次にHを入れたいんだから、これじゃ逆走になっちゃうよ。
+
+えーっと、next[8]に「3」を入れるってことだよね？ 3は「C」の場所。もしnext[8]が3になったら、Hの次にCが来ちゃう。でも、本当はCの次にHを入れたいんだから、これじゃ逆走になっちゃうよ。
+
+(日乃竜胆)
+その通り。リストの整合性が崩れ、無限ループに陥る可能性すらある。却下だ。では、選択肢イの「5」は？
+
+その通り。リストの整合性が崩れ、無限ループに陥る可能性すらある。却下だ。では、選択肢イの「5」は？
+
+(月凪惟緒)
+5は「E」の場所だね。Hの次にEが来る……。でもEは2番目の要素でしょ？ リストの先頭の方に戻っちゃうから、これもダメだね。時空が歪んじゃう。
+
+5は「E」の場所だね。Hの次にEが来る……。でもEは2番目の要素でしょ？ リストの先頭の方に戻っちゃうから、これもダメだね。時空が歪んじゃう。
+
+(蒞星怜空)
+因果律の崩壊だな。過去に戻って自分を殺すような矛盾だ。では、選択肢エの「8」はどうだ？ これは非常に滑稽な選択肢だが。
+
+因果律の崩壊だな。過去に戻って自分を殺すような矛盾だ。では、選択肢エの「8」はどうだ？ これは非常に滑稽な選択肢だが。
+
+(月凪惟緒)
+next[8]に「8」を入れる……。え、これって「自分の次は自分」ってこと？ 永遠にHから抜け出せなくなるじゃん！ 怖っ！
+
+next[8]に「8」を入れる……。え、これって「自分の次は自分」ってこと？ 永遠にHから抜け出せなくなるじゃん！ 怖っ！
+
+(日乃竜胆)
+自己参照の無限地獄だな。プログラム的にはフリーズの原因だ。さて、残るは正解の選択肢、ウの「7」だ。なぜこれが正解なのか、論理的に説明してみせよ。
+
+自己参照の無限地獄だな。プログラム的にはフリーズの原因だ。さて、残るは正解の選択肢、ウの「7」だ。なぜこれが正解なのか、論理的に説明してみせよ。
+
+(月凪惟緒)
+えーっと、挿入したい場所は「C」と「G」の間。Cは3番目で、Gは4番目。Hをその間に入れるってことは、順序が「C → H → G」になればいいんだよね。
+
+えーっと、挿入したい場所は「C」と「G」の間。Cは3番目で、Gは4番目。Hをその間に入れるってことは、順序が「C → H → G」になればいいんだよね。
+
+(日乃竜胆)
+うむ、続けろ。
+
+うむ、続けろ。
+
+(月凪惟緒)
+Cの場所は「3」だから、next[3]をHの場所である「8」に書き換える。これでCの次はHになる。そして、Hの次はもともと4番目だったGの場所に行かなきゃいけない。Gの場所は「7」だから……next[8]には「7」を入れればいいんだ！
+
+Cの場所は「3」だから、next[3]をHの場所である「8」に書き換える。これでCの次はHになる。そして、Hの次はもともと4番目だったGの場所に行かなきゃいけない。Gの場所は「7」だから……next[8]には「7」を入れればいいんだ！
+
+(蒞星怜空)
+正解だ。完璧な外科手術だったよ、イオち。古い絆（next[3]=7）を断ち切り、新たな接合点（next[3]=8, next[8]=7）を作る。これが連結リストにおける挿入の真髄だ。配列のようにデータを後ろにずらす手間がない分、非常に効率的だが、ポインタを一つでも書き間違えれば、システムという名の生命体は即座に絶命する……。
+
+正解だ。完璧な外科手術だったよ、イオち。古い絆（next[3]=7）を断ち切り、新たな接合点（next[3]=8, next[8]=7）を作る。これが連結リストにおける挿入の真髄だ。配列のようにデータを後ろにずらす手間がない分、非常に効率的だが、ポインタを一つでも書き間違えれば、システムという名の生命体は即座に絶命する……。
+
+(日乃竜胆)
+師匠、最後の一言が余計だが……。イオち、理解できたようだな。この「next[i]」という配列が、次のデータの「インデックス」を保持しているという点さえ押さえれば、この手の問題は恐るるに足らん。
+
+師匠、最後の一言が余計だが……。イオち、理解できたようだな。この「next[i]」という配列が、次のデータの「インデックス」を保持しているという点さえ押さえれば、この手の問題は恐るるに足らん。
+
+(月凪惟緒)
+うん、最初は数字の迷路かと思ったけど、一つずつ指差し確認すれば意外とチルにいけるかも。ヒノりん、怜空さん、ありがと。でも、やっぱりこの「死体」とか「絶命」とかの例え、夢に出そうなんだけど……。
+
+うん、最初は数字の迷路かと思ったけど、一つずつ指差し確認すれば意外とチルにいけるかも。ヒノりん、怜空さん、ありがと。でも、やっぱりこの「死体」とか「絶命」とかの例え、夢に出そうなんだけど……。
+
+(蒞星怜空)
+ふふ、悪夢こそが最高の教師だ。忘れないことだな。
+
+ふふ、悪夢こそが最高の教師だ。忘れないことだな。
