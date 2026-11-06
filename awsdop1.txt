@@ -627,7 +627,7 @@ Kukuku... you (walked right into) the trap, Io-chi. (On the surface), it looks l
 
 
 <日乃竜胆>
-Rea-san is entirely correct. Io-chi, the fatal flaw in this option lies in the circuitous detour: deliberately sending numerical metrics as raw text logs into CloudWatch Logs, only to re-extract them back into metrics using a Metric Filter.
+Rea-san is entirely correct. Io-chi, the (fatal flaw )in this option lies in the (circuitous detour): (deliberately) sending numerical metrics as raw text logs into CloudWatch Logs, only to re-extract them back into metrics using a Metric Filter.
 
 
 <月凪惟緒>
@@ -635,7 +635,7 @@ Rea-san is entirely correct. Io-chi, the fatal flaw in this option lies in the c
 
 
 <月凪惟緒>
-...Eh? What's so bad about that? The numbers are written in the logs, so why not just use a magnifying glass to parse them out?
+...Eh? What's so bad about that? The numbers are written in the logs, so why not just use a (magnifying glass) to (parse *them* out)?
 
 
 <日乃竜胆>
@@ -644,7 +644,7 @@ Rea-san is entirely correct. Io-chi, the fatal flaw in this option lies in the c
 
 
 <日乃竜胆>
-Because it is a totally superfluous intermediate layer. Why convert structured metric data into raw text strings, ship them to CloudWatch Logs, and execute pattern matching regexes just to turn them back into metrics? First, ingesting and storing data in CloudWatch Logs incurs tangible logging costs. Second, buffering, log shipping, and ingestion filter pipelines introduce latency, severely crippling scaling responsiveness.
+Because it is a totally superfluous (intermediate) layer. Why (convert *structured metric data* into )raw text strings, ship them to CloudWatch Logs, and execute pattern matching regexes just to turn them back into metrics? First, ingesting and storing data in CloudWatch Logs incurs (tangible) logging costs. Second, buffering, log shipping, and ingestion filter pipelines introduce latency, severely (crippling) scaling responsiveness.
 
 
 <蒞星怜空>
@@ -652,7 +652,7 @@ Because it is a totally superfluous intermediate layer. Why convert structured m
 
 
 <蒞星怜空>
-It is like taking a freshly grilled steak, tossing it into a blender to turn it into liquid paste, sealing it inside an IV bag, and drinking it through a straw. You might get the nutrients eventually, but the preparation effort and equipment overhead explode—and above all, it's aesthetically grotesque.
+It is like taking a freshly grilled steak, tossing it into a blender to turn it into liquid paste, sealing it inside an (IV bag), and drinking it through a straw. You might get the (nutrients) eventually, but the (preparation effort) and equipment overhead explode—and above all, it's (aesthetically grotesque).
 
 
 <月凪惟緒>
@@ -660,7 +660,7 @@ It is like taking a freshly grilled steak, tossing it into a blender to turn it 
 
 
 <月凪惟緒>
-That mental image is horrifying...! But there's one more thing bothering me: what is that "target tracking scaling policy" mentioned at the very end? It sounds like a heat-seeking missile, which seems pretty cool.
+That (mental image) is horrifying...! But there's one more thing bothering me: what is that "target tracking scaling policy" mentione(d at the very end)? It sounds like a (heat-seeking) missile, which seems pretty cool.
 
 
 <日乃竜胆>
@@ -676,7 +676,7 @@ Perceptive observation, Io-chi. Target Tracking Scaling is a convenient mechanis
 
 
 <月凪惟緒>
-...Inversely proportional...? Please don't invoke elementary math incantations out of nowhere...
+...(Inversely proportional)...? Please don't (invoke *elementary math *incantations) (out of nowhere)...
 
 
 <日乃竜胆>
@@ -685,7 +685,7 @@ Perceptive observation, Io-chi. Target Tracking Scaling is a convenient mechanis
 
 
 <日乃竜胆>
-Let me break it down. With CPU utilization, if you double the tasks from one to two, incoming load distributes and per-task CPU utilization drops roughly by half. That is why target tracking works. But what is our metric here? "Active session count." A session represents persistent user state. Doubling container tasks does not magically halve existing active sessions due to stickiness and load skew.
+Let me break it down. With CPU utilization, if you double the tasks from one to two, incoming load distributes and per-task CPU utilization drops roughly by half. That is why target tracking works. But what is our metric here? "Active session count." A session represents persistent user state. Doubling container tasks does not magically halve existing active sessions due to stickiness and load (skew).
 
 
 <蒞星怜空>
@@ -693,7 +693,7 @@ Let me break it down. With CPU utilization, if you double the tasks from one to 
 
 
 <蒞星怜空>
-In other words, if you throw target tracking at sticky active sessions, the algorithm panics because the metric doesn't drop immediately, screaming "Deploy more containers!" until your enterprise credit card limit evaporates in seconds.
+In other words, if you throw target tracking at sticky active sessions, the algorithm panics because the metric doesn't drop immediately, screaming "Deploy more containers!" until your enterprise credit card limit (evaporates) in seconds.
 
 
 <月凪惟緒>
@@ -701,7 +701,7 @@ In other words, if you throw target tracking at sticky active sessions, the algo
 
 
 <月凪惟緒>
-Credit card evaporating into thin air...!? A chill just ran down my spine...! So routing metrics through raw logs is a useless detour, and using target tracking here was essentially diving headfirst into a minefield...
+Credit card evaporating into thin air...!? A (chill *just* ran down *my* spine)...! So routing metrics through raw logs is a (useless detour), and using target tracking here was essentially diving headfirst into a minefield...
 
 
 <日乃竜胆>
@@ -709,7 +709,7 @@ Credit card evaporating into thin air...!? A chill just ran down my spine...! So
 
 
 <日乃竜胆>
-Precisely. An unnecessary logging intermediate layer, inflated costs, and an inappropriate scaling policy ill-suited for session metrics. Therefore, Option 2 is poison.
+Precisely. An unnecessary logging intermediate layer, (inflated) costs, and an inappropriate scaling policy (ill-suited) for session metrics. Therefore, Option 2 is poison.
 ---
 
 
@@ -736,7 +736,7 @@ Here it is...! The sight of the correct answer...! But Hino-rin, how is this dis
 
 
 <日乃竜胆>
-Focus your attention on two pivotal differentiators. First: The CloudWatch agent possesses built-in capabilities to directly scrape Prometheus metric endpoints and publish them natively as CloudWatch custom metrics.
+Focus your attention on two (pivotal differentiators). First: The CloudWatch agent possesses built-in capabilities to directly scrape Prometheus metric endpoints and publish them natively as CloudWatch custom metrics.
 
 
 <月凪惟緒>
@@ -757,7 +757,7 @@ Wait, it can scrape directly...!? You mean without dumping logs, the agent itsel
 
 
 <日乃竜胆>
-Precisely. Operating as a sidecar inside the identical task, it accesses `localhost:9100` with near-zero latency and high security. No superfluous AMP workspaces, no Grafana licenses, no log metric filter overhead. The entire design converges on just three native components: 1. A CloudWatch agent sidecar, 2. A CloudWatch alarm, 3. A Step Scaling policy. Could any architecture possibly be leaner? No.
+Precisely. Operating as a sidecar inside the identical task, it accesses `localhost:9100` with near-zero latency and high security. No superfluous AMP workspaces, no Grafana licenses, no log metric filter overhead. The entire design (converges on )just three native components: 1. A CloudWatch agent sidecar, 2. A CloudWatch alarm, 3. A Step Scaling policy. Could any architecture possibly be (leaner)? No.
 
 
 <蒞星怜空>
@@ -765,7 +765,7 @@ Precisely. Operating as a sidecar inside the identical task, it accesses `localh
 
 
 <蒞星怜空>
-A machine purged of unnecessary moving parts possesses genuine beauty. And the second critical pillar is the adoption of "Step Scaling." Io-chi, remember what nearly happened under target tracking?
+A machine (purged of )unnecessary moving parts (possesses genuine beauty). And the second critical pillar is the adoption of "Step Scaling." Io-chi, remember what nearly happened under target tracking?
 
 
 <月凪惟緒>
@@ -773,7 +773,7 @@ A machine purged of unnecessary moving parts possesses genuine beauty. And the s
 
 
 <月凪惟緒>
-Yeah, the algorithm panics because active sessions don't drop immediately and goes on an uncontrollable container shopping spree!
+Yeah, the algorithm panics because active sessions don't drop immediately a(nd goes on an uncontrollable *container* shopping spree)!
 
 
 <日乃竜胆>
@@ -784,7 +784,7 @@ Yeah, the algorithm panics because active sessions don't drop immediately and go
 
 
 <日乃竜胆>
-Indeed. Step Scaling, however, is deterministic: engineers construct explicit staircases with absolute rationality. "If active sessions exceed 1,000, add 2 tasks." "If they breach 2,000, add 4 tasks." You establish deterministic thresholds and step adjustments. Even with stubborn session metrics that resist smooth division, it expands capacity predictably without running amok.
+Indeed. Step Scaling, however, is (deterministic): engineers construct explicit (staircases) with absolute (rationality). "If active sessions exceed 1,000, add 2 tasks." "If they breach 2,000, add 4 tasks." You establish deterministic thresholds and (step adjustments). Even with stubborn session metrics that resist smooth division, it expands capacity (predictably) without (running amok).
 
 
 <月凪惟緒>
@@ -794,7 +794,7 @@ Prometheusの数字はエージェントが直接集めて、アラームを鳴�
 
 
 <月凪惟緒>
-Whoa...! That makes complete, undeniable sense...! The CloudWatch agent scrapes Prometheus numbers directly, triggers an alarm, and step scaling safely adds tasks like climbing a flight of stairs. Just three native components, zero extra managed servers, and zero bespoke scripts...! This is what "minimizing operational overhead" truly looks like!
+Whoa...! That (makes complete, undeniable sense)...! The CloudWatch agent scrapes Prometheus numbers directly, triggers an alarm, and step scaling safely adds tasks like climbing a (flight of stairs). Just three native components, zero extra managed servers, and zero bespoke scripts...! This is what "minimizing operational overhead" truly looks like!
 
 
 <蒞星怜空>
@@ -802,7 +802,7 @@ Whoa...! That makes complete, undeniable sense...! The CloudWatch agent scrapes 
 
 
 <蒞星怜空>
-Heh... it seems you have touched upon the truth. Wannabe cloud architects love chaining together trendy open-source tools and niche managed services just to pad their resumes. But true master craftsmen carve an unbreakable monument using nothing more than the standard chisel and mallet lying right at the top of their toolbox.
+Heh... it seems you have touched upon the truth. (Wannabe *cloud*) architects love (chaining together) trendy open-source tools and niche managed services just to( pad *their* resumes). But true master (craftsmen) carve an unbreakable monument using nothing more than the standard (chisel) and (mallet) lying right at the top of their toolbox.
 
 
 <日乃竜胆>
@@ -812,15 +812,15 @@ Heh... it seems you have touched upon the truth. Wannabe cloud architects love c
 
 
 <日乃竜胆>
-A fitting conclusion, Rea-san. Io-chi, the structural anatomy of this problem, the architectural traps of the distractors, and the inevitability of the correct solution should now be etched permanently into your mind. Certification questions are not tests of rote memorization; they are touchstones of design philosophy forged to help you survive in the trenches of production engineering. Never forget this lesson.
+A fitting conclusion, Rea-san. Io-chi, the structural anatomy of this problem, the architectural traps of the distractors, and the inevitability of the correct solution should now be etched permanently into your mind. Certification questions are not tests of (rote) memorization; they are (touchstones) of design philosophy forged to help you survive in the trenches of production engineering. Never forget this lesson.
 **日乃竜胆**
 よし、これよりAWS DevOps Engineer - Professional（DOP）水準の難問、問1037の徹底討議を始める。
 Webフロントエンドから外部認証基盤を用いてS3へ直にアクセスを通すフェデレーション構成だな。
 初心の者には難解極まる領域だが、一切の妥協なく骨子から解体するぞ。ついてこられるな、イオち。
 **Rindo Hino**
-Alright, we shall now commence an exhaustive discussion on question DOP-1037, an advanced scenario worthy of the AWS DevOps Engineer - Professional exam.
-This revolves around a federation architecture where a web front end accesses S3 directly using an external identity provider.
-It is an exceedingly demanding domain for a novice, yet I will dissect its architecture down to the marrow without compromise. Can you keep pace, Iochi?
+Alright, we shall now commence an (exhaustive) discussion on question DOP-1037, an advanced scenario worthy of the AWS DevOps Engineer - Professional exam.
+This (revolves around )a federation architecture where a web front end accesses S3 directly using an external identity provider.
+It is an exceedingly demanding domain for a novice, yet I will dissect its architecture down to the (marrow) without compromise. Can you (keep pace), Iochi?
 ---
 **月凪惟緒**
 ……ん〜……画面開いた瞬間にアルファベットが吹雪いてて、すでに永久凍土に埋まりそうなんだけど……。
@@ -834,23 +834,23 @@ What even is DOP...? And SPA, OIDC, S3... it just looks like an encrypted incant
 だが安心しろ、世のエンジニアたちが「とりあえず動いたからヨシ！」と雑に組んだ結果、フロントエンドのJavaScriptコードの腹を裂かれてIAM長期キーを丸ごと強奪され、暗号資産マイニングに数千万円請求されて血反吐を吐く……その地獄の祭りを未然に防ぐための儀式が、この問題の正体だ。
 **Rea Rize**
 Heh... a fitting opening. Stand shivering in that tundra of ignorance.
-Rest assured, however: when reckless engineers shrug and say "well, it works!" only to leave static IAM keys exposed inside front-end JavaScript, predators will rip that code wide open, hijack the credentials, and leave them choking on a million-yen crypto-mining invoice. This entire question is merely the defensive rite designed to avert such catastrophes.
+(Rest assured), however: when (reckless) engineers (shrug) and say "well, it works!" only to leave static IAM keys exposed inside front-end JavaScript, predators will (rip *that code *wide open), hijack the credentials, and leave them choking on a million-yen crypto-mining invoice. This entire question is merely the defensive (rite) designed to (avert) such catastrophes.
 ---
 **日乃竜胆**
 師匠、最初から劇薬を投じるのはやめろ。事実ではあるがな。
 イオち、まず前提となる『問題の骨子』を叩き込む。
 設問はこうだ。「社内で運用するSPA（シングルページアプリケーション）から、AWSのS3バケットへファイルを直接アップロードさせたい。ただし、IAMユーザーの長期認証情報（アクセスキー）をアプリに埋め込まず、社内OIDC IdP（idp.example.org）を使って安全に実現せよ。必要な3つの手順を選べ」というものだ。
 **Rindo Hino**
-Master Rea, refrain from injecting lethal venom right at the outset, even if it is factually incontrovertible.
+Master Rea, refrain from injecting lethal (venom) (right at the outset), even if it is factually (incontrovertible).
 Iochi, allow me to hammer the core framework of the scenario into your mind.
-The requirement states: an internally hosted Single Page Application <SPA> must upload files directly to an Amazon S3 bucket without baking long-term IAM credentials into the client side, utilizing an on-premises OIDC IdP <idp.example.org>. We must identify the three requisite steps.
+The requirement states: an internally hosted Single Page Application <SPA> must upload files directly to an Amazon S3 bucket without (baking *long-term IAM credentials* into )the client side, utilizing an on-premises OIDC IdP <idp.example.org>. We must identify the three requisite steps.
 ---
 **月凪惟緒**
 ……え〜っと……そもそもSPAってなに……？
 温泉施設……？ それと、アクセスキーを埋め込んじゃダメな理由って、そんなにヤバいの……？
 **Io Tsukinagi**
 ...Uhm... first off, what on earth is an SPA...?
-A hot spring resort...? And why is baking an access key into an app such a mortal sin anyway...?
+A hot spring resort...? And why is baking an access key into an app (such a mortal sin anyway)...?
 ---
 **日乃竜胆**
 温泉ではない、Single Page Applicationだ。
@@ -861,16 +861,16 @@ A hot spring resort...? And why is baking an access key into an app such a morta
 It stands for Single Page Application, not a hot spring resort.
 It refers to web applications where client-side JavaScript handles interactions dynamically by asynchronously communicating with APIs behind the scenes without reloading entire pages.
 Crucially, any JavaScript running inside a browser exposes its raw logic and network payloads to anyone who simply presses F12.
-Hardcoding static AWS Access Keys inside client assets is the architectural equivalent of scattering vault keys across a public square with an engraved invitation to pillage.
+Hardcoding static AWS Access Keys inside client assets is the architectural equivalent of scattering vault keys across( a public square )with an engraved invitation to (pillage).
 ---
 **蒞星怜空**
 そう。うっかりGitHubに公開リポジトリとしてプッシュした瞬間に、世界中のスキャナーボットが歓喜の雄叫びを上げながら数秒で鍵を奪い去り、数分後には大容量EC2インスタンスが限界まで立ち並ぶ。
 翌朝デスクに座った開発者が目にするのは、AWSからの冷徹な請求書と、青ざめて言葉を失った上司の能面のような顔だ。
 それを防ぐために「一時的な入場チケット（テンポラリクレデンシャル）」を使う。それがSTS（Security Token Service）というわけだ。
 **Rea Rize**
-Precisely. The millisecond you slip that key into a public GitHub repository, automated scrapers across the globe seize it with predatory ecstasy, instantly provisioning high-spec EC2 clusters.
-What greets the engineer the next morning is an unforgiving billing alert from AWS and the petrified, lifeless gaze of their manager.
-To prevent such desolation, we issue ephemeral admission tokens—temporary credentials. That is the mandate of AWS STS <Security Token Service>.
+Precisely. The millisecond you (slip *that key *into) a public GitHub repository, automated (scrapers) (across the globe )(seize) it with (predatory ecstasy), instantly provisioning high-spec EC2 clusters.
+What greets the engineer the next morning is an unforgiving billing alert from AWS and the (petrified), lifeless gaze of their manager.
+To prevent such (desolation), we issue ephemeral admission tokens—temporary credentials. That is the mandate of AWS STS <Security Token Service>.
 ---
 **月凪惟緒**
 ひえっ……請求書のホラー映画……。
@@ -885,7 +885,7 @@ IdPとはIdentity Provider（認証プロバイダー）のこと。社内ポー
 そしてOIDC（OpenID Connect）は、認証情報を「JWT（JSON Web Token）」という改ざん不可能なトークンとして発行する国際標準プロトコルだな。
 今回のアーキテクチャは、ブラウザ（SPA）がIdPから貰ったOIDCトークンをAWSに差し出し、「社員の証明書を持ってきたから、S3へファイルを置くための一時的な権限を寄越せ」と交渉する流れだ。
 **Rindo Hino**
-A remarkably sharp inference, perfectly on point.
+A remarkably sharp (inference), (perfectly on point).
 An IdP is an Identity Provider—an authority that verifies authentication, certifying via digital signatures that "this entity is legitimately Employee A of our organization".
 OpenID Connect <OIDC> is an open industry-standard protocol that encapsulates identity claims inside tamper-proof JSON Web Tokens <JWT>.
 In this architecture, the client-side SPA presents this OIDC token directly to AWS, demanding: "I possess verified proof of employment; grant me short-lived privileges to push data to S3".
@@ -895,16 +895,16 @@ In this architecture, the client-side SPA presents this OIDC token directly to A
 受付嬢であるAWS STSは、その社員証が偽造されていないか、契約済みの発行元かを冷徹に検め、問題なければ時限爆弾付きの入館証を手渡す。
 さて、ヒノりん。この問題には選択肢が6つあるが、我が方針に従い、まずは無残に散っていく「不正解の選択肢」の粗相から血祭りに上げてもらおうか。
 **Rea Rize**
-Picture an anonymous drifter swaggering into a secure corporate headquarters, flashing an enterprise badge, demanding a thirty-minute visitor pass.
-AWS STS, our unyielding receptionist, meticulously inspects the credential against its pre-registered trusted issuers, validating every cryptographic signature before dispensing a self-expiring security badge.
-Now, Hinorin. There are six options on the table. In accordance with our creed, dissect the flawed, doomed distractors first.
+Picture an anonymous (drifter) (swaggering into) a secure corporate headquarters, (flashing *an enterprise* badge), demanding a thirty-minute visitor pass.
+AWS STS, our unyielding receptionist, meticulously inspects the credential against its pre-registered trusted issuers, validating every cryptographic signature before (dispensing) a (self-expiring) security badge.
+Now, Hinorin. There are six options on the table. In accordance with our (creed), dissect the flawed, doomed distractors first.
 ---
 **日乃竜胆**
 承知した。まず誤った選択肢の1つ目、**『不正解4：SPAからOIDCトークンを取得した後、AssumeRoleWithSAMLを呼び出して一時的な認証情報を受け取り、その認証情報でS3 APIを実行する』** を切る。
 イオち、この選択肢がなぜ致命的に破綻しているか、違和感に気づくか？
 **Rindo Hino**
 Understood. Let us first eliminate **Incorrect Option 4: "After obtaining an OIDC token from the SPA, invoke AssumeRoleWithSAML to receive temporary credentials and execute S3 APIs with those credentials"**.
-Iochi, can you spot the fatal rupture within this proposition?
+Iochi, can you spot the fatal (rupture) within this proposition?
 ---
 **月凪惟緒**
 ……ん〜？
@@ -913,7 +913,7 @@ OIDCとSAMLって、名前が違くない……？ パスタ頼んだのに蕎�
 **Io Tsukinagi**
 ...Mmmh?
 It says it acquired an "OIDC token," but the API it calls is "AssumeRoleWith... SAML"...?
-Aren't OIDC and SAML completely different names...? It feels as jarring as ordering Italian pasta and getting served soba broth soup...
+Aren't OIDC and SAML completely different names...? It (feels as jarring as) ordering Italian pasta and getting served soba (broth soup)...
 ---
 **日乃竜胆**
 その直感、見事だ。まさにプロトコルの不一致だな。
@@ -922,31 +922,31 @@ SAML 2.0は主に巨大なXML形式のアサーションをやり取りする古
 `AssumeRoleWithSAML` というSTS APIは、Base64エンコードされたSAMLアサーション（XML）を必須パラメータとして要求するのだ。
 そこにOIDCのJWTトークンを投げつけたところで、AWS側は「形式が全く違う」と門前払いを食らわせるに決まっている。
 **Rindo Hino**
-A brilliant intuition. You have exposed an irreconcilable protocol mismatch.
-SAML 2.0 is a legacy, venerable enterprise standard trafficking primarily in bulky XML assertions.
+A brilliant intuition. You have exposed an (irreconcilable *protocol* mismatch).
+SAML 2.0 is a legacy, (venerable) enterprise standard trafficking primarily in bulky XML assertions.
 In contrast, OIDC is a modern, web-optimized standard conveying claims via lightweight JSON Web Tokens.
 The `AssumeRoleWithSAML` API strictly mandates an XML-based, Base64-encoded SAML assertion as its payload.
-If you chuck a JSON-formatted OIDC JWT at this endpoint, AWS will promptly slam the door in your face with an unceremonious rejection.
+If you chuck a JSON-formatted OIDC JWT at this endpoint, AWS will promptly slam the door in your face with an (unceremonious rejection).
 ---
 **蒞星怜空**
 入国審査の窓口で「パスポートを見せろ」と言われているのに、得意げに近所のスーパーのポイントカードを突き出しているような滑稽さだな。
 受取側のパーサーは「XMLの構文木がねぇぞ」と卒倒して即死する。規格の互換性を無視した哀れな実装の末路だ。
 **Rea Rize**
-It is as utterly farcical as stepping up to an international immigration counter, being commanded to present a valid passport, and proudly slamming down a local supermarket loyalty card.
-The receiving parser collapses in sheer disbelief over missing XML tags. Such is the dismal fate of ignoring protocol specifications.
+It is as utterly (farcical) as (stepping up to) an international immigration counter, (being commanded to )(present) a valid passport, and proudly (slamming down) a local supermarket (loyalty card).
+The receiving parser (collapses in )(sheer disbelief over) missing XML tags. Such is the (dismal) fate of ignoring protocol (specifications).
 ---
 **日乃竜胆**
 では次だ。2つ目の誤り、**『不正解5：Amazon Cognito ユーザープールを作成し、OIDC IdPをソーシャルプロバイダーとして統合する。Cognitoの認証フローを通じてトークンを発行する』** を検証する。
 これは多くの受験者や初学者が甘美な罠として引っかかる典型的な選択肢だな。
 **Rindo Hino**
 Next in line. Let us scrutinize **Incorrect Option 5: "Create an Amazon Cognito user pool and integrate the OIDC IdP as a social provider. Issue tokens via Cognito's authentication flow"**.
-This is an insidious, seductive trap where countless candidates stumble.
+This is an insidious, seductive trap where countless candidates (stumble).
 ---
 **月凪惟緒**
 えっ……Cognitoって、AWSのログイン機能をつかさどる守護神みたいなやつでしょ……？
 外部のログインと繋ぐなら、Cognitoを通したほうがちゃんとしてる感あるじゃん。なんでこれがダメなの……？
 **Io Tsukinagi**
-Wait... Isn't Cognito like the ultimate guardian deity for logins on AWS...?
+Wait... Isn't Cognito like the ultimate (guardian deity) for logins on AWS...?
 If we're connecting external authentication, wouldn't routing it through Cognito feel much more official and robust? Why is that wrong...?
 ---
 **日乃竜胆**
@@ -956,20 +956,20 @@ If we're connecting external authentication, wouldn't routing it through Cognito
 アーキテクチャの管理ポイントが増えるばかりか、MAU（月間アクティブユーザー数）に応じた追加課金が発生する。
 これを設計の世界では「オーバーエンジニアリング（過剰設計）」と断罪する！
 **Rindo Hino**
-If evaluated purely on raw technical viability, inserting Cognito could conceivably function. Yet look rigorously at the architectural requirements.
+If evaluated purely on raw technical viability, inserting Cognito could (conceivably) function. Yet (look rigorously at) the architectural requirements.
 We are dealing with a tightly scoped requirement: an existing internal OIDC IdP granting access from an internal SPA to an S3 bucket.
-Unnecessarily introducing an Amazon Cognito User Pool interposes an entirely redundant middle tier.
+Unnecessarily introducing an Amazon Cognito User Pool (interposes) an entirely redundant middle tier.
 Not only does this multiply administrative overhead, but it also incurs ongoing monthly billing tied to Monthly Active Users <MAU>.
-In enterprise engineering, this is condemned as blatant over-engineering!
+In enterprise engineering, this is condemned as (blatant) over-engineering!
 ---
 **蒞星怜空**
 隣の部屋に回覧板を回したいだけなのに、わざわざ別府温泉の特設中継センターを経由させて無駄な中継料と手数料を毎月むしり取られるようなものだ。
 インフラの構成図が無駄に肥大化し、誰も全貌を把握できなくなった挙句、月末の請求書で経理から「このCognitoの課金、本当に必要なの？」と冷徹に詰め寄られる未来が見えるな。
 直通のトンネルが掘れる場所に、有料道路を増設する愚行に他ならない。
 **Rea Rize**
-It is akin to wanting to hand a clipboard to your immediate neighbor, but insisting on routing it through a resort clearinghouse across the country while cheerfully paying recurring processing fees.
-The architecture diagram bloats needlessly, nobody understands the whole sprawling mess, and month-end accounting coldly asks: "Is this Cognito line item truly justifiable?"
-It is the sheer folly of building a tollway right beside an open, frictionless direct pathway.
+It is akin to wanting to (hand a clipboard to )your (immediate neighbor), but insisting on routing it through a resort( clearinghouse) across the country while cheerfully paying recurring processing fees.
+The architecture diagram bloats needlessly, nobody understands the whole (sprawling mess), and (month-end accounting) coldly asks: "Is this Cognito (line item) truly (justifiable)?"
+It is the (sheer folly of) building a (tollway) (right beside )an open, (frictionless) (direct pathway).
 ---
 **日乃竜胆**
 その通りだ。IAMには標準で「OIDC IdPを直接登録する機能」が備わっている。
@@ -977,17 +977,17 @@ Cognitoを噛ませずとも、IAMと直接フェデレーションを結べば�
 そして3つ目の誤り、**『不正解6：S3バケットへの書き込み権限を付与したIAMロールを作成する。信頼ポリシーの条件として sts.amazonaws.com:aud キーでクライアントIDを検証し、OIDCプロバイダーによるAssumeRoleを許可する』** だ。
 ここが本問における最大のトラップであり、最も高度なセキュリティの急所だな。
 **Rindo Hino**
-Spot on. IAM inherently provides native capability to register OIDC IdPs directly.
-Bypassing Cognito and federating directly with IAM costs zero extra dollars and maintains minimal architectural surface area.
+Spot on. IAM (inherently provides native capability )to register OIDC IdPs directly.
+Bypassing Cognito and (federating) directly with IAM costs zero extra dollars and (maintains minimal *architectural* surface area).
 Now for our third blunder: **Incorrect Option 6: "Create an IAM role granting write access to the S3 bucket. In the trust policy conditions, validate the client ID using the sts.amazonaws.com:aud key, and permit AssumeRole by the OIDC provider"**.
-This is the ultimate tripwire of the entire exam item, striking at the subtleties of trust policy mechanics.
+This is the ultimate tripwire of the entire exam item, (striking at the subtleties of) trust policy mechanics.
 ---
 **月凪惟緒**
 ……うっ、なんか字面だけ見ると、めちゃくちゃそれっぽいこと言ってる気がする……。
 クライアントIDを検証して、S3への書き込みを許可するんでしょ……？
 どこに罠が埋まってるの……？ 全然見抜けないんだけど……。
 **Io Tsukinagi**
-...Ugh, just looking at the phrasing, it sounds intensely convincing and legitimate...
+...Ugh, just looking at the phrasing, it (sounds intensely convincing and legitimate)...
 It checks the client ID and permits writes to S3, right...?
 Where is the landmine hidden...? I can't spot the flaw at all...
 ---
@@ -997,7 +997,7 @@ Where is the landmine hidden...? I can't spot the flaw at all...
 だが、AWSのIAMロールがカスタムOIDCプロバイダーと直接やり取りする場合、条件キーのプレフィックスには「IdP自身のURL」を指定しなければならない仕様なのだ！
 すなわち、正しくは `idp.example.org:aud` でなければならん！
 **Rindo Hino**
-Look with uncompromising scrutiny. The pivot lies entirely within the context key prefix specified in the condition block.
+(Look with uncompromising scrutiny). The (pivot lies )entirely within the context key prefix specified in the condition block.
 The option asserts: `sts.amazonaws.com:aud`.
 However, when an IAM role integrates directly with an external custom OIDC provider, the IAM policy engine dictates that the condition key must be prefixed with the IdP's explicit domain URL!
 Therefore, it must strictly be `idp.example.org:aud`!
@@ -1018,16 +1018,16 @@ IdPが発行するOIDCトークンの中には、「このトークンはどの�
 It stands for Audience.
 Inside the OIDC token issued by the IdP, there is a cryptographic claim labeled `aud`, explicitly declaring the intended recipient application for whom the token was generated.
 AWS validates whether this matches the designated Client ID of our SPA.
-If you mistakenly define `sts.amazonaws.com:aud`, AWS evaluates it as a nonexistent or non-matching context key, completely failing the policy evaluation and ruthlessly rejecting the AssumeRole request!
+If you mistakenly define `sts.amazonaws.com:aud`, AWS evaluates it as a (nonexistent) or (non-matching) context key, completely failing the policy evaluation and ruthlessly rejecting the AssumeRole request!
 ---
 **蒞星怜空**
 受取人の宛名欄に、送付先アプリのIDではなく全然関係ない受付窓口の型番を書いているようなものだな。
 システムは融通など利かせてくれない。設定が1文字、キーの先頭が数ミリ違っているだけで、リクエストは無慈悲な403 Access Deniedの深淵に叩き落とされる。
 画面の前で「なんで動かないんだ！」と頭を抱えて3日間不眠不休でキーボードを叩き続ける羽目になる哀愁のエンジニアを生み出す元凶が、このプレフィックスミスだ。
 **Rea Rize**
-It is as if you filled in the recipient field on a delivery slip with the serial number of the reception desk rather than the actual tenant.
-Software systems extend zero mercy or interpretive leeway. If a prefix deviates by a few characters, the request gets blasted into the void with a frigid HTTP 403 Access Denied.
-This exact prefix error is the tragic cradle of bleary-eyed engineers pounding their desks for three sleepless nights wondering why their integration won't budge.
+It is as if you (filled in )the recipient field on a (delivery slip) with the serial number of the reception desk rather than the actual tenant.
+Software systems extend zero mercy or (interpretive) (leeway). If a prefix (deviates by )a few characters, the request gets blasted into the void with a frigid HTTP 403 Access Denied.
+This exact prefix error is the (tragic cradle) of (bleary-eyed )engineers pounding their desks for three sleepless nights wondering why their integration (won't budge).
 ---
 **日乃竜胆**
 うむ。不正解の残骸をすべて薙ぎ払ったところで、いよいよ我々が採るべき「正解の3手順」を再構築していくぞ。
@@ -1050,15 +1050,15 @@ AWSが外部の認証サーバー（idp.example.org）と通信する際、「�
 この3つをIAMに登録することで、初めてAWSは「よし、この外部IdPを信頼しよう」と国交を結ぶことができるのだ！
 **Rindo Hino**
 Conceptually, that is remarkably accurate. It represents the SHA-1 cryptographic hash of the server's TLS certificate.
-When AWS interacts with the external IdP <idp.example.org>, it uses this cryptographic fingerprint to ensure the host is authentic and hasn't been intercepted by a man-in-the-middle.
+When AWS interacts with the external IdP <idp.example.org>, it uses this cryptographic fingerprint to ensure the host is authentic and hasn't been intercepted by a (man-in-the-middle).
 The Issuer URL, the Client ID, and the Certificate Thumbprint.
-By submitting these three tokens of trust into IAM, AWS officially establishes a federated pact, declaring: "I shall honor assertions signed by this entity"!
+By submitting these three tokens of trust into IAM, AWS officially establishes a federated pact, declaring: "I (shall honor) (assertions) signed by this entity"!
 ---
 **蒞星怜空**
 国家間の国交樹立だな。パスポートを発行する国の公印の陰影と外交官の署名原票を、あらかじめ自国の外務省データベースに登録しておくような作業だ。
 この事前登録がなければ、いくら立派なトークンを持参したところで、不法入国者として即座に国境警備隊（IAM）に射殺される。
 **Rea Rize**
-It is the diplomatic establishment of formal bilateral relations. You are registering the foreign ministry's official seal and diplomat signature templates within your internal security registry.
+It is the (diplomatic establishment) of formal (bilateral) relations. You are registering the foreign ministry's official seal and diplomat signature templates within your internal security registry.
 Without this pre-shared trust anchor, regardless of how splendid the visitor's credentials appear, border security <IAM> will instantly vaporize the entry request.
 ---
 **日乃竜胆**
@@ -1066,14 +1066,14 @@ Without this pre-shared trust anchor, regardless of how splendid the visitor's c
 先ほど不正解6で暴いた通り、ここでは正しいプレフィックス `idp.example.org:aud` を用いて、正当な自社SPAアプリから発行されたトークンのみを引き受け対象として絞り込む。
 **Rindo Hino**
 Moving directly to Step 2: **Correct Option 2: "Create an IAM role granting write access to the S3 bucket. In the trust policy conditions, validate the client ID using the idp.example.org:aud key, and permit AssumeRole by the OIDC provider"**.
-As we previously uncovered in Incorrect Option 6, using the legitimate prefix `idp.example.org:aud` ensures that the role only accepts tokens minted specifically for our authorized SPA client.
+As we previously uncovered in Incorrect Option 6, using the legitimate prefix `idp.example.org:aud` ensures that the role only accepts tokens (minted) specifically for our authorized SPA client.
 ---
 **月凪惟緒**
 ふむふむ……。
 「私は社内のIdPからのお墨付きを持ってるよ」って言ってきた人の中でも、「このアプリ（クライアントID）のために発行されたチケットを持ってる人だけ、S3書き込み用のヘルメット（IAMロール）を被っていいよ」って許可証（信頼ポリシー）を書くわけだね……。
 **Io Tsukinagi**
 I see, I see...
-So among all the folks showing up with a hall pass from the internal IdP, this trust policy essentially states: "Only users holding a token explicitly issued for this application ID are allowed to put on the S3-write hard hat <IAM Role>"...
+So among all the (folks) showing up with a (hall pass) from the internal IdP, this trust policy essentially states: "Only users holding a token explicitly issued for this application ID are allowed to put on the S3-write (hard hat) <IAM Role>"...
 ---
 **日乃竜胆**
 その比喩、完璧だ！ まさにIAMロールとは被ることで一時的に権限を得る「作業用ヘルメット」だな。
@@ -1081,24 +1081,24 @@ So among all the folks showing up with a hall pass from the internal IdP, this t
 Actionには `sts:AssumeRoleWithWebIdentity` を許可し、Principalには先ほど登録したOIDCプロバイダーのARNを指定する。
 これで受け入れ態勢は完全に整った。
 **Rindo Hino**
-A flawless metaphor! An IAM Role is indeed an operational helmet donned to wield temporary powers.
-And the Trust Policy dictates the strict eligibility criteria governing who is permitted to put on that helmet.
+A flawless metaphor! An IAM Role is indeed an operational helmet (donned) to wield temporary powers.
+And the Trust Policy dictates the strict (eligibility) criteria governing who is permitted to put on that helmet.
 We permit the action `sts:AssumeRoleWithWebIdentity`, targeting the OIDC Provider ARN under the Principal block.
-The operational landing zone is now completely paved.
+The operational (landin*g zone is now completely* paved).
 ---
 **蒞星怜空**
 そして最後に、実際に現場を走るクライアントコードの実行フェーズだな。
 第3の歯車を噛み合わせろ、ヒノりん。
 **Rea Rize**
-And ultimately, we reach the runtime execution phase where client-side code actually hits the wire.
-Engage the third gear, Hinorin.
+And ultimately, we reach the runtime execution phase where client-side code actually (hits the wire).
+(Engage *the third* gear), Hinorin.
 ---
 **日乃竜胆**
 応！ 最後の仕上げ、**『正解3：SPAからOIDCトークンを取得した後、AssumeRoleWithWebIdentityを呼び出して一時的な認証情報を受け取り、その認証情報でS3 APIを実行する』** だ！
 SPAは社内IdPでユーザー認証を済ませてJWTトークンを受け取る。
 そのトークンを添えて、AWS STSの `AssumeRoleWithWebIdentity` APIを叩くのだ。
 **Rindo Hino**
-Acknowledged! The final capstone: **Correct Option 3: "After obtaining an OIDC token from the SPA, invoke AssumeRoleWithWebIdentity to receive temporary credentials and execute S3 APIs with those credentials"**!
+Acknowledged! The final (capstone): **Correct Option 3: "After obtaining an OIDC token from the SPA, invoke AssumeRoleWithWebIdentity to receive temporary credentials and execute S3 APIs with those credentials"**!
 The client SPA completes user authentication against the internal IdP and takes possession of the JWT token.
 It then invokes the AWS STS `AssumeRoleWithWebIdentity` API accompanied by that cryptographic token.
 ---
@@ -1116,9 +1116,9 @@ SPAはその一時キーを使って、晴れてS3のPutObject APIを直接実�
 長期認証情報は一切クライアントに存在せず、期限が切れればキーはただの電子のゴミと化す。これぞ鉄壁の無垢なるアーキテクチャだ！
 **Rindo Hino**
 Precisely! STS validates the cryptographic signature of the submitted OIDC token against the trust policy on the IAM role.
-Upon successful validation, it issues an ephemeral bundle containing an Access Key ID, Secret Access Key, and Session Token to the SPA.
+Upon successful validation, it issues an (ephemeral bundle) containing an Access Key ID, Secret Access Key, and Session Token to the SPA.
 Armed with these temporary credentials, the SPA directly invokes the Amazon S3 PutObject API to upload its payload safely.
-Zero long-term credentials reside inside the client, and once the lease expires, the token disintegrates into inert digital dust. A truly pristine, impenetrable architecture!
+Zero long-term credentials reside inside the client, and once the lease expires, the token (disintegrates into) (inert) digital dust. A truly pristine, impenetrable architecture!
 ---
 **蒞星怜空**
 ふふ……見事な手並みだ。
@@ -1126,8 +1126,8 @@ Zero long-term credentials reside inside the client, and once the lease expires,
 泥沼の炎上案件を未然に鎮火し、優雅に定時で退勤するための知恵がここに凝縮されているというわけだな。
 **Rea Rize**
 Heh... an exquisite deconstruction.
-This cleanly evades wasteful capital expenditure <Cognito MAU costs>, runtime explosions <SAML mismatches>, and infinite debugging loops born of misspelled context prefixes.
-The wisdom to extinguish production dumpster fires before they ignite and clock out right on time is crystallized in this exact solution.
+This cleanly (evades) wasteful (capital expenditure) <Cognito MAU costs>, runtime explosions <SAML mismatches>, and infinite debugging loops born of (misspelled) context prefixes.
+The wisdom to extinguish (production dumpster fires) before they ignite and (clock out right on time) is (crystallized) in this exact solution.
 ---
 **月凪惟緒**
 ……なるほどねぇ……。
@@ -1138,7 +1138,7 @@ The wisdom to extinguish production dumpster fires before they ignite and clock 
 っていう、めちゃくちゃ筋の通ったリレーだったんだね……。頭の中の吹雪がちょっと晴れてきたよ、ヒノりん、怜空さん！
 **Io Tsukinagi**
 ...I get it now...
-At first, it looked like a wall of arcane acronym spells, but it's really just a sensible three-stage relay:
+At first, it looked like a wall of arcane acronym spells, but it's really just a (sensible) three-stage relay:
 1. Register the external identity guarantor
 2. Prepare the role with the exact IdP domain prefix
 3. Call the WebIdentity API to obtain temporary credentials and upload to S3
@@ -9386,4 +9386,4 @@ I see...! Config rules shout "Violation detected!" from the watchtower, and Syst
 日乃竜胆
 その通りだ。AWSのマネージド機能を最大限に活かし、人手を排してリアルタイムの自律治癒（Self-healing）システムを構築する。これこそがDevOps Engineer - Professionalが目指すべき堅牢は無比なるアーキテクチャの真髄である。   
 Rindo Hino
-Precisely. Leveraging AWS managed capabilities to the fullest to establish a hands-free, real-time self-healing system—this is the quintessential robust architecture that a DevOps Engineer - Professional must embodyさ.
+Precisely. Leveraging AWS managed capabilities to the fullest to establish a hands-free, real-time self-healing system—this is the quintessential robust architecture that a DevOps Engineer - Professional must embody.
