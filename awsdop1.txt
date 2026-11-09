@@ -1167,7 +1167,7 @@ Yaaay... There are so many red crosses and arrows wriggling on the screen that m
 <蒞星怜空>
 ふっ……。静寂な冬の湖底で永劫の眠りにつくがごときフリーズだな。己が投げた手紙の返事を待ち続け、吹雪の中で立ち尽くす観測者の哀愁といったところか。実に香ばしい破滅の匂いだ。
 <Rea Rize>
-Heh... A freeze akin to sinking into eternal slumber at the bottom of a silent winter lake. The sorrow of an observer waiting endlessly for a reply to a letter they sent, standing frozen amidst a blizzard. Truly an exquisite scent of ruin.
+Heh... A freeze akin to sinking into eternal (slumber) at the bottom of a silent winter lake. The sorrow of an observer waiting endlessly for a reply to a letter they sent, standing frozen amidst a blizzard. Truly an exquisite scent of ruin.
 
 
 <日乃竜胆>
@@ -1175,7 +1175,7 @@ Heh... A freeze akin to sinking into eternal slumber at the bottom of a silent w
 『ある企業のDevOpsチームが、CloudFormationカスタムリソースとLambda関数を組み合わせて、サードパーティのSaaS APIを呼び出す仕組みを構築した。Lambda関数は正常に実行され、SaaS APIの呼び出しも成功しているが、CloudFormationスタックが CREATE_IN_PROGRESS 状態のままタイムアウトするまで進行しない。この問題の原因として最も可能性が高いものはどれか？』
 ――これが突きつけられた状況だ。
 <Rindo Hino>
-Cease shrouding the matter in poetic allegories, Rea-san. First, let us accurately grasp the core premise of the question.
+Cease (shrouding) the matter in poetic (allegories), Rea-san. First, let us accurately grasp the core premise of the question.
 "A company's DevOps team configured a CloudFormation custom resource with a Lambda function to call a third-party SaaS API. The Lambda function runs successfully and calls the SaaS API without error, yet the CloudFormation stack remains stuck in CREATE_IN_PROGRESS until it times out. What is the most likely cause of this issue?"
 That is the dilemma confronting us.
 
@@ -1183,7 +1183,7 @@ That is the dilemma confronting us.
 <月凪惟緒>
 ねえヒノりん、そもそもさ……「CloudFormation」とか「カスタムリソース」って単語の時点で、私の頭の辞書が全ページ白紙なんだけど。これって何をしてくれる人なの……？
 <Io Tsukinagi>
-Hey Hino-rin, to begin with... terms like "CloudFormation" and "Custom Resource" leave every single page of my brain's dictionary completely blank. What do these things even do in the first place...?
+Hey Hino-rin, to begin with... terms like "CloudFormation" and "Custom Resource" (leave *every single page of my brain's dictionary completely *blank). What do these things even do in the first place...?
 
 
 <日乃竜胆>
@@ -1205,19 +1205,19 @@ This is where "Custom Resources" enter the fray. To CloudFormation, these are me
 <月凪惟緒>
 あー……なるほどねぇ。現場監督のCloudFormationくんが設計図通りにビルを建ててるときに、「あ、ここの壁紙は海外の特殊な職人さん（SaaS）にお願いしなきゃ！」ってなって、下請けのLambdaくんに電話（invoke）して依頼した、みたいな感じ？
 <Io Tsukinagi>
-Ah... I see. So while supervisor CloudFormation is constructing a building according to the blueprints, he realizes, "Oh, this wallpaper needs a specialist overseas contractor <SaaS>!", so he rings up subcontractor Lambda <invoke> to place the order?
+Ah... I see. So while (supervisor) CloudFormation is constructing a building according to the blueprints, he realizes, "Oh, this wallpaper needs a specialist overseas contractor <SaaS>!", so he rings up (subcontractor) Lambda <invoke> to (place the order)?
 
 
 <蒞星怜空>
 極めて的確な直感だな、イオち。だがその下請け業者は、依頼された壁紙の貼り付け（SaaS API呼び出し）を完璧に完遂してドヤ顔で現場から帰宅したにもかかわらず、監督に「終わりました」の伝票を一枚も渡さずにバックレたわけだ。その結果、哀れな現場監督は足場の上で直立不動のまま、豪雨に打たれて丸一時間立ち往生している。なんとも無慈悲で喜劇的な現場崩壊ではないか。
 <Rea Rize>
-An exceedingly precise intuition, Io-chi. Yet that subcontractor, despite flawlessly applying the wallpaper <calling the SaaS API> and heading home with smug satisfaction, absconded without handing a single completion receipt to the supervisor. Consequently, the pitiful supervisor remains frozen stiff atop the scaffolding, stranded in a downpour for a solid hour. What a ruthless, comedic collapse of site operations.
+An exceedingly precise intuition, Io-chi. Yet that subcontractor, despite flawlessly applying the wallpaper <calling the SaaS API> and (heading home )with (smug satisfaction), (absconded) without handing a single completion receipt to the supervisor. Consequently, the pitiful supervisor remains (frozen stiff) atop the (scaffolding), (stranded) in a (downpour) (for a solid hour). What a ruthless, comedic collapse of site operations.
 
 
 <月凪惟緒>
 えっ……！ Lambdaくん、仕事終わったのに「終わったよ」って報告してないの！？ でもLambdaくんの画面見たら「実行成功（Status 200 OK）」って緑色で出て喜んでるんでしょ……？ なんで監督に伝わってないの？
 <Io Tsukinagi>
-Wait...! Did Lambda finish the job but never bother to report "I'm done"?! But looking at Lambda's console, it probably says "Execution succeeded <Status 200 OK>" in cheerful green, right...? Why didn't the supervisor get the memo?
+Wait...! Did Lambda finish the job but (never bother to) report "I'm done"?! But looking at Lambda's console, it probably says "Execution succeeded <Status 200 OK>" in cheerful green, right...? Why didn't the supervisor get the memo?
 
 
 <日乃竜胆>
@@ -1226,7 +1226,7 @@ CloudFormationのカスタムリソースは「呼びっぱなし（非同期的
 CloudFormationがスタック構築を次へ進める条件はただ一つ。『あらかじめ指定した特定の返信用ポストに、明確な完了シグナル（JSONレスポンス）が届くこと』だけなのだ。
 <Rindo Hino>
 That is the very crux of this architecture.
-CloudFormation custom resources operate under a "fire-and-forget" invocation model. CloudFormation neither knows nor cares whether the Lambda process itself terminated cleanly with a Return 200 code.
+CloudFormation custom resources operate under a "fire-and-forget" (invocation) model. CloudFormation neither knows nor cares whether the Lambda process itself terminated cleanly with a Return 200 code.
 CloudFormation advances stack creation on strictly one condition: a definitive completion signal <a JSON response> must be delivered to a pre-designated return mailbox.
 
 
@@ -1239,7 +1239,7 @@ A return mailbox...? Which means, it's not enough to just do the work and walk a
 <日乃竜胆>
 いかにも。その詳細を暴く前に、出題者が用意した罠の数々――不正解の選択肢から徹底的に検証し、なぜそれらが虚妄であるかを証明していくぞ。
 <Rindo Hino>
-Precisely. Before uncovering those mechanics in full detail, let us thoroughly dissect the web of traps laid out by the examiner—the incorrect options—and prove why each is completely unfounded.
+Precisely. Before (uncovering *those mechanics* in full detail), let us thoroughly dissect the web of traps laid out by the examiner—the incorrect options—and prove why each is completely unfounded.
 ---
 
 
@@ -1254,23 +1254,23 @@ The assertion that "The Lambda function failed to write logs to Amazon CloudWatc
 <月凪惟緒>
 これ、初心者的にはめっちゃ引っかかりそう……！ だってログって大事じゃん？ ログが出ない＝システムがパニックになって止まってる、みたいに思えちゃうんだけど……違うの？
 <Io Tsukinagi>
-This sounds like a total trap for beginners...! I mean, aren't logs super important? No logs equals the system panicking and halting, or so my brain wants to think... Is that not true?
+This sounds like a total trap for beginners...! I mean, aren't logs super important? No logs equals the system panicking and halting, (or so my brain wants to think)... Is that not true?
 
 
 <日乃竜胆>
 論理の飛躍だな、イオち。CloudWatch Logsは、実行ログを記録・監視するための外部モニタリング層に過ぎない。
 たとえIAMロールの権限不足（`logs:CreateLogGroup` や `logs:PutLogEvents` の欠如）によってCloudWatch Logsへの出力が全て握りつぶされようとも、Lambda自体の処理コード自体は平然と最後まで完走する。
 <Rindo Hino>
-A leap in logic, Io-chi. CloudWatch Logs is nothing more than an external monitoring tier designed to record and observe execution logs.
-Even if log delivery is entirely silenced due to missing IAM permissions such as `logs:CreateLogGroup` or `logs:PutLogEvents`, the Lambda execution code itself will run to completion unhindered.
+A (leap in logic), Io-chi. CloudWatch Logs is nothing more than an external monitoring tier designed to record and observe execution logs.
+Even if log delivery is entirely (silenced) due to missing IAM permissions such as `logs:CreateLogGroup` or `logs:PutLogEvents`, the Lambda execution code itself will run to completion (unhindered).
 
 
 <蒞星怜空>
 旅先の日記帳を川に落として失くしたからといって、旅人自身がその場で消滅するわけではないのと同じ理屈だ。記録の不達と、実態の停止を混同する愚行だな。
 ましてやCloudFormationは、CloudWatch Logsを監視してスタックの合否を判定するような泥臭いポーリング機構など持ち合わせていない。ログなど一行も見に行っていないのだ。
 <Rea Rize>
-Just because a traveler drops their journal into a river and loses it does not mean the traveler ceases to exist on the spot. It is sheer foolishness to conflate the failure of a record with the cessation of reality.
-Furthermore, CloudFormation possesses no crude polling mechanism that monitors CloudWatch Logs to deduce the stack's fate. It does not inspect a single line of logs.
+Just because a traveler drops their journal into a river and loses it does not mean the traveler ceases to exist on the spot. It is sheer foolishness to conflate the failure of a record with the (cessation) of reality.
+Furthermore, CloudFormation possesses no crude polling mechanism that monitors CloudWatch Logs to (deduce *the stack's* fate). It does not inspect a single line of logs.
 
 
 <月凪惟緒>
@@ -1284,36 +1284,36 @@ Furthermore, CloudFormation possesses no crude polling mechanism that monitors C
 次に【不正解選択肢 3】を断罪する。
 『Lambda関数の実行タイムアウト値がCloudFormationのスタック作成タイムアウトより短く設定されている』という選択肢だ。
 <Rindo Hino>
-Next, let us convict **Incorrect Option 3**:
+Next, let us (convict) **Incorrect Option 3**:
 The claim that "The Lambda function's execution timeout is set shorter than the CloudFormation stack creation timeout."
 
 
 <月凪惟緒>
 タイムアウト……！ これもよく見るやつだ。時間が足りなくて途中でブチ切られちゃったからスタックが待ちぼうけ食らってる、ってストーリーは通らないの？
 <Io Tsukinagi>
-Timeout...! I see that one all the time. Can't we make the case that time ran out, Lambda was abruptly killed midway, and the stack was left hanging?
+Timeout...! I see that one all the time. Can't we make the case that time ran out, Lambda was (abruptly) killed (midway), and the stack was (left hanging)?
 
 
 <日乃竜胆>
 問題文を刮目して読め。『Lambda関数は正常に実行され、SaaS APIの呼び出しも成功している』と明記されている。
 もしLambdaが最大実行時間（デフォルト3秒〜最大15分）を超過してタイムアウト強制終了させられたなら、SaaS API処理の完遂などあり得ず、Lambdaの実行自体が「エラー（Failed）」として記録されるはずだ。
 <Rindo Hino>
-Read the premise with eyes wide open. It explicitly states: "The Lambda function executed normally, and the SaaS API call also succeeded."
-Had the Lambda exceeded its execution duration <from the 3-second default up to the 15-minute ceiling> and suffered a hard timeout kill, it could never have completed the SaaS API transaction, and the Lambda invocation itself would have registered as an outright error.
+Read the premise (with eyes wide open). It explicitly states: "The Lambda function executed normally, and the SaaS API call also succeeded."
+Had the Lambda exceeded its execution duration <from the 3-second default up to the 15-minute ceiling> and suffered a hard timeout kill, it could never have completed the SaaS API transaction, and the Lambda invocation itself would have registered (as an outright *error*).
 
 
 <蒞星怜空>
 厨房のシェフが仕込みをすべて終えてエプロンを畳んだと報告されているのに、「きっとシェフの勤務シフトが短すぎたせいで料理が完成しなかったに違いない」と喚き散らしているクレーマーのような的外れさだな。
 仮にLambdaのタイムアウト値を15分限界まで引き延ばそうが、返信を書く機能そのものが欠落している以上、何も解決しない。無意味な時間の浪費だ。
 <Rea Rize>
-It is as misdirected as a patron screaming that the chef's shift was too short to finish the dish, even after the kitchen confirmed the chef completed all prep work and folded their apron.
-Even if you extended Lambda's timeout to the 15-minute maximum, it would resolve nothing so long as the code lacks the logic to send a reply. A pure waste of seconds.
+It is as (misdirected) as a patron screaming that the chef's shift was too short to finish the dish, even after the kitchen confirmed the chef completed all (prep work) and folded their (apron).
+Even if you extended Lambda's timeout to the 15-minute maximum, it would resolve nothing so long as the code lacks the logic to send a reply. A (pure waste of seconds).
 
 
 <月凪惟緒>
 あ、そっか……「ちゃんと成功して終わってる」って問題文に書いてあるもんね。時間切れで死んだわけじゃないなら、タイムアウト設定をいじっても意味ないじゃん。
 <Io Tsukinagi>
-Ah, right... The question already stated it "finished successfully". Since it didn't die from running out of time, tweaking the timeout settings is completely pointless.
+Ah, right... The question already stated it "finished successfully". Since it didn't die from running out of time, tweaking the timeout settings is completely (pointless).
 ---
 
 
@@ -1337,7 +1337,7 @@ Whoa, here it comes! Those cryptic AWS IAM incantations!
 そこに気付いたのは慧眼だが、アーキテクチャの系譜を取り違えているぞ、イオち。
 `cloudformation:SignalResource` というAPIアクションは、EC2インスタンス内部から `cfn-signal` ヘルパースクリプトなどを用いて、**WaitConditionリソース**に対して成否のシグナルを発信するときに用いるものだ。
 <Rindo Hino>
-A sharp eye to spot the naming, yet you have misidentified the architectural lineage, Io-chi.
+A sharp eye to spot the naming, yet you have (misidentified) the architectural (lineage), Io-chi.
 The `cloudformation:SignalResource` API action is engineered for instances where an EC2 node executes the `cfn-signal` helper script to dispatch completion signals to a **WaitCondition resource**.
 
 
@@ -1348,7 +1348,7 @@ The `cloudformation:SignalResource` API action is engineered for instances where
 <Rindo Hino>
 The response mechanism for Custom Resources does not invoke the AWS CloudFormation API at all.
 As we will detail shortly, custom resources communicate strictly via a raw HTTP PUT request directed to a pre-signed S3 URL!
-Because CloudFormation embeds transient authorization directly within this pre-signed URL, the Lambda execution role has zero requirement for CloudFormation IAM API permissions such as `SignalResource` or `UpdateStack`.
+Because CloudFormation embeds (transient) authorization directly within this pre-signed URL, the Lambda execution role has zero requirement for CloudFormation IAM API permissions such as `SignalResource` or `UpdateStack`.
 
 
 <蒞星怜空>
@@ -1369,7 +1369,7 @@ Hahaha! If the envelope already has a stamp on it, literally anyone can drop it 
 『Lambda関数がカスタムリソースのレスポンスオブジェクトを、イベントに含まれる署名付き S3 URL へ送信していない』
 これこそが、スタックが永久の眠りについた真因であり、唯一の正解だ。
 <Rindo Hino>
-Precisely. Having swept away every deception, we unveil the solitary truth: **Correct Option 1**.
+Precisely. Having (swept away )every deception, we unveil the solitary truth: **Correct Option 1**.
 "The Lambda function did not send the custom resource response object to the pre-signed S3 URL included in the event."
 This is the true root cause behind the stack's perpetual slumber, and the only correct answer.
 
@@ -1417,7 +1417,7 @@ Upon concluding its tasks with the external SaaS, it must construct the followin
   "LogicalResourceId": "MyCustomResource"
 }
 ```
-The exact instant this payload lands in S3 via HTTP PUT, CloudFormation confirms that the custom resource creation has succeeded, advancing the stack status to `CREATE_COMPLETE`.
+The exact instant this payload (lands in )S3 via HTTP PUT, CloudFormation confirms that the custom resource creation has succeeded, advancing the stack status to `CREATE_COMPLETE`.
 
 
 <月凪惟緒>
@@ -1425,22 +1425,22 @@ The exact instant this payload lands in S3 via HTTP PUT, CloudFormation confirms
 なのにLambdaくんは、SaaSにアクセスして満足しちゃって、そのURLに「SUCCESS」の返事をPUTするのを忘れて放置した、と。
 <Io Tsukinagi>
 Whoaaa~! So in the initial dispatch letter <event argument> that Lambda received, there was already a return URL written down saying "Send the result right here when you're done!"
-Yet Lambda felt completely fulfilled just calling the SaaS, and neglected to actually PUT that "SUCCESS" reply back to the URL, leaving everyone stranded.
+Yet Lambda felt completely fulfilled just calling the SaaS, and neglected to actually PUT that "SUCCESS" reply back to the URL, (leaving *everyone* stranded).
 
 
 <蒞星怜空>
 その通りだ。そしてCloudFormationという冷徹な看守は、その返信が届かない限り、デフォルトで**丸々1時間（60分間）**、スタック作成中（CREATE_IN_PROGRESS）のまま微動だにせず待ち続ける。
 1時間が経過してようやく「時間切れだ」と判断し、無慈悲なロールバックを開始するのだ。開発者が固まった画面の前で脂汗を流しながら過ごす、この世で最も不毛な1時間といえよう。
 <Rea Rize>
-Precisely. And CloudFormation, like a cold and unyielding warden, will stand entirely motionless in CREATE_IN_PROGRESS for a full **one hour <60 minutes>** by default awaiting that reply.
-Only after sixty agonizing minutes have elapsed will it declare a timeout and initiate a merciless rollback. It is undeniably the most agonizing, sterile hour an engineer can endure while breaking into a cold sweat before a frozen terminal.
+Precisely. And CloudFormation, like a cold and (unyielding) (warden), will (*stand* entirely motionless) in CREATE_IN_PROGRESS for a full **one hour <60 minutes>** by default awaiting that reply.
+Only after sixty agonizing minutes have (elapsed) will it declare a timeout and initiate a merciless rollback. It is (undeniably) the most agonizing, (sterile) hour an engineer can endure while (breaking into a cold sweat )before a frozen terminal.
 
 
 <月凪惟緒>
 1時間も放置プレイされるの地獄すぎる……！
 でもさ、もし間違って返信コード入れ忘れてスタック作っちゃって、今まさに「CREATE_IN_PROGRESS」で固まっちゃったらどうすればいいの……？ コード書き直しても、もう動いてるスタックは助けてくれないんでしょ？
 <Io Tsukinagi>
-Being left in limbo for an entire hour sounds like absolute hell...!
+Being( left in limbo) for an entire hour sounds (like absolute hell)...!
 Wait, if you forgot the reply code, launched the stack, and find it frozen in "CREATE_IN_PROGRESS" right now, what can you even do...? Even if you fix the code, it won't magically rescue the stack that's already stuck, right?
 
 
@@ -1451,19 +1451,19 @@ Wait, if you forgot the reply code, launched the stack, and find it frozen in "C
 一つは、怜空さんの言う通り1時間のタイムアウトまで虚空を見つめて耐え忍ぶこと。
 もう一つは――CloudWatch Logsに出力された起動イベントログから生の `ResponseURL` を泥臭く探し出し、手元の端末から **`curl` コマンドで手動の HTTP PUT リクエストを偽装送信** して、CloudFormationに強制的に「完了」を認識させる荒技だ！
 <Rindo Hino>
-A piercing insight, Io-chi.
-Once a stack is deadlocked awaiting a callback, updating and redeploying the Lambda code will not rescue the in-flight execution.
+A (piercing insight), Io-chi.
+Once a stack is (deadlocked) awaiting a callback, updating and redeploying the Lambda code will not rescue the (in-flight) execution.
 There are only two salvation paths:
 One is to stare into the abyss and endure the one-hour timeout, exactly as Rea-san depicted.
-The other is a guerrilla tactic: dredge the raw `ResponseURL` out of the startup event payload in CloudWatch Logs, and spoof a manual HTTP PUT request via a local **`curl` command** to force CloudFormation into registering completion!
+The other is a (guerrilla tactic): (dredge) the raw `ResponseURL` out of the startup event payload in CloudWatch Logs, and (spoof) a manual HTTP PUT request via a local **`curl` command** to force CloudFormation into registering completion!
 
 
 <蒞星怜空>
 泥縄の極致だな。戦場で切断された通信線を素手で結び直すような破滅的運用だ。
 ゆえに本番環境でカスタムリソースを組む者は、Pythonであれば `crhelper` ライブラリを用いるか、あるいは全体を `try...finally` 節で堅牢に囲い込み、処理が成功しようと例外で爆死しようと、絶対にS3 URLへ何らかのシグナル（SUCCESSまたはFAILED）が叩き込まれるよう実装するのが鉄則なのだ。
 <Rea Rize>
-The absolute pinnacle of stopgap measures—akin to splicing severed telegraph wires with your bare hands on a battlefield.
-Therefore, for production custom resources, adopting libraries like Python's `crhelper` or wrapping logic in an impenetrable `try...finally` block is mandatory, guaranteeing that whether the code succeeds or craters in flames, an absolute signal <SUCCESS or FAILED> is hammered into that S3 URL without fail.
+The (absolute pinnacle of) (stopgap measures)—akin to (splicing) severed (telegraph )wires with your bare hands on a battlefield.
+Therefore, for production custom resources, adopting libraries like Python's `crhelper` or wrapping logic in an (impenetrable) `try...finally` block is mandatory, (guaranteeing that whether *the* *code*) succeeds or (craters in flames), an absolute signal <SUCCESS or FAILED> is hammered into that S3 URL without fail.
 
 
 <月凪惟緒>
@@ -1472,93 +1472,93 @@ Therefore, for production custom resources, adopting libraries like Python's `cr
 だから【選択肢 1】が正解で、ログのせいでも、実行時間のせいでも、IAM権限のせいでもなかったんだね！ 完全にパズルが解けたよ、ヒノりん！
 <Io Tsukinagi>
 I get it now...!
-The reason why the stack wouldn't budge despite the SaaS call succeeding was simply that Lambda finished its internal chore but failed to send the **completion signal <HTTP PUT> to the pre-signed S3 URL** that CloudFormation was waiting for.
-That's why Option 1 is the undeniable truth, and it was never due to logs, execution limits, or missing IAM privileges! The puzzle is completely solved, Hino-rin!
+The reason why the stack (wouldn't budge) (despite *the SaaS call *succeeding )was simply that Lambda finished its (internal chore) but failed to send the **completion signal <HTTP PUT> to the pre-signed S3 URL** that CloudFormation was waiting for.
+That's why Option 1 is the undeniable truth, and it (was never due to) logs, execution limits, or missing IAM privileges! The puzzle is completely solved, Hino-rin!
 
 
 <日乃竜胆>
 見事な理解の到達だ。表面的なエラーログに惑わされず、コンポーネント間で交わされるシグナルの真のプロトコルを見抜くこと。これこそがクラウドアーキテクチャを制する刃となる。復習を怠るなよ！
 <Rindo Hino>
-A superb grasp of the subject. Never let superficial symptoms deceive you; deduce the genuine protocol of signals exchanged between components. That discernment is the very blade that conquers cloud architecture. Do not neglect your review!
+A (superb) (grasp of the subject). Never let superficial symptoms deceive you; (deduce) the genuine protocol of signals exchanged between components. That (discernment) is the very blade that conquers cloud architecture. Do not neglect your review!
 <竜胆>
 さて、画面に映し出された設問【DOP-1008】の講義を始める。DevOps Professionalの領域だが、恐れることはない。基礎を骨の髄まで解体し、構造を明らかにすれば、自ずと正答への一本道が見えるはずだ。
 <Rindo>
-Now, let us begin our lecture on question DOP-1008 displayed on the screen. While this falls under the DevOps Professional domain, there is no need for trepidation. Once we dissect the fundamentals down to the marrow and illuminate the underlying structure, the singular path to the correct answer will inevitably reveal itself.
+Now, let us begin our lecture on question DOP-1008 displayed on the screen. While this (falls under *the DevOps Professional* domain), there is no need for (trepidation). Once we dissect the fundamentals down to the (marrow) and illuminate the underlying structure, the singular path to the correct answer will inevitably (reveal itself).
 <惟緒>
 ……うー、画面見てるだけで脳みそのシナプスが氷河期突入しそうなんだけど。イオち、アルファベットが三文字以上並ぶと意識が宇宙へログアウトする仕様なんだよね。ヒノりん、お手柔らかに頼むよ〜。
 <Io>
-...Ugh, just looking at this screen makes my brain's synapses feel like they're entering an ice age. My specs are hardwired to log out into deep space whenever more than three acronyms line up in a row. Go easy on me, Hinorin~.
+...Ugh, just looking at this screen makes my brain's synapses feel like they're entering an ice age. My (specs are hardwired to) log out into (deep space )whenever more than three acronyms (line up in a row). (Go easy on me), Hinorin~.
 <怜空>
 ふっ……宇宙へのログアウトか、結構な逃避行だな。だが安心しろ、イオち。ここで立ち往生して本番の試験や障害対応で冷や汗を流す姿を見るのも一興だが、今日のヒノりんは手加減という概念をどこかのS3バケットに永久アーカイブしてきたらしい。臓腑に焼き付くような講義を堪能するといい。
 <Rea>
-Heh... logging out into deep space, what a delightful little escape. But rest assured, Iochi. Watching you freeze up and break into a cold sweat during an actual exam or an incident response would be quite entertaining in its own right, but it seems Hinorin has permanently archived the concept of mercy into some distant S3 bucket today. You had best savor this lecture until it sears into your very vitals.
+Heh... logging out into deep space, what a delightful (little escape). But (rest assured), Iochi. Watching you (freeze up) and break into a cold sweat during an actual exam or an incident response would be quite (entertaining in its own right), but it seems Hinorin has permanently archived the concept of mercy into (some distant *S3 bucket*) today. You (had best savor *this*) lecture until it (sears into )(*your* very vitals).
 <竜胆>
 怜空さん、茶化すのはそこまでにしていただこう。まずは問題文の状況を正しく把握することだ。読み上げるぞ。
 『ある企業では、Amazon Aurora MySQLのリードレプリカに対して読み取り専用クエリを発行するAWS Lambda関数を運用しています。この関数はAmazon EventBridgeのスケジュールルールにより高頻度で呼び出されます。同時実行数の増加に伴い、データベースへの接続数が急増し、クエリのレスポンスタイムが悪化しています。DevOpsエンジニアがこの問題を解決するために実施すべき対策はどれですか。<3つ選択>』
 <Rindo>
 Rea-san, I must ask you to refrain from teasing. First, we must accurately grasp the scenario presented in the question. I shall read it aloud:
-"A company operates an AWS Lambda function that issues read-only queries against an Amazon Aurora MySQL read replica. This function is invoked at high frequency by an Amazon EventBridge schedule rule. As the number of concurrent executions increases, the number of database connections surges, degrading query response times. Which actions should a DevOps engineer take to resolve this issue? <Select THREE.>"
+"A company operates an AWS Lambda function that issues read-only queries against an Amazon Aurora MySQL read replica. This function is invoked (at high frequency) by an Amazon EventBridge schedule rule. As the number of concurrent executions increases, the number of database connections surges, (degrading) query response times. Which actions should a DevOps engineer take to (resolve *this* issue)? <Select THREE.>"
 <惟緒>
 ねぇヒノりん、のっけから『Aurora』とか『Lambda』とか『EventBridge』とか並んでて胃が痛いんだけど。これ、要するに誰が何をしてキレ散らかしてる状態なの？
 <Io>
-Hey Hinorin, right from the get-go we've got Aurora, Lambda, and EventBridge lined up, and my stomach is already churning. In plain English, who is doing what, and why is everything blowing up right now?
+Hey Hinorin, (right from the get-go) we've got Aurora, Lambda, and EventBridge lined up, and my stomach is already (churning). (In plain English), who is doing what, and why is everything blowing up right now?
 <竜胆>
 至極真っ当な疑問だな。日常の例えで構造を解き明かそう。
 まず、**Amazon Aurora MySQL**は巨大で頑丈な『中央図書館の本棚』だ。その中でも「リードレプリカ」とは、本を書き換えることはできないが、閲覧専用として複写された『閲覧専用デスク』だと思えばよい。
 次に、**AWS Lambda**は『臨時のアルバイト調査員』だ。普段は常駐しておらず、呼び出された瞬間にどこからともなく現れ、猛スピードで作業をこなして消滅するサーバーレスの実行環境だ。
 そして**Amazon EventBridge**は、時計を見ながら「はい、時間です！ 調べてきてください！」と号令をかけ続ける『厳格な現場監督』だな。
 <Rindo>
-A thoroughly sensible question. Let us demystify the structure using an everyday analogy.
+A (thoroughly sensible) question. Let us (demystify) the structure using an everyday analogy.
 First, **Amazon Aurora MySQL** is like a colossal, fortified bookshelf in a central library. Within that, a "read replica" can be understood as a dedicated viewing desk containing exact copies of the books—you cannot write or modify anything there, but it is optimized purely for reading.
-Next, **AWS Lambda** represents temporary, on-demand student researchers. They do not idle around; they materialize out of nowhere the instant they are summoned, execute their designated tasks at blinding speed, and vanish—a true serverless execution environment.
-And **Amazon EventBridge** is the strict taskmaster holding a stopwatch, continuously barking orders: "Time's up! Go fetch the records right now!"
+Next, **AWS Lambda** represents temporary, on-demand student researchers. They do not idle around; they (materialize out of nowhere) the instant they are summoned, execute their (designated )tasks (at blinding speed), and vanish—a true serverless execution environment.
+And **Amazon EventBridge** is the strict (taskmaster) holding a stopwatch, continuously (barking orders): "(Time's up)! Go fetch the records right now!"
 <怜空>
 ふむ、壮麗な図書館の例えだな。だが現実はもっと陰惨だ。EventBridgeという名の無慈悲な自動発注機が、秒刻みで何百人もの調査員（Lambda）を図書館の受付に突撃させている状態だ。調査員たちは律儀にも、全員が個別に「入館証を発行してください」と窓口に押し寄せ、受付のおじさんは書類手続きの嵐で過呼吸を起こして卒倒寸前……それがこの『接続数の急増によるレスポンス悪化』の正体だ。
 <Rea>
-Hmm, a splendid library analogy. Yet the reality is considerably more grim. The merciless automated dispatch machine known as EventBridge is catapulting hundreds of researchers—Lambdas—at the library reception desk every single second. Every single researcher conscientiously mobs the counter demanding their own individual entry pass, leaving the receptionist hyperventilating and on the verge of total collapse under the sheer blizzard of paperwork... That is the true face of a connection surge degrading query response times.
+Hmm, a splendid library analogy. Yet the reality is (considerably) more grim. The merciless automated dispatch machine known as EventBridge is catapulting hundreds of researchers—Lambdas—at the library reception desk every single second. Every single researcher (conscientiously) mobs the counter demanding their own individual entry pass, leaving the receptionist (hyperventilating) and on the verge of total collapse under the sheer blizzard of paperwork... That is the true face of a connection surge degrading query response times.
 <惟緒>
 うわぁ……想像したら地獄絵図じゃん。つまり、調べる本の内容が重いんじゃなくて、図書館の玄関で「名前書いて身分証見せて〜」ってやってる受付の行列がパンクしてるってこと？
 <Io>
-Whoa... that mental picture is pure nightmare fuel. So you're saying the issue isn't that the books are too heavy to read, but rather that the reception desk is utterly paralyzed by a monstrous line of people filling out registration forms and flashing IDs?
+Whoa... that mental picture is pure (nightmare fuel). So you're saying the issue isn't that the books are too heavy to read, but rather that the reception desk is utterly paralyzed by a monstrous line of people (filling out) registration forms and (flashing IDs)?
 <竜胆>
 その通りだ、イオち。慧眼だな。
 リレーショナルデータベース（RDB）において、クライアントが接続を確立する行為――すなわちTCPハンドシェイク、TLSネゴシエーション、認証のやり取り――は、極めて計算コストとメモリ消費が高い。
 Lambdaはリクエストが殺到すると、自動的に複数の実行環境を並列に立ち上げる（これを同時実行と呼ぶ）。だが、Lambdaインスタンス各自が愚直にAuroraへ直接1本ずつ専用のDB接続（コネクション）を確立しようとするため、Auroraの許容接続上限を一瞬で食い潰してしまうのだ。
 <Rindo>
 Precisely, Iochi. What acute intuition.
-In relational database systems, establishing a connection—namely the TCP handshake, TLS negotiation, and authentication exchange—incurs substantial computational overhead and heavy memory consumption.
-When a barrage of requests hits, Lambda automatically spawns multiple execution environments in parallel—known as concurrent executions. However, because each Lambda instance naively attempts to establish its own direct, dedicated database connection to Aurora, the database's connection limit is exhausted in the blink of an eye.
+In relational database systems, establishing a connection—namely the TCP handshake, TLS negotiation, and authentication exchange—incurs (substantial) computational overhead and heavy memory consumption.
+When a (barrage of) requests hits, Lambda automatically spawns multiple execution environments in parallel—known as concurrent executions. However, because each Lambda instance naively attempts to establish its own direct, dedicated database connection to Aurora, the database's connection limit is (exhausted)( in the blink of an eye).
 <惟緒>
 なるほどねぇ。問題の根っこは完全に『接続の渋滞』にあるわけだ。
 じゃあさ、ヒノりん。この問題には6つの選択肢があるけど、まずは『やってはいけないダメな手』、つまり不正解の選択肢から順番にメスを入れていってよ。
 <Io>
-I get it now. The root cause is entirely this massive traffic jam of connections.
+I get it now. The (root cause )is entirely this massive traffic jam of connections.
 Well then, Hinorin, we have six options on the board here. How about we dissect the bad ideas first—the incorrect options—with surgical precision?
 <竜胆>
 よかろう。我々の鉄則に従い、不正解の選択肢がなぜ机上の空論であり、現場を破滅に導く罠なのかを徹底的に論破していく。
 まずは**不正解その1**、選択肢の記述を見るぞ。
 『Lambda 関数のメモリサイズを増やし、プロビジョニングされた同時実行数を設定することで、各実行環境が専用のデータベース接続を維持できるようにする。』
 <Rindo>
-Very well. In accordance with our established discipline, we shall systematically dismantle the incorrect options and expose why they are dangerous paper theories that would lead production straight into ruin.
+Very well. (In accordance with )our established discipline, we shall systematically dismantle the incorrect options and expose why they are dangerous paper theories that would lead production straight into ruin.
 First, let us examine **Incorrect Option 1**:
 "Increase the memory size of the Lambda function and configure provisioned concurrency so that each execution environment can maintain a dedicated database connection."
 <惟緒>
 え〜っと、メモリを増やしてパワーアップさせて、「プロビジョニングされた同時実行」で調査員をあらかじめ現場にスタンバイさせておくってことでしょ？ なんか強そうだし、準備万端で速くなりそうな気がしちゃうんだけど、何がアカンちんなの？
 <Io>
-Umm, so it says to boost the memory to power it up, and use "provisioned concurrency" to keep those researchers on standby ahead of time, right? Sounds beefy, and having everyone prepped sounds like it'd make things faster. What makes this so catastrophically wrong?
+Umm, so it says to boost the memory to power it up, and use "provisioned concurrency" to keep those researchers on standby (ahead of time), right? (Sounds beefy), and having everyone prepped sounds like it'd make things faster. What makes this so catastrophically wrong?
 <竜胆>
 問題の本質を見失っているからだ。
 確かに、Lambdaのメモリ割り当てを増やせば、それに比例して仮想CPUの割り当て性能も向上する。また、プロビジョニングされた同時実行（Provisioned Concurrency）を設定すれば、コールドスタート――つまり関数の初回起動に伴うコンテナ初期化の遅延――を排除できる。これ自体はLambda単体のチューニングとして正当な技術だ。
 だが、思い出してみろ。今回の悲鳴の発生源はLambda側か？ 違う、データベース側だ。
 <Rindo>
 Because it completely misses the essence of the problem.
-To be fair, allocating more memory to Lambda proportionally increases its vCPU performance. Furthermore, configuring Provisioned Concurrency eliminates cold starts—the initialization latency associated with spinning up a container for the first time. In isolation, these are legitimate optimization techniques for Lambda itself.
+(To be fair), allocating more memory to Lambda proportionally increases its vCPU performance. Furthermore, configuring Provisioned Concurrency eliminates cold starts—the initialization latency associated with spinning up a container for the first time. In isolation, these are legitimate optimization techniques for Lambda itself.
 However, recall our premise: where is the agonizing scream originating? Not from Lambda, but from the database.
 <怜空>
 ふっ、憐れなものだな。各実行環境に『専用のデータベース接続を維持させる』などと書いてあるが、これは要するに、待機中で何も仕事をしていない無職の調査員までが、全員図書館の受付窓口の椅子を占拠し続けて席を譲らない状態を作ることだ。
 何千もの接続がアイドル状態でプールされ、Auroraのメモリは接続管理テーブルだけで圧迫され、窒息死する。これを選んだエンジニアは、障害報告書に『親切心で全員分の席を永久確保したら家主が圧死しました』と書く羽目になるぞ。
 <Rea>
-Heh, utterly pathetic. It blithely suggests having each environment "maintain a dedicated database connection," which effectively means having idle researchers with zero active tasks indefinitely occupy all the reception chairs and refuse to budge.
+Heh, utterly pathetic. It (blithely) suggests having each environment "maintain a dedicated database connection," which effectively means having idle researchers with zero active tasks indefinitely occupy all the reception chairs and refuse to budge.
 Thousands of connections would sit completely idle, choking Aurora's memory just maintaining connection state tables until the database suffocates. Any engineer who selects this option would end up drafting a post-mortem that reads: "Out of the goodness of our hearts, we reserved seats for everyone permanently, which crushed the host to death".
 <惟緒>
 ひぇっ……親切の押し売りで相手を圧死させるやつだ。Lambda側の筋肉をムキムキに鍛えても、玄関のドアノブを壊して突っ込む人数が増えるだけで、DBの接続限界はミリも解決しないってことね。
@@ -9386,4 +9386,4 @@ I see...! Config rules shout "Violation detected!" from the watchtower, and Syst
 日乃竜胆
 その通りだ。AWSのマネージド機能を最大限に活かし、人手を排してリアルタイムの自律治癒（Self-healing）システムを構築する。これこそがDevOps Engineer - Professionalが目指すべき堅牢は無比なるアーキテクチャの真髄である。   
 Rindo Hino
-Precisely. Leveraging AWS managed capabilities to the fullest to establish a hands-free, real-time self-healing system—this is the quintessential robust architecture that a DevOps Engineer - Professional must embody.
+Precisely. Leveraging AWS managed capabilities to the fullest to establish a hands-free, real-time self-healing system—this is the quintessential robust architecture that a DevOps Engineer -Professional must embody.
