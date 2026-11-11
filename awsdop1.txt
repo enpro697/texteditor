@@ -1378,7 +1378,7 @@ Keeping up this momentum, we shall advance to the next exercise.
 > 
 
 <日乃竜胆>
-Now, let us begin. Today we examine a robust scenario right at the AWS Certified DevOps Engineer - Professional caliber. Face the question on screen without averting your eyes from a single syllable:
+Now, let us begin. Today we examine a robust scenario right at the AWS Certified DevOps Engineer - Professional (caliber). Face the question on screen without (averting *your eyes* from) a single (syllable):
 
 > "[DOP-1017] A company runs a fleet of web servers using an EC2 Auto Scaling group. The AMI specified in the launch template includes the AWS Systems Manager Agent, and specific tags are applied to each instance upon scale-out. A DevOps engineer must establish a mechanism that automatically and immediately applies a predefined OS configuration to newly launched instances. Which solution minimizes operational overhead?"
 
@@ -1388,7 +1388,7 @@ Now, let us begin. Today we examine a robust scenario right at the AWS Certified
 う〜ん……開幕から漢字とカタカナの暴力で脳の回線がショートしそうなんだけど……。オートスケーリング？エージェント？タグ？なんか全部がフワフワしてて、真冬のトタン板の裏で丸まってる気分。ヒノりん、これ何から噛み砕けばいいの〜？
 
 <月凪惟緒>
-Mmm... right out of the gate, this deluge of technical jargon is frying my brain cells. Auto Scaling? Agent? Tags? It's all floating around like static noise, making me feel like a pill bug curled up behind a rusty zinc roof in dead winter. Hino-rin, where do I even begin sinking my teeth into this?
+Mmm... right out of the gate, this (deluge) of technical jargon is frying my brain cells. Auto Scaling? Agent? Tags? It's all floating around like static noise, making me feel like a pill bug curled up behind a rusty zinc roof in dead winter. Hino-rin, where do I even begin sinking my teeth into this?
 
 ---
 
@@ -1400,11 +1400,11 @@ Mmm... right out of the gate, this deluge of technical jargon is frying my brain
 そして要求は、「新しく産み落とされたサーバーに、指定のOS設定を『自動的』かつ『即座』に叩き込み、かつ『運用保守の手間（オーバーヘッド）』を極限まで削れ」ということだ。
 
 <日乃竜胆>
-Do not flinch, Io-chi. Feeling overwhelmed by the unfamiliar simply indicates you have yet to factorize the architectural components. Let us dissect the physical landscape this problem depicts.
+Do not flinch, Io-chi. Feeling overwhelmed by the unfamiliar simply (indicates) you (have yet to) (factorize) the architectural components. Let us dissect the physical landscape this problem depicts.
 First, EC2 Auto Scaling—a mechanism where virtual servers spawn and terminate dynamically in response to traffic load.
 Second, Launch Templates and AMIs—the immutable blueprints of these servers. Pre-baked within them is the SSM Agent, a background management daemon.
 Third, Tags—metadata labels affixed to the instances.
-And the imperative requirement is this: "Automatically and immediately apply a designated OS configuration to any newly spawned instance, while suppressing operational overhead to the absolute minimum."
+And the (imperative) requirement is this: "Automatically and immediately apply a designated OS configuration to any newly spawned instance, while suppressing operational overhead to the absolute minimum."
 
 ---
 
@@ -1421,8 +1421,8 @@ Heh... in essence, a wave of customers has flooded a late-night diner, forcing a
 でもさ、ヒノりん。なんで最初からその「OSの構成」とやらを全部入れた完璧な金型（AMI）を作っておかないの？それなら生まれた瞬間に完成してるじゃん。
 
 <月凪惟緒>
-Rea-san's analogies are painfully vivid as always... my stomach hurts just hearing it. But I think I grasp the mental picture. The moment an instance pops into existence, we need it whipped into pristine shape without a single second of hesitation.
-Wait though, Hino-rin. Why not just bake that whole "OS configuration" straight into the golden image—the AMI—from the very beginning? Wouldn't it be born completely ready to roll?
+Rea-san's analogies are painfully vivid as always... my stomach hurts just hearing it. But I think I grasp the mental picture. The moment an instance pops into existence, we need it (whipped into) pristine shape without a single second of hesitation.
+Wait though, Hino-rin. Why not just bake that whole "OS configuration" straight into the golden image—the AMI—from the very beginning? Wouldn't it be born completely (ready to roll)?
 
 ---
 
@@ -1431,7 +1431,7 @@ Wait though, Hino-rin. Why not just bake that whole "OS configuration" straight 
 ゆえに実務では、基礎部分のみをAMIに固め、インスタンス起動時に動的に最新設定を流し込む『ブートストラップ方式（Fry方式）』とのハイブリッドが採られる。今回の問題はまさにその動的構成管理の急所を突いているのだ。
 
 <日乃竜胆>
-A sharp intuition. That approach is known as the "Golden AMI" or "Bake" strategy. However, middleware parameters and critical security patches evolve constantly. Are you prepared to spend dozens of minutes rebuilding and validating a monolithic AMI for every trivial configuration change? Doing so triggers an explosion of stale images and paralyzes the release pipeline.
+A sharp intuition. That approach is known as the "Golden AMI" or "Bake" strategy. However, middleware parameters and critical security patches (evolve) constantly. Are you prepared to spend dozens of minutes rebuilding and validating a monolithic AMI for every trivial configuration change? Doing so triggers an explosion of (stale) images and paralyzes the release pipeline.
 Hence, enterprise practice leans toward a hybrid: bake immutable foundations into the AMI, and dynamically inject transient configurations at spin-up—the "Bootstrap" or "Fry" paradigm. This question pierces right into the operational core of dynamic configuration management.
 
 ---
@@ -8657,4 +8657,3 @@ Rea Rize
 
 Rindo Hino
 This concludes our deep dive into this problem. Dissecting low-level protocol nuances, security granularity, and operational reversibility—cultivating that exact analytical precision is the hallmark of a true DevOps Engineer. Ensure these principles are thoroughly ingrained.
-
