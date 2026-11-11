@@ -996,7 +996,7 @@ A (thawed) ice age, is it? Do not (grow complacent), Io. Even if you effortlessl
 <Hino Rindo>
 Now, let's take a look at question DOP-2042 on the screen from the AWS Certified DevOps Engineer - Professional exam.
 It is an extremely practical and solid question regarding container vulnerability scanning automation and building an alert notification pipeline for critical findings.
-Iori, read through the question prompt first. Even if you're a beginner without firm fundamentals, I will not hold back, though its structure is rigorously logical.
+Iori, read through the question prompt first. Even if you're a beginner without firm fundamentals, I will (not hold back), though its structure is rigorously logical.
 
 <月凪惟緒>
 ……うー、なんか文字がびっしり詰まってて、すでに頭のメモリがスワップ起こしそうなんだけど……。
@@ -1017,7 +1017,7 @@ OSのカーネルを共有しつつ、アプリケーションの本体とそれ
 要するに、どんな泥沼のホスト環境であろうと、その箱さえ運べば寸分違わず同じ挙動を再現できるという、人類の怠惰と傲慢が生み出した近代ソフトウェアの最高傑作だな。
 
 <Rize Rea>
-A plastic Bento box—what a thoroughly unromantic, stark interpretation.
+A plastic Bento box—what a thoroughly unromantic, (stark) interpretation.
 Yet, surprisingly spot-on.
 It is a technology that shares the OS kernel while sealing the application and its dependencies into a standardized box isolated from other processes.
 In short, no matter how swampy or degraded the host environment is, so long as you haul that box over, it reproduces the exact same behavior—a crowning masterpiece of modern software born of human indolence and hubris.
@@ -1045,7 +1045,7 @@ OSってLinuxとかでしょ？ 言語パッケージってPythonとかNode.js�
 <Tsukinaga Iori>
 Vulnerabilities... so basically security potholes.
 Wait, the question specifically distinguishes between "both OS packages and programming language packages."
-If it goes out of its way to separate them, does that mean there's a trap?
+If it (goes out of its way to) separate them, does that mean there's a trap?
 OS means things like Linux, right? And language packages mean modules for Python or Node.js?
 
 <日乃竜胆>
@@ -1070,7 +1070,7 @@ In fact, the vulnerability scanning capabilities natively provided by Amazon ECR
 <Rize Rea>
 Heh... a perfect microcosm of capitalism: settle for the free sample, or pay the toll to buy genuine peace of mind.
 Basic scanning leverages open-source Clair to skim only known CVEs across the base OS layer. It costs nothing extra, but it turns a completely blind eye to the time bombs ticking inside your application dependencies.
-Enhanced scanning, on the other hand, summons Amazon Inspector behind the scenes—a full-fledged security engine that meticulously combs through not only OS packages but the deepest recesses of programming language packages.
+Enhanced scanning, on the other hand, summons Amazon Inspector behind the scenes—a (full-fledged) security engine that meticulously (combs through) not only OS packages but the deepest (recesses) of programming language packages.
 
 <月凪惟緒>
 なるほどねぇ……。基本スキャンくんは『箱の外側のダンボールに穴が空いてないか』しか見てくれなくて、中の荷物に毒薬が入っててもスルーしちゃうんだ。
@@ -1091,7 +1091,7 @@ That's why meeting the prompt's demand for "both OS and programming language pac
 <Hino Rindo>
 Precisely.
 Now, let us dissect each option.
-As requested, we will begin with the incorrect options, exposing their architectural flaws and debunking why they break down in real-world environments.
+As requested, we will begin with the incorrect options, exposing their architectural flaws and (debunking) why they break down in real-world environments.
 First up is **[Incorrect Option 1: Option 3]**:
 "Enable basic scanning in Amazon ECR scanning settings and configure scan on push. Receive the ECR image scan completion event via Amazon EventBridge, determine severity in AWS Lambda, and send emails via Amazon SES."
 Iori, where is the fatal flaw in this choice?
