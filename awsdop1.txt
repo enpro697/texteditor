@@ -651,7 +651,7 @@ Mmm... I'd love to say I'm totally ready, but my brain's RAM is already freezing
 ふっ、抽象絵画とは言い得て妙だな。だがその抽象画の筆致が狂った瞬間、真夜中に携帯端末が火を吹き、枕元で当直エンジニアの魂を灰燼へと帰す災厄の設計図へと変貌するのだよ。静謐な画面の裏に潜む阿鼻叫喚を味わうには、実に誂え向きの題材だ。
 
 <蒞星怜空>
-Heh, abstract art is an apt description. Yet the moment those brushstrokes stray, it mutates into a catastrophic blueprint that sets on-call pagers ablaze at midnight, reducing an engineer's soul to ashes. It is quite a fitting motif if you fancy observing the silent horrors beneath this pristine canvas.
+Heh, abstract art is an apt description. Yet the moment those brushstrokes stray, it (mutates into) a catastrophic blueprint that sets on-call pagers( ablaze) at midnight, reducing an engineer's soul to ashes. It is quite a fitting motif if you fancy observing the silent horrors (beneath )this pristine canvas.
 
 <日乃竜胆>
 怜空さん、早速の不穏な講評、痛み入る。まずは設問の背景と、問題文が突きつけている絶対的な要件を整理しよう。問題文が求めている骨子は「クラウド上のリソースにおける規約・セキュリティ違反の自動検知」、そして「人手を介さない即時の自動復旧（Auto Remediation）」、さらには「運用オーバーヘッドの最小化」だ。
@@ -669,13 +669,13 @@ Hey, Hino-rin, before anything else... what actually happens when there’s a "c
 筋の通った比喩だな。まさにその通りだ。例えば「機密データを収容するS3バケットを絶対にインターネットへ公開してはならない」という鉄の規律が社内にあるとする。にもかかわらず、無知な開発者や設定ミスによって、そのバケットが全世界から閲覧可能な状態に書き換えられてしまったとしよう。これが「非準拠（Non-compliant）」、すなわち違反状態だ。
 
 <日乃竜胆>
-A surprisingly coherent analogy. That is precisely the case. Suppose there is an ironclad corporate rule stating that S3 buckets housing confidential data must never be exposed to the public internet. If an oblivious developer or misconfiguration alters it to be publicly accessible, it enters a "non-compliant" state—a direct violation.
+A surprisingly coherent analogy. That is precisely the case. Suppose there is an ironclad corporate rule stating that S3 buckets housing confidential data must never be exposed to the public internet. If an (oblivious) developer or misconfiguration alters it to be publicly accessible, it enters a "non-compliant" state—a direct violation.
 
 <月凪惟緒>
 あー、全校生徒に秘密の日記を校内放送で朗読されるような大惨事ね。それは速攻で止めさせないと社会的に蒸発しちゃう。
 
 <月凪惟緒>
-Ah, like having your secret diary broadcast over the school intercom to every student. If that isn't shut down instantly, you evaporate from society.
+Ah, like having your secret diary broadcast over the school (intercom) to (every student). If that isn't shut down instantly, you evaporate from society.
 
 <日乃竜胆>
 そうだ。そして、その開かれた扉を、人間の担当者が気づいて手動で閉じるのではなく、システムが検知した瞬間にプログラムが自動で施錠し直す。これが「自動復旧（Remediation）」だ。本設問の争点は、この一連のライフサイクルをいかに堅牢に、かつ人手を介さず、マネージドの仕組みだけで完結させるかにある。
@@ -687,13 +687,13 @@ Indeed. And rather than waiting for a human operator to notice and manually lock
 なるほどねぇ。でも選択肢を見ると、どれもそれっぽいAWSのサービス名が並んでて、私には全部同じ呪文のバリエーションに見えるよ……。
 
 <月凪惟緒>
-I see. But glancing at the options, they're packed with legitimate-sounding AWS service names. To me, they all just look like slight variations of the same summoning spell...
+I see. But (glancing) at the options, they're packed with legitimate-sounding AWS service names. To me, they all just look like (slight variations of) the same summoning spell...
 
 <日乃竜胆>
 そこで、我々の鉄則通り、まずは「間違いの選択肢」から完全に論破・解体していこう。正解の真価は、誤謬の死屍累々を直視してこそ浮き彫りになるものだ。まずは最も筋の悪い【不正解4】から斬り捨てる。
 
 <日乃竜胆>
-Which is why, per our strict protocol, we will dissect and dismantle the incorrect options first. The brilliance of the correct design only surfaces after surveying the corpses of flawed alternatives. Let us first execute the most egregiously flawed choice: Incorrect Option 4.
+Which is why, per our strict protocol, we will dissect and dismantle the incorrect options first. The brilliance of the correct design only surfaces after (surveying) the corpses of flawed (alternatives). Let us first execute the most egregiously flawed choice: Incorrect Option 4.
 
 <日乃竜胆>
 【不正解4の構成】
@@ -701,13 +701,13 @@ Which is why, per our strict protocol, we will dissect and dismantle the incorre
 
 <日乃竜胆>
 [Configuration of Incorrect Option 4]
-"Record API calls using AWS CloudTrail, execute scheduled queries with Amazon Athena to identify violations, notify via Amazon SNS upon detection, and have an operator execute a remediation script manually."
+"Record API calls using AWS CloudTrail, execute scheduled queries with Amazon Athena to identify violations, notify via Amazon SNS upon detection, and have an operator execute a (remediation) script manually."
 
 <月凪惟緒>
 えーっと、カタカナが多すぎて眩暈が……。まず「クラウドラブレター」じゃなくて「CloudTrail」って誰？ あとアテナ？ ギリシャ神話？
 
 <月凪惟緒>
-Uh, way too many tech buzzwords, dizziness incoming... First, what on earth is a "CloudTrail," not a love letter? And Athena? Are we summoning Greek goddesses now?
+Uh, way too many tech buzzwords, (dizziness incoming)... First, what on earth is a "CloudTrail," not a love letter? And Athena? Are we summoning Greek goddesses now?
 
 <日乃竜胆>
 順を追って解説しよう。AWS CloudTrailとは、AWS環境内で行われたあらゆる「操作ログ（APIコール）」を克明に記録し続ける防犯カメラのような監査サービスだ。「誰が、いつ、どこから、どのリソースに対して、どんな変更命令を下したか」がJSON形式のログとしてS3などのストレージに保存される。
@@ -725,13 +725,13 @@ A surveillance camera, huh. A black box recording every single escape path. And 
 Amazon Athenaは、そのS3に蓄積された大量のログファイルに対して、データベースの標準言語であるSQLを用いて直接検索（クエリ）を実行できるサーバーレスな分析サービスだ。巨大なログの山から「不正なAPIコールがあった行」を探し出す虫眼鏡だな。
 
 <日乃竜胆>
-Amazon Athena is a serverless interactive query service that lets you search and analyze massive log files stored in S3 using standard SQL. Think of it as an industrial magnifying glass designed to sift through mountains of log records to pinpoint illicit API calls.
+Amazon Athena is a serverless interactive query service that lets you search and analyze massive log files stored in S3 using standard SQL. Think of it as an industrial magnifying glass designed to sift through mountains of log records to pinpoint (illicit) API calls.
 
 <月凪惟緒>
 ふむふむ。監視カメラの映像（CloudTrail）を、虫眼鏡（Athena）で探して、見つけたら担当者にポケベルやメール（SNS）で知らせて、担当者が走ってスクリプトを叩く……え、これって割とちゃんとした防犯システムに見えるけど、何がダメなの？
 
 <月凪惟緒>
-Mhm. You inspect surveillance footage <CloudTrail> with a magnifying glass <Athena>, alert the operator via a pager or email <SNS> when something's caught, and the operator dashes over to run a script... Wait, that sounds like a decent security setup. Why is it wrong?
+Mhm. You inspect surveillance footage <CloudTrail> with a magnifying glass <Athena>, alert the operator via a pager or email <SNS> when something's caught, and the operator (dashes over) to run a script... Wait, that sounds like a decent security setup. Why is it wrong?
 
 <蒞星怜空>
 ふっ……おめでたい発想だな、イオち。その牧歌的な警備体制を現実に持ち込んだ瞬間、待っているのは火だるまの炎上劇だ。考えてもみろ。定期的なクエリということは、バッチ実行までの間に致命的な「タイムラグ」が横たわるのだよ。
@@ -743,31 +743,31 @@ Heh... quite an optimistic fantasy, Io. The moment you deploy such a pastoral se
 例えばクエリが1時間に1回走る設定だったとしよう。悪意ある侵入者や粗忽な同僚がS3を全世界全裸公開にした直後、次のクエリが走るまでの59分間、データはネットの荒野に晒され続ける。その間にスクレイパーボットが群がり、会社の全資産がダークウェブへと流出するのだ。
 
 <蒞星怜空>
-Suppose that query runs once every hour. The instant a malicious actor or a clumsy colleague strips an S3 bucket naked to the world, your data remains exposed across the digital wasteland for the next fifty-nine minutes until the next query cycle. During that window, scraper bots feast upon your crown jewels, exfiltrating company assets straight to the dark web.
+Suppose that query runs once every hour. The instant a malicious actor or a (clumsy) colleague strips an S3 bucket naked to the world, your data remains exposed across the digital wasteland for the next fifty-nine minutes until the next query cycle. During that window, scraper bots feast upon your crown jewels, (exfiltrating) company assets straight to the dark web.
 
 <月凪惟緒>
 ひぃ……59分間の全裸放置プレイ……社会的尊厳が消し炭になる時間としては十分すぎるね……。
 
 <月凪惟緒>
-Eek... left naked in broad daylight for fifty-nine minutes... That's more than enough time to incinerate one's social dignity to ashes...
+Eek... left naked (in broad daylight )for fifty-nine minutes... That's more than enough time to incinerate one's social dignity to ashes...
 
 <日乃竜胆>
 怜空さんの言う通りだ。Athenaによる定期バッチクエリでは、リアルタイム性に致命的な欠陥を抱えることになる。さらに決定的な敗因は、図の右下を見れば一目瞭然だな。「SNSで通知を受けた人間が、手動でスクリプトを実行して修正する」という点だ。問題文の要件は「人手を介さない自動復旧」だぞ。
 
 <日乃竜胆>
-Rea-san hits the mark. Scheduled queries with Athena suffer from a fatal lack of immediacy. Furthermore, the ultimate dealbreaker is glaringly obvious if you inspect the lower-right quadrant of the diagram: an operator receives an SNS notification and manually executes a script to remediate. The requirement explicitly demanded automated remediation without human intervention.
+Rea-san hits the mark. Scheduled queries with Athena suffer from a fatal lack of (immediacy). Furthermore, the ultimate (dealbreaker) is( glaringly obvious )if you inspect the lower-right quadrant of the diagram: an operator receives an SNS notification and manually executes a script to remediate. The requirement explicitly demanded automated remediation without human intervention.
 
 <月凪惟緒>
 あ、そっか。「人間が頑張る」時点で、自動化検定は不合格印を押されちゃうわけだ。夜中に寝てたら通知を無視して朝まで大炎上コース確定だしね。
 
 <月凪惟緒>
-Ah, right. The moment a "human tries hard," it instantly flunks the automation benchmark. If they're fast asleep, that alert gets slept through until morning, ensuring an inferno of ruin.
+Ah, right. The moment a "human tries hard," it instantly (flunks) the automation benchmark. If they're fast asleep, that alert gets slept through until morning, ensuring an (inferno of ruin).
 
 <日乃竜胆>
 その通りだ。CloudTrailとAthenaは、事後的なセキュリティインシデントのフォレンジック（原因究明・鑑識分析）には極めて有用だが、即座の自動修復機構としては運用負荷もレイテンシも劣悪極まりない。ゆえに【選択肢4】は明確に論外だ。
 
 <日乃竜胆>
-Precisely. While CloudTrail and Athena excel at post-incident forensics and regulatory audits, they are dreadfully inadequate for real-time auto-remediation due to abysmal latency and high operational drag. Hence, Choice 4 is unequivocally out of the question.
+Precisely. While CloudTrail and Athena (excel at )post-incident (forensics) and regulatory audits, they are (dreadfully) (inadequate) for real-time auto-remediation due to abysmal latency and high operational drag. Hence, Choice 4 is (unequivocally) out of the question.
 
 ---
 
@@ -783,13 +783,13 @@ The proposal suggests: "Publish approved configuration templates as portfolios v
 サービス……カタログ？ なんかデパ地下のお歳暮ギフトカタログみたいな名前が出てきたけど、AWSでショッピングでも始めるつもり？
 
 <月凪惟緒>
-Service... Catalog? Sounds like a luxury department store gift catalog. Are we doing retail therapy inside AWS now?
+Service... Catalog? Sounds like a luxury department store gift catalog. Are we doing (retail therapy) inside AWS now?
 
 <日乃竜胆>
 あながち遠くもない表現だな。AWS Service Catalogとは、企業内のIT管理者が「社内ルールに適合した安全なリソースのテンプレート（CloudFormation）」を事前登録しておき、一般の開発者がそのカタログから選ぶだけで、勝手な設定改変を許さず安全にインフラを起動できるようにするガバナンスサービスだ。
 
 <日乃竜胆>
-That depiction isn't entirely off-base. AWS Service Catalog allows IT administrators to curate and register pre-approved infrastructure templates <CloudFormation>. Developers can then self-provision compliant resources directly from that menu without permitting rogue configurations.
+That depiction (isn't entirely off-base). AWS Service Catalog allows IT administrators to curate and register pre-approved infrastructure templates <CloudFormation>. Developers can then self-provision compliant resources directly from that menu without permitting rogue configurations.
 
 <月凪惟緒>
 へぇ、良妻賢母みたいな過保護サービス！ 「決まったメニューからしか注文させませんよ」ってことでしょ？ それなら違反なんて起きなくない？
@@ -801,25 +801,25 @@ Oh, sounds like an overprotective culinary parent! "You can only pick meals from
 ふ……そこが素人の落とし穴というものだ、イオち。カタログから出前を取った直後は完璧な料理でも、客が厨房の裏手へ回り込んで勝手に激辛スパイスを鍋にぶち込んだらどうなる？
 
 <蒞星怜空>
-Heh... and that is the classic pitfall of the uninitiated, Io. Even if the dish delivered from the catalog was pristine at first, what happens when a patron sneaks behind the counter and dumps ghost pepper extract straight into the broth?
+Heh... and that is the classic pitfall of the uninitiated, Io. Even if the dish delivered from the catalog was pristine at first, what happens when a patron sneaks behind the counter and dumps (ghost pepper extract) straight into the broth?
 
 <月凪惟緒>
 え、厨房に侵入……？ あ、コンソール画面から直接設定をいじって壊しちゃうってこと？
 
 <月凪惟緒>
-Wait, trespassing into the kitchen...? Ah, you mean someone logging directly into the AWS Console and breaking configurations by hand?
+Wait,( trespassing into) the kitchen...? Ah, you mean someone logging directly into the AWS Console and breaking configurations by hand?
 
 <蒞星怜空>
 御意。Service Catalogは「リソース作成時」の門番にすぎない。一度構築された後、誰かが直接マネジメントコンソールやCLIで設定を書き換えた場合——いわゆる『構成ドリフト（設定の乖離）』を検知して自動で連れ戻す監視能力など、持ち合わせてはおらんのだよ。
 
 <蒞星怜空>
-Precisely. Service Catalog acts merely as a gatekeeper at resource creation time. Once provisioned, if someone directly modifies the settings via the management console or CLI—the dreaded "configuration drift"—it possesses zero capability to monitor, catch, or revert that drift.
+Precisely. Service Catalog acts merely as a gatekeeper at resource creation time. Once provisioned, if someone directly modifies the settings via the management console or CLI—the dreaded "configuration drift"—it possesses zero capability to monitor, catch, or (revert) that drift.
 
 <日乃竜胆>
 怜空さんの指摘が核心を貫いている。Service Catalogには「既存リソースの監視機能」が存在しない。さらにこの選択肢の悪夢は、図にも示されている通り「再プロビジョニングによる上書き」という力業の破壊的プロセスだ。
 
 <日乃竜胆>
-Rea-san strikes directly at the marrow. Service Catalog lacks any monitoring capabilities for existing drift. Moreover, the nightmarish reality of this option, as depicted in the diagram, is the brute-force destructive process of "re-provisioning to overwrite."
+Rea-san strikes directly at the marrow. Service Catalog lacks any monitoring capabilities for existing drift. Moreover, the (nightmarish) reality of this option, as depicted in the diagram, is the brute-force destructive process of "re-provisioning to overwrite."
 
 <月凪惟緒>
 再プロビジョニングって、つまり……一旦ぶっ壊して作り直すってこと？
@@ -831,13 +831,13 @@ Re-provisioning... does that mean you literally tear down the existing resource 
 その通りだ。稼働中のサーバーやデータベースを吹き飛ばして再構築すれば、当然ながら激しい「ダウンタイム（サービス停止）」が発生する。さらに、稼働中に蓄積された揮発データやローカルステートは消滅の危機に瀕する。壁のペンキが少し剥がれたからといって、家ごとブルドーザーで更地にして建て直すような愚行だな。
 
 <日乃竜胆>
-Indeed. Blowing away an active production server or database to rebuild it naturally induces severe service downtime. Furthermore, transient runtime state and localized data face total annihilation. It is like bulldozing an entire house to pristine dirt just because a patch of paint peeled off a wall.
+Indeed. (Blowing away) an active production server or database to rebuild it naturally induces severe service downtime. Furthermore, transient runtime state and localized data face total annihilation. It is like bulldozing an entire house to pristine dirt just because a patch of paint peeled off a wall.
 
 <月凪惟緒>
 部屋の埃を見つけてダイナマイトで部屋ごと吹き飛ばすやつじゃん。狂気の断捨離すぎる。はい、【選択肢3】も粉砕完了ね。
 
 <月凪惟緒>
-That's literally tossing dynamite into a bedroom because you spotted a dust bunny. Extreme minimalist decluttering gone insane. All right, Choice 3 is pulverized into dust.
+That's literally tossing dynamite into a bedroom because you spotted a dust bunny. Extreme minimalist (decluttering) (gone insane). All right, Choice 3 is (pulverized) into dust.
 
 ---
 
