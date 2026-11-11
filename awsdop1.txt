@@ -846,7 +846,7 @@ That's literally tossing dynamite into a bedroom because you spotted a dust bunn
 「Amazon EventBridgeでリソース変更イベントをキャプチャし、AWS Lambda関数を呼び出して変更内容をログに記録した後、運用担当者がAmazon CloudWatch Logsを確認して手動で復旧作業を行う」。
 
 <日乃竜胆>
-Next, let us confront the quintessential honeypot designed by exam authors to enchant unwary test takers: Incorrect Option 2.
+Next, let us confront the quintessential (honeypot) designed by exam authors to (enchant) (unwary) test takers: Incorrect Option 2.
 "Capture resource configuration change events using Amazon EventBridge, invoke an AWS Lambda function to log modification details, and then have an operator inspect Amazon CloudWatch Logs to execute remediation manually."
 
 <月凪惟緒>
@@ -859,7 +859,7 @@ Aha! EventBridge and Lambda! Aren't those the most trendy buzzwords in the entir
 ふっ、その通り。クラウドアーキテクチャ界隈において「EventBridgeとLambda」は万能の銀の弾丸として崇められがちだ。何かが起きたらイベントを飛ばし、Lambdaというサーバーレスの軽量プログラムを起動して好きな処理をコードで書く。一見すると最先端で隙がないように思える。
 
 <日乃竜胆>
-Heh, true enough. In modern cloud architecture, "EventBridge plus Lambda" is often revered as the universal silver bullet. Whenever something happens, an event fires, spinning up an ephemeral serverless Lambda function to execute custom code. Superficially, it appears bleeding-edge and impenetrable.
+Heh, true enough. In modern cloud architecture, "EventBridge plus Lambda" is often (revered as) the( universal) silver bullet. Whenever something happens, an event fires, spinning up an (ephemeral) serverless Lambda function to execute custom code. Superficially, it appears (bleeding-edge) and (impenetrable).
 
 <月凪惟緒>
 えっ、じゃあこれ正解じゃないの！？ だってイベントを捕まえてプログラムが走るんでしょ？
@@ -871,27 +871,27 @@ Wait, then isn't this the right answer?! It catches the event and triggers custo
 ふふ……細部を読まぬ者は、甘美なキーワードの毒杯を呷って死ぬのだよ。イオち、そのLambdaは何をしている？ コードの中で何を処理していると書いてある？
 
 <蒞星怜空>
-Heh heh... those who skim over the granular details invariably drink from a poisoned chalice of sweet keywords and perish. Io, look closer: what is that Lambda actually doing? What does the prompt say it executes?
+Heh heh... those who (skim over) the (granular details )(invariably )drink from a poisoned (chalice) of sweet keywords and perish. Io, look closer: what is that Lambda actually doing? What does the prompt say it executes?
 
 <月凪惟緒>
 え……？ 「変更内容をログに記録した後……運用担当者がログを目視確認して……手動で復旧作業を行う」……？
 ……えっ、Lambdaさん、日記書いてるだけ！？ 復旧作業は結局人間の当直がやるの！？
 
 <月凪惟緒>
-Uh...? "Invoke a Lambda function to log modification details... after which an operator visually inspects CloudWatch Logs... and performs manual remediation"...?
-...Wait, is Lambda literally just writing diary entries?! And the actual fix still falls onto the weary shoulders of a human on duty?!
+Uh...? "Invoke a Lambda function to log modification details... (after which) an operator visually inspects CloudWatch Logs... and performs manual remediation"...?
+...Wait, is Lambda literally just writing diary entries?! And the actual fix still (falls onto the weary shoulders of) a human( on duty)?!
 
 <蒞星怜空>
 その通りだ。超ハイテクな自動小銃を構えておきながら、引き金を引かずに「敵が来ました」と紙のメモを書いて上官の机に置きに行くような滑稽さだな。技術的にはLambda内部に修復APIを叩くコードを書くこと自体は可能だ。だがこの選択肢では、わざわざ途中で人間の手動介入を挟み込んでいる。
 
 <蒞星怜空>
-Precisely. It is as absurd as brandishing a state-of-the-art automatic assault rifle, only to refrain from pulling the trigger, scrawl a memo saying "an enemy has arrived," and casually leave it on your commanding officer's desk. Technically, one could author remediation code inside Lambda. Yet this option deliberately forces human intervention right into the middle of the workflow.
+Precisely. It is as absurd as (brandishing) a (state-of-the-art )automatic assault rifle, only to refrain from pulling the trigger, scrawl a memo saying "an enemy has arrived," and casually leave it on your commanding officer's desk. Technically, one could author remediation code inside Lambda. Yet this option deliberately forces human intervention right into the middle of the workflow.
 
 <日乃竜胆>
 図の真ん中を見れば「人手介入が必要」「自動修復なし」と無慈悲に宣告されているな。さらに言えば、仮にLambdaで修復スクリプトを書いたとしても、それは「カスタムコードの保守・運用オーバーヘッド」という重荷を自ら背負い込むことを意味する。
 
 <日乃竜胆>
-The diagram mercilessly declares: "Human Intervention Required" and "No Automated Remediation." Furthermore, even if you wrote remediation scripts inside Lambda, that burden translates into ongoing maintenance and operational overhead for custom codebase management.
+The diagram mercilessly declares: "Human Intervention Required" and "No Automated Remediation." Furthermore, even if you wrote remediation scripts inside Lambda, that burden (translates into ongoing *maintenance* )and operational overhead for custom codebase management.
 
 <月凪惟緒>
 自作スクリプトを抱え込むと、ライブラリのバージョン更新とかで数年後に「このLambda動かないんだけど書いたやつ誰！？ 退職済みです！」って阿鼻叫喚になるやつだ……。
@@ -912,20 +912,20 @@ Insightful, Io. That is the very essence of "operational overhead." Continuing t
 「AWS Configでリソースの評価ルールを定義し、非準拠と判定された場合にAWS Systems Manager Automationのランブックを修復アクションとして関連付けることで、準拠状態への自動復旧を実現する」。
 
 <日乃竜胆>
-Now, at long last, we arrive at the glorious vindication: Correct Option 1.
+Now, (at long last), we arrive at the glorious (vindication): Correct Option 1.
 "Define evaluation rules for resources using AWS Config, and when evaluated as non-compliant, associate an AWS Systems Manager Automation runbook as a remediation action to achieve automated remediation back to a compliant state."
 
 <月凪惟緒>
 AWS Config……コンフィグ？ ゲームの設定画面みたいな名前だけど、何者なの？
 
 <月凪惟緒>
-AWS Config...? Sounds like a mundane options menu in a video game, but what is its actual identity?
+AWS Config...? Sounds like a mundane options menu in a video game, but what is( its actual identity)?
 
 <日乃竜胆>
 AWS Configとは、AWS上の全リソースの構成履歴・設定状態を継続的に監視・記録し、それらが「望ましい設定（コンプライアンス）」に合致しているかを自動評価するマネージドサービスだ。リソースのカルテをリアルタイムに更新し続ける、厳格な監査官と言える。
 
 <日乃竜胆>
-AWS Config is a fully managed service that continuously monitors and records the configuration history and state of AWS resources, automatically evaluating whether they comply with ideal governance rules. It acts as a relentless, vigilant auditor maintaining continuous real-time medical charts of your entire estate.
+AWS Config is a fully managed service that continuously monitors and records the configuration history and state of AWS resources, automatically evaluating whether they comply with ideal governance rules. It acts as a relentless, (vigilant) auditor maintaining continuous real-time medical charts of your entire estate.
 
 <月凪惟緒>
 ほぉ〜、カルテ！ 「このS3バケット、全世界公開になってて熱出してますよ！」って即座に診断してくれるわけだ。
@@ -943,7 +943,7 @@ Spot-on. AWS Config offers over two hundred pre-packaged "AWS Managed Rules," al
 コード書かなくていいの最高。人類の怠惰の勝利。でも診断しただけじゃ治らないよね？ そこで出てくるのが「SSM Automationのランブック」？
 
 <月凪惟緒>
-Not having to write code is the ultimate dream—a victory for human indolence. But a mere diagnosis doesn't cure the illness, does it? Is that where this "SSM Automation Runbook" enters the stage?
+Not having to write code is the ultimate dream—a victory for human (indolence). But a mere diagnosis doesn't cure the illness, does it? Is that where this "SSM Automation Runbook" enters the stage?
 
 <日乃竜胆>
 然り。AWS Systems Manager（SSM）Automationは、インフラの運用タスクを自動化するためのワークフロー実行基盤だ。そして「ランブック」とは、その手順書（レシピ）のことだな。AWSは「非準拠になったS3バケットのパブリックアクセスを自動遮断する」といった標準の公式ランブックをあらかじめ多数提供している。
@@ -955,37 +955,37 @@ Precisely. AWS Systems Manager <SSM> Automation is a powerful engine designed to
 つまりさ、Config監査官が「こいつ違反です！」って指差した瞬間、裏で待機してたSSMランブック救急隊が現場に急行して、人知れず設定を元に戻してくれるってこと？
 
 <月凪惟緒>
-In other words, the millisecond Inspector Config points a finger shouting "Violation!", the SSM Runbook paramedic team waiting in the wings storms in and silently reverts the configuration to safety?
+In other words, the millisecond Inspector Config points a finger shouting "Violation!", the SSM Runbook (paramedic) team waiting in the wings storms in and silently reverts the configuration to safety?
 
 <蒞星怜空>
 ふふ、まさに阿吽の呼吸だな。人間が惰眠を貪り、泥のように眠っている午前3時42分であろうと、システム同士がミリ秒の速度で握手を交わし、外科手術のように患部を切除・縫合する。運用者は翌朝、ただ平和に完了したログを眺めるだけで済むのだよ。
 
 <蒞星怜空>
-Heh, an exquisite choreography. Even at 3:42 AM while human engineers are drowning in deep slumber, the systems shake hands within milliseconds, surgically excising and suturing the infected configuration. The operations team wakes up the next morning needing only to glance at an uneventful log of triumph.
+Heh, an exquisite (choreography). Even at 3:42 AM while human engineers are (drowning in *deep* slumber), the systems shake hands within milliseconds, surgically (excising) and (suturing) the infected configuration. The operations team wakes up the next morning needing only to glance at an (uneventful) log of (triumph).
 
 <日乃竜胆>
 図の緑色のフローを見よ。「リソース設定変更」→「Config評価ルールで非準拠検出」→「修復アクションが自動トリガー」→「SSM Automationランブック実行」→「人手を介さず自動修復完了」。これぞマネージドサービスが織りなす極致、運用オーバーヘッド最小の模範解答だ。
 
 <日乃竜胆>
-Behold the emerald-tinted architecture in the diagram: Resource Change occurs -> Config Rule flags non-compliance -> Remediation Action automatically triggers -> SSM Automation Runbook executes -> Remediation completes with zero human intervention. This is the zenith of managed automation, the quintessential solution with minimal operational overhead.
+Behold the emerald-tinted architecture in the diagram: Resource Change occurs -> Config Rule flags non-compliance -> Remediation Action automatically triggers -> SSM Automation Runbook executes -> Remediation completes with zero human intervention. This is the zenith of managed automation, the (quintessential) solution with minimal operational overhead.
 
 <月凪惟緒>
 完璧に繋がったぁ……！ Athenaは遅い＆手動、Service Catalogは事後検知できない＆破壊的、Lambdaはログ取るだけで結局人間任せ、そしてConfig＋SSMだけが全自動でスマートに解決してくれる！ 私の脳内氷河期が完全に雪解けを迎えたよ、ヒノりん！
 
 <月凪惟緒>
-Everything just clicked into place...! Athena is too slow and manual, Service Catalog can't detect drift and causes destructive downtime, Lambda just took notes while still dumping the burden on humans, and Config plus SSM resolves it end-to-end automatically! My personal mental ice age has finally thawed, Hino-rin!
+Everything (just clicked into place)...! Athena is too slow and manual, Service Catalog can't detect drift and causes destructive downtime, Lambda just took notes while still dumping the burden on humans, and Config plus SSM resolves it end-to-end automatically! My personal mental ice age has finally thawed, Hino-rin!
 
 <蒞星怜空>
 氷河期の雪解けか。だが油断するなよ、イオち。資格試験の合格点は踏み越えられても、実世界のインフラ運用という名の深淵は、いつでもお前が油断して書いた1行のパラメータミスを待っているのだからな。
 
 <蒞星怜空>
-A thawed ice age, is it? Do not grow complacent, Io. Even if you effortlessly clear the threshold of an AWS exam, the merciless abyss of real-world infrastructure operations is forever waiting for a single misconfigured parameter slipped in during a moment of carelessness.
+A (thawed) ice age, is it? Do not (grow complacent), Io. Even if you effortlessly clear the threshold of an AWS exam, the merciless abyss of real-world infrastructure operations is forever waiting for a single misconfigured parameter( slipped in) during a moment of carelessness.
 
 <日乃竜胆>
 怜空さんの言葉を胸に刻んでおくことだな。だが、本問の本質と選択肢の優劣は、これで完全に血肉となったはずだ。AWS Certified DevOps Engineer - Professionalの頂きへ向け、引き続き歩みを進めるとしよう。
 
 <日乃竜胆>
-Inscribe Rea-san's cautionary words onto your mind. Nevertheless, the architecture and the definitive justification of these choices are now etched into your comprehension. Let us advance steadily onward toward conquering the summit of the AWS Certified DevOps Engineer - Professional.
+(Inscribe *Rea-san's cautionary words* onto *your* mind). (Nevertheless), the architecture and the (definitive justification )of these choices are now etched into your comprehension. Let us (advance steadily onward toward) conquering the summit of the AWS Certified DevOps Engineer - Professional.
 
 
 <日乃竜胆>
