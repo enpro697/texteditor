@@ -493,7 +493,7 @@ Precisely. Sharing an AMI across accounts requires configuring explicit launch p
 出た、インスペクター警部！ セキュリティ検証っぽいし、バックアップもしてくれるなら盤石そうに見えるよ？
 
 <月凪惟緒>
-There it is, Inspector gadget! It sounds like security verification, and taking backups feels sturdy, right?
+There it is, Inspector (gadget)! It sounds like security verification, and taking backups feels sturdy, right?
 
 <日乃竜胆>
 前提のスコープが根本からすり替わっている。
@@ -521,7 +521,7 @@ Furthermore, **AWS Backup cross-account copy is a disaster recovery and backup m
 家を新築するための最新設計図を求めている施主に対して、「既存のボロ長屋の雨漏りを直しておきました！ ついでに金庫に避難用コピーを放り込んでおいたので、各世帯で勝手に復元してください」と答えているようなものだな。目的と手段が完全に乖離している。
 
 <蒞星怜空>
-It is like a client asking for updated blueprints to build new homes, and you respond: "I patched the roof on our crumbling tenement, locked a disaster copy in a vault, and now every family can reconstruct it themselves!" The objective and the mechanism are divorced by a light-year.
+It is like a client asking for updated blueprints to build new homes, and you respond: "I patched the roof on our crumbling (tenement), locked a disaster copy in a vault, and now every family can reconstruct it themselves!" The objective and the mechanism are divorced by a light-year.
 
 ---
 
@@ -569,11 +569,11 @@ EC2 Image Builderとは、仮想マシンやコンテナイメージの**ビル�
 
 
 <日乃竜胆>
-Metaphors of cookery were adopted deliberately because they clarify the mental model.
+Metaphors of (cookery) were adopted deliberately because they( clarify the mental model).
 EC2 Image Builder is **an AWS fully managed service that end-to-end automates building, testing, and distributing** virtual machine and container images.
 The architecture of this service is remarkably elegant and rigorous:
 
-1. **Component**: The fundamental unit defining discrete execution steps, such as OS patching, agent installation, or test scripts.
+1. **Component**: The fundamental unit defining (discrete) execution steps, such as OS patching, agent installation, or test scripts.
 
 
 2. **Recipe**: The declarative blueprint specifying the base OS image and the exact sequence of components applied to it. Because recipes are version-controlled, human configuration drift is structurally eliminated.
@@ -599,7 +599,7 @@ Incredible...! The three conditions from the question—"monthly schedule," "sec
 自前でLambdaのコードを書く必要も、Packerの面倒を見る必要もない。一時的なビルド用インスタンスも用が済めばImage Builderが勝手に消滅させてくれるため、無駄なリソース課金が残る余地もない。これを選ばずに車輪を再発明しようとするのは、わざわざ砂漠の真ん中で手彫りのスコップを使って井戸を掘るような奇行だな。
 
 <蒞星怜空>
-No need to author custom Lambda logic, nor baby-sit Packer installations. Temporary build instances are spun up and torn down automatically by Image Builder once done, leaving zero lingering infrastructure costs. Refusing this service to craft custom machinery instead is like excavating a desert well using a hand-carved wooden spoon.
+No need to author custom Lambda logic, nor baby-sit Packer installations. Temporary build instances are spun up and torn down automatically by Image Builder once done, leaving zero lingering infrastructure costs. Refusing this service to craft custom machinery instead is like (excavating) a desert well using a hand-carved wooden spoon.
 
 <月凪惟緒>
 砂漠で木彫りのスプーンは嫌すぎる……！
@@ -632,7 +632,7 @@ Did I nail it?!
 見事だ、イオち。まさにその構造的理解こそがDevOpsプロフェッショナル試験に求められる視座覚醒だな。サービス単体の機能暗記ではなく、「運用の極小化」と「要件への完全合致」を見抜く目を養うことだ。
 
 <日乃竜胆>
-Splendidly reasoned, Io-chi. That structural comprehension is precisely the architectural insight demanded by the DevOps Engineer - Professional exam. Do not settle for rote memorization of service specs; cultivate the vision to discern minimal operational overhead paired with immaculate alignment to requirements.
+Splendidly reasoned, Io-chi. That structural comprehension is precisely the architectural insight demanded by the DevOps Engineer - Professional exam. Do not settle for (rote memorization) of service specs; (cultivate) the vision to (discern) minimal operational overhead paired with (immaculate) alignment to requirements.
 
 
 <日乃竜胆>
