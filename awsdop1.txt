@@ -1378,7 +1378,7 @@ Keeping up this momentum, we shall advance to the next exercise.
 > 
 
 <日乃竜胆>
-Now, let us begin. Today we examine a robust scenario right at the AWS Certified DevOps Engineer - Professional (caliber). Face the question on screen without (averting *your eyes* from) a single (syllable):
+Now, let us begin. Today we examine a robust scenario right at the AWS Certified DevOps Engineer - Professional caliber. Face the question on screen without averting your eyes from a single syllable:
 
 > "[DOP-1017] A company runs a fleet of web servers using an EC2 Auto Scaling group. The AMI specified in the launch template includes the AWS Systems Manager Agent, and specific tags are applied to each instance upon scale-out. A DevOps engineer must establish a mechanism that automatically and immediately applies a predefined OS configuration to newly launched instances. Which solution minimizes operational overhead?"
 
@@ -1388,7 +1388,7 @@ Now, let us begin. Today we examine a robust scenario right at the AWS Certified
 う〜ん……開幕から漢字とカタカナの暴力で脳の回線がショートしそうなんだけど……。オートスケーリング？エージェント？タグ？なんか全部がフワフワしてて、真冬のトタン板の裏で丸まってる気分。ヒノりん、これ何から噛み砕けばいいの〜？
 
 <月凪惟緒>
-Mmm... right out of the gate, this (deluge) of technical jargon is frying my brain cells. Auto Scaling? Agent? Tags? It's all floating around like static noise, making me feel like a pill bug curled up behind a rusty zinc roof in dead winter. Hino-rin, where do I even begin sinking my teeth into this?
+Mmm... right out of the gate, this deluge of technical jargon is frying my brain cells. Auto Scaling? Agent? Tags? It's all floating around like static noise, making me feel like a pill bug curled up behind a rusty zinc roof in dead winter. Hino-rin, where do I even begin sinking my teeth into this?
 
 ---
 
@@ -1400,11 +1400,11 @@ Mmm... right out of the gate, this (deluge) of technical jargon is frying my bra
 そして要求は、「新しく産み落とされたサーバーに、指定のOS設定を『自動的』かつ『即座』に叩き込み、かつ『運用保守の手間（オーバーヘッド）』を極限まで削れ」ということだ。
 
 <日乃竜胆>
-Do not flinch, Io-chi. Feeling overwhelmed by the unfamiliar simply (indicates) you (have yet to) (factorize) the architectural components. Let us dissect the physical landscape this problem depicts.
+Do not flinch, Io-chi. Feeling overwhelmed by the unfamiliar simply indicates you have yet to factorize the architectural components. Let us dissect the physical landscape this problem depicts.
 First, EC2 Auto Scaling—a mechanism where virtual servers spawn and terminate dynamically in response to traffic load.
 Second, Launch Templates and AMIs—the immutable blueprints of these servers. Pre-baked within them is the SSM Agent, a background management daemon.
 Third, Tags—metadata labels affixed to the instances.
-And the (imperative) requirement is this: "Automatically and immediately apply a designated OS configuration to any newly spawned instance, while suppressing operational overhead to the absolute minimum."
+And the imperative requirement is this: "Automatically and immediately apply a designated OS configuration to any newly spawned instance, while suppressing operational overhead to the absolute minimum."
 
 ---
 
@@ -1412,7 +1412,7 @@ And the (imperative) requirement is this: "Automatically and immediately apply a
 ふっ……要するに、深夜の繁華街で客が雪崩れ込んできたからバイトを緊急召集したものの、そいつらは厨房のルールも知らぬ丸腰の素人集団、ということだ。店長が自ら駆け寄って包丁の握り方を手取り足取り教える暇などない。暖簾をくぐった瞬間に、脳内へ直接業務手順書を電脳インストールし、即座に肉を焼かせろと要求しているにすぎない。実に強欲で、血も涙もない現場の縮図だな。
 
 <蒞星怜空>
-Heh... in essence, a wave of customers has flooded a late-night diner, forcing an emergency draft of part-time temps who know nothing of kitchen protocol. The floor manager possesses neither the time nor the sanity to hold their hands and demonstrate how to grip a cleaver. The requirement demands that the absolute instant they step past the doorway, the operational standard operating procedure is flashed directly into their frontal lobes so they can grill meat without missing a beat. A truly ruthless, delightfully unsympathetic snapshot of production reality.
+Heh... in essence, a wave of customers has flooded a late-night diner, forcing an emergency draft of part-time temps who know nothing of kitchen protocol. The floor manager possesses neither the time nor the sanity to hold their hands and demonstrate how to grip a cleaver. The requirement demands that the absolute instant they step past the doorway, the operational standard operating procedure is flashed directly into their (frontal lobes) so they can grill meat without missing a beat. A truly ruthless, delightfully unsympathetic snapshot of production reality.
 
 ---
 
@@ -1421,8 +1421,8 @@ Heh... in essence, a wave of customers has flooded a late-night diner, forcing a
 でもさ、ヒノりん。なんで最初からその「OSの構成」とやらを全部入れた完璧な金型（AMI）を作っておかないの？それなら生まれた瞬間に完成してるじゃん。
 
 <月凪惟緒>
-Rea-san's analogies are painfully vivid as always... my stomach hurts just hearing it. But I think I grasp the mental picture. The moment an instance pops into existence, we need it (whipped into) pristine shape without a single second of hesitation.
-Wait though, Hino-rin. Why not just bake that whole "OS configuration" straight into the golden image—the AMI—from the very beginning? Wouldn't it be born completely (ready to roll)?
+Rea-san's analogies are painfully vivid as always... my stomach hurts just hearing it. But I think I grasp the mental picture. The moment an instance pops into existence, we need it whipped into pristine shape without a single second of hesitation.
+Wait though, Hino-rin. Why not just bake that whole "OS configuration" straight into the golden image—the AMI—from the very beginning? Wouldn't it be born completely ready to roll?
 
 ---
 
@@ -1431,7 +1431,7 @@ Wait though, Hino-rin. Why not just bake that whole "OS configuration" straight 
 ゆえに実務では、基礎部分のみをAMIに固め、インスタンス起動時に動的に最新設定を流し込む『ブートストラップ方式（Fry方式）』とのハイブリッドが採られる。今回の問題はまさにその動的構成管理の急所を突いているのだ。
 
 <日乃竜胆>
-A sharp intuition. That approach is known as the "Golden AMI" or "Bake" strategy. However, middleware parameters and critical security patches (evolve) constantly. Are you prepared to spend dozens of minutes rebuilding and validating a monolithic AMI for every trivial configuration change? Doing so triggers an explosion of (stale) images and paralyzes the release pipeline.
+A sharp intuition. That approach is known as the "Golden AMI" or "Bake" strategy. However, middleware parameters and critical security patches evolve constantly. Are you prepared to spend dozens of minutes rebuilding and validating a monolithic AMI for every trivial configuration change? Doing so triggers an explosion of stale images and paralyzes the release pipeline.
 Hence, enterprise practice leans toward a hybrid: bake immutable foundations into the AMI, and dynamically inject transient configurations at spin-up—the "Bootstrap" or "Fry" paradigm. This question pierces right into the operational core of dynamic configuration management.
 
 ---
@@ -1454,7 +1454,7 @@ Looking at the options, there's quite a lineup, but following our iron rule, we 
 > 
 
 <日乃竜胆>
-Indeed. We shall execute the most flagrant, bottom-tier distractor first: **Incorrect Option 4**.
+Indeed. We shall execute the most (flagrant), (bottom-tier) distractor first: **Incorrect Option 4**.
 
 > "Incorrect 4: Define a maintenance window in Systems Manager Maintenance Windows and execute an OS configuration Run Command task on a 1-hour CRON schedule. Target instances based on tags."
 
@@ -1466,7 +1466,7 @@ Indeed. We shall execute the most flagrant, bottom-tier distractor first: **Inco
 
 <月凪惟緒>
 Uhh... Maintenance Windows? CRON? Run Command?
-The incantations just tripled! What on earth is wrong with this little clock-icon contraption?
+The incantations just (tripled)! What on earth is wrong with this little clock-icon (contraption)?
 
 ---
 
@@ -1498,7 +1498,7 @@ Now, Io-chi, deduce from the dimension of time why this option represents a fata
 あ……！問題文には「即座に適用する」って書いてあるのに、「1時間ごとのスケジュール」にしてたら、運悪くタイマーが鳴った直後に生まれたサーバーは、次の1時間後までずーっと放置されちゃうんじゃない？
 
 <月凪惟緒>
-Ah...! The scenario demanded we apply configs "immediately," but if you put it on a "1-hour schedule," an instance born right after the chime would sit completely unattended for up to a whole sixty minutes!
+Ah...! The scenario demanded we apply configs "immediately," but if you put it on a "1-hour schedule," an instance born right after the chime would (sit *completely* unattended )for up to a whole sixty minutes!
 
 ---
 
@@ -1506,7 +1506,7 @@ Ah...! The scenario demanded we apply configs "immediately," but if you put it o
 見事だ、その通り！Auto Scalingによってスケールアウトした直後のサーバーは、トラフィックを捌くために即座にロードバランサー配下へ投入される。だが最大1時間もの間、必要なOS設定が適用されていない半端なサーバーがリクエストを受け付けたらどうなるか？当然、内部エラーを吐き散らし、システム障害へと直結する。これを「構成ドリフト（構成の不一致・乖離）」の極致と呼ぶのだ。
 
 <日乃竜胆>
-Superb deduction! Precisely. An instance scaled out by Auto Scaling is promptly shoved under the load balancer to absorb incoming traffic spikes. But what occurs if an unconfigured, half-baked instance serves production traffic for up to an entire hour? Inevitably, it vomits internal errors and triggers system outages. This is the very definition of acute configuration drift.
+(Superb) (deduction)! Precisely. An instance scaled out by Auto Scaling is promptly shoved under the load balancer to absorb incoming traffic spikes. But what occurs if an unconfigured, half-baked instance serves production traffic for up to an entire hour? Inevitably, it vomits internal errors and triggers system outages. This is the very definition of acute configuration drift.
 
 ---
 
@@ -1516,7 +1516,7 @@ Superb deduction! Precisely. An instance scaled out by Auto Scaling is promptly 
 
 <蒞星怜空>
 It is precisely akin to tossing an untrained novice onto a frantic restaurant floor without an apron or a clue about menu pricing, while the manager lounges in the alley smoking a cigarette, muttering, "Well, the hourly shift meeting is fifty minutes away, I'll hand him the operations manual then."
-This transcends mere incompetence; it borders on pure malice and deliberate sabotage. An architectural catastrophe thoroughly deserving of immediate termination.
+This (transcends) mere incompetence; it borders on pure malice and deliberate sabotage. An architectural catastrophe thoroughly (deserving of )immediate termination.
 
 ---
 
@@ -1529,7 +1529,7 @@ This transcends mere incompetence; it borders on pure malice and deliberate sabo
 > 
 
 <日乃竜胆>
-Caustic rhetoric aside, Rea-san speaks truth. CRON schedules fundamentally violate the "immediate" constraint. Thus, Incorrect Option 4 is annihilated.
+Caustic rhetoric aside, Rea-san (speaks truth). CRON schedules fundamentally violate the "immediate" constraint. Thus, Incorrect Option 4 is annihilated.
 Moving forward. Let us examine **Incorrect Option 3**.
 
 > "Incorrect 3: Use an Amazon EventBridge rule to detect Auto Scaling launch events and trigger an AWS Lambda function. Within the Lambda function, call the Systems Manager Run Command API to send the OS configuration document to the target instance."
@@ -1553,8 +1553,8 @@ It's "immediate," it's event-driven, and honestly it sounds like a slick, modern
 技術的に動作するか否か（Feasibility）と、要件に最適化されているか（Best Practice）は全くの別物だ。設問の最後の一文を思い出せ。「**運用オーバーヘッドを最小限に抑えるソリューション**」とあるな？
 
 <日乃竜胆>
-Heh... that deceptive allure is precisely the sweetest, most venomous trap engineered by the certification authors.
-Whether a design works mechanically <feasibility> versus whether it adheres to architectural discipline <best practice> are two wildly distinct planes of existence. Recall the final clause of the scenario: "Which solution minimizes operational overhead?"
+Heh... that deceptive (allure) is precisely the sweetest, most venomous trap engineered by the certification authors.
+Whether a design works mechanically <feasibility> versus whether it adheres to architectural discipline <best practice> are two (wildly distinct planes of existence). Recall the final (clause) of the scenario: "Which solution minimizes operational overhead?"
 
 ---
 
@@ -1562,7 +1562,7 @@ Whether a design works mechanically <feasibility> versus whether it adheres to a
 運用オーバーヘッド……つまり、「作ったあとの管理やメンテナンスがめんどくさくないか」ってこと？
 
 <月凪惟緒>
-Operational overhead... in plain English, "how much annoying maintenance and babysitting will this force me to do down the road?"
+Operational overhead... in plain English, "how much annoying maintenance and babysitting will this force me to (do down the road)?"
 
 ---
 
@@ -1580,11 +1580,11 @@ Operational overhead... in plain English, "how much annoying maintenance and bab
 
 
 <日乃竜胆>
-Precisely. Enumerate the sheer mountain of technical debt an engineer must shoulder to keep this contraption breathing:
+Precisely. (Enumerate) the sheer mountain of technical debt an engineer must shoulder to keep this (contraption )breathing:
 
-1. **Custom Lambda Code Development and Lifecycle**: Authoring Python or Node.js logic, building test suites, and endlessly juggling third-party dependency vulnerabilities and runtime deprecations.
+1. **Custom Lambda Code Development and Lifecycle**: Authoring Python or Node.js logic, building test suites, and endlessly juggling third-party dependency vulnerabilities and runtime (deprecations).
 2. **Handling SSM Agent Handshake Race Conditions**: This detail is monstrous. The millisecond the Auto Scaling event fires, the OS-level SSM Agent may not have finalized its registration handshake with the control plane. Firing a Run Command API call at that instant throws a target-not-found error. Consequently, you must author bespoke polling loops, exponential backoff, and retry logic inside Lambda.
-3. **Fragmented IAM Roles and CloudWatch Monitoring**: Managing fractured permissions and log streams across EventBridge, Lambda, and Systems Manager.
+3. **Fragmented IAM Roles and CloudWatch Monitoring**: Managing (fractured )permissions and log streams across EventBridge, Lambda, and Systems Manager.
 
 ---
 
@@ -1593,8 +1593,8 @@ Precisely. Enumerate the sheer mountain of technical debt an engineer must shoul
 自分自身を「何でもコードで解決する敏腕プログラマー」と錯覚した者が陥る、典型的なオーバーエンジニアリングの墓場といえよう。動かすまでに数日、運用で永遠に削られる睡眠時間。この構成を選んだエンジニアの末路は、深夜のPagerDutyアラートによる精神の荒廃と決まっている。
 
 <蒞星怜空>
-Quite so. Instead of dropping coins into a vending machine when thirsty, one undertakes digging a private well, welding a manual hand-pump from scrap metal pipe, and hovering over the spigot with a chemical titration kit.
-A textbook graveyard of over-engineering, frequented by individuals intoxicated by the delusion that writing custom code for everything makes them an elite architect. Days to build, endless stolen sleep to maintain. The fate of anyone choosing this stack is a slow decay of the soul under midnight PagerDuty alerts.
+Quite so. Instead of dropping coins into a vending machine when thirsty, one (undertakes) (digging *a private *well), (welding) a manual hand-pump from scrap metal pipe, and (hovering over the spigot )with a chemical (titration) kit.
+A textbook graveyard of over-engineering, (frequented) by individuals (intoxicated by the delusion) that writing custom code for everything makes them an elite architect. (Days to *build*), endless stolen sleep to maintain. The fate of anyone choosing this stack is a slow decay of the soul under midnight PagerDuty alerts.
 
 ---
 
@@ -1628,7 +1628,7 @@ Your comprehension accelerates nicely. Next, let us cut down the cleverly disgui
 
 <月凪惟緒>
 Hmm? AWS Config? Automatic Remediation?
-"Fixes things automatically whenever they fall out of line"—that sounds incredibly reassuring and audit-ready. What makes this one a dud?
+"Fixes things automatically whenever they fall out of line"—that sounds incredibly reassuring and audit-ready. What makes this one a (dud)?
 
 ---
 
@@ -1640,7 +1640,7 @@ Configは、リソースの構成履歴を記録・監査し、コンプライ�
 <日乃竜胆>
 One must never mistake the fundamental essence and scope of AWS Config.
 Config is an audit and governance powerhouse designed to track configuration histories and continuously evaluate resource postures against compliance baselines.
-Its fatal flaw here is that this pattern is intrinsically **reactive**.
+Its fatal flaw here is that this pattern is (intrinsically) **reactive**.
 
 ---
 
@@ -1685,8 +1685,8 @@ Across this convoluted pipeline, evaluating triggers and processing message queu
 泥棒はその数分間でとっくに逃走している。Configは「違反状態を検知して監査証跡を残し、平時に是正する」ための仕組みであって、生まれたてのサーバーに産着を着せるためのスピード勝負に投入するツールではないのだよ。用途の取り違えも甚だしい。
 
 <蒞星怜空>
-It is like a night guard stumbling across a burglar cracking a safe, calmly pulling out a clipboard, stamping a form that reads "Observed Unauthorized Presence," and leisurely strolling toward the alarm panel.
-The thief has cleared the state line before the siren even wails. Config exists to audit compliance and remediate drift during steady-state governance; it was never forged for the millisecond sprint of diapering a newborn instance upon spin-up. A grotesque mismatch of functional intent.
+It is like a night guard stumbling across a burglar cracking a safe, calmly pulling out a clipboard, stamping a form that reads "Observed Unauthorized Presence," and( leisurely) (strolling toward) the alarm panel.
+The thief has cleared the state line before the siren even (wails). Config exists to audit compliance and remediate drift during steady-state governance; it was never forged for the millisecond sprint of diapering a newborn instance upon spin-up. A grotesque mismatch of (functional intent).
 
 ---
 
@@ -1696,9 +1696,9 @@ Configさんは「抜き打ち検査をして怒る監査役」であって、�
 タイムラグがあるから「即座に」を満たせないし、そもそも複数の仕組みを繋ぎ合わせてて運用も重い。これで不正解３つ全部がキレイに消し飛んだ！
 
 <月凪惟緒>
-Ahaha, the robber gets away scot-free!
+Ahaha, the robber gets away (scot-free)!
 So Config is an auditor who walks around with a clipboard inspecting things, not an assembly-line technician slapping on parts at high speed.
-It induces lag, missing the "immediately" criteria, plus stacking all those moving parts together inflates overhead. That completely vaporizes all three incorrect choices!
+It induces lag, missing the "immediately" criteria, plus stacking all those moving parts together inflates overhead. That completely (vaporizes) all three incorrect choices!
 
 ---
 
@@ -1732,7 +1732,7 @@ Hino-rin, more brand-new terms! What kind of superhero is this mechanism?
 
 <日乃竜胆>
 **AWS Systems Manager State Manager** is a fully managed configuration management engine engineered to define, enforce, and maintain your fleet in an immutable "desired state."
-And an **"Association"** is the fundamental binding construct that codifies: **WHAT** <which SSM Document or script>, to **WHOM** <which tags or resource targets>, and **WHEN** <immediately upon launch, or recurring schedules> to apply it.
+And an **"Association"** is the fundamental binding construct that (codifies): **WHAT** <which SSM Document or script>, to **WHOM** <which tags or resource targets>, and **WHEN** <immediately upon launch, or recurring schedules> to apply it.
 
 ---
 
@@ -1767,8 +1767,8 @@ At that very instant, State Manager observes the matching tag criteria and, with
 新人が何百人増えようが減ろうが、エンジニアは自宅のベッドで寝返りを打っていればよい。コードの保守も不要、外部サービスの監視も不要。フルマネージドの領分にすべてを委ね、人間はただ結果のダッシュボードを眺める。これこそが「運用オーバーヘッドの最小化」という命題に対する、最も優雅で冷徹な回答といえよう。
 
 <蒞星怜空>
-Precisely. You merely leave a standing order with the gatekeeper: "The moment an initiate arrives bearing a red lapel pin <tag>, shove this sacred scroll <OS configuration document> into their chest and compel them to execute it before they take another step."
-Whether scale-out summons five instances or five thousand, the cloud engineer can roll over in bed and remain asleep. Zero custom scripts to patch, zero auxiliary services to babysit. Relinquishing operational burden to pure managed services—this is the most elegant, ruthlessly efficient answer to minimizing overhead.
+Precisely. You merely leave a standing order with the gatekeeper: "The moment an initiate arrives bearing a red lapel pin <tag>, shove this sacred scroll <OS configuration document> into their chest and (compel) them to execute it before they take another step."
+Whether scale-out summons five instances or five thousand, the cloud engineer can (roll over) in bed and remain asleep. Zero custom scripts to patch, zero (auxiliary) services to babysit. (Relinquishing* operational burden* to) pure managed services—this is the most elegant, ruthlessly efficient answer to minimizing overhead.
 
 ---
 
@@ -1793,7 +1793,7 @@ The entire puzzle just locked together, Hino-rin!
 
 <日乃竜胆>
 Excellent! Your insight has reached crystallization.
-To provide one final layer of enterprise depth: State Manager associations are not limited to one-shot bootstrap executions. By defining a recurring compliance cadence, should an operator inadvertently tamper with the OS configuration later, State Manager automatically re-applies the desired document, establishing continuous self-healing against drift.
+To provide one final layer of enterprise depth: State Manager associations are not limited to one-shot bootstrap executions. By defining a recurring compliance (cadence), should an operator (inadvertently) tamper with the OS configuration later, State Manager automatically re-applies the desired document, establishing continuous self-healing against drift.
 Surgical orchestration of managed capabilities and ruthless separation of architectural concerns—etch into your mind that this clarity of vision represents the true code of the cloud practitioner.
 
 ---
@@ -1802,7 +1802,7 @@ Surgical orchestration of managed capabilities and ruthless separation of archit
 はーい！最初は頭痛薬が必要かと思ったけど、仕組みのドラマが分かるとめちゃくちゃスッキリした〜。ヒノりん、怜空さん、最高にクールな講義をありがとね〜！
 
 <月凪惟緒>
-Understood! At first I thought I'd need a handful of painkillers, but seeing the actual operational drama unfold makes everything crystal clear. Hino-rin, Rea-san, thank you for the wonderfully sharp lecture!
+Understood! At first I thought I'd need a (handful of) painkillers, but seeing the actual operational drama unfold makes everything crystal clear. Hino-rin, Rea-san, thank you for the wonderfully sharp lecture!
 
 
 <日乃竜胆>
@@ -1813,12 +1813,12 @@ Now then, everyone is gathered. Today we unravel question 2049, a challenging pr
 <月凪惟緒>
 ふぁ……ヒノりん、初手から気合入りすぎ。画面の文字が全部同じ灰色の壁に見えるんだけど。そもそも『アーティファクトの構築と管理』って枠組みからして、月曜朝の満員電車並みに息苦しいよ〜。
 <月凪惟緒>
-*Yawn*... Hino-rin, you're way too intense right out of the gate. All the text on the screen looks like a solid wall of gray. The very category of "Artifact Construction and Management" feels as suffocating as a packed Monday morning commuter train.
+*Yawn*... Hino-rin, you're way too intense right out of the gate. All the text on the screen looks like a solid wall of gray. The very category of "Artifact Construction and Management" feels as suffocating as a packed Monday morning (commuter train).
 
 <蒞星怜空>
 ふふ、無垢な白紙に泥を塗るような顔をするな、イオち。問題文の構造は極めて単純だ。週次で焼き直される黄金の金型を、末端の労働者たる開発チームにどうやって手作業なしで押し付けるかという、ただの乾いた統制劇にすぎない。
 <蒞星怜空>
-Heh, don't look as if fresh mud were being smeared across a blank canvas, Io-chi. The anatomy of this question is exceedingly elementary. It is merely a sterile corporate drama about how to foist a golden master template, recast weekly, onto the rank-and-file development teams without manual toil.
+Heh, don't look as if fresh mud were being (smeared across) a blank canvas, Io-chi. The anatomy of this question is exceedingly elementary. It is merely a (sterile) corporate drama about how to (foist) a golden master template, recast weekly, onto the (rank-and-file) development teams without manual toil.
 
 <日乃竜胆>
 師匠の仰る通りだ。問題文の骨子を整理するぞ。「EC2 Image Builderのパイプラインを用い、週次で最新の強化Amazon Linux AMIを構築している」。そして「各開発チームは独自のCloudFormationスタックでEC2 Auto Scalingグループを展開しているが、現状は新しいAMIができるたびにエンジニアが手動で通知し、各チームがテンプレートのマッピングを手作業で書き換えている」。
@@ -1838,12 +1838,12 @@ Umm, first off, what on earth are "AMI" and "EC2 Image Builder"? Isn't an AMI ba
 <日乃竜胆>
 あながち遠くもないが、語弊の塊だな。AMIとは「Amazon Machine Image」の略称だ。仮想サーバーであるEC2インスタンスを起動するための、OSやミドルウェア、セキュリティパッチ、初期設定を丸ごと焼き固めた『起動テンプレートの金型』『マスターディスクのクローン』だ。
 <日乃竜胆>
-Not entirely off the mark, yet riddled with misconception. AMI stands for "Amazon Machine Image." It is the master clone—the golden disk image—containing the OS, middleware, security patches, and initial configs used to spin up EC2 virtual server instances.
+Not entirely off the mark, yet (riddled with misconception). AMI stands for "Amazon Machine Image." It is the master clone—the golden disk image—containing the OS, middleware, security patches, and initial configs used to spin up EC2 virtual server instances.
 
 <日乃竜胆>
 そして「EC2 Image Builder」とは、そのOSイメージの作成、テスト、セキュリティパッチの適用、ディストリビューション（配布）を完全自動化するマネージドパイプラインサービスだ。毎週定期的に最新のパッチを当てた『強化（Hardened）AMI』を無人で作ってくれる。
 <日乃竜胆>
-And "EC2 Image Builder" is a managed pipeline service that automates the creation, testing, security patching, and distribution of those OS images. It spits out an unmanned, "hardened AMI" injected with the freshest patches on a scheduled weekly cadence.
+And "EC2 Image Builder" is a managed pipeline service that automates the creation, testing, security patching, and distribution of those OS images. It spits out an unmanned, "hardened AMI" injected with the freshest patches on a scheduled weekly (cadence).
 
 <月凪惟緒>
 なるほどねぇ。毎週ピカピカのOS焼き型がオートで完成するわけだ。で、それを各チームが「手動でAMIのIDをコピペしてテンプレート書き換えてる」って、それ普通に地獄の賽の河原じゃん。
@@ -1853,7 +1853,7 @@ I see. So a sparkling clean OS mold gets minted automatically every week. And ea
 <蒞星怜空>
 賽の河原どころか、崩れかけた掘っ立て小屋に毎週ペンキを塗り直すために、住民全員に内線電話をかけて回るような滑稽劇だな。ヒューマンエラーによるタイポ一つで本番稼働中のAuto Scalingが即座に瓦解する時限爆弾を、毎週律儀に抱え直しているわけだ。
 <蒞星怜空>
-Far worse than a soul-crushing chore; it is a farce akin to calling every tenant on an intercom each week just to repaint a dilapidated shack. They are conscientiously cradle-holding a ticking time bomb where a single manual typo instantly shatters a live production Auto Scaling fleet.
+Far worse than a soul-crushing chore; it is a (farce) akin to calling every tenant on an intercom each week just to repaint a (dilapidated) (shack). They are (conscientiously) (cradle)-holding a ticking time bomb where a single manual typo instantly shatters a live production Auto Scaling fleet.
 
 <日乃竜胆>
 まったくもってその通りだ。だからこそ「疎結合（Decoupling）」かつ「完全自動化」された解決策が求められる。では、我々の鉄則通り、まずは【誤った選択肢】から順に血祭りにあげていくぞ。
@@ -1888,7 +1888,7 @@ Ah... the Lambda throws an uncaught exception and crashes, or somebody has to ma
 <日乃竜胆>
 その通りだ。さらに最悪なのは運用の主導権（ガバナンス）だ。週次でAMIがビルドされた瞬間に、中央から問答無用でUpdateStackが叩かれる。もし開発チームAが本番環境で大規模セールの最中だったり、デバッグ作業の真っ最中だったらどうなる？
 <日乃竜胆>
-Precisely. And what is exponentially worse is the total theft of deployment autonomy. The split second the AMI finishes building, an unsolicited UpdateStack is fired from the center into every environment. What if Team A is right in the middle of a massive seasonal sale or deep in the trenches of live debugging?
+Precisely. And what is (exponentially worse) is the (total theft of) deployment autonomy. The split second the AMI finishes building, an (unsolicited) UpdateStack is fired from the center into every environment. What if Team A is (right in the middle of) a massive seasonal sale or (deep in the trenches of )live debugging?
 
 <蒞星怜空>
 問答無用でEC2 Auto Scalingの全インスタンスローリングアップデートが走り出し、現場の悲鳴と共にトラフィックが吹き飛ぶわけだ。まるで、寝室で熟睡している住人の頭上から、中央管理室の気まぐれで真夜中にいきなり冷水をぶっかけるような所業だな。
@@ -1898,7 +1898,7 @@ Rolling updates across all Auto Scaling instances trigger without warning, blowi
 <日乃竜胆>
 師匠の例えは相変わらず情け容赦がないが、技術的現実はまさにそれだ。プッシュ型で外部から強制更新をねじ込むアーキテクチャは、結合度が高すぎて保守コストが跳ね上がる。よって、この選択肢は完全に不正解だ。
 <日乃竜胆>
-Master's metaphors remain ruthlessly bleak, yet the architectural reality is identical. Forcing imperative updates from the outside via a push model introduces extreme coupling and sends maintenance overhead through the roof. Thus, this option is decisively incorrect.
+Master's metaphors remain ruthlessly (bleak), yet the architectural (reality is identical). Forcing (imperative) updates from the outside via a push model introduces extreme coupling and sends maintenance overhead through the roof. Thus, this option is decisively incorrect.
 
 <日乃竜胆>
 次に、解説図の『不正解3』を検分するぞ。「Image Builderの配信設定で構築したAMIをAmazon ECRパブリックリポジトリに登録し、各チームのCloudFormationテンプレートではAWS::EC2::Image::Id型のパラメータを宣言して、起動テンプレートのImageIdからFn::ImportValueで他スタックのエクスポート値として参照させます」。
@@ -1918,7 +1918,7 @@ Remarkable intuition, Io-chi. On that single premise alone, this option suffers 
 <蒞星怜空>
 冷蔵庫の製氷スペースに、生きた成牛を丸ごと一頭押し込もうとしているようなグロテスクな設計だな。概念の不法投棄と言ってもいい。
 <蒞星怜空>
-It is a grotesque design, akin to stuffing a fully grown, living bovine into the icebox of a domestic refrigerator. Nothing short of the illicit dumping of architectural concepts.
+It is a grotesque design, akin to stuffing a fully grown, living (bovine) into the icebox of a domestic refrigerator. Nothing short of the (illicit) dumping of architectural concepts.
 
 <日乃竜胆>
 さらに、後半の『Fn::ImportValueによるクロススタック参照』も致命的な欠陥を孕んでいる。CloudFormationのクロススタック参照でエクスポートされた値は、他スタックから参照されている間、一切の更新・変更がロックされるという鉄の制約がある。
@@ -1933,12 +1933,12 @@ Ah! Which means, even if a new AMI is baked weekly, you can't update that export
 <日乃竜胆>
 その通りだ。値が定期的に変わる動的な識別子を配る用途に、クロススタック参照を使うのは根本的な設計破綻だ。ECRの誤用とエクスポート値の更新不可制約、二重の理由で論外だな。
 <日乃竜胆>
-Exact. Utilizing cross-stack references for dynamic values that shift weekly represents a fundamental architectural failure. Between the blatant misuse of ECR and the immutable export lock, it is wholly out of the question.
+Exact. Utilizing cross-stack references for dynamic values that shift weekly represents a fundamental architectural failure. Between the (blatant) misuse of ECR and the immutable export lock, it is (wholly) out of the question.
 
 <日乃竜胆>
 続いて、解説図の『不正解4』に引導を渡す。「Image Builderのイメージパイプラインの配信設定で、構築されたAMIのIDをAWS Secrets Managerのシークレットに保存します。各チームのCloudFormationテンプレートで、動的参照{{resolve:secretsmanager:hardened-ami:SecretString:imageId}}を起動テンプレートのImageIdプロパティに指定し、スタック更新時に常に最新のAMI IDが解決されるようにします」。
 <日乃竜胆>
-Next, we deliver the death blow to "Incorrect 4": "Save the built AMI ID into an AWS Secrets Manager secret within Image Builder distribution settings. In each team's template, specify dynamic reference {{resolve:secretsmanager:hardened-ami:SecretString:imageId}} in the launch template's ImageId property, resolving the latest ID upon stack updates".
+Next, we (deliver the death blow to )"Incorrect 4": "Save the built AMI ID into an AWS Secrets Manager secret within Image Builder distribution settings. In each team's template, specify dynamic reference {{resolve:secretsmanager:hardened-ami:SecretString:imageId}} in the launch template's ImageId property, resolving the latest ID upon stack updates".
 
 <月凪惟緒>
 うーん……動的参照ってなんか便利そうじゃん。Secrets Managerならパスワードとか保管するやつでしょ？ なんでダメなの？
@@ -1948,7 +1948,7 @@ Hmm... dynamic referencing sounds super convenient though. Secrets Manager store
 <日乃竜胆>
 目的と手段の履き違えだな。第一に、AMI IDは『ami-0123456789abcdef0』といった単なる公開リソースの識別子だ。機密情報（シークレット）ではない。機密でもない平文IDを保管するために、シークレット1件あたり月額0.40ドルの固定課金とAPIコール課金が発生するSecrets Managerを動員するのは、コスト設計として極めて不適切だ。
 <日乃竜胆>
-A total conflation of means and ends. First off, an AMI ID is simply an unclassified resource identifier like "ami-0123456789abcdef0." It is not confidential data. Mobilizing Secrets Manager—incurring a fixed $0.40 monthly charge per secret plus API access fees—merely to stash an unencrypted ID is financially atrocious.
+A total conflation of (means and ends). (First off), an AMI ID is simply an (unclassified) resource identifier like "ami-0123456789abcdef0." It is not confidential data. (Mobilizing) Secrets Manager—incurring a fixed $0.40 monthly charge per secret plus API access fees—merely to stash an unencrypted ID is financially (atrocious).
 
 <日乃竜胆>
 第二に、Image Builderの配信設定（Distribution Settings）のネイティブな出力先として、Secrets Managerへの直接書き込みなどそもそも用意されていない。そして第三に、CloudFormationの動的参照構文でSecrets Managerから取得した平文は、テンプレート側で『型検証（Validation）』が効かない。
@@ -1958,12 +1958,12 @@ Second, Image Builder's Distribution Settings provide zero native integration to
 <蒞星怜空>
 道端に落ちている石ころの番号札を金庫に保管するために、毎月貸金庫の賃料を銀行に払い続けるような倒錯だな。しかもその金庫、外のベルトコンベア（Image Builder）から直接石を投げ入れられない構造になっているときた。滑稽の極みだ。
 <蒞星怜空>
-It is a perversion akin to renting a high-security bank vault every month just to store a stray pebble's inventory tag. What's more, the conveyor belt outside <Image Builder> lacks any slot to drop the pebble into that vault in the first place. The absolute height of absurdity.
+It is a (perversion) akin to renting a high-security bank vault every month just to store a stray pebble's inventory tag. (What's more), the conveyor belt outside <Image Builder> lacks any slot to drop the pebble into that vault in the first place. The (absolute height of) absurdity.
 
 <月凪惟緒>
 なるほどねぇ……。お金の無駄だし、機能的にも繋がってないんだ。じゃあヒノりん、大本命の正解はどう構築するのが美しいわけ？
 <月凪惟緒>
-Makes total sense... A complete waste of money, and mechanically disconnected to boot. So Hino-rin, how do we elegantly construct the definitive correct answer?
+Makes total sense... A complete waste of money, and mechanically disconnected to boot. So Hino-rin, how do we elegantly construct the (definitive) correct answer?
 
 <日乃竜胆>
 刮目せよ。これこそがAWSにおける黄金律、『正解1』のアーキテクチャだ。「Image Builderのイメージパイプラインの配信設定で、構築されたAMIのIDをAWS Systems Manager Parameter Storeの指定パラメータに書き込みます。各チームのCloudFormationテンプレートでは、AWS::SSM::Parameter::Value[AWS::EC2::Image::Id]<https://www.google.com/search?q=AWS::EC2::Image::Id>型のパラメータにそのパラメータ名を既定値として指定し、起動テンプレートのImageIdから参照します」。
@@ -1978,7 +1978,7 @@ There it is—"Systems Manager Parameter Store" and that absurdly long parameter
 <日乃竜胆>
 完璧な『疎結合』と『型の安全性』だ。順を追って説明するぞ。まず、EC2 Image Builderの配信設定には、ビルド完了時にAMI IDをSystems Manager Parameter Storeの指定したパス（例: `/hardened-ami/latest`）に自動で書き込む標準機能が備わっている。しかも標準パラメータであれば追加費用なし、無料だ。
 <日乃竜胆>
-Flawless "loose coupling" and absolute "type safety". Let us unpack this systematically. First, Image Builder's Distribution Settings feature built-in support to automatically write the resulting AMI ID to a designated Parameter Store path <e.g., `/hardened-ami/latest`> upon build completion. Better yet, standard parameters incur zero extra fees—completely free.
+Flawless "loose coupling" and absolute "type safety". Let us unpack this systematically. First, Image Builder's Distribution Settings feature built-in support to automatically write the resulting AMI ID to a designated Parameter Store path <e.g., `/hardened-ami/latest`> (upon *build* completion). (Better yet), standard parameters incur zero extra fees—completely free.
 
 <日乃竜胆>
 そして開発チーム側のCloudFormationだ。ここが最もエレガントな仕掛けだ。テンプレート内のパラメータ型に `AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>` を指定すると何が起きるか？
@@ -1993,17 +1993,17 @@ The template only hardcodes the static parameter name <`/hardened-ami/latest`>. 
 <月凪惟緒>
 ……！ てことは、開発チームは自分のテンプレートを1文字も書き換えなくていいの！？ 「スタック更新」のボタンをポチッと押すだけで、勝手にその週の最新AMIが引っ張られてくるってこと！？
 <月凪惟緒>
-...! That means the dev teams don't have to alter a single character of their templates!? Just by initiating a stack update, it pulls down that week's latest AMI all on its own!?
+...! That means the dev teams don't have to alter a single character of their templates!? Just by initiating a stack update, it pulls down that week's latest AMI (all on its own)!?
 
 <日乃竜胆>
 その通りだ！ パイプライン側は「新しいAMI IDをParameter Storeの決まった場所に上書きする」だけでよく、どのチームがそれを使っているかを知る必要すらない。開発チーム側も「決められたパラメータ名を見に行く」だけでよく、パイプラインの裏側の実装を意識する必要がない。これぞ理想の『疎結合（Decoupled Architecture）』だ。
 <日乃竜胆>
-Precisely! The pipeline only has to overwrite the AMI ID at that known Parameter Store path, completely oblivious to which teams consume it. The dev teams only need to point to that parameter key, entirely agnostic of the pipeline's internal mechanics. This is textbook loose coupling at its finest.
+Precisely! The pipeline only has to overwrite the AMI ID at that known Parameter Store path, completely (oblivious to) which teams consume it. The dev teams only need to point to that parameter key, entirely (agnostic) of the pipeline's internal mechanics. This is textbook loose coupling (at its finest).
 
 <蒞星怜空>
 中央の給水塔に澄んだ水を注ぎ込む者と、蛇口をひねって水を汲む者。互いの顔も名前も知る必要はなく、ただ規約という配管（Parameter Store）だけを共有する。中央が勝手に私生活へ押し入ることもなければ、冷蔵庫に牛を押し込む狂気もない。実に無機質で、冷徹で、美しい解決策だな。
 <蒞星怜空>
-One party fills pure water into the central reservoir; the other merely turns on the faucet when thirsty. Neither needs to know the other's name, united only by the plumbing of convention—Parameter Store. No central invasion of privacy, no madness of shoving cattle into a freezer. A thoroughly sterile, dispassionate, and beautiful solution.
+One party fills pure water into the central (reservoir); the other merely turns on the faucet when thirsty. Neither needs to know the other's name, united only by the plumbing of convention—Parameter Store. No central invasion of privacy, no madness of shoving cattle into a freezer. A thoroughly sterile, (dispassionate), and beautiful solution.
 
 <月凪惟緒>
 ふふ、ヒノりんと怜空さんの解説のおかげで、あの難解な文字列のパズルが全部一本の線に繋がったよ。テンプレート改変なし、手動通知なし、コスト最適、型安全……正解1番しか勝たんね！
@@ -2013,7 +2013,7 @@ Hehe, thanks to Hino-rin and Rea-san's breakdown, that cryptic puzzle of strings
 <日乃竜胆>
 理解できたようで何よりだ。CloudFormationにおける動的な外部参照の作法と、マネージドサービスの責務の分離。この2つを常に意識していれば、プロフェッショナル試験の如何なる難所も恐るるに足らん。復習を怠るなよ！
 <日乃竜胆>
-I am pleased you grasped it. Dynamic external parameter resolution in CloudFormation, combined with strict separation of service concerns. Keep these two tenets burned into your mind, and no hurdle on the Professional exam shall make you flinch. Never neglect your review!
+I am pleased you grasped it. Dynamic external parameter resolution in CloudFormation, combined with strict separation of service concerns. Keep these two (tenets) burned into your mind, and no hurdle on the Professional exam shall make you flinch. Never neglect your review!
 
 
 日乃竜胆：
@@ -2024,7 +2024,7 @@ We will now conduct an exercise on this question, which aligns with the AWS Cert
 日乃竜胆：
 問題文の骨子を明確にしておこう。「ECS on EC2で複数のマイクロサービスを運用」「ALBでリクエストを分散」「コンテナのアプリログとALBアクセスログをS3へ保存し、準リアルタイム分析に活用する」。この要件を満たす3つの組み合わせを導き出さねばならない。
 Rindo Hino:
-Let us clarify the core premise of the question: "Operating multiple microservices on ECS on EC2," "distributing requests with an ALB," and "storing container application logs and ALB access logs in S3 for near-real-time analytics". We must derive the correct combination of three procedures.
+Let us clarify the core premise of the question: "Operating multiple microservices on ECS on EC2," "distributing requests with an ALB," and "storing container application logs and ALB access logs in S3 for near-real-time analytics". We must (derive) the correct combination of three procedures.
 
 月凪惟緒：
 うー……ヒノりん、開幕から情報密度の圧がすごくて脳が低温停止しそう……。ECSとかALBとかマイクロサービスとか、カタカナの呪文が多すぎるよぉ。私、まだログインボーナス受け取ったばかりの初期村住人なんだけど……。
@@ -2034,12 +2034,12 @@ Uh... Hino-rin, the sheer density of information right from the opening is about
 蒞星怜空：
 ふっ……構うことはない。初期村の住人が突如として奈落の底の魔境に放り込まれ、概念の濁流に圧殺される様を眺めるのも一興だ。インフラの深淵とは常に理不尽であり、無知な子羊を容赦なく丸呑みにする。
 Rea Rize:
-Heh... no matter. Watching a novice from the starter village get hurled straight into the abyss and crushed by a torrent of concepts is quite entertaining. The abyss of infrastructure is ever unreasonable and swallows ignorant lambs without mercy.
+Heh... no matter. Watching a novice from the starter village (get hurled straight into) the abyss and crushed by a torrent of concepts is quite entertaining. The abyss of infrastructure is ever unreasonable and swallows ignorant lambs without mercy.
 
 日乃竜胆：
 怜空さん、初学者を無暗に威嚇するのはおやめください。イオち、案ずるな。すべて基礎概念から解きほぐす。まず、ウェブシステムが動く物理的・論理的構造からだ。
 Rindo Hino:
-Rea-san, please refrain from gratuitously intimidating a beginner. Fear not, Io-chi. I will untangle everything from foundational concepts. We begin with the physical and logical structure through which a web system operates.
+Rea-san, please refrain from (gratuitously) intimidating a beginner. Fear not, Io-chi. I will untangle everything from foundational concepts. We begin with the physical and logical structure through which a web system operates.
 
 日乃竜胆：
 「ECS on EC2」とは、仮想サーバー（EC2）を土台として、その上で軽量な独立環境である「コンテナ（Dockerコンテナ）」を束ねて動かすオーケストレーションサービス（ECS）のことだ。アプリを小分けにした単位を「マイクロサービス」と呼ぶ。
@@ -2049,7 +2049,7 @@ Rindo Hino:
 月凪惟緒：
 あ〜、なるほどねぇ。大きいワンルームマンション（EC2）の中に、仕切りで小部屋（コンテナ）をいっぱい作って、別々の住人（マイクロサービス）を住まわせてる感じ？
 Io Tsukina:
-Ah, I see. So it's like taking a huge studio apartment <EC2>, dividing it into tiny cubicles <containers>, and having different tenants <microservices> live inside?
+Ah, I see. So it's like taking a huge studio apartment <EC2>, dividing it into tiny (cubicles) <containers>, and having different tenants <microservices> live inside?
 
 日乃竜胆：
 慧眼だな。まさにその比喩で相違ない。そして「ALB（Application Load Balancer）」は、外部からやってくる膨大な利用者のアクセスを交通整理し、適切な小部屋へと振り分ける中央受付窓口だ。
@@ -2064,7 +2064,7 @@ The receptionist is the ALB, and the cubicles are the containers. So what's the 
 日乃竜胆：
 「ログの収集と保管」だ。受付窓口が誰をどこに通したかという訪問記録（ALBアクセスログ）と、部屋の中の住人が活動中に出した発言記録（コンテナ標準出力ログ）の双方を、巨大なデータ倉庫である「Amazon S3」へ送る必要がある。しかも「準リアルタイム」でな。
 Rindo Hino:
-"Log collection and retention". We must deliver both the visitor ledger recording who was sent where <ALB access logs> and the activity transcripts muttered by the tenants inside <container stdout logs> into a massive storage repository, "Amazon S3". Furthermore, it must be done in "near-real-time".
+"Log collection and (retention)". We must deliver both the visitor ledger recording who was sent where <ALB access logs> and the activity transcripts muttered by the tenants inside <container stdout logs> into a massive storage repository, "Amazon S3". Furthermore, it must be done in "near-real-time".
 
 月凪惟緒：
 準リアルタイム……？「今すぐ！」じゃなくて「ほぼ今すぐ！」ってこと？
@@ -2074,12 +2074,12 @@ Near-real-time...? Does that mean not "instantaneously this millisecond," but "p
 蒞星怜空：
 その通りだ。1ミリ秒の遅延も許さぬ絶対的即時性ではなく、数十秒から数分程度の遅延枠に収めて分析基盤へ流し込む状態を指す。人間の愚行が記録されてから断罪されるまでの、わずかな猶予時間のようなものだ。
 Rea Rize:
-Precisely. It does not demand absolute zero-millisecond immediacy, but rather ensures data flows into the analytics warehouse within a practical window of tens of seconds to a few minutes. Think of it as the brief grace period between the committing of a folly and its inevitable judgment.
+Precisely. It does not demand absolute zero-millisecond immediacy, but rather ensures data flows into the analytics warehouse within a practical window of tens of seconds to a few minutes. Think of it as the brief grace period between the (committing of a folly) and its inevitable judgment.
 
 日乃竜胆：
 では、本問の解法手順に入ろう。私の講義方針に従い、まずは「明確な誤りである選択肢」から順にメスを入れていく。誤謬の構造を白日の下に晒すことこそ、堅牢な知識を築く最短路だからだ。
 Rindo Hino:
-Now, let us proceed into solving this problem. In accordance with my lecture methodology, we shall dissect the **"categorically incorrect options"** first. Exposing the anatomy of fallacies is the most reliable path toward forging unassailable engineering intuition.
+Now, let us proceed into solving this problem. In accordance with my lecture methodology, we shall dissect the **"categorically incorrect options"** first. Exposing the anatomy of fallacies is the most reliable path toward forging (unassailable) engineering intuition.
 
 ---
 
@@ -2101,12 +2101,12 @@ The first option deserving absolute condemnation is this:
 月凪惟緒：
 え〜？「1分間隔」って書いてあるよ？すごく小まめに頑張ってて、めちゃくちゃ準リアルタイムっぽくない？1分ごとにせっせと運んでくれる健気な小人さんみたいじゃん。
 Io Tsukina:
-Eh? But it says "every 1 minute"? Isn't running every minute super diligent and totally feels like near-real-time? Sounds like a hardworking little brownie carrying logs back and forth.
+Eh? But it says "every 1 minute"? Isn't running every minute super diligent and totally feels like near-real-time? Sounds like a hardworking (little brownie) carrying logs back and forth.
 
 日乃竜胆：
 欺瞞だな。その「健気さ」の裏に潜むAPI仕様の制約を見落としている。怜空さん、この愚策の致命的欠陥を教えてやれ。
 Rindo Hino:
-A complete illusion. That overlooks the fatal API constraints lurking beneath such superficial "diligence". Rea-san, enlighten her on the fatal flaw of this disastrous design.
+A complete illusion. That overlooks the fatal API constraints lurking beneath such superficial "(diligence)". Rea-san, (enlighten *her* on )the fatal flaw of this disastrous design.
 
 蒞星怜空：
 くく……この構成は、1分ごとにピタゴラスイッチの引き金を引くが、装置の出口が何時間も詰まりっぱなしになる喜劇そのものだ。CloudWatch Logs の `CreateExportTask` は、バックグラウンドで長大な過去ログを束ねて掃き出す「非同期バッチ処理」にすぎない。
@@ -2126,7 +2126,7 @@ Wait...! So while the previous task might take an entire hour to finish, a new b
 蒞星怜空：
 そうだ。当然、後続の小人たちは門前払いを食らい、エラーの屍を築き上げる。システム運用者のSlackチャンネルが深夜2時に赤黒いアラートで埋め尽くされ、精神崩壊に至る美しい光景が目に浮かぶだろう。したがって、準リアルタイム転送に ExportTask を持ち出すのは正気の沙汰ではない。
 Rea Rize:
-Precisely. Naturally, every subsequent worker gets slammed in the face with an exception, piling up a pyramid of failed invocations. One can vividly picture the operator's Slack channel drowning in blood-red alerts at 2:00 AM, ushering in utter psychological ruin. Therefore, leveraging ExportTask for near-real-time pipelines is pure madness.
+Precisely. Naturally, every subsequent worker gets slammed in the face with an exception, piling up a pyramid of failed invocations. One can vividly picture the operator's Slack channel drowning in blood-red alerts at 2:00 AM, (ushering) in utter psychological ruin. Therefore, leveraging ExportTask for near-real-time pipelines is pure madness.
 
 ---
 
@@ -2148,17 +2148,17 @@ Next, let us strike down the second erroneous option:
 月凪惟緒：
 うーん……ターゲットグループって、さっきの部屋（コンテナ）たちをまとめるグループ名札みたいなやつだよね？そこに「ログ出しといてね」ってチェック入れられたら便利そうなのに、ダメなの？
 Io Tsukina:
-Hmm... A target group is like the roster that bundles those rooms <containers> together, right? Wouldn't it be super convenient if we could just check a box there saying "drop the logs here"? Why is that wrong?
+Hmm... A target group is like the (roster) that bundles those rooms <containers> together, right? Wouldn't it be super convenient if we could just check a box there saying "drop the logs here"? Why is that wrong?
 
 日乃竜胆：
 存在しない妄想の機能を語っているからだ。ターゲットグループのヘルスチェックとは、ターゲットが生存しているか否かを問いただす死活監視設定（監視パスや間隔、しきい値）にすぎない。そこにアクセスログを出力する機能など、AWSのいかなる次元にも存在しない。
 Rindo Hino:
-Because it describes an entirely fictitious feature that does not exist in reality. A target group's health check is purely a liveness probe configuration <path, interval, threshold> to determine whether a target is healthy. No capability to emit access logs exists within that configuration in any dimension of AWS.
+Because it describes an entirely (fictitious) feature that does not exist in reality. A target group's health check is purely a (liveness) probe configuration <path, interval, threshold> to determine whether a target is healthy. No capability to emit access logs exists within that configuration in any dimension of AWS.
 
 蒞星怜空：
 試験作成者が、試験会場の緊迫感で朦朧とした受験者を陥れるために調合した、甘美な毒薬だな。ALBのアクセスログは「ロードバランサー自体の属性（Attributes）」として設定するものであり、配下のターゲットグループではない。手足を動かす筋肉の設定に、胃カメラの録画スイッチを探すような的外れさだ。
 Rea Rize:
-A sweet poison brewed by exam creators to ensnare anxious candidates whose minds are blurred under examination stress. ALB access logs are configured strictly as an **"Attribute of the Load Balancer itself,"** never on the subordinate target groups. It is as absurd as searching for an endoscopy recording switch inside a muscle diagram.
+A sweet poison brewed by exam creators to (ensnare) anxious candidates whose minds are (blurred under) examination stress. ALB access logs are configured strictly as an **"Attribute of the Load Balancer itself,"** never on the (subordinate) target groups. It is as absurd as searching for an (endoscopy) recording switch inside a muscle diagram.
 
 月凪惟緒：
 うわぁ……引っかけ問題こわっ……。「それっぽいボタン」を幻視させにきてるんだね……。
@@ -2179,18 +2179,18 @@ Yikes... trap questions are terrifying... They literally try to hallucinate a pl
 誤り解説の掉尾を飾る第3の選択肢だ。
 『ECS タスク定義に FireLens ログルーターコンテナを追加し、Fluentd プラグインで各コンテナのログを直接 S3 バケットへ書き込む構成とする』
 Rindo Hino:
-Bringing up the rear of the incorrect options is this third candidate:
+Bringing up the (rear of )the incorrect options is this third candidate:
 "Add a FireLens log router container to the ECS task definition and configure a Fluentd plugin to write container logs directly to an S3 bucket".
 
 月凪惟緒：
 あっ！これは知ってるかも！FireLensとかFluentdって、現場のつよつよエンジニアがよくTwitter（X）で誇らしげに語ってるイケてる技術でしょ？直接S3に送るなら中継地点もないし、一番早くて強そうに見えるけど……。
 Io Tsukina:
-Ah! I might actually recognize this! FireLens and Fluentd are those ultra-cool tools senior engineers flex about on tech Twitter, right? Writing directly to S3 skips middle hops, so it feels like the fastest and most badass way...
+Ah! I (might actually recognize) this! FireLens and Fluentd are those ultra-cool tools senior engineers (flex about) on tech Twitter, right? Writing directly to S3 skips (middle hops), so it feels like the fastest and most badass way...
 
 日乃竜胆：
 技術的に「可能であること」と、アーキテクチャとして「最適であること」は別次元の命題だ。技術の刀を抜く場所を弁えねば自滅する。
 Rindo Hino:
-Whether something is "technically feasible" and whether it is "architecturally optimal" are propositions on completely different planes. Unsheathing the blade of technology without situational prudence only leads to self-destruction.
+Whether something is "technically (feasible)" and whether it is "architecturally optimal" are propositions (on *completely* different planes). (Unsheathing) the blade of technology without situational (prudence) only leads to self-destruction.
 
 蒞星怜空：
 ふふ……イオち、各コンテナから直接S3へログを書き込むということは、コンテナ自身がバッファリング、リトライ制御、ネットワークの断絶、S3のAPI制限を自前で背負い込むことを意味する。1つのマイクロサービスがスパイクしてログを噴射した瞬間、Fluentdがメモリを食い潰してアプリケーションごと共倒れになる地獄絵図だ。
@@ -2200,12 +2200,12 @@ Heh... Io-chi, forcing every individual container to write straight into S3 mean
 日乃竜胆：
 その通りだ。FireLensは極めて柔軟だが、バッファ管理や障害時のリカバリを自前運用する必要があり、運用負荷が著しく増大する。さらに、一度S3へ直接書き込んでしまえば、後から「このログをリアルタイム検知ツールや別のSIEMにも流したい」となった際、中継地点がないため柔軟な分岐が封じられる。
 Rindo Hino:
-Spot on. While FireLens is exceptionally versatile, managing local buffers and crash recoveries requires self-managed operational overhead, vastly increasing maintenance burdens. Furthermore, bypassing an ingestion hub completely robs you of architectural agility should you later wish to fan out those streams to real-time alerting systems or external SIEMs.
+Spot on. While FireLens is exceptionally (versatile), managing local buffers and crash recoveries requires self-managed operational overhead, vastly increasing maintenance burdens. Furthermore, bypassing an ingestion hub completely robs you of architectural agility should you later wish to fan out those streams to real-time alerting systems or external SIEMs.
 
 月凪惟緒：
 あ〜……「自前の台車で直接高速道路に突撃するな」ってことね。整備された配送センターを通さないと事故るんだ。
 Io Tsukina:
-Ah... basically, "don't drive your rickety handcart directly onto the expressway." If you don't route packages through a proper fulfillment center, you're bound to crash.
+Ah... (basically), "don't drive your (rickety) handcart directly onto the (expressway)." If you don't route packages through a proper (fulfillment center), you're (bound to crash).
 
 ---
 
@@ -2220,7 +2220,7 @@ Ah... basically, "don't drive your rickety handcart directly onto the expressway
 日乃竜胆：
 これで3つの泥濘を払い落とした。ここからは、正解となる3つの選択肢が如何にして無駄のない完全なストリーミング基盤を構築するか、その論理構造を紐解く。
 Rindo Hino:
-We have brushed away all three quagmires. From here, we will unravel how the three correct options interlock to construct an impeccably lean, resilient streaming pipeline.
+We have brushed away all three quagmires. From here, we will unravel how the three correct options (interlock) to construct an (impeccably) lean, (resilient) streaming pipeline.
 
 #### 正解選択肢 1（ログ収集の起点）：awslogs ドライバーの導入
 
@@ -2240,17 +2240,17 @@ First, the foundational step to harvest container logs safely:
 月凪惟緒：
 「標準出力（stdout）」って、プログラムが画面にポロッと吐き出す「print文」とかメッセージのことだよね？コンテナくんは特別なファイル保存をしなくても、画面に喋るだけでいいの？
 Io Tsukina:
-"Standard output <stdout>" just means the plain console prints and text an app naturally spits out, right? So the container doesn't even need to write to special files—it just talks to stdout and it's fine?
+"Standard output <stdout>" just means the plain console prints and text an app naturally spits out, right? So the container doesn't even need to write to special files—it just talks to (stdout) and it's fine?
 
 日乃竜胆：
 その通りだ。コンテナ設計の至高の原則（The Twelve-Factor App）においても、アプリ自身はログのルーティングを意識せず、単に標準出力へ吐き出すべきとされている。Dockerデーモンがそれを受け止め、`awslogs` ログドライバーを通じてマネージドな CloudWatch Logs へと直接吸い上げるのだ。
 Rindo Hino:
-Precisely. In the sacred principles of containerized design <The Twelve-Factor App>, an application should remain blissfully agnostic of log routing, simply streaming events to stdout. The Docker daemon captures it and routes it directly to managed CloudWatch Logs via the `awslogs` log driver.
+Precisely. In the sacred principles of containerized design <The Twelve-Factor App>, an application should remain blissfully (agnostic) of log routing, simply streaming events to stdout. The Docker daemon captures it and routes it directly to managed CloudWatch Logs via the `awslogs` log driver.
 
 蒞星怜空：
 EC2ホスト上にエージェントを走らせ、IAMロールで `logs:CreateLogStream` と `logs:PutLogEvents` の権限を授けるだけで、コンテナ側の責務は完結する。コンテナ自身が肥大化したログエンジンを抱え込んで溺死するリスクを根絶できるわけだ。
 Rea Rize:
-Simply run the agent on the EC2 host and bestow the IAM permissions for `logs:CreateLogStream` and `logs:PutLogEvents` upon the instance role to complete the container's responsibility. This completely eradicates the risk of containers drowning under the weight of an oversized local logging engine.
+Simply run the agent on the EC2 host and (bestow) the IAM permissions for `logs:CreateLogStream` and `logs:PutLogEvents` upon the instance role to complete the container's responsibility. This completely (eradicates) the risk of containers drowning under the weight of an oversized local logging engine.
 
 #### 正解選択肢 2（準リアルタイムの動脈）：Subscription Filter と Kinesis Data Firehose
 
@@ -2280,7 +2280,7 @@ The essence is surprisingly similar. The moment an event hits CloudWatch Logs, t
 蒞星怜空：
 Firehose（消防ホース）の名は伊達ではない。押し寄せる濁流のようなログデータを一手に引き受け、最小60秒または1MB単位のバッファで整流し、S3へ自動で流し込んでくれるフルマネージドサービスだ。自動スケーリングするため、どれほどログが爆発しようと我々が夜中に起きてサーバーを増設する必要すらない。
 Rea Rize:
-The name "Firehose" is no idle metaphor. It is a fully managed pipeline that ingests raging deluges of streaming data, conditions them into tidy micro-batches with intervals down to 60 seconds or 1MB buffers, and flushes them into S3. Because it scales automatically, no matter how violently log volume surges, we never have to wake up at midnight to provision capacity.
+The name "Firehose" is no idle metaphor. It is a fully managed pipeline that ingests (raging) (deluges) of streaming data, (conditions *them* into )tidy micro-batches with intervals down to 60 seconds or 1MB buffers, and (flushes *them* into) S3. Because it scales automatically, no matter how violently log volume surges, we never have to wake up at midnight to provision capacity.
 
 月凪惟緒：
 わ〜、まさに準リアルタイムの主役！CloudWatch Logs から Firehose を経由してS3へ……これが王道の黄金ルートなんだね。
@@ -2310,7 +2310,7 @@ Unlike that trap earlier with "target group health checks," this properly specif
 日乃竜胆：
 そうだ。ALBのアクセスログは、ロードバランサー本体の属性設定画面から直接S3バケットを指定して有効化する。ALB側が自律的にログをgzip圧縮し、約5分間隔でS3へ保存してくれる仕様だ。CloudWatch Logsを経由する必要すらなく、これがAWSの最も標準的かつ高信頼な正道なのだ。
 Rindo Hino:
-Correct. ALB access logs are enabled directly from the load balancer's attribute panel by specifying the target S3 bucket. The ALB autonomously gzip-compresses the logs and deposits them into S3 at approximately 5-minute intervals. It does not even need to transit through CloudWatch Logs; this is AWS's most standard and resilient best practice.
+Correct. ALB access logs are enabled directly from the load balancer's attribute panel by specifying the target S3 bucket. The ALB autonomously gzip-compresses the logs and (deposits *them* into) S3 at (approximately) 5-minute intervals. It does not even need to transit through CloudWatch Logs; this is AWS's most standard and resilient best practice.
 
 蒞星怜空：
 クク……美しいな。
@@ -2326,43 +2326,43 @@ Zero bespoke operational clutter; AWS managed components meshing together like f
 月凪惟緒：
 ふぇ〜……！最初は意味不明な呪文の羅列に見えたのに、それぞれの役割と「なんでダメなのか」を聞いたら、パズルのピースが全部カチッてハマった感じする……！ヒノりん、怜空さん、ありがとう！
 Io Tsukina:
-Phew...! At first it looked like a totally incomprehensible wall of cursed incantations, but once I understood each component's role and why the bad options fail, every puzzle piece snapped cleanly into place...! Thank you, Hino-rin and Rea-san!
+Phew...! At first it looked like a totally (incomprehensible) wall of cursed incantations, but once I understood each component's role and why the bad options fail, every puzzle piece (snapped cleanly into )place...! Thank you, Hino-rin and Rea-san!
 
 日乃竜胆：
 礼には及ばん。誤った選択肢の欺瞞を見抜き、マネージドサービスの責務境界を正確に把握すること。これこそがDevOpsプロフェッショナル試験を制する唯一絶対の太刀筋だ。復習を怠るなよ、イオち。
 Rindo Hino:
-No gratitude is necessary. Seeing through the deception of invalid options and rigorously mastering the boundaries of managed services—this is the one true sword stroke to conquer the DevOps Professional examination. Do not neglect your review, Io-chi.
+(No gratitude is necessary). Seeing through the deception of invalid options and rigorously mastering the boundaries of managed services—this is the one true sword stroke to conquer the DevOps Professional examination. Do not neglect your review, Io-chi.
 
 
 日乃竜胆
 これより、AWS Certified DevOps Engineer - Professional <DOP-C02> 対策の講義を始める。対象とするのは問題【DOP-2048】だ。まずは問題の前提条件と要求仕様の骨子を寸分の狂いもなく洗い出す。イオち、背筋を伸ばせ。怜空さんも、妙な茶々を入れる隙がないほど完璧に切り刻んでみせるので、見届けていただこう。
 
 Rindo Hino
-We shall now commence the lecture for the AWS Certified DevOps Engineer - Professional <DOP-C02> examination. Our focus is Question [DOP-2048]. First, we will dissect the prerequisites and architectural requirements with absolute precision. Iochi, sit straight. And Rea-san, I invite you to witness as I carve through this without leaving room for your peculiar interjections.
+We shall now commence the lecture for the AWS Certified DevOps Engineer - Professional <DOP-C02> examination. Our focus is Question [DOP-2048]. First, we will dissect the prerequisites and architectural requirements with absolute precision. Iochi, sit straight. And Rea-san, I invite you to witness as I (carve through) this (without leaving room for )your (peculiar) (interjections).
 
 月凪惟緒
 はーい、ヒノりん。言ってるそばから冷気が室温を削り取ってる気がするけど……。えーっと、画面の文字を眺めてるだけで、なんか漢字とカタカナが暴風雪みたいに殴りかかってくるんだよね。「Jenkins」とか「社内独自のコンパイラ」とか……そもそもこれ、何を困ってる状況なわけ？
 
 Io Tsukina
-Okaaay, Hino-rin. Though I feel like the room temperature is dropping just from your opening words... Ummm, just staring at the text on screen feels like a blizzard of technical jargon is hitting me in the face. "Jenkins"? "Proprietary internal compiler"? What's their actual problem in plain words here?
+Okaaay, Hino-rin. Though I feel like the room temperature is dropping just from your opening words... Ummm, just staring at the text on screen feels like a blizzard of technical jargon is hitting me in the face. "Jenkins"? "(Proprietary) internal compiler"? What's their actual problem in plain words here?
 
 蒞星怜空
 ふっ、相変わらず冷徹な切れ味だな、ヒノりんは。……イオち、要するにこれは「自社の地下室で秘伝のタレと化していた骨董品の巨大自動調理器（オンプレミスのJenkins）を、AWSという近代的なクラウド厨房へ引っ越しさせたい」という、現場の脂汗が染み付いた救済劇だよ。だがその調理器には、世間一般の規格から外れた自家製の包丁（社内独自コンパイラ）と怪しげな調味料（専用ライブラリ）がギチギチに詰め込まれているわけだ。
 
 Rea Rize
-Heh, as razor-sharp and cold as ever, Hino-rin. ...Io-chi, in essence, this is a grease-stained tragedy from the trenches where an enterprise wants to migrate their antique, subterranean auto-cooker <an on-premises Jenkins setup>—which has basically become an untouchable secret sauce—into the modern cloud kitchen of AWS. Except that cooker is packed with non-standard, homemade cleavers <proprietary compilers> and suspicious bespoke seasoning <private libraries>.
+Heh, as razor-sharp and cold as ever, Hino-rin. ...Io-chi, in essence, this is a (grease)-stained tragedy from the trenches where an enterprise wants to migrate their antique, subterranean auto-cooker <an on-premises Jenkins setup>—which has basically become an untouchable secret sauce—into the modern cloud kitchen of AWS. Except that cooker is packed with non-standard, homemade (cleavers) <proprietary compilers> and suspicious bespoke seasoning <private libraries>.
 
 日乃竜胆
 怜空さんの例えは相変わらず劇画調で胃にもたれるが、本質は捉えている。問題文を精読するぞ。「ある企業のDevOpsエンジニアは、Javaアプリケーションのビルドを自社データセンターのJenkinsサーバーで実行している。ビルドには社内独自のコンパイラと複数の専用ライブラリが必要で、これらはAWSが提供する標準のビルド環境には含まれていない。エンジニアはこのビルド処理をAWSに移行し、生成したJARアーティファクトをAmazon S3バケットに保存する計画だ。ビルド環境そのものを構成するサーバーのパッチ適用やスケーリングの作業をなくしたいと考えている。これらの要件を運用上のオーバーヘッドを最小限に抑えて満たすソリューションを選択せよ」とある。
 
 Rindo Hino
-Rea-san's analogy is theatrically dense as usual, but the essence is accurate. Let us read the question meticulously: "A DevOps engineer at a company runs Java application builds on Jenkins servers in an on-premises data center. The build requires a proprietary internal compiler and multiple specialized libraries not included in AWS-provided standard build environments. The engineer plans to migrate this build process to AWS and store resulting JAR artifacts in an Amazon S3 bucket. They want to eliminate the operational tasks of server patching and scaling for the build environment. Which solution satisfies these requirements with the least operational overhead?"
+Rea-san's analogy is theatrically (dense) as usual, but the essence is accurate. Let us read the question meticulously: "A DevOps engineer at a company runs Java application builds on Jenkins servers in an on-premises data center. The build requires a proprietary internal compiler and multiple specialized libraries not included in AWS-provided standard build environments. The engineer plans to migrate this build process to AWS and store resulting JAR artifacts in an Amazon S3 bucket. They want to eliminate the operational tasks of server patching and scaling for the build environment. Which solution satisfies these requirements with the least operational overhead?"
 
 月凪惟緒
 うーん、単語がすでにダル重い……。「ビルド」とか「アーティファクト」とか「JAR」って、一体なんなの？ 魔法陣でも描いてるの？
 
 Io Tsukina
-Ugh, the words alone feel so heavy... "Build", "Artifact", "JAR"... Are they drawing alchemy circles or something?
+Ugh, the words alone feel so heavy... "Build", "Artifact", "JAR"... Are they drawing (alchemy circles) or something?
 
 日乃竜胆
 言葉の土台を固めるぞ。まず「ビルド」とは、人間が書いたプログラムのソースコード（文字列）を、コンピュータが解釈・実行可能な機械語やバイナリデータへ翻訳・結合・梱包する一連の変換工程だ。
@@ -2370,26 +2370,29 @@ Ugh, the words alone feel so heavy... "Build", "Artifact", "JAR"... Are they dra
 「アーティファクト」とは、そのビルド作業の末に完成した成果物そのものを指す。工芸品や出土品という意味の英単語だが、ITの世界では「ビルドプロセスから吐き出された完成品のバイナリ」を意味する。
 
 Rindo Hino
-Let us solidify the vocabulary foundation. First, a "build" is the entire compilation, linking, and packaging process that translates human-written source code <text> into machine language or binaries executable by computers. Next, a "JAR" <Java ARchive> is a packaged format bundling compiled Java classes and associated resources into a single compressed file. Finally, an "artifact" refers to the tangible output produced at the end of that build process. While the word originates from archaeology, in software it strictly denotes the final product emitted by the pipeline.
+Let us (solidify) the vocabulary foundation. First, a "build" is the entire (compilation), linking, and packaging process that translates human-written source code <text> into machine language or binaries (executable) by computers. Next, a "JAR" <Java ARchive> is a packaged format bundling compiled Java classes and associated resources into a single compressed file. Finally, an "artifact" refers to the tangible output produced at the end of that build process. While the word originates from (archaeology), in software it strictly (denotes) the final product emitted by the pipeline.
 
 月凪惟緒
 なるほどねぇ。小麦粉と砂糖（ソースコード）をこねてオーブンで焼く工程が「ビルド」で、焼き上がったクッキーの詰め合わせ缶が「JAR」で、その完成品全般の呼び名が「アーティファクト」ってことかぁ。それならわかるよ。
 
 Io Tsukina
-I see, I see. Kneading flour and sugar <source code> and baking them in an oven is the "build," the finished tin of baked cookies is the "JAR," and calling the whole finished batch of goods something generic is "artifact". That I can digest.
+I see, I see. (Kneading) flour and sugar <source code> and baking them in an oven is the "build," the finished (tin) of baked cookies is the "JAR," and calling the whole finished batch of goods something generic is "artifact". (That *I* can digest).
 
 蒞星怜空
 クッキーならまだ愛嬌があるが、この現場のクッキーは専用の怪しい圧延機（社内独自コンパイラ）を通さないと生地すらまとまらない呪物だ。しかも設問の核心は、「そのクッキーを焼くためのオーブン（サーバー）の火加減調整や煤払い（OSパッチ適用やスケーリング）を、自分たちの手で一切やりたくない」と開発者が叫んでいる点にある。
 
 Rea Rize
-A tin of cookies sounds rather cute, though in this company's kitchen, the dough refuses to even bind unless pushed through a bespoke, cursed rolling machine <proprietary compiler>. And the core punchline of the question is that the engineers are crying out: "We don't want to sweep soot or adjust burner flames <OS patching and scaling> for this oven <server> ever again with our own hands!"
+A tin of cookies sounds rather cute, though in this company's kitchen, the (dough) refuses to even bind unless pushed through a bespoke, cursed rolling machine <proprietary compiler>. And the core punchline of the question is that the engineers are crying out: "We don't want to sweep (soot) or adjust burner flames <OS patching and scaling> for this oven <server> (ever again) with our own hands!"
+
+falls short on
+
 
 日乃竜胆
 その通りだ。要件は2点に集約される。「独自コンパイラと専用ライブラリを確実に持ち込めること」、そして「ビルド基盤のOSパッチ適用やスケーリングの保守管理を全廃し、運用オーバーヘッドを極小化すること」だ。
 当講義の規律に従い、まずは誤った選択肢を順次解体し、何故それが現場を破滅に導く愚策であるかを暴いていくぞ。
 
 Rindo Hino
-Exactly. The constraints boil down to two decisive pillars: first, ensuring the proprietary compiler and private libraries can be imported seamlessly; second, entirely eliminating server patching and capacity scaling to drive operational overhead down to the absolute minimum. Following the methodology of this lecture, we shall dismantle the erroneous options first, exposing precisely why they lead the operational trenches into ruin.
+Exactly. The constraints (boil down to )two decisive pillars: first, ensuring the proprietary compiler and private libraries can be imported seamlessly; second, entirely eliminating server patching and capacity scaling to drive operational overhead down to the absolute minimum. Following the methodology of this lecture, we shall dismantle the erroneous options first, exposing precisely why they lead the operational trenches into ruin.
 
 ---
 
@@ -2405,7 +2408,7 @@ First, we execute judgment upon [Distractor 1]:
 でた、アルファベットの呪文群……。「AMI」って何？「EC2」って仮想サーバーでしょ？それに「CodeDeploy」って、コードをデプロイするからCodeDeployなんだよね？名前の通り動いてくれそうだけど、何がダメなの？
 
 Io Tsukina
-There they go, the alphabet incantations... What is an "AMI"? I know "EC2" is a virtual server, right? And "CodeDeploy" sounds like it just deploys code. It feels like it would do what it says on the tin—what's so wrong with it?
+(There they go), the alphabet incantations... What is an "AMI"? I know "EC2" is a virtual server, right? And "CodeDeploy" sounds like it just deploys code. It feels like it would do what it says (on the tin)—what's so wrong with it?
 
 日乃竜胆
 AMI（Amazon Machine Image）とは、EC2インスタンス（仮想サーバー）のOS、ストレージ構成、初期インストールソフトを丸ごと固めた「金型」「マスターディスクの複製」だ。社内ツールを焼き込んだAMIを作れば、起動したEC2で即座にビルド環境が手に入る点自体は嘘ではない。
@@ -2413,20 +2416,20 @@ AMI（Amazon Machine Image）とは、EC2インスタンス（仮想サーバー
 第一に、インフラの維持管理責任だ。EC2インスタンスを自前で構えるということは、OSのセキュリティ脆弱性へのパッチ適用、AMIの定期的な再ベイク、ビルドの増減に伴うインスタンス台数のキャパシティ管理を、すべて自分たちで行わねばならない。問題文の「サーバーのパッチ適用やスケーリングの作業をなくしたい」という要件に正面衝突する。
 
 Rindo Hino
-An AMI <Amazon Machine Image> is a pre-configured template containing the OS, storage volume mapping, and software required to launch an EC2 instance—essentially a golden master disk image. Baking your proprietary tools into an AMI does indeed provide an instant build environment on launch. However, this option commits two fatal sins. First, infrastructure management liability. Self-managing EC2 instances means you are squarely responsible for OS patching, re-baking AMIs, and scaling instance capacity to absorb spikes. This directly violates the core requirement to eliminate patching and scaling tasks.
+An AMI <Amazon Machine Image> is a pre-configured template containing the OS, storage volume mapping, and software required to launch an EC2 instance—essentially a golden master disk image. Baking your proprietary tools into an AMI does indeed provide an instant build environment on launch. However, this option commits two fatal sins. First, infrastructure management (liability). Self-managing EC2 instances means you are (squarely) responsible for OS patching, re-baking AMIs, and scaling instance capacity to absorb spikes. This directly violates the core requirement to eliminate patching and scaling tasks.
 
 蒞星怜空
 第二の過ちは、道具の冒涜だな。AWS CodeDeployというのは、完成したアプリケーション成果物をサーバーやコンテナに安全かつ無停止で「配備・配置（デプロイ）」するためのサービスだ。
 それを、ビルド処理――つまりコードをコンパイルしてJARを捏ね上げる重労働――の実行基盤としてこき使おうとしている。配送業者を呼びつけて、荷物を届けてもらう代わりに「うちの工房の中で小麦粉をこねてパンを焼け」と強要しているようなものだ。当然、CloudWatchへのビルドログ出力も、S3への成果物転送も、全部自作スクリプトで泥臭く実装する羽目になる。
 
 Rea Rize
-The second transgression is an absolute perversion of architectural purpose. AWS CodeDeploy is an engine crafted strictly to safely deploy finished application artifacts to compute targets with zero downtime. Here, this option attempts to exploit it as a sweatshop for running compilers and churning out JAR binaries. That is tantamount to summoning a courier to your doorstep and demanding they knead dough and bake bread in your kitchen instead of delivering packages. Naturally, streaming logs to CloudWatch and transferring JARs to S3 would all have to be hacked together via brittle custom shell scripts.
+The second (transgression) is an absolute (perversion) of architectural purpose. AWS CodeDeploy is an engine crafted strictly to safely deploy finished application artifacts to compute targets with zero downtime. Here, this option attempts to exploit it as a sweatshop for running compilers and churning out JAR binaries. That is tantamount to summoning a courier to your doorstep and demanding they (knead) (dough) and bake bread in your kitchen instead of delivering packages. Naturally, streaming logs to CloudWatch and transferring JARs to S3 would all have to be (hacked together) via brittle custom shell scripts.
 
 月凪惟緒
 うわぁ、配達員さんにパン職人のエプロン着せてる図が浮かんで胸が痛くなってきた……。そりゃお門違いだね。
 
 Io Tsukina
-Yikes, picturing a delivery courier forced into a baker's apron genuinely makes my soul ache... Total misuse of responsibility.
+Yikes, picturing a delivery courier (forced into )a baker's apron (genuinely makes )my soul ache... Total misuse of responsibility.
 
 日乃竜胆
 然り。よって【不正解その1】は完全な論外として棄却される。
@@ -2455,7 +2458,7 @@ Wait, unlike the previous EC2 mess, this one uses "AWS CodeBuild," which is an a
 だが、運用の現場をまったく想像できていない。「ビルドを実行するたびに、毎回S3から巨大なコンパイラと複数のライブラリ一式をダウンロードしてインストールする」という部分が最大の急所だ。
 
 Rindo Hino
-Your intuition is not misplaced, Iochi. By adopting CodeBuild, the toil of server provisioning, OS patching, and auto-scaling is indeed offloaded to AWS. On paper, that matches the serverless criterion. However, it reveals a complete ignorance of real-world operational sanity. The fatal flaw lies in downloading and reinstalling massive proprietary compilers and multiple libraries from S3 on every single build invocation.
+Your intuition is not misplaced, Iochi. By adopting CodeBuild, the toil of server provisioning, OS patching, and auto-scaling is indeed offloaded to AWS. On paper, that matches the serverless criterion. However, it reveals a complete ignorance of real-world operational sanity. The fatal flaw lies in downloading and reinstalling massive proprietary compilers and multiple libraries from S3 on every single build (invocation).
 
 蒞星怜空
 これがどれほど陰惨な光景を生むか、想像してみるといい。
@@ -2463,14 +2466,14 @@ Your intuition is not misplaced, Iochi. By adopting CodeBuild, the toil of serve
 それだけではない。ある日、ネットワークの瞬断やS3レートリミット、あるいはライブラリ展開スクリプトの軽微な不整合によってダウンロードがコケた瞬間、コードには1文字も問題がないのに「環境構築の失敗」でCIパイプラインが真っ赤に燃え上がる。開発現場のslackに鳴り響く怨嗟のサイレンが聞こえてこないか？
 
 Rea Rize
-Picture the sheer gloom of that operational reality. Every single time a developer pushes code, CodeBuild spins up a pristine container, diligently fetches heavy compilers and tangled dependencies from S3, extracts them, and reconfigures environment paths from scratch. Your build times skyrocket by 10 to 15 minutes per trigger. Worse still, the moment a transient network hiccup occurs or an S3 fetch hits a snag, the build fails instantly at the environmental setup step—even though not a single line of application code was broken. Can you hear the sirens of despair echoing across the engineering Slack channels?
+Picture the sheer (gloom) of that operational reality. Every single time a developer pushes code, CodeBuild spins up a pristine container, diligently fetches heavy compilers and tangled dependencies from S3, extracts them, and reconfigures environment paths from scratch. Your build times skyrocket by 10 to 15 minutes per trigger. (Worse still), the moment a (transient) network hiccup occurs or an S3 fetch hits a (snag), the build fails instantly at the environmental setup step—even though (not a single *line of application code was *)broken. Can you hear the sirens of despair echoing across the engineering Slack channels?
 
 日乃竜胆
 その通りだ。CodeBuildにはキャッシュ機能が存在するが、それでも環境構築コマンドそのものは毎回評価される。buildspecというスクリプト内に複雑なセットアップ手順が乱立し、バージョン管理も困難になる。
 「運用上のオーバーヘッドを最小限に抑える」という評価軸に照らせば、実行効率と安定性の面で到底採択できる水準ではない。したがって【不正解その3】も不適格だ。
 
 Rindo Hino
-Precisely. While CodeBuild provides caching features, the environment setup sequence itself must still execute on each run. Complex bootstrap commands scatter inside buildspec scripts, making version pinning a maintenance nightmare. Benchmarked against the requirement to "minimize operational overhead," it falls woefully short on efficiency and determinism. Therefore, [Distractor 3] is disqualified.
+Precisely. While CodeBuild provides caching features, the environment setup sequence itself must still execute on each run. Complex bootstrap commands scatter inside buildspec scripts, making (version pinning )a maintenance nightmare. Benchmarked against the requirement to "minimize operational overhead," it falls (woefully) short on efficiency and (determinism). Therefore, [Distractor 3] is disqualified.
 
 ---
 
@@ -2493,14 +2496,14 @@ Here... they build a custom Docker image and push it to ECR, right? All tools ar
 破綻しているのは、そのコンテナを動かす足回り――「ECS on EC2」というホスティングの選定だ。
 
 Rindo Hino
-The approach of encapsulating the toolchain into a container image and storing it in Amazon ECR is immaculate in theory. Packaging dependencies deterministically guarantees reproducibility and near-instant startup. The fatal failure lies in the hosting layer—the selection of "ECS on EC2".
+The approach of encapsulating the toolchain into a container image and storing it in Amazon ECR is (immaculate in theory). Packaging dependencies (deterministically) guarantees (reproducibility) and near-instant startup. The fatal failure lies in the hosting layer—the (selection of )"ECS on EC2".
 
 蒞星怜空
 ECS自体は優秀なコンテナオーケストレータだが、「on EC2」と付いた瞬間、その舞台裏には生々しいEC2仮想サーバー群が実体化する。
 つまり、コンテナを載せるためのEC2ホストマシンのECS最適化AMIを定期的に更新し、OSセキュリティパッチを当て、タスクが溢れたらEC2クラスターのAuto ScalingやCapacity Providerを調整する羽目になる。結局、EC2サーバーの保守管理という重荷を背負い直しているだけだ。
 
 Rea Rize
-While ECS is a phenomenal container orchestrator, the phrase "on EC2" immediately drags physical EC2 host management onto the stage. You are stuck applying OS patches, updating ECS-optimized AMIs, and tuning Cluster Capacity Providers or Auto Scaling groups whenever tasks spike. You have achieved containerization, only to shoulder the exact same server maintenance burdens once more.
+While ECS is a (phenomenal) container orchestrator, the phrase "on EC2" immediately drags physical EC2 host management onto the stage. You are stuck applying OS patches, updating ECS-optimized AMIs, and tuning Cluster Capacity Providers or Auto Scaling groups whenever tasks spike. You have achieved containerization, only to shoulder the exact same server maintenance burdens once more.
 
 日乃竜胆
 それだけにとどまらない。ECSは基本的に長時間のWebサービスや常駐ワーカー、あるいはバッチタスクを動かすための基盤だ。
@@ -2508,7 +2511,7 @@ While ECS is a phenomenal container orchestrator, the phrase "on EC2" immediatel
 「わざわざビルド専用のフルマネージドサービスが存在する世界線において、自己管理型のECSクラスターを自作して運用負荷を爆発させる愚」を犯している。したがって【不正解その4】も棄却される。
 
 Rindo Hino
-And that is not the end of the misery. ECS is fundamentally engineered for microservices, long-running daemons, or generalized batch processing. Using it as a dedicated build pipeline forces you to hand-roll EventBridge cron schedules, wire up CloudWatch logging manually, write custom S3 upload glue, and build custom build-status alert hooks. In a world where a dedicated, serverless build engine exists, building a self-managed ECS cluster is pure architectural folly. Thus, [Distractor 4] is discarded.
+And that is (not the end of the misery). ECS is fundamentally engineered for microservices, long-running daemons, or (generalized) batch processing. Using it as a dedicated build pipeline forces you to hand-roll EventBridge cron schedules, (wire up) CloudWatch logging manually, write custom S3 upload glue, and build custom build-status alert hooks. In a world where a dedicated, serverless build engine exists, building a self-managed ECS cluster is pure architectural folly. Thus, [Distractor 4] is discarded.
 
 ---
 
@@ -2517,7 +2520,7 @@ And that is not the end of the misery. ECS is fundamentally engineered for micro
 「社内コンパイラと専用ライブラリを含むカスタムDockerイメージを作成してAmazon ECRにpushします。AWS CodeBuildプロジェクトを作成し、そのイメージをビルド環境として指定します。buildspecでビルドコマンドを定義し、アーティファクトの出力先にS3バケットを設定します。」だ。
 
 Rindo Hino
-Having obliterated all misconceptions, we arrive at the singular [Correct Option]:
+Having obliterated all (misconceptions), we arrive at the singular [Correct Option]:
 "Create a custom Docker image that contains the internal compiler and proprietary libraries, and push it to Amazon ECR. Create an AWS CodeBuild project that specifies this image as the build environment. Define build commands in buildspec, and set the artifact output destination to an S3 bucket."
 
 月凪惟緒
@@ -2548,7 +2551,7 @@ What elevates this architecture to art is its native integration with artifacts.
 あんなに胃が痛くなりそうだったオンプレミスのJenkinsサーバーが、ECRのカスタムイメージとCodeBuildとS3の連携だけで、誰もサーバーの面倒を見なくていい天国みたいなシステムに変わっちゃうんだ。
 
 Io Tsukina
-Woah, AWS does all the heavy lifting natively. That dread-inducing on-premises Jenkins server gets transformed into a maintenance-free paradise, just by linking an ECR custom image, CodeBuild, and an S3 bucket.
+Woah, AWS does all the heavy lifting natively. That (dread-inducing )on-premises Jenkins server gets transformed into a maintenance-free paradise, just by linking an ECR custom image, CodeBuild, and an S3 bucket.
 
 日乃竜胆
 これぞクラウドアーキテクチャの真髄だ。
@@ -2627,31 +2630,31 @@ That is the true elegance of cloud architecture. Ingesting proprietary tools is 
 さて、画面に映し出された設問【DOP-1018】の解体作業を始めるぞ。まずは問題文の骨子を正確に把握することだ。「ある企業は Amazon ECS で稼働するマイクロサービスの更新を AWS CloudFormation で管理している。新バージョンへのリリース時には、1分間隔で全体の10%ずつトラフィックを段階的に切り替え、問題が検出された場合にロールバックできるようにしたいと考えている。CloudFormation テンプレートにどのような構成を追加すべきですか」。この要件の核心を、初学者の視座から一分の隙もなく論破・構築していく。
 
 <Rindo Hino>
-Now, let us begin dissecting question DOP-1018 displayed on the screen. First, we must grasp the core essence of the problem statement with surgical precision: "A company manages updates for microservices running on Amazon ECS using AWS CloudFormation. When releasing a new version, they want to shift traffic gradually at 10% per minute, rolling back if issues are detected. What configuration should be added to the CloudFormation template?" We shall break down and reconstruct these core requirements from an absolute beginner's vantage point, leaving zero ambiguities.
+Now, let us begin dissecting question DOP-1018 displayed on the screen. First, we must grasp the core essence of the problem statement with surgical precision: "A company manages updates for microservices running on Amazon ECS using AWS CloudFormation. When releasing a new version, they want to shift traffic gradually at 10% per minute, rolling back if issues are detected. What configuration should be added to the CloudFormation template?" We shall break down and reconstruct these core requirements from an absolute beginner's (vantage point), leaving zero (ambiguities).
 
 <月凪惟緒>
 ……うー、画面見てるだけで文字がぎっしりで脳みそが凍結しそう……。ヒノりん、そもそも「ECS」とか「CloudFormation」って単語が並んでる時点で、異世界の古代呪文にしか見えないんだけど。これを何とかして人間が食べるゼリーくらい噛み砕いてくれない？
 
 <Io Tsukina>
-...Ugh, just looking at all this text is enough to freeze my brain solid... Hinorin, the moment words like "ECS" and "CloudFormation" line up together, it just looks like ancient incantations from another realm. Could you break this down into something as chewable as dessert jelly?
+...Ugh, just looking at all this text is enough to freeze my brain solid... Hinorin, the moment words like "ECS" and "CloudFormation" line up together, it just looks like ancient incantations from another realm. Could you break this down into something as (chewable) as dessert jelly?
 
 <蒞星怜空>
 ふふ、いいじゃないか、その凍りついた脳髄。無知の純白さというのは、最も美しいキャンバスだ。だが、現場でその呪文の真意を理解せずに本番環境の更新ボタンを叩けば、夜間アラートのけたたましい怒号と共に、築き上げたサービスの壮麗な城が数秒で灰燼に帰すことになる。文字通り、阿鼻叫喚の地獄絵図だな。
 
 <Rea Rize>
-Heh, I don't mind that frozen brain of yours at all. The pure blank canvas of total ignorance is truly an aesthetic marvel. However, push an update button in production without understanding these incantations, and the magnificent palace of your architecture will collapse into ashes in mere seconds, soundtracked by deafening midnight alarms. A bona fide landscape of living damnation.
+Heh, I don't mind that frozen brain of yours at all. The pure blank canvas of total ignorance is truly an aesthetic marvel. However, push an update button in production without understanding these incantations, and the magnificent palace of your architecture will collapse into ashes in mere seconds, soundtracked by (deafening) midnight alarms. A (bona) (fide) landscape of living (damnation).
 
 <日乃竜胆>
 怜空さん、初手からイオちを脅かしてどうするのだ。……だが、事実ではあるな。イオち、まずは舞台装置となる基本用語の整理から入るぞ。逃げ場はない。
 
 <Rindo Hino>
-Rea-san, why terrify Iochi right off the bat? ...Though, to be fair, you are not wrong. Iochi, we start by organizing the fundamental terminology that sets this stage. There is no escape.
+Rea-san, why terrify Iochi right off the bat? ...Though, (to be fair), you are not wrong. Iochi, we start by organizing the fundamental terminology that sets this stage. There is no escape.
 
 <月凪惟緒>
 覚悟は決めたよ……。まずその「Amazon ECS」ってやつは何者？
 
 <Io Tsukina>
-I've braced myself... So first off, what on earth is this "Amazon ECS" thing?
+I've (braced myself)... So first off, what on earth is this "Amazon ECS" thing?
 
 <日乃竜胆>
 Amazon ECS（Elastic Container Service）とは、Dockerなどの「コンテナ」と呼ばれる軽量な仮想化環境を管理・実行するための基盤だ。アプリケーションとその実行に必要な設定を一つの箱（コンテナ）に詰め込み、何個動かすか、障害時にどう自動復旧させるかを司る指揮官のようなサービスだな。
@@ -2663,7 +2666,7 @@ Amazon ECS <Elastic Container Service> is a foundational service designed to man
 ふーん、独立したアプリの小部屋をたくさん並べて動かしてくれる管理人さん、みたいな？ じゃあ次の「CloudFormation」は？
 
 <Io Tsukina>
-Hmm, so it's like a building superintendent running a bunch of neat little independent room-units? Then what about this "CloudFormation" thing?
+Hmm, so it's like a building (superintendent) running a bunch of neat little independent room-units? Then what about this "CloudFormation" thing?
 
 <日乃竜胆>
 AWS CloudFormationとは、AWS上のインフラ構成（サーバー、ネットワーク、先ほどのECSなど）を、JSONやYAML形式の「テキスト設計図（テンプレート）」として記述し、自動で構築・更新・削除させるサービスだ。いわゆる「Infrastructure as Code <IaC>」の代表格だな。手作業で画面をポチポチ操作せず、設計図を流し込むだけで全く同じ環境を瞬時に再現できる。
@@ -2681,13 +2684,13 @@ Got it, a prefabricated housing plant that automatically erects a city the momen
 新居に引っ越す際、古い家をダイナマイトで爆破してから新しい家に全員で飛び込むような愚行を避けるための防壁だよ。もし新居の床が底抜けだったら一家全員真っ逆さまだろう？ だから、まず家族の10%だけを恐る恐る新居に送り込み、床が抜けないかを1分間観察する。問題がなければまた10%……というのを10回繰り返すわけだ。万が一床が抜け落ちたら、その瞬間に全員を元の古い家に引き戻す。これが「段階的デプロイ」と「ロールバック」の正体だ。
 
 <Rea Rize>
-It’s a safeguard to avoid blowing up your old house with dynamite before everyone blindly leaps into the brand-new one. If the new floor has a structural collapse, the whole family plunges into the abyss, right? So, you cautiously send just 10% of the family over, watching for a full minute to see if they fall through. If they hold steady, you send another 10%... repeating ten times. The moment the floor creaks open, you yank everyone back to the old house. That is the anatomy of a gradual deployment and a rollback.
+It’s a safeguard to avoid blowing up your old house with dynamite before everyone blindly (leaps into) the brand-new one. If the new floor has a structural collapse, the whole family plunges into the abyss, right? So, you cautiously send just 10% of the family over, watching for a full minute to see if they fall through. If they (hold steady), you send another 10%... repeating ten times. The moment the floor (creaks open), you (yank) everyone back to the old house. That is the (anatomy of )a gradual deployment and a rollback.
 
 <日乃竜胆>
 怜空さんの例えは相変わらず不穏極まりないが、核心を突いている。システム開発の世界では、従来の旧環境を「Blue」、更新後の新環境を「Green」と呼び、トラフィック（通信）を安全に新旧間で振り替える手法を「ブルー/グリーンデプロイ」と呼ぶのだ。そして、設問の「1分ごとに10%ずつ」という要件は、ブルー/グリーンデプロイにおける**Linear（線形）方式**に合致する。
 
 <Rindo Hino>
-Rea-san's analogies remain macabre as ever, yet she strikes at the core truth. In systems architecture, the existing environment is dubbed "Blue," and the new version is dubbed "Green." The architectural mechanism of seamlessly routing traffic between them is known as a "Blue/Green deployment". And this exact prompt requirement—"10% every minute"—corresponds to a **Linear shift pattern** within that Blue/Green paradigm.
+Rea-san's analogies remain (macabre) as ever, yet she (strikes at the core truth). In systems architecture, the existing environment is (dubbed) "Blue," and the new version is dubbed "Green." The architectural mechanism of seamlessly routing traffic between them is known as a "Blue/Green deployment". And this exact prompt requirement—"10% every minute"—(corresponds to) a **Linear shift pattern** within that Blue/Green (paradigm).
 
 <月凪惟緒>
 なるほどね〜。新旧ふたつの部屋を用意して、水道の蛇口を徐々に新しい方へひねっていくわけだ。じゃあさ、この設問の選択肢を順番に見ていこうよ。いつも通り、まずは「ダメな選択肢」「罠の選択肢」からメスを入れていくんでしょ？
@@ -2700,7 +2703,7 @@ Makes total sense~ You keep both rooms around and gradually twist the faucet val
 「AWS CodePipeline のデプロイステージに CodeDeploy アクションを追加し、ECSAllAtOnce デプロイ設定でブルー/グリーン切り替えを実行する構成をテンプレートに記述する」。
 
 <Rindo Hino>
-Naturally. Before glorifying the correct answer, we must dissect the flawed choices down to the marrow. We begin with **Incorrect Choice 4**, which violates the premise in the most blatant fashion imaginable:
+Naturally. Before (glorifying) the correct answer, we must dissect the flawed choices down to the marrow. We begin with **Incorrect Choice 4**, which violates the premise in the most (blatant) fashion (imaginable):
 "Add a CodeDeploy action to the deployment stage of AWS CodePipeline and describe a configuration in the template that executes Blue/Green switching using the ECSAllAtOnce deployment setting."
 
 <月凪惟緒>
@@ -2719,7 +2722,7 @@ AWS CodePipeline is an orchestration service that automates end-to-end delivery 
 え、「一斉に」とか「いっぺんに全部」ってこと……？
 
 <Io Tsukina>
-Uh... "all in one shot" or "everything at once"...?
+Uh... "(all in one shot)" or "everything at once"...?
 
 <日乃竜胆>
 その通りだ。「ECSAllAtOnce」は、新バージョンを立ち上げた瞬間、100%の全トラフィックを即座に新環境へ切り替える設定を意味する。設問を思い出してみろ。「1分間隔で全体の10%ずつトラフィックを段階的に切り替え」と明記されているだろう。全トラフィックの即時一括切替など、要件に対する完全な背信行為だ。
