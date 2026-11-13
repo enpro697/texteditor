@@ -2728,13 +2728,13 @@ Uh... "(all in one shot)" or "everything at once"...?
 その通りだ。「ECSAllAtOnce」は、新バージョンを立ち上げた瞬間、100%の全トラフィックを即座に新環境へ切り替える設定を意味する。設問を思い出してみろ。「1分間隔で全体の10%ずつトラフィックを段階的に切り替え」と明記されているだろう。全トラフィックの即時一括切替など、要件に対する完全な背信行為だ。
 
 <Rindo Hino>
-Precisely. "ECSAllAtOnce" designates a strategy where 100% of the live traffic is abruptly switched over to the new environment instantaneously. Recall the prompt's demand: "shift traffic gradually at 10% per minute". Flipping all traffic instantly in a single stroke is absolute architectural treason against the business specification.
+Precisely. "ECSAllAtOnce" designates a strategy where 100% of the live traffic is abruptly switched over to the new environment instantaneously. Recall the prompt's demand: "shift traffic gradually at 10% per minute". Flipping all traffic instantly in a single stroke is absolute architectural (treason) against the business specification.
 
 <蒞星怜空>
 そうさ。100%一気に切り替えた瞬間、もし新バージョンに致命的なバグが潜んでいたら、数千人のユーザーから送られたリクエストが一斉に奈落の底へ叩き落とされる。ユーザー画面には「500 Internal Server Error」が咲き乱れ、情シスと開発陣のチャットルームは阿鼻叫喚の阿鼻地獄と化す。それを防ぐための段階的移行なのに、AllAtOnceを選ぶなど、わざわざブレーキを外して時速200キロで壁に突っ込むようなものだな。
 
 <Rea Rize>
-Precisely. The millisecond you dump 100% of your users onto the new revision, any latent fatal bug will drag thousands of customer requests straight into the abyss. HTTP 500 errors bloom across client monitors, turning the engineering emergency channel into a screaming inferno. Gradual shifting exists solely to prevent that carnage; choosing AllAtOnce is akin to cutting your own brakes and gunning the engine straight toward a concrete wall at 200 kilometers per hour.
+Precisely. The millisecond you dump 100% of your users onto the new revision, any (latent) fatal bug will drag thousands of customer requests straight into the abyss. HTTP 500 errors bloom across client monitors, turning the engineering emergency channel into a screaming inferno. Gradual shifting exists solely to prevent that carnage; choosing AllAtOnce is akin to cutting your own brakes and (gunning) the engine straight toward a concrete wall at 200 kilometers per hour.
 
 <日乃竜胆>
 さらに言えば、設問は「CloudFormation テンプレートにどのような構成を追加すべきか」を問うている。CodePipeline という別個のパイプラインサービスをわざわざ追加導入せずとも、CloudFormation 単体でこの要件は完結できるのだ。したがって、不正解4は二重の意味で論外である。
@@ -2754,7 +2754,7 @@ It reads: "Create an AWS::CodeDeploy::DeploymentGroup resource and define routin
 ここには複数の罠が巧妙に仕掛けられている。まず第一に、「TimeBasedCanary（カナリアデプロイ）」という方式の本質だ。イオち、炭鉱のカナリアという言葉を聞いたことがあるか？
 
 <Rindo Hino>
-This one lays several cunning traps. First and foremost is the intrinsic mechanism of "TimeBasedCanary" <Canary deployment>. Iochi, have you ever heard the historical phrase "a canary in a coal mine"?
+This one lays several cunning traps. First and foremost is the (intrinsic) mechanism of "TimeBasedCanary" <Canary deployment>. Iochi, have you ever heard the historical phrase "a canary in a coal mine"?
 
 <月凪惟緒>
 あ、昔の鉱夫さんが、毒ガスが出てないか確かめるために鳥のカナリアをカゴに入れて連れて行ったやつ？
@@ -2778,13 +2778,13 @@ Hold on! The prompt explicitly demands "10% shifts every 1 minute"! It's suppose
 ご明察。カナリアは偵察部隊に過ぎない。偵察兵が生き残っていたら、後ろから主力部隊が一気に突撃するわけだ。だが設問が求めているのは、全軍が足並みを揃えて10%ずつ均等に進軍する「Linear（線形）」なのだよ。しかも選択肢3は「5分間隔」と書いてある。1分間隔という問題の指定とも完全に乖離しているな。
 
 <Rea Rize>
-Brilliant deduction. The canary is merely a scout. If the scout survives, the main army rushes forward all at once. But this scenario requires an orderly, linear march where equal regiments of 10% advance step-by-step. Furthermore, Choice 3 brazenly specifies "5-minute intervals." It completely flies in the face of the required 1-minute interval.
+Brilliant deduction. The canary is merely a scout. If the (scout) survives, the main army rushes forward all at once. But this scenario requires an orderly, linear march where equal (regiments) of 10% advance step-by-step. Furthermore, Choice 3 brazenly specifies "5-minute intervals." It completely (flies in the face of )the required 1-minute interval.
 
 <日乃竜胆>
 それだけではない。AWS::CodeDeploy::DeploymentGroup を CloudFormation テンプレート内で直接記述する手法は、主に EC2 や Lambda 向けで用いられるものだ。ECS のブルー/グリーンデプロイを CloudFormation で美しく管理するには、後述する「変換（Transform）」機能を用いるのが定石であり、DeploymentGroup を手動で生定義する必要すらないのだ。したがって選択肢3も論外だ。
 
 <Rindo Hino>
-And there is more. Explicitly writing out an AWS::CodeDeploy::DeploymentGroup resource directly within CloudFormation templates is an approach primarily utilized for Amazon EC2 or AWS Lambda deployments. The textbook pattern for managing ECS Blue/Green deployments in CloudFormation is using the "Transform" macro mechanism, rendering manual raw definitions of a DeploymentGroup completely redundant. Therefore, Choice 3 is discarded.
+And there is more. Explicitly writing out an AWS::CodeDeploy::DeploymentGroup resource directly within CloudFormation templates is an approach primarily( utilized for) Amazon EC2 or AWS Lambda deployments. The textbook pattern for managing ECS Blue/Green deployments in CloudFormation is using the "Transform" macro mechanism, rendering manual raw definitions of a DeploymentGroup completely redundant. Therefore, Choice 3 is discarded.
 
 <月凪惟緒>
 なるほどね……。じゃあ次、**不正解2**！
@@ -2810,19 +2810,19 @@ Plus, 15 minutes is way too long, isn't it? I could cook five cups of instant ra
 ふふ、カップ麺ならまだ平和だ。15分間も新旧バージョンが中途半端に並行稼働している間、データベースの整合性やセッション不整合でユーザーが怪奇現象に襲われる現場のエンジニアにとっては、胃に穴が空く15分間の拷問部屋に座らされているようなものだ。
 
 <Rea Rize>
-Heh, instant ramen is a peaceful fate. For an on-call engineer watching old and new versions run in partial limbo for 15 minutes while database schemas and session mismatches haunt unsuspecting users, it feels more like being strapped into an ulcer-inducing torture chamber.
+Heh, instant ramen is a peaceful fate. For an on-call engineer watching old and new versions run in partial limbo for 15 minutes while database schemas and session mismatches haunt unsuspecting users, it feels more like being (strapped into )an ulcer-inducing torture (chamber).
 
 <日乃竜胆>
 そしてもう一つ、構造的な欠陥がある。AppSpec（Application Specification）ファイルとは本来、CodeDeploy がデプロイを実行する際に直接読み込む設定ファイルだ。CloudFormation テンプレートの内部に、そのまま AppSpec ファイルの記述を直に埋め込むような設計は通常行わない。CloudFormation では、専用の「マクロ変換」を使用することで、裏側で必要な AppSpec 相当の制御構造を自動生成させるのが正道なのだ。
 
 <Rindo Hino>
-And there is yet another structural defect. An AppSpec <Application Specification> file is natively a target configuration file ingested directly by CodeDeploy during execution. One does not simply staple raw AppSpec files straight into a CloudFormation template. In CloudFormation, the idiomatic paradigm is leveraging dedicated Macro Transforms to let the engine synthesize the underlying AppSpec-equivalent directives automatically.
+And there is yet another structural defect. An AppSpec <Application Specification> file is natively a target configuration file ingested directly by CodeDeploy during execution. One does not simply staple raw AppSpec files straight into a CloudFormation template. In CloudFormation, the (idiomatic) paradigm is leveraging dedicated Macro Transforms to let the engine synthesize the underlying AppSpec-equivalent directives automatically.
 
 <月凪惟緒>
 なるほど〜！ 不正解の3つは、どれも「一気に切り替わりすぎ（AllAtOnce）」「カナリアで待たされすぎ（Canary）」「そもそも書き方や道具が場違い（CodePipelineやAppSpecの直書き）」ってわけね。
 
 <Io Tsukina>
-Aha~! So all three incorrect choices either flip too quickly <AllAtOnce>, stall in a two-stage wait <Canary>, or use entirely misplaced formats <dumping raw AppSpec or forcing CodePipeline>.
+Aha~! So all three incorrect choices either flip too quickly <AllAtOnce>, (stall) in a two-stage wait <Canary>, or use entirely misplaced formats <dumping raw AppSpec or forcing CodePipeline>.
 
 <日乃竜胆>
 完璧な理解だ、イオち。では、真打ちたる**正解1**を俎上に載せよう。
@@ -2848,7 +2848,7 @@ Indeed. The Linear strategy shifts traffic gradually in equal increments at cons
 でもさ、ヒノりん。前半に書いてある「AWS::CodeDeployBlueGreen 変換を宣言し」とか「AWS::CodeDeploy::BlueGreen フック」って何者なの？ さっき言ってた「変換」ってやつ？
 
 <Io Tsukina>
-Wait, Hinorin. What about the preceding part: "Declare the AWS::CodeDeployBlueGreen transform" and "the AWS::CodeDeploy::BlueGreen hook"? Is that the "Transform" thing you brought up earlier?
+Wait, Hinorin. What about the (preceding) part: "Declare the AWS::CodeDeployBlueGreen transform" and "the AWS::CodeDeploy::BlueGreen hook"? Is that the "Transform" thing you brought up earlier?
 
 <日乃竜胆>
 よくぞ食いついた。ここが CloudFormation の極めて洗練されたアーキテクチャの神髄だ。通常、CloudFormation はリソースを「作成・変更・削除」するだけの静的な設計図だが、テンプレート冒頭の `Transform` セクションに `AWS::CodeDeployBlueGreen` を宣言すると、CloudFormation マクロが起動する。
@@ -2860,13 +2860,13 @@ An excellent query. This is the very nexus of CloudFormation's sophisticated arc
 設計図に「よしなに魔法陣を展開せよ」と一筆添えるようなものだね。すると CloudFormation は裏側で勝手に CodeDeploy のアプリケーションやデプロイグループ、ターゲットグループの切替ロジックといった泥臭い配管工事を自動で錬成してくれる。開発者が手作業で数百行もの設定を書く手間を、灰燼に帰してくれるわけだ。
 
 <Rea Rize>
-It's akin to scribbling a rune on the blueprint that whispers, "Automate the dirty work." CloudFormation responds behind the curtain by conjuring up all the gritty plumbing—CodeDeploy applications, deployment groups, ALB target group routing switches—all on its own. It burns away hundreds of lines of tedious boilerplate code into harmless ash.
+It's akin to scribbling a (rune) on the blueprint that whispers, "Automate the dirty work." CloudFormation responds behind the curtain by (conjuring up) all the gritty plumbing—CodeDeploy applications, deployment groups, ALB target group routing switches—all on its own. It burns away hundreds of lines of (tedious) (boilerplate) code into harmless ash.
 
 <日乃竜胆>
 そして「フック（Hook: `AWS::CodeDeploy::BlueGreen`）」によって、スタック更新時に ECS サービスのタスク定義が新しくなった際、直接上書き更新するのを阻止するのだ。フックが割り込み、新旧ふたつのターゲットグループ（Blue と Green）に対して ALB（Application Load Balancer）の重み付けルーティングを適用し、指定した Linear 設定に従って1分に10%ずつトラフィックを流し込んでいく。
 
 <Rindo Hino>
-And the "Hook <`AWS::CodeDeploy::BlueGreen`>" intercepts the stack update, halting CloudFormation from crudely overwriting the ECS task definition in-place. The Hook steps in, provisions both Blue and Green target groups across the Application Load Balancer <ALB>, and modulates weighted routing to meter traffic at 10% per minute exactly as commanded by the Linear policy.
+And the "Hook <`AWS::CodeDeploy::BlueGreen`>" intercepts the stack update, halting CloudFormation from crudely overwriting the ECS task definition in-place. The Hook steps in, provisions both Blue and Green target groups across the Application Load Balancer <ALB>, and (modulates) weighted routing( to meter *traffic*) at 10% per minute exactly as commanded by the Linear policy.
 
 <月凪惟緒>
 あ、解説の図にも ALB の下に「TG Blue <90%>」「TG Green <10%>」って分かれて矢印が出てる！ もしこの10%の段階でアプリがエラー吐きまくったら、フックがそれを検知して元の Blue に100%戻してくれるってわけね！
@@ -2878,13 +2878,13 @@ Ah, look at the diagram in the explanation—under the ALB, it splits into arrow
 その通りだ、イオち。CloudWatch アラーム等と連携し、異常を検知すれば即座にロールバックが発動する。これこそが、設問が求めていた「1分間隔で全体の10%ずつ段階移行し、問題時にロールバックできる堅牢なインフラ」の全貌だ。
 
 <Rindo Hino>
-Spot on, Iochi. In tandem with CloudWatch alarms, detecting anomalies triggers an immediate automatic rollback. This is the comprehensive architecture answering the prompt: "shifting traffic gradually at 10% per minute, rolling back if issues arise."
+Spot on, Iochi. In (tandem with) CloudWatch alarms, detecting anomalies triggers an immediate automatic rollback. This is the comprehensive architecture answering the prompt: "shifting traffic gradually at 10% per minute, rolling back if issues arise."
 
 <蒞星怜空>
 ふふ、美しく解体されたね。要件に背いて即死させる一括切り替え（AllAtOnce）を捨て、2段階で立ち止まるカナリア（Canary）の罠を躙り、均等に歩みを進める Linear を Transform マクロの優雅さで包み込む。これぞインフラの様式美というやつだ。
 
 <Rea Rize>
-Heh, an exquisite disassembly. Discard the suicidal instant-switch <AllAtOnce>, crush the two-stage waiting trap of the Canary, and wrap the steady forward march of Linear shifting inside the elegance of a Transform macro. That is true architectural grace.
+Heh, an exquisite (disassembly). Discard the suicidal instant-switch <AllAtOnce>, crush the two-stage waiting trap of the Canary, and wrap the steady forward march of Linear shifting inside the elegance of a Transform macro. That is true architectural grace.
 
 <月凪惟緒>
 呪文だらけだった選択肢が、全部スッキリ一本の線で繋がったよ。ヒノりん、怜空さん、ごちそうさまでした〜。
@@ -2909,20 +2909,20 @@ Everyone, take your seats. We will now thoroughly dissect question DOP-1025, an 
 はーい……。画面見た瞬間、呪文の羅列すぎて私の脳内ニューロンが永久凍土に突入したんだけど……。Aurora PostgreSQL……グローバルデータベース……RPO……？ 文字列だけで胃もたれしそう。ヒノりん、そもそもこれ、どういう現場のどういう大惨事の話なわけ……？
 
 <月凪惟緒>
-Yeah, okay... The moment I glanced at that screen, the sheer avalanche of cryptic jargon sent my brain's neurons straight into permafrost. Aurora PostgreSQL... Global Database... RPO...? Just staring at the text gives me severe indigestion. Hinorin, what kind of workplace disaster are we even talking about here in the first place?
+Yeah, okay... The moment I glanced at that screen, the sheer (avalanche )of cryptic jargon sent my brain's neurons straight into permafrost. Aurora PostgreSQL... Global Database... RPO...? Just staring at the text gives me severe (indigestion). Hinorin, what kind of workplace disaster are we even talking about here in the first place?
 
 <蒞星怜空>
 ふっ……大惨事、か。言い得て妙だな。ある日突然、意気揚々と耐障害性を誇示するために地球規模のマルチリージョン構成を組み、安全装置のパラメータを誇らしげに捻じ込んだ瞬間、本番の書き込みトランザクションが次々と金縛りに遭い、画面の向こうで開発陣が阿鼻叫喚の地獄絵図を演じている……実に香ばしい悲喜劇の匂いが立ち込める設問だ。
 
 <蒞星怜空>
-Heh... a disaster, indeed. You've hit the nail on the head. One fine day, an engineering squad proudly deploys a planet-scale multi-region architecture to show off their fault tolerance, pompously dials up a fail-safe parameter, and instantly watches their production write transactions freeze in absolute paralysis while developers wail in sheer despair beyond the monitor... It is truly a tragicomedy ripe with the stench of enterprise chaos.
+Heh... a disaster, indeed. You've (hit the nail on the head). One fine day, an engineering squad proudly deploys a planet-scale multi-region architecture to show off their fault tolerance, (pompously) dials up a fail-safe parameter, and instantly watches their production write transactions freeze in absolute paralysis while developers (wail )in sheer despair beyond the monitor... It is truly a tragicomedy( ripe) with the stench of enterprise chaos.
 
 <日乃竜胆>
 怜空さんの言う通り、これは過剰な理想主義が招いた典型的なボトルネックの悲劇だ。まずは設問の前提を一行ずつ分解する。
 設問：『ある組織は Amazon Aurora PostgreSQL のグローバルデータベースを運用しており、プライマリリージョンに加えて3つのセカンダリリージョンにクラスターを配置しています。`rds.global_db_rpo` パラメータで RPO を設定したところ、プライマリクラスターでトランザクションのコミットが頻繁に待機状態になる事象が発生しています。運用チームは RPO の目標値を変更せずに、この待機の発生頻度を軽減したいと考えています。最も適切な対応はどれですか。』
 
 <日乃竜胆>
-As Rea-san pointed out, this is a quintessential tragedy of a bottleneck born from unbridled idealism. First, let us dismantle the premise of the problem line by line.
+As Rea-san pointed out, this is a quintessential tragedy of a bottleneck born from (unbridled) idealism. First, let us dismantle the premise of the problem line by line.
 The question states: "An organization operates an Amazon Aurora PostgreSQL Global Database, deploying clusters across three secondary regions in addition to the primary region. After setting an RPO using the `rds.global_db_rpo` parameter, write transactions on the primary cluster are frequently entering a commit wait state. The operations team wishes to reduce the frequency of this wait state without altering the target RPO value. What is the most appropriate action?"
 
 <月凪惟緒>
@@ -2959,7 +2959,7 @@ This brings us to RPO—Recovery Point Objective. It is an index indicating the 
 経営陣が真っ青な顔で「1ミリ秒のデータ喪失も許さん」と血走った目で喚き散らす、あの傲慢な数字のことだな。失われれば億単位の金が吹き飛ぶ金融や基幹システムにおいて、このRPOを極限までゼロに近づけたいという欲望は、エンジニアの胃壁を物理的に削り取る呪いのようなものだ。
 
 <蒞星怜空>
-Ah, the arrogant metric that corporate executives scream for with bloodshot eyes, demanding: "We will not tolerate a single millisecond of data loss!" In core transactional engines and financial ledgers where missing data evaporates millions in liquid capital, the ruthless desire to force RPO to zero is an absolute curse that corrodes an engineer's stomach lining.
+Ah, the arrogant metric that corporate executives scream for with bloodshot eyes, demanding: "We will not tolerate a single millisecond of data loss!" In core transactional engines and financial ledgers where missing data evaporates millions in liquid capital, the ruthless desire to force RPO to zero is an absolute curse that (corrodes) an engineer's stomach lining.
 
 <月凪惟緒>
 ひぇ……生々しい呪詛……。で、そのRPOを守るために設定したのが、問題文にある `rds.global_db_rpo` って呪文なわけね？
@@ -3000,8 +3000,8 @@ Wait, WHAAAT?! Hold on a second! You have three branch offices, and if just one 
 しかも今回はセカンダリが3つもある。世界規模のネットワークなんてものは、どこかの海底ケーブルでサメが光ファイバーを齧ったり、経由ルーターがしゃっくりを起こしたりして日常的に揺らいでいる。3箇所も監視対象があれば、サイコロを3個同時に振ってどれか1つでも1の目が出たら全員処刑、と言われているようなものだ。
 
 <蒞星怜空>
-That is precisely the grim reality. It is no different from a grueling school excursion where a single student lagging behind forces the entire class into collective punishment, standing at rigid attention under the blistering sun until the straggler catches up.
-And in this scenario, there are three secondary clusters. Global networks are volatile beasts—sharks nibble on transoceanic fiber, and transit routers hiccup on a daily basis. With three monitored targets, it is mathematically akin to rolling three dice at once and declaring that if even one lands on a bad number, the entire primary database halts.
+That is precisely the grim reality. It is no different from a grueling school excursion where a single student lagging behind forces the entire class into collective punishment, standing at rigid attention under the (blistering) sun until the straggler catches up.
+And in this scenario, there are three secondary clusters. Global networks are (volatile) beasts—sharks (nibble) on transoceanic fiber, and transit routers hiccup on a daily basis. With three monitored targets, it is mathematically akin to rolling three dice at once and declaring that if even one lands on a bad number, the entire primary database halts.
 
 <日乃竜胆>
 怜空さんの例えは相変わらず劇薬だが、本質を突いている。
