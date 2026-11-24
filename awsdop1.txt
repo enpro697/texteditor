@@ -8,11 +8,11 @@
 
 <蒞星怜空> ククッ……素晴らしいな、イオち。その虚無感に満ちた瞳、まるで本番環境の本番リリース直前に「あ、マイグレーションスクリプト流すの忘れてました」と笑顔で報告してくる新卒エンジニアのそれだ。場の空気が一瞬で絶対零度まで凍りつく、あの甘美なる絶望……。さて、ヒノりんよ。お前のその切れ味鋭いメスで、この迷える子羊の脳髄にクラウドセキュリティの真理を刻み込んでやるがいい。
 
-<Rize Rea> Heh... Magnificent, Io-chi. Those eyes brimming with nihilism are the exact spitting image of a fresh graduate engineer cheerfully reporting, "Oh, I forgot to run the migration script," five seconds before a production release. That sweet despair where the room temperature plummets to absolute zero in an instant... Now then, Hinorin. Take that razor-sharp scalpel of yours and carve the truth of cloud security straight into this lost lamb's cerebral cortex.
+<Rize Rea> Heh... Magnificent, Io-chi. Those eyes brimming with nihilism are the exact spitting image of a (fresh graduate )engineer cheerfully reporting, "Oh, I forgot to run the migration script," five seconds before a production release. That sweet despair where the room temperature (plummets to) absolute zero in an instant... Now then, Hinorin. Take that razor-sharp scalpel of yours and carve the truth of cloud security straight into this lost lamb's (cerebral cortex).
 
 <日乃竜胆> 怜空さん、開始早々、現場のトラウマを掘り起こすような比喩で聴講者の戦意を喪失させるのは控えていただきたい。……だが、設問の核心を突く上で、その「放置された時限爆弾」という認識は極めて正確だ。まず前提となる用語と背景から整理する。
 
-<Hinorindou> Rea-san, please refrain from sapping the audience's will to fight right out of the gate with metaphors that dredge up on-site trauma... However, to strike at the heart of this question, that perception of an "abandoned time bomb" is remarkably accurate. Let us first organize the foundational terminology and background.
+<Hinorindou> Rea-san, please refrain from (sapping) the audience's will to fight right out of the gate with metaphors that (dredge up )(on-site) trauma... However, to strike at the heart of this question, that perception of an "abandoned time bomb" is remarkably accurate. Let us first organize the foundational terminology and background.
 
 <日乃竜胆> 設問の舞台は、あるスタートアップ企業だ。彼らは「マイクロサービス」という小さな部品単位に分割されたアプリケーションを「コンテナイメージ」という箱に詰めて運用している。そして、そのコンテナイメージを保管する専用の倉庫が「Amazon ECR（Elastic Container Registry）」の「プライベートリポジトリ」だ。
 
@@ -28,19 +28,19 @@
 
 <日乃竜胆> プログラムを作る際、開発者はゼロから全てを書くわけではない。先人が作った便利な部品、すなわち「OSパッケージ（Linuxの基盤部品など）」や「プログラミング言語パッケージ（Java、Python、Node.jsなどのライブラリ）」を組み合わせて作る。しかし、後から「この部品にはセキュリティ上の穴（脆弱性）があった」と世界中で発見されることがある。その穴に世界共通の番号を振って公開したものが「CVE（Common Vulnerabilities and Exposures）」だ。
 
-<Hinorindou> When writing programs, developers do not write everything from scratch. They build by combining convenient components created by predecessors—namely, "OS packages <foundational Linux components, etc.>" and "programming language packages <libraries for Java, Python, Node.js, etc.>". However, it is often discovered later around the world that "this component had a security hole <vulnerability>." When these holes are assigned a globally standardized ID number and published, they are called "CVEs <Common Vulnerabilities and Exposures>".
+<Hinorindou> When writing programs, developers do not write everything from scratch. They build by combining convenient components created by (predecessors)—namely, "OS packages <foundational Linux components, etc.>" and "programming language packages <libraries for Java, Python, Node.js, etc.>". However, it is often discovered later around the world that "this component had a security hole <vulnerability>." When these holes are assigned a globally standardized ID number and published, they are called "CVEs <Common Vulnerabilities and Exposures>".
 
 <蒞星怜空> 冷蔵庫に入れた瞬間は無菌状態だった極上の生牡蠣が、翌朝ニュースで「実はあの海域の牡蠣、ノロウイルスに汚染されてました」と報道されるようなものだ。冷蔵庫のドアを閉めたままでも、中の牡蠣はすでに毒物へと変貌している。それなのに「入れた時に検査したから安全です」と胸を張る愚か者が、どれほど多いことか。
 
-<Rize Rea> It is akin to placing pristine raw oysters into your refrigerator in a seemingly sterile state, only for the morning news to broadcast, "Actually, oysters from that bay were contaminated with norovirus." Even with the refrigerator door shut tight, the oysters inside have already transmuted into poison. Yet how many fools puff out their chests and claim, "They are safe because we inspected them when we put them in."
+<Rize Rea> It is akin to placing pristine raw oysters into your refrigerator in a seemingly (sterile state), (only for *the morning news* to) broadcast, "Actually, oysters from that bay were contaminated with norovirus." Even with the refrigerator door shut tight, the oysters inside have already (transmuted into) poison. Yet how many fools (puff out) their chests and claim, "They are safe because we inspected them when we put them in."
 
 <月凪惟緒> うわっ、生牡蠣のノロウイルスとか想像しただけでお腹痛くなってきた……。てか、それが設問にある「新たなCVEが公開された際にも自動で再評価される仕組み」ってやつかぁ。一回冷蔵庫に入れた時にチェックするだけじゃなくて、新しい食中毒ニュース（新規CVE）が出たら、冷蔵庫の中のお弁当も自動で再検査してほしいってことね。あと「運用オーバーヘッドを最小限に抑える」っていうのは、要するに「人間がスクリプト書いたりサーバー管理したりする面倒くさい手間をゼロにしたい」ってこと？ わかるよ、私も息をするのすら最小限にしたいし。
 
-<Tsukina Io> Ugh, just imagining norovirus in raw oysters makes my stomach hurt... So that's what the prompt means by "a mechanism to automatically re-evaluate when a new CVE is published". Not just checking once when you put it in the fridge, but automatically re-inspecting the bento boxes already inside whenever breaking food-poisoning news <a new CVE> drops. And "minimizing operational overhead" basically means "eliminating the tedious hassle of humans writing scripts or managing servers," right? I totally get that; I want to minimize even the effort of breathing.
+<Tsukina Io> Ugh, just imagining norovirus in raw oysters makes my stomach hurt... So that's what the prompt means by "a mechanism to automatically re-evaluate when a new CVE is published". Not just checking once when you put it in the fridge, but automatically re-inspecting the bento boxes already inside whenever breaking food-poisoning news <a new CVE> drops. And "minimizing operational overhead" basically means "eliminating the (tedious) (hassle of )humans writing scripts or managing servers," right? I totally get that; I want to minimize even the effort of breathing.
 
 <日乃竜胆> 至極真っ当な解釈だ。運用オーバーヘッドの最小化とは、AWSが裏側の管理を全て引き受けてくれる「フルマネージドサービス」を極限まで活用し、自前でのコード保守やインフラ管理を排除することを指す。では、この「OS＋言語パッケージの検出」「新規CVE公開時の自動再評価」「最小限の運用オーバーヘッド」という3つの絶対条件を基準に、なぜ他の選択肢が誤りなのかを一つずつ斬り捨てていくぞ。
 
-<Hinorindou> An entirely sound interpretation. Minimizing operational overhead refers to leveraging "fully managed services," where AWS handles all backend management, to the utmost limit, thereby eliminating custom code maintenance and infrastructure management. Now, using these three absolute requirements—"detection of OS + language packages," "automatic re-evaluation upon new CVE publication," and "minimal operational overhead"—as our yardstick, we shall strike down each incorrect option one by one.
+<Hinorindou> An entirely( sound interpretation). Minimizing operational overhead refers to leveraging "fully managed services," where AWS handles all backend management, (to the utmost limit), thereby eliminating custom code maintenance and infrastructure management. Now, using these three absolute requirements—"detection of OS + language packages," "automatic re-evaluation upon new CVE publication," and "minimal operational overhead"—as our (yardstick), we shall strike down each incorrect option one by one.
 
 ---
 
@@ -52,7 +52,7 @@
 
 <Hinorindou> First, let us examine the **incorrect option <the second choice>**.
 "Retrieve all images in the ECR repository using an AWS Step Functions workflow and invoke an AWS Lambda function that runs Trivy. Execute daily via Amazon EventBridge Scheduler and save the results to Amazon S3."
-At first glance, this might appear to be a serverless automation utilizing "Trivy," a capable open-source vulnerability scanner. However, this is a glaringly poor move in architectural design.
+At first glance, this might appear to be a serverless automation utilizing "Trivy," a capable open-source vulnerability scanner. However, this is a (glaringly) (poor move) in architectural design.
 
 <月凪惟緒> えー、なんか単語がいっぱい出てきて私の脳内CPUがサーマルスロットリング起こしてるんだけど……。Step Functions？ Lambda？ Trivy？ EventBridge Scheduler？ S3？ これって結局なにやってるの？
 
@@ -98,7 +98,7 @@ In short, this architecture is a DIY system where "a timer rings once a day, a c
 
 <蒞星怜空> なんという涙ぐましい職人芸……いや、現代における「車輪の再発明」の極みだな。AWSがボタン一つで完璧な自動検査機を用意してくれているのに、わざわざ自分で部品を買い集め、ハンダ付けして自作ロボットを組み立て、毎日深夜に手動で掃除させているようなものだ。しかもその自作ロボット、バッテリーが15分しか持たないから、コンテナの数が増えた瞬間に検査の途中で力尽きて床に突っ伏す。さらに、Trivyの脆弱性データベースの更新やLambdaレイヤーの保守まで自分たちでやり続ける羽目になる。運用オーバーヘッドの最小化どころか、自ら運用地獄の釜の蓋を開けに行く自殺行為にすぎない。
 
-<Rize Rea> What touching craftsmanship... nay, the absolute pinnacle of "reinventing the wheel" in the modern era. Even though AWS provides a flawless automated inspection machine at the push of a button, this is like buying parts yourself, soldering together a homemade robot, and making it sweep the floor every night at midnight. Worse yet, this homemade robot's battery only lasts 15 minutes, so the moment the number of containers grows, it collapses face-first onto the floor mid-inspection. On top of that, you are stuck maintaining Trivy's vulnerability database updates and Lambda layers indefinitely. Far from minimizing operational overhead, it is sheer suicide—prying open the lid of operational hell with your own hands.
+<Rize Rea> (What touching *craftsmanship*)... (nay), the absolute pinnacle of "reinventing the wheel" (in the modern era). Even though AWS provides a flawless automated inspection machine at the push of a button, this is like buying parts yourself, (soldering together) a homemade robot, and making it sweep the floor every night at midnight. Worse yet, this homemade robot's battery only lasts 15 minutes, so the moment the number of containers grows, it collapses face-first onto the floor mid-inspection. On top of that, you are stuck maintaining Trivy's vulnerability database updates and Lambda layers indefinitely. Far from minimizing operational overhead, it is sheer suicide—(prying) open the lid of operational hell with your own hands.
 
 <日乃竜胆> 怜空さんの言う通り、欠陥は3つある。
 
@@ -120,7 +120,7 @@ In short, this architecture is a DIY system where "a timer rings once a day, a c
 2. **Increased operational overhead**: Maintaining custom code, updating Trivy, and independently managing result files piling up in S3 creates far too much toil.
 
 
-3. **Up to 24 hours of detection delay**: Because it relies on "daily execution <once a day>," if a new CVE is published at 9:00 AM, the system remains defenseless for up to 24 hours until the next run. It falls short of the immediacy implied by "automatically re-evaluated when a new CVE is published". Therefore, it is incorrect.
+3. **Up to 24 hours of detection delay**: Because it relies on "daily execution <once a day>," if a new CVE is published at 9:00 AM, the system remains defenseless for up to 24 hours until the next run. It (falls short of) the (immediacy) (implied by )"automatically re-evaluated when a new CVE is published". Therefore, it is incorrect.
 
 
 
@@ -158,15 +158,15 @@ This is a classic trap designed to exploit a "fundamental confusion of roles" am
 
 <日乃竜胆> ここで決定的な違いを理解しろ。GuardDutyは「動いているコンテナの怪しい挙動（動的監視）」を見るものであり、**「倉庫（ECR）に眠っているコンテナイメージの中身を解剖して、古い部品（CVE）が混ざっていないか調べる（静的スキャン）」機能は一切持っていない**。そもそも、GuardDutyにECRリポジトリをデータソースとして登録する機能自体が存在しないのだ。
 
-<Hinorindou> Understand the decisive difference here. GuardDuty watches the "suspicious behavior of running containers <dynamic monitoring>" and **possesses zero functionality to "dissect the contents of container images resting in a warehouse <ECR> to check for outdated components <CVEs> <static scanning>"**. In the first place, the very feature of registering an ECR repository as a data source in GuardDuty does not even exist.
+<Hinorindou> Understand the (decisive difference )here. GuardDuty watches the "suspicious behavior of running containers <dynamic monitoring>" and **possesses zero functionality to "dissect the contents of container images resting in a warehouse <ECR> to check for outdated components <CVEs> <static scanning>"**. (In the first place), the very feature of registering an ECR repository as a data source in GuardDuty does not even exist.
 
 <蒞星怜空> つまり、こういうことだ。倉庫の棚に並んだ缶詰のラベルを見て「これはボツリヌス菌が繁殖しやすい古い製造ロットだな」と事前に弾くべき場面で、なぜか屈強なSP（GuardDuty）を雇い入れ、「誰かがその缶詰を食べて泡を吹いて倒れたらすぐに取り押さえます！」と倉庫の前で仁王立ちさせているようなものだ。しかもそのSP、倉庫の鍵すら持っていないから中を覗くこともできない。目的と手段が根本からズレている、救いようのない茶番劇といえよう。
 
-<Rize Rea> In other words, it is like this: in a situation where you ought to inspect the labels on canned goods lined up on a warehouse shelf and weed out "old batches prone to botulism," you instead hire a burly bodyguard <GuardDuty> to stand akimbo in front of the warehouse declaring, "The moment someone eats those cans and collapses foaming at the mouth, I will tackle them immediately!" Furthermore, that bodyguard doesn't even hold the warehouse keys, so he cannot peek inside. A hopeless farce where the objective and the mechanism are fundamentally misaligned.
+<Rize Rea> In other words, it is like this: in a situation where you ought to inspect the labels on canned goods lined up on a warehouse shelf and weed out "old batches (prone to )botulism," you instead hire a (burly) bodyguard <GuardDuty> to (stand akimbo) in front of the warehouse declaring, "The moment someone eats those cans and (collapses foaming at the mouth), I will tackle them immediately!" Furthermore, that bodyguard doesn't even hold the warehouse keys, so he cannot peek inside. A hopeless (farce) where the objective and the mechanism are fundamentally (misaligned).
 
 <月凪惟緒> あ〜、なるほどねぇ。病気になってから暴れるのを止める警備員（GuardDuty）じゃなくて、食べる前に成分表示をチェックする検疫官が必要なのに、そもそも存在しない機能まで妄想してる選択肢ってことかぁ。理解した。次いこう、ヒノりん。
 
-<Tsukina Io> Ahh, I see. Instead of a security guard <GuardDuty> who stops someone from going berserk after getting sick, we need a quarantine officer who checks the ingredient label before anyone eats—and this option is hallucinating a feature that doesn't even exist. Got it. Next one, Hinorin.
+<Tsukina Io> Ahh, I see. Instead of a security guard <GuardDuty> who stops someone from (going berserk )after getting sick, we need a quarantine officer who checks the ingredient label before anyone eats—and this option is hallucinating a feature that doesn't even exist. Got it. Next one, Hinorin.
 
 ---
 
@@ -184,15 +184,15 @@ This, too, is a finely crafted trap targeting the limitations of service specifi
 
 <日乃竜胆> 素振りだけでプロのマウンドに立てば、三振の山を築くだけだ。ECRには「基本スキャン（Basic Scanning）」と「拡張スキャン（Enhanced Scanning）」の2種類が存在する。基本スキャンは追加料金なしで利用できるが、今回の設問の要件に対して3つの致命的な欠陥を抱えている。
 
-<Hinorindou> If you step onto a professional pitcher's mound with nothing but practice swings, you will only pile up strikeouts. ECR offers two types of scanning: "Basic Scanning" and "Enhanced Scanning". Basic scanning is available at no additional charge, yet it suffers from three fatal flaws regarding the requirements of this problem.
+<Hinorindou> If you step onto a professional pitcher's mound with nothing but practice swings, you will only pile up strikeouts. ECR offers two types of scanning: "Basic Scanning" and "Enhanced Scanning". Basic scanning is available at no additional charge, yet it (suffers from *three fatal* flaws regarding) the requirements of this problem.
 
 <日乃竜胆> 第一に、スキャン対象が「OSパッケージのみ」であることだ。基本スキャンはオープンソースのClairという仕組みをベースにしており、LinuxなどのOS部分の脆弱性しか見つけられない。設問には「OSパッケージやプログラミング言語パッケージの既知の脆弱性を検出」と明記されている。JavaやPython、Node.jsなどの言語パッケージの穴を完全に見逃すため、この時点で失格だ。
 
-<Hinorindou> First, **its scan target is restricted to "OS packages only"**. Basic scanning is based on the open-source Clair project and can only detect vulnerabilities in OS components such as Linux. The prompt explicitly states detecting known vulnerabilities in "OS packages and **programming language packages**". Because it completely overlooks holes in language packages like Java, Python, and Node.js, it is disqualified on this point alone.
+<Hinorindou> First, **its scan target is restricted to "OS packages only"**. Basic scanning is based on the open-source Clair project and can only detect vulnerabilities in OS components such as Linux. The prompt explicitly states detecting known vulnerabilities in "OS packages and **programming language packages**". Because it completely overlooks holes in language packages like Java, Python, and Node.js, it is disqualified (on this point alone).
 
 <日乃竜胆> 第二に、**「継続スキャン（自動再評価）」が存在しない**ことだ。基本スキャンで選べるタイミングは、開発者がイメージを倉庫に入れた瞬間（プッシュ時）の1回きりか、人間がボタンを押す（手動実行）の2つだけだ。一度倉庫に入ったイメージに対して、後から新しいCVEが公開されたときに自動で再スキャンする機能はない。選択肢にある「リポジトリごとにスキャン頻度を設定する」という機能自体が、基本スキャンには存在しない架空の仕様だ。
 
-<Hinorindou> Second, **"continuous scanning <automatic re-evaluation>" does not exist**. The only timing options available in basic scanning are a one-time scan at the moment a developer puts an image into the warehouse <on push>, or manual execution when a human presses a button. There is no feature to automatically re-scan images already inside the warehouse when a new CVE is later published. Even the "setting scan frequencies per repository" mentioned in the option is a fictitious specification that does not exist in basic scanning.
+<Hinorindou> Second, **"continuous scanning <automatic re-evaluation>" does not exist**. The only timing options available in basic scanning are a one-time scan at the moment a developer puts an image into the warehouse <on push>, or manual execution when a human presses a button. There is no feature to automatically re-scan images already inside the warehouse when a new CVE is later published. Even the "setting scan frequencies per repository" mentioned in the option is a (fictitious) specification that does not exist in basic scanning.
 
 <日乃竜胆> 第三に、**「Amazon CloudWatch Logs への直接エクスポート」も標準機能にはない**。基本スキャンの結果をわざわざログ管理サービスであるCloudWatch Logsへ直接吐き出す仕組みは提供されていないのだ。
 
@@ -200,11 +200,11 @@ This, too, is a finely crafted trap targeting the limitations of service specifi
 
 <蒞星怜空> 存在しない機能を二つも三つも盛り付けて、さも「標準メニューです」という顔で差し出してくるその図々しさ、まるで場末の怪しい居酒屋のメニュー表だな。「基本スキャン」というのは、入店時に検温だけして「はい平熱ですね、どうぞ！」と通し、その後客が店内で高熱を出して倒れても一切振り返らないシステムだ。しかも「言語パッケージ」という一番危険な劇薬の持ち込み検査は最初からスルーしている。セキュリティポリシーを満たすどころか、コンプライアンス違反の報告書を提出するために存在しているような選択肢だ。
 
-<Rize Rea> The sheer audacity of plating up two or three non-existent features and serving them with a straight face as if they were on the "standard menu"—it reads like the menu of a shady back-alley tavern. "Basic scanning" is a system that merely checks your temperature at the door, waves you in saying, "Normal temperature, step right inside!", and never looks back even if you collapse with a raging fever inside the restaurant. Worse still, it skips inspecting the most dangerous toxins—"language packages"—right from the start. Far from satisfying security policies, this option exists solely to generate a compliance violation report.
+<Rize Rea> The sheer (audacity) of (plating up )two or three (non-existent) features and serving them with a (straight face) as if they were on the "standard menu"—it reads like the menu of a shady back-alley (tavern). "Basic scanning" is a system that merely checks your temperature at the door, waves you in saying, "Normal temperature, (step right inside)!", and never looks back even if you collapse with a (raging fever )inside the restaurant. (Worse still), it skips inspecting the most dangerous (toxins)—"language packages"—right from the start. Far from satisfying security policies, this option exists solely to generate a compliance violation report.
 
 <月凪惟緒> うわぁ、存在しない機能まで混ぜてくるって、試験問題って性格悪すぎない？ まあ、基本スキャンは「OSだけ・プッシュした時の一回きり」って覚えればいいんだね。
 
-<Tsukina Io> Ugh, mixing in features that don't even exist—aren't exam questions way too mean-spirited? Well, I just need to remember that basic scanning is "OS only, one-time on push," right?
+<Tsukina Io> Ugh, mixing in features that don't even exist—aren't exam questions way too (mean-spirited)? Well, I just need to remember that basic scanning is "OS only, one-time on push," right?
 
 ---
 
@@ -220,7 +220,7 @@ This is the one and only solution that fulfills every single requirement of the 
 
 <月凪惟緒> おっ、なんか急にスッキリした文章になった。えーと、「Amazon Inspector」っていうのが真打ちってこと？ こいつは何者なの？
 
-<Tsukina Io> Oh, the sentence suddenly looks super clean. Uhh, so "Amazon Inspector" is the headliner? Who is this guy?
+<Tsukina Io> Oh, the sentence suddenly looks super clean. Uhh, so "Amazon Inspector" is the (headliner)? Who is this guy?
 
 <日乃竜胆> Amazon Inspector（現在のバージョンは Inspector v2）は、AWSが提供する自動化された脆弱性管理サービスだ。ECRのプライベートレジストリ設定で「拡張スキャン（Enhanced Scanning）」を有効化すると、このAmazon Inspectorと自動的に統合される。これにより、以下の3つの魔法のような仕組みが手に入る。
 
@@ -240,7 +240,7 @@ This is the one and only solution that fulfills every single requirement of the 
 
 <蒞星怜空> まさに雲泥の差だな。手作りのポンコツロボット（Step Functions＋Trivy）で徹夜作業をしていた愚かなエンジニアたちを横目に、レジストリのスイッチを一つカチリと切り替えるだけで、世界最高峰の検疫官（Amazon Inspector）が24時間365日体制で倉庫に常駐し、世界中の論文やニュース（NVD）をリアルタイムで監視しながら、怪しい成分が含まれていた瞬間に警報を鳴らしてくれる。これこそがクラウドネイティブの真髄であり、AWSが設計した「楽をして最強の安全を手に入れる」ための王道アーキテクチャだ。
 
-<Rize Rea> A world of difference, truly. While foolish engineers pull all-nighters babysitting their rickety homemade robots <Step Functions + Trivy>, simply flipping a single switch on the registry stations a world-class quarantine officer <Amazon Inspector> in your warehouse 24/7/365—monitoring global bulletins and databases <NVD> in real time and sounding the alarm the very second a suspicious ingredient is flagged. This is the very essence of cloud-native engineering: the royal road architecture designed by AWS to achieve maximum security with minimum toil.
+<Rize Rea> A (world of difference), truly. While foolish engineers pull all-nighters babysitting their (rickety) homemade robots <Step Functions + Trivy>, simply flipping a single switch on the registry stations a world-class quarantine officer <Amazon Inspector> in your warehouse 24/7/365—monitoring global (bulletins) and databases <NVD> in real time and sounding the alarm the very second a suspicious ingredient is flagged. This is the very essence of cloud-native engineering: the royal road architecture designed by AWS to achieve maximum security (with minimum toil).
 
 <月凪惟緒> へぇ〜、なるほどねぇ！ スイッチ一個でInspectorさんが勝手にNVDのニュース見張ってくれて、冷蔵庫のお弁当の中身（OSも言語パッケージも）を自動で再チェックしてくれるってことかぁ。それなら私も、コタツに入ったままミカン食べてても安全ってわけね。
 
@@ -248,11 +248,11 @@ This is the one and only solution that fulfills every single requirement of the 
 
 <日乃竜胆> コタツから出る気がない点は指導の余地があるが、理解としては100点満点だ、イオち。さらに実務上の補足をしておくと、この継続スキャンモードは、イメージが最後にプッシュされてから既定で**180日間**継続される（設定で「ライフタイム」＝無期限に変更することも可能だ）。また、検出された脆弱性はCritical（緊急）やHigh（高）などの重大度で分類され、Amazon EventBridgeルールと連携すれば、重大な穴が見つかった瞬間にSNSで管理者へ自動通知することも容易にできる。コストを最適化したければ、リポジトリフィルタを使って重要なリポジトリだけをスキャン対象に絞ることも可能だ。
 
-<Hinorindou> While your unwillingness to leave the kotatsu leaves room for discipline, your comprehension scores a full 100 points, Io-chi. To add a practical operational note: this continuous scan mode runs by default for **180 days** from when the image was last pushed <which can also be changed to "Lifetime" = indefinite in the settings>. Furthermore, detected vulnerabilities are categorized by severity—such as Critical or High—and by integrating with Amazon EventBridge rules, you can easily automate SNS notifications to administrators the instant a severe flaw is discovered. If you wish to optimize costs, you can also use repository filters to narrow the scan scope exclusively to critical repositories.
+<Hinorindou> While your (unwillingness) to leave the kotatsu (leaves room for) (discipline), your comprehension scores a full 100 points, Io-chi. To add a practical operational note: this continuous scan mode runs by default for **180 days** from when the image was last pushed <which can also be changed to "Lifetime" = (indefinite) in the settings>. Furthermore, detected vulnerabilities are categorized by severity—such as Critical or High—and by integrating with Amazon EventBridge rules, you can easily automate SNS notifications to administrators the instant a severe flaw is discovered. If you wish to optimize costs, you can also use repository filters to narrow the scan scope exclusively to critical repositories.
 
 <蒞星怜空> まあ、コストをケチってフィルタを絞りすぎた結果、スキャン対象外にした「テスト用の野良コンテナ」が本番環境に紛れ込み、そこから侵入されて会社が吹き飛ぶ……というのも、業界ではよくある美しい悲喜劇だがな。設定のさじ加減一つで天国にも地獄にもなる。その緊張感だけは忘れないことだ。
 
-<Rize Rea> Well, pinching pennies on costs and narrowing the filters too tightly, only for an unscanned "stray test container" to slip into production, get breached, and blow the entire company sky-high... is also a classic, picturesque tragicomedy in this industry. A single tweak in configuration separates heaven from hell. Never forget that healthy sense of tension.
+<Rize Rea> Well, (pinching pennies on costs )and (*narrow*ing *the filters too tightly*, only for *an unscanned "stray test container"* to )slip into production, (get breached), and (blow *the entire company* sky-high)... is also a classic, (picturesque) tragicomedy in this industry. A (single tweak in )configuration separates heaven from hell. Never forget that (healthy sense of tension).
 
 <日乃竜胆> 最後の最後まで不吉な予言を残すな、怜空さん。……ともあれ、これでDOP-1005の論理構造は全て解き明かした。
 
@@ -266,7 +266,7 @@ This is the one and only solution that fulfills every single requirement of the 
 
 
 
-<Hinorindou> Do not leave ominous prophecies right up until the very end, Rea-san. ...At any rate, we have now unraveled the entire logical structure of DOP-1005.
+<Hinorindou> Do not leave ominous (prophecies) (right up until )the very end, Rea-san. ...(At any rate), we have now unraveled the entire logical structure of DOP-1005.
 
 1. **Grasp the requirements**: Detection of OS and language packages, automatic re-evaluation upon new CVE publication, and minimal operational overhead.
 
@@ -280,7 +280,7 @@ This is the one and only solution that fulfills every single requirement of the 
 
 <月凪惟緒> はーい、完璧に理解したー。じゃあ私、記憶が揮発する前にコタツで冬眠に入るから、お疲れ様でした〜。
 
-<Tsukina Io> Okayyy, understood completely! Now I'm going to hibernate under my kotatsu before my memory evaporates, so good work today~
+<Tsukina Io> Okayyy, understood completely! Now I'm going to hibernate under my kotatsu before my memory evaporates, (so good work today)~
 
 <日乃竜胆> 寝るな、イオち！ 次の問題（DOP-1006）へ進むぞ！ 刀の錆になりたくなければ、背筋を伸ばして画面を見ろ！
 
@@ -298,11 +298,11 @@ This is the one and only solution that fulfills every single requirement of the 
 
 （怜空）ほう、始まりからいきなり脳死宣言か、イオち。実に清々しいほどの放棄だな。まるで本番デプロイ直前に「テスト環境では動いていました」と言い残して有給消化に入るエンジニアの背中を見ているようで、私の胸は早くも暗い歓喜に打ち震えているぞ。さあヒノりん、この哀れな氷塊に、クラウドという名の冷徹な現実のメスを入れてやるがいい。
 
-（怜空）Ho, declaring brain death right out of the gate, Iochi? What a refreshingly total surrender. It’s like watching the back of an engineer walking into paid time off right before a production deployment after leaving behind the words, "It worked on my local machine"—my heart is already trembling with dark delight. Come now, Hinorin, take the cold, ruthless scalpel of cloud reality to this pitiful block of ice.
+（怜空）Ho, declaring brain death right out of the gate, Iochi? What a (refreshingly) total surrender. It’s like watching the back of an engineer walking into (paid time off) right before a production deployment after leaving behind the words, "It worked on my local machine"—my heart is already (trembling) with dark (delight). Come now, Hinorin, take the cold, ruthless scalpel of cloud reality to this pitiful block of ice.
 
 （竜胆）怜空さん、最初から不吉な現場の怪談を吹き込むのはやめていただきたい。イオちも、フリーズしている暇などないぞ。一つずつ、前提知識の底の底から叩き込んでやる。まず設問の状況を整理しよう。ある企業のDevOpsエンジニアが、コンテナ化したアプリの「イメージ」を「Amazon ECR」のプライベートリポジトリに保存している。そして「AWS CodePipeline」と「AWS CodeBuild」を使って自動ビルドし、ECRにプッシュしている。ここまでの登場人物の意味はわかるか？
 
-（竜胆）Rea-san, please refrain from injecting ominous horror stories from the trenches right at the start. And Iochi, you have no time to freeze. I will hammer the prerequisite knowledge into you from the absolute rock bottom, one piece at a time. First, let’s organize the scenario of the question. A DevOps engineer at a company stores "images" of a containerized application in a private repository on "Amazon ECR". They use "AWS CodePipeline" and "AWS CodeBuild" to automatically build and push them to ECR. Do you understand the cast of characters introduced so far?
+（竜胆）Rea-san, please refrain from injecting ominous horror stories from the trenches right at the start. And Iochi, you have no time to freeze. I will hammer the prerequisite knowledge into you (from the absolute rock bottom), (one piece at a time). First, let’s organize the scenario of the question. A DevOps engineer at a company stores "images" of a containerized application in a private repository on "Amazon ECR". They use "AWS CodePipeline" and "AWS CodeBuild" to automatically build and push them to ECR. Do you understand the cast of characters introduced so far?
 
 （惟緒）え〜っとね、イメージっていうのは……あれでしょ、なんかアプリの設計図とか、お弁当箱に全部のおかずを詰め込んだ冷凍パックみたいなやつ？ で、ECRっていうのが、その冷凍パックを保管しておく巨大な業務用冷凍庫ってことかぁ。……あれ、じゃあ「CodeBuild」と「CodePipeline」は？ なんか工場のベルトコンベアと、お弁当を詰めるロボットアームみたいな感じ？
 
@@ -310,7 +310,7 @@ This is the one and only solution that fulfills every single requirement of the 
 
 （竜胆）……ほう。普段は真冬のトタン裏のダンゴムシのように丸まっているくせに、比喩の直感だけは妙に冴えているな、イオち。その通りだ。「コンテナイメージ」とは、アプリケーションの実行に必要なコード、ランタイム、ライブラリ、設定ファイルをすべて一つにまとめたパッケージ——まさにお前の言う「冷凍パック」だ。そして「Amazon Elastic Container Registry（Amazon ECR）」は、そのコンテナイメージを安全に保管・管理する倉庫だ。「プライベートリポジトリ」とは、社外の人間が勝手に覗けない、鍵付きの専用保管庫を指す。
 
-（竜胆）...Ho. For someone who usually curls up like a pill bug under corrugated tin in midwinter, your intuition for metaphors is strangely sharp, Iochi. You are spot on. A "container image" is a package that bundles everything needed to run an application—code, runtime, libraries, and configuration files—truly the "frozen pack" you described. And "Amazon Elastic Container Registry <Amazon ECR>" is the warehouse that securely stores and manages those container images. A "private repository" refers to a locked, dedicated vault that outsiders cannot peek into without permission.
+（竜胆）...Ho. For someone who usually curls up like a pill bug under (corrugated) (tin) in midwinter, your intuition for metaphors is strangely sharp, Iochi. You are spot on. A "container image" is a package that bundles everything needed to run an application—code, runtime, libraries, and configuration files—truly the "frozen pack" you described. And "Amazon Elastic Container Registry <Amazon ECR>" is the warehouse that securely stores and manages those container images. A "private repository" refers to a locked, dedicated vault that outsiders cannot peek into without permission.
 
 （竜胆）続けて工場のラインだ。「AWS CodeBuild」は、ソースコードを読み込んでコンパイルやテストを行い、コンテナイメージを組み立てる（ビルドする）作業員だ。そして「AWS CodePipeline」は、ソースコードの変更を検知してからCodeBuildに作業を命じ、出来上がったイメージをECRという倉庫へ運び込む（プッシュする）一連のベルトコンベア全体の指揮官——すなわちCI/CDパイプラインだ。
 
@@ -318,15 +318,15 @@ This is the one and only solution that fulfills every single requirement of the 
 
 （怜空）フフ、実に牧歌的なお弁当工場の例えだな。だが現実はもっと血生臭いぞ。その冷凍パックの中に、腐った牡蠣や毒キノコ——すなわち「セキュリティの脆弱性」が混入していたらどうなる？ 何も知らずに本番環境という名の食卓に出せば、全社員と顧客が激しい食中毒を起こしてシステムは全滅、翌朝には謝罪会見のフラッシュを浴びることになる。だからこそ、この設問の「セキュリティチーム」は血眼になっているのだよ。
 
-（怜空）Heh, what an idyllic bento factory analogy. Yet reality is far bloodier. What happens if rotten oysters or poisonous mushrooms—namely, "security vulnerabilities"—get mixed into that frozen pack? If you serve it unknowingly at the dining table called the production environment, every employee and customer suffers violent food poisoning, the system is wiped out, and by the next morning you are bathed in the camera flashes of a press conference apology. That is precisely why the "security team" in this question is frantic with bloodshot eyes.
+（怜空）Heh, what an (idyllic) bento factory analogy. Yet reality is far bloodier. What happens if rotten oysters or poisonous mushrooms—namely, "security vulnerabilities"—get mixed into that frozen pack? If you serve it (unknowingly) at the dining table called the production environment, every employee and customer suffers violent food poisoning, the system is wiped out, and by the next morning you are bathed in the camera flashes of a press conference apology. That is precisely why the "security team" in this question is (frantic) with bloodshot eyes.
 
 （惟緒）うわ、怜空さんの例えが急にホラーすぎて胃がキリキリしてきた……。ていうか設問の要件を見るとさ、「プッシュされたイメージに含まれるOSパッケージとプログラミング言語パッケージの両方の脆弱性を検出すること」って書いてあるよね。ヒノりん、この「OSパッケージ」と「プログラミング言語パッケージ」って何が違うの？ どっちも冷凍パックの中身じゃないの〜？
 
-（惟緒）Ugh, Rea-san's analogy suddenly turned so horror-movie that my stomach is cramping... Anyway, looking at the question's requirements, it says "detect vulnerabilities in both OS packages and programming language packages contained in the pushed image." Hinorin, what's the difference between these "OS packages" and "programming language packages"? Aren't both of them just stuff inside the frozen pack~?
+（惟緒）Ugh, Rea-san's analogy suddenly turned so horror-movie that my stomach is (cramping)... Anyway, looking at the question's requirements, it says "detect vulnerabilities in both OS packages and programming language packages contained in the pushed image." Hinorin, what's the difference between these "OS packages" and "programming language packages"? Aren't both of them just stuff inside the frozen pack~?
 
 （竜胆）至極真っ当な疑問だ、イオち。ここが本問の第一の急所であり、運命の分かれ道だ。コンテナイメージの中身は二層構造になっていると考えろ。まず土台となるのが「OSパッケージ」だ。Linux（UbuntuやAlpineなど）の基本的なシステムを構成する部品群だな。これに対して、その土台の上で動くアプリケーションを作るために開発者が組み込んだPythonのライブラリ（pipで入れるもの）やJavaのJARファイル、Node.jsのnpmパッケージなどが「プログラミング言語パッケージ」だ。
 
-（竜胆）An eminently valid question, Iochi. This is the first critical juncture of the question and the fork in the road of destiny. Think of the contents of a container image as having a two-layer structure. First, the foundation is the "OS packages"—the components that make up the basic Linux system <such as Ubuntu or Alpine>. In contrast, the Python libraries <installed via pip>, Java JAR files, or Node.js npm packages that developers incorporate on top of that foundation to build the actual application are the "programming language packages."
+（竜胆）An (eminently) valid question, Iochi. This is the first critical (juncture) of the question and the (fork in the road of destiny). Think of the contents of a container image as having a two-layer structure. First, the foundation is the "OS packages"—the components that make up the basic Linux system <such as Ubuntu or Alpine>. (In contrast), the Python libraries <installed via pip>, Java JAR files, or Node.js npm packages that developers (incorporate) on top of that foundation to build the actual application are the "programming language packages."
 
 （竜胆）そしてAmazon ECRのイメージスキャンには、大きく分けて**2種類**存在する。ここを脳髄に刻み込め。
 1つ目が「基本スキャン（Basic scanning）」。これは「Clair」というオープンソースのデータベースを使っており、無料で手軽に使える反面、「OSパッケージ」の脆弱性しか検出できない。アプリ開発者が書いたPythonやJavaのライブラリに致命的な穴があっても、基本スキャンは完全に素通りするのだ。
@@ -358,7 +358,7 @@ Then, it hands off only the CRITICAL telegrams that pass the filter to an **Amaz
 
 （竜胆）全体像の筋道が通ったところで、いよいよ5つの選択肢の解剖に入るぞ。鉄則通り、**まずは「不正解の選択肢（3つ）」を徹底的に叩き潰し、なぜそれがダメなのかを骨の髄まで理解したあとで、「正解の選択肢（2つ）」を拝むとしよう**。
 
-（竜胆）Now that the overall flow is clear, we will begin dissecting the five choices. Following our ironclad rule, we will first thoroughly crush the three incorrect choices, understand why they fail down to the marrow of our bones, and only afterward behold the two correct choices.
+（竜胆）Now that the overall flow is clear, we will begin dissecting the five choices. Following our ironclad rule, we will first thoroughly crush the three incorrect choices, understand why they fail down to the marrow of our bones, and (only afterward) behold the two correct choices.
 
 ---
 
@@ -378,19 +378,19 @@ Then, it hands off only the CRITICAL telegrams that pass the filter to an **Amaz
 
 （惟緒）うーん……なんか一見するとすごく賢そうに見えるんだけどなぁ。「ビルド中に自分でスキャン結果を見に行って、CRITICALがあったらビルドを失敗させてストップする」んでしょ？ 危険なイメージを世に出さないぞ！ って感じで立派じゃない？ なんでこれがダメなの〜？
 
-（惟緒）Hmm... at first glance, this actually looks pretty smart. "Check the scan results yourself during the build, and if there's a CRITICAL one, fail the build and stop it," right? Like "We won't let dangerous images out into the world!" Isn't that admirable? Why is this no good~?
+（惟緒）Hmm... at first glance, this actually looks pretty smart. "Check the scan results yourself during the build, and if there's a CRITICAL one, fail the build and stop it," right? Like "We won't (let *dangerous images* out into) the world!" Isn't that (admirable)? Why is this no good~?
 
 （怜空）ククク……イオち、お前は実に愛おしいほど純粋だな。だがな、この選択肢には3つの致命的な欠陥（トリプル・デス）が仕込まれているのだよ。まず1つ目、そもそも「拡張スキャン」を有効にしていないから、APIで結果を取りに行っても「基本スキャン」の結果——つまりOSパッケージの脆弱性しか返ってこない。言語パッケージの毒キノコは完全にスルーだ。
 
-（怜空）Kukuku... Iochi, you are endearingly pure. However, this option has **three fatal flaws <a triple death>** baked right into it. First, because "enhanced scanning" isn't enabled in the first place, even when you call the API to fetch results, you only get "basic scanning" results—meaning only OS package vulnerabilities. The poisonous mushrooms in language packages walk right through.
+（怜空）Kukuku... Iochi, you are (endearingly) pure. However, this option has **three fatal flaws <a triple death>** baked right into it. First, because "enhanced scanning" isn't enabled in the first place, even when you call the API to fetch results, you only get "basic scanning" results—meaning only OS package vulnerabilities. The poisonous mushrooms in language packages (walk right through).
 
 （竜胆）2つ目の欠陥は、「スキャンの非同期性」だ。ECRにイメージをプッシュした瞬間、スキャンは裏側で「非同期（バックグラウンド）」で走り始めるため、いつ終わるかわからない。CodeBuildの中で「スキャン終わりましたか？ まだですか？」と待ち合わせる処理（ポーリング）を自前で書くのは極めて煩雑で泥臭い実装になる。
 
-（竜胆）The second flaw is **"scan asynchronicity."** The moment you push an image to ECR, the scan starts running "asynchronously <in the background>," so you don't know when it will finish. Writing custom polling logic inside CodeBuild to keep asking, "Is the scan done yet? How about now?" results in an extraordinarily cumbersome and messy implementation.
+（竜胆）The second flaw is **"scan asynchronicity."** The moment you push an image to ECR, the scan starts running "asynchronously <in the background>," so you don't know when it will finish. Writing custom polling logic inside CodeBuild to keep asking, "Is the scan done yet? How about now?" results in an extraordinarily (cumbersome) and messy implementation.
 
 （竜胆）そして3つ目の欠陥がトドメだ。通知される内容が「CodePipelineが失敗した（ビルドが落ちた）」という事実だけになってしまう点だ。セキュリティチームが知りたいのは「どの脆弱性（CVE番号など）がCRITICALとして検出されたか」という具体的な脆弱性情報だ。ビルド失敗の通知だけでは、単なる構文エラーで落ちたのかCRITICAL脆弱性で落ちたのかすらメールからは判別できない。要件にある「CRITICALの検出結果が出た場合のみ通知」とは根本的に噛み合っていないのだ。
 
-（竜胆）And the third flaw is the coup de grâce. The notification sent is **merely the fact that "CodePipeline failed <the build broke>."** What the security team wants to know is specific vulnerability information—such as which vulnerability <CVE ID, etc.> was detected as CRITICAL. With just a build-failure alert, you can't even tell from the email whether it broke due to a simple syntax error or a CRITICAL vulnerability. It fundamentally fails to match the requirement to "notify only when CRITICAL findings are detected."
+（竜胆）And the third flaw is the (coup de grâce). The notification sent is **merely the fact that "CodePipeline failed <the build broke>."** What the security team wants to know is specific vulnerability information—such as which vulnerability <CVE ID, etc.> was detected as CRITICAL. With just a build-failure alert, you can't even tell from the email whether it broke due to a simple syntax error or a CRITICAL vulnerability. It fundamentally (fails to match the *requirement* to) "notify only when CRITICAL findings are detected."
 
 （惟緒）あ〜！ なるほど！「あなたの料理に毒が入ってました（CVE-XXXX）」って教えてほしいのに、「なんかキッチンが爆発しました（ビルド失敗）」って連絡だけが来るようなものかぁ。そりゃセキュリティチームも「え、何が起きたの！？」ってパニックになるよね。
 
@@ -414,7 +414,7 @@ Then, it hands off only the CRITICAL telegrams that pass the filter to an **Amaz
 
 （怜空）名前負けの典型だな、イオち。AWS試験における「もっともらしい新サービス名を並べて存在しない機能をつなげる」という、作問者の悪意が結晶化したような選択肢だ。いいか、**Security Hubの「インサイト」という機能に、SNSトピックへ直接通知を送る設定など存在しない**。存在しないボタンを必死に探して画面をスクロールし続けるエンジニアの虚無な瞳を想像してみるがいい。涙が止まらんだろう？
 
-（怜空）A classic case of a service failing to live up to its grand name, Iochi. This option is the crystallized malice of an exam writer: lining up plausible security service names and connecting them with a feature that does not exist. Listen closely: Security Hub's "Insights" feature has no setting to send notifications directly to an SNS topic. Picture the hollow eyes of an engineer endlessly scrolling the console desperately searching for a button that isn't there. You wouldn't be able to stop crying, would you?
+（怜空）A classic case of a service (failing to live up to *its* grand name), Iochi. This option is the crystallized malice of an exam writer: lining up plausible security service names and connecting them with a feature that does not exist. Listen closely: Security Hub's "Insights" feature has no setting to send notifications directly to an SNS topic. Picture the hollow eyes of an engineer endlessly scrolling the console desperately searching for a button that isn't there. You wouldn't be able to stop crying, would you?
 
 （竜胆）怜空さんの言う通りだ。まず前提知識として、**AWS Security Hub**は、InspectorやGuardDutyなど複数のセキュリティサービスが出した検出結果を「AWS Security Finding Format（ASFF）」という共通フォーマットに統一して一箇所に集約する司令塔だ。そして「インサイト」とは、集まった大量のデータを「重要度ごと」「リソースごと」にグループ化してダッシュボード上で**分析・可視化するグラフや集計ビュー**のことであり、通知送信機能そのものを持たない。Security Hubから通知を送りたい場合であっても、結局は**EventBridge経由でSNSに流す**必要がある。
 
