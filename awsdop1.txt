@@ -418,11 +418,11 @@ Then, it hands off only the CRITICAL telegrams that pass the filter to an **Amaz
 
 （竜胆）怜空さんの言う通りだ。まず前提知識として、**AWS Security Hub**は、InspectorやGuardDutyなど複数のセキュリティサービスが出した検出結果を「AWS Security Finding Format（ASFF）」という共通フォーマットに統一して一箇所に集約する司令塔だ。そして「インサイト」とは、集まった大量のデータを「重要度ごと」「リソースごと」にグループ化してダッシュボード上で**分析・可視化するグラフや集計ビュー**のことであり、通知送信機能そのものを持たない。Security Hubから通知を送りたい場合であっても、結局は**EventBridge経由でSNSに流す**必要がある。
 
-（竜胆）Rea-san is correct. As prerequisite knowledge, **AWS Security Hub** is a command center that normalizes findings from multiple security services—such as Inspector and GuardDuty—into a unified format called "AWS Security Finding Format <ASFF>" and aggregates them in one place. And "Insights" are **analytical graphs and aggregated views** on a dashboard that group collected data by "severity" or "resource" for visualization; they do not possess a notification delivery mechanism themselves. Even if you wanted to send alerts from Security Hub, you would still have to route them through EventBridge to SNS.
+（竜胆）Rea-san is correct. As prerequisite knowledge, **AWS Security Hub** is a command center that (normalizes) findings from multiple security services—such as Inspector and GuardDuty—into a unified format called "AWS Security Finding Format <ASFF>" and aggregates them in one place. And "Insights" are **analytical graphs and aggregated views** on a dashboard that group collected data by "severity" or "resource" for visualization; they do not possess a notification delivery mechanism themselves. Even if you wanted to send alerts from Security Hub, you would still have to route them through EventBridge to SNS.
 
 （竜胆）さらにダメ押しで、Security HubがECRの言語パッケージの脆弱性を受け取るには、結局裏側で**Amazon Inspectorの拡張スキャンが有効になっていることが大前提**だ。検出の前提も欠けており、存在しない「直接通知機能」を謳っているため、二重の意味で完全にアウトだ。
 
-（竜胆）To make matters worse, for Security Hub to receive ECR language package vulnerabilities, having Amazon Inspector's enhanced scanning enabled underneath is still a mandatory prerequisite. Because it lacks the detection prerequisite and claims a non-existent "direct notification feature," it is doubly out of the question.
+（竜胆）(To make matters worse), for Security Hub to receive ECR language package vulnerabilities, having Amazon Inspector's enhanced scanning enabled (underneath) is still a (mandatory prerequisite). Because it lacks the detection prerequisite and claims a non-existent "direct notification feature," it is doubly out of the question.
 
 （惟緒）ふ〜ん、つまり「インサイト」っていうのはお店の売り上げグラフみたいなもので、グラフ自体に「赤字になったら店長に電話をかける機能」なんて付いてないってことかぁ。グラフを見て「わぁCRITICALが多いなぁ」って眺めるだけなんだね。納得〜。
 
@@ -434,7 +434,7 @@ Then, it hands off only the CRITICAL telegrams that pass the filter to an **Amaz
 > 
 > 
 
-（竜胆）A remarkably accurate interpretation. Now let us dispose of the third incorrect choice <the fourth choice on screen, Incorrect 3 in the explanation>:
+（竜胆）A remarkably accurate interpretation. Now let us (dispose of )the third incorrect choice <the fourth choice on screen, Incorrect 3 in the explanation>:
 
 > **"Enable basic scanning in Amazon ECR scan settings and configure scan on push. Receive ECR image scan completion events in Amazon EventBridge, determine the severity using AWS Lambda, and send an email via Amazon SES."**
 > 
@@ -442,7 +442,7 @@ Then, it hands off only the CRITICAL telegrams that pass the filter to an **Amaz
 
 （惟緒）あ！ 最初の2単語でわかった！「**基本スキャン**を有効化し」って書いてある！ さっきヒノりんが「基本スキャンはOSパッケージしか見なくて、プログラミング言語パッケージの脆弱性は素通りする」って言ってたやつだよね！？
 
-（惟緒）Ah! I caught it in the very first few words! It says "Enable **basic scanning**"! That's the one Hinorin just said only checks OS packages and completely ignores programming language package vulnerabilities, right!?
+（惟緒）Ah! I caught it (in the very first) few words! It says "Enable **basic scanning**"! That's the one Hinorin just said only checks OS packages and completely ignores programming language package vulnerabilities, right!?
 
 （竜胆）見事だ、イオち！ その通り、**「基本スキャン」と書いてある時点で、要件である「プログラミング言語パッケージの脆弱性検出」を絶対に満たせないため即座に失格**だ。さらに言えば、後半の「AWS Lambdaで重要度を判定してAmazon SES（メール送信専用サービス）から送る」という部分も、AWSの設計思想（ベストプラクティス）から見ると減点対象の悪手だ。
 
@@ -478,11 +478,11 @@ Then, it hands off only the CRITICAL telegrams that pass the filter to an **Amaz
 
 （惟緒）おお〜！ 出たね、「Amazon Inspector」と「拡張スキャン」！ これを使うと、OSパッケージもプログラミング言語パッケージも両方スキャンしてくれるんだよね。でもさ、後ろにくっついてる「**対象リポジトリにプッシュ時スキャンのフィルターを適用します**」っていうのはどういう意味？ なんかフィルターって聞くと、大事なデータまで濾し取られちゃいそうでちょっと怖いんだけど……。
 
-（惟緒）Ooh~! There it is, "Amazon Inspector" and "enhanced scanning"! Using this scans both OS packages and programming language packages, right? Wait, what does the part tacked onto the end—"apply a scan-on-push filter to the target repository"—mean? Hearing the word "filter" makes me a little scared it might strain out important data too...
+（惟緒）Ooh~! There it is, "Amazon Inspector" and "enhanced scanning"! Using this scans both OS packages and programming language packages, right? Wait, what does the part tacked onto the end—"apply a scan-on-push filter to the target repository"—mean? Hearing the word "filter" makes me a little scared it might (strain out )important data too...
 
 （竜胆）良いところに気づいたな、イオち。ECRの拡張スキャンでは、「どのリポジトリ（倉庫）に対して、どのタイミングでスキャンを実行するか」を指定する仕組みを**スキャンフィルター**と呼ぶのだ。ここで「プッシュ時スキャン（Scan on push）」のフィルターを該当リポジトリに適用することで、CodeBuildから新しいコンテナイメージがECRにプッシュされた瞬間に、**人間の手を介さず自動的に拡張スキャンが起動する**ようになる。しかも拡張スキャンには「継続的スキャン（Continuous scanning）」という機能もあり、プッシュした後に世の中で新しい脆弱性が発見された場合でも、過去に入れたイメージを自動で再評価してくれるのだ。
 
-（竜胆）Good catch, Iochi. In ECR enhanced scanning, the mechanism used to specify "which repositories <warehouses> get scanned and when" is called a **scan filter**. By applying a "Scan on push" filter to the target repository here, the moment CodeBuild pushes a new container image to ECR, enhanced scanning triggers automatically without human intervention. Moreover, enhanced scanning includes a "continuous scanning" feature that automatically re-evaluates previously stored images if new vulnerabilities are discovered in the world after the push.
+（竜胆）(Good catch), Iochi. In ECR enhanced scanning, the mechanism used to specify "which repositories <warehouses> get scanned and when" is called a **scan filter**. By applying a "Scan on push" filter to the target repository here, the moment CodeBuild pushes a new container image to ECR, enhanced scanning triggers automatically without human intervention. Moreover, enhanced scanning includes a "continuous scanning" feature that automatically re-evaluates previously stored images if new vulnerabilities are discovered in the world after the push.
 
 （怜空）フフ、一度冷凍庫に入れたお弁当が、数日後に世間で「あのメーカーの醤油から毒物検出！」とニュースになった瞬間、冷凍庫のInspectorが勝手に再検査して警報を鳴らしてくれるようなものだ。これほど頼もしい番犬はいない。ただし、この選択肢1つだけでは「検査して結果を出した」ところまでで終わる。その警報をセキュリティチームのメールへ届ける配管が必要だ。
 
@@ -538,7 +538,7 @@ Then, it hands off only the CRITICAL telegrams that pass the filter to an **Amaz
 
 （怜空）ククク……普段は真冬のトタン裏で冬眠しているダンゴムシが、まさかここまで綺麗にイベント駆動の美学を語るとはな。これで本番環境に毒入りコンテナが流出する悲劇は未然に防がれたわけだ。もっとも、セキュリティチームにCRITICALのメールが1秒間に500通届いて、担当者が静かにブラウザを閉じて山へ消える展開まではAWSも保証してくれないがな。さあ、今日の講義はここまでだ。次の設問へ進む準備はいいか？
 
-（怜空）Kukuku... To think a pill bug that normally hibernates under midwinter corrugated tin could articulate the aesthetics of event-driven architecture so cleanly. With this, the tragedy of poisoned containers leaking into production is averted. Of course, even AWS won't guarantee against the scenario where 500 CRITICAL emails hit the security team per second, causing the lead engineer to quietly close their browser and vanish into the mountains. Now, that concludes today's lecture. Are you ready to move on to the next question?
+（怜空）Kukuku... To think a pill bug that normally hibernates under midwinter corrugated tin could articulate the aesthetics of event-driven architecture so cleanly. With this, the tragedy of poisoned containers leaking into production is (averted). Of course, even AWS won't guarantee against the scenario where 500 CRITICAL emails hit the security team per second, causing the lead engineer to quietly close their browser and vanish into the mountains. Now, that concludes today's lecture. Are you ready to move on to the next question?
 
 
 --
@@ -549,11 +549,11 @@ Then, it hands off only the CRITICAL telegrams that pass the filter to an **Amaz
 
 <月凪 惟緒> うわ〜、始まったよ……私の脳内の永久凍土が、今まさに専門用語の吹雪で白く染め上げられていく……。ヒノりん、そもそも問題文の1行目からして暗号なんだけど。「Amazon Aurora PostgreSQLのグローバルデータベース」って、なんかの新種の呪文？ 私の知識は真冬のトタン裏のダンゴムシ並みに丸まって動けないんだけど。
 
-<月凪 惟緒> Uwaah, it's starting... The permafrost inside my brain is being painted white by a blizzard of jargon right now... Hino-rin, the very first line of the prompt already looks like a cipher to me. Is "Amazon Aurora PostgreSQL Global Database" some kind of new spell? My knowledge is curled up and motionless, just like a pill bug under a tin roof in the dead of winter.
+<月凪 惟緒> Uwaah, it's starting... The permafrost inside my brain is being painted white by a blizzard of jargon right now... Hino-rin, the very first line of the prompt already looks like a (cipher) to me. Is "Amazon Aurora PostgreSQL Global Database" some kind of new spell? My knowledge is curled up and motionless, just like a pill bug under a tin roof in the dead of winter.
 
 <蒞星 怜空> ほう、ダンゴムシか。悪くない比喩だ、イオち。だがな、AWSの現場において「グローバルデータベースの書き込みブロック」に直面したエンジニアの顔色は、ダンゴムシの裏側よりも遥かに土気色で、死相が漂っているものだ。世界中にデータをばら撒いた結果、遠く離れた海の向こうの遅刻魔を待つために、本国のレジが完全にフリーズする――まるで、地球の裏側にいる親戚が箸を動かすまで、目の前の熱々のラーメンを食うなと銃口を突きつけられているような不条理劇だと言えよう。
 
-<蒞星 怜空> Ho, a pill bug? Not a bad metaphor, Io-chi. However, in an AWS production environment, the complexion of an engineer facing a "Global Database write block" is far more ashen than the underside of a pill bug, carrying the unmistakable pallor of death. Scattering data across the globe only for the main cash register at home to freeze completely while waiting for a chronic tardy slacker across the ocean—it is an absurd tragedy, akin to having a gun barrel pressed to your temple with orders not to eat the piping-hot ramen right in front of you until a relative on the other side of the Earth picks up their chopsticks.
+<蒞星 怜空> Ho, a pill bug? Not a bad metaphor, Io-chi. However, in an AWS production environment, the (complexion) of an engineer facing a "Global Database write block" is far more (ashen) than the underside of a pill bug, carrying the (unmistakable) (pallor) of death. Scattering data across the globe only for the main cash register at home to freeze completely while waiting for a chronic tardy slacker across the ocean—it is an absurd tragedy, akin to having a (gun barrel) pressed to your (temple) with orders not to eat the piping-hot ramen right in front of you until a relative on the other side of the Earth picks up their chopsticks.
 
 <日乃 竜胆> ……いきなり物騒な比喩で場の空気を氷点下まで叩き落とすのはやめていただきたい、怜空さん。だが、その本質は極めて正確だ。イオち、順を追って一つずつ紐解こう。まず「Amazon Aurora PostgreSQL」とは、AWSが提供するクラウド専用の超高性能なリレーショナルデータベース（表形式でデータを管理するシステム）だ。そして「グローバルデータベース（Global Database）」とは、そのデータベースを世界中の複数の「リージョン（世界各地にあるAWSのデータセンター群の拠点）」にまたがって展開し、データを複製（レプリケーション）する仕組みのことだ。
 
@@ -593,11 +593,11 @@ Then, it hands off only the CRITICAL telegrams that pass the filter to an **Amaz
 
 <蒞星 怜空> いいねえ、公開処刑の時間だ。AWSの試験問題というのは、一見すると「いかにも効きそうな高級サプリメント」のような誤答を並べて受験者を沼に引きずり込むのが常套手段だからな。まずは2番目の選択肢、「**各セカンダリリージョンのクラスターにリードレプリカを追加し、レプリケーション帯域を分散させる。**」――これなど、まさに無知な設計者が飛びつきそうな美しい罠だ。
 
-<蒞星 怜空> Splendid, time for public executions. AWS exam questions routinely drag test-takers into a swamp by lining up distractors that look like "expensive, super-effective supplements" at first glance. Take the second choice first: "**Add read replicas to the clusters in each secondary region to distribute the replication bandwidth.**" —This is a gorgeous trap that an ignorant architect would leap right into.
+<蒞星 怜空> Splendid, time for public executions. AWS exam questions routinely drag test-takers into a swamp by lining up distractors that look like "expensive, super-effective supplements" at first glance. Take the second choice first: "**Add read replicas to the clusters in each secondary region to distribute the replication bandwidth.**" —This is a gorgeous trap that an ignorant architect would (leap right into).
 
 <月凪 惟緒> えっ、これダメなの？ だって「帯域を分散させる」って書いてあるよ？ セカンダリリージョンの中で働くスタッフ（リードレプリカ）を増やせば、東京から送られてくる荷物の受け取り作業が分担できて、遅刻しなくなるんじゃないの〜？ 私の脳内イメージでは、荷受け係が1人から2人に増えてサクサク動いてるんだけど。
 
-<月凪 惟緒> Huh, that doesn't work? Because it says "distribute the replication bandwidth"! If we increase the staff working inside the secondary region <read replicas>, wouldn't they be able to share the workload of receiving packages sent from Tokyo and stop being late? In my mental image, the receiving clerks increased from one to two and are working briskly.
+<月凪 惟緒> Huh, that doesn't work? Because it says "distribute the replication bandwidth"! If we increase the staff working inside the secondary region <read replicas>, wouldn't they be able to share the workload of receiving packages sent from Tokyo and stop being late? In my (mental image), the receiving clerks increased from one to two and are working (briskly).
 
 <日乃 竜胆> 甘いぞ、イオち。Auroraのアーキテクチャの根本を見誤っている。Auroraの「リードレプリカ（読み取り専用インスタンス）」とは、**そのリージョン（クラスター）の内部で、ユーザーからの「読み取り（SELECTなど）」のアクセスを分散させるための仕組み**だ。東京（プライマリ）から海外（セカンダリ）への「クロスリージョンレプリケーション（リージョン間のデータ複製）」は、プライマリのストレージ層からセカンダリのストレージ層へと直接行われる。つまり、セカンダリの部屋の中に受付係（リードレプリカ）を何十人増やそうと、東京からその部屋へ届く国際郵便のトラックの速度や道路の混雑（リージョン間遅延）には**1ミリも影響を与えない**のだ。
 
@@ -613,11 +613,11 @@ Then, it hands off only the CRITICAL telegrams that pass the filter to an **Amaz
 
 <日乃 竜胆> これもまた、言葉の響きだけで受験者を惑わせる悪質なトラップだ。「書き込み転送（Write Forwarding）」とは、海外（セカンダリリージョン）にいるアプリケーションが、近くのセカンダリクラスターに対して書き込みリクエストを送った際、セカンダリがそれを**自動的にプライマリクラスターへ転送してくれる機能**のことだ。つまり、海外の支店に「注文票」を提出できるようになるだけで、**実際の調理と会計（最終的な書き込み処理）は、結局すべて東京の本店（プライマリ）に送られて処理される**のだ。
 
-<日乃 竜胆> This is yet another malicious trap designed to deceive test-takers with pleasant-sounding buzzwords. "Write Forwarding" is a feature where, when an application overseas <in a secondary region> sends a write request to its nearby secondary cluster, the secondary **automatically forwards that request to the primary cluster**. In short, it merely allows customers to submit an "order slip" at an overseas branch; **the actual cooking and billing <final write processing> are still sent to and executed entirely by the Tokyo headquarters <Primary>**.
+<日乃 竜胆> This is yet another malicious trap designed to deceive test-takers with (pleasant-sounding) buzzwords. "Write Forwarding" is a feature where, when an application overseas <in a secondary region> sends a write request to its nearby secondary cluster, the secondary **automatically forwards that request to the primary cluster**. In short, it merely allows customers to submit an "order slip" at an overseas branch; **the actual cooking and billing <final write processing> are still sent to and executed entirely by the Tokyo headquarters <Primary>**.
 
 <蒞星 怜空> ほら、イオち。絵面を想像してみろ。東京のレジが大行列でパンクして待機状態になっているというのに、わざわざロンドンやニューヨークの支店から「こっちからも注文票をFAXで送るから処理しといて！」と業務を転送してくるようなものだ。プライマリの負担が軽くなるどころか、むしろ東京への書き込み負荷が増えてレプリケーション遅延がさらに悪化する可能性すらある。しかも、Auroraグローバルデータベースのレプリケーションはあくまで非同期方式であり、この機能は書き込みの「経路」を変えるだけで、RPO制約の監視メカニズムには一切干渉しない。火に油を注ぐとはまさにこのことだ。
 
-<蒞星 怜空> Look, Io-chi. Picture the scene. The cash register in Tokyo is already jammed with a massive line and stuck in a wait state, and yet branches in London and New York go out of their way to fax over extra order slips saying, "Process these for us too!" Far from lightening the primary's burden, it actually increases the write load on Tokyo and could make the replication lag even worse. Furthermore, replication in an Aurora Global Database is strictly asynchronous; this feature only alters the "routing" of writes and never interferes with the RPO constraint monitoring mechanism. That is the very definition of pouring oil on a fire.
+<蒞星 怜空> Look, Io-chi. Picture the scene. The cash register in Tokyo is already jammed with a massive line and stuck in a wait state, and yet branches in London and New York go out of their way to fax over extra order slips saying, "Process these for us too!" Far from lightening the primary's burden, it actually increases the write load on Tokyo and could make the replication lag even worse. Furthermore, replication in an Aurora Global Database is strictly asynchronous; this feature only alters the "routing" of writes and never (interferes) with the RPO constraint monitoring mechanism. That is the very definition of pouring oil on a fire.
 
 <月凪 惟緒> うわ、それは地獄絵図すぎる……東京の店長が過労で倒れそう。じゃあ最後の不正解、4番目の「**プライマリクラスターのインスタンスクラスをスケールアップし、書き込みスループットを向上させる。**」はどうなの？ これ、画面の投票率でも15%くらいの人が選んでるし、一番直感的に「本店のレジを最新の超高速マシンに買い替えれば、処理が速くなって解決するじゃん！」って思っちゃうんだけど。
 
@@ -637,23 +637,23 @@ Then, it hands off only the CRITICAL telegrams that pass the filter to an **Amaz
 
 <蒞星 怜空> 電動キックボードで爆走しては20メートルごとに急ブレーキをかけて後続を睨みつけるリーダー……想像しただけで胃が痛くなる滑稽さだな。さて、すべての偽物を斬り捨てたところで、いよいよ真打――**正解の選択肢**の出番だ。1番目の「**セカンダリリージョンのクラスター数を減らし、RPO制約の対象となるレプリケーション先を削減する。**」これがなぜ唯一の解となるのか、ヒノりん、鮮やかに締めてみせろ。
 
-<蒞星 怜空> A leader zooming ahead on an electric scooter only to slam on the emergency brakes every 20 meters and glare back at the stragglers... Just imagining it gives me a stomachache from the sheer absurdity. Now, with all the counterfeits cut down, it is finally time for the main event—the **correct choice**. The first option: "**Reduce the number of clusters in secondary regions to decrease the replication destinations subject to RPO constraints.**" Show us why this is the sole solution, Hino-rin, and finish it with style.
+<蒞星 怜空> A leader zooming ahead on an electric scooter only to slam on the emergency brakes every 20 meters and (glare) back at the stragglers... Just imagining it gives me a stomachache from the sheer absurdity. Now, with all the (counterfeits) cut down, it is finally time for the main event—the **correct choice**. The first option: "**Reduce the number of clusters in secondary regions to decrease the replication destinations subject to RPO constraints.**" Show us why this is the sole solution, Hino-rin, and finish it with style.
 
 <日乃 竜胆> 承知した。イオち、ここまでの話を思い出せ。`rds.global_db_rpo` の仕様は、「すべてのセカンダリクラスターを監視し、**いずれか1つでも**遅延が閾値を超えそうになったらプライマリをブロックする」というものだったな。
 
-<日乃 竜胆> Understood. Io-chi, recall everything we have discussed up to this point. The specification of `rds.global_db_rpo` is: "Monitor all secondary clusters, and if **even a single one** is about to exceed the lag threshold, block the primary."
+<日乃 竜胆> Understood. Io-chi, recall everything we have discussed (up to *this* point). The (specification) of `rds.global_db_rpo` is: "Monitor all secondary clusters, and if **even a single one** is about to exceed the lag threshold, block the primary."
 
 <月凪 惟緒> うんうん、遠足の後ろに3人ついてきてて、誰か1人でも遅れたらアウトってやつだよね？
 
-<月凪 惟緒> Yeah, yeah, the thing where three kids are trailing behind on the field trip, and if even one falls behind, it's a foul, right?
+<月凪 惟緒> Yeah, yeah, the thing where three kids are trailing behind on the field trip, and if even one falls behind, it's a (foul), right?
 
 <日乃 竜胆> そうだ。つまり、セカンダリクラスターが3つあれば、「3つの独立した遅延イベント（遅刻のリスク）」が常に同時に走っている状態になる。どれか1つでもネットワークが揺らいだり負荷が高まったりすれば、即座にプライマリが巻き添えを食ってブロックされる。ならば、**セカンダリクラスターを1つ削除して2つに減らせばどうなるか？** RPOの目標値（パラメータの設定値そのもの）は一切変更しないまま、**「RPOチェックの対象数」が3から2へと減少し、「いずれかのセカンダリで遅延が閾値を超える確率」そのものを物理的・統計的に引き下げることができる**のだ。
 
-<日乃 竜胆> Precisely. That means if there are three secondary clusters, "three independent lag events <risks of tardiness>" are constantly running in parallel. If even one experiences a network jitter or high load, the primary immediately gets caught in the crossfire and is blocked. So, **what happens if we delete one secondary cluster and reduce the count to two?** Without altering the RPO target value <the parameter setting itself> at all, **the "number of RPO check targets" drops from 3 to 2, physically and statistically lowering the very probability that "lag on any secondary exceeds the threshold."**
+<日乃 竜胆> Precisely. That means if there are three secondary clusters, "three independent lag events <risks of tardiness>" are constantly running in parallel. If even one experiences a network jitter or high load, the primary immediately gets (caught in the crossfire )and is blocked. So, **what happens if we delete one secondary cluster and reduce the count to two?** Without altering the RPO target value <the parameter setting itself> at all, **the "number of RPO check targets" drops from 3 to 2, physically and statistically lowering the very probability that "lag on any secondary exceeds the threshold."**
 
 <月凪 惟緒> おお〜！ なるほどすぎる！ 20メートルルール（RPO目標値）は変えずに、後ろについてくる遅刻魔の人数を3人から2人に減らせば、誰かが靴紐を結び直す確率が単純に減るから、先頭が立ち止まる頻度も下がるってことかぁ！ なんか急に視界がクリアになって、頭の中の吹雪が止んだ気がする〜。でもさ、支店を1つ減らしちゃってデメリットとかはないの？
 
-<月凪 惟緒> Oooh! That makes so much sense! Without changing the 20-meter rule <the RPO target>, if we reduce the number of slowpokes trailing behind from three to two, the odds of someone stopping to tie their shoelaces simply drop, so the leader has to stop less frequently! My vision suddenly feels so clear, like the blizzard in my head just stopped~ Wait, though—aren't there any downsides to shutting down one of the branches?
+<月凪 惟緒> Oooh! That makes so much sense! Without changing the 20-meter rule <the RPO target>, if we reduce the number of (slowpokes) (trailing) behind from three to two, the odds of someone stopping to tie their shoelaces simply drop, so the leader has to stop less frequently! My vision suddenly feels so clear, like the blizzard in my head just stopped~ Wait, though—aren't there any downsides to shutting down one of the branches?
 
 <日乃 竜胆> 極めて重要な視点だ、イオち。よくぞそこに気づいた。アーキテクチャ設計には常に「トレードオフ（あちらを立てればこちらが立たずの代償）」が存在する。セカンダリリージョンを1つ削除すれば、当然ながら「災害復旧（ディザスタリカバリ）時のフェイルオーバー先（切り替え先の選択肢）が減る」**ことになり、さらに**「地理的に分散されたユーザーに対する読み取りパフォーマンスの最適化機会も少なくなる」。なお、Auroraグローバルデータベースは最大5つまでセカンダリリージョンを持てるが、実際の現場では、こうした可用性（壊れにくさ・切り替えやすさ）への影響と、RPO制約による書き込みブロックの頻度のバランスを天秤にかけて慎重に設計する必要があるのだ。
 
@@ -661,7 +661,7 @@ Then, it hands off only the CRITICAL telegrams that pass the filter to an **Amaz
 
 <蒞星 怜空> フッ……「RPO目標値を変えずにブロック頻度を下げろ」という経営陣や顧客の無茶振りに対し、「ならばバックアップ拠点を1つ潰しましょう」と冷徹に提案して可用性を削り取る――これぞクラウドアーキテクチャの深淵であり、すべてを完璧に手に入れることなどできない現実の厳しさだ。イオち、今日の講義で、ただのダンゴムシから少しはクラウドの風を感じられる程度には進化したようだな。
 
-<蒞星 怜空> Heh... Responding to the unreasonable demands of executives or clients—"Lower the block frequency without changing the RPO target"—by coldly proposing, "Then let us dismantle one of our backup hubs," thereby chipping away at availability... Such is the abyss of cloud architecture, and the harsh reality that you can never have everything all at once. Io-chi, it seems today's lecture has evolved you from a mere pill bug into someone who can at least feel a faint breeze of the cloud.
+<蒞星 怜空> Heh... Responding to the unreasonable demands of executives or clients—"Lower the block frequency without changing the RPO target"—by coldly proposing, "Then let us dismantle one of our backup hubs," (thereby) chipping away at availability... Such is the abyss of cloud architecture, and the harsh reality that you can never have everything all at once. Io-chi, it seems today's lecture has evolved you from a mere pill bug into someone who can at least feel a faint (breeze) of the cloud.
 
 <月凪 惟緒> えへへ、ダンゴムシ卒業かな〜。でもさ、もし私がこのシステムの店長だったら、遅延が起きるたびに海外の支店に「早くしろ！」って無言の圧力をかけ続けるより、最初から支店を2つにしてチルに運用したいかも〜。ヒノりん、怜空さん、今日もありがとね〜。
 
@@ -679,7 +679,7 @@ Then, it hands off only the CRITICAL telegrams that pass the filter to an **Amaz
 
 （怜空）ほう、いい面構えだなイオち。無知という名の純白の雪原に、これからヒノりんが建築現場の重機で泥濘をぶちまけていくわけだ。まさに文明開化と環境破壊の同時上映といえよう。さあ、愛弟子よ、まずはこの設問が抱える「現場の悲劇」から紐解いてみせろ。
 
-<Rea> Ho, that is a fine expression, Io-chi. Upon the pure white snowfield known as ignorance, Hino-rin is about to dump mud using heavy construction machinery. A simultaneous screening of civilization and environmental destruction, one might say. Now, my beloved disciple, start by unraveling the "workplace tragedy" embedded in this question.
+<Rea> Ho, that is a fine expression, Io-chi. Upon the pure white snowfield known as ignorance, Hino-rin is about to dump mud using heavy construction (machinery). A simultaneous screening of (civilization) and (environmental destruction), one might say. Now, my beloved disciple, start by unraveling the "workplace tragedy" embedded in this question.
 
 （竜胆）承知した、怜空さん。まず問題文の前提を整理する。ある企業のDevOpsエンジニアが、毎週「強化されたAmazon LinuxベースのAMI」を構築している。そして社内の複数の開発チームが、それぞれ独自の「CloudFormationテンプレート」を使って「Auto Scalingグループ」をデプロイしている状況だ。
 
@@ -691,19 +691,19 @@ Then, it hands off only the CRITICAL telegrams that pass the filter to an **Amaz
 
 （竜胆）よし、一つずつ氷を砕くように明確に定義しよう。まずAMI（Amazon Machine Image）とは、AWS上の仮想サーバー（EC2）を起動するための「設計図兼OSの丸ごとコピー（テンプレート）」だ。WindowsやLinuxといったOS、初期設定、必要なソフトウェアがすべてパッケージ化されている。そして「強化された（Hardened）AMI」とは、セキュリティの穴（脆弱性）を塞ぎ、不要な機能を削ぎ落として防御力を高めた状態を指す。毎週新しいセキュリティパッチを当てて作り直しているというわけだ。
 
-<Rindo> Very well, let us define them clearly, shattering the ice one piece at a time. First, an **AMI <Amazon Machine Image>** is a "blueprint and complete OS copy <template>" used to launch virtual servers <EC2> on AWS. The OS—such as Windows or Linux—initial configurations, and necessary software are all packaged together. And a "hardened AMI" refers to an image whose defenses have been bolstered by plugging security holes <vulnerabilities> and stripping away unnecessary features. They are rebuilding it every week with the latest security patches applied.
+<Rindo> Very well, let us define them clearly, shattering the ice (one piece at a time). First, an **AMI <Amazon Machine Image>** is a "blueprint and complete OS copy <template>" used to launch virtual servers <EC2> on AWS. The OS—such as Windows or Linux—initial configurations, and necessary software are all packaged together. And a "hardened AMI" refers to an image whose defenses have been (bolstered) by plugging security holes <vulnerabilities> and stripping away unnecessary features. They are rebuilding it every week with the latest security patches applied.
 
 （竜胆）次に**CloudFormation**とは、サーバーやネットワークなどのインフラ構成を「コード（設計書ファイル＝テンプレート）」として記述し、その設計書通りにAWS環境を自動構築・更新するサービス（IaC：Infrastructure as Code）だ。そして**Auto Scalingグループ**とは、アクセス数の増減に合わせて仮想サーバーの台数を自動で増やしたり減らしたりする仕組みである。その際、「どのAMIを使って新しいサーバーを増やすか」を指定する設定書が起動テンプレート（Launch Template）だ。
 
-<Rindo> Next, **CloudFormation** is a service <IaC: Infrastructure as Code> where you write infrastructure configurations—such as servers and networks—as "code <blueprint files = templates>" and automatically build or update the AWS environment according to that blueprint. And an **Auto Scaling group** is a mechanism that automatically increases or decreases the number of virtual servers in response to fluctuations in traffic. Within that, the configuration sheet specifying "which AMI to use when launching new servers" is the **Launch Template**.
+<Rindo> Next, **CloudFormation** is a service <IaC: Infrastructure as Code> where you write infrastructure configurations—such as servers and networks—as "code <blueprint files = templates>" and automatically build or update the AWS environment according to that blueprint. And an **Auto Scaling group** is a mechanism that automatically increases or decreases the number of virtual servers in response to (fluctuations) in traffic. Within that, the configuration sheet specifying "which AMI to use when launching new servers" is the **Launch Template**.
 
 （惟緒）あ〜、なるほどねぇ。つまり、毎週新しい安全なサーバーの型紙（AMI）が焼き上がるんだけど、各チームは自分の設計書（CloudFormationテンプレート）に「先週の型紙の番号（AMI ID）」を直書きしてるってことかぁ。
 
-<Io> Ahh, I see now. So every week a fresh, secure server stencil <AMI> gets baked, but each team has last week's stencil number <AMI ID> hardcoded straight into their own blueprint <CloudFormation template>.
+<Io> Ahh, I see now. So every week a fresh, secure server stencil <AMI> gets baked, but each team has last week's (stencil) number <AMI ID> hardcoded straight into their own blueprint <CloudFormation template>.
 
 （怜空）その通りだイオち。そしてここからが地獄の幕開けだ。毎週月曜の朝、インフラ担当のDevOpsエンジニアが「今週の最新AMI IDは `ami-0987654321` です！」と全チームにチャットやメールで一斉送信する。すると各チームのエンジニアが寝ぼけ眼で自分の設計書を開き、何百行もあるコードの中からマッピング表を探し出し、古いIDを手作業でコピペして書き換える。一文字でもタイポすればデプロイは爆死、通知を見落としたチームは脆弱性だらけの化石みたいなサーバーを動かし続け、監査の日に全員で青ざめるという、まさに令和のデジタル炭鉱労働だ。
 
-<Rea> Precisely, Io-chi. And here begins the opening act of hell. Every Monday morning, the infrastructure DevOps engineer blasts a chat message or email to every team: "This week's latest AMI ID is `ami-0987654321`!" Then each team's engineer opens their blueprint with bleary eyes, hunts down the mapping table buried inside hundreds of lines of code, and manually copy-pastes over the old ID. One typo and the deployment blows up; any team that misses the notification keeps running fossilized servers riddled with vulnerabilities, leaving everyone pale-faced on audit day—truly digital coal-mining labor in the modern era.
+<Rea> Precisely, Io-chi. And here begins the opening (act of hell). Every Monday morning, the infrastructure DevOps engineer blasts a chat message or email to every team: "This week's latest AMI ID is `ami-0987654321`!" Then each team's engineer opens their blueprint with (bleary) eyes, (hunts down) the mapping table buried inside hundreds of lines of code, and manually copy-pastes over the old ID. One typo and the deployment blows up; any team that misses the notification keeps running (fossilized) servers (riddled with) vulnerabilities, leaving everyone pale-faced on audit day—truly digital coal-mining labor in the modern era.
 
 （竜胆）怜空さんの表現は極端だが、核心を突いている。だからこそ設問はこう要求している。「エンジニアによる通知作業をなくし、**テンプレートの改変なしに**最新のAMIが参照される仕組みを構築せよ」とな。なお、この設問を解く上での全体の構築手順は以下の3ステップに集約される。
 
@@ -731,19 +731,19 @@ Then, it hands off only the CRITICAL telegrams that pass the filter to an **Amaz
 
 （竜胆）第二に「チームのデプロイ主導権の剥奪」だ。もし週次ビルドが完了した瞬間にLambdaが全チームの `UpdateStack` を強制実行したらどうなる？ 開発チームが「今は重要なプレゼン中だ」「大規模セール中でサーバーを絶対に再起動したくない」と思っている最中に、外部から強制的にAuto Scalingグループのサーバー入れ替え（インスタンス置換）が走り、サービスが中断するリスクが生じる。
 
-<Rindo> Second is **"Stripping Teams of Deployment Autonomy"**. What happens if Lambda forcefully executes `UpdateStack` for every team the instant the weekly build finishes? Right in the middle of a development team thinking "We are in a critical presentation" or "We are running a massive flash sale and must not reboot servers," an external force triggers instance replacement in their Auto Scaling group, creating a severe risk of service disruption.
+<Rindo> Second is **"Stripping Teams of Deployment Autonomy"**. What happens if Lambda forcefully executes `UpdateStack` for every team the instant the weekly build finishes? Right in the middle of a development team thinking "We are in a critical presentation" or "We are running a massive flash sale and must not reboot servers," an external force triggers instance replacement in their Auto Scaling group, creating a severe risk of service (disruption).
 
 （竜胆）第三に「余計な運用負荷の増加」だ。そもそもこの要件にLambdaのプログラムを書く必要などないのに、わざわざ自作コード、IAM権限、エラーハンドリング、リトライ処理といった「保守しなければならない負債」を増やしている。これは「引く（Pull）設計」ではなく「無理やり押し込む（Push）設計」の典型的な悪手だ。
 
-<Rindo> Third is **"Unnecessary Operational Overhead"**. Even though there is no need to write Lambda code for this requirement in the first place, it needlessly creates "maintenance debt"—custom code, IAM permissions, error handling, and retry logic. This is a textbook blunder of a "forced Push design" rather than a "Pull design".
+<Rindo> Third is **"Unnecessary Operational Overhead"**. Even though there is no need to write Lambda code for this requirement in the first place, it needlessly creates "maintenance debt"—custom code, IAM permissions, error handling, and retry logic. This is a textbook (blunder) of a "forced Push design" rather than a "Pull design".
 
 （怜空）想像してみろイオち。ある開発チームが本番リリース直前の緊迫した会議をしている最中に、突然インフラ部門が作った暴走重機（Lambda）が壁を突き破って突入し、「今週の新しい壁紙に張り替えときましたー！」と叫びながらサーバーの電源をぶち抜いていく光景をな。しかもその暴走重機が故障したら、インフラ担当が夜中に起きて修理（エラー対応）しなきゃならない。自業自得の極み、まさに建築基準法違反の違法増築だ。
 
-<Rea> Picture this, Io-chi. Right in the middle of a tense meeting just before a production release, a runaway bulldozer built by the infrastructure team <Lambda> suddenly smashes straight through the office wall, yelling "We went ahead and put up this week's new wallpaper!" while yanking the power plugs out of the servers. And when that bulldozer breaks down, the infra engineer has to wake up at midnight to repair it <error handling>. The pinnacle of self-inflicted ruin—an illegal building extension violating every code in the book.
+<Rea> Picture this, Io-chi. Right in the middle of a tense meeting just before a production release, a runaway bulldozer built by the infrastructure team <Lambda> suddenly smashes straight through the office wall, yelling "We went ahead and put up this week's new wallpaper!" while (yanking) the power plugs out of the servers. And when that bulldozer breaks down, the infra engineer has to wake up at midnight to repair it <error handling>. The pinnacle of self-inflicted ruin—an illegal building extension violating every code in the book.
 
 （惟緒）うわぁ……親切の押し売りすぎてホラー映画じゃんそれ。勝手に入ってきて勝手にサーバー再起動するとか、完全に招かれざる客バイブスだわ〜。じゃあ次のハズレ選択肢、【不正解3】はどうなの？ 「Amazon ECR パブリックリポジトリにAMIを登録し、CloudFormationで `Fn::ImportValue` を使って他スタックから参照する」って書いてあるけど。
 
-<Io> Ugh... that's so overly pushy with its "kindness" it's basically a horror movie. Barging in uninvited and rebooting servers without permission is total uninvited-guest vibes. So what about the next wrong choice, [Incorrect 3]? It says: **"Register the built AMI in an Amazon ECR public repository, and reference it from each team's CloudFormation template using `Fn::ImportValue` as an exported value from another stack"**.
+<Io> Ugh... that's so overly pushy with its "kindness" it's basically a horror movie. (Barging in) uninvited and rebooting servers without permission is total uninvited-guest vibes. So what about the next wrong choice, [Incorrect 3]? It says: **"Register the built AMI in an Amazon ECR public repository, and reference it from each team's CloudFormation template using `Fn::ImportValue` as an exported value from another stack"**.
 
 （竜胆）これはもはや設計の良し悪し以前の問題、「前提条件からして物理的に不可能」な選択肢だ。まず前半の「AMIをAmazon ECRに登録する」という記述を見ろ。Amazon ECR（Elastic Container Registry）とは、Dockerなどの「コンテナイメージ」を保管する専用の倉庫だ。一方で、今回扱っているのは仮想サーバー全体のイメージであるEC2のAMIだ。ECRにAMIを登録すること自体がAWSの仕様上できない。
 
@@ -755,7 +755,7 @@ Then, it hands off only the CRITICAL telegrams that pass the filter to an **Amaz
 
 （竜胆）コンテナイメージと仮想マシンのAMIは、弁当箱のおかずとレストランの店舗建物くらい構造が違う。さらに後半の「`Fn::ImportValue` によるクロススタック参照」にも致命的な罠がある。`Fn::ImportValue` とは、あるCloudFormationスタックが外部へ公開（Export）した値を、別のスタックが取り込む（Import）ための関数だ。しかし、AWSの仕様として「他のスタックから一度でも `Fn::ImportValue` で参照されているエクスポート値は、参照が解除されるまで元の値を一切変更（更新）できない」という厳格なロックがかかる。
 
-<Rindo> A container image and a virtual machine AMI differ in structure as much as a side dish in a bento box differs from an entire restaurant building. Furthermore, there is a fatal trap in the second half: **"cross-stack reference via `Fn::ImportValue`"**. `Fn::ImportValue` is an intrinsic function used by one CloudFormation stack to import a value exported by another stack. However, under AWS rules, **"an exported value referenced by even a single other stack via `Fn::ImportValue` is strictly locked and cannot be modified <updated> at all until every reference is removed"**.
+<Rindo> A container image and a virtual machine AMI differ in structure as much as a side dish in a bento box differs from an entire restaurant building. Furthermore, there is a fatal trap in the second half: **"cross-stack reference via `Fn::ImportValue`"**. `Fn::ImportValue` is an (intrinsic) function used by one CloudFormation stack to import a value exported by another stack. However, under AWS rules, **"an exported value referenced by even a single other stack via `Fn::ImportValue` is strictly locked and cannot be modified <updated> at all until every reference is removed"**.
 
 （竜胆）つまり、仮に別の値をエクスポートできたとしても、開発チームAやBが参照している限り、来週新しいAMI IDに更新しようとした瞬間にCloudFormationがエラーを吐いて更新を拒否する。おまけにクロススタック参照は同一AWSアカウント・同一リージョン内に限定されるため、拡張性も皆無だ。
 
@@ -763,7 +763,7 @@ Then, it hands off only the CRITICAL telegrams that pass the filter to an **Amaz
 
 （怜空）ECRにAMIを突っ込もうとするのは、コインロッカーに大型冷蔵庫を押し込もうとする狂気の沙汰だ。そして `Fn::ImportValue` のロック仕様は、一度誰かがドアノブを握ったら最後、建物の持ち主ですら鍵を交換できなくなる呪いの館だな。毎週更新したい値に使うなど、自らコンクリートに足を突っ込んで川に飛び込むようなものだ。
 
-<Rea> Trying to shove an AMI into ECR is the sheer madness of trying to cram a full-sized refrigerator into a train station coin locker. And the locking behavior of `Fn::ImportValue` turns the system into a cursed mansion where, once someone grabs the doorknob, not even the building's owner can ever change the lock. Using that for a value you want to update weekly is akin to dipping your own feet in wet concrete and jumping into a river.
+<Rea> Trying to shove an AMI into ECR is the sheer madness of trying to cram a full-sized refrigerator into a train station coin locker. And the locking behavior of `Fn::ImportValue` turns the system into a cursed mansion where, once someone grabs the doorknob, (not even *the building's owner* can ever )change the lock. Using that for a value you want to update weekly is akin to dipping your own feet in wet concrete and jumping into a river.
 
 （惟緒）コンクリートに足突っ込むのは冷たすぎて無理〜。じゃあ最後のハズレ、【不正解4】はどう？ 「AMI IDを AWS Secrets Manager のシークレットに保存して、CloudFormationの動的参照 `{{resolve:secretsmanager:...}}` で解決する」ってやつ。これ、動的参照って書いてあるし、なんかセキュリティっぽくて良さそうに見えるけど？
 
@@ -779,7 +779,7 @@ Then, it hands off only the CRITICAL telegrams that pass the filter to an **Amaz
 
 （竜胆）第三に「型検証の欠如」だ。文字列として無理やり渡そうとしても、それが本当に有効なEC2のAMI IDの形式かどうかを事前チェックする仕組みがない。
 
-<Rindo> Third is **"Lack of Type Validation"**. Even if you tried to pass it as a raw string, there is no mechanism to pre-validate whether the value actually conforms to a valid EC2 AMI ID format.
+<Rindo> Third is **"Lack of Type Validation"**. Even if you tried to pass it as a raw string, there is no mechanism to pre-validate whether the value actually (conforms to) a valid EC2 AMI ID format.
 
 （怜空）公開されているアパートの部屋番号（AMI ID）を、わざわざスイスの銀行の貸金庫（Secrets Manager）に月額料金を払って厳重保管し、いざ使おうとしたら玄関の鍵穴に貸金庫の暗号が差し込めなくて締め出されるという、最高に滑稽な悲喜劇だ。しかもImage Builder側も「えっ、私、銀行の金庫に配達する機能なんて持ってませんけど？」と門前払いしてくる始末だ。
 
@@ -787,7 +787,7 @@ Then, it hands off only the CRITICAL telegrams that pass the filter to an **Amaz
 
 （惟緒）あはは、玄関の鍵穴に入らないとか完全に詰んでるじゃん。ハズレの三つが全部ダメな理由、めっちゃスッキリした〜！ じゃあ、いよいよ残った【正解1】の解説だね、ヒノりん。
 
-<Io> Haha, not fitting into the front door's keyhole is a total dead end. The reasons why all three wrong choices fail are super clear now! So, it's finally time to explain the remaining **[Correct 1]**, Hino-rin.
+<Io> Haha, not fitting into the front door's keyhole is a total( dead end). The reasons why all three wrong choices fail are super clear now! So, it's finally time to explain the remaining **[Correct 1]**, Hino-rin.
 
 （竜胆）そうだ。正解は「Image Builderの配信設定で、構築されたAMIのIDを AWS Systems Manager Parameter Store の指定パラメータに書き込み、各チームのCloudFormationテンプレートでは `AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>` 型のパラメータにそのパラメータ名を既定値として指定し、起動テンプレートの `ImageId` から参照する」である。
 
@@ -795,11 +795,11 @@ Then, it hands off only the CRITICAL telegrams that pass the filter to an **Amaz
 
 （惟緒）出たー！ 長い呪文！ `AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>` って、カギカッコの中にまたコロンが並んでて、見た瞬間に脳がスリープモードに入りそうなんだけど。これ、どういう仕組みで動いてるの？
 
-<Io> There it is! The mega-incantation! `AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>` has colons nested inside angle brackets—my brain wants to enter sleep mode the second I look at it. How does this actually work?
+<Io> There it is! The mega-incantation! `AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>` has colons nested inside (angle brackets)—my brain wants to enter sleep mode the second I look at it. How does this actually work?
 
 （竜胆）恐れるな、構造は極めてシンプルだ。まずAWS Systems Manager Parameter Store（パラメータストア）とは、システムの設定値やIDなどの「名前と値のペア」を安全かつ一元的に保管できるクラウド上の掲示板のようなサービスだ。標準パラメータであれば追加料金は一切かからない（無料）。
 
-<Rindo> Do not fear; the structure is extraordinarily simple. First, **AWS Systems Manager Parameter Store** is like a cloud bulletin board where you can securely and centrally store "name-and-value pairs" such as configuration settings and IDs. As long as you use standard parameters, **there is zero additional cost <it is free>**.
+<Rindo> Do not fear; the structure is extraordinarily simple. First, **AWS Systems Manager Parameter Store** is like a cloud (bulletin board) where you can securely and centrally store "name-and-value pairs" such as configuration settings and IDs. As long as you use standard parameters, **there is zero additional cost <it is free>**.
 
 （竜胆）次に、EC2 Image Builderの「配信設定（ディストリビューション設定）」には、**AMIのビルドが完了した直後に、指定したParameter Storeのパラメータ（例：`/golden-ami/hardened-amazon-linux/latest`）の値を最新のAMI IDへ自動上書きする標準機能**が組み込まれている。これにより、毎週AMIが作り直されるたびに、掲示板の「latest」という枠に書かれたIDだけが自動で最新番号に書き換わる。
 
@@ -823,7 +823,7 @@ Then, it hands off only the CRITICAL telegrams that pass the filter to an **Amaz
 
 （竜胆）その通りだ。手作業の通知も、マッピングの手動書き換えも消滅し、コストは無料、型検証付きでデプロイの主導権も各チームが握り続ける。まさにこの設問のすべての要件を一点の曇りもなく満たす最適解だ。イオち、この流れで次の設問も解剖するぞ。
 
-<Rindo> Exactly. Manual notifications and manual mapping edits vanish, the cost is zero, type validation is included, and every team retains full autonomy over its deployment timing. It is the optimal solution that fulfills every single requirement of this question without a speck of doubt. Io-chi, keep this momentum going—we are dissecting the next question next.
+<Rindo> Exactly. Manual notifications and manual mapping edits vanish, the cost is zero, type validation is included, and every team retains full autonomy over its deployment timing. It is the optimal solution that fulfills every single requirement of this question without a (speck of) doubt. Io-chi, keep this momentum going—we are dissecting the next question next.
 
 （惟緒）ふぁ〜、なんか霧が晴れて雪景色がピカピカに見えるくらいスッキリしたかも〜。じゃあ次は温かいココアでも飲みながら、もう1問だけいっちゃおっか、ヒノりん、怜空さん！
 
@@ -995,7 +995,7 @@ Then, it hands off only the CRITICAL telegrams that pass the filter to an **Amaz
 
 <日乃竜胆> 諸君、視線をこちらへ向けろ。今回解剖するのは、AWS認定試験DOP（DevOps Engineer - Professional）の設問「DOP-1017」だ。単なる暗記や勘に頼るような甘い態度は許さん。クラウドアーキテクチャの深淵、その構造と理屈を骨の髄まで叩き込んでやる。覚悟はいいな。
 
-<日乃竜胆> Everyone, direct your gaze here. What we are dissecting today is question "DOP-1017" from the AWS Certified DevOps Engineer - Professional exam. I will not tolerate a naive attitude that relies on rote memorization or guesswork. I am going to hammer the abyss of cloud architecture—its structure and logic—into the very marrow of your bones. Are you prepared?
+<日乃竜胆> Everyone, direct your gaze here. What we are dissecting today is question "DOP-1017" from the AWS Certified DevOps Engineer - Professional exam. I will not tolerate a naive attitude that relies on (rote memorization) or (guesswork). I am going to hammer the abyss of cloud architecture—its structure and logic—into the very marrow of your bones. Are you prepared?
 
 <月凪惟緒> んぁ〜……ヒノりん、今日も朝から抜刀してるねぇ。私の脳みそ、まだ真冬のトタン裏で丸まってるダンゴムシ並みに休眠モードなんだけど……。しかもこれ、アルファベットとカタカナの呪文が多すぎて、見た瞬間に意識が永久凍土へダイブしそうだよ。
 
@@ -1003,7 +1003,7 @@ Then, it hands off only the CRITICAL telegrams that pass the filter to an **Amaz
 
 <蒞星怜空> ほう、素晴らしい導入だ、イオち。その「脳内永久凍土」という表現、まさに現場で深夜3時にアラートが鳴り響き、誰も仕様を知らないレガシーシステムのログを眺めながら虚無に沈むエンジニアの瞳そのものだ。ヒノりん、容赦はいらん。この迷える子羊の凍てついた脳髄に、高出力のバーナーを突きつけてやれ。私も特等席でその惨劇……いや、崇高な講義を見物させてもらうとしよう。
 
-<蒞星怜空> Ho, what a splendid introduction, Iochi. That expression, "intracranial permafrost," is the exact reflection in the eyes of an engineer sinking into the void at 3 AM while alerts blare on-site, staring at the logs of a legacy system whose specifications nobody knows. Hinorin, show no mercy. Thrust a high-output blowtorch straight into the frozen cerebrum of this lost lamb. I shall observe this tragedy... no, this sublime lecture from the front-row seats.
+<蒞星怜空> Ho, what a splendid introduction, Iochi. That expression, "(intracranial) permafrost," is the exact reflection in the eyes of an engineer sinking into the void at 3 AM while alerts blare on-site, staring at the logs of a legacy system whose specifications nobody knows. Hinorin, show no mercy. (Thrust) a high-output (blowtorch) straight into the frozen (cerebrum) of this lost lamb. I shall observe this tragedy... no, this (sublime) lecture from the front-row seats.
 
 <日乃竜胆> 師匠まで油を注ぐな。だが、イオちの言う通り、まずは設問の前提となる用語と背景を完全に解体するところから始める。設問文を確認しろ。「ある企業は、EC2 Auto Scaling グループを使ってウェブサーバー群を運用している。起動テンプレートで使用する AMI には AWS Systems Manager エージェントが含まれており、スケールアウト時に各インスタンスへ特定のタグが付与される。DevOps エンジニアは、新たに起動されるインスタンスに対して所定の OS 構成を自動的かつ即座に適用する仕組みを構築する必要がある。運用オーバーヘッドを最小限に抑えるソリューションはどれか」という問いだ。
 
