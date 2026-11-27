@@ -1047,7 +1047,7 @@ Then, it hands off only the CRITICAL telegrams that pass the filter to an **Amaz
 
 <蒞星怜空> まったくその通りだ。現場のエンジニアが「俺が最強のPythonスクリプトを書いて全部自動化してやるぜ！」と息巻いて自作コードを組み込んだ結果、半年後にその本人が転職して誰もメンテナンスできなくなり、ブラックボックス化したコードが深夜に暴走して本番環境を焼き払う——。そんな「自業自得の火葬場」を回避するために、AWS試験は「余計なコードを書くな、管理する部品を増やすな」と口酸っぱく説いているわけだ。
 
-<蒞星怜空> Precisely. When an on-site engineer gets all fired up saying, "I'll write the ultimate Python script to automate everything!" and embeds custom code, only to change jobs six months later leaving nobody able to maintain it, resulting in the black-boxed code going rogue at midnight and burning down the production environment—to avoid such a "self-inflicted crematorium," AWS exams preach ad nauseam: "Do not write unnecessary code, and do not increase the number of components you have to manage."
+<蒞星怜空> Precisely. When an on-site engineer (gets all fired up) saying, "I'll write the ultimate Python script to automate everything!" and embeds custom code, only to change jobs six months later leaving nobody able to maintain it, resulting in the black-boxed code going rogue at midnight and burning down the production environment—to avoid such a "self-inflicted (crematorium)," AWS exams preach ad nauseam: "Do not write unnecessary code, and do not increase the number of components you have to manage."
 
 <月凪惟緒> 怖い怖い、怜空さんの例えがリアルすぎて胃がキリキリするよ……。よし、前提はバッチリ掴めた！ それじゃあ、4つの選択肢を順番に見ていこうよ。まずは間違いの選択肢から、なんでダメなのか徹底的に暴いてほしいな。
 
@@ -1089,7 +1089,7 @@ Then, it hands off only the CRITICAL telegrams that pass the filter to an **Amaz
 
 <蒞星怜空> まったく、愚の骨頂だな。戦場に新兵を丸腰で放り込んでおいて、「武器の支給は毎時0分の定時便です。それまでは素手で銃弾を受け止めてください」と告げるようなものだ。59分後にはサーバーもとい新兵は蜂の巣になって塵と化しているだろうよ。しかも、そんなポンコツ構成に限って、管理者は「1時間待てば直るから仕様です」と真顔で言い張るんだから救いようがない。
 
-<蒞星怜空> Truly the height of folly. It is akin to tossing a raw recruit onto the battlefield completely unarmed and announcing, "Weapon distribution is on the hourly scheduled shuttle. Until then, catch the bullets with your bare hands." Fifty-nine minutes later, the server—or rather, the recruit—will be riddled with holes and turned to dust. Worse yet, with such a busted architecture, the administrator will insist with a straight face, "It fixes itself if you wait an hour, so it's by design," leaving them utterly beyond salvation.
+<蒞星怜空> Truly the height of folly. It is akin to tossing a raw recruit onto the battlefield completely unarmed and announcing, "Weapon distribution is on the hourly scheduled shuttle. Until then, catch the bullets with your bare hands." Fifty-nine minutes later, the server—or rather, the recruit—will be riddled with holes and turned to dust. Worse yet, with such a (busted) architecture, the administrator will insist with a straight face, "It fixes itself if you wait an hour, so it's by design," leaving them utterly (beyond salvation).
 
 ---
 
@@ -1161,7 +1161,7 @@ Then, it hands off only the CRITICAL telegrams that pass the filter to an **Amaz
 
 <蒞星怜空> まったく、涙ぐましいほどの徒労だな。既製品の最高級自動ドアが目の前にあるのに、「いや、俺はドアの開閉センサーを自作し、モーター制御のコードを1万行書いて、電圧が不安定なときのリトライ処理まで実装するんだ！」と血走った目で徹夜しているエンジニアの末路だ。そして数ヶ月後、AWSのAPI仕様が少し変わっただけでその自作自動ドアはピクリとも動かなくなり、社員全員がビルの外に締め出されて凍死するわけだ。運用負荷を最小限に抑えるという設問の趣旨に対する、これ以上ない冒涜と言えよう。
 
-<蒞星怜空> Truly a tear-jerking exercise in futility. A top-of-the-line ready-made automatic door is sitting right in front of them, yet the engineer pulls all-nighters with bloodshot eyes screaming, "No, I'm going to build my own door sensor, write 10,000 lines of motor-control code, and even implement retry handling for unstable voltage!" And a few months later, a minor change in AWS's API specification causes that homemade automatic door to stop budging an inch, locking every employee outside the building to freeze to death. One could call it the ultimate blasphemy against the question's intent to minimize operational overhead.
+<蒞星怜空> Truly a (tear-jerking) (exercise in futility). A top-of-the-line ready-made automatic door is sitting right in front of them, yet the engineer pulls all-nighters with bloodshot eyes screaming, "No, I'm going to build my own door sensor, write 10,000 lines of motor-control code, and even implement retry handling for unstable voltage!" And a few months later, a minor change in AWS's API specification causes that homemade automatic door to stop budging an inch, locking every employee outside the building to freeze to death. One could call it the ultimate (blasphemy) against the question's intent to minimize operational overhead.
 
 <月凪惟緒> あ〜、なるほどね！ 「動くけど、わざわざ自分でコード書いて管理する部品増やすとかダルすぎでしょ」ってことかぁ。私のライフスタイルと一緒で、無駄な労力は極限まで削ぎ落とすのが正解ってわけね。
 
@@ -1175,11 +1175,11 @@ Then, it hands off only the CRITICAL telegrams that pass the filter to an **Amaz
 
 <日乃竜胆> その怠惰さ……いや、省力化への執着だけは評価してやろう、イオち。すべての間違いを排除したところで、いよいよ本丸である正解の選択肢、設問の2番目を紐解くぞ。「Systems Manager State Manager で関連付けを作成し、OS 構成を定義したコマンドドキュメントを指定する。Auto Scaling グループが付与するタグをターゲット条件として設定し、関連付けの即時適用を有効にする」という構成だ。
 
-<日乃竜胆> I shall give credit to that laziness... no, that obsession with labor-saving alone, Iochi. Now that we have eliminated all the wrong answers, we shall finally unravel the main keep—the correct choice, option number two: "Create an association in Systems Manager State Manager and specify the command document that defines the OS configuration. Set the tag assigned by the Auto Scaling group as the target criteria, and enable immediate application for the association."
+<日乃竜胆> I shall (give credit to )that laziness... no, that obsession with (labor-saving) alone, Iochi. Now that we have eliminated all the wrong answers, we shall finally unravel the main keep—the correct choice, option number two: "Create an association in Systems Manager State Manager and specify the command document that defines the OS configuration. Set the tag assigned by the Auto Scaling group as the target criteria, and enable immediate application for the association."
 
 <月凪惟緒> きたきた、真打ち登場！ でも「State Manager（ステートマネージャー）」とか「関連付け（Association）」とか「コマンドドキュメント」とか、また新しい呪文が並んでるよ。これ、どういう仕組みで、なんでさっきの3つの弱点を全部クリアできるの？
 
-<月凪惟緒> Here it comes, the headliner! Still, "State Manager," "Association," "command document"—more new spells are lined up. How does this work, and why can it clear all three weaknesses we just saw?
+<月凪惟緒> Here it comes, the (headliner)! Still, "State Manager," "Association," "command document"—more new spells are lined up. How does this work, and why can it clear all three weaknesses we just saw?
 
 <日乃竜胆> 一つずつ丁寧に噛み砕こう。まず「AWS Systems Manager State Manager」とは、管理対象のサーバー（マネージドインスタンス）が「常に望ましい正しい状態（State）」であることを定義し、その状態を継続的に維持・管理するための標準機能だ。
 
@@ -1223,7 +1223,7 @@ Then, it hands off only the CRITICAL telegrams that pass the filter to an **Amaz
 1. Unlike periodic execution <Maintenance Windows>, you don't get stuck waiting up to an hour; it executes **immediately** the instant the tag is attached!
 2. Unlike AWS Config, it doesn't let a defective product out into the world first to crack down on it reactively; it turns it into a finished product **proactively** right upon launch!
 3. Unlike EventBridge + Lambda, there's zero need to write your own program or implement retry logic—everything finishes within State Manager's standard features <just a single configuration checkbox>, so **no custom code is needed and there's only one component to manage**!
-Plus, the SSM Agent is already in the AMI from the start, so communication is solid! This is so perfect it's actually kind of scary!
+Plus, the SSM Agent is already in the AMI from the start, so communication is (solid)! This is so perfect it's actually kind of scary!
 
 <日乃竜胆> 完璧な総括だ、イオち。まさに「自動的かつ即座に」「運用オーバーヘッドを最小限に」という設問の要求を、AWSのマネージド機能のみで100点満点で満たす模範解答だ。おまけにState Managerは追加料金なしで使える標準機能であり、その後の運用中に誰かが誤って設定を書き換えてしまった場合（構成ドリフト）でも、定期的なスケジュール評価と組み合わせて自動で元の状態に修復し続けることまで可能だ。
 
@@ -1231,11 +1231,11 @@ Plus, the SSM Agent is already in the AMI from the start, so communication is so
 
 <蒞星怜空> ふむ、どうやら氷点下だったイオちの脳内にも、ようやく春の雪解けが訪れたようだな。それにしても、これほど洗練された「State Manager の即時適用」という正解が用意されているにもかかわらず、現実の現場ではなぜか「とりあえずLambdaでグルーコード（接着剤コード）を書いて繋げばいいや」と安易な自作コードの沼に沈んでいくエンジニアが後を絶たない。
 
-<蒞星怜空> Hmm, it seems the spring thaw has finally arrived inside Iochi's sub-zero brain as well. Even so, despite such a refined correct answer as "State Manager immediate application" being readily available, in the real world, for some reason, there is no end to engineers sinking into the swamp of facile custom code, thinking, "I'll just write some glue code in Lambda to connect them for now."
+<蒞星怜空> Hmm, it seems the spring thaw has finally arrived inside Iochi's (sub-zero) brain as well. Even so, despite such a refined correct answer as "State Manager immediate application" being (readily) available, in the real world, for some reason, (there is no end to *engineers* *sink*ing) into the swamp of (facile) custom code, thinking, "I'll just write some glue code in Lambda to connect them for now."
 
 <蒞星怜空> 壮麗なマネージドサービスの宮殿の隣に、わざわざ段ボールとガムテープで掘っ立て小屋を建てて住み着き、台風（仕様変更やトラフィック急増）が来るたびに「家が吹き飛んだ！ 徹夜で修復だ！」と叫びながら修羅場を演出する——。人間とは、かくも不条理で、かくも自作の労苦に酔いしれる生き物なのだよ。ヒノりん、お前は決してそのような「自作コード中毒の亡霊」にならぬよう、この真理を胸に刻んでおくことだ。
 
-<蒞星怜空> Right next to a magnificent palace of managed services, they deliberately build a shack out of cardboard and duct tape to live in, and every time a typhoon <a specification change or traffic spike> hits, they stage a scene of carnage screaming, "My house blew away! Pull an all-nighter to rebuild it!"—Humans are creatures so absurd, so intoxicated by the toil of their own making. Hinorin, carve this truth into your chest so that you never become such a "ghost addicted to custom code."
+<蒞星怜空> Right next to a magnificent palace of managed services, they (deliberately) build a shack out of cardboard and duct tape to live in, and every time a typhoon <a specification change or traffic spike> hits, they (stage a scene of) (carnage) screaming, "My house blew away! Pull an all-nighter to rebuild it!"—Humans are creatures so absurd, so intoxicated by the toil of their own making. Hinorin, carve this truth into your chest so that you never become such a "ghost addicted to custom code."
 
 <日乃竜胆> 肝に銘じておこう、師匠。……さて、イオち。これで設問の前提、用語、そして全選択肢の正誤の理由は完全に網羅した。何かまだ霧が晴れない箇所や、深掘りしたい点はあるか？
 
@@ -1250,23 +1250,23 @@ Plus, the SSM Agent is already in the AMI from the start, so communication is so
 
 <日乃 竜胆>……ふむ。手元の画面に表示されている設問だな。AWS Certified DevOps Engineer - Professional（DOP）の演習問題「DOP-2050」だ。まずは問題の前提条件と、そこに含まれる専門用語を一つずつ解体していくぞ。イオち、準備はいいか。
 
-<Rindo Hino> ...Hmm. It is the question displayed on the screen in front of us. It is practice question "DOP-2050" for the AWS Certified DevOps Engineer - Professional <DOP> exam. First, we shall dissect the premises of the problem and the technical terms contained therein, one by one. Io-chi, are you ready?
+<Rindo Hino> ...Hmm. It is the question displayed on the screen in front of us. It is practice question "DOP-2050" for the AWS Certified DevOps Engineer - Professional <DOP> exam. First, we shall dissect the premises of the problem and the technical terms contained (therein), one by one. Io-chi, are you ready?
 
 <月凪 惟緒>ん〜……はい、いちおう。でもさ〜、画面開いた瞬間から文字がびっしりで、脳みそが真冬の室外機みたいに凍りついてるんだけど……。とりあえず「DevOpsエンジニア」とか「AMI」とか、そのへんからもう異世界の呪文なんだけど、ヒノりん。
 
-<Io Tsukinagi> Mmm... yeah, sort of. But like, the moment we opened the screen, it was so packed with text that my brain froze up like an outdoor AC unit in midwinter... Anyway, right from "DevOps engineer" and "AMI," it's already sounding like spells from another world, Hino-rin.
+<Io Tsukinagi> Mmm... yeah, (sort of). But like, the moment we opened the screen, it was so packed with text that my brain froze up like an outdoor AC unit in midwinter... Anyway, right from "DevOps engineer" and "AMI," it's already sounding like spells from another world, Hino-rin.
 
 <蒞星 怜空>くく……素晴らしい導入だ、イオち。まさに現代のクラウドエンジニアが日々直面する「終わらないパッチ当てとイメージ管理の無間地獄」への招待状だな。手動でサーバーを立ち上げ、手順書を見ながらコマンドを叩き、誰かが1行コピペを漏らした瞬間に本番環境が火を噴く——そんな業界の伝統芸能をどう根絶するかが、この問題のすべてだ。
 
-<Rea Rize> Heh... A splendid introduction, Io-chi. This is truly an invitation to the "endless purgatory of patching and image management" that modern cloud engineers face every day. Spinning up servers manually, typing commands while staring at a runbook, and watching production burst into flames the exact second someone misses a single line of copy-paste—how to eradicate that traditional performing art of our industry is the entirety of this problem.
+<Rea Rize> Heh... A splendid introduction, Io-chi. This is truly an invitation to the "endless purgatory of patching and image management" that modern cloud engineers face every day. Spinning up servers manually, typing commands while staring at a runbook, and watching production burst into flames the exact second someone misses a single line of copy-paste—how to eradicate that (traditional performing art) of our industry is the (entirety of) this problem.
 
 <日乃 竜胆>怜空さん、最初から場の空気を凍らせるのはやめていただきたい。……気を取り直すぞ。まず、設問の前提を整理しよう。ある企業のDevOpsエンジニアが、複数のAWSアカウントで使う「標準Linux AMI」を管理している。ここで重要な用語が3つ出た。「AWSアカウント」「EC2インスタンス」「AMI」だ。
 
-<Rindo Hino> Rea-san, please refrain from freezing the room's atmosphere right from the start. ...Let us regain our composure. First, let us organize the premises of the question. A DevOps engineer at a certain company manages a "standard Linux AMI" used across multiple AWS accounts. Three crucial terms just appeared here: "AWS Account," "EC2 Instance," and "AMI".
+<Rindo Hino> Rea-san, please refrain from freezing the room's atmosphere right from the start. ...Let us (regain *our* composure). First, let us organize the premises of the question. A DevOps engineer at a certain company manages a "standard Linux AMI" used across multiple AWS accounts. Three crucial terms just appeared here: "AWS Account," "EC2 Instance," and "AMI".
 
 <月凪 惟緒>あ〜、その3つ、名前だけは聞いたことあるかも。でも実態が全然わかんない。たとえばレストランとかキッチンに例えるとどういう感じなの？ なんかこう、ふわっとイメージしたいんだけど〜。
 
-<Io Tsukinagi> Ah, I might have heard those three names at least. But I have zero idea what they actually are. Like, if you compared them to a restaurant or a kitchen, what would they be? I kinda wanna get a fuzzy mental picture first~
+<Io Tsukinagi> Ah, I might have heard those three names at least. But I have zero idea what they actually are. Like, if you compared them to a restaurant or a kitchen, what would they be? I kinda wanna get a (fuzzy) mental picture first~
 
 <日乃 竜胆>いいだろう。まず「EC2インスタンス」とは、AWSのクラウド上に借りる「仮想サーバー」、つまりコンピュータそのものだ。キッチンの例えを使うなら、実際に料理を作る「調理台とコンロのセット」だな。そして「AMI（Amazon Machine Image）」とは、そのサーバーを起動するための「設計図（テンプレート）」だ。
 
@@ -1282,7 +1282,7 @@ Plus, the SSM Agent is already in the AMI from the start, so communication is so
 
 <月凪 惟緒>うわ、毎月手作業とかダルすぎ……。てか「複数のAWSアカウント」っていうのは、そのチェーン店の「渋谷店」「新宿店」「池袋店」みたいな別々の店舗ってこと？ 開発用とか本番用とかで部屋が分かれてる感じ？
 
-<Io Tsukinagi> Ugh, doing it manually every month sounds way too tedious... Wait, so "multiple AWS accounts" means separate branches of that chain, like the "Shibuya branch," "Shinjuku branch," and "Ikebukuro branch"? Like rooms separated for development, production, and stuff?
+<Io Tsukinagi> Ugh, doing it manually every month sounds way too (tedious)... Wait, so "multiple AWS accounts" means separate branches of that chain, like the "Shibuya branch," "Shinjuku branch," and "Ikebukuro branch"? Like rooms separated for development, production, and stuff?
 
 <日乃 竜胆>その通りだ、イオち。鋭い直感だな。企業ではセキュリティや請求管理のために、開発環境、検証環境、本番環境などでAWSアカウントを分けるのが定石だ。現在この企業では、担当者が毎月手動でEC2を起動し、「OSパッチ（セキュリティ更新プログラム）」を当て、監視ツールなどの「エージェント」をインストールしてから新しいAMIを作成し、それを各店舗——つまり各AWSアカウントへ手動で共有している。
 
@@ -1316,7 +1316,7 @@ Our mission today is to select the option that fulfills these three requirements
 
 <蒞星 怜空>さて、ここからは「なぜ他の選択肢がダメなのか」という公開処刑の時間だ。クラウドアーキテクチャの選定において、正解を当てること以上に重要なのは、不正解の選択肢が抱える「技術的欠陥」と「運用の沼」を見抜くことだからな。ヒノりん、まずは不正解の選択肢から徹底的に斬り捨てていくぞ。
 
-<Rea Rize> Now, from here on, it is time for the public execution of "why the other options fail." In selecting cloud architectures, even more important than guessing the right answer is seeing through the "technical flaws" and "operational swamps" inherent in the incorrect options. Hino-rin, let us thoroughly cut down the incorrect choices first.
+<Rea Rize> Now, (from here on), it is time for the public execution of "why the other options fail." In selecting cloud architectures, even more important than guessing the right answer is seeing through the "technical flaws" and "operational swamps" (inherent in) the incorrect options. Hino-rin, let us thoroughly cut down the incorrect choices first.
 
 ---
 
@@ -1338,15 +1338,15 @@ The option states:
 
 <日乃 竜胆>特に `AWS-UpdateLinuxAmi` というランブックはAWSが最初から用意してくれているもので、「古いAMIから一時的にEC2を起動し、パッチを当てて、新しいAMIを作る」という処理を一発でやってくれる。そして「State Manager」は、その作業を「毎月1日の朝に実行しろ」とスケジュール予約する機能だ。
 
-<Rindo Hino> Specifically, the runbook `AWS-UpdateLinuxAmi` is pre-built by AWS and performs the process of "temporarily launching an EC2 instance from an old AMI, applying patches, and creating a new AMI" in one go. And "State Manager" is the feature that schedules that task, saying "run this on the morning of the 1st of every month".
+<Rindo Hino> Specifically, the runbook `AWS-UpdateLinuxAmi` is pre-built by AWS and performs the process of "temporarily launching an EC2 instance from an old AMI, applying patches, and creating a new AMI" (in one go). And "State Manager" is the feature that schedules that task, saying "run this on the morning of the 1st of every month".
 
 <月凪 惟緒>えっ、じゃあそこまでめっちゃ優秀じゃん！ しかも最後の「Lambda（ラムダ）」って、なんかプログラムをちょっと動かすサーバーレスのやつでしょ？ それで `ModifyImageAttribute` っていう「イメージの属性（共有設定）を変更するコマンド」を叩いて他のアカウントに配るんでしょ？ え、これ完璧じゃないの？ なんでダメなの？
 
-<Io Tsukinagi> Huh, then up to that point it's super capable! Plus, at the end, "Lambda" is that serverless thing that runs a bit of code, right? And with that, it runs `ModifyImageAttribute`—a command to "change image attributes <sharing settings>"—to distribute it to other accounts, right? Wait, isn't this perfect? Why is it wrong?
+<Io Tsukinagi> Huh, then up to that point it's (super capable)! Plus, at the end, "Lambda" is that serverless thing that (runs a bit of) code, right? And with that, it runs `ModifyImageAttribute`—a command to "change image attributes <sharing settings>"—to distribute it to other accounts, right? Wait, isn't this perfect? Why is it wrong?
 
 <蒞星 怜空>くくく……イオち、その「プログラムをちょっと動かす」という甘い幻想こそが、エンジニアの寿命を縮める猛毒なのだよ。いいか、この選択肢には致命的な穴が**3つ**もある。解説図の赤いバツ印を見てみるといい。
 
-<Rea Rize> Hehehe... Io-chi, that sweet illusion of "just running a bit of code" is the exact deadly poison that shortens an engineer's lifespan. Listen well: this option has **three** fatal flaws. Take a look at the red X marks in the explanatory diagram.
+<Rea Rize> Hehehe... Io-chi, that sweet illusion of "just running a bit of code" is the exact deadly poison that shortens an engineer's lifespan. Listen well: this option has **three** fatal flaws. Take a look at the red X marks in the (explanatory) diagram.
 
 <日乃 竜胆>怜空さんの言う通りだ。理由を3点、明確に解説しよう。
 第一に、要件の2つ目である「更新後のセキュリティ検証（テスト）」が完全に欠落している。この構成では、パッチを当ててAMIを作った直後に、いきなり本番などの他アカウントへ配布してしまう。もしパッチのせいでOSが起動しなくなっていたら、全アカウントに壊れた金型をバラ撒くことになる。
@@ -1360,11 +1360,11 @@ First, the second requirement—**"post-update security validation <testing>"—
 
 <日乃 竜胆>第三に、さらに細かい技術的罠がある。AMIという金型の中身は、実は「EBSスナップショット」というハードディスクのデータだ。他アカウントにAMIを共有する際、このスナップショットの共有許可や、暗号化されていた場合の暗号化キー（KMS）の権限付与も別途コードで書かなければならない。運用負荷が高すぎるため、これは不正解だ。
 
-<Rindo Hino> Third, there is an even finer technical trap. The actual data inside the AMI mold is an "EBS Snapshot," which is hard drive data. When sharing an AMI with another account, you also have to separately code the sharing permissions for this snapshot, as well as permissions for the encryption key <KMS> if it is encrypted. Because the operational overhead is far too high, this is incorrect.
+<Rindo Hino> Third, there is an even (finer) technical trap. The actual data inside the AMI mold is an "EBS Snapshot," which is hard drive data. When sharing an AMI with another account, you also have to separately code the sharing permissions for this snapshot, as well as permissions for the encryption key <KMS> if it is encrypted. Because the operational overhead is far too high, this is incorrect.
 
 <月凪 惟緒>あ〜……なるほどね。つまり「検証ゼロでいきなり全店舗に新メニュー送りつけるわ、配送トラックの運転手（Lambda）は自分で一から雇って教育しなきゃいけないわで、ブラック企業まっしぐら」ってことかぁ。そりゃダメだわ。
 
-<Io Tsukinagi> Ah... I see. So basically, "you ship a new menu to every branch with zero taste-testing, and you have to hire and train the delivery truck driver <Lambda> completely from scratch, heading straight into sweatshop territory." Yeah, that's a no-go.
+<Io Tsukinagi> Ah... I see. So basically, "you ship a new menu to every branch with zero taste-testing, and you have to hire and train the delivery truck driver <Lambda> completely from scratch, heading straight into (sweatshop) territory." Yeah, that's a no-go.
 
 ---
 
@@ -1394,7 +1394,7 @@ The option states:
 
 <日乃 竜胆>……その通りだ。この構成には**技術的に成立しない決定的な欠陥**がある。それは、「AWS RAM は AMI の共有に対応していない」という事実だ。
 
-<Rindo Hino> ...That is right. This architecture has a **decisive flaw that makes it technically unviable**. It is the fact that **"AWS RAM does not support sharing AMIs."**
+<Rindo Hino> ...That is right. This architecture has a **decisive flaw that makes it technically (unviable)**. It is the fact that **"AWS RAM does not support sharing AMIs."**
 
 <月凪 惟緒>えっ！？ ちょっと待って。共有するためのサービスなのに、AMIは共有できないの！？ なんでそんな紛らわしいことするのAWSさん……！
 
@@ -1406,11 +1406,11 @@ The option states:
 
 <日乃 竜胆>さらに言えば、仮に共有部分を直したとしても、CodePipelineの構築、CodeBuildの設定、Packerのテンプレート記述、テストステージの自作など、「自作要素が多すぎて構築・保守の負荷が極めて高い」という欠点もある。技術的に不可能かつ運用も重い、二重の不正解だ。
 
-<Rindo Hino> Furthermore, even if you were to fix the sharing mechanism, it still suffers from the drawback that **"there are far too many custom-built components—building CodePipeline, configuring CodeBuild, writing Packer templates, custom-building test stages—making the build and maintenance overhead extremely high."** It is doubly incorrect: technically impossible and operationally heavy.
+<Rindo Hino> Furthermore, even if you were to fix the sharing mechanism, it still suffers from the (drawback) that **"there are far too many custom-built components—building CodePipeline, configuring CodeBuild, writing Packer templates, custom-building test stages—making the build and maintenance overhead extremely high."** It is doubly incorrect: technically impossible and operationally heavy.
 
 <月凪 惟緒>うわ〜、それ完全な初見殺しじゃん……。RAMって名前見て「あ、共有サービスだからこれ正解！」って飛びついたら、そもそもAMI非対応で門前払いされるとか、トラップカードすぎるでしょ。
 
-<Io Tsukinagi> Whoa, that's a total noob-killer... If you see the name RAM and jump at it thinking, "Oh, a sharing service, this must be right!", you get turned away at the door because it doesn't even support AMIs. That's way too much of a trap card.
+<Io Tsukinagi> Whoa, that's a total (noob-killer)... If you see the name RAM and jump at it thinking, "Oh, a sharing service, this must be right!", you (get turned away) at the door because it doesn't even support AMIs. That's (way too much of) a trap card.
 
 ---
 
@@ -1424,17 +1424,17 @@ The option states:
 
 <月凪 惟緒>なんかこれ、さっきのよりさらに単語が増えてるんだけど……。「Patch Manager」「パッチベースライン」「メンテナンスウィンドウ」「Amazon Inspector」「AWS Backup」「クロスアカウントコピー」。もう漢字とカタカナのゲシュタルト崩壊起きそう。一つずつ教えてヒノりん。
 
-<Io Tsukinagi> Somehow this one has even more words than the last one... "Patch Manager," "patch baseline," "maintenance window," "Amazon Inspector," "AWS Backup," "cross-account copy." I'm about to get semantic satiation from all the kanji and katakana. Teach me one by one, Hino-rin.
+<Io Tsukinagi> Somehow this one has even more words than the last one... "Patch Manager," "patch baseline," "maintenance window," "Amazon Inspector," "AWS Backup," "cross-account copy." I'm about to get (semantic) (satiation) from all the kanji and katakana. Teach me one by one, Hino-rin.
 
 <日乃 竜胆>よし、順に説明するぞ。
 まず「Patch Manager」は、Systems Managerの機能の一つで、OSやアプリのセキュリティパッチを自動適用するツールだ。「パッチベースライン」は「どのパッチを承認して適用するか」のルール表、「メンテナンスウィンドウ」は「深夜2時〜4時の間だけ作業してよい」という作業許可時間帯のことだ。
 
-<Rindo Hino> Alright, I will explain them in order.
+<Rindo Hino> Alright, I will explain them (in order).
 First, "Patch Manager" is a feature of Systems Manager that automatically applies security patches to OSs and applications. A "patch baseline" is the rulebook defining "which patches to approve and apply," and a "maintenance window" is the permitted time slot for work, such as "only perform maintenance between 2 AM and 4 AM".
 
 <日乃 竜胆>次に「Amazon Inspector」は、サーバーにセキュリティ上の弱点（脆弱性）がないかを自動検査するスキャナーだ。そして「AWS Backup」は、サーバーやデータベースのバックアップデータを取得し、別のAWSアカウントへコピー（クロスアカウントコピー）して保管できるサービスだ。
 
-<Rindo Hino> Next, "Amazon Inspector" is a scanner that automatically inspects servers for security weaknesses <vulnerabilities>. And "AWS Backup" is a service that takes backup data of servers or databases and copies it to another AWS account <cross-account copy> for safekeeping.
+<Rindo Hino> Next, "Amazon Inspector" is a scanner that automatically inspects servers for security weaknesses <vulnerabilities>. And "AWS Backup" is a service that takes backup data of servers or databases and copies it to another AWS account <cross-account copy> for (safekeeping).
 
 <月凪 惟緒>へぇ〜、なんか「夜中にパッチ当てて、セキュリティ検査して、バックアップ機能で他アカウントにコピーする」って、流れとしてはめっちゃ筋が通ってる気がするんだけど？ Inspectorでセキュリティ検証もしてるし！ なんでこれもバツなの？
 
@@ -1447,12 +1447,12 @@ First, "Patch Manager" is a feature of Systems Manager that automatically applie
 <日乃 竜胆>怜空さんの例えは相変わらず物騒だが、本質を突いている。論理的に3つの誤りを指摘しよう。
 第一に、「対象が『稼働中のEC2インスタンス』になってしまっている」点だ。Patch Managerは、すでに本番などで動いている何百台ものサーバーに対して一斉にパッチを当てるためのサービスだ。今回やりたいのは「新しいサーバーを作るための『金型（標準Linux AMI）』を作ること」であり、動いているサーバーを直接いじることではない。しかも、この選択肢の手順には「そもそもAMIを作成するステップ」が書かれていない。
 
-<Rindo Hino> Rea-san's analogy is as unsettling as ever, yet it hits the nail on the head. Let me logically point out the three errors.
-First, **"the target has become 'running EC2 instances.'"** Patch Manager is a service meant for applying patches en masse to hundreds of servers already running in production. What we want to do here is "create a 'mold <standard Linux AMI>' for launching new servers," not directly alter running servers. Moreover, the steps in this option **do not even include a step to "create an AMI" in the first place**.
+<Rindo Hino> Rea-san's analogy is as (unsettling) as ever, yet it (hits the nail on the head). Let me logically point out the three errors.
+First, **"the target has become 'running EC2 instances.'"** Patch Manager is a service meant for applying patches (en masse) to hundreds of servers already running in production. What we want to do here is "create a 'mold <standard Linux AMI>' for launching new servers," not directly alter running servers. Moreover, the steps in this option **do not even include a step to "create an AMI" in the first place**.
 
 <日乃 竜胆>第二に、「AWS Backup の目的との不一致」だ。AWS Backupのクロスアカウントコピーは、災害対策（DR）やランサムウェア対策として「万が一データが消えたときに復元（リストア）するためのバックアップデータ」を別アカウントに隔離保管するための機能だ。複数アカウントで日常的に新しいサーバーをポンポン起動するための「配布用ゴールデンイメージ」を配る用途ではない。
 
-<Rindo Hino> Second, **"a mismatch with the purpose of AWS Backup."** AWS Backup's cross-account copy is a feature meant for isolating and storing "backup data for restoration in case data is lost" in another account as part of disaster recovery <DR> or ransomware protection. It is not intended for distributing a "distributable golden image" used to routinely spin up new servers across multiple accounts.
+<Rindo Hino> Second, **"a mismatch with the purpose of AWS Backup."** AWS Backup's cross-account copy is a feature meant for isolating and storing "backup data for restoration in case data is lost" in another account (as part of) disaster recovery <DR> or ransomware protection. It is (not intended for) distributing a "(distributable) golden image" used to routinely spin up new servers across multiple accounts.
 
 <日乃 竜胆>第三に、問題文の要件にある「エージェントのインストール（初期ソフトの導入）」に触れられていない点だ。つまり、やりたいこと（AMIの構築・検証・配布）に対して、まったく別の目的のツール（既存サーバーのパッチ管理とバックアップ）を無理やりつぎはぎしただけの、設計思想が破綻した選択肢なのだ。
 
@@ -1468,13 +1468,13 @@ First, **"the target has become 'running EC2 instances.'"** Patch Manager is a s
 ではいよいよ、残された唯一の道——「正解1」の構築手順と、それがなぜ圧倒的に優れているのかを紐解いていこう。
 
 <Rindo Hino> A flawless summary, Io-chi. With this, it has become completely clear why all three incorrect options fail.
-Now, at last, let us unravel the sole remaining path—**"Correct 1"**—its construction steps, and why it is overwhelmingly superior.
+Now, (at last), let us unravel the sole remaining path—**"Correct 1"**—its construction steps, and why it is overwhelmingly superior.
 
 <日乃 竜胆>正解の選択肢はこうだ。
 『EC2 Image Builder でベースイメージにパッチ適用とエージェントインストールのコンポーネントを含むレシピを作成します。テストコンポーネントを組み込んだイメージパイプラインに月次のスケジュールを設定し、ディストリビューション設定で対象の各 AWS アカウントに生成された AMI を共有します。』
 
 <Rindo Hino> The correct option reads as follows:
-"Create a recipe in EC2 Image Builder that includes components for patch application and agent installation on a base image. Configure a monthly schedule on an image pipeline incorporating test components, and share the generated AMI with each target AWS account using distribution settings."
+"Create a recipe in EC2 Image Builder that includes components for patch application and agent installation on a base image. Configure a monthly schedule on an image pipeline (incorporating) test components, and share the generated AMI with each target AWS account using distribution settings."
 
 <月凪 惟緒>おっ、なんか主役が来たって感じ！ 「EC2 Image Builder」って名前からしてもう「イメージ（AMI）を作る専門の職人さん」って感じするもんね。でもさ〜、中の用語がまたカタカナ祭りなんだけど。「コンポーネント」「レシピ」「イメージパイプライン」「ディストリビューション設定」……これ、どうやって組み立てていくの？
 
@@ -1482,7 +1482,7 @@ Now, at last, let us unravel the sole remaining path—**"Correct 1"**—its con
 
 <日乃 竜胆>いいだろう。この「EC2 Image Builder」は、まさに今回の設問のような「AMIの作成・更新・検証・配布」を一貫して自動化するために生まれたAWSのマネージドサービス（全自動サービス）だ。イオちが先ほど使った「料理とキッチン」の例えを使えば、この構造は驚くほど美しく理解できる。構築手順を4つのステップで順番に解説しよう。
 
-<Rindo Hino> Very well. This "EC2 Image Builder" is an **AWS managed service <fully automated service> born specifically to consistently automate the "creation, updating, validation, and distribution of AMIs"** just like in today's question. Using the "cooking and kitchen" analogy you used earlier, Io-chi, this structure can be understood with remarkable beauty. Let me explain the construction steps in four sequential stages.
+<Rindo Hino> Very well. This "EC2 Image Builder" is an **AWS managed service <fully automated service> born specifically to consistently automate the "creation, updating, validation, and distribution of AMIs"** just like in today's question. Using the "cooking and kitchen" analogy you used earlier, Io-chi, this structure can be understood with remarkable beauty. Let me explain the construction steps in four (sequential) stages.
 
 <日乃 竜胆>**ステップ1：「コンポーネント」と「レシピ」を作る**
 まず、料理の素材となる「ベースイメージ（元のLinux AMI）」を用意する。次に、それに対して行う個別の調理工程を「コンポーネント」として定義する。今回なら「①OSパッチを適用するコンポーネント」と「②エージェントをインストールするコンポーネント」の2つだ。
@@ -1494,7 +1494,7 @@ And the document that summarizes which components are applied to which base imag
 
 <日乃 竜胆>このレシピはバージョン管理される（例：v1.0.0、v1.0.1）。人間が手動でやっていたときは「担当者の気分やミスによる構成差異」が起きていたが、レシピとしてコード（宣言的）で定義しておくことで、誰がいつ実行しても**1ミリも狂いのない同じ手順が再現される**のだ。
 
-<Rindo Hino> This recipe is version-controlled <e.g., v1.0.0, v1.0.1>. When humans did it manually, "configuration drift occurred due to operator whims or mistakes," but by defining it declaratively as a recipe, **the exact same procedure is reproduced without a millimeter of deviation**, regardless of who runs it or when.
+<Rindo Hino> This recipe is version-controlled <e.g., v1.0.0, v1.0.1>. When humans did it manually, "configuration drift occurred due to operator (whims) or mistakes," but by defining it declaratively as a recipe, **the exact same procedure is reproduced without a millimeter of (deviation)**, regardless of who runs it or when.
 
 <月凪 惟緒>へぇ〜！ まさに料理のレシピそのものじゃん。「ベース食材（ベースイメージ）」に「下味つけ（パッチ適用）」と「スパイス投入（エージェント導入）」っていう調理工程（コンポーネント）を組み合わせたレシピを作っておけば、誰が作っても同じ味になるってことね！ じゃあ次の「テストコンポーネント」は？ 味見ってこと？
 
@@ -1508,11 +1508,11 @@ Image Builderは、ビルドした仮のAMIから「テスト用の一時的なE
 <Rindo Hino> Exactly, taste-testing <poison-tasting>!
 **Step 2: Incorporate Security Validation with "Test Components"**
 Test procedures that automatically inspect whether the created AMI is truly safe, boots properly, and has necessary ports closed can also be incorporated as "test components".
-Image Builder automatically spins up a "temporary test EC2 instance" from the newly built provisional AMI and runs this test. If it fails the test, the process halts right there, **preventing the accident of distributing a defective AMI to other accounts before it happens**.
+Image Builder automatically spins up a "temporary test EC2 instance" from the newly built provisional AMI and runs this test. If it fails the test, the process (halts right there), **preventing the accident of distributing a defective AMI to other accounts before it happens**.
 
 <蒞星 怜空>しかもな、このビルド用やテスト用に使われた一時的なEC2インスタンスは、作業が終わった瞬間にAWS側が跡形もなく自動削除（終了）してくれる。つまり、普段はサーバーを維持する電気代（常設インフラのコスト）が一切かからない。作業の時だけ厨房が現れ、終わったら消える魔法のキッチンというわけだ。
 
-<Rea Rize> Moreover, those temporary EC2 instances used for building and testing are automatically deleted <terminated> without a trace by AWS the exact second the job finishes. That means you pay zero electricity bills <standing infrastructure costs> to maintain servers during normal times. It is a magic kitchen that materializes only when cooking and vanishes once done.
+<Rea Rize> Moreover, those temporary EC2 instances used for building and testing are automatically deleted <terminated> without a trace by AWS the exact second the job finishes. That means you pay zero electricity bills <standing infrastructure costs> to maintain servers during normal times. It is a magic kitchen that materializes only when cooking and vanishes (once done).
 
 <日乃 竜胆>補足感謝する、怜空さん。そして残りの2ステップだ。
 **ステップ3：「ディストリビューション設定（配布設定）」を定義する**
@@ -1538,7 +1538,7 @@ Finally, bundling the "Recipe," "Tests," and "Distribution Settings" we created 
 
 <蒞星 怜空>くく……よく理解できたな、イオち。つまりこの問題の本質は「車輪の再発明をするな、AWSが用意した専用マネージドサービスを素直に使え」というクラウド設計の黄金律そのものだ。さあ、これで明日から君も立派なDevOpsエンジニアの仲間入り……と行きたいところだが、まずは画面右下の「採点する」ボタンを押して、この美しい理論を現実の正解へと昇華させることだな。
 
-<Rea Rize> Heh... You understood it well, Io-chi. In short, the essence of this problem is the golden rule of cloud architecture itself: "Do not reinvent the wheel; simply use the dedicated managed service AWS has provided." Now, with this, you too can join the ranks of splendid DevOps engineers starting tomorrow... or so I would say, but first, press that "Grade" button at the bottom right of the screen and sublimate this beautiful theory into a real-world correct answer.
+<Rea Rize> Heh... You understood it well, Io-chi. In short, the essence of this problem is the golden rule of cloud architecture itself: "Do not reinvent the wheel; simply use the dedicated managed service AWS has provided." Now, with this, you too can (join the ranks of )splendid DevOps engineers starting tomorrow... or so I would say, but first, press that "Grade" button at the bottom right of the screen and (sublimate) this beautiful theory into a real-world correct answer.
 
 <日乃 竜胆>その通りだ。イオち、今の解説でまだ腑に落ちない点や、さらに深掘りしたい用語はあるか？ なければ次の設問へ進むぞ。
 
@@ -1549,15 +1549,15 @@ Finally, bundling the "Recipe," "Tests," and "Distribution Settings" we created 
 
 <月凪惟緒> えーっと……画面の文字列が網膜の奥で雪崩を起こしてるんだけど、これって要するに、組織の親玉アカウントが新しい子分アカウントを産み落とした瞬間を、監視役のお目付け役アカウントがリアルタイムで察知したいって話だよねぇ。
 
-<Tsukina Io> Um... this wall of text is causing an avalanche behind my retinas, so basically, the boss account gives birth to a new minion account, and the strict watchdog account wants to catch the exact moment it happens in real time, right?
+<Tsukina Io> Um... this wall of text is causing an (avalanche) behind my retinas, so basically, the boss account gives birth to a new (minion) account, and the strict (watchdog) account wants to catch the exact moment it happens in real time, right?
 
 <日乃竜胆> 表現の選り好みには目をつぶるが、本質は射抜いているな、イオち。この設問（DOP-1012）は、マルチアカウント環境におけるリアルタイムのイベント駆動アーキテクチャを問うものだ。前提となる登場人物と舞台装置を、一切の曇りなく整理しよう。
 
-<Hino Rindo> I will overlook your choice of imagery, yet you have pierced the core, Io-chi. This question <DOP-1012> tests real-time event-driven architecture in a multi-account environment. Let us organize the cast and the stage without a single cloud of ambiguity.
+<Hino Rindo> I will (overlook) your choice of (imagery), yet you have pierced the core, Io-chi. This question <DOP-1012> tests real-time event-driven architecture in a multi-account environment. Let us organize the cast and the stage without a single cloud of (ambiguity).
 
 <蒞星怜空> ほほう、また古典的な「組織の増殖と監視のイタチごっこ」か。新しい子会社やプロジェクトが雨後の筍のように生えてくるたびに、セキュリティチームが胃薬を噛み砕きながら血眼で追跡する、あの甘美で地獄のような現場風景が目に浮かぶようだ。さあ、愛弟子の華麗なる解剖ショーを拝見しようではないか。
 
-<Rize Rea> Ho-ho, another classic game of "organizational proliferation and surveillance cat-and-mouse." Every time a new subsidiary or project sprouts like bamboo shoots after rain, the security team chews stomach medicine while hunting them down with bloodshot eyes—that sweet, hellish field scenery floats right before me. Come, let us witness my prized pupil's magnificent dissection show.
+<Rize Rea> Ho-ho, (another classic game of) "organizational (proliferation) and surveillance cat-and-mouse." Every time a new (subsidiary) or project sprouts like (bamboo shoots) after rain, the security team chews stomach medicine while hunting them down with bloodshot eyes—that sweet, hellish field scenery floats right before me. Come, let us witness my prized pupil's magnificent dissection show.
 
 <月凪惟緒> 胃薬とか言われると私まで胃が重くなってきた……。とりあえず、カタカナばっかりで脳が永久凍土になりそうだから、前提の用語を溶かしてほしいんだけど。「AWS Organizations」「管理用アカウント」「CI/CDパイプライン」「プロビジョニング」「CloudTrail」、あと「EventBridge」って、それぞれ何者なの？
 
@@ -1565,11 +1565,11 @@ Finally, bundling the "Recipe," "Tests," and "Distribution Settings" we created 
 
 <日乃竜胆> 順を追って剣で切り分けるように説明しよう。まず、企業がAWSを使う際、部署やシステムごとに「AWSアカウント」を複数に分けるのが鉄則だ。これら複数のアカウントを一つ屋根の下で統括する組織管理サービスが **AWS Organizations** であり、その頂点に君臨する親アカウントが **管理用アカウント** だ。
 
-<Hino Rindo> I shall slice through them in order as if with a blade. First, when an enterprise uses AWS, splitting environments into multiple "AWS accounts" by department or system is an ironclad rule. **AWS Organizations** is the governance service that unifies these multiple accounts under one roof, and the parent account reigning at the apex is the **management account**.
+<Hino Rindo> I shall slice through them in order as if with a blade. First, when an enterprise uses AWS, splitting environments into multiple "AWS accounts" by department or system is an ironclad rule. **AWS Organizations** is the governance service that unifies these multiple accounts under one roof, and the parent account (reigning) at the apex is the **management account**.
 
 <日乃竜胆> 次に、新しい部署やアプリのためにアカウントが欲しくなったとする。人間が手作業で画面をポチポチ操作してアカウントを作るのは遅いうえにミスが起きる。そこで、プログラムによって自動化された構築の流れである **CI/CDパイプライン** が、OrganizationsのAPI（命令の窓口）を叩いて新規アカウントを自動作成・初期設定する。この「資源を用意して使える状態にすること」を **プロビジョニング** と呼ぶのだ。
 
-<Hino Rindo> Next, suppose a new department or application requires an account. Having humans manually click through screens to create accounts is slow and error-prone. Thus, an automated build workflow—a **CI/CD pipeline**—calls the Organizations API <command interface> to automatically create and initialize the new account. This act of preparing resources into a usable state is called **provisioning**.
+<Hino Rindo> Next, suppose a new department or application requires an account. Having humans manually click through screens to create accounts is slow and (error-prone). Thus, an automated build workflow—a **CI/CD pipeline**—calls the Organizations API <command interface> to automatically create and initialize the new account. This act of preparing resources into a usable state is called **provisioning**.
 
 <月凪惟緒> なるほどねー。要するに自動販売機のボタンを押したら、新しい部屋が勝手に建つみたいな感じかぁ。で、その「誰がいつ何のボタンを押したか」っていう防犯カメラの記録が **CloudTrail** で、その映像を見て「あ、今部屋が建った！ 警備員出動！」って叫ぶ警報装置が **EventBridge** ってこと？
 
@@ -1581,7 +1581,7 @@ Finally, bundling the "Recipe," "Tests," and "Distribution Settings" we created 
 
 <蒞星怜空> ただし、ここで一つ、雲行きが怪しくなる重要な仕様がある。CloudTrailが `CreateAccount` という「管理イベント」を記録したとき、裏側で何が起きるかだ。CloudTrailはS3バケットにログファイルを保存するだけでなく、同じアカウント内のEventBridgeにある「デフォルトイベントバス」へ、**追加設定なしで自動的かつリアルタイムにイベントを流し込む**。
 
-<Rize Rea> However, there is one crucial specification here where the weather turns ominous: what happens behind the scenes when CloudTrail logs a "management event" like `CreateAccount`? CloudTrail doesn't just save log files to an S3 bucket; it **automatically and in real time streams the event without any extra configuration** into the "default event bus" of EventBridge within that exact same account.
+<Rize Rea> However, there is one crucial specification here where the (weather turns ominous): what happens behind the scenes when CloudTrail logs a "management event" like `CreateAccount`? CloudTrail doesn't just save log files to an S3 bucket; it **automatically and in real time streams the event without any extra configuration** into the "default event bus" of EventBridge within that exact same account.
 
 <月凪惟緒> えっ、自動で流れるの？ じゃあ管理用アカウントのEventBridgeには勝手に届くってこと？ だったら今回の問題って何が難しいの？ そのまま監査アカウントのワークフロー（監査WF）を動かせばいいじゃん。
 
@@ -1603,19 +1603,19 @@ Finally, bundling the "Recipe," "Tests," and "Distribution Settings" we created 
 
 <日乃竜胆> 技術的に動くか動かないかで言えば、「無理やり動かせなくはない」。だが、AWSの設計思想においては最悪の「オーバーエンジニアリング（過剰設計）」であり、三重の欠陥を抱えている。第一に、EventBridgeの「イベントバス」には **デフォルトイベントバス** と **カスタムイベントバス** の2種類がある。デフォルトバスは最初から存在し、AWSサービス（CloudTrailなど）のイベントが自動的に流れ込む場所だ。対してカスタムバスは、自作アプリや外部パートナーのイベント用に人間が明示的に作る箱であり、**CloudTrailの管理イベントはカスタムバスには直接届かない**。
 
-<Hino Rindo> In terms of whether it technically works, "it is not impossible to force it to run". Yet in AWS design philosophy, it is the worst kind of "over-engineering" and suffers from a triple defect. First, EventBridge has two types of "event buses": the **default event bus** and **custom event buses**. The default bus exists from the start and is where AWS service events <like CloudTrail> automatically flow. In contrast, a custom bus is a box explicitly created by humans for custom apps or external partners, and **CloudTrail management events never arrive directly at a custom bus**.
+<Hino Rindo> In terms of whether it technically works, "it is not impossible to force it to run". Yet in AWS design philosophy, it is the (worst kind of) "over-engineering" and (suffers from *a triple* defect). First, EventBridge has two types of "event buses": the **default event bus** and **custom event buses**. The default bus exists from the start and is where AWS service events <like CloudTrail> automatically flow. In contrast, a custom bus is a box explicitly created by humans for custom apps or external partners, and **CloudTrail management events never arrive directly at a custom bus**.
 
 <月凪惟緒> あーっ！ つまり、管理用アカウントにわざわざカスタムバスを作っても、肝心のCloudTrailのイベントはデフォルトバスの方にしか来ないから、デフォルトバスからカスタムバスへ転送するルールをもう一個書かなきゃいけないってことかぁ。二度手間じゃん。
 
-<Tsukina Io> Ahh! So even if you go out of your way to make a custom bus in the management account, the vital CloudTrail event only goes to the default bus, meaning you have to write another rule just to forward it from the default bus to the custom bus. Total double work.
+<Tsukina Io> Ahh! So even if you (go out of your way to) make a custom bus in the management account, the vital CloudTrail event only goes to the default bus, meaning you have to write another rule just to forward it from the default bus to the custom bus. Total( double work).
 
 <日乃竜胆> その通りだ。さらに第二の欠陥として、EventBridgeには標準機能（ネイティブ機能）として、**別のアカウントのイベントバスへ直接イベントを送信する仕組み** が最初から備わっている。それにもかかわらず、わざわざサーバーレスでプログラムを実行する **AWS Lambda** を間に挟むとどうなるか。
 
-<Hino Rindo> Precisely. Furthermore, as a second defect, EventBridge comes equipped out-of-the-box with a native feature to **send events directly to an event bus in another account**. Despite this, what happens if you deliberately wedge **AWS Lambda**—a serverless compute service for running code—in between?
+<Hino Rindo> Precisely. Furthermore, as a second defect, EventBridge (comes equipped)( out-of-the-box )with a native feature to **send events directly to an event bus in another account**. Despite this, what happens if you deliberately (wedge) **AWS Lambda**—a serverless compute service for running code—in between?
 
 <蒞星怜空> それはもう、隣室の同僚に「ペンを貸してくれ」と声をかければ済むところを、わざわざ国際郵便の伝票を書き、通関手続きを経て、チャーター機で空輸するような狂気の沙汰だ。Lambdaを挟めば、コードの保守、エラー時の再試行（エラーハンドリング）、実行権限（IAMロール）の管理、同時実行数の上限、そして初回起動時の遅延（コールドスタート）といった運用負荷とコストが、まるで呪いのように降りかかる。AWS試験において「標準機能で一発でできることを、わざわざLambdaを書いて中継する選択肢」は、99%地雷だと思って間違いない。
 
-<Rize Rea> That is sheer madness—like writing out international shipping manifests, clearing customs, and airlifting via chartered plane just to ask a colleague in the next room to pass a pen. Wedging Lambda in brings operational burdens and costs raining down like a curse: code maintenance, error handling, IAM role management, concurrency limits, and cold start latency. On AWS exams, you can bet your life that 99% of choices that "write custom Lambda code to relay what a native feature does in one shot" are landmines.
+<Rize Rea> That is sheer madness—like (writing out *international shipping* manifests), (clearing customs), and (airlifting) via chartered plane just to ask a colleague in the next room to pass a pen. Wedging Lambda in brings operational burdens and costs raining down like a curse: code maintenance, error handling, IAM role management, concurrency limits, and cold start latency. On AWS exams, you (can bet your life that) 99% of choices that "write custom Lambda code to relay what a native feature does in one shot" are landmines.
 
 <月凪惟緒> なるほどねぇ、ただの自爆構成ってわけか……。じゃあ次、一番下の選択肢いってみよう。「監査アカウントに Amazon EventBridge のカスタムイベントバスを新規作成し、管理用アカウントの CloudTrail ログを Amazon S3 経由でインポートするルールを設定する。カスタムイベントバスに到着したイベントで監査ワークフローをトリガーする。」 ……これ、S3っていうストレージ経由でログを読み込むってこと？ なんか堅実そうだけど？
 
@@ -1623,7 +1623,7 @@ Finally, bundling the "Recipe," "Tests," and "Distribution Settings" we created 
 
 <日乃竜胆> 響きだけは堅実そうだが、これは「存在しない機能」を捏造し、かつ「要件」を無視した二重の誤りだ。まず、CloudTrailがイベントを運ぶルートは2系統あることを思い出せ。一つは **S3バケットへのログファイル保存**（長期保管や証拠保全向け）、もう一つは **EventBridgeデフォルトバスへのリアルタイム配信** だ。
 
-<Hino Rindo> It may sound solid on the surface, yet this is a doubly flawed fabrication that invents a "non-existent feature" while ignoring the "requirements". First, recall that CloudTrail carries events along two distinct routes. One is **writing log files to an S3 bucket** <for long-term storage and forensic preservation>, and the other is **real-time delivery to the EventBridge default bus**.
+<Hino Rindo> It may sound solid on the surface, yet this is a doubly (flawed fabrication )that invents a "non-existent feature" while ignoring the "requirements". First, recall that CloudTrail carries events along two distinct routes. One is **writing log files to an S3 bucket** <for long-term storage and (forensic preservation)>, and the other is **real-time delivery to the EventBridge default bus**.
 
 <日乃竜胆> 決定的な事実として、**S3バケットに保存されたCloudTrailログを、EventBridgeのイベントバスへ直接インポートするような機能は存在しない**。仮にS3のイベント通知機能などを駆使して無理やり別ルートで拾い上げたとしても、CloudTrailがS3へログファイルを書き出すまでには **数分から十数分のタイムラグ（バッチ処理の遅延）** が発生する。問題文には「リアルタイムに検知し」と明記されているため、S3を経由した時点でスピード違反ならぬ「スピード不足」で失格だ。さらにここでもカスタムバスを使う必然性が一切ない。
 
@@ -1631,7 +1631,7 @@ Finally, bundling the "Recipe," "Tests," and "Distribution Settings" we created 
 
 <月凪惟緒> 存在しない機能の上に、数分遅れで「あ、さっきアカウント作られてましたわ〜」って報告してくるポンコツ警備員ってことかぁ。リアルタイムの意味ゼロだね。じゃあ、残る間違いの選択肢、上から2番目はどうなの？ 「監査アカウントの Amazon EventBridge に、管理用アカウントの CloudTrail イベントソースを直接参照するルールを作成し、クロスアカウントのイベントパターンマッチングによって CreateAccount イベントを受信する。」 ……これ、余計なLambdaもS3もなくてスッキリしてるけど、何がダメなの？
 
-<Tsukina Io> So it's built on an imaginary feature, and acts like a clumsy guard reporting minutes late, "Oh, hey, an account was created a while ago~" Zero point to "real time". Then what about the remaining incorrect choice, the second one from the top? "Create a rule in the audit account's Amazon EventBridge that directly references the CloudTrail event source of the management account, and receive the CreateAccount event via cross-account event pattern matching." ...This one looks super clean without extra Lambda or S3, so what's wrong with it?
+<Tsukina Io> So it's built on an imaginary feature, and acts like a clumsy guard reporting minutes late, "Oh, hey, an account was created a while ago~" (Zero point to) "real time". Then what about the remaining incorrect choice, the second one from the top? "Create a rule in the audit account's Amazon EventBridge that directly references the CloudTrail event source of the management account, and receive the CreateAccount event via cross-account event pattern matching." ...This one looks super clean without extra Lambda or S3, so what's wrong with it?
 
 <日乃竜胆> いい目の付け所だ、イオち。一見するとスマートに見えるが、これは **EventBridgeの通信モデル（アーキテクチャの根幹）と真っ向から矛盾している**。ここで極めて重要な概念である **「プッシュモデル」** と **「プルモデル」** を叩き込むぞ。
 
@@ -1643,7 +1643,7 @@ Finally, bundling the "Recipe," "Tests," and "Distribution Settings" we created 
 
 <蒞星怜空> 想像してみろ、イオち。見知らぬ隣家のリビングに勝手に盗聴器を仕掛けて「お前の家の会話、こっちで勝手に聞き取ってルール判定するからな」などというセキュリティモデルが許されたら、クラウドのマルチテナント世界は一瞬でディストピアと化すだろう。送信側が「このイベントをそちらへ送る」と送り出し、受信側が「この送信元からの荷物なら受け取る」と玄関の鍵を開ける。この双方向の合意こそが、プッシュモデルの鉄則だ。
 
-<Rize Rea> Imagine it, Io-chi. If a security model allowed you to plant a wiretap in a stranger's living room saying, "I'll just eavesdrop on your house's conversations and run my rules on them," the multi-tenant cloud world would turn into a dystopia overnight. The sender dispatches saying, "I am sending this event to you," and the receiver unlocks the front door saying, "I accept packages from this sender." This mutual consent is the ironclad rule of the push model.
+<Rize Rea> Imagine it, Io-chi. If a security model allowed you to plant a wiretap in a stranger's living room saying, "I'll just (eavesdrop) on your house's conversations and run my rules on them," the multi-tenant cloud world would turn into a dystopia overnight. The sender dispatches saying, "I am sending this event to you," and the receiver unlocks the front door saying, "I accept packages from this sender." This mutual consent is the ironclad rule of the push model.
 
 <月凪惟緒> うわ、盗聴器って例え、めっちゃ腹落ちした……！ 勝手に覗き見（プル）は絶対NGで、あくまで送り主側から送りつける（プッシュ）しかないんだねぇ。
 
@@ -1669,7 +1669,7 @@ Finally, bundling the "Recipe," "Tests," and "Distribution Settings" we created 
 
 <日乃竜胆> そして、その許可する操作（アクション）の具体的な名前が **`events:PutEvents`** だ。イベントバスに新しいイベントデータを投入（Put）する権限を指す。送信元がプッシュしてきても、受信側のドアにこの `PutEvents` を許可するリソースベースポリシーが貼られていなければ、セキュリティの壁に弾かれて拒否される。
 
-<Hino Rindo> And the specific name of that permitted operation <action> is **`events:PutEvents`**, which refers to the authority to inject <put> new event data into an event bus. Even if the sender pushes the event, if the receiver's door lacks this resource-based policy allowing `PutEvents`, it gets bounced off the security wall and rejected.
+<Hino Rindo> And the specific name of that permitted operation <action> is **`events:PutEvents`**, which refers to the authority to inject <put> new event data into an event bus. Even if the sender pushes the event, if the receiver's door lacks this resource-based policy allowing `PutEvents`, it (gets bounced off *the*) security wall and rejected.
 
 <蒞星怜空> ちなみに実務上の粋なスパイスを一つ添えておこう。このリソースベースポリシーには、特定の管理用アカウントIDだけでなく、AWS Organizations全体の **「組織ID（`aws:PrincipalOrgID`）」** や部署単位の **「OU（組織単位）」** を指定して一括許可することも可能だ。子分アカウントが何百個に増殖しようとも、組織IDひとつ書いておけば「同じ一族の者なら通れ」と門を開けられる。さらに、監査アカウントのデフォルトバスに届いた後は、監査アカウント内のEventBridgeルールで拾い上げ、LambdaやSNS（通知）、Step Functionsなどの後続の監査ワークフローを自動起動すれば完璧な自動化が完成する。
 
